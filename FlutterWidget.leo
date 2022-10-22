@@ -7,123 +7,43 @@
 <find_panel_settings/>
 <vnodes>
 <v t="swot.20221017093031.1"><vh>widgets</vh>
-<v t="swot.20221017093031.2"><vh>#file lib/main.dart</vh>
-<v t="swot.20221017093031.3"><vh>import</vh></v>
-<v t="swot.20221017093031.4"><vh>main</vh></v>
-<v t="swot.20221017093031.5"><vh>MyApp -- MaterialApp</vh></v>
-<v t="swot.20221017093031.6"><vh>Home  -- Scaffold</vh>
-<v t="swot.20221017093031.252"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221017093031.8"><vh>Demo</vh>
-<v t="swot.20221017093031.9"><vh>variable</vh>
-<v t="swot.20221017093031.10"><vh>var for AnimatedXXX</vh></v>
-<v t="swot.20221017093031.168"><vh>var for AnimatedIcon</vh></v>
-<v t="swot.20221017093031.161"><vh>var for AnimatedBuilder</vh></v>
-<v t="swot.20221017093031.172"><vh>var for AnimatedList</vh></v>
-</v>
-<v t="swot.20221017093031.14"><vh>function</vh>
-<v t="swot.20221017093031.173"><vh>_addItem()             -- AnimatedList</vh></v>
-<v t="swot.20221017093031.174"><vh>_removeItem(int index) -- AnimatedList</vh></v>
-</v>
-<v t="swot.20221017093031.17"><vh>initState()</vh>
-<v t="swot.20221017093031.162"><vh>AnimationController for AnimatedBuilder</vh></v>
-<v t="swot.20221017093031.169"><vh>AnimationController for AnimatedIcon</vh></v>
-</v>
-<v t="swot.20221017093031.20"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.21"><vh>build()</vh>
-<v t="swot.20221017093031.22"><vh>SingleChildScrollView</vh>
-<v t="swot.20221017093031.23"><vh>Column</vh>
-<v t="swot.20221017093031.24"><vh>Row</vh>
-<v t="swot.20221017093031.25"><vh>ElevatedButton  -- show AboutDialog</vh>
-<v t="swot.20221017093031.26"><vh>showDialog</vh>
+<v t="swot.20221017093031.2"><vh>@file lib/main.dart</vh></v>
+<v t="swot.20221017093031.150"><vh>@clean README.md</vh></v>
+<v t="swot.20221017093031.151"><vh>A</vh>
 <v t="swot.20221017093031.152"><vh>AboutDialog</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.28"><vh>SizedBox -- show AboutListTile</vh>
 <v t="swot.20221017093031.153"><vh>AboutListTile</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.30"><vh>Divider</vh></v>
-<v t="swot.20221017093031.31"><vh>Row</vh>
-<v t="swot.20221017093031.32"><vh>Stack           -- show AbsorbPointer包含按钮不可点击</vh>
-<v t="swot.20221017093031.33"><vh>SizedBox</vh></v>
-<v t="swot.20221017093031.34"><vh>SizedBox</vh>
 <v t="swot.20221017093031.154"><vh>AbsorbPointer -- include button can not be clicked</vh>
 <v t="swot.20221017093031.155"><vh>ElevatedButton 不可点击</vh></v>
 </v>
-</v>
-</v>
-<v t="swot.20221017093031.37"><vh>ElevatedButton  -- show AlertDialog</vh>
-<v t="swot.20221017093031.38"><vh>showDialog</vh>
 <v t="swot.20221017093031.156"><vh>AlertDialog</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.40"><vh>Divider</vh></v>
-<v t="swot.20221017093031.41"><vh>Row</vh>
-<v t="swot.20221017093031.42"><vh>Container       -- show Align</vh>
 <v t="swot.20221017093031.157"><vh>Align</vh></v>
-</v>
-<v t="swot.20221017093031.44"><vh>GestureDetector -- show AnimatedAlign</vh>
+<v t="swot.20221017093031.158"><vh>Animated...</vh>
 <v t="swot.20221017093031.159"><vh>AnimatedAlign</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.46"><vh>Divider</vh></v>
-<v t="swot.20221017093031.47"><vh>Row</vh>
+<v t="swot.20221017093031.160"><vh>AnimatedBuilder</vh>
+<v t="swot.20221017093031.161"><vh>var for AnimatedBuilder</vh></v>
+<v t="swot.20221017093031.162"><vh>AnimationController for AnimatedBuilder</vh></v>
 <v t="swot.20221017093031.163"><vh>AnimatedBuilder</vh></v>
-<v t="swot.20221017093031.49"><vh>GestureDetector -- show AnimatedContainer</vh>
+</v>
 <v t="swot.20221017093031.164"><vh>AnimatedContainer</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.51"><vh>Divider</vh></v>
-<v t="swot.20221017093031.52"><vh>Row                -- show AnimatedCrossFade</vh>
-<v t="swot.20221017093031.53"><vh>TextButton</vh></v>
 <v t="swot.20221017093031.165"><vh>AnimatedCrossFade</vh></v>
-</v>
-<v t="swot.20221017093031.55"><vh>Divider</vh></v>
-<v t="swot.20221017093031.56"><vh>Row                -- show AnimatedDefaultTextStyle</vh>
-<v t="swot.20221017093031.57"><vh>TextButton</vh></v>
-<v t="swot.20221017093031.58"><vh>SizedBox</vh>
 <v t="swot.20221017093031.166"><vh>AnimatedDefaultTextStyle</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.60"><vh>Divider</vh></v>
-<v t="swot.20221017093031.61"><vh>Row</vh>
-<v t="swot.20221017093031.62"><vh>GestureDetector       -- show AnimatedIcon</vh>
+<v t="swot.20221017093031.167"><vh>AnimatedIcon</vh>
+<v t="swot.20221017093031.168"><vh>var for AnimatedIcon</vh></v>
+<v t="swot.20221017093031.169"><vh>AnimationController for AnimatedIcon</vh></v>
 <v t="swot.20221017093031.170"><vh>AnimatedIcon</vh></v>
 </v>
-<v t="swot.20221017093031.179"><vh>AnimatedModalBarrier  -- show AnimatedModalBarrier</vh></v>
-</v>
-<v t="swot.20221017093031.65"><vh>Divider</vh></v>
+<v t="swot.20221017093031.171"><vh>AnimatedList</vh>
+<v t="swot.20221017093031.172"><vh>var for AnimatedList</vh></v>
+<v t="swot.20221017093031.173"><vh>_addItem()             -- AnimatedList</vh></v>
+<v t="swot.20221017093031.174"><vh>_removeItem(int index) -- AnimatedList</vh></v>
 <v t="swot.20221017093031.175"><vh>show AnimatedList</vh>
 <v t="swot.20221017093031.176"><vh>AnimatedList</vh>
 <v t="swot.20221017093031.177"><vh>SizeTransition</vh></v>
 </v>
 </v>
-<v t="swot.20221017093031.69"><vh>Divider</vh></v>
-<v t="swot.20221017093031.194"><vh>show AnimatedOpacity</vh></v>
-<v t="swot.20221017093031.71"><vh>Divider</vh></v>
-<v t="swot.20221017093031.196"><vh>show AnimatedPadding</vh></v>
-<v t="swot.20221017093031.73"><vh>Divider</vh></v>
-<v t="swot.20221017093031.207"><vh>show AnimatedPhysicalModel</vh></v>
-<v t="swot.20221017093031.75"><vh>Divider</vh></v>
-<v t="swot.20221017093031.216"><vh>show AnimatedPositionedExample</vh></v>
-<v t="swot.20221017093031.77"><vh>Divider</vh></v>
-<v t="swot.20221017093031.226"><vh>show AnimatedRotationExample</vh></v>
-<v t="swot.20221017093031.79"><vh>Divider</vh></v>
-<v t="swot.20221017093031.235"><vh>show AnimatedSizeExample</vh></v>
-<v t="swot.20221017093031.81"><vh>Divider</vh></v>
-<v t="swot.20221017093031.251"><vh>show AnimatedSwitcherExample</vh></v>
-<v t="swot.20221017093031.83"><vh>Divider</vh></v>
-<v t="swot.20221017093031.253"><vh>AspectRatio</vh></v>
-<v t="swot.20221017093031.85"><vh>Divider</vh></v>
-<v t="swot.20221017093031.255"><vh>show AutoCompleteExample</vh></v>
-<v t="swot.20221017093031.87"><vh>Divider</vh></v>
-<v t="swot.20221017093031.88"><vh>SizedBox</vh></v>
 </v>
-</v>
-</v>
-</v>
+<v t="swot.20221017093031.178"><vh>AnimatedModalBarrier</vh>
+<v t="swot.20221017093031.179"><vh>AnimatedModalBarrier  -- show AnimatedModalBarrier</vh></v>
 <v t="swot.20221017093031.180"><vh>AnimatedModalBarrierExample</vh>
 <v t="swot.20221017093031.181"><vh>varible</vh></v>
 <v t="swot.20221017093031.182"><vh>initState()</vh></v>
@@ -133,6 +53,8 @@
 <v t="swot.20221017093031.186"><vh>_animatedModalBarrier</vh></v>
 </v>
 </v>
+</v>
+<v t="swot.20221017093031.187"><vh>AnimatedOpacity</vh>
 <v t="swot.20221017093031.188"><vh>AnimatedOpacityExample</vh>
 <v t="swot.20221017093031.189"><vh>varible</vh></v>
 <v t="swot.20221017093031.190"><vh>initState()</vh></v>
@@ -141,6 +63,10 @@
 <v t="swot.20221017093031.193"><vh>ElevatedButton</vh></v>
 </v>
 </v>
+<v t="swot.20221017093031.194"><vh>show AnimatedOpacity</vh></v>
+</v>
+<v t="swot.20221017093031.195"><vh>AnimatedPadding</vh>
+<v t="swot.20221017093031.196"><vh>show AnimatedPadding</vh></v>
 <v t="swot.20221017093031.197"><vh>AnimatedPaddingExample</vh>
 <v t="swot.20221017093031.198"><vh>varible</vh></v>
 <v t="swot.20221017093031.199"><vh>initState()</vh></v>
@@ -154,6 +80,9 @@
 </v>
 </v>
 </v>
+</v>
+<v t="swot.20221017093031.206"><vh>AnimatedPhysicalModel</vh>
+<v t="swot.20221017093031.207"><vh>show AnimatedPhysicalModel</vh></v>
 <v t="swot.20221017093031.208"><vh>AnimatedPhysicalModelExample</vh>
 <v t="swot.20221017093031.209"><vh>varible</vh></v>
 <v t="swot.20221017093031.210"><vh>initState()</vh></v>
@@ -163,6 +92,9 @@
 <v t="swot.20221017093031.214"><vh>AnimatedPhysicalModel</vh></v>
 </v>
 </v>
+</v>
+<v t="swot.20221017093031.215"><vh>AnimatedPositioned</vh>
+<v t="swot.20221017093031.216"><vh>show AnimatedPositionedExample</vh></v>
 <v t="swot.20221017093031.217"><vh>AnimatedPositionedExample</vh>
 <v t="swot.20221017093031.218"><vh>varible</vh></v>
 <v t="swot.20221017093031.219"><vh>initState()</vh></v>
@@ -175,6 +107,9 @@
 </v>
 </v>
 </v>
+</v>
+<v t="swot.20221017093031.225"><vh>AnimatedRotation</vh>
+<v t="swot.20221017093031.226"><vh>show AnimatedRotationExample</vh></v>
 <v t="swot.20221017093031.227"><vh>AnimatedRotationExample</vh>
 <v t="swot.20221017093031.228"><vh>varible</vh></v>
 <v t="swot.20221017093031.229"><vh>initState()</vh></v>
@@ -184,6 +119,9 @@
 <v t="swot.20221017093031.233"><vh>Padding</vh></v>
 </v>
 </v>
+</v>
+<v t="swot.20221017093031.234"><vh>AnimatedSize</vh>
+<v t="swot.20221017093031.235"><vh>show AnimatedSizeExample</vh></v>
 <v t="swot.20221017093031.236"><vh>AnimatedSizeExample</vh>
 <v t="swot.20221017093031.237"><vh>varible</vh></v>
 <v t="swot.20221017093031.238"><vh>initState()</vh></v>
@@ -193,6 +131,8 @@
 <v t="swot.20221017093031.242"><vh>GestureDetector AnimatedSize FlutterLogo</vh></v>
 </v>
 </v>
+</v>
+<v t="swot.20221017093031.243"><vh>AnimatedSwitcher</vh>
 <v t="swot.20221017093031.244"><vh>AnimatedSwitcherExample</vh>
 <v t="swot.20221017093031.245"><vh>varible</vh></v>
 <v t="swot.20221017093031.246"><vh>initState()</vh></v>
@@ -202,97 +142,121 @@
 <v t="swot.20221017093031.250"><vh>AnimatedSwitcher</vh></v>
 </v>
 </v>
+<v t="swot.20221017093031.251"><vh>show AnimatedSwitcherExample</vh></v>
+</v>
+</v>
+<v t="swot.20221017093031.252"><vh>AppBar</vh></v>
+<v t="swot.20221017093031.253"><vh>AspectRatio</vh></v>
+<v t="swot.20221017093031.254"><vh>AutoComplete</vh>
+<v t="swot.20221017093031.255"><vh>show AutoCompleteExample</vh></v>
 <v t="swot.20221017093031.256"><vh>AutoCompleteExample 不要在屏幕中部以下(会被软键盘挡住)</vh>
 <v t="swot.20221017093031.257"><vh>varible</vh></v>
 <v t="swot.20221017093031.258"><vh>build()</vh></v>
 </v>
 </v>
-<v t="swot.20221017093031.150"><vh>@clean README.md</vh></v>
-<v t="swot.20221017093031.151"><vh>A</vh>
-<v t="swot.20221017093031.152"></v>
-<v t="swot.20221017093031.153"></v>
-<v t="swot.20221017093031.154"></v>
-<v t="swot.20221017093031.156"></v>
-<v t="swot.20221017093031.157"></v>
-<v t="swot.20221017093031.158"><vh>Animated...</vh>
-<v t="swot.20221017093031.159"></v>
-<v t="swot.20221017093031.160"><vh>AnimatedBuilder</vh>
-<v t="swot.20221017093031.161"></v>
-<v t="swot.20221017093031.162"></v>
-<v t="swot.20221017093031.163"></v>
 </v>
-<v t="swot.20221017093031.164"></v>
-<v t="swot.20221017093031.165"></v>
-<v t="swot.20221017093031.166"></v>
-<v t="swot.20221017093031.167"><vh>AnimatedIcon</vh>
-<v t="swot.20221017093031.168"></v>
-<v t="swot.20221017093031.169"></v>
-<v t="swot.20221017093031.170"></v>
+<v t="swot.20221017093031.259"><vh>B</vh>
+<v t="swot.20221021173546.1"><vh>BackdropFilterExample</vh>
+<v t="swot.20221019111317.2"><vh>BackdropFilterExample</vh>
+<v t="swot.20221019111317.3"><vh>build()</vh></v>
 </v>
-<v t="swot.20221017093031.171"><vh>AnimatedList</vh>
-<v t="swot.20221017093031.172"></v>
-<v t="swot.20221017093031.173"></v>
-<v t="swot.20221017093031.174"></v>
-<v t="swot.20221017093031.175"></v>
+<v t="swot.20221021173506.1"><vh>show BackdropFilterExample</vh></v>
 </v>
-<v t="swot.20221017093031.178"><vh>AnimatedModalBarrier</vh>
-<v t="swot.20221017093031.179"></v>
-<v t="swot.20221017093031.180"></v>
-</v>
-<v t="swot.20221017093031.187"><vh>AnimatedOpacity</vh>
-<v t="swot.20221017093031.188"></v>
-<v t="swot.20221017093031.194"></v>
-</v>
-<v t="swot.20221017093031.195"><vh>AnimatedPadding</vh>
-<v t="swot.20221017093031.196"></v>
-<v t="swot.20221017093031.197"></v>
-</v>
-<v t="swot.20221017093031.206"><vh>AnimatedPhysicalModel</vh>
-<v t="swot.20221017093031.207"></v>
-<v t="swot.20221017093031.208"></v>
-</v>
-<v t="swot.20221017093031.215"><vh>AnimatedPositioned</vh>
-<v t="swot.20221017093031.216"></v>
-<v t="swot.20221017093031.217"></v>
-</v>
-<v t="swot.20221017093031.225"><vh>AnimatedRotation</vh>
-<v t="swot.20221017093031.226"></v>
-<v t="swot.20221017093031.227"></v>
-</v>
-<v t="swot.20221017093031.234"><vh>AnimatedSize</vh>
-<v t="swot.20221017093031.235"></v>
-<v t="swot.20221017093031.236"></v>
-</v>
-<v t="swot.20221017093031.243"><vh>AnimatedSwitcher</vh>
-<v t="swot.20221017093031.244"></v>
-<v t="swot.20221017093031.251"></v>
+<v t="swot.20221021174618.1"><vh>BannerExample</vh>
+<v t="swot.20221021175217.2"><vh>BannerExample</vh>
+<v t="swot.20221021175217.3"><vh>build()</vh>
+<v t="swot.20221021175330.1"><vh>Center</vh>
+<v t="swot.20221021175401.1"><vh>Container</vh>
+<v t="swot.20221021180745.1"><vh>ClipRect</vh>
+<v t="swot.20221021180828.1"><vh>Banner</vh>
+<v t="swot.20221021175506.1"><vh>Container</vh>
+<v t="swot.20221021175604.1"><vh>Padding</vh>
+<v t="swot.20221021175702.1"><vh>Column</vh>
+<v t="swot.20221021175915.1"><vh>Image</vh></v>
+<v t="swot.20221021180035.1"><vh>SizedBox</vh></v>
+<v t="swot.20221021180106.1"><vh>Row</vh></v>
 </v>
 </v>
-<v t="swot.20221017093031.252"></v>
-<v t="swot.20221017093031.253"></v>
-<v t="swot.20221017093031.254"><vh>AutoComplete</vh>
-<v t="swot.20221017093031.255"></v>
-<v t="swot.20221017093031.256"></v>
 </v>
 </v>
-<v t="swot.20221017093031.259"><vh>B</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221021181118.1"><vh>show BannerExample</vh></v>
+</v>
+<v t="swot.20221021181511.1"><vh>BaselineExample</vh>
+<v t="swot.20221021181642.2"><vh>BaselineExample</vh>
+<v t="swot.20221021181642.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221021181700.1"><vh>show BaselineExample</vh></v>
+</v>
+<v t="swot.20221021182532.1"><vh>BlockSemanticsExample -- 适用于读屏功能的处理</vh>
+<v t="swot.20221022083314.1"><vh>&lt;&lt; showSemanticsDebugger &gt;&gt;</vh></v>
+<v t="swot.20221022080218.2"><vh>BlockSemanticsExample</vh>
+<v t="swot.20221022083723.1"><vh>varible</vh></v>
+<v t="swot.20221022080218.3"><vh>initState()</vh></v>
+<v t="swot.20221022080218.4"><vh>dispose()</vh></v>
+<v t="swot.20221022080218.5"><vh>build()</vh>
+<v t="swot.20221022080422.1"><vh>SizedBox</vh>
+<v t="swot.20221022083203.1"><vh>SizedBox</vh>
+<v t="swot.20221022083954.1"><vh>Column</vh>
+<v t="swot.20221022084045.1"><vh>OutlinedButton</vh></v>
+<v t="swot.20221022084513.1"><vh>if (isShow)</vh>
+<v t="swot.20221022091825.1"><vh>BlockSemantics</vh>
+<v t="swot.20221022090937.1"><vh>Card</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221022085519.1"><vh>show BlockSemanticsExample</vh></v>
+</v>
+<v t="swot.20221022093209.1"><vh>BottomNavigationBarExample</vh>
+<v t="swot.20221022094100.2"><vh>BottomNavigationBarExample</vh>
+<v t="swot.20221022094133.1"><vh>varible</vh></v>
+<v t="swot.20221022094100.3"><vh>initState()</vh></v>
+<v t="swot.20221022094100.4"><vh>dispose()</vh></v>
+<v t="swot.20221022094100.5"><vh>build()</vh>
+<v t="swot.20221022095720.2"><vh>Scaffold</vh>
+<v t="swot.20221022101748.1"><vh>appBar</vh></v>
+<v t="swot.20221022095720.4"><vh>body</vh></v>
+<v t="swot.20221022095720.5"><vh>bottomNavigationBar</vh></v>
+</v>
+</v>
+</v>
+<v t="swot.20221022101129.1"><vh>show BottomNavigationBarExample</vh></v>
+</v>
+<v t="swot.20221022104755.1"><vh>BottomSheetExample</vh>
+<v t="swot.20221022104843.2"><vh>BottomSheetExample</vh>
+<v t="swot.20221022104843.3"><vh>initState()</vh></v>
+<v t="swot.20221022104843.4"><vh>dispose()</vh></v>
+<v t="swot.20221022104843.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022094818.1"><vh>show BottomSheetExample</vh></v>
+</v>
+<v t="swot.20221022104749.1"><vh>BuilderExample</vh>
+<v t="swot.20221022110627.2"><vh>BuilderExample</vh>
+<v t="swot.20221022110627.3"><vh>build()</vh></v>
+<v t="swot.20221022110900.1"><vh>myBuilderWidget()</vh></v>
+</v>
+</v>
+<v t="swot.20221022104750.1"><vh>newHeadline</vh></v>
+<v t="swot.20221022104750.2"><vh>newHeadline</vh></v>
+<v t="swot.20221022104751.1"><vh>newHeadline</vh></v>
+<v t="swot.20221022104751.2"><vh>newHeadline</vh></v>
+<v t="swot.20221022104751.3"><vh>newHeadline</vh></v>
+<v t="swot.20221022104752.1"><vh>newHeadline</vh></v>
+</v>
 </v>
 </vnodes>
 <tnodes>
 <t tx="swot.20221017093031.1">@language dart
 @tabwidth -2
 </t>
-<t tx="swot.20221017093031.10">// AnimatedAlign
-// AnimatedContainer
-// AnimatedCrossFade
-// AnimatedDefaultTextStyle
-bool selected = false;
-
-// AnimatedDefaultTextStyle
-double _fontSize = 20;
-Color _color = Colors.blue;
-</t>
-<t tx="swot.20221017093031.14"></t>
 <t tx="swot.20221017093031.150">@language md
 ## Flutter built in Widgets
 
@@ -325,6 +289,17 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
     AppBar
     AspectRatio
     AutoComplete
+
+### B...
+
+    BackdropFilterExample
+    BannerExample
+    BaselineExample
+    BlockSemanticsExample -- 适用于读屏功能的处理
+    BottomNavigationBarExample
+    BottomSheetExample
+    BuilderExample
+
 </t>
 <t tx="swot.20221017093031.151">for node in p.children():
   print(node.h);
@@ -504,12 +479,6 @@ late AnimationController _controllerIcon;
   vsync: this  // use TickerProviderStateMixin
 );
 </t>
-<t tx="swot.20221017093031.17">@override
-void initState() {
-  @others
-  super.initState();
-}
-</t>
 <t tx="swot.20221017093031.170">@doc
 @language asciidoc
 :nofooter:
@@ -554,7 +523,7 @@ final GlobalKey&lt;AnimatedListState&gt; _key = GlobalKey();
               "Deleted",
               style: TextStyle(fontSize: 14),
             ),
-            visualDensity: const VisualDensity(vertical: -3),  // adjust listTile height
+            visualDensity: VisualDensity(vertical: -3),  // adjust listTile height
             dense: true,
           ),
         ),
@@ -767,18 +736,6 @@ void initState() {
   super.initState();
 }
 </t>
-<t tx="swot.20221017093031.2">@language dart
-@tabwidth -2
-@others
-
-</t>
-<t tx="swot.20221017093031.20">@override
-void dispose() {
-  _controllerBuilder.dispose();  // AnimatedBuilder
-  _controllerIcon.dispose();     // AnimatedList
-  super.dispose();
-}
-</t>
 <t tx="swot.20221017093031.200">@override
 Widget build(BuildContext context) {
   return
@@ -844,13 +801,6 @@ class _AnimatedPhysicalModelExampleState extends State&lt;AnimatedPhysicalModelE
 
 </t>
 <t tx="swot.20221017093031.209">bool isFlat = true;
-</t>
-<t tx="swot.20221017093031.21">@override
-Widget build(BuildContext context) {
-  return
-    @others
-  ;
-}
 </t>
 <t tx="swot.20221017093031.210">@override
 void initState() {
@@ -925,11 +875,6 @@ void initState() {
   super.initState();
 }
 </t>
-<t tx="swot.20221017093031.22">SingleChildScrollView(
-  child:
-    @others
-)
-</t>
 <t tx="swot.20221017093031.220">@override
 void dispose() {
   super.dispose();
@@ -1000,13 +945,6 @@ void initState() {
   super.initState();
 }
 </t>
-<t tx="swot.20221017093031.23">Column(
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-    @others
-  ]
-),
-</t>
 <t tx="swot.20221017093031.230">@override
 void dispose() {
   super.dispose();
@@ -1073,14 +1011,6 @@ void initState() {
 void dispose() {
   super.dispose();
 }
-</t>
-<t tx="swot.20221017093031.24">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-    @others
-  ],
-),
 </t>
 <t tx="swot.20221017093031.240">@language dart
 @tabwidth -2
@@ -1166,13 +1096,6 @@ Widget build(BuildContext context) {
 ),
 
 </t>
-<t tx="swot.20221017093031.25">ElevatedButton(
-  child: const Text('Show About Dialog'),
-  onPressed: (){
-    @others
-  }
-),
-</t>
 <t tx="swot.20221017093031.250">AnimatedSwitcher(
   duration: const Duration(milliseconds: 500),
   child: Text(
@@ -1192,13 +1115,13 @@ Widget build(BuildContext context) {
 <t tx="swot.20221017093031.251">AnimatedSwitcherExample(),
 </t>
 <t tx="swot.20221017093031.252">appBar: AppBar(
-  title: const Text('demo'),
+  title: const Text('Demo A'),
   centerTitle: true,
 
-  leading: IconButton(
-    icon: const Icon(Icons.menu),
-    onPressed: (){},
-  ),
+  // leading: IconButton(
+    // icon: const Icon(Icons.menu),
+    // onPressed: (){},
+  // ),
 
   actions: [
     IconButton(
@@ -1266,271 +1189,439 @@ Widget build(BuildContext context) {
   );
 }
 </t>
-<t tx="swot.20221017093031.259"></t>
-<t tx="swot.20221017093031.26">showDialog(
-  context: context,
-  builder: (context) =&gt;
-    @others
-);
+<t tx="swot.20221017093031.259">for node in p.children():
+  print(node.h);
 </t>
-<t tx="swot.20221017093031.28">@doc
-@language asciidoc
-:nofooter:
-https://www.flutterbeads.com/renderbox-was-not-laid-out/?[3 Ways to Fix RenderBox was not Laid Out in Flutter [2022]]
-
-使用 SizedBox 可以解决上面报错的问题
-
-@c
-@language dart
+<t tx="swot.20221019111317.2">@language dart
 @tabwidth -2
-SizedBox(
-  width: 200.0,
-  height: 40.0,
-  child:
-    @others
-),
-</t>
-<t tx="swot.20221017093031.3">import 'package:flutter/material.dart';
-import 'dart:math' as math;
-import 'dart:async';
-</t>
-<t tx="swot.20221017093031.30">Divider(),</t>
-<t tx="swot.20221017093031.31">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221017093031.32">Stack(
-  alignment: AlignmentDirectional.center,
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221017093031.33">SizedBox(
-  width: 100.0,
-  height: 30.0,
-  child: ElevatedButton(
-    onPressed: (){},
-    child: null,
-  ),
-),
-</t>
-<t tx="swot.20221017093031.34">SizedBox(
-  width: 40.0,
-  height: 60.0,
-  child:
-    @others
-),
-</t>
-<t tx="swot.20221017093031.37">ElevatedButton(
-  child: const Text('Show Alert Dialog'),
-  onPressed: (){
-    @others
-  },
-),
-</t>
-<t tx="swot.20221017093031.38">showDialog(
-  context: context,
-  builder: (context) =&gt;
-    @others
-);
-</t>
-<t tx="swot.20221017093031.4">void main(){
-  runApp(MyApp());
+class BackdropFilterExample extends StatelessWidget {
+  const BackdropFilterExample({ Key? key }) : super(key: key);
+  @others
 }
 </t>
-<t tx="swot.20221017093031.40">Divider(),</t>
-<t tx="swot.20221017093031.41">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
+<t tx="swot.20221019111317.3">@override
+Widget build(BuildContext context) {
+  return Stack(
+    children: &lt;Widget&gt;[
+      Text(
+        '0' * 300,
+        style: const TextStyle(
+          color: Colors.green,
+        ),
+      ),
+      Center(
+        child: ClipRect(
+          child: BackdropFilter(
+            filter: ImageFilter.blur(
+              sigmaX: 4.0,
+              sigmaY: 4.0,
+            ),
+            child: Container(
+              alignment: Alignment.center,
+              width: 100,
+              height: 100,
+              child: const Text('Blur'),
+            ),
+          ),
+        ),
+      ),
+    ],
+  );
+}
+</t>
+<t tx="swot.20221021173506.1">BackdropFilterExample(),
+</t>
+<t tx="swot.20221021173546.1"></t>
+<t tx="swot.20221021174618.1"></t>
+<t tx="swot.20221021175217.2">@language dart
+@tabwidth -2
+class BannerExample extends StatelessWidget {
+  const BannerExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221021175217.3">@override
+Widget build(BuildContext context) {
+  return
     @others
-  ],
+}
+</t>
+<t tx="swot.20221021175330.1">Center(
+  child:
+    @others
+);
+</t>
+<t tx="swot.20221021175401.1">Container(
+  margin: const EdgeInsets.all(10.0),
+  child:
+    @others
 ),
 </t>
-<t tx="swot.20221017093031.42">Container(
-  margin: const EdgeInsets.symmetric(vertical: 4.0),
-  height: 40.0,
-  width: 100.0,
+<t tx="swot.20221021175506.1">Container(
   color: Colors.blueGrey,
   child:
     @others
 ),
 </t>
-<t tx="swot.20221017093031.44">GestureDetector(
-  onTap: (){
-    setState((){
-      selected = !selected;
-    });
-  },
-  child: Center(
-    child: Container(
-      width: 150.0,
-      height: 40.0,
-      color: Colors.grey,
-      child:
-        @others
-    ),
-  ),
+<t tx="swot.20221021175604.1">Padding(
+  padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
+  child:
+    @others
 ),
 </t>
-<t tx="swot.20221017093031.46">Divider(),</t>
-<t tx="swot.20221017093031.47">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
+<t tx="swot.20221021175702.1">Column(
+  mainAxisSize: MainAxisSize.min,
   children: [
     @others
   ],
 ),
 </t>
-<t tx="swot.20221017093031.49">GestureDetector(
-  onTap: (){
-    setState((){
-      selected = !selected;
-    });
-  },
-  child: Center(
-    child:
-      @others
-  ),
+<t tx="swot.20221021175915.1">Image.network(
+  'https://img1.baidu.com/it/u=1855083458,281793390&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=989&amp;h=500',
 ),
 </t>
-<t tx="swot.20221017093031.5">class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'demo',
-      home: Home(),
-      theme: ThemeData(
-        // fontFamily: 'SourceSansPro',
-      ),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
+<t tx="swot.20221021180035.1">const SizedBox(height: 10),
 </t>
-<t tx="swot.20221017093031.51">Divider(),</t>
-<t tx="swot.20221017093031.52">Row(
+<t tx="swot.20221021180106.1">Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
   children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221017093031.53">Container(
-  height: 30.0,
-  child:TextButton(
-    onPressed:(){
-      setState((){
-        selected = !selected;
-      });
-    },
-    child: const Text(
-      'Switch image',
+    const Text(
+      'Flutter Course',
       style: TextStyle(
-        color: Colors.black,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
       ),
     ),
-  ),
-),
-</t>
-<t tx="swot.20221017093031.55">Divider(),</t>
-<t tx="swot.20221017093031.56">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
-    @others
+    ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.orangeAccent,
+      ),
+      child: const Text('Get now'),
+      onPressed: () {},
+    ),
   ],
 ),
 </t>
-<t tx="swot.20221017093031.57">TextButton(
-  onPressed: (){
-    setState((){
-      _fontSize = selected ? 40 : 20;
-      _color = selected ? Colors.blue : Colors.red;
-      selected = !selected;
-    });
-  },
-  child: const Text('Switch Font'),
-),
-</t>
-<t tx="swot.20221017093031.58">SizedBox(
-  height: 40,
+<t tx="swot.20221021180745.1">ClipRect(
   child:
     @others
 ),
 </t>
-<t tx="swot.20221017093031.6">class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: Demo(),
-    );
-  }
-}
-</t>
-<t tx="swot.20221017093031.60">Divider(),</t>
-<t tx="swot.20221017093031.61">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221017093031.62">GestureDetector(
-  onTap: () {
-    if (_isPlay == false) {
-      _controllerIcon.forward();  // 下个图标
-      _isPlay = true;
-    } else {
-      _controllerIcon.reverse();  // 前个图标
-      _isPlay = false;
-    }
-  },
+<t tx="swot.20221021180828.1">Banner(
+  message: "25% off",
+  location: BannerLocation.topEnd,
+  color: Colors.red,
   child:
     @others
 ),
 </t>
-<t tx="swot.20221017093031.65">Divider(),</t>
-<t tx="swot.20221017093031.69">Divider(),</t>
-<t tx="swot.20221017093031.71">Divider(),</t>
-<t tx="swot.20221017093031.73">Divider(),</t>
-<t tx="swot.20221017093031.75">Divider(),</t>
-<t tx="swot.20221017093031.77">Divider(),</t>
-<t tx="swot.20221017093031.79">Divider(),</t>
-<t tx="swot.20221017093031.8">@language dart
+<t tx="swot.20221021181118.1">BannerExample(),
+</t>
+<t tx="swot.20221021181511.1"></t>
+<t tx="swot.20221021181642.2">@language dart
 @tabwidth -2
-class Demo extends StatefulWidget {
-  const Demo({super.key});
+class BaselineExample extends StatelessWidget {
+  const BaselineExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221021181642.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: Container(
+      width: 100,
+      height: 100,
+      color: Colors.orange,
+      child: const Baseline(
+        baseline: 0,
+        // baseline: 30,
+        baselineType: TextBaseline.alphabetic,
+        child: FlutterLogo(size: 30,),
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221021181700.1">BaselineExample(),
+</t>
+<t tx="swot.20221021182532.1"></t>
+<t tx="swot.20221022080218.2">@language dart
+@tabwidth -2
+class BlockSemanticsExample extends StatefulWidget {
+  const BlockSemanticsExample({super.key});
 
   @override
-  State&lt;Demo&gt; createState() =&gt; _DemoState();
+  State&lt;BlockSemanticsExample&gt; createState() =&gt; _BlockSemanticsExampleState();
 }
 
-class _DemoState extends State&lt;Demo&gt; with TickerProviderStateMixin {
-  // AnimationController use TickerProviderStateMixin
+class _BlockSemanticsExampleState extends State&lt;BlockSemanticsExample&gt;{
   @others
 }
 
 </t>
-<t tx="swot.20221017093031.81">Divider(),</t>
-<t tx="swot.20221017093031.83">Divider(),</t>
-<t tx="swot.20221017093031.85">Divider(),</t>
-<t tx="swot.20221017093031.87">Divider(),</t>
-<t tx="swot.20221017093031.88">SizedBox(
-  height: 200.0,
-),</t>
-<t tx="swot.20221017093031.9"></t>
+<t tx="swot.20221022080218.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022080218.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022080218.5">@override
+Widget build(BuildContext context) {
+  return
+    @others
+}
+</t>
+<t tx="swot.20221022080422.1">SizedBox(
+  width: double.infinity,
+  child:
+    @others
+);
+</t>
+<t tx="swot.20221022083203.1">SizedBox(
+  width: 500,
+  height: 135,
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221022083314.1">// showSemanticsDebugger: true,
+</t>
+<t tx="swot.20221022083723.1">bool isShow = false;
+</t>
+<t tx="swot.20221022083954.1">Column(
+  children: [
+    @others
+  ]
+),
+</t>
+<t tx="swot.20221022084045.1">OutlinedButton(
+  onPressed: () {
+    setState(() {
+      isShow = true;
+    });
+  },
+  child: const Text('Click'),
+),
+</t>
+<t tx="swot.20221022084513.1">if (isShow)
+@others
+</t>
+<t tx="swot.20221022085519.1">BlockSemanticsExample(),
+</t>
+<t tx="swot.20221022090937.1">Card(
+  color: Colors.orangeAccent,
+  child: SizedBox(
+    width: 200,
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const Text('This is a card'),
+        TextButton(
+          child: const Text('Close'),
+          onPressed: () =&gt; setState(() {
+            isShow = false;
+          }),
+        ),
+      ],
+    ),
+  ),
+),
+</t>
+<t tx="swot.20221022091825.1">BlockSemantics(
+  blocking: isShow,  // hidden OutlinedButton?
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221022093209.1"></t>
+<t tx="swot.20221022094100.2">@language dart
+@tabwidth -2
+class BottomNavigationBarExample extends StatefulWidget {
+  const BottomNavigationBarExample({super.key});
+
+  @override
+  State&lt;BottomNavigationBarExample&gt; createState() =&gt; _BottomNavigationBarExampleState();
+}
+
+class _BottomNavigationBarExampleState extends State&lt;BottomNavigationBarExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022094100.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022094100.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022094100.5">@override
+Widget build(BuildContext context) {
+  @others
+}
+</t>
+<t tx="swot.20221022094133.1">int _currentIndex = 0;
+
+List&lt;Widget&gt; body = const [
+  Icon(Icons.home),
+  Icon(Icons.menu),
+  Icon(Icons.person),
+];
+
+</t>
+<t tx="swot.20221022094818.1">BottomSheetExample(),
+</t>
+<t tx="swot.20221022095720.2">return Scaffold(
+  @others
+);
+
+</t>
+<t tx="swot.20221022095720.4">body: Center(
+  child: body[_currentIndex],
+),
+</t>
+<t tx="swot.20221022095720.5">bottomNavigationBar: BottomNavigationBar(  // new 底部
+  fixedColor: Colors.white,
+  backgroundColor: Colors.blue,
+  items: const [
+    BottomNavigationBarItem(
+      label: 'Home',
+      icon: Icon(Icons.home),
+    ),
+    BottomNavigationBarItem(
+      label: 'Menu',
+      icon: Icon(Icons.menu),
+    ),
+    BottomNavigationBarItem(
+      label: 'Profile',
+      icon: Icon(Icons.person),
+    ),
+  ],
+  currentIndex: _currentIndex,
+  type: BottomNavigationBarType.fixed,
+  // type: BottomNavigationBarType.shifting, // 很有意思的样式
+  onTap: (int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+),
+</t>
+<t tx="swot.20221022101129.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('show BottomNavigationBarExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; BottomNavigationBarExample(),
+      ),
+    );
+  },
+),
+
+
+</t>
+<t tx="swot.20221022101748.1">appBar: AppBar(
+  title: Text('NewPage'),
+  // leading: Icon(Icons.menu),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221022104749.1"></t>
+<t tx="swot.20221022104750.1"></t>
+<t tx="swot.20221022104750.2"></t>
+<t tx="swot.20221022104751.1"></t>
+<t tx="swot.20221022104751.2"></t>
+<t tx="swot.20221022104751.3"></t>
+<t tx="swot.20221022104752.1"></t>
+<t tx="swot.20221022104755.1"></t>
+<t tx="swot.20221022104843.2">@language dart
+@tabwidth -2
+class BottomSheetExample extends StatefulWidget {
+  const BottomSheetExample({super.key});
+
+  @override
+  State&lt;BottomSheetExample&gt; createState() =&gt; _BottomSheetExampleState();
+}
+
+class _BottomSheetExampleState extends State&lt;BottomSheetExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022104843.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022104843.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022104843.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ElevatedButton(
+      child: const Text('Modal Bottom Sheet'),
+      onPressed: () {
+        showModalBottomSheet(
+          context: context,
+          builder: (BuildContext context) {
+            return SizedBox(
+              height: 200,
+              child: Center(
+                child: ElevatedButton(
+                  child: const Text('Close'),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ),
+            );
+          },
+        );
+      },
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022110627.2">@language dart
+@tabwidth -2
+class BuilderExample extends StatelessWidget {
+  const BuilderExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022110627.3">@override
+Widget build(BuildContext context) {
+  return myBuilderWidget();
+}
+</t>
+<t tx="swot.20221022110900.1">// 不加 Builder,则无法找到上面 build's context, 
+myBuilderWidget() =&gt; Builder(
+  builder: (context) {
+    return Text(
+      'Text with Theme',
+      // context 需要使用上面的 Builder 来获取
+      style: Theme.of(context).textTheme.displayLarge,
+    );
+  }
+);
+</t>
 </tnodes>
 </leo_file>

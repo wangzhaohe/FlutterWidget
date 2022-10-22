@@ -1,17 +1,18 @@
 //@+leo-ver=5-thin
-//@+node:swot.20221014173016.2: * @file lib/main.dart
+//@+node:swot.20221017093031.2: * @file lib/main.dart
 //@@language dart
 //@@tabwidth -2
 //@+others
-//@+node:swot.20221014173016.3: ** import
-import 'package:flutter/material.dart';
-import 'dart:math' as math;
+//@+node:swot.20221017093031.3: ** import
 import 'dart:async';
-//@+node:swot.20221014173016.4: ** main
+import 'dart:math' as math;
+import 'dart:ui';
+import 'package:flutter/material.dart';
+//@+node:swot.20221017093031.4: ** main
 void main(){
   runApp(MyApp());
 }
-//@+node:swot.20221014173016.5: ** MyApp -- MaterialApp
+//@+node:swot.20221017093031.5: ** MyApp -- MaterialApp
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -19,31 +20,109 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'demo',
-      home: Home(),
+      home: const Home(),
       theme: ThemeData(
         // fontFamily: 'SourceSansPro',
       ),
       debugShowCheckedModeBanner: false,
+      //@+<< showSemanticsDebugger >>
+      //@+node:swot.20221022083314.1: *3* << showSemanticsDebugger >>
+      // showSemanticsDebugger: true,
+      //@-<< showSemanticsDebugger >>
+      //@+<< routes >>
+      //@+node:swot.20221021132401.1: *3* << routes >>
+      //@@language dart
+      routes: {
+        'home': (context) => Home(),
+        'a': (context) => A(),
+        'b': (context) => B(),
+      },
+
+      initialRoute: 'home',
+
+      // onUnknownRoute: (RouteSettings setting) => MaterialPageRoute(
+        // builder: (context) => UnknowPage(),
+      // ),
+      //@-<< routes >>
     );
   }
 }
-//@+node:swot.20221014173016.6: ** Home  -- Scaffold
+//@+node:swot.20221021133107.2: ** Home
+//@@language dart
+//@@tabwidth -2
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221021133107.3: *3* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221021135715.1: *4* SafeArea
+      SafeArea(
+        child:
+          //@+others
+          //@+node:swot.20221021141328.1: *5* Scaffold
+          Scaffold(
+            body:
+              //@+others
+              //@+node:swot.20221021133625.1: *6* Wrap
+              Wrap(
+                spacing: 8.0,
+                children: [
+                  //@+others
+                  //@+node:swot.20221021134037.2: *7* ElevatedButton A
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'a');
+                    },
+                    child: const Text('A'),
+                  ),
+
+                  //@+node:swot.20221021171707.1: *7* ElevatedButton B
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'b');
+                    },
+                    child: const Text('B'),
+                  ),
+
+                  //@-others
+                ]
+              ),
+              //@-others
+          ),
+          //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+//@+node:swot.20221021133027.1: ** A Example
+//@+node:swot.20221017093031.6: *3* A  -- Scaffold
+class A extends StatelessWidget {
+  const A({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       //@+others
-      //@+node:swot.20221016113356.1: *3* AppBar
+      //@+node:swot.20221017093031.252: *4* AppBar
       appBar: AppBar(
-        title: const Text('demo'),
+        title: const Text('Demo A'),
         centerTitle: true,
 
-        leading: IconButton(
-          icon: const Icon(Icons.menu),
-          onPressed: (){},
-        ),
+        // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+        // ),
 
         actions: [
           IconButton(
@@ -63,25 +142,25 @@ class Home extends StatelessWidget {
         elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
       ),
       //@-others
-      body: Demo(),
+      body: DemoA(),
     );
   }
 }
-//@+node:swot.20221014173224.2: ** Demo
+//@+node:swot.20221017093031.8: *3* DemoA
 //@@language dart
 //@@tabwidth -2
-class Demo extends StatefulWidget {
-  const Demo({super.key});
+class DemoA extends StatefulWidget {
+  const DemoA({super.key});
 
   @override
-  State<Demo> createState() => _DemoState();
+  State<DemoA> createState() => _DemoAState();
 }
 
-class _DemoState extends State<Demo> with TickerProviderStateMixin {
+class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
   // AnimationController use TickerProviderStateMixin
   //@+others
-  //@+node:swot.20221014210933.1: *3* variable
-  //@+node:swot.20221014205239.1: *4* var for AnimatedXXX
+  //@+node:swot.20221017093031.9: *4* variable
+  //@+node:swot.20221017093031.10: *5* var for AnimatedXXX
   // AnimatedAlign
   // AnimatedContainer
   // AnimatedCrossFade
@@ -91,16 +170,16 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
   // AnimatedDefaultTextStyle
   double _fontSize = 20;
   Color _color = Colors.blue;
-  //@+node:swot.20221015130023.1: *4* var for AnimatedIcon
+  //@+node:swot.20221017093031.168: *5* var for AnimatedIcon
   bool _isPlay = false;
   late AnimationController _controllerIcon;
-  //@+node:swot.20221015123907.1: *4* var for AnimatedBuilder
+  //@+node:swot.20221017093031.161: *5* var for AnimatedBuilder
   late AnimationController _controllerBuilder;
-  //@+node:swot.20221015114614.1: *4* var for AnimatedList
+  //@+node:swot.20221017093031.172: *5* var for AnimatedList
   final _items = [];
   final GlobalKey<AnimatedListState> _key = GlobalKey();
-  //@+node:swot.20221015114412.1: *3* function
-  //@+node:swot.20221015114250.1: *4* _addItem()             -- AnimatedList
+  //@+node:swot.20221017093031.14: *4* function
+  //@+node:swot.20221017093031.173: *5* _addItem()             -- AnimatedList
   void _addItem() {
     _items.insert(0, "Item ${_items.length + 1}");
     _key.currentState!.insertItem(
@@ -108,7 +187,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
       duration: const Duration(seconds: 1),
     );
   }
-  //@+node:swot.20221015113956.1: *4* _removeItem(int index) -- AnimatedList
+  //@+node:swot.20221017093031.174: *5* _removeItem(int index) -- AnimatedList
   void _removeItem(int index) {
     _key.currentState!.removeItem(
       index,
@@ -123,7 +202,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                 "Deleted",
                 style: TextStyle(fontSize: 14),
               ),
-              visualDensity: const VisualDensity(vertical: -3),  // adjust listTile height
+              visualDensity: VisualDensity(vertical: -3),  // adjust listTile height
               dense: true,
             ),
           ),
@@ -133,17 +212,17 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
     );
     _items.removeAt(index);
   }
-  //@+node:swot.20221014173224.3: *3* initState()
+  //@+node:swot.20221017093031.17: *4* initState()
   @override
   void initState() {
     //@+others
-    //@+node:swot.20221015121016.1: *4* AnimationController for AnimatedBuilder
+    //@+node:swot.20221017093031.162: *5* AnimationController for AnimatedBuilder
     _controllerBuilder = AnimationController(
       duration: const Duration(seconds: 10),  // 转一圈的时间
       vsync: this,                            // use TickerProviderStateMixin
     )..repeat();                              // 10s 后重复
 
-    //@+node:swot.20221015115055.1: *4* AnimationController for AnimatedIcon
+    //@+node:swot.20221017093031.169: *5* AnimationController for AnimatedIcon
     _controllerIcon = AnimationController(
       duration: Duration(seconds: 1),
       vsync: this  // use TickerProviderStateMixin
@@ -151,44 +230,44 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
     //@-others
     super.initState();
   }
-  //@+node:swot.20221014212421.1: *3* dispose()
+  //@+node:swot.20221017093031.20: *4* dispose()
   @override
   void dispose() {
     _controllerBuilder.dispose();  // AnimatedBuilder
     _controllerIcon.dispose();     // AnimatedList
     super.dispose();
   }
-  //@+node:swot.20221014173224.4: *3* build()
+  //@+node:swot.20221017093031.21: *4* build()
   @override
   Widget build(BuildContext context) {
     return
       //@+others
-      //@+node:swot.20221014224018.1: *4* SingleChildScrollView
+      //@+node:swot.20221017093031.22: *5* SingleChildScrollView
       SingleChildScrollView(
         child:
           //@+others
-          //@+node:swot.20221014173533.1: *5* Column
+          //@+node:swot.20221017093031.23: *6* Column
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //@+others
-              //@+node:swot.20221015083736.1: *6* Row
+              //@+node:swot.20221017093031.24: *7* Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   //@+others
-                  //@+node:swot.20221014173615.1: *7* ElevatedButton  -- show AboutDialog
+                  //@+node:swot.20221017093031.25: *8* ElevatedButton  -- show AboutDialog
                   ElevatedButton(
                     child: const Text('Show About Dialog'),
                     onPressed: (){
                       //@+others
-                      //@+node:swot.20221014172916.1: *8* showDialog
+                      //@+node:swot.20221017093031.26: *9* showDialog
                       showDialog(
                         context: context,
                         builder: (context) =>
                           //@+others
-                          //@+node:swot.20221014184029.1: *9* AboutDialog
+                          //@+node:swot.20221017093031.152: *10* AboutDialog
                           //@+doc
                           //@@language asciidoc
                           // :nofooter:
@@ -212,7 +291,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                       //@-others
                     }
                   ),
-                  //@+node:swot.20221015090722.1: *7* SizedBox -- show AboutListTile
+                  //@+node:swot.20221017093031.28: *8* SizedBox -- show AboutListTile
                   //@+doc
                   //@@language asciidoc
                   // :nofooter:
@@ -228,7 +307,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                     height: 40.0,
                     child:
                       //@+others
-                      //@+node:swot.20221014190907.1: *8* AboutListTile
+                      //@+node:swot.20221017093031.153: *9* AboutListTile
                       //@+doc
                       //@@language asciidoc
                       // :nofooter:
@@ -252,20 +331,20 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221016182732.1: *6* Divider
+              //@+node:swot.20221017093031.30: *7* Divider
               Divider(),
-              //@+node:swot.20221015092108.1: *6* Row
+              //@+node:swot.20221017093031.31: *7* Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   //@+others
-                  //@+node:swot.20221014200443.1: *7* Stack           -- show AbsorbPointer包含按钮不可点击
+                  //@+node:swot.20221017093031.32: *8* Stack           -- show AbsorbPointer包含按钮不可点击
                   Stack(
                     alignment: AlignmentDirectional.center,
                     children: [
                       //@+others
-                      //@+node:swot.20221014195915.1: *8* SizedBox
+                      //@+node:swot.20221017093031.33: *9* SizedBox
                       SizedBox(
                         width: 100.0,
                         height: 30.0,
@@ -274,13 +353,13 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                           child: null,
                         ),
                       ),
-                      //@+node:swot.20221014200257.1: *8* SizedBox
+                      //@+node:swot.20221017093031.34: *9* SizedBox
                       SizedBox(
                         width: 40.0,
                         height: 60.0,
                         child:
                           //@+others
-                          //@+node:swot.20221014200811.1: *9* AbsorbPointer -- include button can not be clicked
+                          //@+node:swot.20221017093031.154: *10* AbsorbPointer -- include button can not be clicked
                           //@+doc
                           //@@language asciidoc
                           // :nofooter:
@@ -292,7 +371,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                           AbsorbPointer(
                             child:
                               //@+others
-                              //@+node:swot.20221014200758.1: *10* ElevatedButton 不可点击
+                              //@+node:swot.20221017093031.155: *11* ElevatedButton 不可点击
                               //@@language dart
                               //@@tabwidth -2
                               ElevatedButton(
@@ -309,17 +388,17 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                       //@-others
                     ],
                   ),
-                  //@+node:swot.20221014202218.1: *7* ElevatedButton  -- show AlertDialog
+                  //@+node:swot.20221017093031.37: *8* ElevatedButton  -- show AlertDialog
                   ElevatedButton(
                     child: const Text('Show Alert Dialog'),
                     onPressed: (){
                       //@+others
-                      //@+node:swot.20221014203316.1: *8* showDialog
+                      //@+node:swot.20221017093031.38: *9* showDialog
                       showDialog(
                         context: context,
                         builder: (context) =>
                           //@+others
-                          //@+node:swot.20221014202553.1: *9* AlertDialog
+                          //@+node:swot.20221017093031.156: *10* AlertDialog
                           AlertDialog(
                             actions: [
                               TextButton(
@@ -341,15 +420,15 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221016183151.1: *6* Divider
+              //@+node:swot.20221017093031.40: *7* Divider
               Divider(),
-              //@+node:swot.20221015093439.1: *6* Row
+              //@+node:swot.20221017093031.41: *7* Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   //@+others
-                  //@+node:swot.20221014203738.1: *7* Container       -- show Align
+                  //@+node:swot.20221017093031.42: *8* Container       -- show Align
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 4.0),
                     height: 40.0,
@@ -357,7 +436,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                     color: Colors.blueGrey,
                     child:
                       //@+others
-                      //@+node:swot.20221014203725.1: *8* Align
+                      //@+node:swot.20221017093031.157: *9* Align
                       //@+doc
                       //@@language asciidoc
                       // :nofooter:
@@ -375,7 +454,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                       ),
                       //@-others
                   ),
-                  //@+node:swot.20221014205311.1: *7* GestureDetector -- show AnimatedAlign
+                  //@+node:swot.20221017093031.44: *8* GestureDetector -- show AnimatedAlign
                   GestureDetector(
                     onTap: (){
                       setState((){
@@ -389,7 +468,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                         color: Colors.grey,
                         child:
                           //@+others
-                          //@+node:swot.20221014205059.1: *8* AnimatedAlign
+                          //@+node:swot.20221017093031.159: *9* AnimatedAlign
                           AnimatedAlign(
                             alignment: selected ? Alignment.topRight : Alignment.bottomLeft,
                             duration: const Duration(seconds: 1),
@@ -403,15 +482,15 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221016183153.1: *6* Divider
+              //@+node:swot.20221017093031.46: *7* Divider
               Divider(),
-              //@+node:swot.20221015093840.1: *6* Row
+              //@+node:swot.20221017093031.47: *7* Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   //@+others
-                  //@+node:swot.20221014210850.1: *7* AnimatedBuilder
+                  //@+node:swot.20221017093031.163: *8* AnimatedBuilder
                   //@+doc
                   //@@language asciidoc
                   // :nofooter:
@@ -432,7 +511,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                       );
                     },
                   ),
-                  //@+node:swot.20221014220359.1: *7* GestureDetector -- show AnimatedContainer
+                  //@+node:swot.20221017093031.49: *8* GestureDetector -- show AnimatedContainer
                   GestureDetector(
                     onTap: (){
                       setState((){
@@ -442,7 +521,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                     child: Center(
                       child:
                         //@+others
-                        //@+node:swot.20221014220610.1: *8* AnimatedContainer
+                        //@+node:swot.20221017093031.164: *9* AnimatedContainer
                         AnimatedContainer(
                           width: selected ? 150.0 : 25.0,
                           height: selected ? 25.0 : 40.0,
@@ -458,15 +537,15 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221016183154.1: *6* Divider
+              //@+node:swot.20221017093031.51: *7* Divider
               Divider(),
-              //@+node:swot.20221014225319.1: *6* Row                -- show AnimatedCrossFade
+              //@+node:swot.20221017093031.52: *7* Row                -- show AnimatedCrossFade
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   //@+others
-                  //@+node:swot.20221014222642.1: *7* TextButton
+                  //@+node:swot.20221017093031.53: *8* TextButton
                   Container(
                     height: 30.0,
                     child:TextButton(
@@ -483,7 +562,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                       ),
                     ),
                   ),
-                  //@+node:swot.20221014221629.1: *7* AnimatedCrossFade
+                  //@+node:swot.20221017093031.165: *8* AnimatedCrossFade
                   AnimatedCrossFade(
                     firstChild: Image.network(
                       'https://img2.baidu.com/it/u=2642639611,1941240358&fm=253&fmt=auto&app=138&f=JPEG?w=200&h=200',
@@ -501,15 +580,15 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221016183156.1: *6* Divider
+              //@+node:swot.20221017093031.55: *7* Divider
               Divider(),
-              //@+node:swot.20221015094520.1: *6* Row                -- show AnimatedDefaultTextStyle
+              //@+node:swot.20221017093031.56: *7* Row                -- show AnimatedDefaultTextStyle
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   //@+others
-                  //@+node:swot.20221015072254.1: *7* TextButton
+                  //@+node:swot.20221017093031.57: *8* TextButton
                   TextButton(
                     onPressed: (){
                       setState((){
@@ -520,12 +599,12 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                     },
                     child: const Text('Switch Font'),
                   ),
-                  //@+node:swot.20221015072225.1: *7* SizedBox
+                  //@+node:swot.20221017093031.58: *8* SizedBox
                   SizedBox(
                     height: 40,
                     child:
                       //@+others
-                      //@+node:swot.20221015072500.1: *8* AnimatedDefaultTextStyle
+                      //@+node:swot.20221017093031.166: *9* AnimatedDefaultTextStyle
                       AnimatedDefaultTextStyle(
                         duration: const Duration(milliseconds: 300),
                         style: TextStyle(
@@ -540,15 +619,15 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221016183158.1: *6* Divider
+              //@+node:swot.20221017093031.60: *7* Divider
               Divider(),
-              //@+node:swot.20221015163532.1: *6* Row
+              //@+node:swot.20221017093031.61: *7* Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   //@+others
-                  //@+node:swot.20221015081646.1: *7* GestureDetector       -- show AnimatedIcon
+                  //@+node:swot.20221017093031.62: *8* GestureDetector       -- show AnimatedIcon
                   GestureDetector(
                     onTap: () {
                       if (_isPlay == false) {
@@ -561,7 +640,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                     },
                     child:
                       //@+others
-                      //@+node:swot.20221015073027.1: *8* AnimatedIcon
+                      //@+node:swot.20221017093031.170: *9* AnimatedIcon
                       //@+doc
                       //@@language asciidoc
                       // :nofooter:
@@ -581,14 +660,14 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                       ),
                       //@-others
                   ),
-                  //@+node:swot.20221015163118.1: *7* AnimatedModalBarrier  -- show AnimatedModalBarrier
+                  //@+node:swot.20221017093031.179: *8* AnimatedModalBarrier  -- show AnimatedModalBarrier
                   const AnimatedModalBarrierExample(),
                   //@-others
                 ],
               ),
-              //@+node:swot.20221016183200.1: *6* Divider
+              //@+node:swot.20221017093031.65: *7* Divider
               Divider(),
-              //@+node:swot.20221015100056.1: *6* show AnimatedList
+              //@+node:swot.20221017093031.175: *7* show AnimatedList
               IconButton(
                 onPressed: _addItem,
                 icon: const Icon(Icons.add),
@@ -598,14 +677,14 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                 height: 150,
                 child:
                   //@+others
-                  //@+node:swot.20221015104212.1: *7* AnimatedList
+                  //@+node:swot.20221017093031.176: *8* AnimatedList
                   AnimatedList(
                     key: _key,
                     initialItemCount: 0,
                     padding: const EdgeInsets.all(10),
                     itemBuilder: (context, index, animation) {
                       //@+others
-                      //@+node:swot.20221015112801.1: *8* SizeTransition
+                      //@+node:swot.20221017093031.177: *9* SizeTransition
                       return SizeTransition(
                         key: UniqueKey(),
                         sizeFactor: animation,
@@ -633,37 +712,37 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   ),
                   //@-others
               ),
-              //@+node:swot.20221016183202.1: *6* Divider
+              //@+node:swot.20221017093031.69: *7* Divider
               Divider(),
-              //@+node:swot.20221015170038.1: *6* show AnimatedOpacity
+              //@+node:swot.20221017093031.194: *7* show AnimatedOpacity
               AnimatedOpacityExample(),
-              //@+node:swot.20221016183204.1: *6* Divider
+              //@+node:swot.20221017093031.71: *7* Divider
               Divider(),
-              //@+node:swot.20221015221233.1: *6* show AnimatedPadding
+              //@+node:swot.20221017093031.196: *7* show AnimatedPadding
               AnimatedPaddingExample(),
-              //@+node:swot.20221016183205.1: *6* Divider
+              //@+node:swot.20221017093031.73: *7* Divider
               Divider(),
-              //@+node:swot.20221015225921.1: *6* show AnimatedPhysicalModel
+              //@+node:swot.20221017093031.207: *7* show AnimatedPhysicalModel
               AnimatedPhysicalModelExample(),
-              //@+node:swot.20221016183207.1: *6* Divider
+              //@+node:swot.20221017093031.75: *7* Divider
               Divider(),
-              //@+node:swot.20221016074843.1: *6* show AnimatedPositionedExample
+              //@+node:swot.20221017093031.216: *7* show AnimatedPositionedExample
               AnimatedPositionedExample(),
-              //@+node:swot.20221016183209.1: *6* Divider
+              //@+node:swot.20221017093031.77: *7* Divider
               Divider(),
-              //@+node:swot.20221016082802.1: *6* show AnimatedRotationExample
+              //@+node:swot.20221017093031.226: *7* show AnimatedRotationExample
               AnimatedRotationExample(),
-              //@+node:swot.20221016183210.1: *6* Divider
+              //@+node:swot.20221017093031.79: *7* Divider
               Divider(),
-              //@+node:swot.20221016105716.1: *6* show AnimatedSizeExample
+              //@+node:swot.20221017093031.235: *7* show AnimatedSizeExample
               AnimatedSizeExample(),
-              //@+node:swot.20221016183212.1: *6* Divider
+              //@+node:swot.20221017093031.81: *7* Divider
               Divider(),
-              //@+node:swot.20221016111534.1: *6* show AnimatedSwitcherExample
+              //@+node:swot.20221017093031.251: *7* show AnimatedSwitcherExample
               AnimatedSwitcherExample(),
-              //@+node:swot.20221016183213.1: *6* Divider
+              //@+node:swot.20221017093031.83: *7* Divider
               Divider(),
-              //@+node:swot.20221016172119.1: *6* AspectRatio
+              //@+node:swot.20221017093031.253: *7* AspectRatio
               Container(
                 color: Colors.orangeAccent,
                 alignment: Alignment.center,
@@ -678,13 +757,13 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
                   ),
                 ),
               ),
-              //@+node:swot.20221016183217.1: *6* Divider
+              //@+node:swot.20221017093031.85: *7* Divider
               Divider(),
-              //@+node:swot.20221016174105.1: *6* show AutoCompleteExample
+              //@+node:swot.20221017093031.255: *7* show AutoCompleteExample
               AutoCompleteExample(),
-              //@+node:swot.20221016183219.1: *6* Divider
+              //@+node:swot.20221017093031.87: *7* Divider
               Divider(),
-              //@+node:swot.20221016175229.1: *6* SizedBox
+              //@+node:swot.20221017093031.88: *7* SizedBox
               SizedBox(
                 height: 200.0,
               ),
@@ -699,7 +778,7 @@ class _DemoState extends State<Demo> with TickerProviderStateMixin {
   //@-others
 }
 
-//@+node:swot.20221015133323.2: ** AnimatedModalBarrierExample
+//@+node:swot.20221017093031.180: *3* AnimatedModalBarrierExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedModalBarrierExample extends StatefulWidget {
@@ -712,13 +791,13 @@ class AnimatedModalBarrierExample extends StatefulWidget {
 class _AnimatedModalBarrierExampleState extends State<AnimatedModalBarrierExample>
     with SingleTickerProviderStateMixin {
   //@+others
-  //@+node:swot.20221015143028.1: *3* varible
+  //@+node:swot.20221017093031.181: *4* varible
   bool _isPressed = false;
   late Widget _animatedModalBarrier;
   late AnimationController _animationController;
   late Animation<Color?> _colorAnimation;
 
-  //@+node:swot.20221015133323.3: *3* initState()
+  //@+node:swot.20221017093031.182: *4* initState()
   @override
   void initState() {
     ColorTween colorTween = ColorTween(
@@ -736,12 +815,12 @@ class _AnimatedModalBarrierExampleState extends State<AnimatedModalBarrierExampl
     );
     super.initState();
   }
-  //@+node:swot.20221015141301.1: *3* dispose()
+  //@+node:swot.20221017093031.183: *4* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221015133323.4: *3* build()
+  //@+node:swot.20221017093031.184: *4* build()
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -751,7 +830,7 @@ class _AnimatedModalBarrierExampleState extends State<AnimatedModalBarrierExampl
         alignment: AlignmentDirectional.center,
         children: [
           //@+others
-          //@+node:swot.20221015212850.1: *4* ElevatedButton
+          //@+node:swot.20221017093031.185: *5* ElevatedButton
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.orangeAccent,
@@ -772,7 +851,7 @@ class _AnimatedModalBarrierExampleState extends State<AnimatedModalBarrierExampl
             },
             child: const Text('Press'),
           ),
-          //@+node:swot.20221015212926.1: *4* _animatedModalBarrier
+          //@+node:swot.20221017093031.186: *5* _animatedModalBarrier
           if (_isPressed) _animatedModalBarrier,
           //@-others
         ],
@@ -782,7 +861,7 @@ class _AnimatedModalBarrierExampleState extends State<AnimatedModalBarrierExampl
   //@-others
 }
 
-//@+node:swot.20221015212139.2: ** AnimatedOpacityExample
+//@+node:swot.20221017093031.188: *3* AnimatedOpacityExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedOpacityExample extends StatefulWidget {
@@ -794,14 +873,14 @@ class AnimatedOpacityExample extends StatefulWidget {
 
 class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample>{
   //@+others
-  //@+node:swot.20221015212254.1: *3* varible
+  //@+node:swot.20221017093031.189: *4* varible
   double opacityLevel = 1.0;
-  //@+node:swot.20221015212139.3: *3* initState()
+  //@+node:swot.20221017093031.190: *4* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221015212139.4: *3* build()
+  //@+node:swot.20221017093031.191: *4* build()
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -809,14 +888,14 @@ class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample>{
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         //@+others
-        //@+node:swot.20221015165207.1: *4* AnimatedOpacity
+        //@+node:swot.20221017093031.192: *5* AnimatedOpacity
         AnimatedOpacity(
           opacity: opacityLevel,
           duration: const Duration(seconds: 2),
           child: const FlutterLogo(size: 30),
         ),
 
-        //@+node:swot.20221015165419.1: *4* ElevatedButton
+        //@+node:swot.20221017093031.193: *5* ElevatedButton
         ElevatedButton(
           child: const Text('Fade Logo'),
           onPressed: (){
@@ -832,7 +911,7 @@ class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample>{
   //@-others
 }
 
-//@+node:swot.20221015214517.2: ** AnimatedPaddingExample
+//@+node:swot.20221017093031.197: *3* AnimatedPaddingExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedPaddingExample extends StatefulWidget {
@@ -844,29 +923,29 @@ class AnimatedPaddingExample extends StatefulWidget {
 
 class _AnimatedPaddingExampleState extends State<AnimatedPaddingExample>{
   //@+others
-  //@+node:swot.20221015214632.1: *3* varible
+  //@+node:swot.20221017093031.198: *4* varible
   double padValue = 0.0;
-  //@+node:swot.20221015214517.3: *3* initState()
+  //@+node:swot.20221017093031.199: *4* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221015214517.4: *3* build()
+  //@+node:swot.20221017093031.200: *4* build()
   @override
   Widget build(BuildContext context) {
     return
       //@+others
-      //@+node:swot.20221015222059.1: *4* Column
+      //@+node:swot.20221017093031.201: *5* Column
       Column(
         children: [
           //@+others
-          //@+node:swot.20221015222016.1: *5* Row
+          //@+node:swot.20221017093031.202: *6* Row
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               //@+others
-              //@+node:swot.20221015214926.1: *6* ElevatedButton
+              //@+node:swot.20221017093031.203: *7* ElevatedButton
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orangeAccent,
@@ -879,12 +958,12 @@ class _AnimatedPaddingExampleState extends State<AnimatedPaddingExample>{
                 },
               ),
 
-              //@+node:swot.20221015220115.1: *6* Text
+              //@+node:swot.20221017093031.204: *7* Text
               Text('Padding = $padValue'),
               //@-others
             ],
           ),
-          //@+node:swot.20221015220153.1: *5* AnimatedPadding
+          //@+node:swot.20221017093031.205: *6* AnimatedPadding
           AnimatedPadding(
             // padValue will be changed
             padding: EdgeInsets.all(padValue),
@@ -904,7 +983,7 @@ class _AnimatedPaddingExampleState extends State<AnimatedPaddingExample>{
   //@-others
 }
 
-//@+node:swot.20221015223619.2: ** AnimatedPhysicalModelExample
+//@+node:swot.20221017093031.208: *3* AnimatedPhysicalModelExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedPhysicalModelExample extends StatefulWidget {
@@ -916,19 +995,19 @@ class AnimatedPhysicalModelExample extends StatefulWidget {
 
 class _AnimatedPhysicalModelExampleState extends State<AnimatedPhysicalModelExample>{
   //@+others
-  //@+node:swot.20221015223846.1: *3* varible
+  //@+node:swot.20221017093031.209: *4* varible
   bool isFlat = true;
-  //@+node:swot.20221015223619.3: *3* initState()
+  //@+node:swot.20221017093031.210: *4* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221015223619.4: *3* dispose()
+  //@+node:swot.20221017093031.211: *4* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221015223619.5: *3* build()
+  //@+node:swot.20221017093031.212: *4* build()
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -936,7 +1015,7 @@ class _AnimatedPhysicalModelExampleState extends State<AnimatedPhysicalModelExam
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         //@+others
-        //@+node:swot.20221015225444.2: *4* ElevatedButton
+        //@+node:swot.20221017093031.213: *5* ElevatedButton
         ElevatedButton(
           style: ElevatedButton.styleFrom(
             // backgroundColor: Colors.orangeAccent,
@@ -949,7 +1028,7 @@ class _AnimatedPhysicalModelExampleState extends State<AnimatedPhysicalModelExam
           },
         ),
 
-        //@+node:swot.20221015224020.1: *4* AnimatedPhysicalModel
+        //@+node:swot.20221017093031.214: *5* AnimatedPhysicalModel
         AnimatedPhysicalModel(
           duration: const Duration(milliseconds: 500),
           curve: Curves.fastOutSlowIn,
@@ -971,7 +1050,7 @@ class _AnimatedPhysicalModelExampleState extends State<AnimatedPhysicalModelExam
   //@-others
 }
 
-//@+node:swot.20221016072223.2: ** AnimatedPositionedExample
+//@+node:swot.20221017093031.217: *3* AnimatedPositionedExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedPositionedExample extends StatefulWidget {
@@ -983,34 +1062,34 @@ class AnimatedPositionedExample extends StatefulWidget {
 
 class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample>{
   //@+others
-  //@+node:swot.20221016072359.1: *3* varible
+  //@+node:swot.20221017093031.218: *4* varible
   bool selected = false;
-  //@+node:swot.20221016072223.3: *3* initState()
+  //@+node:swot.20221017093031.219: *4* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221016072223.4: *3* dispose()
+  //@+node:swot.20221017093031.220: *4* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221016072223.5: *3* build()
+  //@+node:swot.20221017093031.221: *4* build()
   @override
   Widget build(BuildContext context) {
     return
       //@+others
-      //@+node:swot.20221016072611.1: *4* SizedBox
+      //@+node:swot.20221017093031.222: *5* SizedBox
       SizedBox(
         width: 200,
         height: 100,
         child:
           //@+others
-          //@+node:swot.20221016072657.1: *5* Stack
+          //@+node:swot.20221017093031.223: *6* Stack
           Stack(
             children: [
               //@+others
-              //@+node:swot.20221016072723.1: *6* AnimatedPositioned
+              //@+node:swot.20221017093031.224: *7* AnimatedPositioned
               AnimatedPositioned(
                 width: selected ? 200.0 : 150.0,
                 height: selected ? 60.0 : 20.0,
@@ -1042,7 +1121,7 @@ class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample>{
   //@-others
 }
 
-//@+node:swot.20221016080026.2: ** AnimatedRotationExample
+//@+node:swot.20221017093031.227: *3* AnimatedRotationExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedRotationExample extends StatefulWidget {
@@ -1054,19 +1133,19 @@ class AnimatedRotationExample extends StatefulWidget {
 
 class _AnimatedRotationExampleState extends State<AnimatedRotationExample>{
   //@+others
-  //@+node:swot.20221016080130.1: *3* varible
+  //@+node:swot.20221017093031.228: *4* varible
   double turns = 0.0;
-  //@+node:swot.20221016080026.3: *3* initState()
+  //@+node:swot.20221017093031.229: *4* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221016080026.4: *3* dispose()
+  //@+node:swot.20221017093031.230: *4* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221016080026.5: *3* build()
+  //@+node:swot.20221017093031.231: *4* build()
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -1074,7 +1153,7 @@ class _AnimatedRotationExampleState extends State<AnimatedRotationExample>{
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         //@+others
-        //@+node:swot.20221016082451.2: *4* ElevatedButton
+        //@+node:swot.20221017093031.232: *5* ElevatedButton
         ElevatedButton(
           style: ElevatedButton.styleFrom(
             // backgroundColor: Colors.orangeAccent,
@@ -1087,7 +1166,7 @@ class _AnimatedRotationExampleState extends State<AnimatedRotationExample>{
           },
         ),
 
-        //@+node:swot.20221016082248.1: *4* Padding
+        //@+node:swot.20221017093031.233: *5* Padding
         Padding(
           padding: const EdgeInsets.all(5),
           child: AnimatedRotation(
@@ -1103,7 +1182,7 @@ class _AnimatedRotationExampleState extends State<AnimatedRotationExample>{
   //@-others
 }
 
-//@+node:swot.20221016104439.2: ** AnimatedSizeExample
+//@+node:swot.20221017093031.236: *3* AnimatedSizeExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedSizeExample extends StatefulWidget {
@@ -1115,19 +1194,19 @@ class AnimatedSizeExample extends StatefulWidget {
 
 class _AnimatedSizeExampleState extends State<AnimatedSizeExample>{
   //@+others
-  //@+node:swot.20221016104517.1: *3* varible
+  //@+node:swot.20221017093031.237: *4* varible
   double _size = 30;
-  //@+node:swot.20221016104439.3: *3* initState()
+  //@+node:swot.20221017093031.238: *4* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221016104439.4: *3* dispose()
+  //@+node:swot.20221017093031.239: *4* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221016104439.5: *3* build()
+  //@+node:swot.20221017093031.240: *4* build()
   //@@language dart
   //@@tabwidth -2
   @override
@@ -1137,9 +1216,9 @@ class _AnimatedSizeExampleState extends State<AnimatedSizeExample>{
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         //@+others
-        //@+node:swot.20221016110453.1: *4* Text
+        //@+node:swot.20221017093031.241: *5* Text
         Text("Click logo change size"),
-        //@+node:swot.20221016110359.1: *4* GestureDetector AnimatedSize FlutterLogo
+        //@+node:swot.20221017093031.242: *5* GestureDetector AnimatedSize FlutterLogo
         GestureDetector(
           onTap: (){
             setState(() {
@@ -1162,7 +1241,7 @@ class _AnimatedSizeExampleState extends State<AnimatedSizeExample>{
   //@-others
 }
 
-//@+node:swot.20221016110809.2: ** AnimatedSwitcherExample
+//@+node:swot.20221017093031.244: *3* AnimatedSwitcherExample
 //@@language dart
 //@@tabwidth -2
 class AnimatedSwitcherExample extends StatefulWidget {
@@ -1174,19 +1253,19 @@ class AnimatedSwitcherExample extends StatefulWidget {
 
 class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
   //@+others
-  //@+node:swot.20221016110844.1: *3* varible
+  //@+node:swot.20221017093031.245: *4* varible
   int _count = 0;
-  //@+node:swot.20221016110809.3: *3* initState()
+  //@+node:swot.20221017093031.246: *4* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221016110809.4: *3* dispose()
+  //@+node:swot.20221017093031.247: *4* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221016110809.5: *3* build()
+  //@+node:swot.20221017093031.248: *4* build()
   //@@language dart
   //@@tabwidth -2
   @override
@@ -1196,7 +1275,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         //@+others
-        //@+node:swot.20221016111047.2: *4* ElevatedButton
+        //@+node:swot.20221017093031.249: *5* ElevatedButton
         ElevatedButton(
           style: ElevatedButton.styleFrom(
             // backgroundColor: Colors.orangeAccent,
@@ -1209,7 +1288,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
           },
         ),
 
-        //@+node:swot.20221016111150.1: *4* AnimatedSwitcher
+        //@+node:swot.20221017093031.250: *5* AnimatedSwitcher
         AnimatedSwitcher(
           duration: const Duration(milliseconds: 500),
           child: Text(
@@ -1232,19 +1311,19 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
   //@-others
 }
 
-//@+node:swot.20221016173408.2: ** AutoCompleteExample 不要在屏幕中部以下(会被软键盘挡住)
+//@+node:swot.20221017093031.256: *3* AutoCompleteExample 不要在屏幕中部以下(会被软键盘挡住)
 //@@language dart
 //@@tabwidth -2
 class AutoCompleteExample extends StatelessWidget {
   const AutoCompleteExample({ Key? key }) : super(key: key);
   //@+others
-  //@+node:swot.20221016174315.1: *3* varible
+  //@+node:swot.20221017093031.257: *4* varible
   static const List<String> listItems = <String>[
     'apple',
     'banana',
     'melon',
   ];
-  //@+node:swot.20221016173408.3: *3* build()
+  //@+node:swot.20221017093031.258: *4* build()
   @override
   Widget build(BuildContext context) {
     return Autocomplete<String>(
@@ -1261,6 +1340,539 @@ class AutoCompleteExample extends StatelessWidget {
       },
     );
   }
+  //@-others
+}
+//@+node:swot.20221021133039.1: ** B Example
+//@+node:swot.20221021171949.1: *3* B  -- Scaffold
+class B extends StatelessWidget {
+  const B({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221021173128.1: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo B'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoB(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221021172558.1: *3* DemoB
+//@@language dart
+//@@tabwidth -2
+class DemoB extends StatefulWidget {
+  const DemoB({super.key});
+
+  @override
+  State<DemoB> createState() => _DemoBState();
+}
+
+class _DemoBState extends State<DemoB> {
+  //@+others
+  //@+node:swot.20221021172558.14: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221021172558.15: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221021172558.16: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221021173506.1: *7* show BackdropFilterExample
+            BackdropFilterExample(),
+            //@+node:swot.20221021172558.23: *7* Divider
+            Divider(),
+            //@+node:swot.20221021181118.1: *7* show BannerExample
+            BannerExample(),
+            //@+node:swot.20221021182257.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221021181700.1: *7* show BaselineExample
+            BaselineExample(),
+            //@+node:swot.20221022085516.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022085519.1: *7* show BlockSemanticsExample
+            BlockSemanticsExample(),
+            //@+node:swot.20221022101126.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022101129.1: *7* show BottomNavigationBarExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('show BottomNavigationBarExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BottomNavigationBarExample(),
+                  ),
+                );
+              },
+            ),
+
+
+            //@+node:swot.20221022105626.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022094818.1: *7* show BottomSheetExample
+            BottomSheetExample(),
+            //@+node:swot.20221022111102.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022111104.1: *7* show BuilderExample
+            BuilderExample(),
+            //@-others
+          ]
+        ),
+        //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221019111317.2: *3* BackdropFilterExample
+//@@language dart
+//@@tabwidth -2
+class BackdropFilterExample extends StatelessWidget {
+  const BackdropFilterExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221019111317.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: <Widget>[
+        Text(
+          '0' * 300,
+          style: const TextStyle(
+            color: Colors.green,
+          ),
+        ),
+        Center(
+          child: ClipRect(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(
+                sigmaX: 4.0,
+                sigmaY: 4.0,
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                width: 100,
+                height: 100,
+                child: const Text('Blur'),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221021175217.2: *3* BannerExample
+//@@language dart
+//@@tabwidth -2
+class BannerExample extends StatelessWidget {
+  const BannerExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221021175217.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221021175330.1: *5* Center
+      Center(
+        child:
+          //@+others
+          //@+node:swot.20221021175401.1: *6* Container
+          Container(
+            margin: const EdgeInsets.all(10.0),
+            child:
+              //@+others
+              //@+node:swot.20221021180745.1: *7* ClipRect
+              ClipRect(
+                child:
+                  //@+others
+                  //@+node:swot.20221021180828.1: *8* Banner
+                  Banner(
+                    message: "25% off",
+                    location: BannerLocation.topEnd,
+                    color: Colors.red,
+                    child:
+                      //@+others
+                      //@+node:swot.20221021175506.1: *9* Container
+                      Container(
+                        color: Colors.blueGrey,
+                        child:
+                          //@+others
+                          //@+node:swot.20221021175604.1: *10* Padding
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
+                            child:
+                              //@+others
+                              //@+node:swot.20221021175702.1: *11* Column
+                              Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  //@+others
+                                  //@+node:swot.20221021175915.1: *12* Image
+                                  Image.network(
+                                    'https://img1.baidu.com/it/u=1855083458,281793390&fm=253&fmt=auto&app=138&f=JPEG?w=989&h=500',
+                                  ),
+                                  //@+node:swot.20221021180035.1: *12* SizedBox
+                                  const SizedBox(height: 10),
+                                  //@+node:swot.20221021180106.1: *12* Row
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Text(
+                                        'Flutter Course',
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.orangeAccent,
+                                        ),
+                                        child: const Text('Get now'),
+                                        onPressed: () {},
+                                      ),
+                                    ],
+                                  ),
+                                  //@-others
+                                ],
+                              ),
+                              //@-others
+                          ),
+                          //@-others
+                      ),
+                      //@-others
+                  ),
+                  //@-others
+              ),
+              //@-others
+          ),
+          //@-others
+      );
+      //@-others
+  }
+  //@-others
+}
+//@+node:swot.20221021181642.2: *3* BaselineExample
+//@@language dart
+//@@tabwidth -2
+class BaselineExample extends StatelessWidget {
+  const BaselineExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221021181642.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        width: 100,
+        height: 100,
+        color: Colors.orange,
+        child: const Baseline(
+          baseline: 0,
+          // baseline: 30,
+          baselineType: TextBaseline.alphabetic,
+          child: FlutterLogo(size: 30,),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022080218.2: *3* BlockSemanticsExample
+//@@language dart
+//@@tabwidth -2
+class BlockSemanticsExample extends StatefulWidget {
+  const BlockSemanticsExample({super.key});
+
+  @override
+  State<BlockSemanticsExample> createState() => _BlockSemanticsExampleState();
+}
+
+class _BlockSemanticsExampleState extends State<BlockSemanticsExample>{
+  //@+others
+  //@+node:swot.20221022083723.1: *4* varible
+  bool isShow = false;
+  //@+node:swot.20221022080218.3: *4* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022080218.4: *4* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022080218.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221022080422.1: *5* SizedBox
+      SizedBox(
+        width: double.infinity,
+        child:
+          //@+others
+          //@+node:swot.20221022083203.1: *6* SizedBox
+          SizedBox(
+            width: 500,
+            height: 135,
+            child:
+            //@+others
+            //@+node:swot.20221022083954.1: *7* Column
+            Column(
+              children: [
+                //@+others
+                //@+node:swot.20221022084045.1: *8* OutlinedButton
+                OutlinedButton(
+                  onPressed: () {
+                    setState(() {
+                      isShow = true;
+                    });
+                  },
+                  child: const Text('Click'),
+                ),
+                //@+node:swot.20221022084513.1: *8* if (isShow)
+                if (isShow)
+                //@+others
+                //@+node:swot.20221022091825.1: *9* BlockSemantics
+                BlockSemantics(
+                  blocking: isShow,  // hidden OutlinedButton?
+                  child:
+                  //@+others
+                  //@+node:swot.20221022090937.1: *10* Card
+                  Card(
+                    color: Colors.orangeAccent,
+                    child: SizedBox(
+                      width: 200,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Text('This is a card'),
+                          TextButton(
+                            child: const Text('Close'),
+                            onPressed: () => setState(() {
+                              isShow = false;
+                            }),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  //@-others
+                ),
+                //@-others
+                //@-others
+              ]
+            ),
+            //@-others
+          ),
+          //@-others
+      );
+      //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221022094100.2: *3* BottomNavigationBarExample
+//@@language dart
+//@@tabwidth -2
+class BottomNavigationBarExample extends StatefulWidget {
+  const BottomNavigationBarExample({super.key});
+
+  @override
+  State<BottomNavigationBarExample> createState() => _BottomNavigationBarExampleState();
+}
+
+class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>{
+  //@+others
+  //@+node:swot.20221022094133.1: *4* varible
+  int _currentIndex = 0;
+
+  List<Widget> body = const [
+    Icon(Icons.home),
+    Icon(Icons.menu),
+    Icon(Icons.person),
+  ];
+
+  //@+node:swot.20221022094100.3: *4* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022094100.4: *4* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022094100.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221022095720.2: *5* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221022101748.1: *6* appBar
+      appBar: AppBar(
+        title: Text('NewPage'),
+        // leading: Icon(Icons.menu),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221022095720.4: *6* body
+      body: Center(
+        child: body[_currentIndex],
+      ),
+      //@+node:swot.20221022095720.5: *6* bottomNavigationBar
+      bottomNavigationBar: BottomNavigationBar(  // new 底部
+        fixedColor: Colors.white,
+        backgroundColor: Colors.blue,
+        items: const [
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            label: 'Menu',
+            icon: Icon(Icons.menu),
+          ),
+          BottomNavigationBarItem(
+            label: 'Profile',
+            icon: Icon(Icons.person),
+          ),
+        ],
+        currentIndex: _currentIndex,
+        type: BottomNavigationBarType.fixed,
+        // type: BottomNavigationBarType.shifting, // 很有意思的样式
+        onTap: (int index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        }
+      ),
+      //@-others
+    );
+
+    //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221022104843.2: *3* BottomSheetExample
+//@@language dart
+//@@tabwidth -2
+class BottomSheetExample extends StatefulWidget {
+  const BottomSheetExample({super.key});
+
+  @override
+  State<BottomSheetExample> createState() => _BottomSheetExampleState();
+}
+
+class _BottomSheetExampleState extends State<BottomSheetExample>{
+  //@+others
+  //@+node:swot.20221022104843.3: *4* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022104843.4: *4* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022104843.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        child: const Text('Modal Bottom Sheet'),
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return SizedBox(
+                height: 200,
+                child: Center(
+                  child: ElevatedButton(
+                    child: const Text('Close'),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ),
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022110627.2: *3* BuilderExample
+//@@language dart
+//@@tabwidth -2
+class BuilderExample extends StatelessWidget {
+  const BuilderExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022110627.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return myBuilderWidget();
+  }
+  //@+node:swot.20221022110900.1: *4* myBuilderWidget()
+  // 不加 Builder,则无法找到上面 build's context, 
+  myBuilderWidget() => Builder(
+    builder: (context) {
+      return Text(
+        'Text with Theme',
+        // context 需要使用上面的 Builder 来获取
+        style: Theme.of(context).textTheme.displayLarge,
+      );
+    }
+  );
   //@-others
 }
 //@-others
