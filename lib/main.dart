@@ -8,6 +8,7 @@ import 'dart:async';
 import 'dart:math' as math;
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 //@+node:swot.20221017093031.4: ** main
 void main(){
   runApp(MyApp());
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         'home': (context) => Home(),
         'a': (context) => A(),
         'b': (context) => B(),
+        'c': (context) => C(),
       },
 
       initialRoute: 'home',
@@ -91,6 +93,17 @@ class Home extends StatelessWidget {
                       Navigator.pushNamed(context, 'b');
                     },
                     child: const Text('B'),
+                  ),
+
+                  //@+node:swot.20221022115433.1: *7* ElevatedButton C
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'c');
+                    },
+                    child: const Text('C'),
                   ),
 
                   //@-others
@@ -1463,13 +1476,14 @@ class _DemoBState extends State<DemoB> {
   //@-others
 }
 
-//@+node:swot.20221019111317.2: *3* BackdropFilterExample
+//@+node:swot.20221022121355.1: *3* Example
+//@+node:swot.20221019111317.2: *4* BackdropFilterExample
 //@@language dart
 //@@tabwidth -2
 class BackdropFilterExample extends StatelessWidget {
   const BackdropFilterExample({ Key? key }) : super(key: key);
   //@+others
-  //@+node:swot.20221019111317.3: *4* build()
+  //@+node:swot.20221019111317.3: *5* build()
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -1501,59 +1515,59 @@ class BackdropFilterExample extends StatelessWidget {
   }
   //@-others
 }
-//@+node:swot.20221021175217.2: *3* BannerExample
+//@+node:swot.20221021175217.2: *4* BannerExample
 //@@language dart
 //@@tabwidth -2
 class BannerExample extends StatelessWidget {
   const BannerExample({ Key? key }) : super(key: key);
   //@+others
-  //@+node:swot.20221021175217.3: *4* build()
+  //@+node:swot.20221021175217.3: *5* build()
   @override
   Widget build(BuildContext context) {
     return
       //@+others
-      //@+node:swot.20221021175330.1: *5* Center
+      //@+node:swot.20221021175330.1: *6* Center
       Center(
         child:
           //@+others
-          //@+node:swot.20221021175401.1: *6* Container
+          //@+node:swot.20221021175401.1: *7* Container
           Container(
             margin: const EdgeInsets.all(10.0),
             child:
               //@+others
-              //@+node:swot.20221021180745.1: *7* ClipRect
+              //@+node:swot.20221021180745.1: *8* ClipRect
               ClipRect(
                 child:
                   //@+others
-                  //@+node:swot.20221021180828.1: *8* Banner
+                  //@+node:swot.20221021180828.1: *9* Banner
                   Banner(
                     message: "25% off",
                     location: BannerLocation.topEnd,
                     color: Colors.red,
                     child:
                       //@+others
-                      //@+node:swot.20221021175506.1: *9* Container
+                      //@+node:swot.20221021175506.1: *10* Container
                       Container(
                         color: Colors.blueGrey,
                         child:
                           //@+others
-                          //@+node:swot.20221021175604.1: *10* Padding
+                          //@+node:swot.20221021175604.1: *11* Padding
                           Padding(
                             padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
                             child:
                               //@+others
-                              //@+node:swot.20221021175702.1: *11* Column
+                              //@+node:swot.20221021175702.1: *12* Column
                               Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   //@+others
-                                  //@+node:swot.20221021175915.1: *12* Image
+                                  //@+node:swot.20221021175915.1: *13* Image
                                   Image.network(
                                     'https://img1.baidu.com/it/u=1855083458,281793390&fm=253&fmt=auto&app=138&f=JPEG?w=989&h=500',
                                   ),
-                                  //@+node:swot.20221021180035.1: *12* SizedBox
+                                  //@+node:swot.20221021180035.1: *13* SizedBox
                                   const SizedBox(height: 10),
-                                  //@+node:swot.20221021180106.1: *12* Row
+                                  //@+node:swot.20221021180106.1: *13* Row
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
@@ -1592,13 +1606,13 @@ class BannerExample extends StatelessWidget {
   }
   //@-others
 }
-//@+node:swot.20221021181642.2: *3* BaselineExample
+//@+node:swot.20221021181642.2: *4* BaselineExample
 //@@language dart
 //@@tabwidth -2
 class BaselineExample extends StatelessWidget {
   const BaselineExample({ Key? key }) : super(key: key);
   //@+others
-  //@+node:swot.20221021181642.3: *4* build()
+  //@+node:swot.20221021181642.3: *5* build()
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -1617,7 +1631,7 @@ class BaselineExample extends StatelessWidget {
   }
   //@-others
 }
-//@+node:swot.20221022080218.2: *3* BlockSemanticsExample
+//@+node:swot.20221022080218.2: *4* BlockSemanticsExample
 //@@language dart
 //@@tabwidth -2
 class BlockSemanticsExample extends StatefulWidget {
@@ -1629,39 +1643,39 @@ class BlockSemanticsExample extends StatefulWidget {
 
 class _BlockSemanticsExampleState extends State<BlockSemanticsExample>{
   //@+others
-  //@+node:swot.20221022083723.1: *4* varible
+  //@+node:swot.20221022083723.1: *5* varible
   bool isShow = false;
-  //@+node:swot.20221022080218.3: *4* initState()
+  //@+node:swot.20221022080218.3: *5* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221022080218.4: *4* dispose()
+  //@+node:swot.20221022080218.4: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221022080218.5: *4* build()
+  //@+node:swot.20221022080218.5: *5* build()
   @override
   Widget build(BuildContext context) {
     return
       //@+others
-      //@+node:swot.20221022080422.1: *5* SizedBox
+      //@+node:swot.20221022080422.1: *6* SizedBox
       SizedBox(
         width: double.infinity,
         child:
           //@+others
-          //@+node:swot.20221022083203.1: *6* SizedBox
+          //@+node:swot.20221022083203.1: *7* SizedBox
           SizedBox(
             width: 500,
             height: 135,
             child:
             //@+others
-            //@+node:swot.20221022083954.1: *7* Column
+            //@+node:swot.20221022083954.1: *8* Column
             Column(
               children: [
                 //@+others
-                //@+node:swot.20221022084045.1: *8* OutlinedButton
+                //@+node:swot.20221022084045.1: *9* OutlinedButton
                 OutlinedButton(
                   onPressed: () {
                     setState(() {
@@ -1670,15 +1684,15 @@ class _BlockSemanticsExampleState extends State<BlockSemanticsExample>{
                   },
                   child: const Text('Click'),
                 ),
-                //@+node:swot.20221022084513.1: *8* if (isShow)
+                //@+node:swot.20221022084513.1: *9* if (isShow)
                 if (isShow)
                 //@+others
-                //@+node:swot.20221022091825.1: *9* BlockSemantics
+                //@+node:swot.20221022091825.1: *10* BlockSemantics
                 BlockSemantics(
                   blocking: isShow,  // hidden OutlinedButton?
                   child:
                   //@+others
-                  //@+node:swot.20221022090937.1: *10* Card
+                  //@+node:swot.20221022090937.1: *11* Card
                   Card(
                     color: Colors.orangeAccent,
                     child: SizedBox(
@@ -1712,7 +1726,7 @@ class _BlockSemanticsExampleState extends State<BlockSemanticsExample>{
   //@-others
 }
 
-//@+node:swot.20221022094100.2: *3* BottomNavigationBarExample
+//@+node:swot.20221022094100.2: *4* BottomNavigationBarExample
 //@@language dart
 //@@tabwidth -2
 class BottomNavigationBarExample extends StatefulWidget {
@@ -1724,7 +1738,7 @@ class BottomNavigationBarExample extends StatefulWidget {
 
 class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>{
   //@+others
-  //@+node:swot.20221022094133.1: *4* varible
+  //@+node:swot.20221022094133.1: *5* varible
   int _currentIndex = 0;
 
   List<Widget> body = const [
@@ -1733,24 +1747,24 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
     Icon(Icons.person),
   ];
 
-  //@+node:swot.20221022094100.3: *4* initState()
+  //@+node:swot.20221022094100.3: *5* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221022094100.4: *4* dispose()
+  //@+node:swot.20221022094100.4: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221022094100.5: *4* build()
+  //@+node:swot.20221022094100.5: *5* build()
   @override
   Widget build(BuildContext context) {
     //@+others
-    //@+node:swot.20221022095720.2: *5* Scaffold
+    //@+node:swot.20221022095720.2: *6* Scaffold
     return Scaffold(
       //@+others
-      //@+node:swot.20221022101748.1: *6* appBar
+      //@+node:swot.20221022101748.1: *7* appBar
       appBar: AppBar(
         title: Text('NewPage'),
         // leading: Icon(Icons.menu),
@@ -1760,11 +1774,11 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
         elevation: 0.0,
         centerTitle: true,
       ),
-      //@+node:swot.20221022095720.4: *6* body
+      //@+node:swot.20221022095720.4: *7* body
       body: Center(
         child: body[_currentIndex],
       ),
-      //@+node:swot.20221022095720.5: *6* bottomNavigationBar
+      //@+node:swot.20221022095720.5: *7* bottomNavigationBar
       bottomNavigationBar: BottomNavigationBar(  // new 底部
         fixedColor: Colors.white,
         backgroundColor: Colors.blue,
@@ -1799,7 +1813,7 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
   //@-others
 }
 
-//@+node:swot.20221022104843.2: *3* BottomSheetExample
+//@+node:swot.20221022104843.2: *4* BottomSheetExample
 //@@language dart
 //@@tabwidth -2
 class BottomSheetExample extends StatefulWidget {
@@ -1811,17 +1825,17 @@ class BottomSheetExample extends StatefulWidget {
 
 class _BottomSheetExampleState extends State<BottomSheetExample>{
   //@+others
-  //@+node:swot.20221022104843.3: *4* initState()
+  //@+node:swot.20221022104843.3: *5* initState()
   @override
   void initState() {
     super.initState();
   }
-  //@+node:swot.20221022104843.4: *4* dispose()
+  //@+node:swot.20221022104843.4: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
-  //@+node:swot.20221022104843.5: *4* build()
+  //@+node:swot.20221022104843.5: *5* build()
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -1851,18 +1865,18 @@ class _BottomSheetExampleState extends State<BottomSheetExample>{
   //@-others
 }
 
-//@+node:swot.20221022110627.2: *3* BuilderExample
+//@+node:swot.20221022110627.2: *4* BuilderExample
 //@@language dart
 //@@tabwidth -2
 class BuilderExample extends StatelessWidget {
   const BuilderExample({ Key? key }) : super(key: key);
   //@+others
-  //@+node:swot.20221022110627.3: *4* build()
+  //@+node:swot.20221022110627.3: *5* build()
   @override
   Widget build(BuildContext context) {
     return myBuilderWidget();
   }
-  //@+node:swot.20221022110900.1: *4* myBuilderWidget()
+  //@+node:swot.20221022110900.1: *5* myBuilderWidget()
   // 不加 Builder,则无法找到上面 build's context, 
   myBuilderWidget() => Builder(
     builder: (context) {
@@ -1875,6 +1889,848 @@ class BuilderExample extends StatelessWidget {
   );
   //@-others
 }
-//@-others
+//@+node:swot.20221022121254.1: ** C Example
+//@+node:swot.20221022121336.1: *3* C  -- Scaffold
+class C extends StatelessWidget {
+  const C({Key? key}) : super(key: key);
 
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221022121336.2: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo C'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoC(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221022121559.1: *3* DemoC
+//@@language dart
+//@@tabwidth -2
+class DemoC extends StatefulWidget {
+  const DemoC({super.key});
+
+  @override
+  State<DemoC> createState() => _DemoCState();
+}
+
+class _DemoCState extends State<DemoC> {
+  //@+others
+  //@+node:swot.20221022121559.2: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221022121559.3: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221022121559.4: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221022121559.5: *7* show CardExample
+            CardExample(),
+            //@+node:swot.20221022121559.6: *7* Divider
+            Divider(),
+            //@+node:swot.20221022123052.1: *7* show CenterExample
+            CenterExample(),
+            //@+node:swot.20221022123124.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022141621.1: *7* show CheckboxExample
+            CheckboxExample(),
+            //@+node:swot.20221022141649.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022142602.1: *7* show CheckboxListTileExample
+            CheckboxListTileExample(),
+            //@+node:swot.20221022143203.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022143204.1: *7* show ChipExample
+            ChipExample(),
+            //@+node:swot.20221022144700.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022144701.1: *7* show ChoiceChipExample
+            ChoiceChipExample(),
+            //@+node:swot.20221022145241.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022145230.1: *7* show CircleAvatarExample
+            CircleAvatarExample(),
+            //@+node:swot.20221022151216.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022153425.1: *7* show CircularProgressIndicatorExample
+            CircularProgressIndicatorExample(),
+            //@+node:swot.20221022151220.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022154220.1: *7* show ClipOvalExample
+            ClipOvalExample(),
+            //@+node:swot.20221022151221.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022162124.1: *7* show ClipPathExample
+            ClipPathExample(),
+            //@+node:swot.20221022151222.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022164554.1: *7* show ClipRectExample
+            ClipRectExample(),
+            //@+node:swot.20221022165709.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022165721.1: *7* show ClipRRectExample
+            ClipRRectExample(),
+            //@+node:swot.20221022170748.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022170737.1: *7* show CloseButtonExample
+            CloseButtonExample(),
+            //@+node:swot.20221022170805.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022171708.1: *7* show ColoredBoxExample
+            ColoredBoxExample(),
+            //@+node:swot.20221022173326.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022173017.1: *7* show ColorFilteredExample
+            ColorFilteredExample(),
+            //@+node:swot.20221022173323.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022202111.1: *7* show ConstrainedBoxExample
+            ConstrainedBoxExample(),
+            //@+node:swot.20221022202130.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022203303.1: *7* show ContainerExample
+            ContainerExample(),
+            //@+node:swot.20221022203833.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022203824.1: *7* show ColumnExample
+            ColumnExample(),
+            //@+node:swot.20221022210542.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022210532.1: *7* show CupertinoActionSheetExample
+            CupertinoActionSheetExample(),
+            //@+node:swot.20221022211609.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221022214055.1: *7* show CupertinoAppExample
+            CupertinoAppExample(),
+            //@-others
+          ]
+        ),
+        //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221022121728.1: *3* Example
+//@+node:swot.20221022121755.2: *4* CardExample
+//@@language dart
+//@@tabwidth -2
+class CardExample extends StatelessWidget {
+  const CardExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022121755.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child:
+      //@+others
+      //@+node:swot.20221022122022.1: *6* Card
+      Card(
+        elevation: 20,
+        color: Colors.orangeAccent,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const SizedBox(height: 8),
+              const Text('This is a Flutter card'),
+              TextButton(
+                child: const Text('Press'),
+                onPressed: () {},
+              ),
+            ],
+          ),
+        ),
+      ),
+      //@-others
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022122655.2: *4* CenterExample
+//@@language dart
+//@@tabwidth -2
+class CenterExample extends StatelessWidget {
+  const CenterExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022122655.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          color: Colors.orangeAccent,
+          child:
+          //@+others
+          //@+node:swot.20221022122945.1: *6* Center
+          const Center(
+            heightFactor: 5,  // Text 组件高度倍数（Container有高度则无效）
+            child: Text('Flutter learning'),
+          ),
+          //@-others
+        ),
+      ]
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022141252.2: *4* CheckboxExample
+//@@language dart
+//@@tabwidth -2
+class CheckboxExample extends StatefulWidget {
+  const CheckboxExample({super.key});
+
+  @override
+  State<CheckboxExample> createState() => _CheckboxExampleState();
+}
+
+class _CheckboxExampleState extends State<CheckboxExample>{
+  //@+others
+  //@+node:swot.20221022141315.1: *5* varible
+  bool? isChecked = false;
+  //@+node:swot.20221022141252.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022141252.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022141252.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Checkbox(
+        value: isChecked,
+        activeColor: Colors.orangeAccent,
+        tristate: true,  // allow null value
+        onChanged: (newBool) {
+          setState(() {
+            isChecked = newBool;
+          });
+        },
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022141946.2: *4* CheckboxListTileExample
+//@@language dart
+//@@tabwidth -2
+class CheckboxListTileExample extends StatefulWidget {
+  const CheckboxListTileExample({super.key});
+
+  @override
+  State<CheckboxListTileExample> createState() => _CheckboxListTileExampleState();
+}
+
+class _CheckboxListTileExampleState extends State<CheckboxListTileExample>{
+  //@+others
+  //@+node:swot.20221022142005.1: *5* varible
+  bool? _isChecked = false;
+  //@+node:swot.20221022141946.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022141946.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022141946.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child:
+      //@+others
+      //@+node:swot.20221022142124.1: *6* CheckboxListTile
+      CheckboxListTile(
+        title: const Text('Checkbox List Tile'),
+        value: _isChecked,
+        onChanged: (bool? newValue) {
+          setState(() {
+            _isChecked = newValue;
+          });
+        },
+        activeColor: Colors.orangeAccent,
+        checkColor: Colors.white,
+        tileColor: Colors.black12,
+        subtitle: const Text('This is a subtitle'),
+        controlAffinity: ListTileControlAffinity.leading,
+        tristate: true,
+      ),
+      //@-others
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022142919.2: *4* ChipExample
+//@@language dart
+//@@tabwidth -2
+class ChipExample extends StatelessWidget {
+  const ChipExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022142919.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Chip(
+        label: const Text("This is a Flutter chip"),
+        onDeleted: () {
+          debugPrint("Do something");
+        },
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022144339.2: *4* ChoiceChipExample
+//@@language dart
+//@@tabwidth -2
+class ChoiceChipExample extends StatefulWidget {
+  const ChoiceChipExample({super.key});
+
+  @override
+  State<ChoiceChipExample> createState() => _ChoiceChipExampleState();
+}
+
+class _ChoiceChipExampleState extends State<ChoiceChipExample>{
+  //@+others
+  //@+node:swot.20221022144356.1: *5* varible
+  bool isSelected = false;
+  //@+node:swot.20221022144339.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022144339.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022144339.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ChoiceChip(
+        label: const Text("Choice Chip"),
+        selected: isSelected,
+        selectedColor: Colors.orangeAccent,
+        onSelected: (bool newState) {
+          setState(() {
+            isSelected = newState;
+          });
+        },
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022145018.2: *4* CircleAvatarExample
+//@@language dart
+//@@tabwidth -2
+class CircleAvatarExample extends StatelessWidget {
+  const CircleAvatarExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022145018.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: CircleAvatar(
+        backgroundColor: Colors.orangeAccent,
+        radius: 30,
+        // backgroundImage: AssetImage(''),
+        backgroundImage: NetworkImage("https://img1.baidu.com/it/u=4237790906,511339359&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"),
+        child: Text(
+          'Hello',
+          style: TextStyle(color: Colors.red),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022153237.2: *4* CircularProgressIndicatorExample
+//@@language dart
+//@@tabwidth -2
+class CircularProgressIndicatorExample extends StatefulWidget {
+  const CircularProgressIndicatorExample({super.key});
+
+  @override
+  State<CircularProgressIndicatorExample> createState() => _CircularProgressIndicatorExampleState();
+}
+
+class _CircularProgressIndicatorExampleState extends State<CircularProgressIndicatorExample>{
+  //@+others
+  //@+node:swot.20221022153237.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022153237.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022153237.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: CircularProgressIndicator(
+        color: Colors.orangeAccent,
+        backgroundColor: Colors.blueGrey,
+        value: 0.40,
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022153848.2: *4* ClipOvalExample
+//@@language dart
+//@@tabwidth -2
+class ClipOvalExample extends StatelessWidget {
+  const ClipOvalExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022153848.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ClipOval(
+        clipper: CustomClip(),  // change shape
+        child: Container(
+          width: 60,
+          height: 60,
+          color: Colors.orangeAccent,
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022154849.1: *4* CustomClip
+class CustomClip extends CustomClipper<Rect> {
+  @override
+  Rect getClip(Size size) {
+    return Rect.fromLTWH(0, 0, size.width - 10, size.height);
+  }
+  @override
+  bool shouldReclip(covariant CustomClipper<Rect> oldClipper) {
+    return false;
+  }
+}
+//@+node:swot.20221022161946.2: *4* ClipPathExample
+//@@language dart
+//@@tabwidth -2
+class ClipPathExample extends StatelessWidget {
+  const ClipPathExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022161946.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return ClipPath(
+      clipper: MyClipper1(),
+      child: Container(
+        width: double.infinity,
+        height: 100,
+        color: const Color(0xFF142B46),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022162343.1: *4* MyClipper1
+class MyClipper1 extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    return Path()
+      ..lineTo(0, size.height)
+      ..quadraticBezierTo(
+        size.width / 4,
+        size.height - 40,
+        size.width / 2,
+        size.height - 20,
+      )
+      ..quadraticBezierTo(
+        3 / 4 * size.width,
+        size.height,
+        size.width,
+        size.height - 30,
+      )
+      ..lineTo(size.width, 0);
+  }
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
+    return false;
+  }
+}
+//@+node:swot.20221022163926.2: *4* ClipRectExample
+//@@language dart
+//@@tabwidth -2
+class ClipRectExample extends StatelessWidget {
+  const ClipRectExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022163926.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ClipRect(
+        clipper: MyClipper2(),
+        child: Container(
+          width: 100,
+          height: 100,
+          color: Colors.orangeAccent,
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022164337.1: *4* MyClipper2
+class MyClipper2 extends CustomClipper<Rect> {
+  @override
+  Rect getClip(Size size) {
+    return const Rect.fromLTWH(0, 0, 80, 80);
+  }
+  @override
+  bool shouldReclip(covariant CustomClipper<Rect> oldClipper) {
+    return false;
+  }
+}
+//@+node:swot.20221022165324.2: *4* ClipRRectExample
+//@@language dart
+//@@tabwidth -2
+class ClipRRectExample extends StatefulWidget {
+  const ClipRRectExample({super.key});
+
+  @override
+  State<ClipRRectExample> createState() => _ClipRRectExampleState();
+}
+
+class _ClipRRectExampleState extends State<ClipRRectExample>{
+  //@+others
+  //@+node:swot.20221022165324.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022165324.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022165324.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(30),
+        child: Image.network(
+          'https://img1.baidu.com/it/u=3866320064,995069430&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500',
+          width: 250
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022170557.2: *4* CloseButtonExample
+//@@language dart
+//@@tabwidth -2
+class CloseButtonExample extends StatelessWidget {
+  const CloseButtonExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022170557.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: CloseButton(
+        color: Colors.red,
+        onPressed: () {
+          debugPrint("Do something");
+        },
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022171523.2: *4* ColoredBoxExample
+//@@language dart
+//@@tabwidth -2
+class ColoredBoxExample extends StatelessWidget {
+  const ColoredBoxExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022171523.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: ColoredBox(
+        color: Colors.orangeAccent,
+        child: SizedBox(
+          width: 100,
+          height: 100,
+          child: Center(
+            child: Text('ColoredBox'),
+          ),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022172641.2: *4* ColorFilteredExample
+//@@language dart
+//@@tabwidth -2
+class ColorFilteredExample extends StatelessWidget {
+  const ColorFilteredExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022172641.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ColorFiltered(
+        colorFilter: const ColorFilter.mode(
+          Colors.pink,
+          BlendMode.color,
+        ),
+        child: Image.network(
+          'https://img1.baidu.com/it/u=457294142,2860827883&fm=253&fmt=auto&app=138&f=JPEG?w=658&h=439',
+          height: 150,
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022201619.2: *4* ConstrainedBoxExample
+//@@language dart
+//@@tabwidth -2
+class ConstrainedBoxExample extends StatelessWidget {
+  const ConstrainedBoxExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022201619.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(
+          maxWidth: 200,
+          maxHeight: 100,
+        ),
+        child: Container(
+          color: Colors.orangeAccent,
+          width: double.infinity,
+          height: 50,
+          child: const Text('ConstrainedBox'),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022202825.2: *4* ContainerExample
+//@@language dart
+//@@tabwidth -2
+class ContainerExample extends StatelessWidget {
+  const ContainerExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022202825.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(8.0),
+      color: Colors.orangeAccent,
+      alignment: Alignment.center,
+      constraints: const BoxConstraints.expand(height: 100),
+      transform: Matrix4.rotationZ(0.2),
+      child: const Text('Flutter App'),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022203601.2: *4* ColumnExample
+//@@language dart
+//@@tabwidth -2
+class ColumnExample extends StatelessWidget {
+  const ColumnExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022203601.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 120,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.end,
+        // mainAxisSize: MainAxisSize.min, // Column紧紧包围内容
+        children: const [
+          Text("data 1"),
+          Text("data 2"),
+          Text("data 3"),
+          Text('data so long long'),
+        ],
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022210338.2: *4* CupertinoActionSheetExample
+//@@language dart
+//@@tabwidth -2
+class CupertinoActionSheetExample extends StatefulWidget {
+  const CupertinoActionSheetExample({super.key});
+
+  @override
+  State<CupertinoActionSheetExample> createState() => _CupertinoActionSheetExampleState();
+}
+
+class _CupertinoActionSheetExampleState extends State<CupertinoActionSheetExample>{
+  //@+others
+  //@+node:swot.20221022210338.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221022210338.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221022210338.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoPageScaffold(  // Not important here
+      child: Center(
+        child: CupertinoButton(
+          child: const Text('CupertinoActionSheet'),
+          onPressed: () {
+            showCupertinoModalPopup(
+              context: context,
+              builder: (BuildContext context) => CupertinoActionSheet(
+                title: const Text('Flutter App'),
+                message: const Text('Your Message'),
+                actions: <CupertinoActionSheetAction>[
+                  CupertinoActionSheetAction(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Text('Do something'),
+                  ),
+                  CupertinoActionSheetAction(
+                    onPressed: (){
+                      Navigator.pop(context);
+                    },
+                    child: const Text('Do something else'),
+                  )
+                ],
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022213243.2: *4* CupertinoAppExample
+//@@language dart
+//@@tabwidth -2
+class CupertinoAppExample extends StatelessWidget {
+  const CupertinoAppExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022213243.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        // backgroundColor: Colors.orangeAccent,
+      ),
+      child: const Text('CupertinoApp'),
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const MyCupertinoApp(),
+          ),
+        );
+      },
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221022213726.2: *4* MyCupertinoApp
+//@@language dart
+//@@tabwidth -2
+class MyCupertinoApp extends StatelessWidget {
+  const MyCupertinoApp({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221022213726.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return const CupertinoApp(
+      debugShowCheckedModeBanner: false,
+      theme: CupertinoThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
+        primaryColor: CupertinoColors.systemOrange,
+      ),
+      home: CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          middle: Text("Flutter App"),
+        ),
+        child: Center(
+          child: Icon(CupertinoIcons.share),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+//@-others
 //@-leo

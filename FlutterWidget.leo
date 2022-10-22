@@ -244,18 +244,166 @@
 <v t="swot.20221022110900.1"><vh>myBuilderWidget()</vh></v>
 </v>
 </v>
-<v t="swot.20221022104750.1"><vh>newHeadline</vh></v>
-<v t="swot.20221022104750.2"><vh>newHeadline</vh></v>
-<v t="swot.20221022104751.1"><vh>newHeadline</vh></v>
-<v t="swot.20221022104751.2"><vh>newHeadline</vh></v>
-<v t="swot.20221022104751.3"><vh>newHeadline</vh></v>
-<v t="swot.20221022104752.1"><vh>newHeadline</vh></v>
+</v>
+<v t="swot.20221022115422.1"><vh>C</vh>
+<v t="swot.20221022121827.1"><vh>CardExample</vh>
+<v t="swot.20221022121755.2"><vh>CardExample</vh>
+<v t="swot.20221022121755.3"><vh>build()</vh>
+<v t="swot.20221022122022.1"><vh>Card</vh></v>
+</v>
+</v>
+<v t="swot.20221022121559.5"><vh>show CardExample</vh></v>
+</v>
+<v t="swot.20221022122630.1"><vh>CenterExample</vh>
+<v t="swot.20221022122655.2"><vh>CenterExample</vh>
+<v t="swot.20221022122655.3"><vh>build()</vh>
+<v t="swot.20221022122945.1"><vh>Center</vh></v>
+</v>
+</v>
+<v t="swot.20221022123052.1"><vh>show CenterExample</vh></v>
+</v>
+<v t="swot.20221022124036.1"><vh>CheckboxExample</vh>
+<v t="swot.20221022141252.2"><vh>CheckboxExample</vh>
+<v t="swot.20221022141315.1"><vh>varible</vh></v>
+<v t="swot.20221022141252.3"><vh>initState()</vh></v>
+<v t="swot.20221022141252.4"><vh>dispose()</vh></v>
+<v t="swot.20221022141252.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022141621.1"><vh>show CheckboxExample</vh></v>
+</v>
+<v t="swot.20221022141927.1"><vh>CheckboxListTileExample</vh>
+<v t="swot.20221022141946.2"><vh>CheckboxListTileExample</vh>
+<v t="swot.20221022142005.1"><vh>varible</vh></v>
+<v t="swot.20221022141946.3"><vh>initState()</vh></v>
+<v t="swot.20221022141946.4"><vh>dispose()</vh></v>
+<v t="swot.20221022141946.5"><vh>build()</vh>
+<v t="swot.20221022142124.1"><vh>CheckboxListTile</vh></v>
+</v>
+</v>
+<v t="swot.20221022142602.1"><vh>show CheckboxListTileExample</vh></v>
+</v>
+<v t="swot.20221022142903.1"><vh>ChipExample</vh>
+<v t="swot.20221022142919.2"><vh>ChipExample</vh>
+<v t="swot.20221022142919.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022143204.1"><vh>show ChipExample</vh></v>
+</v>
+<v t="swot.20221022144321.1"><vh>ChoiceChipExample</vh>
+<v t="swot.20221022144339.2"><vh>ChoiceChipExample</vh>
+<v t="swot.20221022144356.1"><vh>varible</vh></v>
+<v t="swot.20221022144339.3"><vh>initState()</vh></v>
+<v t="swot.20221022144339.4"><vh>dispose()</vh></v>
+<v t="swot.20221022144339.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022144701.1"><vh>show ChoiceChipExample</vh></v>
+</v>
+<v t="swot.20221022144956.1"><vh>CircleAvatarExample</vh>
+<v t="swot.20221022145018.2"><vh>CircleAvatarExample</vh>
+<v t="swot.20221022145018.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022145230.1"><vh>show CircleAvatarExample</vh></v>
+</v>
+<v t="swot.20221022153206.1"><vh>CircularProgressIndicatorExample</vh>
+<v t="swot.20221022153237.2"><vh>CircularProgressIndicatorExample</vh>
+<v t="swot.20221022153237.3"><vh>initState()</vh></v>
+<v t="swot.20221022153237.4"><vh>dispose()</vh></v>
+<v t="swot.20221022153237.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022153425.1"><vh>show CircularProgressIndicatorExample</vh></v>
+</v>
+<v t="swot.20221022153732.1"><vh>ClipOvalExample</vh>
+<v t="swot.20221022153848.2"><vh>ClipOvalExample</vh>
+<v t="swot.20221022153848.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022154849.1"><vh>CustomClip</vh></v>
+<v t="swot.20221022154220.1"><vh>show ClipOvalExample</vh></v>
+</v>
+<v t="swot.20221022161923.1"><vh>ClipPathExample</vh>
+<v t="swot.20221022161946.2"><vh>ClipPathExample</vh>
+<v t="swot.20221022161946.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022162343.1"><vh>MyClipper1</vh></v>
+<v t="swot.20221022162124.1"><vh>show ClipPathExample</vh></v>
+</v>
+<v t="swot.20221022163908.1"><vh>ClipRectExample</vh>
+<v t="swot.20221022163926.2"><vh>ClipRectExample</vh>
+<v t="swot.20221022163926.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022164337.1"><vh>MyClipper2</vh></v>
+<v t="swot.20221022164554.1"><vh>show ClipRectExample</vh></v>
+</v>
+<v t="swot.20221022165235.1"><vh>ClipRRectExample</vh>
+<v t="swot.20221022165324.2"><vh>ClipRRectExample</vh>
+<v t="swot.20221022165324.3"><vh>initState()</vh></v>
+<v t="swot.20221022165324.4"><vh>dispose()</vh></v>
+<v t="swot.20221022165324.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022165721.1"><vh>show ClipRRectExample</vh></v>
+</v>
+<v t="swot.20221022170537.1"><vh>CloseButtonExample</vh>
+<v t="swot.20221022170557.2"><vh>CloseButtonExample</vh>
+<v t="swot.20221022170557.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022170737.1"><vh>show CloseButtonExample</vh></v>
+</v>
+<v t="swot.20221022171451.1"><vh>ColoredBoxExample</vh>
+<v t="swot.20221022171523.2"><vh>ColoredBoxExample</vh>
+<v t="swot.20221022171523.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022171708.1"><vh>show ColoredBoxExample</vh></v>
+</v>
+<v t="swot.20221022172614.1"><vh>ColorFilteredExample</vh>
+<v t="swot.20221022172641.2"><vh>ColorFilteredExample</vh>
+<v t="swot.20221022172641.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022173017.1"><vh>show ColorFilteredExample</vh></v>
+</v>
+<v t="swot.20221022201311.1"><vh>ConstrainedBoxExample</vh>
+<v t="swot.20221022201619.2"><vh>ConstrainedBoxExample</vh>
+<v t="swot.20221022201619.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022202111.1"><vh>show ConstrainedBoxExample</vh></v>
+</v>
+<v t="swot.20221022202806.1"><vh>ContainerExample</vh>
+<v t="swot.20221022202825.2"><vh>ContainerExample</vh>
+<v t="swot.20221022202825.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022203303.1"><vh>show ContainerExample</vh></v>
+</v>
+<v t="swot.20221022203542.1"><vh>ColumnExample</vh>
+<v t="swot.20221022203601.2"><vh>ColumnExample</vh>
+<v t="swot.20221022203601.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022203824.1"><vh>show ColumnExample</vh></v>
+</v>
+<v t="swot.20221022210316.1"><vh>CupertinoActionSheetExample</vh>
+<v t="swot.20221022210338.2"><vh>CupertinoActionSheetExample</vh>
+<v t="swot.20221022210338.3"><vh>initState()</vh></v>
+<v t="swot.20221022210338.4"><vh>dispose()</vh></v>
+<v t="swot.20221022210338.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022210532.1"><vh>show CupertinoActionSheetExample</vh></v>
+</v>
+<v t="swot.20221022213225.1"><vh>CupertinoAppExample</vh>
+<v t="swot.20221022213243.2"><vh>CupertinoAppExample</vh>
+<v t="swot.20221022213243.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022213726.2"><vh>MyCupertinoApp</vh>
+<v t="swot.20221022213726.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022214055.1"><vh>show CupertinoAppExample</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
 <tnodes>
-<t tx="swot.20221017093031.1">@language dart
-@tabwidth -2
+<t tx="swot.20221017093031.1">Every Flutter Widgets - Part One - 50 Widgets
+https://www.youtube.com/watch?v=P3LzkpHBcnI&amp;list=PL82uaKJraAILRBFE1XhCyfvu-Fclc6vv1&amp;index=1&amp;ab_channel=FlutterMapp
+
+
+TOP 70 Flutter Widgets EVER (Only For Pro)
+https://www.youtube.com/watch?v=G1LGOH424lo
+
 </t>
 <t tx="swot.20221017093031.150">@language md
 ## Flutter built in Widgets
@@ -299,6 +447,29 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
     BottomNavigationBarExample
     BottomSheetExample
     BuilderExample
+
+### C...
+
+    CardExample
+    CenterExample
+    CheckboxExample
+    CheckboxListTileExample
+    ChipExample
+    ChoiceChipExample
+    CircleAvatarExample
+    CircularProgressIndicatorExample
+    ClipOvalExample
+    ClipPathExample
+    ClipRectExample
+    ClipRRectExample
+    CloseButtonExample
+    ColoredBoxExample
+    ColorFilteredExample
+    ConstrainedBoxExample
+    ContainerExample
+    ColumnExample
+    CupertinoActionSheetExample
+    CupertinoAppExample
 
 </t>
 <t tx="swot.20221017093031.151">for node in p.children():
@@ -1542,12 +1713,6 @@ List&lt;Widget&gt; body = const [
 ),
 </t>
 <t tx="swot.20221022104749.1"></t>
-<t tx="swot.20221022104750.1"></t>
-<t tx="swot.20221022104750.2"></t>
-<t tx="swot.20221022104751.1"></t>
-<t tx="swot.20221022104751.2"></t>
-<t tx="swot.20221022104751.3"></t>
-<t tx="swot.20221022104752.1"></t>
 <t tx="swot.20221022104755.1"></t>
 <t tx="swot.20221022104843.2">@language dart
 @tabwidth -2
@@ -1622,6 +1787,729 @@ myBuilderWidget() =&gt; Builder(
     );
   }
 );
+</t>
+<t tx="swot.20221022115422.1">for node in p.children():
+  print(node.h);
+</t>
+<t tx="swot.20221022121559.5">CardExample(),
+</t>
+<t tx="swot.20221022121755.2">@language dart
+@tabwidth -2
+class CardExample extends StatelessWidget {
+  const CardExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022121755.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child:
+    @others
+  );
+}
+</t>
+<t tx="swot.20221022121827.1"></t>
+<t tx="swot.20221022122022.1">Card(
+  elevation: 20,
+  color: Colors.orangeAccent,
+  child: Padding(
+    padding: const EdgeInsets.all(10.0),
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const SizedBox(height: 8),
+        const Text('This is a Flutter card'),
+        TextButton(
+          child: const Text('Press'),
+          onPressed: () {},
+        ),
+      ],
+    ),
+  ),
+),
+</t>
+<t tx="swot.20221022122630.1"></t>
+<t tx="swot.20221022122655.2">@language dart
+@tabwidth -2
+class CenterExample extends StatelessWidget {
+  const CenterExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022122655.3">@override
+Widget build(BuildContext context) {
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Container(
+        color: Colors.orangeAccent,
+        child:
+        @others
+      ),
+    ]
+  );
+}
+</t>
+<t tx="swot.20221022122945.1">const Center(
+  heightFactor: 5,  // Text 组件高度倍数（Container有高度则无效）
+  child: Text('Flutter learning'),
+),
+</t>
+<t tx="swot.20221022123052.1">CenterExample(),
+</t>
+<t tx="swot.20221022124036.1"></t>
+<t tx="swot.20221022141252.2">@language dart
+@tabwidth -2
+class CheckboxExample extends StatefulWidget {
+  const CheckboxExample({super.key});
+
+  @override
+  State&lt;CheckboxExample&gt; createState() =&gt; _CheckboxExampleState();
+}
+
+class _CheckboxExampleState extends State&lt;CheckboxExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022141252.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022141252.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022141252.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: Checkbox(
+      value: isChecked,
+      activeColor: Colors.orangeAccent,
+      tristate: true,  // allow null value
+      onChanged: (newBool) {
+        setState(() {
+          isChecked = newBool;
+        });
+      },
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022141315.1">bool? isChecked = false;
+</t>
+<t tx="swot.20221022141621.1">CheckboxExample(),
+</t>
+<t tx="swot.20221022141927.1"></t>
+<t tx="swot.20221022141946.2">@language dart
+@tabwidth -2
+class CheckboxListTileExample extends StatefulWidget {
+  const CheckboxListTileExample({super.key});
+
+  @override
+  State&lt;CheckboxListTileExample&gt; createState() =&gt; _CheckboxListTileExampleState();
+}
+
+class _CheckboxListTileExampleState extends State&lt;CheckboxListTileExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022141946.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022141946.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022141946.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child:
+    @others
+  );
+}
+</t>
+<t tx="swot.20221022142005.1">bool? _isChecked = false;
+</t>
+<t tx="swot.20221022142124.1">CheckboxListTile(
+  title: const Text('Checkbox List Tile'),
+  value: _isChecked,
+  onChanged: (bool? newValue) {
+    setState(() {
+      _isChecked = newValue;
+    });
+  },
+  activeColor: Colors.orangeAccent,
+  checkColor: Colors.white,
+  tileColor: Colors.black12,
+  subtitle: const Text('This is a subtitle'),
+  controlAffinity: ListTileControlAffinity.leading,
+  tristate: true,
+),
+</t>
+<t tx="swot.20221022142602.1">CheckboxListTileExample(),
+</t>
+<t tx="swot.20221022142903.1"></t>
+<t tx="swot.20221022142919.2">@language dart
+@tabwidth -2
+class ChipExample extends StatelessWidget {
+  const ChipExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022142919.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: Chip(
+      label: const Text("This is a Flutter chip"),
+      onDeleted: () {
+        debugPrint("Do something");
+      },
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022143204.1">ChipExample(),
+</t>
+<t tx="swot.20221022144321.1"></t>
+<t tx="swot.20221022144339.2">@language dart
+@tabwidth -2
+class ChoiceChipExample extends StatefulWidget {
+  const ChoiceChipExample({super.key});
+
+  @override
+  State&lt;ChoiceChipExample&gt; createState() =&gt; _ChoiceChipExampleState();
+}
+
+class _ChoiceChipExampleState extends State&lt;ChoiceChipExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022144339.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022144339.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022144339.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ChoiceChip(
+      label: const Text("Choice Chip"),
+      selected: isSelected,
+      selectedColor: Colors.orangeAccent,
+      onSelected: (bool newState) {
+        setState(() {
+          isSelected = newState;
+        });
+      },
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022144356.1">bool isSelected = false;
+</t>
+<t tx="swot.20221022144701.1">ChoiceChipExample(),
+</t>
+<t tx="swot.20221022144956.1"></t>
+<t tx="swot.20221022145018.2">@language dart
+@tabwidth -2
+class CircleAvatarExample extends StatelessWidget {
+  const CircleAvatarExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022145018.3">@override
+Widget build(BuildContext context) {
+  return const Center(
+    child: CircleAvatar(
+      backgroundColor: Colors.orangeAccent,
+      radius: 30,
+      // backgroundImage: AssetImage(''),
+      backgroundImage: NetworkImage("https://img1.baidu.com/it/u=4237790906,511339359&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=400&amp;h=400"),
+      child: Text(
+        'Hello',
+        style: TextStyle(color: Colors.red),
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022145230.1">CircleAvatarExample(),
+</t>
+<t tx="swot.20221022153206.1"></t>
+<t tx="swot.20221022153237.2">@language dart
+@tabwidth -2
+class CircularProgressIndicatorExample extends StatefulWidget {
+  const CircularProgressIndicatorExample({super.key});
+
+  @override
+  State&lt;CircularProgressIndicatorExample&gt; createState() =&gt; _CircularProgressIndicatorExampleState();
+}
+
+class _CircularProgressIndicatorExampleState extends State&lt;CircularProgressIndicatorExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022153237.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022153237.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022153237.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: CircularProgressIndicator(
+      color: Colors.orangeAccent,
+      backgroundColor: Colors.blueGrey,
+      value: 0.40,
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022153425.1">CircularProgressIndicatorExample(),
+</t>
+<t tx="swot.20221022153732.1"></t>
+<t tx="swot.20221022153848.2">@language dart
+@tabwidth -2
+class ClipOvalExample extends StatelessWidget {
+  const ClipOvalExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022153848.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ClipOval(
+      clipper: CustomClip(),  // change shape
+      child: Container(
+        width: 60,
+        height: 60,
+        color: Colors.orangeAccent,
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022154220.1">ClipOvalExample(),
+</t>
+<t tx="swot.20221022154849.1">class CustomClip extends CustomClipper&lt;Rect&gt; {
+  @override
+  Rect getClip(Size size) {
+    return Rect.fromLTWH(0, 0, size.width - 10, size.height);
+  }
+  @override
+  bool shouldReclip(covariant CustomClipper&lt;Rect&gt; oldClipper) {
+    return false;
+  }
+}
+</t>
+<t tx="swot.20221022161923.1"></t>
+<t tx="swot.20221022161946.2">@language dart
+@tabwidth -2
+class ClipPathExample extends StatelessWidget {
+  const ClipPathExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022161946.3">@override
+Widget build(BuildContext context) {
+  return ClipPath(
+    clipper: MyClipper1(),
+    child: Container(
+      width: double.infinity,
+      height: 100,
+      color: const Color(0xFF142B46),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022162124.1">ClipPathExample(),
+</t>
+<t tx="swot.20221022162343.1">class MyClipper1 extends CustomClipper&lt;Path&gt; {
+  @override
+  Path getClip(Size size) {
+    return Path()
+      ..lineTo(0, size.height)
+      ..quadraticBezierTo(
+        size.width / 4,
+        size.height - 40,
+        size.width / 2,
+        size.height - 20,
+      )
+      ..quadraticBezierTo(
+        3 / 4 * size.width,
+        size.height,
+        size.width,
+        size.height - 30,
+      )
+      ..lineTo(size.width, 0);
+  }
+  @override
+  bool shouldReclip(covariant CustomClipper&lt;Path&gt; oldClipper) {
+    return false;
+  }
+}
+</t>
+<t tx="swot.20221022163908.1"></t>
+<t tx="swot.20221022163926.2">@language dart
+@tabwidth -2
+class ClipRectExample extends StatelessWidget {
+  const ClipRectExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022163926.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ClipRect(
+      clipper: MyClipper2(),
+      child: Container(
+        width: 100,
+        height: 100,
+        color: Colors.orangeAccent,
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022164337.1">class MyClipper2 extends CustomClipper&lt;Rect&gt; {
+  @override
+  Rect getClip(Size size) {
+    return const Rect.fromLTWH(0, 0, 80, 80);
+  }
+  @override
+  bool shouldReclip(covariant CustomClipper&lt;Rect&gt; oldClipper) {
+    return false;
+  }
+}
+</t>
+<t tx="swot.20221022164554.1">ClipRectExample(),
+</t>
+<t tx="swot.20221022165235.1"></t>
+<t tx="swot.20221022165324.2">@language dart
+@tabwidth -2
+class ClipRRectExample extends StatefulWidget {
+  const ClipRRectExample({super.key});
+
+  @override
+  State&lt;ClipRRectExample&gt; createState() =&gt; _ClipRRectExampleState();
+}
+
+class _ClipRRectExampleState extends State&lt;ClipRRectExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022165324.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022165324.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022165324.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(30),
+      child: Image.network(
+        'https://img1.baidu.com/it/u=3866320064,995069430&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=500',
+        width: 250
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022165721.1">ClipRRectExample(),
+</t>
+<t tx="swot.20221022170537.1"></t>
+<t tx="swot.20221022170557.2">@language dart
+@tabwidth -2
+class CloseButtonExample extends StatelessWidget {
+  const CloseButtonExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022170557.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: CloseButton(
+      color: Colors.red,
+      onPressed: () {
+        debugPrint("Do something");
+      },
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022170737.1">CloseButtonExample(),
+</t>
+<t tx="swot.20221022171451.1"></t>
+<t tx="swot.20221022171523.2">@language dart
+@tabwidth -2
+class ColoredBoxExample extends StatelessWidget {
+  const ColoredBoxExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022171523.3">@override
+Widget build(BuildContext context) {
+  return const Center(
+    child: ColoredBox(
+      color: Colors.orangeAccent,
+      child: SizedBox(
+        width: 100,
+        height: 100,
+        child: Center(
+          child: Text('ColoredBox'),
+        ),
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022171708.1">ColoredBoxExample(),
+</t>
+<t tx="swot.20221022172614.1"></t>
+<t tx="swot.20221022172641.2">@language dart
+@tabwidth -2
+class ColorFilteredExample extends StatelessWidget {
+  const ColorFilteredExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022172641.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ColorFiltered(
+      colorFilter: const ColorFilter.mode(
+        Colors.pink,
+        BlendMode.color,
+      ),
+      child: Image.network(
+        'https://img1.baidu.com/it/u=457294142,2860827883&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=658&amp;h=439',
+        height: 150,
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022173017.1">ColorFilteredExample(),
+</t>
+<t tx="swot.20221022201311.1"></t>
+<t tx="swot.20221022201619.2">@language dart
+@tabwidth -2
+class ConstrainedBoxExample extends StatelessWidget {
+  const ConstrainedBoxExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022201619.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ConstrainedBox(
+      constraints: const BoxConstraints(
+        maxWidth: 200,
+        maxHeight: 100,
+      ),
+      child: Container(
+        color: Colors.orangeAccent,
+        width: double.infinity,
+        height: 50,
+        child: const Text('ConstrainedBox'),
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022202111.1">ConstrainedBoxExample(),
+</t>
+<t tx="swot.20221022202806.1"></t>
+<t tx="swot.20221022202825.2">@language dart
+@tabwidth -2
+class ContainerExample extends StatelessWidget {
+  const ContainerExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022202825.3">@override
+Widget build(BuildContext context) {
+  return Container(
+    padding: const EdgeInsets.all(8.0),
+    color: Colors.orangeAccent,
+    alignment: Alignment.center,
+    constraints: const BoxConstraints.expand(height: 100),
+    transform: Matrix4.rotationZ(0.2),
+    child: const Text('Flutter App'),
+  );
+}
+</t>
+<t tx="swot.20221022203303.1">ContainerExample(),
+</t>
+<t tx="swot.20221022203542.1"></t>
+<t tx="swot.20221022203601.2">@language dart
+@tabwidth -2
+class ColumnExample extends StatelessWidget {
+  const ColumnExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022203601.3">@override
+Widget build(BuildContext context) {
+  return SizedBox(
+    height: 120,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.end,
+      // mainAxisSize: MainAxisSize.min, // Column紧紧包围内容
+      children: const [
+        Text("data 1"),
+        Text("data 2"),
+        Text("data 3"),
+        Text('data so long long'),
+      ],
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022203824.1">ColumnExample(),
+</t>
+<t tx="swot.20221022210316.1"></t>
+<t tx="swot.20221022210338.2">@language dart
+@tabwidth -2
+class CupertinoActionSheetExample extends StatefulWidget {
+  const CupertinoActionSheetExample({super.key});
+
+  @override
+  State&lt;CupertinoActionSheetExample&gt; createState() =&gt; _CupertinoActionSheetExampleState();
+}
+
+class _CupertinoActionSheetExampleState extends State&lt;CupertinoActionSheetExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221022210338.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221022210338.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221022210338.5">@override
+Widget build(BuildContext context) {
+  return CupertinoPageScaffold(  // Not important here
+    child: Center(
+      child: CupertinoButton(
+        child: const Text('CupertinoActionSheet'),
+        onPressed: () {
+          showCupertinoModalPopup(
+            context: context,
+            builder: (BuildContext context) =&gt; CupertinoActionSheet(
+              title: const Text('Flutter App'),
+              message: const Text('Your Message'),
+              actions: &lt;CupertinoActionSheetAction&gt;[
+                CupertinoActionSheetAction(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: const Text('Do something'),
+                ),
+                CupertinoActionSheetAction(
+                  onPressed: (){
+                    Navigator.pop(context);
+                  },
+                  child: const Text('Do something else'),
+                )
+              ],
+            ),
+          );
+        },
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022210532.1">CupertinoActionSheetExample(),
+</t>
+<t tx="swot.20221022213225.1"></t>
+<t tx="swot.20221022213243.2">@language dart
+@tabwidth -2
+class CupertinoAppExample extends StatelessWidget {
+  const CupertinoAppExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022213243.3">@override
+Widget build(BuildContext context) {
+  return ElevatedButton(
+    style: ElevatedButton.styleFrom(
+      // backgroundColor: Colors.orangeAccent,
+    ),
+    child: const Text('CupertinoApp'),
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =&gt; const MyCupertinoApp(),
+        ),
+      );
+    },
+  );
+}
+</t>
+<t tx="swot.20221022213726.2">@language dart
+@tabwidth -2
+class MyCupertinoApp extends StatelessWidget {
+  const MyCupertinoApp({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221022213726.3">@override
+Widget build(BuildContext context) {
+  return const CupertinoApp(
+    debugShowCheckedModeBanner: false,
+    theme: CupertinoThemeData(
+      brightness: Brightness.dark,
+      scaffoldBackgroundColor: Color.fromARGB(255, 18, 32, 47),
+      primaryColor: CupertinoColors.systemOrange,
+    ),
+    home: CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: Text("Flutter App"),
+      ),
+      child: Center(
+        child: Icon(CupertinoIcons.share),
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221022214055.1">CupertinoAppExample(),
 </t>
 </tnodes>
 </leo_file>
