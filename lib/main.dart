@@ -38,6 +38,14 @@ class MyApp extends StatelessWidget {
         'a': (context) => A(),
         'b': (context) => B(),
         'c': (context) => C(),
+        'd': (context) => D(),
+        'i': (context) => I(),
+        'l': (context) => L(),
+        'm': (context) => M(),
+        'p': (context) => P(),
+        'r': (context) => R(),
+        's': (context) => S(),
+        't': (context) => T(),
       },
 
       initialRoute: 'home',
@@ -104,6 +112,94 @@ class Home extends StatelessWidget {
                       Navigator.pushNamed(context, 'c');
                     },
                     child: const Text('C'),
+                  ),
+
+                  //@+node:swot.20221024065732.1: *7* ElevatedButton D
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'd');
+                    },
+                    child: const Text('D'),
+                  ),
+
+                  //@+node:swot.20221023124300.1: *7* ElevatedButton I
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'i');
+                    },
+                    child: const Text('I'),
+                  ),
+
+                  //@+node:swot.20221023105031.1: *7* ElevatedButton L
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'l');
+                    },
+                    child: const Text('L'),
+                  ),
+
+                  //@+node:swot.20221023081344.1: *7* ElevatedButton M
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'm');
+                    },
+                    child: const Text('M'),
+                  ),
+
+                  //@+node:swot.20221023093000.1: *7* ElevatedButton P
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'p');
+                    },
+                    child: const Text('P'),
+                  ),
+
+                  //@+node:swot.20221023152035.1: *7* ElevatedButton R
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'r');
+                    },
+                    child: const Text('R'),
+                  ),
+
+                  //@+node:swot.20221024091106.1: *7* ElevatedButton S
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 's');
+                    },
+                    child: const Text('S'),
+                  ),
+
+                  //@+node:swot.20221023180102.1: *7* ElevatedButton T
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 't');
+                    },
+                    child: const Text('T'),
                   ),
 
                   //@-others
@@ -344,7 +440,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221017093031.30: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.31: *7* Row
               Row(
@@ -421,7 +517,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                                 child: const Text('Close'),
                               ),
                             ],
-                            title: const Text('Flutter Map'),
+                            title: const Text('Flutter App'),
                             contentPadding: const EdgeInsets.all(20.0),
                             content: const Text('This is the alert Dialog'),
                           ),
@@ -433,7 +529,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221017093031.40: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.41: *7* Row
               Row(
@@ -495,7 +591,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221017093031.46: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.47: *7* Row
               Row(
@@ -550,7 +646,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221017093031.51: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.52: *7* Row                -- show AnimatedCrossFade
               Row(
@@ -593,7 +689,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221017093031.55: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.56: *7* Row                -- show AnimatedDefaultTextStyle
               Row(
@@ -632,7 +728,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221017093031.60: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.61: *7* Row
               Row(
@@ -678,7 +774,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@-others
                 ],
               ),
-              //@+node:swot.20221017093031.65: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.175: *7* show AnimatedList
               IconButton(
@@ -725,35 +821,35 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   ),
                   //@-others
               ),
-              //@+node:swot.20221017093031.69: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.194: *7* show AnimatedOpacity
               AnimatedOpacityExample(),
-              //@+node:swot.20221017093031.71: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.196: *7* show AnimatedPadding
               AnimatedPaddingExample(),
-              //@+node:swot.20221017093031.73: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.207: *7* show AnimatedPhysicalModel
               AnimatedPhysicalModelExample(),
-              //@+node:swot.20221017093031.75: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.216: *7* show AnimatedPositionedExample
               AnimatedPositionedExample(),
-              //@+node:swot.20221017093031.77: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.226: *7* show AnimatedRotationExample
               AnimatedRotationExample(),
-              //@+node:swot.20221017093031.79: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.235: *7* show AnimatedSizeExample
               AnimatedSizeExample(),
-              //@+node:swot.20221017093031.81: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.251: *7* show AnimatedSwitcherExample
               AnimatedSwitcherExample(),
-              //@+node:swot.20221017093031.83: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.253: *7* AspectRatio
               Container(
@@ -770,19 +866,35 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   ),
                 ),
               ),
-              //@+node:swot.20221017093031.85: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.255: *7* show AutoCompleteExample
               AutoCompleteExample(),
-              //@+node:swot.20221017093031.87: *7* Divider
+
               Divider(),
               //@+node:swot.20221017093031.88: *7* SizedBox
               SizedBox(
                 height: 200.0,
               ),
+
+              Divider(),
               //@-others
             ]
           ),
+
+          //@+doc
+          //@@language python
+          // for node in p.children():
+          //     print(node.h);
+          //     if node.h == "Divider":
+          //         c.deletePositionsInList([node])
+          // c.redraw()
+          //
+          //
+          // for node in p.children():
+          //     if node.h == "Divider":
+          //         node.b = "Divider(),"
+          // c.redraw()
           //@-others
       )
       //@-others
@@ -1476,7 +1588,7 @@ class _DemoBState extends State<DemoB> {
   //@-others
 }
 
-//@+node:swot.20221022121355.1: *3* Example
+//@+node:swot.20221022121355.1: *3* ExampleB
 //@+node:swot.20221019111317.2: *4* BackdropFilterExample
 //@@language dart
 //@@tabwidth -2
@@ -1960,85 +2072,71 @@ class _DemoCState extends State<DemoC> {
             //@+others
             //@+node:swot.20221022121559.5: *7* show CardExample
             CardExample(),
-            //@+node:swot.20221022121559.6: *7* Divider
             Divider(),
             //@+node:swot.20221022123052.1: *7* show CenterExample
             CenterExample(),
-            //@+node:swot.20221022123124.1: *7* Divider
             Divider(),
             //@+node:swot.20221022141621.1: *7* show CheckboxExample
             CheckboxExample(),
-            //@+node:swot.20221022141649.1: *7* Divider
             Divider(),
             //@+node:swot.20221022142602.1: *7* show CheckboxListTileExample
             CheckboxListTileExample(),
-            //@+node:swot.20221022143203.1: *7* Divider
             Divider(),
             //@+node:swot.20221022143204.1: *7* show ChipExample
             ChipExample(),
-            //@+node:swot.20221022144700.1: *7* Divider
             Divider(),
             //@+node:swot.20221022144701.1: *7* show ChoiceChipExample
             ChoiceChipExample(),
-            //@+node:swot.20221022145241.1: *7* Divider
             Divider(),
             //@+node:swot.20221022145230.1: *7* show CircleAvatarExample
             CircleAvatarExample(),
-            //@+node:swot.20221022151216.1: *7* Divider
             Divider(),
             //@+node:swot.20221022153425.1: *7* show CircularProgressIndicatorExample
             CircularProgressIndicatorExample(),
-            //@+node:swot.20221022151220.1: *7* Divider
             Divider(),
             //@+node:swot.20221022154220.1: *7* show ClipOvalExample
             ClipOvalExample(),
-            //@+node:swot.20221022151221.1: *7* Divider
             Divider(),
             //@+node:swot.20221022162124.1: *7* show ClipPathExample
             ClipPathExample(),
-            //@+node:swot.20221022151222.1: *7* Divider
             Divider(),
             //@+node:swot.20221022164554.1: *7* show ClipRectExample
             ClipRectExample(),
-            //@+node:swot.20221022165709.1: *7* Divider
             Divider(),
             //@+node:swot.20221022165721.1: *7* show ClipRRectExample
             ClipRRectExample(),
-            //@+node:swot.20221022170748.1: *7* Divider
             Divider(),
             //@+node:swot.20221022170737.1: *7* show CloseButtonExample
             CloseButtonExample(),
-            //@+node:swot.20221022170805.1: *7* Divider
             Divider(),
             //@+node:swot.20221022171708.1: *7* show ColoredBoxExample
             ColoredBoxExample(),
-            //@+node:swot.20221022173326.1: *7* Divider
             Divider(),
             //@+node:swot.20221022173017.1: *7* show ColorFilteredExample
             ColorFilteredExample(),
-            //@+node:swot.20221022173323.1: *7* Divider
             Divider(),
             //@+node:swot.20221022202111.1: *7* show ConstrainedBoxExample
             ConstrainedBoxExample(),
-            //@+node:swot.20221022202130.1: *7* Divider
             Divider(),
             //@+node:swot.20221022203303.1: *7* show ContainerExample
             ContainerExample(),
-            //@+node:swot.20221022203833.1: *7* Divider
             Divider(),
             //@+node:swot.20221022203824.1: *7* show ColumnExample
             ColumnExample(),
-            //@+node:swot.20221022210542.1: *7* Divider
             Divider(),
             //@+node:swot.20221022210532.1: *7* show CupertinoActionSheetExample
             CupertinoActionSheetExample(),
-            //@+node:swot.20221022211609.1: *7* Divider
             Divider(),
             //@+node:swot.20221022214055.1: *7* show CupertinoAppExample
             CupertinoAppExample(),
+            Divider(),
+            //@+node:swot.20221023164513.1: *7* show CupertinoContextMenuExample
+            CupertinoContextMenuExample(),
+            Divider(),
             //@-others
           ]
         ),
+
         //@-others
       )
       //@-others
@@ -2047,7 +2145,7 @@ class _DemoCState extends State<DemoC> {
   //@-others
 }
 
-//@+node:swot.20221022121728.1: *3* Example
+//@+node:swot.20221022121728.1: *3* ExampleC
 //@+node:swot.20221022121755.2: *4* CardExample
 //@@language dart
 //@@tabwidth -2
@@ -2729,6 +2827,1430 @@ class MyCupertinoApp extends StatelessWidget {
         ),
       ),
     );
+  }
+  //@-others
+}
+//@+node:swot.20221023163418.2: *4* CupertinoContextMenuExample
+//@@language dart
+//@@tabwidth -2
+class CupertinoContextMenuExample extends StatelessWidget {
+  const CupertinoContextMenuExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221023163418.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: SizedBox(
+        width: 100,
+        height: 100,
+        child:
+        //@+others
+        //@+node:swot.20221023163626.1: *6* CupertinoContextMenu
+        CupertinoContextMenu(
+          child: Image.network(
+            'https://img0.baidu.com/it/u=574351580,3649561547&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=320',
+          ),
+          actions: <Widget>[
+            CupertinoContextMenuAction(
+              child: const Text('Action one'),
+              onPressed: (){
+                Navigator.pop(context);
+              },
+            ),
+            CupertinoContextMenuAction(
+              child: const Text('Action two'),
+              onPressed: (){
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+        //@-others
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221024065815.1: ** D Example
+//@+node:swot.20221024065902.1: *3* D  -- Scaffold
+class D extends StatelessWidget {
+  const D({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221024065902.2: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo D'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoD(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221024070012.1: *3* DemoD
+//@@language dart
+//@@tabwidth -2
+class DemoD extends StatefulWidget {
+  const DemoD({super.key});
+
+  @override
+  State<DemoD> createState() => _DemoDState();
+}
+
+class _DemoDState extends State<DemoD> {
+  //@+others
+  //@+node:swot.20221024070127.1: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221024070127.2: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221024070127.3: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221024112602.1: *7* show DismissibleExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('DismissibleExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DismissibleExample(),
+                  ),
+                );
+              },
+            ),
+
+            Divider(),
+            //@-others
+          ]
+        ),
+
+        //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221024070225.1: *3* ExampleD
+//@+node:swot.20221024112614.2: *4* DismissibleExample
+//@@language dart
+//@@tabwidth -2
+class DismissibleExample extends StatefulWidget {
+  const DismissibleExample({super.key});
+
+  @override
+  State<DismissibleExample> createState() => _DismissibleExampleState();
+}
+
+class _DismissibleExampleState extends State<DismissibleExample>{
+  //@+others
+  //@+node:swot.20221024112703.1: *5* varible
+  List<int> items = List<int>.generate(50, (int index) => index);
+  //@+node:swot.20221024112614.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221024112614.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221024112614.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221024113603.2: *6* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221024113603.3: *7* appBar
+      appBar: AppBar(
+        title: Text('DismissibleExample'),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221024113603.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221024113627.1: *8* ListView
+      ListView.builder(
+        itemCount: items.length,
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        itemBuilder: (BuildContext contex, int index) {
+          return Dismissible(
+            background: Container(
+              color: Colors.red,
+              child: const Icon(Icons.delete),
+            ),
+            key: ValueKey<int>(items[index]),
+            onDismissed: (DismissDirection direction) {
+              setState(() {
+                items.removeAt(index);
+              });
+            },
+            child: ListTile(
+              title: Text('Item ${items[index]}'),
+            ),
+          );
+        },
+      ),
+      //@-others
+      //@-others
+    );
+
+    //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221023124355.1: ** I Example
+//@+node:swot.20221023124355.2: *3* I  -- Scaffold
+class I extends StatelessWidget {
+  const I({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221023124355.3: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo I'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoI(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221023124355.4: *3* DemoI
+//@@language dart
+//@@tabwidth -2
+class DemoI extends StatefulWidget {
+  const DemoI({super.key});
+
+  @override
+  State<DemoI> createState() => _DemoIState();
+}
+
+class _DemoIState extends State<DemoI> {
+  //@+others
+  //@+node:swot.20221023124355.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221023124355.6: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221023124355.7: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221023144510.2: *7* ElevatedButton -- show InteractiveViewerExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('InteractiveViewerExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => InteractiveViewerExample(),
+                  ),
+                );
+              },
+            ),
+            //@+node:swot.20221023124355.9: *7* Divider
+            Divider(),
+            //@+node:swot.20221023124620.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221023124621.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221023124622.1: *7* Divider
+            Divider(),
+            //@-others
+          ]
+        ),
+        //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221023124644.1: *3* ExampleI
+//@+node:swot.20221023144929.2: *4* InteractiveViewerExample
+//@@language dart
+//@@tabwidth -2
+class InteractiveViewerExample extends StatefulWidget {
+  const InteractiveViewerExample({super.key});
+
+  @override
+  State<InteractiveViewerExample> createState() => _InteractiveViewerExampleState();
+}
+
+class _InteractiveViewerExampleState extends State<InteractiveViewerExample>{
+  //@+others
+  //@+node:swot.20221023144929.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221023144929.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221023144929.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tool'),
+      ),
+      backgroundColor: Colors.orangeAccent,
+      body: InteractiveViewer(
+        boundaryMargin: const EdgeInsets.all(
+          double.infinity,
+        ),
+        child: Scaffold(
+          appBar: AppBar(
+            title: const Text('SwotApp'),
+          ),
+          body: Text('ALT + mouse zoom'),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221023105117.1: ** L Example
+//@+node:swot.20221023105152.1: *3* L  -- Scaffold
+class L extends StatelessWidget {
+  const L({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221023105152.2: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo L'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoL(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221023105258.1: *3* DemoL
+//@@language dart
+//@@tabwidth -2
+class DemoL extends StatefulWidget {
+  const DemoL({super.key});
+
+  @override
+  State<DemoL> createState() => _DemoLState();
+}
+
+class _DemoLState extends State<DemoL> {
+  //@+others
+  //@+node:swot.20221023105258.2: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221023105258.3: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221023105258.4: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221023122724.2: *7* ElevatedButton -- show LongPressDraggableExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('LongPressDraggableExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LongPressDraggableExample(),
+                  ),
+                );
+              },
+            ),
+            //@-others
+          ]
+        ),
+        //@-others
+      );
+      //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221023105408.1: *3* ExampleL
+//@+node:swot.20221023105920.2: *4* LongPressDraggableExample
+//@@language dart
+//@@tabwidth -2
+class LongPressDraggableExample extends StatefulWidget {
+  const LongPressDraggableExample({super.key});
+
+  @override
+  State<LongPressDraggableExample> createState() => _LongPressDraggableExampleState();
+}
+
+class _LongPressDraggableExampleState extends State<LongPressDraggableExample>{
+  //@+others
+  //@+node:swot.20221023105947.1: *5* varible
+  Offset _offset = const Offset(200, 250);
+  //@+node:swot.20221023105920.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221023105920.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221023105920.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221023123049.2: *6* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221023123049.3: *7* appBar
+      appBar: AppBar(
+        title: Text('LongPressDraggable'),
+        // leading: Icon(Icons.menu),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221023123049.4: *7* body
+      body: Center(
+        child: LayoutBuilder(
+          builder: (context, constrains) {
+            return Stack(
+              children: [
+                //@+others
+                //@+node:swot.20221023110506.1: *8* Positioned
+                Positioned(
+                  left: _offset.dx,
+                  top: _offset.dy,
+                  child:
+                  //@+others
+                  //@+node:swot.20221023110634.1: *9* LongPressDraggable
+                  LongPressDraggable(
+                    feedback: Image.network(
+                      'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
+                      height: 100,
+                      color: Colors.orangeAccent,
+                      colorBlendMode: BlendMode.colorBurn,
+                    ),
+                    child: Image.network(
+                      'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
+                      height: 100,
+                    ),
+                    onDragEnd: (details) {
+                      setState(() {
+                        double adjustment = MediaQuery.of(context).size.height - constrains.maxHeight;
+                        _offset = Offset(
+                          details.offset.dx,
+                          details.offset.dy - adjustment,
+                        );
+                      });
+                    },
+                  ),
+                  //@-others
+                ),
+                //@-others
+              ]
+            );
+          },
+        ),
+      ),
+      //@-others
+    );
+
+    //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221023080501.1: ** M Example
+//@+node:swot.20221023080540.1: *3* M  -- Scaffold
+class M extends StatelessWidget {
+  const M({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221023080540.2: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo M'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoM(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221023081047.1: *3* DemoM
+//@@language dart
+//@@tabwidth -2
+class DemoM extends StatefulWidget {
+  const DemoM({super.key});
+
+  @override
+  State<DemoM> createState() => _DemoMState();
+}
+
+class _DemoMState extends State<DemoM> {
+  //@+others
+  //@+node:swot.20221023081047.2: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221023081047.3: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221023081047.4: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221023081047.5: *7* show MaterialBannerExample
+            MaterialBannerExample(),
+            //@+node:swot.20221023081047.6: *7* Divider
+            Divider(),
+            //@+node:swot.20221023081815.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221023081816.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221023081817.1: *7* Divider
+            Divider(),
+            //@+node:swot.20221023081819.1: *7* Divider
+            Divider(),
+            //@-others
+          ]
+        ),
+        //@-others
+      );
+      //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221023081258.1: *3* ExampleM
+//@+node:swot.20221023081535.2: *4* MaterialBannerExample
+//@@language dart
+//@@tabwidth -2
+class MaterialBannerExample extends StatelessWidget {
+  const MaterialBannerExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221023081535.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        child: const Text('Open MaterialBanner'),
+        onPressed: () {
+          ScaffoldMessenger.of(context).showMaterialBanner(
+            MaterialBanner(
+              padding: const EdgeInsets.all(20),
+              content: const Text('Subscribe!'),
+              leading: const Icon(Icons.notifications_active_outlined),
+              elevation: 5,
+              backgroundColor: Colors.white12,
+              actions: [
+                TextButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+                  },
+                  child: const Text('Dismiss'),
+                ),
+              ],
+            )
+          );
+        },
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221023093033.1: ** P Example
+//@+node:swot.20221023093033.2: *3* P  -- Scaffold
+class P extends StatelessWidget {
+  const P({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221023093803.1: *4* AppBar
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(80.0),
+        child: Container(
+          height: 120,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: <Color>[
+                Colors.redAccent,
+                Colors.orangeAccent,
+              ],
+            ),
+          ),
+          child: SafeArea(
+            child: Center(
+              child: ListTile(
+                title: const Text('PreferredSize'),
+                trailing: IconButton(
+                  icon: const Icon(Icons.arrow_back, size: 20),
+                  color: Colors.white,
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+      //@-others
+      body: DemoP(),
+    );
+  }
+}
+//@+node:swot.20221023093033.4: *3* DemoP
+//@@language dart
+//@@tabwidth -2
+class DemoP extends StatefulWidget {
+  const DemoP({super.key});
+
+  @override
+  State<DemoP> createState() => _DemoPState();
+}
+
+class _DemoPState extends State<DemoP> {
+  //@+others
+  //@+node:swot.20221023093033.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221023093033.6: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221023093033.7: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221023093033.9: *7* Divider
+            Divider(),
+            //@+node:swot.20221023093033.10: *7* Divider
+            Divider(),
+            //@+node:swot.20221023093033.11: *7* Divider
+            Divider(),
+            //@+node:swot.20221023093033.12: *7* Divider
+            Divider(),
+            //@+node:swot.20221023093033.13: *7* Divider
+            Divider(),
+            //@-others
+          ]
+        ),
+        //@-others
+      );
+      //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221023093033.14: *3* ExampleP
+//@+node:swot.20221023152107.1: ** R Example
+//@+node:swot.20221023152107.2: *3* R  -- Scaffold
+class R extends StatelessWidget {
+  const R({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221023152533.1: *4* AppBar
+      appBar: AppBar(
+        title: const Text('Demo R'),
+        centerTitle: true,
+
+        // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+        // ),
+
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.notifications),
+            onPressed: (){},
+          ),
+        ],
+        // AppBar 的下边变成了圆角
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(25),
+            bottomRight: Radius.circular(25),
+          ),
+        ),
+
+        backgroundColor: Colors.orangeAccent,
+        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+      ),
+      //@-others
+      body: DemoR(),
+    );
+  }
+}
+//@+node:swot.20221023152107.4: *3* DemoR
+//@@language dart
+//@@tabwidth -2
+class DemoR extends StatefulWidget {
+  const DemoR({super.key});
+
+  @override
+  State<DemoR> createState() => _DemoRState();
+}
+
+class _DemoRState extends State<DemoR> {
+  //@+others
+  //@+node:swot.20221023152107.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221023152107.6: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221023152107.7: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221023154547.2: *7* ElevatedButton -- show ReorderableListViewExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('ReorderableListView'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ReorderableListViewExample(),
+                  ),
+                );
+              },
+            ),
+            //@+node:swot.20221023152107.8: *7* Divider
+            Divider(),
+            //@+node:swot.20221023152107.9: *7* Divider
+            Divider(),
+            //@+node:swot.20221023152107.10: *7* Divider
+            Divider(),
+            //@+node:swot.20221023152107.11: *7* Divider
+            Divider(),
+            //@+node:swot.20221023152107.12: *7* Divider
+            Divider(),
+            //@-others
+          ]
+        ),
+        //@-others
+      );
+      //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221023152107.13: *3* ExampleR
+//@+node:swot.20221023152801.2: *4* ReorderableListViewExample
+//@@language dart
+//@@tabwidth -2
+class ReorderableListViewExample extends StatefulWidget {
+  const ReorderableListViewExample({super.key});
+
+  @override
+  State<ReorderableListViewExample> createState() => _ReorderableListViewExampleState();
+}
+
+class _ReorderableListViewExampleState extends State<ReorderableListViewExample>{
+  //@+others
+  //@+node:swot.20221023152933.1: *5* varible
+  final List<int> items = List<int>.generate(30, (int index) => index);
+  //@+node:swot.20221023152801.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221023152801.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221023152801.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221023154334.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221023154334.3: *7* appBar
+      appBar: AppBar(
+        title: Text('ReorderableListView'),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221023154334.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221023153058.1: *8* ReorderableListView
+      ReorderableListView(
+        children: List.generate(
+          items.length,
+          (index) => ListTile(
+            key: Key('$index'),
+            // tileColor: items[index].isOdd ? Colors.white12 : Colors.white30,
+            tileColor: items[index].isOdd ? Colors.grey : Colors.white30,
+            title: Text('Item ${items[index]}'),
+            trailing: const Icon(Icons.drag_handle_sharp),
+          ),
+        ),
+        onReorder: (int oldIndex, int newIndex) {
+          setState(() {
+            if (oldIndex < newIndex) {
+              newIndex -= 1;
+            }
+            final int item = items.removeAt(oldIndex);
+            items.insert(newIndex, item);
+          });
+        },
+      ),
+      //@-others
+      //@-others
+    );
+
+    //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221024070848.1: ** S Example
+//@+node:swot.20221024070848.2: *3* S  -- Scaffold
+class S extends StatelessWidget {
+  const S({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221024070848.3: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo S'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoS(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221024070848.4: *3* DemoS
+//@@language dart
+//@@tabwidth -2
+class DemoS extends StatefulWidget {
+  const DemoS({super.key});
+
+  @override
+  State<DemoS> createState() => _DemoSState();
+}
+
+class _DemoSState extends State<DemoS> {
+  //@+others
+  //@+node:swot.20221024070848.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221024070848.6: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221024070848.7: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221024100552.1: *7* show DatePickerExample
+            DatePickerExample(),
+            Divider(),
+            //@+node:swot.20221024103554.1: *7* show TimePickerExample
+            TimePickerExample(),
+            Divider(),
+            //@+node:swot.20221024110745.1: *7* show DateRangePickerExample
+            DateRangePickerExample(),
+            Divider(),
+            //@-others
+          ]
+        ),
+
+        //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221024070848.8: *3* ExampleS
+//@+node:swot.20221024095344.2: *4* DatePickerExample
+//@@language dart
+//@@tabwidth -2
+class DatePickerExample extends StatefulWidget {
+  const DatePickerExample({super.key});
+
+  @override
+  State<DatePickerExample> createState() => _DatePickerExampleState();
+}
+
+class _DatePickerExampleState extends State<DatePickerExample>{
+  //@+others
+  //@+node:swot.20221024095406.1: *5* varible
+  DateTime selectedDate = DateTime.now();
+  //@+node:swot.20221024095344.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221024095344.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221024095344.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children:[
+          ElevatedButton(
+            child: const Text('Choose Date'),
+            onPressed: () async {
+              final DateTime? dateTime = await showDatePicker(
+                context: context,
+                initialDate: selectedDate,
+                firstDate: DateTime(2000),
+                lastDate: DateTime(3000),
+              );
+              if (dateTime != null) {
+                setState(() {
+                  selectedDate = dateTime;
+                });
+              }
+            },
+          ),
+          SizedBox(width: 10),
+          Text("${selectedDate.year}-${selectedDate.month}-${selectedDate.day}"),
+        ],
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221024103523.2: *4* TimePickerExample
+//@@language dart
+//@@tabwidth -2
+class TimePickerExample extends StatefulWidget {
+  const TimePickerExample({super.key});
+
+  @override
+  State<TimePickerExample> createState() => _TimePickerExampleState();
+}
+
+class _TimePickerExampleState extends State<TimePickerExample>{
+  //@+others
+  //@+node:swot.20221024103850.1: *5* varible
+  TimeOfDay selectedTime = TimeOfDay.now();
+  //@+node:swot.20221024103523.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221024103523.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221024103957.1: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children:[
+          ElevatedButton(
+            child: const Text('Choose Time'),
+            onPressed: () async {
+              final TimeOfDay? timeOfDay = await showTimePicker(
+                context: context,
+                initialTime: selectedTime,
+                initialEntryMode: TimePickerEntryMode.dial,
+              );
+              if (timeOfDay != null) {
+                setState(() {
+                  selectedTime = timeOfDay;
+                });
+              }
+            },
+          ),
+          SizedBox(width: 10),
+          Text("${selectedTime.hour}:${selectedTime.minute}"),
+        ],
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221024110030.2: *4* DateRangePickerExample
+//@@language dart
+//@@tabwidth -2
+class DateRangePickerExample extends StatefulWidget {
+  const DateRangePickerExample({super.key});
+
+  @override
+  State<DateRangePickerExample> createState() => _DateRangePickerExampleState();
+}
+
+class _DateRangePickerExampleState extends State<DateRangePickerExample>{
+  //@+others
+  //@+node:swot.20221024110048.1: *5* varible
+  DateTimeRange selectedDates = DateTimeRange(
+    start: DateTime.now(),
+    end: DateTime.now(),
+  );
+  //@+node:swot.20221024110030.3: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221024110030.4: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221024110030.5: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children:[
+          ElevatedButton(
+            child: const Text('Choose Dates'),
+            onPressed: () async {
+              final DateTimeRange? dateTimeRange = await showDateRangePicker(
+                context: context,
+                firstDate: DateTime(2000),
+                lastDate: DateTime(3000),
+              );
+              if (dateTimeRange != null) {
+                setState(() {
+                  selectedDates = dateTimeRange;
+                });
+              }
+            },
+          ),
+          SizedBox(width: 10),
+          Text("${selectedDates.duration.inDays}"),
+        ],
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221023175859.1: ** T Example
+//@+node:swot.20221023175859.2: *3* T  -- Scaffold
+class T extends StatelessWidget {
+  const T({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221023175859.3: *4* AppBar
+      appBar: AppBar(
+        title: const Text('Demo T'),
+        centerTitle: true,
+
+        // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+        // ),
+
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.notifications),
+            onPressed: (){},
+          ),
+        ],
+        // AppBar 的下边变成了圆角
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(25),
+            bottomRight: Radius.circular(25),
+          ),
+        ),
+
+        backgroundColor: Colors.orangeAccent,
+        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+      ),
+      //@-others
+      body: const DemoT(),
+    );
+  }
+}
+//@+node:swot.20221023175859.4: *3* DemoT
+//@@language dart
+//@@tabwidth -2
+class DemoT extends StatefulWidget {
+  const DemoT({super.key});
+
+  @override
+  State<DemoT> createState() => _DemoTState();
+}
+
+class _DemoTState extends State<DemoT> {
+  //@+others
+  //@+node:swot.20221023175859.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221023175859.6: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221023175859.7: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221023195608.1: *7* show TableExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('Table'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TableExample(),
+                  ),
+                );
+              },
+            ),
+
+            Divider(),
+            //@-others
+          ]
+        ),
+        //@-others
+      );
+      //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221023175859.14: *3* ExampleT
+//@+node:swot.20221023193833.2: *4* TableExample
+//@@language dart
+//@@tabwidth -2
+class TableExample extends StatelessWidget {
+  const TableExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221023193833.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221023193950.2: *6* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221023193950.3: *7* appBar
+      appBar: AppBar(
+        title: const Text('Table'),
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221023193950.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221023194122.1: *8* Center
+      Center(
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child:
+          //@+others
+          //@+node:swot.20221023200224.1: *9* SingleChildScrollView
+          SingleChildScrollView(
+            child:
+            //@+others
+            //@+node:swot.20221023194310.1: *10* Table
+            Table(
+              border: TableBorder.all(color: Colors.white30),
+              defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+              children: [
+                //@+others
+                //@+node:swot.20221023194533.1: *11* TableRow
+                const TableRow(
+                  decoration: BoxDecoration(
+                    color: Colors.redAccent,
+                  ),
+                  children: [
+                    //@+others
+                    //@+node:swot.20221023194941.1: *12* TableCell
+                    TableCell(
+                      verticalAlignment: TableCellVerticalAlignment.middle,
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('Title 1'),
+                      ),
+                    ),
+                    //@+node:swot.20221023194949.1: *12* TableCell
+                    TableCell(
+                      verticalAlignment: TableCellVerticalAlignment.middle,
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('Title 2'),
+                      ),
+                    ),
+                    //@+node:swot.20221023194950.1: *12* TableCell
+                    TableCell(
+                      verticalAlignment: TableCellVerticalAlignment.middle,
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('Title 3'),
+                      ),
+                    ),
+                    //@-others
+                  ],
+                ),
+                //@+node:swot.20221023195102.1: *11* List.generate
+                ...List.generate(
+                  30,
+                  (index) => const TableRow(
+                    children: [
+                      //@+others
+                      //@+node:swot.20221023195414.1: *12* TableCell
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.middle,
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text('Cell 1'),
+                        ),
+                      ),
+                      //@+node:swot.20221023195426.1: *12* TableCell
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.middle,
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text('Cell 2'),
+                        ),
+                      ),
+                      //@+node:swot.20221023195426.2: *12* TableCell
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.middle,
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text('Cell 3'),
+                        ),
+                      ),
+                      //@-others
+                    ],
+                  ),
+                ),
+                //@-others
+              ]
+            ),
+            //@-others
+          ),
+          //@-others
+        ),
+      ),
+      //@-others
+      //@-others
+    );
+
+    //@-others
   }
   //@-others
 }
