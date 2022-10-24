@@ -7,7 +7,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="swot.20221017093031.1"><vh>widgets</vh>
-<v t="swot.20221017093031.2"><vh>@file lib/main.dart</vh></v>
+<v t="swot.20221017093031.2" descendentVnodeUnknownAttributes="7d7100285805000000302e322e3171017d7102285808000000616e6e6f7461746571037d71042858080000007072696f7269747971054b01580a000000707269736574646174657106580a000000323032322d31302d3233710775580500000069636f6e7371085d71097d710a28580400000074797065710b580400000066696c65710c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269312e706e67710d580700000072656c50617468710e580d000000636c656f2f707269312e706e67710f580500000077686572657110580e0000006265666f7265486561646c696e6571115807000000796f666673657471124b005807000000786f666673657471134b0258040000007870616471144b0158020000006f6e71155805000000766e6f646571165808000000636c656f49636f6e71175801000000317118756175580b000000302e332e302e302e302e3071197d711a2868037d711b2868054b026806580a000000323032322d31302d3233711c7568085d711d7d711e28680b680c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269322e706e67711f680e580d000000636c656f2f707269322e706e6771206810681168124b0068134b0268144b0168156816681768187561755809000000302e392e312e302e3071217d71225808000000616e6e6f7461746571237d71242858080000007072696f7269747971254d0f27580a000000707269736574646174657126580a000000323032322d31302d323371277573580b000000302e392e312e302e302e3071287d712968237d712a2868254d0f276826580a000000323032322d31302d3233712b7573752e"><vh>@file lib/main.dart</vh></v>
 <v t="swot.20221017093031.150"><vh>@clean README.md</vh></v>
 <v t="swot.20221017093031.151"><vh>A</vh>
 <v t="swot.20221017093031.152"><vh>AboutDialog</vh></v>
@@ -393,6 +393,159 @@
 </v>
 <v t="swot.20221022214055.1"><vh>show CupertinoAppExample</vh></v>
 </v>
+<v t="swot.20221023163309.1"><vh>CupertinoContextMenuExample  -- longPress</vh>
+<v t="swot.20221023163418.2"><vh>CupertinoContextMenuExample</vh>
+<v t="swot.20221023163418.3"><vh>build()</vh>
+<v t="swot.20221023163626.1"><vh>CupertinoContextMenu</vh></v>
+</v>
+</v>
+<v t="swot.20221023164513.1"><vh>show CupertinoContextMenuExample</vh></v>
+</v>
+</v>
+<v t="swot.20221024070739.1"><vh>D</vh>
+<v t="swot.20221024112547.1"><vh>DismissibleExample</vh>
+<v t="swot.20221024112614.2"><vh>DismissibleExample</vh>
+<v t="swot.20221024112703.1"><vh>varible</vh></v>
+<v t="swot.20221024112614.3"><vh>initState()</vh></v>
+<v t="swot.20221024112614.4"><vh>dispose()</vh></v>
+<v t="swot.20221024112614.5"><vh>build()</vh>
+<v t="swot.20221024113603.2"><vh>Scaffold</vh>
+<v t="swot.20221024113603.3"><vh>appBar</vh></v>
+<v t="swot.20221024113603.4"><vh>body</vh>
+<v t="swot.20221024113627.1"><vh>ListView</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221024112602.1"><vh>show DismissibleExample</vh></v>
+</v>
+</v>
+<v t="swot.20221023124217.1"><vh>I</vh>
+<v t="swot.20221023150449.1"><vh>InteractiveViewerExample</vh>
+<v t="swot.20221023144929.2"><vh>InteractiveViewerExample</vh>
+<v t="swot.20221023144929.3"><vh>initState()</vh></v>
+<v t="swot.20221023144929.4"><vh>dispose()</vh></v>
+<v t="swot.20221023144929.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221023144510.2"><vh>ElevatedButton -- show InteractiveViewerExample</vh></v>
+</v>
+</v>
+<v t="swot.20221023105739.1"><vh>L</vh>
+<v t="swot.20221023105806.1"><vh>LongPressDraggableExample</vh>
+<v t="swot.20221023105920.2"><vh>LongPressDraggableExample</vh>
+<v t="swot.20221023105947.1"><vh>varible</vh></v>
+<v t="swot.20221023105920.3"><vh>initState()</vh></v>
+<v t="swot.20221023105920.4"><vh>dispose()</vh></v>
+<v t="swot.20221023105920.5"><vh>build()</vh>
+<v t="swot.20221023123049.2"><vh>Scaffold</vh>
+<v t="swot.20221023123049.3"><vh>appBar</vh></v>
+<v t="swot.20221023123049.4"><vh>body</vh>
+<v t="swot.20221023110506.1"><vh>Positioned</vh>
+<v t="swot.20221023110634.1"><vh>LongPressDraggable</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221023122724.2"><vh>ElevatedButton -- show LongPressDraggableExample</vh></v>
+</v>
+</v>
+<v t="swot.20221023080337.1"><vh>M</vh>
+<v t="swot.20221023081507.1"><vh>MaterialBannerExample</vh>
+<v t="swot.20221023081535.2"><vh>MaterialBannerExample</vh>
+<v t="swot.20221023081535.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221023081047.5"><vh>show MaterialBannerExample</vh></v>
+</v>
+<v t="swot.20221023081552.1"><vh>newHeadline</vh></v>
+<v t="swot.20221023081552.2"><vh>newHeadline</vh></v>
+<v t="swot.20221023081553.1"><vh>newHeadline</vh></v>
+<v t="swot.20221023081553.2"><vh>newHeadline</vh></v>
+<v t="swot.20221023081553.3"><vh>newHeadline</vh></v>
+<v t="swot.20221023081554.1"><vh>newHeadline</vh></v>
+<v t="swot.20221023081554.2"><vh>newHeadline</vh></v>
+</v>
+<v t="swot.20221023093247.1"><vh>P</vh>
+<v t="swot.20221023093415.1"><vh>PreferredSizeExample</vh>
+<v t="swot.20221023093803.1"><vh>AppBar</vh></v>
+</v>
+</v>
+<v t="swot.20221023152237.1"><vh>R</vh>
+<v t="swot.20221023155312.1"><vh>ReorderableListViewExample  -- longPress</vh>
+<v t="swot.20221023152801.2"><vh>ReorderableListViewExample</vh>
+<v t="swot.20221023152933.1"><vh>varible</vh></v>
+<v t="swot.20221023152801.3"><vh>initState()</vh></v>
+<v t="swot.20221023152801.4"><vh>dispose()</vh></v>
+<v t="swot.20221023152801.5"><vh>build()</vh>
+<v t="swot.20221023154334.2"><vh>Scaffold</vh>
+<v t="swot.20221023154334.3"><vh>appBar</vh></v>
+<v t="swot.20221023154334.4"><vh>body</vh>
+<v t="swot.20221023153058.1"><vh>ReorderableListView</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221023154547.2"><vh>ElevatedButton -- show ReorderableListViewExample</vh></v>
+</v>
+</v>
+<v t="swot.20221024091445.1"><vh>S</vh>
+<v t="swot.20221024092102.1"><vh>DatePickerExample</vh>
+<v t="swot.20221024095344.2"><vh>DatePickerExample</vh>
+<v t="swot.20221024095406.1"><vh>varible</vh></v>
+<v t="swot.20221024095344.3"><vh>initState()</vh></v>
+<v t="swot.20221024095344.4"><vh>dispose()</vh></v>
+<v t="swot.20221024095344.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221024100552.1"><vh>show DatePickerExample</vh></v>
+</v>
+<v t="swot.20221024103418.1"><vh>TimePickerExample</vh>
+<v t="swot.20221024103523.2"><vh>TimePickerExample</vh>
+<v t="swot.20221024103850.1"><vh>varible</vh></v>
+<v t="swot.20221024103523.3"><vh>initState()</vh></v>
+<v t="swot.20221024103523.4"><vh>dispose()</vh></v>
+<v t="swot.20221024103957.1"><vh>build()</vh></v>
+</v>
+<v t="swot.20221024103554.1"><vh>show TimePickerExample</vh></v>
+</v>
+<v t="swot.20221024105608.1"><vh>DateRangePickerExample</vh>
+<v t="swot.20221024110030.2"><vh>DateRangePickerExample</vh>
+<v t="swot.20221024110048.1"><vh>varible</vh></v>
+<v t="swot.20221024110030.3"><vh>initState()</vh></v>
+<v t="swot.20221024110030.4"><vh>dispose()</vh></v>
+<v t="swot.20221024110030.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221024110745.1"><vh>show DateRangePickerExample</vh></v>
+</v>
+</v>
+<v t="swot.20221023175848.1"><vh>T</vh>
+<v t="swot.20221023181752.1"><vh>TableExample</vh>
+<v t="swot.20221023193833.2"><vh>TableExample</vh>
+<v t="swot.20221023193833.3"><vh>build()</vh>
+<v t="swot.20221023193950.2"><vh>Scaffold</vh>
+<v t="swot.20221023193950.3"><vh>appBar</vh></v>
+<v t="swot.20221023193950.4"><vh>body</vh>
+<v t="swot.20221023194122.1"><vh>Center</vh>
+<v t="swot.20221023200224.1"><vh>SingleChildScrollView</vh>
+<v t="swot.20221023194310.1"><vh>Table</vh>
+<v t="swot.20221023194533.1"><vh>TableRow</vh>
+<v t="swot.20221023194941.1"><vh>TableCell</vh></v>
+<v t="swot.20221023194949.1"><vh>TableCell</vh></v>
+<v t="swot.20221023194950.1"><vh>TableCell</vh></v>
+</v>
+<v t="swot.20221023195102.1"><vh>List.generate</vh>
+<v t="swot.20221023195414.1"><vh>TableCell</vh></v>
+<v t="swot.20221023195426.1"><vh>TableCell</vh></v>
+<v t="swot.20221023195426.2"><vh>TableCell</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221023195608.1"><vh>show TableExample</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
@@ -470,7 +623,41 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
     ColumnExample
     CupertinoActionSheetExample
     CupertinoAppExample
+    CupertinoContextMenuExample  -- longPress
 
+### D...
+
+    DismissibleExample
+
+### I...
+
+    InteractiveViewerExample
+
+### L...
+
+    LongPressDraggableExample
+
+### M...
+
+    MaterialBannerExample
+
+### P...
+
+    PreferredSizeExample
+
+### R...
+
+    ReorderableListViewExample  -- longPress
+
+### S...
+
+    DatePickerExample
+    TimePickerExample
+    DateRangePickerExample
+
+### T...
+
+    TableExample
 </t>
 <t tx="swot.20221017093031.151">for node in p.children():
   print(node.h);
@@ -545,7 +732,7 @@ ElevatedButton(
       child: const Text('Close'),
     ),
   ],
-  title: const Text('Flutter Map'),
+  title: const Text('Flutter App'),
   contentPadding: const EdgeInsets.all(20.0),
   content: const Text('This is the alert Dialog'),
 ),
@@ -715,6 +902,8 @@ SizedBox(
   child:
     @others
 ),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.176">AnimatedList(
   key: _key,
@@ -882,9 +1071,13 @@ Widget build(BuildContext context) {
 ),
 </t>
 <t tx="swot.20221017093031.194">AnimatedOpacityExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.195"></t>
 <t tx="swot.20221017093031.196">AnimatedPaddingExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.197">@language dart
 @tabwidth -2
@@ -956,6 +1149,8 @@ Widget build(BuildContext context) {
 </t>
 <t tx="swot.20221017093031.206"></t>
 <t tx="swot.20221017093031.207">AnimatedPhysicalModelExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.208">@language dart
 @tabwidth -2
@@ -1024,6 +1219,8 @@ Widget build(BuildContext context) {
 </t>
 <t tx="swot.20221017093031.215"></t>
 <t tx="swot.20221017093031.216">AnimatedPositionedExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.217">@language dart
 @tabwidth -2
@@ -1094,6 +1291,8 @@ Widget build(BuildContext context) {
 </t>
 <t tx="swot.20221017093031.225"></t>
 <t tx="swot.20221017093031.226">AnimatedRotationExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.227">@language dart
 @tabwidth -2
@@ -1156,6 +1355,8 @@ Widget build(BuildContext context) {
 </t>
 <t tx="swot.20221017093031.234"></t>
 <t tx="swot.20221017093031.235">AnimatedSizeExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.236">@language dart
 @tabwidth -2
@@ -1284,6 +1485,8 @@ Widget build(BuildContext context) {
 ),
 </t>
 <t tx="swot.20221017093031.251">AnimatedSwitcherExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.252">appBar: AppBar(
   title: const Text('Demo A'),
@@ -1326,9 +1529,13 @@ Widget build(BuildContext context) {
     ),
   ),
 ),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.254"></t>
 <t tx="swot.20221017093031.255">AutoCompleteExample(),
+
+Divider(),
 </t>
 <t tx="swot.20221017093031.256">@language dart
 @tabwidth -2
@@ -1792,6 +1999,7 @@ myBuilderWidget() =&gt; Builder(
   print(node.h);
 </t>
 <t tx="swot.20221022121559.5">CardExample(),
+Divider(),
 </t>
 <t tx="swot.20221022121755.2">@language dart
 @tabwidth -2
@@ -1856,6 +2064,7 @@ Widget build(BuildContext context) {
 ),
 </t>
 <t tx="swot.20221022123052.1">CenterExample(),
+Divider(),
 </t>
 <t tx="swot.20221022124036.1"></t>
 <t tx="swot.20221022141252.2">@language dart
@@ -1901,6 +2110,7 @@ Widget build(BuildContext context) {
 <t tx="swot.20221022141315.1">bool? isChecked = false;
 </t>
 <t tx="swot.20221022141621.1">CheckboxExample(),
+Divider(),
 </t>
 <t tx="swot.20221022141927.1"></t>
 <t tx="swot.20221022141946.2">@language dart
@@ -1954,6 +2164,7 @@ Widget build(BuildContext context) {
 ),
 </t>
 <t tx="swot.20221022142602.1">CheckboxListTileExample(),
+Divider(),
 </t>
 <t tx="swot.20221022142903.1"></t>
 <t tx="swot.20221022142919.2">@language dart
@@ -1976,6 +2187,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022143204.1">ChipExample(),
+Divider(),
 </t>
 <t tx="swot.20221022144321.1"></t>
 <t tx="swot.20221022144339.2">@language dart
@@ -2021,6 +2233,7 @@ Widget build(BuildContext context) {
 <t tx="swot.20221022144356.1">bool isSelected = false;
 </t>
 <t tx="swot.20221022144701.1">ChoiceChipExample(),
+Divider(),
 </t>
 <t tx="swot.20221022144956.1"></t>
 <t tx="swot.20221022145018.2">@language dart
@@ -2047,6 +2260,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022145230.1">CircleAvatarExample(),
+Divider(),
 </t>
 <t tx="swot.20221022153206.1"></t>
 <t tx="swot.20221022153237.2">@language dart
@@ -2085,6 +2299,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022153425.1">CircularProgressIndicatorExample(),
+Divider(),
 </t>
 <t tx="swot.20221022153732.1"></t>
 <t tx="swot.20221022153848.2">@language dart
@@ -2109,6 +2324,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022154220.1">ClipOvalExample(),
+Divider(),
 </t>
 <t tx="swot.20221022154849.1">class CustomClip extends CustomClipper&lt;Rect&gt; {
   @override
@@ -2142,6 +2358,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022162124.1">ClipPathExample(),
+Divider(),
 </t>
 <t tx="swot.20221022162343.1">class MyClipper1 extends CustomClipper&lt;Path&gt; {
   @override
@@ -2202,6 +2419,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022164554.1">ClipRectExample(),
+Divider(),
 </t>
 <t tx="swot.20221022165235.1"></t>
 <t tx="swot.20221022165324.2">@language dart
@@ -2242,6 +2460,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022165721.1">ClipRRectExample(),
+Divider(),
 </t>
 <t tx="swot.20221022170537.1"></t>
 <t tx="swot.20221022170557.2">@language dart
@@ -2264,6 +2483,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022170737.1">CloseButtonExample(),
+Divider(),
 </t>
 <t tx="swot.20221022171451.1"></t>
 <t tx="swot.20221022171523.2">@language dart
@@ -2290,6 +2510,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022171708.1">ColoredBoxExample(),
+Divider(),
 </t>
 <t tx="swot.20221022172614.1"></t>
 <t tx="swot.20221022172641.2">@language dart
@@ -2316,6 +2537,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022173017.1">ColorFilteredExample(),
+Divider(),
 </t>
 <t tx="swot.20221022201311.1"></t>
 <t tx="swot.20221022201619.2">@language dart
@@ -2344,6 +2566,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022202111.1">ConstrainedBoxExample(),
+Divider(),
 </t>
 <t tx="swot.20221022202806.1"></t>
 <t tx="swot.20221022202825.2">@language dart
@@ -2366,6 +2589,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022203303.1">ContainerExample(),
+Divider(),
 </t>
 <t tx="swot.20221022203542.1"></t>
 <t tx="swot.20221022203601.2">@language dart
@@ -2394,6 +2618,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022203824.1">ColumnExample(),
+Divider(),
 </t>
 <t tx="swot.20221022210316.1"></t>
 <t tx="swot.20221022210338.2">@language dart
@@ -2455,6 +2680,7 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022210532.1">CupertinoActionSheetExample(),
+Divider(),
 </t>
 <t tx="swot.20221022213225.1"></t>
 <t tx="swot.20221022213243.2">@language dart
@@ -2510,6 +2736,783 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221022214055.1">CupertinoAppExample(),
+Divider(),
+</t>
+<t tx="swot.20221023080337.1"></t>
+<t tx="swot.20221023081047.5">MaterialBannerExample(),
+</t>
+<t tx="swot.20221023081507.1"></t>
+<t tx="swot.20221023081535.2">@language dart
+@tabwidth -2
+class MaterialBannerExample extends StatelessWidget {
+  const MaterialBannerExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221023081535.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: ElevatedButton(
+      child: const Text('Open MaterialBanner'),
+      onPressed: () {
+        ScaffoldMessenger.of(context).showMaterialBanner(
+          MaterialBanner(
+            padding: const EdgeInsets.all(20),
+            content: const Text('Subscribe!'),
+            leading: const Icon(Icons.notifications_active_outlined),
+            elevation: 5,
+            backgroundColor: Colors.white12,
+            actions: [
+              TextButton(
+                onPressed: () {
+                  ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+                },
+                child: const Text('Dismiss'),
+              ),
+            ],
+          )
+        );
+      },
+    ),
+  );
+}
+</t>
+<t tx="swot.20221023081552.1"></t>
+<t tx="swot.20221023081552.2"></t>
+<t tx="swot.20221023081553.1"></t>
+<t tx="swot.20221023081553.2"></t>
+<t tx="swot.20221023081553.3"></t>
+<t tx="swot.20221023081554.1"></t>
+<t tx="swot.20221023081554.2"></t>
+<t tx="swot.20221023093247.1"></t>
+<t tx="swot.20221023093415.1"></t>
+<t tx="swot.20221023093803.1">appBar: PreferredSize(
+  preferredSize: const Size.fromHeight(80.0),
+  child: Container(
+    height: 120,
+    decoration: const BoxDecoration(
+      gradient: LinearGradient(
+        colors: &lt;Color&gt;[
+          Colors.redAccent,
+          Colors.orangeAccent,
+        ],
+      ),
+    ),
+    child: SafeArea(
+      child: Center(
+        child: ListTile(
+          title: const Text('PreferredSize'),
+          trailing: IconButton(
+            icon: const Icon(Icons.arrow_back, size: 20),
+            color: Colors.white,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+        ),
+      ),
+    ),
+  ),
+),
+</t>
+<t tx="swot.20221023105739.1"></t>
+<t tx="swot.20221023105806.1"></t>
+<t tx="swot.20221023105920.2">@language dart
+@tabwidth -2
+class LongPressDraggableExample extends StatefulWidget {
+  const LongPressDraggableExample({super.key});
+
+  @override
+  State&lt;LongPressDraggableExample&gt; createState() =&gt; _LongPressDraggableExampleState();
+}
+
+class _LongPressDraggableExampleState extends State&lt;LongPressDraggableExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221023105920.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221023105920.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221023105920.5">@override
+Widget build(BuildContext context) {
+  @others
+}
+</t>
+<t tx="swot.20221023105947.1">Offset _offset = const Offset(200, 250);
+</t>
+<t tx="swot.20221023110506.1">Positioned(
+  left: _offset.dx,
+  top: _offset.dy,
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221023110634.1">LongPressDraggable(
+  feedback: Image.network(
+    'https://img2.baidu.com/it/u=935142738,1114949296&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=200&amp;h=200',
+    height: 100,
+    color: Colors.orangeAccent,
+    colorBlendMode: BlendMode.colorBurn,
+  ),
+  child: Image.network(
+    'https://img2.baidu.com/it/u=935142738,1114949296&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=200&amp;h=200',
+    height: 100,
+  ),
+  onDragEnd: (details) {
+    setState(() {
+      double adjustment = MediaQuery.of(context).size.height - constrains.maxHeight;
+      _offset = Offset(
+        details.offset.dx,
+        details.offset.dy - adjustment,
+      );
+    });
+  },
+),
+</t>
+<t tx="swot.20221023122724.2">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('LongPressDraggableExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; LongPressDraggableExample(),
+      ),
+    );
+  },
+),
+</t>
+<t tx="swot.20221023123049.2">return Scaffold(
+  @others
+);
+
+</t>
+<t tx="swot.20221023123049.3">appBar: AppBar(
+  title: Text('LongPressDraggable'),
+  // leading: Icon(Icons.menu),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221023123049.4">body: Center(
+  child: LayoutBuilder(
+    builder: (context, constrains) {
+      return Stack(
+        children: [
+          @others
+        ]
+      );
+    },
+  ),
+),
+</t>
+<t tx="swot.20221023124217.1"></t>
+<t tx="swot.20221023144510.2">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('InteractiveViewerExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; InteractiveViewerExample(),
+      ),
+    );
+  },
+),
+</t>
+<t tx="swot.20221023144929.2">@language dart
+@tabwidth -2
+class InteractiveViewerExample extends StatefulWidget {
+  const InteractiveViewerExample({super.key});
+
+  @override
+  State&lt;InteractiveViewerExample&gt; createState() =&gt; _InteractiveViewerExampleState();
+}
+
+class _InteractiveViewerExampleState extends State&lt;InteractiveViewerExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221023144929.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221023144929.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221023144929.5">@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Text('Tool'),
+    ),
+    backgroundColor: Colors.orangeAccent,
+    body: InteractiveViewer(
+      boundaryMargin: const EdgeInsets.all(
+        double.infinity,
+      ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('SwotApp'),
+        ),
+        body: Text('ALT + mouse zoom'),
+      ),
+    ),
+  );
+}
+</t>
+<t tx="swot.20221023150449.1"></t>
+<t tx="swot.20221023152237.1"></t>
+<t tx="swot.20221023152801.2">@language dart
+@tabwidth -2
+class ReorderableListViewExample extends StatefulWidget {
+  const ReorderableListViewExample({super.key});
+
+  @override
+  State&lt;ReorderableListViewExample&gt; createState() =&gt; _ReorderableListViewExampleState();
+}
+
+class _ReorderableListViewExampleState extends State&lt;ReorderableListViewExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221023152801.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221023152801.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221023152801.5">@override
+Widget build(BuildContext context) {
+  return
+  @others
+}
+</t>
+<t tx="swot.20221023152933.1">final List&lt;int&gt; items = List&lt;int&gt;.generate(30, (int index) =&gt; index);
+</t>
+<t tx="swot.20221023153058.1">ReorderableListView(
+  children: List.generate(
+    items.length,
+    (index) =&gt; ListTile(
+      key: Key('$index'),
+      // tileColor: items[index].isOdd ? Colors.white12 : Colors.white30,
+      tileColor: items[index].isOdd ? Colors.grey : Colors.white30,
+      title: Text('Item ${items[index]}'),
+      trailing: const Icon(Icons.drag_handle_sharp),
+    ),
+  ),
+  onReorder: (int oldIndex, int newIndex) {
+    setState(() {
+      if (oldIndex &lt; newIndex) {
+        newIndex -= 1;
+      }
+      final int item = items.removeAt(oldIndex);
+      items.insert(newIndex, item);
+    });
+  },
+),
+</t>
+<t tx="swot.20221023154334.2">Scaffold(
+  @others
+);
+
+</t>
+<t tx="swot.20221023154334.3">appBar: AppBar(
+  title: Text('ReorderableListView'),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221023154334.4">body:
+@others
+</t>
+<t tx="swot.20221023154547.2">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('ReorderableListView'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; ReorderableListViewExample(),
+      ),
+    );
+  },
+),
+</t>
+<t tx="swot.20221023155312.1"></t>
+<t tx="swot.20221023163309.1"></t>
+<t tx="swot.20221023163418.2">@language dart
+@tabwidth -2
+class CupertinoContextMenuExample extends StatelessWidget {
+  const CupertinoContextMenuExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221023163418.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: SizedBox(
+      width: 100,
+      height: 100,
+      child:
+      @others
+    ),
+  );
+}
+</t>
+<t tx="swot.20221023163626.1">CupertinoContextMenu(
+  child: Image.network(
+    'https://img0.baidu.com/it/u=574351580,3649561547&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=640&amp;h=320',
+  ),
+  actions: &lt;Widget&gt;[
+    CupertinoContextMenuAction(
+      child: const Text('Action one'),
+      onPressed: (){
+        Navigator.pop(context);
+      },
+    ),
+    CupertinoContextMenuAction(
+      child: const Text('Action two'),
+      onPressed: (){
+        Navigator.pop(context);
+      },
+    ),
+  ],
+),
+</t>
+<t tx="swot.20221023164513.1">CupertinoContextMenuExample(),
+Divider(),
+</t>
+<t tx="swot.20221023175848.1"></t>
+<t tx="swot.20221023181752.1"></t>
+<t tx="swot.20221023193833.2">@language dart
+@tabwidth -2
+class TableExample extends StatelessWidget {
+  const TableExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221023193833.3">@override
+Widget build(BuildContext context) {
+  @others
+}
+</t>
+<t tx="swot.20221023193950.2">return Scaffold(
+  @others
+);
+
+</t>
+<t tx="swot.20221023193950.3">appBar: AppBar(
+  title: const Text('Table'),
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221023193950.4">body:
+@others
+</t>
+<t tx="swot.20221023194122.1">Center(
+  child: Padding(
+    padding: const EdgeInsets.all(15.0),
+    child:
+    @others
+  ),
+),
+</t>
+<t tx="swot.20221023194310.1">Table(
+  border: TableBorder.all(color: Colors.white30),
+  defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+  children: [
+    @others
+  ]
+),
+</t>
+<t tx="swot.20221023194533.1">const TableRow(
+  decoration: BoxDecoration(
+    color: Colors.redAccent,
+  ),
+  children: [
+    @others
+  ],
+),
+</t>
+<t tx="swot.20221023194941.1">TableCell(
+  verticalAlignment: TableCellVerticalAlignment.middle,
+  child: Padding(
+    padding: EdgeInsets.all(8.0),
+    child: Text('Title 1'),
+  ),
+),
+</t>
+<t tx="swot.20221023194949.1">TableCell(
+  verticalAlignment: TableCellVerticalAlignment.middle,
+  child: Padding(
+    padding: EdgeInsets.all(8.0),
+    child: Text('Title 2'),
+  ),
+),
+</t>
+<t tx="swot.20221023194950.1">TableCell(
+  verticalAlignment: TableCellVerticalAlignment.middle,
+  child: Padding(
+    padding: EdgeInsets.all(8.0),
+    child: Text('Title 3'),
+  ),
+),
+</t>
+<t tx="swot.20221023195102.1">...List.generate(
+  30,
+  (index) =&gt; const TableRow(
+    children: [
+      @others
+    ],
+  ),
+),
+</t>
+<t tx="swot.20221023195414.1">TableCell(
+  verticalAlignment: TableCellVerticalAlignment.middle,
+  child: Padding(
+    padding: EdgeInsets.all(8.0),
+    child: Text('Cell 1'),
+  ),
+),
+</t>
+<t tx="swot.20221023195426.1">TableCell(
+  verticalAlignment: TableCellVerticalAlignment.middle,
+  child: Padding(
+    padding: EdgeInsets.all(8.0),
+    child: Text('Cell 2'),
+  ),
+),
+</t>
+<t tx="swot.20221023195426.2">TableCell(
+  verticalAlignment: TableCellVerticalAlignment.middle,
+  child: Padding(
+    padding: EdgeInsets.all(8.0),
+    child: Text('Cell 3'),
+  ),
+),
+</t>
+<t tx="swot.20221023195608.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('Table'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; const TableExample(),
+      ),
+    );
+  },
+),
+
+Divider(),
+</t>
+<t tx="swot.20221023200224.1">SingleChildScrollView(
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221024070739.1"></t>
+<t tx="swot.20221024091445.1">for node in p.children():
+  print(node.h);
+</t>
+<t tx="swot.20221024092102.1"></t>
+<t tx="swot.20221024095344.2">@language dart
+@tabwidth -2
+class DatePickerExample extends StatefulWidget {
+  const DatePickerExample({super.key});
+
+  @override
+  State&lt;DatePickerExample&gt; createState() =&gt; _DatePickerExampleState();
+}
+
+class _DatePickerExampleState extends State&lt;DatePickerExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221024095344.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221024095344.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221024095344.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children:[
+        ElevatedButton(
+          child: const Text('Choose Date'),
+          onPressed: () async {
+            final DateTime? dateTime = await showDatePicker(
+              context: context,
+              initialDate: selectedDate,
+              firstDate: DateTime(2000),
+              lastDate: DateTime(3000),
+            );
+            if (dateTime != null) {
+              setState(() {
+                selectedDate = dateTime;
+              });
+            }
+          },
+        ),
+        SizedBox(width: 10),
+        Text("${selectedDate.year}-${selectedDate.month}-${selectedDate.day}"),
+      ],
+    ),
+  );
+}
+</t>
+<t tx="swot.20221024095406.1">DateTime selectedDate = DateTime.now();
+</t>
+<t tx="swot.20221024100552.1">DatePickerExample(),
+Divider(),
+</t>
+<t tx="swot.20221024103418.1"></t>
+<t tx="swot.20221024103523.2">@language dart
+@tabwidth -2
+class TimePickerExample extends StatefulWidget {
+  const TimePickerExample({super.key});
+
+  @override
+  State&lt;TimePickerExample&gt; createState() =&gt; _TimePickerExampleState();
+}
+
+class _TimePickerExampleState extends State&lt;TimePickerExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221024103523.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221024103523.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221024103554.1">TimePickerExample(),
+Divider(),
+</t>
+<t tx="swot.20221024103850.1">TimeOfDay selectedTime = TimeOfDay.now();
+</t>
+<t tx="swot.20221024103957.1">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children:[
+        ElevatedButton(
+          child: const Text('Choose Time'),
+          onPressed: () async {
+            final TimeOfDay? timeOfDay = await showTimePicker(
+              context: context,
+              initialTime: selectedTime,
+              initialEntryMode: TimePickerEntryMode.dial,
+            );
+            if (timeOfDay != null) {
+              setState(() {
+                selectedTime = timeOfDay;
+              });
+            }
+          },
+        ),
+        SizedBox(width: 10),
+        Text("${selectedTime.hour}:${selectedTime.minute}"),
+      ],
+    ),
+  );
+}
+</t>
+<t tx="swot.20221024105608.1"></t>
+<t tx="swot.20221024110030.2">@language dart
+@tabwidth -2
+class DateRangePickerExample extends StatefulWidget {
+  const DateRangePickerExample({super.key});
+
+  @override
+  State&lt;DateRangePickerExample&gt; createState() =&gt; _DateRangePickerExampleState();
+}
+
+class _DateRangePickerExampleState extends State&lt;DateRangePickerExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221024110030.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221024110030.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221024110030.5">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children:[
+        ElevatedButton(
+          child: const Text('Choose Dates'),
+          onPressed: () async {
+            final DateTimeRange? dateTimeRange = await showDateRangePicker(
+              context: context,
+              firstDate: DateTime(2000),
+              lastDate: DateTime(3000),
+            );
+            if (dateTimeRange != null) {
+              setState(() {
+                selectedDates = dateTimeRange;
+              });
+            }
+          },
+        ),
+        SizedBox(width: 10),
+        Text("${selectedDates.duration.inDays}"),
+      ],
+    ),
+  );
+}
+</t>
+<t tx="swot.20221024110048.1">DateTimeRange selectedDates = DateTimeRange(
+  start: DateTime.now(),
+  end: DateTime.now(),
+);
+</t>
+<t tx="swot.20221024110745.1">DateRangePickerExample(),
+Divider(),
+</t>
+<t tx="swot.20221024112547.1"></t>
+<t tx="swot.20221024112602.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('DismissibleExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; DismissibleExample(),
+      ),
+    );
+  },
+),
+
+Divider(),
+</t>
+<t tx="swot.20221024112614.2">@language dart
+@tabwidth -2
+class DismissibleExample extends StatefulWidget {
+  const DismissibleExample({super.key});
+
+  @override
+  State&lt;DismissibleExample&gt; createState() =&gt; _DismissibleExampleState();
+}
+
+class _DismissibleExampleState extends State&lt;DismissibleExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221024112614.3">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221024112614.4">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221024112614.5">@override
+Widget build(BuildContext context) {
+  @others
+}
+</t>
+<t tx="swot.20221024112703.1">List&lt;int&gt; items = List&lt;int&gt;.generate(50, (int index) =&gt; index);
+</t>
+<t tx="swot.20221024113603.2">return Scaffold(
+  @others
+);
+
+</t>
+<t tx="swot.20221024113603.3">appBar: AppBar(
+  title: Text('DismissibleExample'),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221024113603.4">body:
+@others
+</t>
+<t tx="swot.20221024113627.1">ListView.builder(
+  itemCount: items.length,
+  padding: const EdgeInsets.symmetric(vertical: 16),
+  itemBuilder: (BuildContext contex, int index) {
+    return Dismissible(
+      background: Container(
+        color: Colors.red,
+        child: const Icon(Icons.delete),
+      ),
+      key: ValueKey&lt;int&gt;(items[index]),
+      onDismissed: (DismissDirection direction) {
+        setState(() {
+          items.removeAt(index);
+        });
+      },
+      child: ListTile(
+        title: Text('Item ${items[index]}'),
+      ),
+    );
+  },
+),
 </t>
 </tnodes>
 </leo_file>
