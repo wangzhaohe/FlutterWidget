@@ -39,6 +39,8 @@ class MyApp extends StatelessWidget {
         'b': (context) => B(),
         'c': (context) => C(),
         'd': (context) => D(),
+        'e': (context) => E(),
+        'f': (context) => F(),
         'i': (context) => I(),
         'l': (context) => L(),
         'm': (context) => M(),
@@ -123,6 +125,28 @@ class Home extends StatelessWidget {
                       Navigator.pushNamed(context, 'd');
                     },
                     child: const Text('D'),
+                  ),
+
+                  //@+node:swot.20221026064030.1: *7* ElevatedButton E
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'e');
+                    },
+                    child: const Text('E'),
+                  ),
+
+                  //@+node:swot.20221026200727.1: *7* ElevatedButton F
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'f');
+                    },
+                    child: const Text('F'),
                   ),
 
                   //@+node:swot.20221023124300.1: *7* ElevatedButton I
@@ -279,9 +303,6 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
   // AnimatedDefaultTextStyle
   double _fontSize = 20;
   Color _color = Colors.blue;
-  //@+node:swot.20221017093031.168: *5* var for AnimatedIcon
-  bool _isPlay = false;
-  late AnimationController _controllerIcon;
   //@+node:swot.20221017093031.161: *5* var for AnimatedBuilder
   late AnimationController _controllerBuilder;
   //@+node:swot.20221017093031.172: *5* var for AnimatedList
@@ -331,11 +352,6 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
       vsync: this,                            // use TickerProviderStateMixin
     )..repeat();                              // 10s 后重复
 
-    //@+node:swot.20221017093031.169: *5* AnimationController for AnimatedIcon
-    _controllerIcon = AnimationController(
-      duration: Duration(seconds: 1),
-      vsync: this  // use TickerProviderStateMixin
-    );
     //@-others
     super.initState();
   }
@@ -343,7 +359,6 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
   @override
   void dispose() {
     _controllerBuilder.dispose();  // AnimatedBuilder
-    _controllerIcon.dispose();     // AnimatedList
     super.dispose();
   }
   //@+node:swot.20221017093031.21: *4* build()
@@ -657,7 +672,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   //@+node:swot.20221017093031.53: *8* TextButton
                   Container(
                     height: 30.0,
-                    child:TextButton(
+                    child: TextButton(
                       onPressed:(){
                         setState((){
                           selected = !selected;
@@ -706,7 +721,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                         selected = !selected;
                       });
                     },
-                    child: const Text('Switch Font'),
+                    child: const Text('AnimatedDefaultTextStyle'),
                   ),
                   //@+node:swot.20221017093031.58: *8* SizedBox
                   SizedBox(
@@ -736,39 +751,23 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   //@+others
-                  //@+node:swot.20221017093031.62: *8* GestureDetector       -- show AnimatedIcon
-                  GestureDetector(
-                    onTap: () {
-                      if (_isPlay == false) {
-                        _controllerIcon.forward();  // 下个图标
-                        _isPlay = true;
-                      } else {
-                        _controllerIcon.reverse();  // 前个图标
-                        _isPlay = false;
-                      }
-                    },
-                    child:
-                      //@+others
-                      //@+node:swot.20221017093031.170: *9* AnimatedIcon
-                      //@+doc
-                      //@@language asciidoc
-                      // :nofooter:
-                      // 1. define AnimationController
-                      // 2. AnimationController: need class `with TickerProviderStateMixin`
-                      // 3. AnimationController: need dispose
-                      //
-                      //@@c
-                      //@@language dart
-                      //@@tabwidth -2
-                      AnimatedIcon(
-                        // play is the first icon
-                        // pause is the second icon
-                        icon: AnimatedIcons.play_pause,
-                        progress: _controllerIcon,
-                        size: 40,
-                      ),
-                      //@-others
-                  ),
+                  //@+node:swot.20221027194417.2: *8* show AnimatedIconExample
+                  // ElevatedButton(
+                    // style: ElevatedButton.styleFrom(
+                      // // backgroundColor: Colors.orangeAccent,
+                    // ),
+                    // child: const Text('AnimatedIcon'),
+                    // onPressed: () {
+                      // Navigator.push(
+                        // context,
+                        // MaterialPageRoute(
+                          // builder: (context) => AnimatedIconExample(),
+                        // ),
+                      // );
+                    // },
+                  // ),
+
+                  AnimatedIconExample(),
                   //@+node:swot.20221017093031.179: *8* AnimatedModalBarrier  -- show AnimatedModalBarrier
                   const AnimatedModalBarrierExample(),
                   //@-others
@@ -857,6 +856,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                 alignment: Alignment.center,
                 width: double.infinity,
                 height: 100,
+                // height: 200,
                 child: AspectRatio(
                   aspectRatio: 16 / 9,
                   child: Container(
@@ -866,7 +866,6 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                   ),
                 ),
               ),
-
               Divider(),
               //@+node:swot.20221017093031.255: *7* show AutoCompleteExample
               AutoCompleteExample(),
@@ -898,6 +897,80 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
           //@-others
       )
       //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221027192851.2: *3* AnimatedIconExample
+//@@language dart
+//@@tabwidth -2
+class AnimatedIconExample extends StatefulWidget {
+  const AnimatedIconExample({super.key});
+
+  @override
+  State<AnimatedIconExample> createState() => _AnimatedIconExampleState();
+}
+
+class _AnimatedIconExampleState extends State<AnimatedIconExample> with TickerProviderStateMixin {
+  //@+others
+  //@+node:swot.20221027192851.3: *4* varible
+  bool _isPlay = false;
+  late AnimationController _controllerIcon;
+  //@+node:swot.20221027192851.4: *4* initState()
+  @override
+  void initState() {
+    _controllerIcon = AnimationController(
+      duration: Duration(seconds: 1),
+      vsync: this  // use TickerProviderStateMixin
+    );
+    super.initState();
+  }
+  //@+node:swot.20221027192851.5: *4* dispose()
+  @override
+  void dispose() {
+     _controllerIcon.dispose();
+    super.dispose();
+  }
+  //@+node:swot.20221027192851.6: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221027194101.1: *5* GestureDetector       -- show AnimatedIcon
+    GestureDetector(
+      onTap: () {
+        if (_isPlay == false) {
+          _controllerIcon.forward();  // 下个图标
+          _isPlay = true;
+        } else {
+          _controllerIcon.reverse();  // 前个图标
+          _isPlay = false;
+        }
+      },
+      child:
+        //@+others
+        //@+node:swot.20221027194101.2: *6* AnimatedIcon
+        //@+doc
+        //@@language asciidoc
+        // :nofooter:
+        // 1. define AnimationController
+        // 2. AnimationController: need class `with TickerProviderStateMixin`
+        // 3. AnimationController: need dispose
+        //
+        //@@c
+        //@@language dart
+        //@@tabwidth -2
+        AnimatedIcon(
+          // play is the first icon
+          // pause is the second icon
+          icon: AnimatedIcons.play_pause,
+          progress: _controllerIcon,
+          size: 40,
+        ),
+        //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -1452,7 +1525,7 @@ class AutoCompleteExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Autocomplete<String>(
-      optionsBuilder: (TextEditingValue textEditingValue) {
+      optionsBuilder: (TextEditingValue textEditingValue) {  // user input value
         if (textEditingValue.text == '') {
           return const Iterable<String>.empty();
         }
@@ -2957,6 +3030,57 @@ class _DemoDState extends State<DemoD> {
             ),
 
             Divider(),
+            //@+node:swot.20221025075357.1: *7* show DraggableScrollableExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('DraggableScrollableExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DraggableScrollableExample(),
+                  ),
+                );
+              },
+            ),
+
+            Divider(),
+            //@+node:swot.20221025091113.1: *7* show DragTargetExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('DragTargetExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DragTargetExample(),
+                  ),
+                );
+              },
+            ),
+
+            Divider(),
+            //@+node:swot.20221025095859.1: *7* show DrawerExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('DrawerExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DrawerExample(),
+                  ),
+                );
+              },
+            ),
+
+            Divider(),
             //@-others
           ]
         ),
@@ -3044,6 +3168,658 @@ class _DismissibleExampleState extends State<DismissibleExample>{
   //@-others
 }
 
+//@+node:swot.20221025074739.2: *4* DraggableScrollableExample
+//@@language dart
+//@@tabwidth -2
+class DraggableScrollableExample extends StatelessWidget {
+  const DraggableScrollableExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221025074739.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221025081258.2: *6* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221025081258.3: *7* appBar
+      appBar: AppBar(
+        title: Text('DraggableScrollableSheet'),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221025081258.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221025081316.1: *8* DraggableScrollableSheet
+      DraggableScrollableSheet(
+        builder: (BuildContext context, ScrollController scrollController) {
+          return Container(
+            color: Colors.orangeAccent,
+            child: ListView.builder(
+              controller: scrollController,
+              itemCount: 25,
+              itemBuilder: (BuildContext context, int index) {
+                return ListTile(
+                  title: Text('Item $index'),
+                );
+              },
+            ),
+          );
+        },
+      ),
+      //@-others
+      //@-others
+    );
+
+    //@-others
+  }
+  //@-others
+}
+//@+node:swot.20221025081939.2: *4* DragTargetExample
+//@@language dart
+//@@tabwidth -2
+class DragTargetExample extends StatefulWidget {
+  const DragTargetExample({super.key});
+
+  @override
+  State<DragTargetExample> createState() => _DragTargetExampleState();
+}
+
+class _DragTargetExampleState extends State<DragTargetExample>{
+  //@+others
+  //@+node:swot.20221025081939.3: *5* varible
+  Color caughtColor = Colors.red;
+  //@+node:swot.20221025081939.4: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221025081939.5: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221025081939.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221025091431.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221025091431.3: *7* appBar
+      appBar: AppBar(
+        title: Text('DragTargetExample'),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221025091431.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221025083125.1: *8* SizedBox
+      SizedBox(
+        width: double.infinity,
+        child:
+          //@+others
+          //@+node:swot.20221025083519.1: *9* Column
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+            //@+others
+            //@+node:swot.20221025083732.1: *10* Draggable
+            Draggable(
+              data: Colors.orangeAccent,
+              child: Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.orangeAccent,
+                child: const Center(
+                  child: Text('Box'),
+                ),
+              ),
+              onDraggableCanceled: (velocity, offset) {},
+              feedback: Container(
+                width: 150.0,
+                height: 150.0,
+                color: Colors.orangeAccent.withOpacity(0.5),
+                child: const Center(
+                  child: Text(
+                    'Box...',
+                    style: TextStyle(
+                      color: Colors.white,
+                      decoration: TextDecoration.none,
+                      fontSize: 18.0,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            //@+node:swot.20221025084843.1: *10* DragTarget
+            DragTarget(
+              onAccept: (Color color) {
+                caughtColor = color;  // color is Draggable data
+              },
+              builder: (BuildContext context,
+                        List<dynamic> accepted,
+                        List<dynamic> rejected,) {
+                return Container(
+                  width: 200.0,
+                  height: 200.0,
+                  color: accepted.isEmpty ? caughtColor : Colors.grey.shade200,
+                  child: const Center(
+                    child: Text("Drag here"),
+                  ),
+                );
+              }
+            ),
+            //@-others
+            ],
+          )
+          //@-others
+      )
+      //@-others
+      //@-others
+    )
+
+    //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221025095334.2: *4* DrawerExample
+//@@language dart
+//@@tabwidth -2
+class DrawerExample extends StatelessWidget {
+  const DrawerExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221025095334.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221025095436.2: *6* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221025095436.3: *7* appBar
+      appBar: AppBar(
+        title: Text('NewPage'),
+      ),
+      //@+node:swot.20221025095436.4: *7* body
+      body: Center(
+        child: Builder(
+          builder: (context) => ElevatedButton(
+            onPressed: () {
+              // Scaffold.of(context).openDrawer();
+              Scaffold.of(context).openEndDrawer();
+            },
+            child: const Text('Open EndDrawer'),
+          ),
+        ),
+      ),
+
+      //@+node:swot.20221025095602.1: *7* endDrawer
+      endDrawer: Drawer(
+        child: ListView(
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text('Drawer Header'),
+            ),
+            ListTile(
+              title: const Text('Item 1'),
+              onTap: () {}
+            ),
+            ListTile(
+              title: const Text('Item 2'),
+              onTap: () {}
+            ),
+          ],
+        ),
+      ),
+      //@-others
+    );
+
+    //@-others
+  }
+  //@-others
+}
+//@+node:swot.20221025205925.1: ** E Example
+//@+node:swot.20221025205946.1: *3* E  -- Scaffold
+class E extends StatelessWidget {
+  const E({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          //@+others
+          //@+node:swot.20221025205946.2: *4* AppBar
+          appBar: AppBar(
+            title: const Text('Demo E'),
+            centerTitle: true,
+
+            // leading: IconButton(
+              // icon: const Icon(Icons.menu),
+              // onPressed: (){},
+            // ),
+
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: (){},
+              ),
+            ],
+            // AppBar 的下边变成了圆角
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25),
+              ),
+            ),
+
+            backgroundColor: Colors.orangeAccent,
+            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ),
+          //@-others
+          body: DemoE(),
+      ),
+    );
+  }
+}
+//@+node:swot.20221025211051.1: *3* DemoE
+//@@language dart
+//@@tabwidth -2
+class DemoE extends StatefulWidget {
+  const DemoE({super.key});
+
+  @override
+  State<DemoE> createState() => _DemoEState();
+}
+
+class _DemoEState extends State<DemoE> {
+  //@+others
+  //@+node:swot.20221025211051.2: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221025211051.3: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221025211051.4: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221026194030.1: *7* show ExpandedExample
+            ExpandedExample(),
+            Divider(),
+            //@-others
+          ]
+        ),
+
+        //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221025211157.1: *3* ExampleE
+//@+node:swot.20221026073602.2: *4* ExpandedExample -- height in Expanded takes no effect
+//@@language dart
+//@@tabwidth -2
+class ExpandedExample extends StatelessWidget {
+  const ExpandedExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221026073602.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      // width: double.infinity,
+      height: 100.0,
+      child: Column(
+        children: [
+          //@+others
+          //@+node:swot.20221026193458.1: *6* Expanded
+          Expanded(
+            flex: 2,
+            child: Container(
+              color: Colors.blue,
+              width: double.infinity,
+              height: 200,
+              child: const Center(child: Text('Expanded 1')),
+            ),
+          ),
+          //@+node:swot.20221026193703.1: *6* Expanded
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.orange,
+              width: double.infinity,
+              height: 200,
+              child: const Center(child: Text('Expanded 2')),
+            ),
+          ),
+          //@+node:swot.20221026193706.1: *6* Expanded
+          Expanded(
+            flex: 3,
+            child: Container(
+              color: Colors.red,
+              width: double.infinity,
+              height: 200,
+              child: const Center(child: Text('Expanded 3')),
+            ),
+          ),
+          //@-others
+        ],
+      ),
+    );
+  }
+  //@-others
+}
+//@+node:swot.20221026200827.1: ** F Example
+//@+node:swot.20221026200827.2: *3* F  -- Scaffold
+class F extends StatelessWidget {
+  const F({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return 
+    //@+others
+    //@+node:swot.20221027113937.1: *4* SafeArea
+    SafeArea(
+      child:
+      //@+others
+      //@+node:swot.20221027114010.2: *5* Scaffold
+      Scaffold(
+        //@+others
+        //@+node:swot.20221026200827.3: *6* appBar
+        appBar: AppBar(
+          title: const Text('Demo F'),
+          centerTitle: true,
+
+          // leading: IconButton(
+            // icon: const Icon(Icons.menu),
+            // onPressed: (){},
+          // ),
+
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: (){},
+            ),
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
+          ),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@+node:swot.20221027114010.4: *6* body
+        body: DemoF(),
+        //@+node:swot.20221027114010.6: *6* floatingActionButton
+        //@@language dart
+        //@@tabwidth -2
+        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+        floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: Colors.deepPurple.shade400,
+            child: Icon(Icons.add),
+        ),
+        //@-others
+      ),
+
+      //@-others
+    )
+    //@-others
+    ;
+  }
+}
+//@+node:swot.20221026200827.4: *3* DemoF
+//@@language dart
+//@@tabwidth -2
+class DemoF extends StatefulWidget {
+  const DemoF({super.key});
+
+  @override
+  State<DemoF> createState() => _DemoFState();
+}
+
+class _DemoFState extends State<DemoF> {
+  //@+others
+  //@+node:swot.20221026200827.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+      //@+others
+      //@+node:swot.20221026200827.6: *5* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221026200827.7: *6* Column
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //@+others
+            //@+node:swot.20221027112321.2: *7* show FlexbleExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('FlexibleExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FlexibleExample(),
+                  ),
+                );
+              },
+            ),
+
+            //@+node:swot.20221027121244.1: *7* show FormExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('FormExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FormExample(),
+                  ),
+                );
+              },
+            ),
+
+            //@+node:swot.20221027203755.1: *7* show FadeInImageExample
+            FadeInImageExample(),
+            //@-others
+          ]
+        ),
+
+        //@-others
+      )
+      //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221026200827.9: *3* ExampleF
+//@+node:swot.20221027111458.2: *4* FlexibleExample
+//@@language dart
+//@@tabwidth -2
+class FlexibleExample extends StatelessWidget {
+  const FlexibleExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221027111458.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221027112522.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221027112522.3: *7* appBar
+      appBar: AppBar(
+        title: Text('FlexibleExample'),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221027112522.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221027111807.1: *8* Column
+      Column(
+        children: [
+          //@+others
+          //@+node:swot.20221027111848.1: *9* Flexible -- FlexFit.loose is default
+          Flexible(
+            flex: 5,
+            child: Container(
+              height: 50,
+              color: Colors.yellow,
+            ),
+          ),
+          Flexible(
+            flex: 4,
+            child: Container(
+              height: 100,
+              color: Colors.orange,
+            ),
+          ),
+          Flexible(
+            flex: 3,
+            child: Container(
+              height: 200,
+              color: Colors.red,
+            ),
+          ),
+          //@-others
+        ],
+      )
+      //@-others
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+//@+node:swot.20221027115627.2: *4* FormExample
+//@@language dart
+//@@tabwidth -2
+class FormExample extends StatelessWidget {
+  FormExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221027120023.1: *5* value
+  final _formKey = GlobalKey<FormState>();
+  //@+node:swot.20221027115627.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221027115750.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221027115750.3: *7* appBar
+      appBar: AppBar(
+        title: Text('FormExample'),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221027115750.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221027115911.1: *8* Padding
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child:
+        //@+others
+        //@+node:swot.20221027115952.1: *9* Form
+        Form(
+          key: _formKey,
+          child: Column(
+            children: [
+              TextFormField(
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Enter something';
+                  }
+                  return null;
+                },
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  if (_formKey.currentState!.validate()) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Great!'),
+                      ),
+                    );
+                  }
+                },
+                child: const Text('Validate'),
+              ),
+            ],
+          )
+        ),
+        //@-others
+      ),
+      //@-others
+      //@-others
+    )
+
+    //@-others
+    ;
+  }
+  //@-others
+}
+//@+node:swot.20221027203431.2: *4* FadeInImageExample
+//@@language dart
+//@@tabwidth -2
+class FadeInImageExample extends StatelessWidget {
+  const FadeInImageExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221027203431.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: FadeInImage.assetNetwork(
+        width: 100,
+        height: 100,
+        placeholder: 'assets/loading.gif',
+        image: 'https://img2.baidu.com/it/u=1559210821,716203173&fm=253&fmt=auto&app=120&f=JPEG?w=200&h=200',
+      ),
+    );
+  }
+  //@-others
+}
 //@+node:swot.20221023124355.1: ** I Example
 //@+node:swot.20221023124355.2: *3* I  -- Scaffold
 class I extends StatelessWidget {
@@ -3494,11 +4270,13 @@ class MaterialBannerExample extends StatelessWidget {
               elevation: 5,
               backgroundColor: Colors.white12,
               actions: [
-                TextButton(
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
-                  },
-                  child: const Text('Dismiss'),
+                Builder(
+                  builder: (context) => TextButton(
+                    onPressed: () {
+                      ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+                    },
+                    child: const Text('Dismiss'),
+                  ),
                 ),
               ],
             )
@@ -3507,6 +4285,26 @@ class MaterialBannerExample extends StatelessWidget {
       ),
     );
   }
+
+  //@+doc
+  // Looking up a deactivated widget's ancestor is unsafe.
+  //
+  // At this point the state of the widget's element tree is no longer stable.
+  //
+  // To safely refer to a widget's ancestor in its dispose() method, save a reference to the ancestor by calling dependOnInheritedWidgetOfExactType() in the widget's didChangeDependencies() method.
+  //
+  // Solved:
+  // https://stackoverflow.com/questions/69141074/showmaterialbanner-doesnt-hide-on-change-route-looking-up-a-deactivated-widgets
+  //
+  //@@language dart
+  // Builder(  // Can solve above problem
+  //   builder: (context) => TextButton(
+  //     onPressed: () {
+  //       ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+  //     },
+  //     child: const Text('Dismiss'),
+  //   ),
+  // )
   //@-others
 }
 //@+node:swot.20221023093033.1: ** P Example
@@ -3578,15 +4376,8 @@ class _DemoPState extends State<DemoP> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //@+others
-            //@+node:swot.20221023093033.9: *7* Divider
-            Divider(),
-            //@+node:swot.20221023093033.10: *7* Divider
-            Divider(),
-            //@+node:swot.20221023093033.11: *7* Divider
-            Divider(),
-            //@+node:swot.20221023093033.12: *7* Divider
-            Divider(),
-            //@+node:swot.20221023093033.13: *7* Divider
+            //@+node:swot.20221025191831.1: *7* show PopupMenuButtonExample
+            PopupMenuButtonExample(),
             Divider(),
             //@-others
           ]
@@ -3599,6 +4390,59 @@ class _DemoPState extends State<DemoP> {
 }
 
 //@+node:swot.20221023093033.14: *3* ExampleP
+//@+node:swot.20221025114730.2: *4* PopupMenuButtonExample
+//@@language dart
+//@@tabwidth -2
+class PopupMenuButtonExample extends StatefulWidget {
+  const PopupMenuButtonExample({super.key});
+
+  @override
+  State<PopupMenuButtonExample> createState() => _PopupMenuButtonExampleState();
+}
+
+class _PopupMenuButtonExampleState extends State<PopupMenuButtonExample>{
+  //@+others
+  //@+node:swot.20221025114730.3: *5* varible
+  String title = 'First item';
+  String item1 = 'First item';
+  String item2 = 'Second item';
+  //@+node:swot.20221025114730.4: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221025114730.5: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221025114730.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      title: Text(title),
+      trailing: PopupMenuButton(
+        itemBuilder: (context) => [
+          PopupMenuItem(
+            value: item1,
+            child: Text(item1),
+          ),
+          PopupMenuItem(
+            value: item2,
+            child: Text(item2),
+          ),
+        ],
+        onSelected: (String newValue) {
+          setState(() {
+            title = newValue;
+          });
+        }
+      ),
+    );
+  }
+  //@-others
+}
+
 //@+node:swot.20221023152107.1: ** R Example
 //@+node:swot.20221023152107.2: *3* R  -- Scaffold
 class R extends StatelessWidget {
@@ -4121,6 +4965,22 @@ class _DemoTState extends State<DemoT> {
             ),
 
             Divider(),
+            //@+node:swot.20221027182544.1: *7* show TextFormFieldExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+              ),
+              child: const Text('TextFormFieldExample'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TextFormFieldExample(),
+                  ),
+                );
+              },
+            ),
+            Divider(),
             //@-others
           ]
         ),
@@ -4254,5 +5114,112 @@ class TableExample extends StatelessWidget {
   }
   //@-others
 }
+//@+node:swot.20221027175533.2: *4* TextFormFieldExample
+//@@language dart
+//@@tabwidth -2
+class TextFormFieldExample extends StatefulWidget {
+  const TextFormFieldExample({super.key});
+
+  @override
+  State<TextFormFieldExample> createState() => _TextFormFieldExampleState();
+}
+
+class _TextFormFieldExampleState extends State<TextFormFieldExample>{
+  //@+others
+  //@+node:swot.20221027175533.3: *5* varible
+  List<String> titles = [
+    '',
+    '',
+    '',
+  ];
+  //@+node:swot.20221027175533.4: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221027175533.5: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221027175533.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221027183133.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221027183133.3: *7* appBar
+      appBar: AppBar(
+        title: Text('TextFormField'),
+        // leading: Icon(Icons.menu),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221027183133.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221027180846.1: *8* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221027180945.1: *9* Form
+        Form(
+          autovalidateMode: AutovalidateMode.always,
+          onChanged: () {
+            setState(() {
+              Form.of(primaryFocus!.context!)!.save();
+            });
+          },
+          child:
+          //@+others
+          //@+node:swot.20221027182206.1: *10* Column
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: List.generate(
+              3,
+              (int index) {
+                return Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      TextFormField(
+                        onSaved: (String? value) {
+                          if (value != null) {
+                            titles[index] = value;
+                          }
+                        },
+                      ),
+                      const SizedBox(height: 10),
+                      Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(titles[index]),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+          //@-others
+        ),
+        //@-others
+      ),
+      //@-others
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
 //@-others
 //@-leo

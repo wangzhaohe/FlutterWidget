@@ -67,6 +67,20 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ### D...
 
     DismissibleExample
+    DraggableScrollableExample
+    DragTargetExample
+    DrawerExample
+
+### E
+
+    ExpandedExample -- height in Expanded takes no effect
+
+### F
+
+    FadeInImageExample
+    FlexibleExample
+    floatingActionButton
+    FormExample
 
 ### I...
 
@@ -83,6 +97,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ### P...
 
     PreferredSizeExample
+    PopupMenuButtonExample
 
 ### R...
 
@@ -97,3 +112,4 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ### T...
 
     TableExample
+    TextFormFieldExample

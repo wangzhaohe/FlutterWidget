@@ -7,8 +7,11 @@
 <find_panel_settings/>
 <vnodes>
 <v t="swot.20221017093031.1"><vh>widgets</vh>
-<v t="swot.20221017093031.2" descendentVnodeUnknownAttributes="7d7100285805000000302e322e3171017d7102285808000000616e6e6f7461746571037d71042858080000007072696f7269747971054b01580a000000707269736574646174657106580a000000323032322d31302d3233710775580500000069636f6e7371085d71097d710a28580400000074797065710b580400000066696c65710c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269312e706e67710d580700000072656c50617468710e580d000000636c656f2f707269312e706e67710f580500000077686572657110580e0000006265666f7265486561646c696e6571115807000000796f666673657471124b005807000000786f666673657471134b0258040000007870616471144b0158020000006f6e71155805000000766e6f646571165808000000636c656f49636f6e71175801000000317118756175580b000000302e332e302e302e302e3071197d711a2868037d711b2868054b026806580a000000323032322d31302d3233711c7568085d711d7d711e28680b680c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269322e706e67711f680e580d000000636c656f2f707269322e706e6771206810681168124b0068134b0268144b0168156816681768187561755809000000302e392e312e302e3071217d71225808000000616e6e6f7461746571237d71242858080000007072696f7269747971254d0f27580a000000707269736574646174657126580a000000323032322d31302d323371277573580b000000302e392e312e302e302e3071287d712968237d712a2868254d0f276826580a000000323032322d31302d3233712b7573752e"><vh>@file lib/main.dart</vh></v>
+<v t="swot.20221017093031.2" descendentVnodeUnknownAttributes="7d7100285805000000302e322e3171017d7102285808000000616e6e6f7461746571037d71042858080000007072696f7269747971054b01580a000000707269736574646174657106580a000000323032322d31302d3233710775580500000069636f6e7371085d71097d710a28580400000074797065710b580400000066696c65710c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269312e706e67710d580700000072656c50617468710e580d000000636c656f2f707269312e706e67710f580500000077686572657110580e0000006265666f7265486561646c696e6571115807000000796f666673657471124b005807000000786f666673657471134b0258040000007870616471144b0158020000006f6e71155805000000766e6f646571165808000000636c656f49636f6e71175801000000317118756175580b000000302e332e302e302e302e3071197d711a2868037d711b2868054b026806580a000000323032322d31302d3236711c7568085d711d7d711e28680b680c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269322e706e67711f680e580d000000636c656f2f707269322e706e6771206810681168124b0068134b0268144b016815681668176818756175580d000000302e372e312e302e302e302e3071217d71225808000000616e6e6f7461746571237d71242858080000007072696f7269747971254d0f27580a000000707269736574646174657126580a000000323032322d31302d323571277573580a000000302e31312e312e302e3071287d71295808000000616e6e6f74617465712a7d712b2858080000007072696f72697479712c4d0f27580a00000070726973657464617465712d580a000000323032322d31302d3233712e7573580c000000302e31312e312e302e302e30712f7d7130682a7d713128682c4d0f27682d580a000000323032322d31302d323371327573752e"><vh>@file lib/main.dart</vh></v>
+<v t="swot.20221027203033.1"><vh>@file pubspec.yaml</vh></v>
 <v t="swot.20221017093031.150"><vh>@clean README.md</vh></v>
+</v>
+<v t="swot.20221027111311.1"><vh>Logic</vh>
 <v t="swot.20221017093031.151"><vh>A</vh>
 <v t="swot.20221017093031.152"><vh>AboutDialog</vh></v>
 <v t="swot.20221017093031.153"><vh>AboutListTile</vh></v>
@@ -27,10 +30,18 @@
 <v t="swot.20221017093031.164"><vh>AnimatedContainer</vh></v>
 <v t="swot.20221017093031.165"><vh>AnimatedCrossFade</vh></v>
 <v t="swot.20221017093031.166"><vh>AnimatedDefaultTextStyle</vh></v>
-<v t="swot.20221017093031.167"><vh>AnimatedIcon</vh>
-<v t="swot.20221017093031.168"><vh>var for AnimatedIcon</vh></v>
-<v t="swot.20221017093031.169"><vh>AnimationController for AnimatedIcon</vh></v>
-<v t="swot.20221017093031.170"><vh>AnimatedIcon</vh></v>
+<v t="swot.20221027192806.1"><vh>AnimatedIconExample</vh>
+<v t="swot.20221027192851.2"><vh>AnimatedIconExample</vh>
+<v t="swot.20221027192851.3"><vh>varible</vh></v>
+<v t="swot.20221027192851.4"><vh>initState()</vh></v>
+<v t="swot.20221027192851.5"><vh>dispose()</vh></v>
+<v t="swot.20221027192851.6"><vh>build()</vh>
+<v t="swot.20221027194101.1"><vh>GestureDetector       -- show AnimatedIcon</vh>
+<v t="swot.20221027194101.2"><vh>AnimatedIcon</vh></v>
+</v>
+</v>
+</v>
+<v t="swot.20221027194417.2"><vh>show AnimatedIconExample</vh></v>
 </v>
 <v t="swot.20221017093031.171"><vh>AnimatedList</vh>
 <v t="swot.20221017093031.172"><vh>var for AnimatedList</vh></v>
@@ -419,6 +430,106 @@
 </v>
 <v t="swot.20221024112602.1"><vh>show DismissibleExample</vh></v>
 </v>
+<v t="swot.20221025074714.1"><vh>DraggableScrollableExample</vh>
+<v t="swot.20221025074739.2"><vh>DraggableScrollableExample</vh>
+<v t="swot.20221025074739.3"><vh>build()</vh>
+<v t="swot.20221025081258.2"><vh>Scaffold</vh>
+<v t="swot.20221025081258.3"><vh>appBar</vh></v>
+<v t="swot.20221025081258.4"><vh>body</vh>
+<v t="swot.20221025081316.1"><vh>DraggableScrollableSheet</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221025075357.1"><vh>show DraggableScrollableExample</vh></v>
+</v>
+<v t="swot.20221025081914.1"><vh>DragTargetExample</vh>
+<v t="swot.20221025081939.2"><vh>DragTargetExample</vh>
+<v t="swot.20221025081939.3"><vh>varible</vh></v>
+<v t="swot.20221025081939.4"><vh>initState()</vh></v>
+<v t="swot.20221025081939.5"><vh>dispose()</vh></v>
+<v t="swot.20221025081939.6"><vh>build()</vh>
+<v t="swot.20221025091431.2"><vh>Scaffold</vh>
+<v t="swot.20221025091431.3"><vh>appBar</vh></v>
+<v t="swot.20221025091431.4"><vh>body</vh>
+<v t="swot.20221025083125.1"><vh>SizedBox</vh>
+<v t="swot.20221025083519.1"><vh>Column</vh>
+<v t="swot.20221025083732.1"><vh>Draggable</vh></v>
+<v t="swot.20221025084843.1"><vh>DragTarget</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221025091113.1"><vh>show DragTargetExample</vh></v>
+</v>
+<v t="swot.20221025094932.1"><vh>DrawerExample</vh>
+<v t="swot.20221025095859.1"><vh>show DrawerExample</vh></v>
+<v t="swot.20221025095334.2"><vh>DrawerExample</vh>
+<v t="swot.20221025095334.3"><vh>build()</vh>
+<v t="swot.20221025095436.2"><vh>Scaffold</vh>
+<v t="swot.20221025095436.3"><vh>appBar</vh></v>
+<v t="swot.20221025095436.4"><vh>body</vh></v>
+<v t="swot.20221025095602.1"><vh>endDrawer</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221026064223.1"><vh>E</vh>
+<v t="swot.20221026072859.1"><vh>ExpandedExample</vh>
+<v t="swot.20221026073602.2"><vh>ExpandedExample -- height in Expanded takes no effect</vh>
+<v t="swot.20221026073602.3"><vh>build()</vh>
+<v t="swot.20221026193458.1"><vh>Expanded</vh></v>
+<v t="swot.20221026193703.1"><vh>Expanded</vh></v>
+<v t="swot.20221026193706.1"><vh>Expanded</vh></v>
+</v>
+</v>
+<v t="swot.20221026194030.1"><vh>show ExpandedExample</vh></v>
+</v>
+</v>
+<v t="swot.20221027111351.1"><vh>F</vh>
+<v t="swot.20221027112213.1"><vh>FlexibleExample</vh>
+<v t="swot.20221027111458.2"><vh>FlexibleExample</vh>
+<v t="swot.20221027111458.3"><vh>build()</vh>
+<v t="swot.20221027112522.2"><vh>Scaffold</vh>
+<v t="swot.20221027112522.3"><vh>appBar</vh></v>
+<v t="swot.20221027112522.4"><vh>body</vh>
+<v t="swot.20221027111807.1"><vh>Column</vh>
+<v t="swot.20221027111848.1"><vh>Flexible -- FlexFit.loose is default</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221027112321.2"><vh>show FlexbleExample</vh></v>
+</v>
+<v t="swot.20221027114210.1"><vh>FloatingActionButtonExample</vh>
+<v t="swot.20221027114010.6"><vh>floatingActionButton</vh></v>
+</v>
+<v t="swot.20221027115609.1"><vh>FormExample</vh>
+<v t="swot.20221027115627.2"><vh>FormExample</vh>
+<v t="swot.20221027120023.1"><vh>value</vh></v>
+<v t="swot.20221027115627.3"><vh>build()</vh>
+<v t="swot.20221027115750.2"><vh>Scaffold</vh>
+<v t="swot.20221027115750.3"><vh>appBar</vh></v>
+<v t="swot.20221027115750.4"><vh>body</vh>
+<v t="swot.20221027115911.1"><vh>Padding</vh>
+<v t="swot.20221027115952.1"><vh>Form</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221027121244.1"><vh>show FormExample</vh></v>
+</v>
+<v t="swot.20221027195901.1"><vh>FadeInImageExample</vh>
+<v t="swot.20221027203431.2"><vh>FadeInImageExample</vh>
+<v t="swot.20221027203431.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221027203755.1"><vh>show FadeInImageExample</vh></v>
+</v>
 </v>
 <v t="swot.20221023124217.1"><vh>I</vh>
 <v t="swot.20221023150449.1"><vh>InteractiveViewerExample</vh>
@@ -468,6 +579,15 @@
 <v t="swot.20221023093247.1"><vh>P</vh>
 <v t="swot.20221023093415.1"><vh>PreferredSizeExample</vh>
 <v t="swot.20221023093803.1"><vh>AppBar</vh></v>
+</v>
+<v t="swot.20221025114659.1"><vh>PopupMenuButtonExample</vh>
+<v t="swot.20221025114730.2"><vh>PopupMenuButtonExample</vh>
+<v t="swot.20221025114730.3"><vh>varible</vh></v>
+<v t="swot.20221025114730.4"><vh>initState()</vh></v>
+<v t="swot.20221025114730.5"><vh>dispose()</vh></v>
+<v t="swot.20221025114730.6"><vh>build()</vh></v>
+</v>
+<v t="swot.20221025191831.1"><vh>show PopupMenuButtonExample</vh></v>
 </v>
 </v>
 <v t="swot.20221023152237.1"><vh>R</vh>
@@ -546,7 +666,39 @@
 </v>
 <v t="swot.20221023195608.1"><vh>show TableExample</vh></v>
 </v>
+<v t="swot.20221027182452.1"><vh>TextFormFieldExample</vh>
+<v t="swot.20221027175533.2"><vh>TextFormFieldExample</vh>
+<v t="swot.20221027175533.3"><vh>varible</vh></v>
+<v t="swot.20221027175533.4"><vh>initState()</vh></v>
+<v t="swot.20221027175533.5"><vh>dispose()</vh></v>
+<v t="swot.20221027175533.6"><vh>build()</vh>
+<v t="swot.20221027183133.2"><vh>Scaffold</vh>
+<v t="swot.20221027183133.3"><vh>appBar</vh></v>
+<v t="swot.20221027183133.4"><vh>body</vh>
+<v t="swot.20221027180846.1"><vh>SingleChildScrollView</vh>
+<v t="swot.20221027180945.1"><vh>Form</vh>
+<v t="swot.20221027182206.1"><vh>Column</vh></v>
 </v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221027182544.1"><vh>show TextFormFieldExample</vh></v>
+</v>
+</v>
+</v>
+<v t="swot.20221025091303.1"><vh>@spot</vh>
+<v t="swot.20221025074739.2"></v>
+<v t="swot.20221025081939.2"></v>
+<v t="swot.20221025095334.2"></v>
+<v t="swot.20221025114730.2"></v>
+<v t="swot.20221026073602.2"></v>
+<v t="swot.20221027111458.2"></v>
+<v t="swot.20221027114010.6"></v>
+<v t="swot.20221027115627.2"></v>
+<v t="swot.20221027175533.2"></v>
+<v t="swot.20221027203431.2"></v>
 </v>
 </vnodes>
 <tnodes>
@@ -628,6 +780,20 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ### D...
 
     DismissibleExample
+    DraggableScrollableExample
+    DragTargetExample
+    DrawerExample
+
+### E
+
+    ExpandedExample -- height in Expanded takes no effect
+
+### F
+
+    FadeInImageExample
+    FlexibleExample
+    floatingActionButton
+    FormExample
 
 ### I...
 
@@ -644,6 +810,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ### P...
 
     PreferredSizeExample
+    PopupMenuButtonExample
 
 ### R...
 
@@ -658,6 +825,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ### T...
 
     TableExample
+    TextFormFieldExample
 </t>
 <t tx="swot.20221017093031.151">for node in p.children():
   print(node.h);
@@ -826,33 +994,6 @@ AnimatedBuilder(
     fontWeight: FontWeight.bold,
   ),
   child: const Text('Flutter'),
-),
-</t>
-<t tx="swot.20221017093031.167"></t>
-<t tx="swot.20221017093031.168">bool _isPlay = false;
-late AnimationController _controllerIcon;
-</t>
-<t tx="swot.20221017093031.169">_controllerIcon = AnimationController(
-  duration: Duration(seconds: 1),
-  vsync: this  // use TickerProviderStateMixin
-);
-</t>
-<t tx="swot.20221017093031.170">@doc
-@language asciidoc
-:nofooter:
-1. define AnimationController
-2. AnimationController: need class `with TickerProviderStateMixin`
-3. AnimationController: need dispose
-
-@c
-@language dart
-@tabwidth -2
-AnimatedIcon(
-  // play is the first icon
-  // pause is the second icon
-  icon: AnimatedIcons.play_pause,
-  progress: _controllerIcon,
-  size: 40,
 ),
 </t>
 <t tx="swot.20221017093031.171"></t>
@@ -1520,6 +1661,7 @@ Divider(),
   alignment: Alignment.center,
   width: double.infinity,
   height: 100,
+  // height: 200,
   child: AspectRatio(
     aspectRatio: 16 / 9,
     child: Container(
@@ -1529,7 +1671,6 @@ Divider(),
     ),
   ),
 ),
-
 Divider(),
 </t>
 <t tx="swot.20221017093031.254"></t>
@@ -1553,7 +1694,7 @@ class AutoCompleteExample extends StatelessWidget {
 <t tx="swot.20221017093031.258">@override
 Widget build(BuildContext context) {
   return Autocomplete&lt;String&gt;(
-    optionsBuilder: (TextEditingValue textEditingValue) {
+    optionsBuilder: (TextEditingValue textEditingValue) {  // user input value
       if (textEditingValue.text == '') {
         return const Iterable&lt;String&gt;.empty();
       }
@@ -2763,11 +2904,13 @@ Widget build(BuildContext context) {
             elevation: 5,
             backgroundColor: Colors.white12,
             actions: [
-              TextButton(
-                onPressed: () {
-                  ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
-                },
-                child: const Text('Dismiss'),
+              Builder(
+                builder: (context) =&gt; TextButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+                  },
+                  child: const Text('Dismiss'),
+                ),
               ),
             ],
           )
@@ -2776,6 +2919,26 @@ Widget build(BuildContext context) {
     ),
   );
 }
+
+@doc
+Looking up a deactivated widget's ancestor is unsafe.
+
+At this point the state of the widget's element tree is no longer stable.
+
+To safely refer to a widget's ancestor in its dispose() method, save a reference to the ancestor by calling dependOnInheritedWidgetOfExactType() in the widget's didChangeDependencies() method.
+
+Solved:
+https://stackoverflow.com/questions/69141074/showmaterialbanner-doesnt-hide-on-change-route-looking-up-a-deactivated-widgets
+
+@language dart
+Builder(  // Can solve above problem
+  builder: (context) =&gt; TextButton(
+    onPressed: () {
+      ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+    },
+    child: const Text('Dismiss'),
+  ),
+)
 </t>
 <t tx="swot.20221023081552.1"></t>
 <t tx="swot.20221023081552.2"></t>
@@ -3427,7 +3590,7 @@ Widget build(BuildContext context) {
 Divider(),
 </t>
 <t tx="swot.20221024112547.1"></t>
-<t tx="swot.20221024112602.1">ElevatedButton(
+<t tx="swot.20221024112602.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31302d32357103752e">ElevatedButton(
   style: ElevatedButton.styleFrom(
     // backgroundColor: Colors.orangeAccent,
   ),
@@ -3513,6 +3676,785 @@ Widget build(BuildContext context) {
     );
   },
 ),
+</t>
+<t tx="swot.20221025074714.1"></t>
+<t tx="swot.20221025074739.2">@language dart
+@tabwidth -2
+class DraggableScrollableExample extends StatelessWidget {
+  const DraggableScrollableExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221025074739.3">@override
+Widget build(BuildContext context) {
+  @others
+}
+</t>
+<t tx="swot.20221025075357.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('DraggableScrollableExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; DraggableScrollableExample(),
+      ),
+    );
+  },
+),
+
+Divider(),
+</t>
+<t tx="swot.20221025081258.2">return Scaffold(
+  @others
+);
+
+</t>
+<t tx="swot.20221025081258.3">appBar: AppBar(
+  title: Text('DraggableScrollableSheet'),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221025081258.4">body:
+@others
+</t>
+<t tx="swot.20221025081316.1">DraggableScrollableSheet(
+  builder: (BuildContext context, ScrollController scrollController) {
+    return Container(
+      color: Colors.orangeAccent,
+      child: ListView.builder(
+        controller: scrollController,
+        itemCount: 25,
+        itemBuilder: (BuildContext context, int index) {
+          return ListTile(
+            title: Text('Item $index'),
+          );
+        },
+      ),
+    );
+  },
+),
+</t>
+<t tx="swot.20221025081914.1"></t>
+<t tx="swot.20221025081939.2">@language dart
+@tabwidth -2
+class DragTargetExample extends StatefulWidget {
+  const DragTargetExample({super.key});
+
+  @override
+  State&lt;DragTargetExample&gt; createState() =&gt; _DragTargetExampleState();
+}
+
+class _DragTargetExampleState extends State&lt;DragTargetExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221025081939.3">Color caughtColor = Colors.red;
+</t>
+<t tx="swot.20221025081939.4">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221025081939.5">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221025081939.6">@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221025083125.1">SizedBox(
+  width: double.infinity,
+  child:
+    @others
+)
+</t>
+<t tx="swot.20221025083519.1">Column(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  crossAxisAlignment: CrossAxisAlignment.center,
+  children: [
+  @others
+  ],
+)
+</t>
+<t tx="swot.20221025083732.1">Draggable(
+  data: Colors.orangeAccent,
+  child: Container(
+    width: 100.0,
+    height: 100.0,
+    color: Colors.orangeAccent,
+    child: const Center(
+      child: Text('Box'),
+    ),
+  ),
+  onDraggableCanceled: (velocity, offset) {},
+  feedback: Container(
+    width: 150.0,
+    height: 150.0,
+    color: Colors.orangeAccent.withOpacity(0.5),
+    child: const Center(
+      child: Text(
+        'Box...',
+        style: TextStyle(
+          color: Colors.white,
+          decoration: TextDecoration.none,
+          fontSize: 18.0,
+        ),
+      ),
+    ),
+  ),
+),
+</t>
+<t tx="swot.20221025084843.1">DragTarget(
+  onAccept: (Color color) {
+    caughtColor = color;  // color is Draggable data
+  },
+  builder: (BuildContext context,
+            List&lt;dynamic&gt; accepted,
+            List&lt;dynamic&gt; rejected,) {
+    return Container(
+      width: 200.0,
+      height: 200.0,
+      color: accepted.isEmpty ? caughtColor : Colors.grey.shade200,
+      child: const Center(
+        child: Text("Drag here"),
+      ),
+    );
+  }
+),
+</t>
+<t tx="swot.20221025091113.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('DragTargetExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; DragTargetExample(),
+      ),
+    );
+  },
+),
+
+Divider(),
+</t>
+<t tx="swot.20221025091303.1">for node in p.children():
+  print(node.h);
+</t>
+<t tx="swot.20221025091431.2">Scaffold(
+  @others
+)
+
+</t>
+<t tx="swot.20221025091431.3">appBar: AppBar(
+  title: Text('DragTargetExample'),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221025091431.4">body:
+@others
+</t>
+<t tx="swot.20221025094932.1"></t>
+<t tx="swot.20221025095334.2">@language dart
+@tabwidth -2
+class DrawerExample extends StatelessWidget {
+  const DrawerExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221025095334.3">@override
+Widget build(BuildContext context) {
+  @others
+}
+</t>
+<t tx="swot.20221025095436.2">return Scaffold(
+  @others
+);
+
+</t>
+<t tx="swot.20221025095436.3">appBar: AppBar(
+  title: Text('NewPage'),
+),
+</t>
+<t tx="swot.20221025095436.4">body: Center(
+  child: Builder(
+    builder: (context) =&gt; ElevatedButton(
+      onPressed: () {
+        // Scaffold.of(context).openDrawer();
+        Scaffold.of(context).openEndDrawer();
+      },
+      child: const Text('Open EndDrawer'),
+    ),
+  ),
+),
+
+</t>
+<t tx="swot.20221025095602.1">endDrawer: Drawer(
+  child: ListView(
+    children: [
+      const DrawerHeader(
+        decoration: BoxDecoration(
+          color: Colors.blue,
+        ),
+        child: Text('Drawer Header'),
+      ),
+      ListTile(
+        title: const Text('Item 1'),
+        onTap: () {}
+      ),
+      ListTile(
+        title: const Text('Item 2'),
+        onTap: () {}
+      ),
+    ],
+  ),
+),
+</t>
+<t tx="swot.20221025095859.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('DrawerExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; const DrawerExample(),
+      ),
+    );
+  },
+),
+
+Divider(),
+</t>
+<t tx="swot.20221025114659.1"></t>
+<t tx="swot.20221025114730.2">@language dart
+@tabwidth -2
+class PopupMenuButtonExample extends StatefulWidget {
+  const PopupMenuButtonExample({super.key});
+
+  @override
+  State&lt;PopupMenuButtonExample&gt; createState() =&gt; _PopupMenuButtonExampleState();
+}
+
+class _PopupMenuButtonExampleState extends State&lt;PopupMenuButtonExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221025114730.3">String title = 'First item';
+String item1 = 'First item';
+String item2 = 'Second item';
+</t>
+<t tx="swot.20221025114730.4">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221025114730.5">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221025114730.6">@override
+Widget build(BuildContext context) {
+  return ListTile(
+    title: Text(title),
+    trailing: PopupMenuButton(
+      itemBuilder: (context) =&gt; [
+        PopupMenuItem(
+          value: item1,
+          child: Text(item1),
+        ),
+        PopupMenuItem(
+          value: item2,
+          child: Text(item2),
+        ),
+      ],
+      onSelected: (String newValue) {
+        setState(() {
+          title = newValue;
+        });
+      }
+    ),
+  );
+}
+</t>
+<t tx="swot.20221025191831.1">PopupMenuButtonExample(),
+Divider(),
+</t>
+<t tx="swot.20221026064223.1"></t>
+<t tx="swot.20221026072859.1"></t>
+<t tx="swot.20221026073602.2">@language dart
+@tabwidth -2
+class ExpandedExample extends StatelessWidget {
+  const ExpandedExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221026073602.3">@override
+Widget build(BuildContext context) {
+  return SizedBox(
+    // width: double.infinity,
+    height: 100.0,
+    child: Column(
+      children: [
+        @others
+      ],
+    ),
+  );
+}
+</t>
+<t tx="swot.20221026193458.1">Expanded(
+  flex: 2,
+  child: Container(
+    color: Colors.blue,
+    width: double.infinity,
+    height: 200,
+    child: const Center(child: Text('Expanded 1')),
+  ),
+),
+</t>
+<t tx="swot.20221026193703.1">Expanded(
+  flex: 1,
+  child: Container(
+    color: Colors.orange,
+    width: double.infinity,
+    height: 200,
+    child: const Center(child: Text('Expanded 2')),
+  ),
+),
+</t>
+<t tx="swot.20221026193706.1">Expanded(
+  flex: 3,
+  child: Container(
+    color: Colors.red,
+    width: double.infinity,
+    height: 200,
+    child: const Center(child: Text('Expanded 3')),
+  ),
+),
+</t>
+<t tx="swot.20221026194030.1">ExpandedExample(),
+Divider(),
+</t>
+<t tx="swot.20221027111311.1"></t>
+<t tx="swot.20221027111351.1"></t>
+<t tx="swot.20221027111458.2">@language dart
+@tabwidth -2
+class FlexibleExample extends StatelessWidget {
+  const FlexibleExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221027111458.3">@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221027111807.1">Column(
+  children: [
+    @others
+  ],
+)
+</t>
+<t tx="swot.20221027111848.1">Flexible(
+  flex: 5,
+  child: Container(
+    height: 50,
+    color: Colors.yellow,
+  ),
+),
+Flexible(
+  flex: 4,
+  child: Container(
+    height: 100,
+    color: Colors.orange,
+  ),
+),
+Flexible(
+  flex: 3,
+  child: Container(
+    height: 200,
+    color: Colors.red,
+  ),
+),
+</t>
+<t tx="swot.20221027112213.1"></t>
+<t tx="swot.20221027112321.2">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('FlexibleExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; FlexibleExample(),
+      ),
+    );
+  },
+),
+
+</t>
+<t tx="swot.20221027112522.2">Scaffold(
+  @others
+)
+</t>
+<t tx="swot.20221027112522.3">appBar: AppBar(
+  title: Text('FlexibleExample'),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221027112522.4">body:
+@others
+</t>
+<t tx="swot.20221027114010.6">@language dart
+@tabwidth -2
+floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+floatingActionButton: FloatingActionButton(
+    onPressed: () {},
+    backgroundColor: Colors.deepPurple.shade400,
+    child: Icon(Icons.add),
+),
+</t>
+<t tx="swot.20221027114210.1"></t>
+<t tx="swot.20221027115609.1"></t>
+<t tx="swot.20221027115627.2">@language dart
+@tabwidth -2
+class FormExample extends StatelessWidget {
+  FormExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221027115627.3">@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221027115750.2">Scaffold(
+  @others
+)
+
+</t>
+<t tx="swot.20221027115750.3">appBar: AppBar(
+  title: Text('FormExample'),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221027115750.4">body:
+@others
+</t>
+<t tx="swot.20221027115911.1">Padding(
+  padding: const EdgeInsets.all(8.0),
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221027115952.1">Form(
+  key: _formKey,
+  child: Column(
+    children: [
+      TextFormField(
+        validator: (value) {
+          if (value == null || value.isEmpty) {
+            return 'Enter something';
+          }
+          return null;
+        },
+      ),
+      ElevatedButton(
+        onPressed: () {
+          if (_formKey.currentState!.validate()) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Great!'),
+              ),
+            );
+          }
+        },
+        child: const Text('Validate'),
+      ),
+    ],
+  )
+),
+</t>
+<t tx="swot.20221027120023.1">final _formKey = GlobalKey&lt;FormState&gt;();
+</t>
+<t tx="swot.20221027121244.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('FormExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; FormExample(),
+      ),
+    );
+  },
+),
+
+</t>
+<t tx="swot.20221027175533.2">@language dart
+@tabwidth -2
+class TextFormFieldExample extends StatefulWidget {
+  const TextFormFieldExample({super.key});
+
+  @override
+  State&lt;TextFormFieldExample&gt; createState() =&gt; _TextFormFieldExampleState();
+}
+
+class _TextFormFieldExampleState extends State&lt;TextFormFieldExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221027175533.3">List&lt;String&gt; titles = [
+  '',
+  '',
+  '',
+];
+</t>
+<t tx="swot.20221027175533.4">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221027175533.5">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221027175533.6">@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221027180846.1">SingleChildScrollView(
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221027180945.1">Form(
+  autovalidateMode: AutovalidateMode.always,
+  onChanged: () {
+    setState(() {
+      Form.of(primaryFocus!.context!)!.save();
+    });
+  },
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221027182206.1">Column(
+  mainAxisSize: MainAxisSize.min,
+  children: List.generate(
+    3,
+    (int index) {
+      return Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextFormField(
+              onSaved: (String? value) {
+                if (value != null) {
+                  titles[index] = value;
+                }
+              },
+            ),
+            const SizedBox(height: 10),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(titles[index]),
+              ),
+            ),
+          ],
+        ),
+      );
+    },
+  ),
+),
+</t>
+<t tx="swot.20221027182452.1"></t>
+<t tx="swot.20221027182544.1">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  child: const Text('TextFormFieldExample'),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; const TextFormFieldExample(),
+      ),
+    );
+  },
+),
+Divider(),
+</t>
+<t tx="swot.20221027183133.2">Scaffold(
+  @others
+)
+</t>
+<t tx="swot.20221027183133.3">appBar: AppBar(
+  title: Text('TextFormField'),
+  // leading: Icon(Icons.menu),
+  actions: [
+    Icon(Icons.settings),
+  ],
+  elevation: 0.0,
+  centerTitle: true,
+),
+</t>
+<t tx="swot.20221027183133.4">body:
+@others
+</t>
+<t tx="swot.20221027192806.1"></t>
+<t tx="swot.20221027192851.2">@language dart
+@tabwidth -2
+class AnimatedIconExample extends StatefulWidget {
+  const AnimatedIconExample({super.key});
+
+  @override
+  State&lt;AnimatedIconExample&gt; createState() =&gt; _AnimatedIconExampleState();
+}
+
+class _AnimatedIconExampleState extends State&lt;AnimatedIconExample&gt; with TickerProviderStateMixin {
+  @others
+}
+
+</t>
+<t tx="swot.20221027192851.3">bool _isPlay = false;
+late AnimationController _controllerIcon;
+</t>
+<t tx="swot.20221027192851.4">@override
+void initState() {
+  _controllerIcon = AnimationController(
+    duration: Duration(seconds: 1),
+    vsync: this  // use TickerProviderStateMixin
+  );
+  super.initState();
+}
+</t>
+<t tx="swot.20221027192851.5">@override
+void dispose() {
+   _controllerIcon.dispose();
+  super.dispose();
+}
+</t>
+<t tx="swot.20221027192851.6">@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221027194101.1">GestureDetector(
+  onTap: () {
+    if (_isPlay == false) {
+      _controllerIcon.forward();  // 下个图标
+      _isPlay = true;
+    } else {
+      _controllerIcon.reverse();  // 前个图标
+      _isPlay = false;
+    }
+  },
+  child:
+    @others
+)
+</t>
+<t tx="swot.20221027194101.2">@doc
+@language asciidoc
+:nofooter:
+1. define AnimationController
+2. AnimationController: need class `with TickerProviderStateMixin`
+3. AnimationController: need dispose
+
+@c
+@language dart
+@tabwidth -2
+AnimatedIcon(
+  // play is the first icon
+  // pause is the second icon
+  icon: AnimatedIcons.play_pause,
+  progress: _controllerIcon,
+  size: 40,
+),
+</t>
+<t tx="swot.20221027194417.2">// ElevatedButton(
+  // style: ElevatedButton.styleFrom(
+    // // backgroundColor: Colors.orangeAccent,
+  // ),
+  // child: const Text('AnimatedIcon'),
+  // onPressed: () {
+    // Navigator.push(
+      // context,
+      // MaterialPageRoute(
+        // builder: (context) =&gt; AnimatedIconExample(),
+      // ),
+    // );
+  // },
+// ),
+
+AnimatedIconExample(),
+</t>
+<t tx="swot.20221027195901.1"></t>
+<t tx="swot.20221027203431.2">@language dart
+@tabwidth -2
+class FadeInImageExample extends StatelessWidget {
+  const FadeInImageExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221027203431.3">@override
+Widget build(BuildContext context) {
+  return Center(
+    child: FadeInImage.assetNetwork(
+      width: 100,
+      height: 100,
+      placeholder: 'assets/loading.gif',
+      image: 'https://img2.baidu.com/it/u=1559210821,716203173&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=200&amp;h=200',
+    ),
+  );
+}
+</t>
+<t tx="swot.20221027203755.1">FadeInImageExample(),
 </t>
 </tnodes>
 </leo_file>
