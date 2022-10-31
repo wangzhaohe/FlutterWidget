@@ -2037,7 +2037,7 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
         child: body[_currentIndex],
       ),
       //@+node:swot.20221022095720.5: *8* bottomNavigationBar
-      bottomNavigationBar: BottomNavigationBar(  // new 底部
+      bottomNavigationBar: BottomNavigationBar(
         fixedColor: Colors.white,
         backgroundColor: Colors.blue,
         items: const [
@@ -2056,7 +2056,7 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
         ],
         currentIndex: _currentIndex,
         type: BottomNavigationBarType.fixed,
-        // type: BottomNavigationBarType.shifting, // 很有意思的样式
+        // type: BottomNavigationBarType.shifting,
         onTap: (int index) {
           setState(() {
             _currentIndex = index;

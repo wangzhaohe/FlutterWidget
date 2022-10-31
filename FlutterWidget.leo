@@ -11,7 +11,7 @@
 <v t="swot.20221027203033.1"><vh>@file pubspec.yaml</vh></v>
 <v t="swot.20221017093031.150"><vh>@clean README.md</vh></v>
 </v>
-<v t="swot.20221027111311.1"><vh>Logic</vh>
+<v t="swot.20221027111311.1"><vh>Logic -- Focus use in one place</vh>
 <v t="swot.20221017093031.151"><vh>A</vh>
 <v t="swot.20221017093031.152"><vh>AboutDialog</vh></v>
 <v t="swot.20221017093031.153"><vh>AboutListTile</vh></v>
@@ -203,7 +203,7 @@
 </v>
 <v t="swot.20221021181700.1"><vh>show BaselineExample</vh></v>
 </v>
-<v t="swot.20221021182532.1"><vh>BlockSemanticsExample -- 适用于读屏功能的处理</vh>
+<v t="swot.20221021182532.1"><vh>BlockSemanticsExample</vh>
 <v t="swot.20221022083314.1"><vh>&lt;&lt; showSemanticsDebugger &gt;&gt;</vh></v>
 <v t="swot.20221022080218.2"><vh>BlockSemanticsExample</vh>
 <v t="swot.20221022083723.1"><vh>varible</vh></v>
@@ -1173,26 +1173,7 @@
 </v>
 </v>
 </v>
-<v t="swot.20221027213439.1"><vh>@spot</vh>
-<v t="swot.20221029230649.2"></v>
-<v t="swot.20221029234453.2"></v>
-<v t="swot.20221029235922.2"></v>
-<v t="swot.20221030083241.2"></v>
-<v t="swot.20221030172700.2"></v>
-<v t="swot.20221030205049.2"></v>
-<v t="swot.20221030210033.2"></v>
-<v t="swot.20221030210547.2"></v>
-<v t="swot.20221030212509.2"></v>
-<v t="swot.20221030222244.2"></v>
-<v t="swot.20221030223719.2"></v>
-<v t="swot.20221030224821.2"></v>
-<v t="swot.20221030225430.2"></v>
-<v t="swot.20221030231950.2"></v>
-<v t="swot.20221030232847.2"></v>
-<v t="swot.20221030234221.2"></v>
-<v t="swot.20221031070602.2"></v>
-<v t="swot.20221031082929.2"></v>
-</v>
+<v t="swot.20221027213439.1"><vh>@spot</vh></v>
 </vnodes>
 <tnodes>
 <t tx="swot.20221017093031.1">Every Flutter Widgets - Part One - 50 Widgets
@@ -1208,6 +1189,8 @@ https://www.youtube.com/watch?v=G1LGOH424lo
 This project is for main using Widgets.
 
 Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
+
+&lt;img src="assets/introduce.png" width="100%" /&gt;
 
 ### A...
 
@@ -1240,7 +1223,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
     BackdropFilterExample
     BannerExample
     BaselineExample
-    BlockSemanticsExample -- 适用于读屏功能的处理
+    BlockSemanticsExample
     BottomNavigationBarExample
     BottomSheetExample
     BuilderExample
@@ -2549,7 +2532,7 @@ List&lt;Widget&gt; body = const [
   child: body[_currentIndex],
 ),
 </t>
-<t tx="swot.20221022095720.5">bottomNavigationBar: BottomNavigationBar(  // new 底部
+<t tx="swot.20221022095720.5">bottomNavigationBar: BottomNavigationBar(
   fixedColor: Colors.white,
   backgroundColor: Colors.blue,
   items: const [
@@ -2568,7 +2551,7 @@ List&lt;Widget&gt; body = const [
   ],
   currentIndex: _currentIndex,
   type: BottomNavigationBarType.fixed,
-  // type: BottomNavigationBarType.shifting, // 很有意思的样式
+  // type: BottomNavigationBarType.shifting,
   onTap: (int index) {
     setState(() {
       _currentIndex = index;

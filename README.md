@@ -4,6 +4,8 @@ This project is for main using Widgets.
 
 Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
 
+<img src="assets/introduce.png" width="100%" />
+
 ### A...
 
     AboutDialog
@@ -35,7 +37,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
     BackdropFilterExample
     BannerExample
     BaselineExample
-    BlockSemanticsExample -- 适用于读屏功能的处理
+    BlockSemanticsExample
     BottomNavigationBarExample
     BottomSheetExample
     BuilderExample
