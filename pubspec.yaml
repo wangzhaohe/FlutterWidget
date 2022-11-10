@@ -70,6 +70,9 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/loading.gif
+    - assets/fengjing.webp
+    - assets/avatar.webp
+
   #@-<< assets >>
 
   # An image asset can refer to one or more resolution-specific "variants", see

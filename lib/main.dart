@@ -9,10 +9,12 @@ import 'dart:math' as math;
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+
 //@+node:swot.20221017093031.4: ** main
-void main(){
-  runApp(MyApp());
+void main() {
+  runApp(const MyApp());
 }
+
 //@+node:swot.20221017093031.5: ** MyApp -- MaterialApp
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -23,8 +25,8 @@ class MyApp extends StatelessWidget {
       title: 'demo',
       home: const Home(),
       theme: ThemeData(
-        // fontFamily: 'SourceSansPro',
-      ),
+          // fontFamily: 'SourceSansPro',
+          ),
       debugShowCheckedModeBanner: false,
       //@+<< showSemanticsDebugger >>
       //@+node:swot.20221022083314.1: *3* << showSemanticsDebugger >>
@@ -34,282 +36,280 @@ class MyApp extends StatelessWidget {
       //@+node:swot.20221021132401.1: *3* << routes >>
       //@@language dart
       routes: {
-        'home': (context) => Home(),
-        'a': (context) => A(),
-        'b': (context) => B(),
-        'c': (context) => C(),
-        'd': (context) => D(),
-        'e': (context) => E(),
-        'f': (context) => F(),
-        'g': (context) => G(),
-        'h': (context) => H(),
-        'i': (context) => I(),
-        'l': (context) => L(),
-        'm': (context) => M(),
-        'n': (context) => N(),
-        'o': (context) => O(),
-        'p': (context) => P(),
-        'r': (context) => R(),
-        's': (context) => S(),
-        't': (context) => T(),
-        'v': (context) => V(),
-        'w': (context) => W(),
+        'home': (context) => const Home(),
+        'a': (context) => const A(),
+        'b': (context) => const B(),
+        'c': (context) => const C(),
+        'd': (context) => const D(),
+        'e': (context) => const E(),
+        'f': (context) => const F(),
+        'g': (context) => const G(),
+        'h': (context) => const H(),
+        'i': (context) => const I(),
+        'l': (context) => const L(),
+        'm': (context) => const M(),
+        'n': (context) => const N(),
+        'o': (context) => const O(),
+        'p': (context) => const P(),
+        'r': (context) => const R(),
+        's': (context) => const S(),
+        't': (context) => const T(),
+        'v': (context) => const V(),
+        'w': (context) => const W(),
       },
 
       initialRoute: 'home',
 
       // onUnknownRoute: (RouteSettings setting) => MaterialPageRoute(
-        // builder: (context) => UnknowPage(),
+      // builder: (context) => UnknowPage(),
       // ),
       //@-<< routes >>
     );
   }
 }
+
 //@+node:swot.20221021133107.2: ** Home
 //@@language dart
 //@@tabwidth -2
 class Home extends StatelessWidget {
-  const Home({ Key? key }) : super(key: key);
+  const Home({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221021133107.3: *3* build()
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221021135715.1: *4* SafeArea
+    SafeArea(
+      child:
       //@+others
-      //@+node:swot.20221021135715.1: *4* SafeArea
-      SafeArea(
-        child:
+      //@+node:swot.20221021141328.1: *5* Scaffold
+      Scaffold(
+        body:
+        //@+others
+        //@+node:swot.20221021133625.1: *6* Wrap
+        Wrap(spacing: 8.0, children: [
           //@+others
-          //@+node:swot.20221021141328.1: *5* Scaffold
-          Scaffold(
-            body:
-              //@+others
-              //@+node:swot.20221021133625.1: *6* Wrap
-              Wrap(
-                spacing: 8.0,
-                children: [
-                  //@+others
-                  //@+node:swot.20221021134037.2: *7* ElevatedButton A
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'a');
-                    },
-                    child: const Text('A'),
-                  ),
+          //@+node:swot.20221021134037.2: *7* ElevatedButton A
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'a');
+            },
+            child: const Text('A'),
+          ),
 
-                  //@+node:swot.20221021171707.1: *7* ElevatedButton B
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'b');
-                    },
-                    child: const Text('B'),
-                  ),
+          //@+node:swot.20221021171707.1: *7* ElevatedButton B
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'b');
+            },
+            child: const Text('B'),
+          ),
 
-                  //@+node:swot.20221022115433.1: *7* ElevatedButton C
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'c');
-                    },
-                    child: const Text('C'),
-                  ),
+          //@+node:swot.20221022115433.1: *7* ElevatedButton C
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'c');
+            },
+            child: const Text('C'),
+          ),
 
-                  //@+node:swot.20221024065732.1: *7* ElevatedButton D
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'd');
-                    },
-                    child: const Text('D'),
-                  ),
+          //@+node:swot.20221024065732.1: *7* ElevatedButton D
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'd');
+            },
+            child: const Text('D'),
+          ),
 
-                  //@+node:swot.20221026064030.1: *7* ElevatedButton E
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'e');
-                    },
-                    child: const Text('E'),
-                  ),
+          //@+node:swot.20221026064030.1: *7* ElevatedButton E
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'e');
+            },
+            child: const Text('E'),
+          ),
 
-                  //@+node:swot.20221026200727.1: *7* ElevatedButton F
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'f');
-                    },
-                    child: const Text('F'),
-                  ),
+          //@+node:swot.20221026200727.1: *7* ElevatedButton F
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'f');
+            },
+            child: const Text('F'),
+          ),
 
-                  //@+node:swot.20221028090127.1: *7* ElevatedButton G
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'g');
-                    },
-                    child: const Text('G'),
-                  ),
+          //@+node:swot.20221028090127.1: *7* ElevatedButton G
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'g');
+            },
+            child: const Text('G'),
+          ),
 
-                  //@+node:swot.20221023124300.1: *7* ElevatedButton H
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'h');
-                    },
-                    child: const Text('H'),
-                  ),
+          //@+node:swot.20221023124300.1: *7* ElevatedButton H
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'h');
+            },
+            child: const Text('H'),
+          ),
 
-                  //@+node:swot.20221029081545.1: *7* ElevatedButton I
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'i');
-                    },
-                    child: const Text('I'),
-                  ),
+          //@+node:swot.20221029081545.1: *7* ElevatedButton I
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'i');
+            },
+            child: const Text('I'),
+          ),
 
-                  //@+node:swot.20221023105031.1: *7* ElevatedButton L
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'l');
-                    },
-                    child: const Text('L'),
-                  ),
+          //@+node:swot.20221023105031.1: *7* ElevatedButton L
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'l');
+            },
+            child: const Text('L'),
+          ),
 
-                  //@+node:swot.20221023081344.1: *7* ElevatedButton M
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'm');
-                    },
-                    child: const Text('M'),
-                  ),
+          //@+node:swot.20221023081344.1: *7* ElevatedButton M
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'm');
+            },
+            child: const Text('M'),
+          ),
 
-                  //@+node:swot.20221029134319.1: *7* ElevatedButton N
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'n');
-                    },
-                    child: const Text('N'),
-                  ),
+          //@+node:swot.20221029134319.1: *7* ElevatedButton N
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'n');
+            },
+            child: const Text('N'),
+          ),
 
-                  //@+node:swot.20221023093000.1: *7* ElevatedButton O
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'o');
-                    },
-                    child: const Text('O'),
-                  ),
+          //@+node:swot.20221023093000.1: *7* ElevatedButton O
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'o');
+            },
+            child: const Text('O'),
+          ),
 
-                  //@+node:swot.20221030231220.1: *7* ElevatedButton P
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'p');
-                    },
-                    child: const Text('P'),
-                  ),
+          //@+node:swot.20221030231220.1: *7* ElevatedButton P
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'p');
+            },
+            child: const Text('P'),
+          ),
 
-                  //@+node:swot.20221023152035.1: *7* ElevatedButton R
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'r');
-                    },
-                    child: const Text('R'),
-                  ),
+          //@+node:swot.20221023152035.1: *7* ElevatedButton R
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'r');
+            },
+            child: const Text('R'),
+          ),
 
-                  //@+node:swot.20221024091106.1: *7* ElevatedButton S
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 's');
-                    },
-                    child: const Text('S'),
-                  ),
+          //@+node:swot.20221024091106.1: *7* ElevatedButton S
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 's');
+            },
+            child: const Text('S'),
+          ),
 
-                  //@+node:swot.20221023180102.1: *7* ElevatedButton T
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 't');
-                    },
-                    child: const Text('T'),
-                  ),
+          //@+node:swot.20221023180102.1: *7* ElevatedButton T
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 't');
+            },
+            child: const Text('T'),
+          ),
 
-                  //@+node:swot.20221030213345.1: *7* ElevatedButton V
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'v');
-                    },
-                    child: const Text('V'),
-                  ),
+          //@+node:swot.20221030213345.1: *7* ElevatedButton V
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'v');
+            },
+            child: const Text('V'),
+          ),
 
-                  //@+node:swot.20221030223324.1: *7* ElevatedButton W
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      // backgroundColor: Colors.orangeAccent,
-                    ),
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'w');
-                    },
-                    child: const Text('W'),
-                  ),
-
-                  //@-others
-                ]
-              ),
-              //@-others
+          //@+node:swot.20221030223324.1: *7* ElevatedButton W
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                // backgroundColor: Colors.orangeAccent,
+                ),
+            onPressed: () {
+              Navigator.pushNamed(context, 'w');
+            },
+            child: const Text('W'),
           ),
           //@-others
-      )
+        ]),
+        //@-others
+      ),
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
 }
+
 //@+node:swot.20221029130915.1: ** Example A-G
 //@+node:swot.20221021133027.1: *3* A Example
 //@+node:swot.20221017093031.6: *4* A  -- Scaffold
@@ -326,14 +326,14 @@ class A extends StatelessWidget {
         centerTitle: true,
 
         // leading: IconButton(
-          // icon: const Icon(Icons.menu),
-          // onPressed: (){},
+        // icon: const Icon(Icons.menu),
+        // onPressed: (){},
         // ),
 
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
-            onPressed: (){},
+            onPressed: () {},
           ),
         ],
         // AppBar 的下边变成了圆角
@@ -345,13 +345,14 @@ class A extends StatelessWidget {
         ),
 
         backgroundColor: Colors.orangeAccent,
-        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+        elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
       ),
       //@-others
       body: DemoA(),
     );
   }
 }
+
 //@+node:swot.20221017093031.8: *4* DemoA
 //@@language dart
 //@@tabwidth -2
@@ -368,193 +369,134 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
   //@+node:swot.20221017093031.9: *5* variable
   //@+node:swot.20221017093031.10: *6* var for AnimatedXXX
   // AnimatedAlign
-  // AnimatedContainer
-  // AnimatedCrossFade
-  // AnimatedDefaultTextStyle
   bool selected = false;
-
-  // AnimatedDefaultTextStyle
-  double _fontSize = 20;
-  Color _color = Colors.blue;
-  //@+node:swot.20221017093031.161: *6* var for AnimatedBuilder
-  late AnimationController _controllerBuilder;
-  //@+node:swot.20221017093031.172: *6* var for AnimatedList
-  final _items = [];
-  final GlobalKey<AnimatedListState> _key = GlobalKey();
-  //@+node:swot.20221017093031.14: *5* function
-  //@+node:swot.20221017093031.173: *6* _addItem()             -- AnimatedList
-  void _addItem() {
-    _items.insert(0, "Item ${_items.length + 1}");
-    _key.currentState!.insertItem(
-      0,
-      duration: const Duration(seconds: 1),
-    );
-  }
-  //@+node:swot.20221017093031.174: *6* _removeItem(int index) -- AnimatedList
-  void _removeItem(int index) {
-    _key.currentState!.removeItem(
-      index,
-      (_, animation) {
-        return SizeTransition(
-          sizeFactor: animation,
-          child: const Card(
-            margin: EdgeInsets.all(10),
-            color: Colors.red,
-            child: ListTile(
-              title: Text(
-                "Deleted",
-                style: TextStyle(fontSize: 14),
-              ),
-              visualDensity: VisualDensity(vertical: -3),  // adjust listTile height
-              dense: true,
-            ),
-          ),
-        );
-      },
-      duration: const Duration(milliseconds: 600),
-    );
-    _items.removeAt(index);
-  }
   //@+node:swot.20221017093031.17: *5* initState()
   @override
   void initState() {
-    //@+others
-    //@+node:swot.20221017093031.162: *6* AnimationController for AnimatedBuilder
-    _controllerBuilder = AnimationController(
-      duration: const Duration(seconds: 10),  // 转一圈的时间
-      vsync: this,                            // use TickerProviderStateMixin
-    )..repeat();                              // 10s 后重复
-
-    //@-others
     super.initState();
   }
+
   //@+node:swot.20221017093031.20: *5* dispose()
   @override
   void dispose() {
-    _controllerBuilder.dispose();  // AnimatedBuilder
     super.dispose();
   }
+
   //@+node:swot.20221017093031.21: *5* build()
   @override
   Widget build(BuildContext context) {
     return
-      //@+others
-      //@+node:swot.20221017093031.22: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+        //@+others
+        //@+node:swot.20221017093031.22: *6* SingleChildScrollView
+        SingleChildScrollView(
+          child:
           //@+others
           //@+node:swot.20221017093031.23: *7* Column
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              //@+others
-              //@+node:swot.20221017093031.24: *8* Row
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  //@+others
-                  //@+node:swot.20221017093031.25: *9* ElevatedButton  -- show AboutDialog
-                  ElevatedButton(
-                    child: const Text('Show About Dialog'),
-                    onPressed: (){
+            //@+others
+            //@+node:swot.20221017093031.24: *8* Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                //@+others
+                //@+node:swot.20221017093031.25: *9* ElevatedButton  -- show AboutDialog
+                ElevatedButton(
+                  child: const Text('Show About Dialog'),
+                  onPressed: () {
+                    //@+others
+                    //@+node:swot.20221017093031.26: *10* showDialog
+                    showDialog(
+                      context: context,
+                      builder: (context) =>
                       //@+others
-                      //@+node:swot.20221017093031.26: *10* showDialog
-                      showDialog(
-                        context: context,
-                        builder: (context) =>
-                          //@+others
-                          //@+node:swot.20221017093031.152: *11* AboutDialog
-                          //@+doc
-                          //@@language asciidoc
-                          // :nofooter:
-                          // image::../image/AboutDialog.png[AboutDialog,240]
-                          //
-                          //@@c
-                          //@@language dart
-                          //@@tabwidth -2
-                          const AboutDialog(
-                            applicationIcon: FlutterLogo(),
-                            applicationLegalese: 'Legalese',
-                            applicationName: 'Flutter App',
-                            applicationVersion: 'version 1.0.0',
-                            children: [
-                              Text('This is a text created by Flutter Mapp'),
-                            ],
-                          ),
-
-                          //@-others
-                      );
-                      //@-others
-                    }
-                  ),
-                  //@+node:swot.20221017093031.28: *9* SizedBox -- show AboutListTile
-                  //@+doc
-                  //@@language asciidoc
-                  // :nofooter:
-                  // https://www.flutterbeads.com/renderbox-was-not-laid-out/?[3 Ways to Fix RenderBox was not Laid Out in Flutter [2022]]
-                  //
-                  // 使用 SizedBox 可以解决上面报错的问题
-                  //
-                  //@@c
-                  //@@language dart
-                  //@@tabwidth -2
-                  SizedBox(
-                    width: 200.0,
-                    height: 40.0,
-                    child:
-                      //@+others
-                      //@+node:swot.20221017093031.153: *10* AboutListTile
+                      //@+node:swot.20221017093031.152: *11* AboutDialog
                       //@+doc
                       //@@language asciidoc
                       // :nofooter:
-                      // image::../image/AboutListTile.png[AboutListTile,240]
-                      //
+                      // image::../image/AboutDialog.png[AboutDialog,240]
                       //@@c
                       //@@language dart
-                      //@@tabwidth -2
-                      const AboutListTile(
-                        icon: Icon(Icons.info),
+                      const AboutDialog(
                         applicationIcon: FlutterLogo(),
                         applicationLegalese: 'Legalese',
-                        applicationName: 'Flutter',
+                        applicationName: 'Flutter App',
                         applicationVersion: 'version 1.0.0',
-                        aboutBoxChildren: [
+                        children: [
                           Text('This is a text created by Flutter Mapp'),
                         ],
                       ),
+
                       //@-others
+                    );
+                    //@-others
+                  },
+                ),
+                //@+node:swot.20221017093031.28: *9* SizedBox -- show AboutListTile
+                //@+doc
+                //@@language asciidoc
+                // :nofooter:
+                // https://www.flutterbeads.com/renderbox-was-not-laid-out/?[3 Ways to Fix RenderBox was not Laid Out in Flutter [2022]]
+                //
+                // 使用 SizedBox 可以解决上面报错的问题
+                //@@c
+                //@@language dart
+                SizedBox(
+                  width: 200.0,
+                  height: 40.0,
+                  child:
+                  //@+others
+                  //@+node:swot.20221017093031.153: *10* AboutListTile
+                  //@+doc
+                  //@@language asciidoc
+                  // :nofooter:
+                  // image::../image/AboutListTile.png[AboutListTile,240]
+                  //@@c
+                  //@@language dart
+                  const AboutListTile(
+                    icon: Icon(Icons.info),
+                    applicationIcon: FlutterLogo(),
+                    applicationLegalese: 'Legalese',
+                    applicationName: 'Flutter',
+                    applicationVersion: 'version 1.0.0',
+                    aboutBoxChildren: [
+                      Text('This is a text created by Flutter Mapp'),
+                    ],
                   ),
                   //@-others
-                ],
-              ),
+                ),
+                //@-others
+              ],
+            ),
 
-              Divider(),
-              //@+node:swot.20221017093031.31: *8* Row
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  //@+others
-                  //@+node:swot.20221017093031.32: *9* Stack           -- show AbsorbPointer包含按钮不可点击
-                  Stack(
-                    alignment: AlignmentDirectional.center,
-                    children: [
-                      //@+others
-                      //@+node:swot.20221017093031.33: *10* SizedBox
-                      SizedBox(
-                        width: 100.0,
-                        height: 30.0,
-                        child: ElevatedButton(
-                          onPressed: (){},
-                          child: null,
-                        ),
+            Divider(),
+            //@+node:swot.20221017093031.31: *8* Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                //@+others
+                //@+node:swot.20221017093031.32: *9* Stack           -- show AbsorbPointer包含按钮不可点击
+                Stack(
+                  alignment: AlignmentDirectional.center,
+                  children: [
+                    //@+others
+                    //@+node:swot.20221017093031.33: *10* SizedBox
+                    SizedBox(
+                      width: 100.0,
+                      height: 30.0,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: null,
                       ),
-                      //@+node:swot.20221017093031.34: *10* SizedBox
-                      SizedBox(
-                        width: 40.0,
-                        height: 60.0,
-                        child:
+                    ),
+                    //@+node:swot.20221017093031.34: *10* SizedBox
+                    SizedBox(
+                      width: 40.0,
+                      height: 60.0,
+                      child:
                           //@+others
                           //@+node:swot.20221017093031.154: *11* AbsorbPointer -- include button can not be clicked
                           //@+doc
@@ -564,42 +506,40 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                           //
                           //@@c
                           //@@language dart
-                          //@@tabwidth -2
                           AbsorbPointer(
                             child:
-                              //@+others
-                              //@+node:swot.20221017093031.155: *12* ElevatedButton 不可点击
-                              //@@language dart
-                              //@@tabwidth -2
-                              ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.blue.shade200,
-                                ),
-                                onPressed: (){},
-                                child: Text("不能点"),
+                            //@+others
+                            //@+node:swot.20221017093031.155: *12* ElevatedButton 不可点击
+                            //@@language dart
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.blue.shade200,
                               ),
-                              //@-others
+                              onPressed: () {},
+                              child: Text("不能点"),
+                            ),
+                            //@-others
                           ),
                           //@-others
-                      ),
-                      //@-others
-                    ],
-                  ),
-                  //@+node:swot.20221017093031.37: *9* ElevatedButton  -- show AlertDialog
-                  ElevatedButton(
-                    child: const Text('Show Alert Dialog'),
-                    onPressed: (){
-                      //@+others
-                      //@+node:swot.20221017093031.38: *10* showDialog
-                      showDialog(
-                        context: context,
-                        builder: (context) =>
+                    ),
+                    //@-others
+                  ],
+                ),
+                //@+node:swot.20221017093031.37: *9* ElevatedButton  -- show AlertDialog
+                ElevatedButton(
+                  child: const Text('Show Alert Dialog'),
+                  onPressed: () {
+                    //@+others
+                    //@+node:swot.20221017093031.38: *10* showDialog
+                    showDialog(
+                      context: context,
+                      builder: (context) =>
                           //@+others
                           //@+node:swot.20221017093031.156: *11* AlertDialog
                           AlertDialog(
                             actions: [
                               TextButton(
-                                onPressed: (){
+                                onPressed: () {
                                   Navigator.of(context).pop();
                                 },
                                 child: const Text('Close'),
@@ -610,349 +550,174 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                             content: const Text('This is the alert Dialog'),
                           ),
                           //@-others
-                      );
-                      //@-others
-                    },
-                  ),
-                  //@-others
-                ],
-              ),
+                    );
+                    //@-others
+                  },
+                ),
+                //@-others
+              ],
+            ),
 
-              Divider(),
-              //@+node:swot.20221017093031.41: *8* Row
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+            Divider(),
+            //@+node:swot.20221017093031.41: *8* Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                //@+others
+                //@+node:swot.20221017093031.42: *9* Container       -- show Align
+                Container(
+                  margin: const EdgeInsets.symmetric(vertical: 4.0),
+                  height: 40.0,
+                  width: 100.0,
+                  color: Colors.blueGrey,
+                  child:
                   //@+others
-                  //@+node:swot.20221017093031.42: *9* Container       -- show Align
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 4.0),
-                    height: 40.0,
-                    width: 100.0,
-                    color: Colors.blueGrey,
-                    child:
-                      //@+others
-                      //@+node:swot.20221017093031.157: *10* Align
-                      //@+doc
-                      //@@language asciidoc
-                      // :nofooter:
-                      // image::../image/Align.png[Align,240]
-                      //
-                      //@@c
-                      //@@language dart
-                      //@@tabwidth -2
-                      const Align(
-                        alignment: Alignment.topRight,
-                        // alignment: Alignment.bottonLeft,
-                        child: FlutterLogo(
-                          size: 20,
-                        ),
-                      ),
-                      //@-others
-                  ),
-                  //@+node:swot.20221017093031.44: *9* GestureDetector -- show AnimatedAlign
-                  GestureDetector(
-                    onTap: (){
-                      setState((){
-                        selected = !selected;
-                      });
-                    },
-                    child: Center(
-                      child: Container(
-                        width: 150.0,
-                        height: 40.0,
-                        color: Colors.grey,
-                        child:
-                          //@+others
-                          //@+node:swot.20221017093031.159: *10* AnimatedAlign
-                          AnimatedAlign(
-                            alignment: selected ? Alignment.topRight : Alignment.bottomLeft,
-                            duration: const Duration(seconds: 1),
-                            curve: Curves.fastOutSlowIn,
-                            child: const FlutterLogo(size: 20.0),
-                          ),
-                          //@-others
-                      ),
-                    ),
-                  ),
-                  //@-others
-                ],
-              ),
-
-              Divider(),
-              //@+node:swot.20221017093031.47: *8* Row
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  //@+others
-                  //@+node:swot.20221017093031.163: *9* AnimatedBuilder
+                  //@+node:swot.20221017093031.157: *10* Align
                   //@+doc
                   //@@language asciidoc
                   // :nofooter:
-                  // 1. define _controllerBuilder
-                  // 2. _controllerBuilder: need class `with TickerProviderStateMixin`
-                  // 3. _controllerBuilder: need dispose
-                  //
+                  // image::../image/Align.png[Align,240]
                   //@@c
                   //@@language dart
-                  //@@tabwidth -2
-                  AnimatedBuilder(
-                    animation: _controllerBuilder,
-                    child: const FlutterLogo(size: 30,),
-                    builder: (BuildContext context, Widget? child){
-                      return Transform.rotate(
-                        angle: _controllerBuilder.value * 2.0 * math.pi,
-                        child: child,
-                      );
-                    },
+                  const Align(
+                    alignment: Alignment.topRight,
+                    // alignment: Alignment.bottonLeft,
+                    child: FlutterLogo(
+                      size: 20,
+                    ),
                   ),
-                  //@+node:swot.20221017093031.49: *9* GestureDetector -- show AnimatedContainer
-                  GestureDetector(
-                    onTap: (){
-                      setState((){
-                        selected = !selected;
-                      });
-                    },
-                    child: Center(
+                  //@-others
+                ),
+                //@+node:swot.20221017093031.44: *9* GestureDetector -- show AnimatedAlign
+                GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      selected = !selected;
+                    });
+                  },
+                  child: Center(
+                    child: Container(
+                      width: 150.0,
+                      height: 40.0,
+                      color: Colors.grey,
                       child:
-                        //@+others
-                        //@+node:swot.20221017093031.164: *10* AnimatedContainer
-                        AnimatedContainer(
-                          width: selected ? 150.0 : 25.0,
-                          height: selected ? 25.0 : 40.0,
-                          color: selected ? Colors.blueGrey : Colors.grey,
-                          alignment: selected ? Alignment.center: AlignmentDirectional.topCenter,
-                          duration: const Duration(seconds: 2),
-                          curve: Curves.fastOutSlowIn,
-                          child: const FlutterLogo(size: 20.0),
-                        ),
-                        //@-others
-                    ),
-                  ),
-                  //@-others
-                ],
-              ),
-
-              Divider(),
-              //@+node:swot.20221017093031.52: *8* Row                -- show AnimatedCrossFade
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  //@+others
-                  //@+node:swot.20221017093031.53: *9* TextButton
-                  Container(
-                    height: 30.0,
-                    child: TextButton(
-                      onPressed:(){
-                        setState((){
-                          selected = !selected;
-                        });
-                      },
-                      child: const Text(
-                        'Switch image',
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                  ),
-                  //@+node:swot.20221017093031.165: *9* AnimatedCrossFade
-                  AnimatedCrossFade(
-                    firstChild: Image.network(
-                      'https://img2.baidu.com/it/u=2642639611,1941240358&fm=253&fmt=auto&app=138&f=JPEG?w=200&h=200',
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                    secondChild: Image.network(
-                      'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                    crossFadeState: selected ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-                    duration: const Duration(seconds: 1),
-                  ),
-                  //@-others
-                ],
-              ),
-
-              Divider(),
-              //@+node:swot.20221017093031.56: *8* Row                -- show AnimatedDefaultTextStyle
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  //@+others
-                  //@+node:swot.20221017093031.57: *9* TextButton
-                  TextButton(
-                    onPressed: (){
-                      setState((){
-                        _fontSize = selected ? 40 : 20;
-                        _color = selected ? Colors.blue : Colors.red;
-                        selected = !selected;
-                      });
-                    },
-                    child: const Text('AnimatedDefaultTextStyle'),
-                  ),
-                  //@+node:swot.20221017093031.58: *9* SizedBox
-                  SizedBox(
-                    height: 40,
-                    child:
                       //@+others
-                      //@+node:swot.20221017093031.166: *10* AnimatedDefaultTextStyle
-                      AnimatedDefaultTextStyle(
-                        duration: const Duration(milliseconds: 300),
-                        style: TextStyle(
-                          fontSize: _fontSize,
-                          color: _color,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        child: const Text('Flutter'),
+                      //@+node:swot.20221017093031.159: *10* AnimatedAlign
+                      AnimatedAlign(
+                        alignment: selected ? Alignment.topRight : Alignment.bottomLeft,
+                        duration: const Duration(seconds: 1),
+                        curve: Curves.fastOutSlowIn,
+                        child: const FlutterLogo(size: 20.0),
                       ),
                       //@-others
-                  ),
-                  //@-others
-                ],
-              ),
-
-              Divider(),
-              //@+node:swot.20221017093031.61: *8* Row
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  //@+others
-                  //@+node:swot.20221027194417.2: *9* show AnimatedIconExample
-                  // ElevatedButton(
-                    // style: ElevatedButton.styleFrom(
-                      // // backgroundColor: Colors.orangeAccent,
-                    // ),
-                    // child: const Text('AnimatedIcon'),
-                    // onPressed: () {
-                      // Navigator.push(
-                        // context,
-                        // MaterialPageRoute(
-                          // builder: (context) => AnimatedIconExample(),
-                        // ),
-                      // );
-                    // },
-                  // ),
-
-                  AnimatedIconExample(),
-                  //@+node:swot.20221017093031.179: *9* AnimatedModalBarrier  -- show AnimatedModalBarrier
-                  const AnimatedModalBarrierExample(),
-                  //@-others
-                ],
-              ),
-
-              Divider(),
-              //@+node:swot.20221017093031.175: *8* show AnimatedList
-              IconButton(
-                onPressed: _addItem,
-                icon: const Icon(Icons.add),
-              ),
-
-              SizedBox(
-                height: 150,
-                child:
-                  //@+others
-                  //@+node:swot.20221017093031.176: *9* AnimatedList
-                  AnimatedList(
-                    key: _key,
-                    initialItemCount: 0,
-                    padding: const EdgeInsets.all(10),
-                    itemBuilder: (context, index, animation) {
-                      //@+others
-                      //@+node:swot.20221017093031.177: *10* SizeTransition
-                      return SizeTransition(
-                        key: UniqueKey(),
-                        sizeFactor: animation,
-                        child: Card(
-                          margin: const EdgeInsets.all(3),
-                          color: Colors.orangeAccent,
-                          child: ListTile(
-                            title: Text(
-                              _items[index],
-                              style: const TextStyle(fontSize: 14),
-                            ),
-                            trailing: IconButton(
-                              icon: const Icon(Icons.delete),
-                              onPressed: (){
-                                _removeItem(index);
-                              },
-                            ),
-                            visualDensity: const VisualDensity(vertical: -3),  // adjust listTile height
-                            dense: true,  // 高度会更加紧密，就是高度更小的意思
-                          ),
-                        ),
-                      );
-                      //@-others
-                    },
-                  ),
-                  //@-others
-              ),
-
-              Divider(),
-              //@+node:swot.20221017093031.194: *8* show AnimatedOpacity
-              AnimatedOpacityExample(),
-
-              Divider(),
-              //@+node:swot.20221017093031.196: *8* show AnimatedPadding
-              AnimatedPaddingExample(),
-
-              Divider(),
-              //@+node:swot.20221017093031.207: *8* show AnimatedPhysicalModel
-              AnimatedPhysicalModelExample(),
-
-              Divider(),
-              //@+node:swot.20221017093031.216: *8* show AnimatedPositionedExample
-              AnimatedPositionedExample(),
-
-              Divider(),
-              //@+node:swot.20221017093031.226: *8* show AnimatedRotationExample
-              AnimatedRotationExample(),
-
-              Divider(),
-              //@+node:swot.20221017093031.235: *8* show AnimatedSizeExample
-              AnimatedSizeExample(),
-
-              Divider(),
-              //@+node:swot.20221017093031.251: *8* show AnimatedSwitcherExample
-              AnimatedSwitcherExample(),
-
-              Divider(),
-              //@+node:swot.20221017093031.253: *8* AspectRatio
-              Container(
-                color: Colors.orangeAccent,
-                alignment: Alignment.center,
-                width: double.infinity,
-                height: 100,
-                // height: 200,
-                child: AspectRatio(
-                  aspectRatio: 16 / 9,
-                  child: Container(
-                    color: Colors.blueGrey,
-                    alignment: Alignment.center,
-                    child: const Text("AspecRatio 16 / 9"),
+                    ),
                   ),
                 ),
-              ),
-              Divider(),
-              //@+node:swot.20221017093031.255: *8* show AutoCompleteExample
-              AutoCompleteExample(),
+                //@-others
+              ],
+            ),
 
-              Divider(),
-              //@+node:swot.20221017093031.88: *8* SizedBox
-              SizedBox(
-                height: 200.0,
-              ),
+            Divider(),
+            //@+node:swot.20221017093031.47: *8* Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                //@+others
+                //@+node:swot.20221101141445.1: *9* show AnimatedBuilderExample
+                AnimatedBuilderExample(),
+                //@+node:swot.20221101163555.1: *9* show AnimatedContainerExample
+                AnimatedContainerExample(),
+                //@-others
+              ],
+            ),
 
-              Divider(),
-              //@-others
-            ]
-          ),
+            Divider(),
+            //@+node:swot.20221031193616.1: *8* show AnimatedCrossFadeExample
+            AnimatedCrossFadeExample(),
+            //@+node:swot.20221101175441.1: *8* show AnimatedDefaultTextStyleExample
+            AnimatedDefaultTextStyleExample(),
+            const Divider(),
+            //@+node:swot.20221017093031.61: *8* Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                //@+others
+                //@+node:swot.20221027194417.2: *9* show AnimatedIconExample
+                AnimatedIconExample(),
+                //@+node:swot.20221017093031.179: *9* AnimatedModalBarrier  -- show AnimatedModalBarrier
+                const AnimatedModalBarrierExample(),
+                //@-others
+              ],
+            ),
+
+            Divider(),
+            //@+node:swot.20221031135430.2: *8* ElevatedButton -- show AdaptiveExample
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AdaptiveExample(),
+                  ),
+                );
+              },
+              child: const Text('AdaptiveExample'),
+            ),
+
+            //@+node:swot.20221101181724.1: *8* show AnimatedListExample
+            AnimatedListExample(),
+            //@+node:swot.20221017093031.194: *8* show AnimatedOpacity
+            AnimatedOpacityExample(),
+            Divider(),
+            //@+node:swot.20221017093031.196: *8* show AnimatedPadding
+            AnimatedPaddingExample(),
+            Divider(),
+            //@+node:swot.20221017093031.207: *8* show AnimatedPhysicalModel
+            AnimatedPhysicalModelExample(),
+            Divider(),
+            //@+node:swot.20221017093031.216: *8* show AnimatedPositionedExample
+            AnimatedPositionedExample(),
+            Divider(),
+            //@+node:swot.20221017093031.226: *8* show AnimatedRotationExample
+            AnimatedRotationExample(),
+            Divider(),
+            //@+node:swot.20221017093031.235: *8* show AnimatedSizeExample
+            AnimatedSizeExample(),
+            Divider(),
+            //@+node:swot.20221017093031.251: *9* show AnimatedSwitcherExample
+            AnimatedSwitcherExample(),
+            Divider(),
+            //@+node:swot.20221017093031.253: *8* AspectRatio
+            Container(
+              color: Colors.orangeAccent,
+              alignment: Alignment.center,
+              width: double.infinity,
+              height: 100,
+              // height: 200,
+              child: AspectRatio(
+                aspectRatio: 16 / 9,
+                child: Container(
+                  color: Colors.blueGrey,
+                  alignment: Alignment.center,
+                  child: const Text("AspecRatio 16 / 9"),
+                ),
+              ),
+            ),
+            Divider(),
+            //@+node:swot.20221017093031.255: *8* show AutoCompleteExample
+            AutoCompleteExample(),
+            Divider(),
+            //@+node:swot.20221017093031.88: *8* SizedBox
+            SizedBox(height: 200.0),
+            Divider(),
+            //@-others
+          ]),
 
           //@+doc
           //@@language python
@@ -968,14 +733,330 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
           //         node.b = "Divider(),"
           // c.redraw()
           //@-others
-      )
-      //@-others
+        )
+        //@-others
+        ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221031134256.2: *4* AdaptiveExample
+//@@language dart
+//@@tabwidth -2
+class AdaptiveExample extends StatefulWidget {
+  const AdaptiveExample({super.key});
+
+  @override
+  State<AdaptiveExample> createState() => _AdaptiveExampleState();
+}
+
+class _AdaptiveExampleState extends State<AdaptiveExample> {
+  //@+others
+  //@+node:swot.20221031134256.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221031134345.2: *6* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221031134345.3: *7* appBar
+          appBar: AppBar(
+            title: Text('.adaptive'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
+          ),
+          //@+node:swot.20221031134345.4: *7* body
+          body:
+          //@+others
+          //@+node:swot.20221031134422.2: *8* Center
+          Center(
+            child:
+            //@+others
+            //@+node:swot.20221031134446.2: *9* Column
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                //@+others
+                //@+node:swot.20221031134619.1: *10* Slider.adaptive
+                Slider.adaptive(
+                  onChanged: (double newValue) {},
+                  value: 1,
+                ),
+                //@+node:swot.20221031140355.1: *10* SwitchListTile.adaptive
+                SwitchListTile.adaptive(
+                  title: const Text('Switch List tile'),
+                  onChanged: (bool newValue) {},
+                  value: true,
+                ),
+                //@+node:swot.20221031140635.1: *10* Switch.adaptive
+                Switch.adaptive(
+                  onChanged: (bool newValue) {},
+                  value: true,
+                ),
+                //@+node:swot.20221031140816.1: *10* Icons.adaptive
+                Icon(
+                  Icons.adaptive.share,
+                ),
+                //@+node:swot.20221031140929.1: *10* CircularProgressIndicator.adaptive
+                const CircularProgressIndicator.adaptive(),
+                //@-others
+              ],
+            )
+            //@-others
+          )
+          //@-others
+          //@-others
+        )
+        //@-others
+        ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221101080952.2: *4* AnimatedBuilderExample -- step 1
+//@@language dart
+//@@tabwidth -2
+class AnimatedBuilderExample extends StatefulWidget {
+  const AnimatedBuilderExample({super.key});
+
+  @override
+  State<AnimatedBuilderExample> createState() => _AnimatedBuilderExampleState();
+}
+
+class _AnimatedBuilderExampleState extends State<AnimatedBuilderExample>
+    with TickerProviderStateMixin {
+  //@+others
+  //@+node:swot.20221101080952.3: *5* varible             -- step 2
+  late AnimationController _controllerBuilder;
+  //@+node:swot.20221101080952.4: *5* initState()         -- step 3
+  @override
+  void initState() {
+    _controllerBuilder = AnimationController(
+      duration: const Duration(seconds: 10), // 转一圈的时间
+      vsync: this, // use TickerProviderStateMixin
+    )..repeat(); // 10s 后重复
+
+    super.initState();
+  }
+
+  //@+node:swot.20221101080952.5: *5* dispose()           -- step 4
+  @override
+  void dispose() {
+    _controllerBuilder.dispose();
+    super.dispose();
+  }
+
+  //@+node:swot.20221101080952.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221101140943.1: *6* AnimatedBuilder  -- step 5
+    //@@language dart
+    //@@tabwidth -2
+    AnimatedBuilder(
+      animation: _controllerBuilder,
+      child: const FlutterLogo(size: 30),
+      builder: (BuildContext context, Widget? child) {
+        return Transform.rotate(
+          // scale & translate can be used
+          angle: _controllerBuilder.value * 2.0 * math.pi,
+          child: child,
+        );
+      },
+    )
+    //@-others
     ;
   }
   //@-others
 }
 
-//@+node:swot.20221027192851.2: *4* AnimatedIconExample
+//@+node:swot.20221101163948.2: *4* AnimatedContainerExample
+//@@language dart
+//@@tabwidth -2
+class AnimatedContainerExample extends StatefulWidget {
+  const AnimatedContainerExample({super.key});
+
+  @override
+  State<AnimatedContainerExample> createState() =>
+      _AnimatedContainerExampleState();
+}
+
+class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
+  //@+others
+  //@+node:swot.20221101163948.3: *5* varible
+  bool selected = false;
+  //@+node:swot.20221101163948.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221101165100.1: *6* GestureDetector
+    GestureDetector(
+      onTap: () {
+        setState(() { selected = !selected; });
+      },
+      child: Center(
+        child:
+        //@+others
+        //@+node:swot.20221101165100.2: *7* AnimatedContainer
+        AnimatedContainer(
+          width: selected ? 150.0 : 25.0,
+          height: selected ? 25.0 : 40.0,
+          color: selected ? Colors.blueGrey : Colors.grey,
+          alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
+          duration: const Duration(seconds: 2),
+          curve: Curves.fastOutSlowIn,
+          child: const FlutterLogo(size: 20.0),
+        ),
+        //@-others
+      ),
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221031193012.2: *4* AnimatedCrossFadeExample
+//@@language dart
+//@@tabwidth -2
+class AnimatedCrossFadeExample extends StatefulWidget {
+  const AnimatedCrossFadeExample({super.key});
+
+  @override
+  State<AnimatedCrossFadeExample> createState() =>
+      _AnimatedCrossFadeExampleState();
+}
+
+class _AnimatedCrossFadeExampleState extends State<AnimatedCrossFadeExample> {
+  //@+others
+  //@+node:swot.20221031193012.3: *5* varible
+  bool selected = false;
+  //@+node:swot.20221031193012.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221031193341.2: *6* Row
+    Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        //@+others
+        //@+node:swot.20221031193450.1: *7* TextButton
+        Container(
+          height: 30.0,
+          child: TextButton(
+            onPressed: () {
+              setState(() {
+                selected = !selected;
+              });
+            },
+            child: const Text(
+              'AnimatedCrossFade',
+              style: TextStyle(
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ),
+        //@+node:swot.20221017093031.165: *7* AnimatedCrossFade
+        AnimatedCrossFade(
+          firstChild: Image.network(
+            'https://img2.baidu.com/it/u=2642639611,1941240358&fm=253&fmt=auto&app=138&f=JPEG?w=200&h=200',
+            width: 100.0,
+            height: 100.0,
+          ),
+          secondChild: Image.network(
+            'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
+            width: 100.0,
+            height: 100.0,
+          ),
+          crossFadeState:
+              selected ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+          duration: const Duration(seconds: 1),
+        ),
+        //@-others
+      ],
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221101175102.2: *4* AnimatedDefaultTextStyleExample
+//@@language dart
+//@@tabwidth -2
+class AnimatedDefaultTextStyleExample extends StatefulWidget {
+  const AnimatedDefaultTextStyleExample({super.key});
+
+  @override
+  State<AnimatedDefaultTextStyleExample> createState() =>
+      _AnimatedDefaultTextStyleExampleState();
+}
+
+class _AnimatedDefaultTextStyleExampleState
+    extends State<AnimatedDefaultTextStyleExample> {
+  //@+others
+  //@+node:swot.20221101175102.3: *5* varible
+  bool selected = false;
+  double _fontSize = 20;
+  Color _color = Colors.blue;
+  //@+node:swot.20221101175102.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221101175533.1: *6* Row
+    Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        //@+others
+        //@+node:swot.20221101175533.2: *7* TextButton
+        TextButton(
+          onPressed: () {
+            setState(() {
+              _fontSize = selected ? 40 : 20;
+              _color = selected ? Colors.blue : Colors.red;
+              selected = !selected;
+            });
+          },
+          child: const Text('AnimatedDefaultTextStyle'),
+        ),
+        //@+node:swot.20221101175533.3: *7* SizedBox
+        SizedBox(
+          height: 40,
+          child:
+          //@+others
+          //@+node:swot.20221101175533.4: *8* AnimatedDefaultTextStyle
+          AnimatedDefaultTextStyle(
+            duration: const Duration(milliseconds: 300),
+            style: TextStyle(
+              fontSize: _fontSize,
+              color: _color,
+              fontWeight: FontWeight.bold,
+            ),
+            child: const Text('Flutter'),
+          ),
+          //@-others
+        ),
+        //@-others
+      ],
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221027192851.2: *4* AnimatedIconExample -- TickerProviderStateMixin
 //@@language dart
 //@@tabwidth -2
 class AnimatedIconExample extends StatefulWidget {
@@ -985,7 +1066,8 @@ class AnimatedIconExample extends StatefulWidget {
   State<AnimatedIconExample> createState() => _AnimatedIconExampleState();
 }
 
-class _AnimatedIconExampleState extends State<AnimatedIconExample> with TickerProviderStateMixin {
+class _AnimatedIconExampleState extends State<AnimatedIconExample>
+    with TickerProviderStateMixin {
   //@+others
   //@+node:swot.20221027192851.3: *5* varible
   bool _isPlay = false;
@@ -995,53 +1077,172 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample> with TickerPr
   void initState() {
     _controllerIcon = AnimationController(
       duration: Duration(seconds: 1),
-      vsync: this  // use TickerProviderStateMixin
+      vsync: this // use TickerProviderStateMixin
     );
     super.initState();
   }
+
   //@+node:swot.20221027192851.5: *5* dispose()
   @override
   void dispose() {
-     _controllerIcon.dispose();
+    _controllerIcon.dispose();
     super.dispose();
   }
+
   //@+node:swot.20221027192851.6: *5* build()
   @override
   Widget build(BuildContext context) {
     return
     //@+others
-    //@+node:swot.20221027194101.1: *6* GestureDetector       -- show AnimatedIcon
+    //@+node:swot.20221027194101.1: *6* GestureDetector
     GestureDetector(
       onTap: () {
         if (_isPlay == false) {
-          _controllerIcon.forward();  // 下个图标
+          _controllerIcon.forward(); // next icon
           _isPlay = true;
         } else {
-          _controllerIcon.reverse();  // 前个图标
+          _controllerIcon.reverse(); // previous icon
           _isPlay = false;
         }
       },
       child:
+      //@+others
+      //@+node:swot.20221027194101.2: *7* AnimatedIcon
+      //@@language dart
+      //@@tabwidth -2
+      AnimatedIcon(
+        // play is the first icon
+        // pause is the second icon
+        icon: AnimatedIcons.play_pause,
+        progress: _controllerIcon,
+        size: 40,
+      ),
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221101181708.2: *4* AnimatedListExample
+//@@language dart
+//@@tabwidth -2
+class AnimatedListExample extends StatefulWidget {
+  const AnimatedListExample({super.key});
+
+  @override
+  State<AnimatedListExample> createState() => _AnimatedListExampleState();
+}
+
+class _AnimatedListExampleState extends State<AnimatedListExample> {
+  //@+others
+  //@+node:swot.20221101181708.3: *5* varible
+  final _items = [];
+  final GlobalKey<AnimatedListState> _key = GlobalKey();
+
+  void _addItem() {
+    _items.insert(0, "Item ${_items.length + 1}");
+    _key.currentState!.insertItem(
+      0,
+      duration: const Duration(seconds: 1),
+    );
+  }
+
+  void _removeItem(int index) {
+    _key.currentState!.removeItem(
+      index,
+      (_, animation) {
+        return SizeTransition(
+          sizeFactor: animation,
+          child: const Card(
+            margin: EdgeInsets.all(10),
+            color: Colors.red,
+            child: ListTile(
+              title: Text(
+                "Deleted",
+                style: TextStyle(fontSize: 14),
+              ),
+              visualDensity:
+                  VisualDensity(vertical: -3), // adjust listTile height
+              dense: true,
+            ),
+          ),
+        );
+      },
+      duration: const Duration(milliseconds: 600),
+    );
+    _items.removeAt(index);
+  }
+
+  //@+node:swot.20221101181708.4: *5* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  //@+node:swot.20221101181708.5: *5* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  //@+node:swot.20221101181708.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221101182425.2: *6* Column
+    Column(
+      children: [
         //@+others
-        //@+node:swot.20221027194101.2: *7* AnimatedIcon
-        //@+doc
-        //@@language asciidoc
-        // :nofooter:
-        // 1. define AnimationController
-        // 2. AnimationController: need class `with TickerProviderStateMixin`
-        // 3. AnimationController: need dispose
-        //
-        //@@c
-        //@@language dart
-        //@@tabwidth -2
-        AnimatedIcon(
-          // play is the first icon
-          // pause is the second icon
-          icon: AnimatedIcons.play_pause,
-          progress: _controllerIcon,
-          size: 40,
+        //@+node:swot.20221101182506.1: *7* IconButton
+        IconButton(
+          onPressed: _addItem,
+          icon: const Icon(Icons.add),
+        ),
+        //@+node:swot.20221101182536.1: *7* SizedBox
+        SizedBox(
+          height: 150,
+          child:
+          //@+others
+          //@+node:swot.20221101182340.2: *8* AnimatedList
+          AnimatedList(
+            key: _key,
+            initialItemCount: 0,
+            padding: const EdgeInsets.all(10),
+            itemBuilder: (context, index, animation) {
+              //@+others
+              //@+node:swot.20221101182340.3: *9* SizeTransition
+              return SizeTransition(
+                key: UniqueKey(),
+                sizeFactor: animation,
+                child: Card(
+                  margin: const EdgeInsets.all(3),
+                  color: Colors.orangeAccent,
+                  child: ListTile(
+                    title: Text(
+                      _items[index],
+                      style: const TextStyle(fontSize: 14),
+                    ),
+                    trailing: IconButton(
+                      icon: const Icon(Icons.delete),
+                      onPressed: () {
+                        _removeItem(index);
+                      },
+                    ),
+                    visualDensity: const VisualDensity(vertical: -3), // adjust listTile height
+                    dense: true, // 高度会更加紧密，就是高度更小的意思
+                  ),
+                ),
+              );
+              //@-others
+            },
+          ),
+          //@-others
         ),
         //@-others
+      ],
     )
     //@-others
     ;
@@ -1056,10 +1257,12 @@ class AnimatedModalBarrierExample extends StatefulWidget {
   const AnimatedModalBarrierExample({super.key});
 
   @override
-  State<AnimatedModalBarrierExample> createState() => _AnimatedModalBarrierExampleState();
+  State<AnimatedModalBarrierExample> createState() =>
+      _AnimatedModalBarrierExampleState();
 }
 
-class _AnimatedModalBarrierExampleState extends State<AnimatedModalBarrierExample>
+class _AnimatedModalBarrierExampleState
+    extends State<AnimatedModalBarrierExample>
     with SingleTickerProviderStateMixin {
   //@+others
   //@+node:swot.20221017093031.181: *5* varible
@@ -1075,58 +1278,66 @@ class _AnimatedModalBarrierExampleState extends State<AnimatedModalBarrierExampl
       begin: Colors.orangeAccent.withOpacity(0.5),
       end: Colors.blueGrey.withOpacity(0.5),
     );
+
     _animationController = AnimationController(
-        vsync: this,
-        duration: const Duration(seconds: 3),
+      vsync: this,
+      duration: const Duration(seconds: 3),
     );
+
     _colorAnimation = colorTween.animate(_animationController);
     _animatedModalBarrier = AnimatedModalBarrier(
       color: _colorAnimation,
-      dismissible: true,
+      dismissible: false,
     );
+
     super.initState();
   }
+
   //@+node:swot.20221017093031.183: *5* dispose()
   @override
   void dispose() {
+    _animationController.dispose();
     super.dispose();
   }
+
   //@+node:swot.20221017093031.184: *5* build()
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 50.0,
       width: 150.0,
-      child: Stack(
+      child:
+      //@+others
+      //@+node:swot.20221101193037.1: *6* Stack
+      Stack(
         alignment: AlignmentDirectional.center,
         children: [
           //@+others
-          //@+node:swot.20221017093031.185: *6* ElevatedButton
+          //@+node:swot.20221017093031.185: *7* ElevatedButton
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.orangeAccent,
             ),
-            onPressed: (){
+            onPressed: () {
               setState(() {
                 _isPressed = true;
               });
               _animationController.reset();
               _animationController.forward();
-              Future.delayed(
-                const Duration(seconds: 3), (){
-                  setState(() {
-                    _isPressed = false;
-                  });
-                }
-              );
+              Future.delayed(const Duration(seconds: 3), () {
+                setState(() {
+                  _isPressed = false;
+                });
+              });
             },
             child: const Text('Press'),
           ),
-          //@+node:swot.20221017093031.186: *6* _animatedModalBarrier
+          //@+node:swot.20221017093031.186: *7* _animatedModalBarrier
           if (_isPressed) _animatedModalBarrier,
           //@-others
         ],
       ),
+      //@-others
     );
   }
   //@-others
@@ -1142,15 +1353,10 @@ class AnimatedOpacityExample extends StatefulWidget {
   State<AnimatedOpacityExample> createState() => _AnimatedOpacityExampleState();
 }
 
-class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample>{
+class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample> {
   //@+others
   //@+node:swot.20221017093031.189: *5* varible
   double opacityLevel = 1.0;
-  //@+node:swot.20221017093031.190: *5* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
   //@+node:swot.20221017093031.191: *5* build()
   @override
   Widget build(BuildContext context) {
@@ -1168,8 +1374,8 @@ class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample>{
 
         //@+node:swot.20221017093031.193: *6* ElevatedButton
         ElevatedButton(
-          child: const Text('Fade Logo'),
-          onPressed: (){
+          child: const Text('AnimatedOpacity Fade Logo'),
+          onPressed: () {
             setState(
               () => opacityLevel = opacityLevel == 0 ? 1.0 : 0.0,
             );
@@ -1192,7 +1398,7 @@ class AnimatedPaddingExample extends StatefulWidget {
   State<AnimatedPaddingExample> createState() => _AnimatedPaddingExampleState();
 }
 
-class _AnimatedPaddingExampleState extends State<AnimatedPaddingExample>{
+class _AnimatedPaddingExampleState extends State<AnimatedPaddingExample> {
   //@+others
   //@+node:swot.20221017093031.198: *5* varible
   double padValue = 0.0;
@@ -1201,55 +1407,56 @@ class _AnimatedPaddingExampleState extends State<AnimatedPaddingExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221017093031.200: *5* build()
   @override
   Widget build(BuildContext context) {
     return
-      //@+others
-      //@+node:swot.20221017093031.201: *6* Column
-      Column(
-        children: [
-          //@+others
-          //@+node:swot.20221017093031.202: *7* Row
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              //@+others
-              //@+node:swot.20221017093031.203: *8* ElevatedButton
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orangeAccent,
-                ),
-                child: const Text('Change padding'),
-                onPressed: () {
-                  setState((){
-                    padValue = padValue == 0.0 ? 100.0 : 0.0;
-                  });
-                },
+    //@+others
+    //@+node:swot.20221017093031.201: *6* Column
+    Column(
+      children: [
+        //@+others
+        //@+node:swot.20221017093031.202: *7* Row
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            //@+others
+            //@+node:swot.20221017093031.203: *8* ElevatedButton
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orangeAccent,
               ),
-
-              //@+node:swot.20221017093031.204: *8* Text
-              Text('Padding = $padValue'),
-              //@-others
-            ],
-          ),
-          //@+node:swot.20221017093031.205: *7* AnimatedPadding
-          AnimatedPadding(
-            // padValue will be changed
-            padding: EdgeInsets.all(padValue),
-            duration: const Duration(seconds: 2),
-            curve: Curves.easeInOut,
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: 30.0,
-              color: Colors.orangeAccent,
+              child: const Text('Change padding'),
+              onPressed: () {
+                setState(() {
+                  padValue = padValue == 0.0 ? 100.0 : 0.0;
+                });
+              },
             ),
+
+            //@+node:swot.20221017093031.204: *8* Text
+            Text('Padding = $padValue'),
+            //@-others
+          ],
+        ),
+        //@+node:swot.20221017093031.205: *7* AnimatedPadding
+        AnimatedPadding(
+          // padValue will be changed
+          padding: EdgeInsets.all(padValue),
+          duration: const Duration(seconds: 2),
+          curve: Curves.easeInOut,
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            height: 30.0,
+            color: Colors.orangeAccent,
           ),
-          //@-others
-        ],
-      );
-      //@-others
+        ),
+        //@-others
+      ],
+    );
+    //@-others
   }
   //@-others
 }
@@ -1261,10 +1468,12 @@ class AnimatedPhysicalModelExample extends StatefulWidget {
   const AnimatedPhysicalModelExample({super.key});
 
   @override
-  State<AnimatedPhysicalModelExample> createState() => _AnimatedPhysicalModelExampleState();
+  State<AnimatedPhysicalModelExample> createState() =>
+      _AnimatedPhysicalModelExampleState();
 }
 
-class _AnimatedPhysicalModelExampleState extends State<AnimatedPhysicalModelExample>{
+class _AnimatedPhysicalModelExampleState
+    extends State<AnimatedPhysicalModelExample> {
   //@+others
   //@+node:swot.20221017093031.209: *5* varible
   bool isFlat = true;
@@ -1273,11 +1482,13 @@ class _AnimatedPhysicalModelExampleState extends State<AnimatedPhysicalModelExam
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221017093031.211: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221017093031.212: *5* build()
   @override
   Widget build(BuildContext context) {
@@ -1289,12 +1500,12 @@ class _AnimatedPhysicalModelExampleState extends State<AnimatedPhysicalModelExam
         //@+node:swot.20221017093031.213: *6* ElevatedButton
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            // backgroundColor: Colors.orangeAccent,
-          ),
+              // backgroundColor: Colors.orangeAccent,
+              ),
           child: const Text('Click'),
           onPressed: () {
             setState(() {
-              isFlat = ! isFlat;
+              isFlat = !isFlat;
             });
           },
         ),
@@ -1328,10 +1539,11 @@ class AnimatedPositionedExample extends StatefulWidget {
   const AnimatedPositionedExample({super.key});
 
   @override
-  State<AnimatedPositionedExample> createState() => _AnimatedPositionedExampleState();
+  State<AnimatedPositionedExample> createState() =>
+      _AnimatedPositionedExampleState();
 }
 
-class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample>{
+class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample> {
   //@+others
   //@+node:swot.20221017093031.218: *5* varible
   bool selected = false;
@@ -1340,54 +1552,54 @@ class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221017093031.220: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221017093031.221: *5* build()
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221017093031.222: *6* SizedBox
+    SizedBox(
+      width: 200,
+      height: 100,
+      child:
       //@+others
-      //@+node:swot.20221017093031.222: *6* SizedBox
-      SizedBox(
-        width: 200,
-        height: 100,
-        child:
-          //@+others
-          //@+node:swot.20221017093031.223: *7* Stack
-          Stack(
-            children: [
-              //@+others
-              //@+node:swot.20221017093031.224: *8* AnimatedPositioned
-              AnimatedPositioned(
-                width: selected ? 200.0 : 150.0,
-                height: selected ? 60.0 : 20.0,
-                top: selected ? 35.0: 5.0,
-                duration: const Duration(seconds: 2),
-                curve: Curves.fastOutSlowIn,
-                child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      selected = !selected;
-                    });
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.orangeAccent,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: const Text('click change position'),
-                  ),
-                ),
+      //@+node:swot.20221017093031.223: *7* Stack
+      Stack(children: [
+        //@+others
+        //@+node:swot.20221017093031.224: *8* AnimatedPositioned
+        AnimatedPositioned(
+          width: selected ? 200.0 : 150.0,
+          height: selected ? 60.0 : 20.0,
+          top: selected ? 35.0 : 5.0,
+          duration: const Duration(seconds: 2),
+          curve: Curves.fastOutSlowIn,
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                selected = !selected;
+              });
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.orangeAccent,
+                borderRadius: BorderRadius.circular(25),
               ),
-              //@-others
-            ]
+              child: const Text('AnimatedPositioned click change position'),
+            ),
           ),
-          //@-others
-      );
+        ),
+        //@-others
+      ]),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
@@ -1399,10 +1611,11 @@ class AnimatedRotationExample extends StatefulWidget {
   const AnimatedRotationExample({super.key});
 
   @override
-  State<AnimatedRotationExample> createState() => _AnimatedRotationExampleState();
+  State<AnimatedRotationExample> createState() =>
+      _AnimatedRotationExampleState();
 }
 
-class _AnimatedRotationExampleState extends State<AnimatedRotationExample>{
+class _AnimatedRotationExampleState extends State<AnimatedRotationExample> {
   //@+others
   //@+node:swot.20221017093031.228: *5* varible
   double turns = 0.0;
@@ -1411,11 +1624,13 @@ class _AnimatedRotationExampleState extends State<AnimatedRotationExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221017093031.230: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221017093031.231: *5* build()
   @override
   Widget build(BuildContext context) {
@@ -1427,24 +1642,28 @@ class _AnimatedRotationExampleState extends State<AnimatedRotationExample>{
         //@+node:swot.20221017093031.232: *6* ElevatedButton
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            // backgroundColor: Colors.orangeAccent,
-          ),
-          child: const Text('Rotate Logo'),
+              // backgroundColor: Colors.orangeAccent,
+              ),
           onPressed: () {
             setState(() {
               turns += 1 / 4;
             });
           },
+          child: const Text('AnimatedRotation Rotate Logo'),
         ),
 
         //@+node:swot.20221017093031.233: *6* Padding
         Padding(
           padding: const EdgeInsets.all(5),
-          child: AnimatedRotation(
+          child:
+          //@+others
+          //@+node:swot.20221101201546.1: *7* AnimatedRotation
+          AnimatedRotation(
             turns: turns,
             duration: const Duration(seconds: 1),
             child: const FlutterLogo(size: 40),
           ),
+          //@-others
         ),
         //@-others
       ],
@@ -1463,7 +1682,7 @@ class AnimatedSizeExample extends StatefulWidget {
   State<AnimatedSizeExample> createState() => _AnimatedSizeExampleState();
 }
 
-class _AnimatedSizeExampleState extends State<AnimatedSizeExample>{
+class _AnimatedSizeExampleState extends State<AnimatedSizeExample> {
   //@+others
   //@+node:swot.20221017093031.237: *5* varible
   double _size = 30;
@@ -1472,11 +1691,13 @@ class _AnimatedSizeExampleState extends State<AnimatedSizeExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221017093031.239: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221017093031.240: *5* build()
   //@@language dart
   //@@tabwidth -2
@@ -1491,7 +1712,7 @@ class _AnimatedSizeExampleState extends State<AnimatedSizeExample>{
         Text("Click logo change size"),
         //@+node:swot.20221017093031.242: *6* GestureDetector AnimatedSize FlutterLogo
         GestureDetector(
-          onTap: (){
+          onTap: () {
             setState(() {
               _size = _size == 30 ? 60 : 30;
             });
@@ -1519,10 +1740,11 @@ class AnimatedSwitcherExample extends StatefulWidget {
   const AnimatedSwitcherExample({super.key});
 
   @override
-  State<AnimatedSwitcherExample> createState() => _AnimatedSwitcherExampleState();
+  State<AnimatedSwitcherExample> createState() =>
+      _AnimatedSwitcherExampleState();
 }
 
-class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
+class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
   //@+others
   //@+node:swot.20221017093031.245: *5* varible
   int _count = 0;
@@ -1531,11 +1753,13 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221017093031.247: *5* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221017093031.248: *5* build()
   //@@language dart
   //@@tabwidth -2
@@ -1549,8 +1773,8 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
         //@+node:swot.20221017093031.249: *6* ElevatedButton
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            // backgroundColor: Colors.orangeAccent,
-          ),
+              // backgroundColor: Colors.orangeAccent,
+              ),
           child: const Text('Add'),
           onPressed: () {
             setState(() {
@@ -1562,18 +1786,17 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
         //@+node:swot.20221017093031.250: *6* AnimatedSwitcher
         AnimatedSwitcher(
           duration: const Duration(milliseconds: 500),
+
+          // Custom default animation
+          // transitionBuilder: (Widget child, Animation<double> animation) {
+          // return ScaleTransition(scale: animation, child: child);
+          // },
+
           child: Text(
             '$_count',
             style: const TextStyle(fontSize: 30),
-            key: ValueKey(_count),  // 重要，不加这行无法实现动画
+            key: ValueKey(_count), // IMPORTANT no key no animation
           ),
-          // 若不想要默认的动画效果，可能这样指定
-          transitionBuilder: (Widget child, Animation<double> animation) {
-            return ScaleTransition(
-              scale: animation,
-              child: child,
-            );
-          },
         ),
         //@-others
       ],
@@ -1586,7 +1809,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample>{
 //@@language dart
 //@@tabwidth -2
 class AutoCompleteExample extends StatelessWidget {
-  const AutoCompleteExample({ Key? key }) : super(key: key);
+  const AutoCompleteExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221017093031.257: *5* varible
   static const List<String> listItems = <String>[
@@ -1598,7 +1821,8 @@ class AutoCompleteExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Autocomplete<String>(
-      optionsBuilder: (TextEditingValue textEditingValue) {  // user input value
+      optionsBuilder: (TextEditingValue textEditingValue) {
+        // user input value
         if (textEditingValue.text == '') {
           return const Iterable<String>.empty();
         }
@@ -1613,6 +1837,7 @@ class AutoCompleteExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221021133039.1: *3* B Example
 //@+node:swot.20221021171949.1: *4* B  -- Scaffold
 class B extends StatelessWidget {
@@ -1622,40 +1847,41 @@ class B extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221021173128.1: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo B'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221021173128.1: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo B'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoB(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoB(),
       ),
     );
   }
 }
+
 //@+node:swot.20221021172558.1: *4* DemoB
 //@@language dart
 //@@tabwidth -2
@@ -1672,63 +1898,53 @@ class _DemoBState extends State<DemoB> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221021172558.15: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221021172558.15: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221021172558.16: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221021172558.16: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221021173506.1: *8* show BackdropFilterExample
-            BackdropFilterExample(),
-            //@+node:swot.20221021172558.23: *8* Divider
-            Divider(),
-            //@+node:swot.20221021181118.1: *8* show BannerExample
-            BannerExample(),
-            //@+node:swot.20221021182257.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221021181700.1: *8* show BaselineExample
-            BaselineExample(),
-            //@+node:swot.20221022085516.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221022085519.1: *8* show BlockSemanticsExample
-            BlockSemanticsExample(),
-            //@+node:swot.20221022101126.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221022101129.1: *8* show BottomNavigationBarExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221021173506.1: *8* show BackdropFilterExample
+        BackdropFilterExample(),
+        Divider(),
+        //@+node:swot.20221021181118.1: *8* show BannerExample
+        BannerExample(),
+        Divider(),
+        //@+node:swot.20221021181700.1: *8* show BaselineExample
+        BaselineExample(),
+        Divider(),
+        //@+node:swot.20221022085519.1: *8* show BlockSemanticsExample
+        BlockSemanticsExample(),
+        Divider(),
+        //@+node:swot.20221022101129.1: *8* show BottomNavigationBarExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              child: const Text('show BottomNavigationBarExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => BottomNavigationBarExample(),
-                  ),
-                );
-              },
-            ),
-
-
-            //@+node:swot.20221022105626.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221022094818.1: *8* show BottomSheetExample
-            BottomSheetExample(),
-            //@+node:swot.20221022111102.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221022111104.1: *8* show BuilderExample
-            BuilderExample(),
-            //@-others
-          ]
+          child: const Text('show BottomNavigationBarExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => BottomNavigationBarExample(),
+              ),
+            );
+          },
         ),
+        Divider(),
+        //@+node:swot.20221022094818.1: *8* show BottomSheetExample
+        BottomSheetExample(),
+        Divider(),
+        //@+node:swot.20221022111104.1: *8* show BuilderExample
+        BuilderExample(),
+        Divider(),
         //@-others
-      )
+      ]),
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -1739,7 +1955,7 @@ class _DemoBState extends State<DemoB> {
 //@@language dart
 //@@tabwidth -2
 class BackdropFilterExample extends StatelessWidget {
-  const BackdropFilterExample({ Key? key }) : super(key: key);
+  const BackdropFilterExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221019111317.3: *6* build()
   @override
@@ -1773,102 +1989,104 @@ class BackdropFilterExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221021175217.2: *5* BannerExample
 //@@language dart
 //@@tabwidth -2
 class BannerExample extends StatelessWidget {
-  const BannerExample({ Key? key }) : super(key: key);
+  const BannerExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221021175217.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221021175330.1: *7* Center
+    Center(
+      child:
       //@+others
-      //@+node:swot.20221021175330.1: *7* Center
-      Center(
+      //@+node:swot.20221021175401.1: *8* Container
+      Container(
+        margin: const EdgeInsets.all(10.0),
         child:
+        //@+others
+        //@+node:swot.20221021180745.1: *9* ClipRect
+        ClipRect(
+          child:
           //@+others
-          //@+node:swot.20221021175401.1: *8* Container
-          Container(
-            margin: const EdgeInsets.all(10.0),
+          //@+node:swot.20221021180828.1: *10* Banner
+          Banner(
+            message: "25% off",
+            location: BannerLocation.topEnd,
+            color: Colors.red,
             child:
+            //@+others
+            //@+node:swot.20221021175506.1: *11* Container
+            Container(
+              color: Colors.blueGrey,
+              child:
               //@+others
-              //@+node:swot.20221021180745.1: *9* ClipRect
-              ClipRect(
+              //@+node:swot.20221021175604.1: *12* Padding
+              Padding(
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
                 child:
-                  //@+others
-                  //@+node:swot.20221021180828.1: *10* Banner
-                  Banner(
-                    message: "25% off",
-                    location: BannerLocation.topEnd,
-                    color: Colors.red,
-                    child:
-                      //@+others
-                      //@+node:swot.20221021175506.1: *11* Container
-                      Container(
-                        color: Colors.blueGrey,
-                        child:
-                          //@+others
-                          //@+node:swot.20221021175604.1: *12* Padding
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
-                            child:
-                              //@+others
-                              //@+node:swot.20221021175702.1: *13* Column
-                              Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  //@+others
-                                  //@+node:swot.20221021175915.1: *14* Image
-                                  Image.network(
-                                    'https://img1.baidu.com/it/u=1855083458,281793390&fm=253&fmt=auto&app=138&f=JPEG?w=989&h=500',
-                                  ),
-                                  //@+node:swot.20221021180035.1: *14* SizedBox
-                                  const SizedBox(height: 10),
-                                  //@+node:swot.20221021180106.1: *14* Row
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      const Text(
-                                        'Flutter Course',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.orangeAccent,
-                                        ),
-                                        child: const Text('Get now'),
-                                        onPressed: () {},
-                                      ),
-                                    ],
-                                  ),
-                                  //@-others
-                                ],
-                              ),
-                              //@-others
+                //@+others
+                //@+node:swot.20221021175702.1: *13* Column
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    //@+others
+                    //@+node:swot.20221021175915.1: *14* Image
+                    Image.network(
+                      'https://img1.baidu.com/it/u=1855083458,281793390&fm=253&fmt=auto&app=138&f=JPEG?w=989&h=500',
+                    ),
+                    //@+node:swot.20221021180035.1: *14* SizedBox
+                    const SizedBox(height: 10),
+                    //@+node:swot.20221021180106.1: *14* Row
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Flutter Course',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
                           ),
-                          //@-others
-                      ),
-                      //@-others
-                  ),
-                  //@-others
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.orangeAccent,
+                          ),
+                          child: const Text('Get now'),
+                          onPressed: () {},
+                        ),
+                      ],
+                    ),
+                    //@-others
+                  ],
+                ),
+                //@-others
               ),
               //@-others
+            ),
+            //@-others
           ),
           //@-others
-      );
+        ),
+        //@-others
+      ),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
+
 //@+node:swot.20221021181642.2: *5* BaselineExample
 //@@language dart
 //@@tabwidth -2
 class BaselineExample extends StatelessWidget {
-  const BaselineExample({ Key? key }) : super(key: key);
+  const BaselineExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221021181642.3: *6* build()
   @override
@@ -1882,13 +2100,16 @@ class BaselineExample extends StatelessWidget {
           baseline: 0,
           // baseline: 30,
           baselineType: TextBaseline.alphabetic,
-          child: FlutterLogo(size: 30,),
+          child: FlutterLogo(
+            size: 30,
+          ),
         ),
       ),
     );
   }
   //@-others
 }
+
 //@+node:swot.20221022080218.2: *5* BlockSemanticsExample
 //@@language dart
 //@@tabwidth -2
@@ -1899,7 +2120,7 @@ class BlockSemanticsExample extends StatefulWidget {
   State<BlockSemanticsExample> createState() => _BlockSemanticsExampleState();
 }
 
-class _BlockSemanticsExampleState extends State<BlockSemanticsExample>{
+class _BlockSemanticsExampleState extends State<BlockSemanticsExample> {
   //@+others
   //@+node:swot.20221022083723.1: *6* varible
   bool isShow = false;
@@ -1908,47 +2129,48 @@ class _BlockSemanticsExampleState extends State<BlockSemanticsExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221022080218.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221022080218.5: *6* build()
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221022080422.1: *7* SizedBox
+    SizedBox(
+      width: double.infinity,
+      child:
       //@+others
-      //@+node:swot.20221022080422.1: *7* SizedBox
+      //@+node:swot.20221022083203.1: *8* SizedBox
       SizedBox(
-        width: double.infinity,
+        width: 500,
+        height: 135,
         child:
+        //@+others
+        //@+node:swot.20221022083954.1: *9* Column
+        Column(children: [
           //@+others
-          //@+node:swot.20221022083203.1: *8* SizedBox
-          SizedBox(
-            width: 500,
-            height: 135,
-            child:
+          //@+node:swot.20221022084045.1: *10* OutlinedButton
+          OutlinedButton(
+            onPressed: () {
+              setState(() {
+                isShow = true;
+              });
+            },
+            child: const Text('Click'),
+          ),
+          //@+node:swot.20221022084513.1: *10* if (isShow)
+          if (isShow)
             //@+others
-            //@+node:swot.20221022083954.1: *9* Column
-            Column(
-              children: [
-                //@+others
-                //@+node:swot.20221022084045.1: *10* OutlinedButton
-                OutlinedButton(
-                  onPressed: () {
-                    setState(() {
-                      isShow = true;
-                    });
-                  },
-                  child: const Text('Click'),
-                ),
-                //@+node:swot.20221022084513.1: *10* if (isShow)
-                if (isShow)
-                //@+others
-                //@+node:swot.20221022091825.1: *11* BlockSemantics
-                BlockSemantics(
-                  blocking: isShow,  // hidden OutlinedButton?
-                  child:
+            //@+node:swot.20221022091825.1: *11* BlockSemantics
+            BlockSemantics(
+              blocking: isShow, // hidden OutlinedButton?
+              child:
                   //@+others
                   //@+node:swot.20221022090937.1: *12* Card
                   Card(
@@ -1970,16 +2192,15 @@ class _BlockSemanticsExampleState extends State<BlockSemanticsExample>{
                     ),
                   ),
                   //@-others
-                ),
-                //@-others
-                //@-others
-              ]
             ),
             //@-others
-          ),
           //@-others
-      );
+        ]),
+        //@-others
+      ),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
@@ -1991,10 +2212,12 @@ class BottomNavigationBarExample extends StatefulWidget {
   const BottomNavigationBarExample({super.key});
 
   @override
-  State<BottomNavigationBarExample> createState() => _BottomNavigationBarExampleState();
+  State<BottomNavigationBarExample> createState() =>
+      _BottomNavigationBarExampleState();
 }
 
-class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>{
+class _BottomNavigationBarExampleState
+    extends State<BottomNavigationBarExample> {
   //@+others
   //@+node:swot.20221022094133.1: *6* varible
   int _currentIndex = 0;
@@ -2005,16 +2228,6 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
     Icon(Icons.person),
   ];
 
-  //@+node:swot.20221022094100.3: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221022094100.4: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
   //@+node:swot.20221022094100.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -2024,7 +2237,7 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
       //@+others
       //@+node:swot.20221022101748.1: *8* appBar
       appBar: AppBar(
-        title: Text('NewPage'),
+        title: Text('BottomNavigationBar'),
         // leading: Icon(Icons.menu),
         actions: [
           Icon(Icons.settings),
@@ -2038,30 +2251,30 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarExample>
       ),
       //@+node:swot.20221022095720.5: *8* bottomNavigationBar
       bottomNavigationBar: BottomNavigationBar(
-        fixedColor: Colors.white,
-        backgroundColor: Colors.blue,
-        items: const [
-          BottomNavigationBarItem(
-            label: 'Home',
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: 'Menu',
-            icon: Icon(Icons.menu),
-          ),
-          BottomNavigationBarItem(
-            label: 'Profile',
-            icon: Icon(Icons.person),
-          ),
-        ],
-        currentIndex: _currentIndex,
-        type: BottomNavigationBarType.fixed,
-        // type: BottomNavigationBarType.shifting,
-        onTap: (int index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        }
+          currentIndex: _currentIndex,
+          fixedColor: Colors.white,
+          backgroundColor: Colors.blue,
+          items: const [
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
+              label: 'Menu',
+              icon: Icon(Icons.menu),
+            ),
+            BottomNavigationBarItem(
+              label: 'Profile',
+              icon: Icon(Icons.person),
+            ),
+          ],
+          type: BottomNavigationBarType.fixed,
+          // type: BottomNavigationBarType.shifting,
+          onTap: (int index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
       ),
       //@-others
     );
@@ -2081,18 +2294,8 @@ class BottomSheetExample extends StatefulWidget {
   State<BottomSheetExample> createState() => _BottomSheetExampleState();
 }
 
-class _BottomSheetExampleState extends State<BottomSheetExample>{
+class _BottomSheetExampleState extends State<BottomSheetExample> {
   //@+others
-  //@+node:swot.20221022104843.3: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221022104843.4: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
   //@+node:swot.20221022104843.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -2100,22 +2303,51 @@ class _BottomSheetExampleState extends State<BottomSheetExample>{
       child: ElevatedButton(
         child: const Text('Modal Bottom Sheet'),
         onPressed: () {
+          //@+others
+          //@+node:swot.20221110210618.1: *7* showModalBottomSheet !!!
           showModalBottomSheet(
             context: context,
+            // isScrollControlled: true,   // 可以滚动
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(20),
+              ),
+            ),
             builder: (BuildContext context) {
-              return SizedBox(
-                height: 200,
-                child: Center(
-                  child: ElevatedButton(
-                    child: const Text('Close'),
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                  ),
+              return Container(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  // mainAxisSize: MainAxisSize.min,  // 收缩到最小
+                  children: [
+                    FlutterLogo(size: 120),
+                    FlutterLogo(size: 120),
+                    FlutterLogo(size: 120),
+                    FlutterLogo(size: 120),
+                    Center(
+                      child: ElevatedButton(
+                        child: const Text('Close'),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ),
+                  ],
                 ),
               );
+              // return SizedBox(
+                // height: 200,
+                // child: Center(
+                  // child: ElevatedButton(
+                    // child: const Text('Close'),
+                    // onPressed: () {
+                      // Navigator.pop(context);
+                    // },
+                  // ),
+                // ),
+              // );
             },
           );
+          //@-others
         },
       ),
     );
@@ -2127,26 +2359,26 @@ class _BottomSheetExampleState extends State<BottomSheetExample>{
 //@@language dart
 //@@tabwidth -2
 class BuilderExample extends StatelessWidget {
-  const BuilderExample({ Key? key }) : super(key: key);
+  const BuilderExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022110627.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return myBuilderWidget();
   }
+
   //@+node:swot.20221022110900.1: *6* myBuilderWidget()
-  // 不加 Builder,则无法找到上面 build's context, 
-  myBuilderWidget() => Builder(
-    builder: (context) {
-      return Text(
-        'Text with Theme',
-        // context 需要使用上面的 Builder 来获取
-        style: Theme.of(context).textTheme.displayLarge,
-      );
-    }
-  );
+  // 不加 Builder,则无法找到上面 build's context,
+  myBuilderWidget() => Builder(builder: (context) {
+    return Text(
+      'Text with Theme',
+      // context 需要使用上面的 Builder 来获取
+      style: Theme.of(context).textTheme.displayLarge,
+    );
+  });
   //@-others
 }
+
 //@+node:swot.20221022121254.1: *3* C Example
 //@+node:swot.20221022121336.1: *4* C  -- Scaffold
 class C extends StatelessWidget {
@@ -2156,40 +2388,41 @@ class C extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221022121336.2: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo C'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221022121336.2: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo C'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoC(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoC(),
       ),
     );
   }
 }
+
 //@+node:swot.20221022121559.1: *4* DemoC
 //@@language dart
 //@@tabwidth -2
@@ -2206,89 +2439,86 @@ class _DemoCState extends State<DemoC> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221022121559.3: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221022121559.3: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221022121559.4: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221022121559.4: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221022121559.5: *8* show CardExample
-            CardExample(),
-            Divider(),
-            //@+node:swot.20221022123052.1: *8* show CenterExample
-            CenterExample(),
-            Divider(),
-            //@+node:swot.20221022141621.1: *8* show CheckboxExample
-            CheckboxExample(),
-            Divider(),
-            //@+node:swot.20221022142602.1: *8* show CheckboxListTileExample
-            CheckboxListTileExample(),
-            Divider(),
-            //@+node:swot.20221022143204.1: *8* show ChipExample
-            ChipExample(),
-            Divider(),
-            //@+node:swot.20221022144701.1: *8* show ChoiceChipExample
-            ChoiceChipExample(),
-            Divider(),
-            //@+node:swot.20221022145230.1: *8* show CircleAvatarExample
-            CircleAvatarExample(),
-            Divider(),
-            //@+node:swot.20221022153425.1: *8* show CircularProgressIndicatorExample
-            CircularProgressIndicatorExample(),
-            Divider(),
-            //@+node:swot.20221022154220.1: *8* show ClipOvalExample
-            ClipOvalExample(),
-            Divider(),
-            //@+node:swot.20221022162124.1: *8* show ClipPathExample
-            ClipPathExample(),
-            Divider(),
-            //@+node:swot.20221022164554.1: *8* show ClipRectExample
-            ClipRectExample(),
-            Divider(),
-            //@+node:swot.20221022165721.1: *8* show ClipRRectExample
-            ClipRRectExample(),
-            Divider(),
-            //@+node:swot.20221022170737.1: *8* show CloseButtonExample
-            CloseButtonExample(),
-            Divider(),
-            //@+node:swot.20221022171708.1: *8* show ColoredBoxExample
-            ColoredBoxExample(),
-            Divider(),
-            //@+node:swot.20221022173017.1: *8* show ColorFilteredExample
-            ColorFilteredExample(),
-            Divider(),
-            //@+node:swot.20221022202111.1: *8* show ConstrainedBoxExample
-            ConstrainedBoxExample(),
-            Divider(),
-            //@+node:swot.20221022203303.1: *8* show ContainerExample
-            ContainerExample(),
-            Divider(),
-            //@+node:swot.20221022203824.1: *8* show ColumnExample
-            ColumnExample(),
-            Divider(),
-            //@+node:swot.20221022210532.1: *8* show CupertinoActionSheetExample
-            CupertinoActionSheetExample(),
-            Divider(),
-            //@+node:swot.20221022214055.1: *8* show CupertinoAppExample
-            CupertinoAppExample(),
-            Divider(),
-            //@+node:swot.20221023164513.1: *8* show CupertinoContextMenuExample
-            CupertinoContextMenuExample(),
-            Divider(),
-            //@+node:swot.20221031083344.1: *8* show CupertinoSlidingSegmentedControlExample
-            CupertinoSlidingSegmentedControlExample(),
-            Divider(),
-            //@-others
-          ]
-        ),
-
+        //@+node:swot.20221022121559.5: *8* show CardExample
+        CardExample(),
+        Divider(),
+        //@+node:swot.20221022123052.1: *8* show CenterExample
+        CenterExample(),
+        Divider(),
+        //@+node:swot.20221022141621.1: *8* show CheckboxExample
+        CheckboxExample(),
+        Divider(),
+        //@+node:swot.20221022142602.1: *8* show CheckboxListTileExample
+        CheckboxListTileExample(),
+        Divider(),
+        //@+node:swot.20221022143204.1: *8* show ChipExample
+        ChipExample(),
+        Divider(),
+        //@+node:swot.20221022144701.1: *8* show ChoiceChipExample
+        ChoiceChipExample(),
+        Divider(),
+        //@+node:swot.20221022145230.1: *8* show CircleAvatarExample
+        CircleAvatarExample(),
+        Divider(),
+        //@+node:swot.20221022153425.1: *8* show CircularProgressIndicatorExample
+        CircularProgressIndicatorExample(),
+        Divider(),
+        //@+node:swot.20221022154220.1: *8* show ClipOvalExample
+        ClipOvalExample(),
+        Divider(),
+        //@+node:swot.20221022162124.1: *8* show ClipPathExample
+        ClipPathExample(),
+        Divider(),
+        //@+node:swot.20221022164554.1: *8* show ClipRectExample
+        ClipRectExample(),
+        Divider(),
+        //@+node:swot.20221022165721.1: *8* show ClipRRectExample
+        ClipRRectExample(),
+        Divider(),
+        //@+node:swot.20221022170737.1: *8* show CloseButtonExample
+        CloseButtonExample(),
+        Divider(),
+        //@+node:swot.20221022171708.1: *8* show ColoredBoxExample
+        ColoredBoxExample(),
+        Divider(),
+        //@+node:swot.20221022173017.1: *8* show ColorFilteredExample
+        ColorFilteredExample(),
+        Divider(),
+        //@+node:swot.20221022202111.1: *8* show ConstrainedBoxExample
+        ConstrainedBoxExample(),
+        Divider(),
+        //@+node:swot.20221022203303.1: *8* show ContainerExample
+        ContainerExample(),
+        Divider(),
+        //@+node:swot.20221022203824.1: *8* show ColumnExample
+        ColumnExample(),
+        Divider(),
+        //@+node:swot.20221022210532.1: *8* show CupertinoActionSheetExample
+        CupertinoActionSheetExample(),
+        Divider(),
+        //@+node:swot.20221022214055.1: *8* show CupertinoAppExample
+        CupertinoAppExample(),
+        Divider(),
+        //@+node:swot.20221023164513.1: *8* show CupertinoContextMenuExample
+        CupertinoContextMenuExample(),
+        Divider(),
+        //@+node:swot.20221031083344.1: *8* show CupertinoSlidingSegmentedControlExample
+        CupertinoSlidingSegmentedControlExample(),
+        Divider(),
         //@-others
-      )
+      ]),
+
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -2299,7 +2529,7 @@ class _DemoCState extends State<DemoC> {
 //@@language dart
 //@@tabwidth -2
 class CardExample extends StatelessWidget {
-  const CardExample({ Key? key }) : super(key: key);
+  const CardExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022121755.3: *6* build()
   @override
@@ -2331,34 +2561,33 @@ class CardExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022122655.2: *5* CenterExample
 //@@language dart
 //@@tabwidth -2
 class CenterExample extends StatelessWidget {
-  const CenterExample({ Key? key }) : super(key: key);
+  const CenterExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022122655.3: *6* build()
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          color: Colors.orangeAccent,
-          child:
-          //@+others
-          //@+node:swot.20221022122945.1: *7* Center
-          const Center(
-            heightFactor: 5,  // Text 组件高度倍数（Container有高度则无效）
-            child: Text('Flutter learning'),
-          ),
-          //@-others
+    return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Container(
+        color: Colors.orangeAccent,
+        child:
+        //@+others
+        //@+node:swot.20221022122945.1: *7* Center
+        const Center(
+          heightFactor: 5, // Text 组件高度倍数（Container有高度则无效）
+          child: Text('Flutter learning'),
         ),
-      ]
-    );
+        //@-others
+      ),
+    ]);
   }
   //@-others
 }
+
 //@+node:swot.20221022141252.2: *5* CheckboxExample
 //@@language dart
 //@@tabwidth -2
@@ -2369,7 +2598,7 @@ class CheckboxExample extends StatefulWidget {
   State<CheckboxExample> createState() => _CheckboxExampleState();
 }
 
-class _CheckboxExampleState extends State<CheckboxExample>{
+class _CheckboxExampleState extends State<CheckboxExample> {
   //@+others
   //@+node:swot.20221022141315.1: *6* varible
   bool? isChecked = false;
@@ -2378,11 +2607,13 @@ class _CheckboxExampleState extends State<CheckboxExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221022141252.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221022141252.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -2390,7 +2621,7 @@ class _CheckboxExampleState extends State<CheckboxExample>{
       child: Checkbox(
         value: isChecked,
         activeColor: Colors.orangeAccent,
-        tristate: true,  // allow null value
+        tristate: true, // allow null value
         onChanged: (newBool) {
           setState(() {
             isChecked = newBool;
@@ -2409,23 +2640,14 @@ class CheckboxListTileExample extends StatefulWidget {
   const CheckboxListTileExample({super.key});
 
   @override
-  State<CheckboxListTileExample> createState() => _CheckboxListTileExampleState();
+  State<CheckboxListTileExample> createState() =>
+      _CheckboxListTileExampleState();
 }
 
-class _CheckboxListTileExampleState extends State<CheckboxListTileExample>{
+class _CheckboxListTileExampleState extends State<CheckboxListTileExample> {
   //@+others
   //@+node:swot.20221022142005.1: *6* varible
   bool? _isChecked = false;
-  //@+node:swot.20221022141946.3: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221022141946.4: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
   //@+node:swot.20221022141946.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -2436,17 +2658,17 @@ class _CheckboxListTileExampleState extends State<CheckboxListTileExample>{
       CheckboxListTile(
         title: const Text('Checkbox List Tile'),
         value: _isChecked,
-        onChanged: (bool? newValue) {
-          setState(() {
-            _isChecked = newValue;
-          });
-        },
         activeColor: Colors.orangeAccent,
         checkColor: Colors.white,
         tileColor: Colors.black12,
         subtitle: const Text('This is a subtitle'),
         controlAffinity: ListTileControlAffinity.leading,
         tristate: true,
+        onChanged: (bool? newValue) {
+          setState(() {
+            _isChecked = newValue;
+          });
+        },
       ),
       //@-others
     );
@@ -2458,7 +2680,7 @@ class _CheckboxListTileExampleState extends State<CheckboxListTileExample>{
 //@@language dart
 //@@tabwidth -2
 class ChipExample extends StatelessWidget {
-  const ChipExample({ Key? key }) : super(key: key);
+  const ChipExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022142919.3: *6* build()
   @override
@@ -2474,6 +2696,7 @@ class ChipExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022144339.2: *5* ChoiceChipExample
 //@@language dart
 //@@tabwidth -2
@@ -2484,25 +2707,16 @@ class ChoiceChipExample extends StatefulWidget {
   State<ChoiceChipExample> createState() => _ChoiceChipExampleState();
 }
 
-class _ChoiceChipExampleState extends State<ChoiceChipExample>{
+class _ChoiceChipExampleState extends State<ChoiceChipExample> {
   //@+others
   //@+node:swot.20221022144356.1: *6* varible
   bool isSelected = false;
-  //@+node:swot.20221022144339.3: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221022144339.4: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
   //@+node:swot.20221022144339.5: *6* build()
   @override
   Widget build(BuildContext context) {
     return Center(
       child: ChoiceChip(
+        avatar: Image.asset('assets/avatar.webp'),
         label: const Text("Choice Chip"),
         selected: isSelected,
         selectedColor: Colors.orangeAccent,
@@ -2521,7 +2735,7 @@ class _ChoiceChipExampleState extends State<ChoiceChipExample>{
 //@@language dart
 //@@tabwidth -2
 class CircleAvatarExample extends StatelessWidget {
-  const CircleAvatarExample({ Key? key }) : super(key: key);
+  const CircleAvatarExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022145018.3: *6* build()
   @override
@@ -2531,7 +2745,8 @@ class CircleAvatarExample extends StatelessWidget {
         backgroundColor: Colors.orangeAccent,
         radius: 30,
         // backgroundImage: AssetImage(''),
-        backgroundImage: NetworkImage("https://img1.baidu.com/it/u=4237790906,511339359&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"),
+        backgroundImage: NetworkImage(
+            "https://img1.baidu.com/it/u=4237790906,511339359&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"),
         child: Text(
           'Hello',
           style: TextStyle(color: Colors.red),
@@ -2541,6 +2756,7 @@ class CircleAvatarExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022153237.2: *5* CircularProgressIndicatorExample
 //@@language dart
 //@@tabwidth -2
@@ -2548,21 +2764,25 @@ class CircularProgressIndicatorExample extends StatefulWidget {
   const CircularProgressIndicatorExample({super.key});
 
   @override
-  State<CircularProgressIndicatorExample> createState() => _CircularProgressIndicatorExampleState();
+  State<CircularProgressIndicatorExample> createState() =>
+      _CircularProgressIndicatorExampleState();
 }
 
-class _CircularProgressIndicatorExampleState extends State<CircularProgressIndicatorExample>{
+class _CircularProgressIndicatorExampleState
+    extends State<CircularProgressIndicatorExample> {
   //@+others
   //@+node:swot.20221022153237.3: *6* initState()
   @override
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221022153237.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221022153237.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -2581,14 +2801,14 @@ class _CircularProgressIndicatorExampleState extends State<CircularProgressIndic
 //@@language dart
 //@@tabwidth -2
 class ClipOvalExample extends StatelessWidget {
-  const ClipOvalExample({ Key? key }) : super(key: key);
+  const ClipOvalExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022153848.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return Center(
       child: ClipOval(
-        clipper: CustomClip(),  // change shape
+        clipper: CustomClip(), // change shape
         child: Container(
           width: 60,
           height: 60,
@@ -2599,22 +2819,25 @@ class ClipOvalExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022154849.1: *5* CustomClip
 class CustomClip extends CustomClipper<Rect> {
   @override
   Rect getClip(Size size) {
     return Rect.fromLTWH(0, 0, size.width - 10, size.height);
   }
+
   @override
   bool shouldReclip(covariant CustomClipper<Rect> oldClipper) {
     return false;
   }
 }
+
 //@+node:swot.20221022161946.2: *5* ClipPathExample
 //@@language dart
 //@@tabwidth -2
 class ClipPathExample extends StatelessWidget {
-  const ClipPathExample({ Key? key }) : super(key: key);
+  const ClipPathExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022161946.3: *6* build()
   @override
@@ -2630,6 +2853,7 @@ class ClipPathExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022162343.1: *5* MyClipper1
 class MyClipper1 extends CustomClipper<Path> {
   @override
@@ -2650,16 +2874,18 @@ class MyClipper1 extends CustomClipper<Path> {
       )
       ..lineTo(size.width, 0);
   }
+
   @override
   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
     return false;
   }
 }
+
 //@+node:swot.20221022163926.2: *5* ClipRectExample
 //@@language dart
 //@@tabwidth -2
 class ClipRectExample extends StatelessWidget {
-  const ClipRectExample({ Key? key }) : super(key: key);
+  const ClipRectExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022163926.3: *6* build()
   @override
@@ -2677,17 +2903,20 @@ class ClipRectExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022164337.1: *5* MyClipper2
 class MyClipper2 extends CustomClipper<Rect> {
   @override
   Rect getClip(Size size) {
     return const Rect.fromLTWH(0, 0, 80, 80);
   }
+
   @override
   bool shouldReclip(covariant CustomClipper<Rect> oldClipper) {
     return false;
   }
 }
+
 //@+node:swot.20221022165324.2: *5* ClipRRectExample
 //@@language dart
 //@@tabwidth -2
@@ -2698,18 +2927,20 @@ class ClipRRectExample extends StatefulWidget {
   State<ClipRRectExample> createState() => _ClipRRectExampleState();
 }
 
-class _ClipRRectExampleState extends State<ClipRRectExample>{
+class _ClipRRectExampleState extends State<ClipRRectExample> {
   //@+others
   //@+node:swot.20221022165324.3: *6* initState()
   @override
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221022165324.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221022165324.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -2717,9 +2948,8 @@ class _ClipRRectExampleState extends State<ClipRRectExample>{
       child: ClipRRect(
         borderRadius: BorderRadius.circular(30),
         child: Image.network(
-          'https://img1.baidu.com/it/u=3866320064,995069430&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500',
-          width: 250
-        ),
+            'https://img1.baidu.com/it/u=3866320064,995069430&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500',
+            width: 250),
       ),
     );
   }
@@ -2730,7 +2960,7 @@ class _ClipRRectExampleState extends State<ClipRRectExample>{
 //@@language dart
 //@@tabwidth -2
 class CloseButtonExample extends StatelessWidget {
-  const CloseButtonExample({ Key? key }) : super(key: key);
+  const CloseButtonExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022170557.3: *6* build()
   @override
@@ -2746,11 +2976,12 @@ class CloseButtonExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022171523.2: *5* ColoredBoxExample
 //@@language dart
 //@@tabwidth -2
 class ColoredBoxExample extends StatelessWidget {
-  const ColoredBoxExample({ Key? key }) : super(key: key);
+  const ColoredBoxExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022171523.3: *6* build()
   @override
@@ -2770,11 +3001,12 @@ class ColoredBoxExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022172641.2: *5* ColorFilteredExample
 //@@language dart
 //@@tabwidth -2
 class ColorFilteredExample extends StatelessWidget {
-  const ColorFilteredExample({ Key? key }) : super(key: key);
+  const ColorFilteredExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022172641.3: *6* build()
   @override
@@ -2794,11 +3026,12 @@ class ColorFilteredExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022201619.2: *5* ConstrainedBoxExample
 //@@language dart
 //@@tabwidth -2
 class ConstrainedBoxExample extends StatelessWidget {
-  const ConstrainedBoxExample({ Key? key }) : super(key: key);
+  const ConstrainedBoxExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022201619.3: *6* build()
   @override
@@ -2820,11 +3053,12 @@ class ConstrainedBoxExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022202825.2: *5* ContainerExample
 //@@language dart
 //@@tabwidth -2
 class ContainerExample extends StatelessWidget {
-  const ContainerExample({ Key? key }) : super(key: key);
+  const ContainerExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022202825.3: *6* build()
   @override
@@ -2840,11 +3074,12 @@ class ContainerExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022203601.2: *5* ColumnExample
 //@@language dart
 //@@tabwidth -2
 class ColumnExample extends StatelessWidget {
-  const ColumnExample({ Key? key }) : super(key: key);
+  const ColumnExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022203601.3: *6* build()
   @override
@@ -2866,6 +3101,7 @@ class ColumnExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022210338.2: *5* CupertinoActionSheetExample
 //@@language dart
 //@@tabwidth -2
@@ -2873,25 +3109,30 @@ class CupertinoActionSheetExample extends StatefulWidget {
   const CupertinoActionSheetExample({super.key});
 
   @override
-  State<CupertinoActionSheetExample> createState() => _CupertinoActionSheetExampleState();
+  State<CupertinoActionSheetExample> createState() =>
+      _CupertinoActionSheetExampleState();
 }
 
-class _CupertinoActionSheetExampleState extends State<CupertinoActionSheetExample>{
+class _CupertinoActionSheetExampleState
+    extends State<CupertinoActionSheetExample> {
   //@+others
   //@+node:swot.20221022210338.3: *6* initState()
   @override
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221022210338.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221022210338.5: *6* build()
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(  // Not important here
+    return CupertinoPageScaffold(
+      // Not important here
       child: Center(
         child: CupertinoButton(
           child: const Text('CupertinoActionSheet'),
@@ -2909,7 +3150,7 @@ class _CupertinoActionSheetExampleState extends State<CupertinoActionSheetExampl
                     child: const Text('Do something'),
                   ),
                   CupertinoActionSheetAction(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: const Text('Do something else'),
@@ -2929,15 +3170,15 @@ class _CupertinoActionSheetExampleState extends State<CupertinoActionSheetExampl
 //@@language dart
 //@@tabwidth -2
 class CupertinoAppExample extends StatelessWidget {
-  const CupertinoAppExample({ Key? key }) : super(key: key);
+  const CupertinoAppExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022213243.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        // backgroundColor: Colors.orangeAccent,
-      ),
+          // backgroundColor: Colors.orangeAccent,
+          ),
       child: const Text('CupertinoApp'),
       onPressed: () {
         Navigator.push(
@@ -2951,11 +3192,12 @@ class CupertinoAppExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221022213726.2: *5* MyCupertinoApp
 //@@language dart
 //@@tabwidth -2
 class MyCupertinoApp extends StatelessWidget {
-  const MyCupertinoApp({ Key? key }) : super(key: key);
+  const MyCupertinoApp({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221022213726.3: *6* build()
   @override
@@ -2979,11 +3221,12 @@ class MyCupertinoApp extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221023163418.2: *5* CupertinoContextMenuExample
 //@@language dart
 //@@tabwidth -2
 class CupertinoContextMenuExample extends StatelessWidget {
-  const CupertinoContextMenuExample({ Key? key }) : super(key: key);
+  const CupertinoContextMenuExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221023163418.3: *6* build()
   @override
@@ -3002,15 +3245,11 @@ class CupertinoContextMenuExample extends StatelessWidget {
           actions: <Widget>[
             CupertinoContextMenuAction(
               child: const Text('Action one'),
-              onPressed: (){
-                Navigator.pop(context);
-              },
+              onPressed: () { Navigator.pop(context); },
             ),
             CupertinoContextMenuAction(
               child: const Text('Action two'),
-              onPressed: (){
-                Navigator.pop(context);
-              },
+              onPressed: () { Navigator.pop(context); },
             ),
           ],
         ),
@@ -3020,6 +3259,7 @@ class CupertinoContextMenuExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221031082929.2: *5* CupertinoSlidingSegmentedControlExample
 //@@language dart
 //@@tabwidth -2
@@ -3027,10 +3267,12 @@ class CupertinoSlidingSegmentedControlExample extends StatefulWidget {
   const CupertinoSlidingSegmentedControlExample({super.key});
 
   @override
-  State<CupertinoSlidingSegmentedControlExample> createState() => _CupertinoSlidingSegmentedControlExampleState();
+  State<CupertinoSlidingSegmentedControlExample> createState() =>
+      _CupertinoSlidingSegmentedControlExampleState();
 }
 
-class _CupertinoSlidingSegmentedControlExampleState extends State<CupertinoSlidingSegmentedControlExample>{
+class _CupertinoSlidingSegmentedControlExampleState
+    extends State<CupertinoSlidingSegmentedControlExample> {
   //@+others
   //@+node:swot.20221031083017.1: *6* value
   int? _sliding = 0;
@@ -3041,16 +3283,14 @@ class _CupertinoSlidingSegmentedControlExampleState extends State<CupertinoSlidi
     //@+others
     //@+node:swot.20221031083051.1: *7* CupertinoSlidingSegmentedControl
     CupertinoSlidingSegmentedControl(
+      groupValue: _sliding,
+      onValueChanged: (int? newValue) {
+        setState(() { _sliding = newValue; });
+      },
       children: {
         0: Text('Text 0'),
         1: Text('Text 1'),
         2: Text('Text 2'),
-      },
-      groupValue: _sliding,
-      onValueChanged: (int? newValue) {
-        setState(() {
-          _sliding = newValue;
-        });
       },
     )
     //@-others
@@ -3068,40 +3308,41 @@ class D extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221024065902.2: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo D'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221024065902.2: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo D'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoD(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoD(),
       ),
     );
   }
 }
+
 //@+node:swot.20221024070012.1: *4* DemoD
 //@@language dart
 //@@tabwidth -2
@@ -3118,91 +3359,101 @@ class _DemoDState extends State<DemoD> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221024070127.2: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221024070127.2: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221024070127.3: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221024070127.3: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221024112602.1: *8* show DismissibleExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221024112602.1: *8* show DismissibleExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+          ),
+          child: const Text('DismissibleExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DismissibleExample(),
               ),
-              child: const Text('DismissibleExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DismissibleExample(),
-                  ),
-                );
-              },
-            ),
-
-            Divider(),
-            //@+node:swot.20221025075357.1: *8* show DraggableScrollableExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+            );
+          },
+        ),
+        Divider(),
+        //@+node:swot.20221102102136.1: *8* ElevatedButton -- show DividerExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            // backgroundColor: Colors.orangeAccent,
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DividerExample(),
               ),
-              child: const Text('DraggableScrollableExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DraggableScrollableExample(),
-                  ),
-                );
-              },
-            ),
-
-            Divider(),
-            //@+node:swot.20221025091113.1: *8* show DragTargetExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              child: const Text('DragTargetExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DragTargetExample(),
-                  ),
-                );
-              },
-            ),
-
-            Divider(),
-            //@+node:swot.20221025095859.1: *8* show DrawerExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              child: const Text('DrawerExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const DrawerExample(),
-                  ),
-                );
-              },
-            ),
-
-            Divider(),
-            //@-others
-          ]
+            );
+          },
+          child: const Text('DividerExample'),
         ),
 
+        //@+node:swot.20221025075357.1: *8* show DraggableScrollableExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+          ),
+          child: const Text('DraggableScrollableExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DraggableScrollableExample(),
+              ),
+            );
+          },
+        ),
+        Divider(),
+        //@+node:swot.20221025091113.1: *8* show DragTargetExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+          ),
+          child: const Text('DragTargetExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DragTargetExample(),
+              ),
+            );
+          },
+        ),
+
+        Divider(),
+        //@+node:swot.20221025095859.1: *8* show DrawerExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          child: const Text('DrawerExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const DrawerExample(),
+              ),
+            );
+          },
+        ),
+        Divider(),
         //@-others
-      )
+      ]),
+
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -3219,7 +3470,7 @@ class DismissibleExample extends StatefulWidget {
   State<DismissibleExample> createState() => _DismissibleExampleState();
 }
 
-class _DismissibleExampleState extends State<DismissibleExample>{
+class _DismissibleExampleState extends State<DismissibleExample> {
   //@+others
   //@+node:swot.20221024112703.1: *6* varible
   List<int> items = List<int>.generate(50, (int index) => index);
@@ -3228,11 +3479,13 @@ class _DismissibleExampleState extends State<DismissibleExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221024112614.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221024112614.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -3283,11 +3536,74 @@ class _DismissibleExampleState extends State<DismissibleExample>{
   //@-others
 }
 
+//@+node:swot.20221102101634.2: *5* DividerExample
+//@@language dart
+//@@tabwidth -2
+class DividerExample extends StatelessWidget {
+  const DividerExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221102101634.3: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221102103902.2: *7* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221102103902.3: *8* appBar
+      appBar: AppBar(
+        title: Text(''),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221102103902.4: *8* body
+      body:
+      //@+others
+      //@+node:swot.20221102103050.2: *9* Column
+      Column(
+        children: [
+          //@+others
+          //@+node:swot.20221102102110.1: *10* Container
+          Container(
+            width: double.infinity,
+            height: 200.0,
+            color: Colors.orange,
+          ),
+          //@+node:swot.20221102101649.1: *10* Divider
+          const Divider(
+            color: Colors.red,
+            height: 20,
+            thickness: 5,
+            indent: 20,
+            endIndent: 40,
+          ),
+          //@+node:swot.20221102101920.2: *10* Container
+          Container(
+            width: double.infinity,
+            height: 200.0,
+            color: Colors.orange,
+          ),
+          //@-others
+        ],
+      )
+      //@-others
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
 //@+node:swot.20221025074739.2: *5* DraggableScrollableExample
 //@@language dart
 //@@tabwidth -2
 class DraggableScrollableExample extends StatelessWidget {
-  const DraggableScrollableExample({ Key? key }) : super(key: key);
+  const DraggableScrollableExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221025074739.3: *6* build()
   @override
@@ -3333,6 +3649,7 @@ class DraggableScrollableExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221025081939.2: *5* DragTargetExample
 //@@language dart
 //@@tabwidth -2
@@ -3343,7 +3660,7 @@ class DragTargetExample extends StatefulWidget {
   State<DragTargetExample> createState() => _DragTargetExampleState();
 }
 
-class _DragTargetExampleState extends State<DragTargetExample>{
+class _DragTargetExampleState extends State<DragTargetExample> {
   //@+others
   //@+node:swot.20221025081939.3: *6* varible
   Color caughtColor = Colors.red;
@@ -3352,11 +3669,13 @@ class _DragTargetExampleState extends State<DragTargetExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221025081939.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221025081939.6: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -3381,12 +3700,12 @@ class _DragTargetExampleState extends State<DragTargetExample>{
       SizedBox(
         width: double.infinity,
         child:
-          //@+others
-          //@+node:swot.20221025083519.1: *10* Column
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+        //@+others
+        //@+node:swot.20221025083519.1: *10* Column
+        Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
             //@+others
             //@+node:swot.20221025083732.1: *11* Draggable
             Draggable(
@@ -3419,25 +3738,25 @@ class _DragTargetExampleState extends State<DragTargetExample>{
             //@+node:swot.20221025084843.1: *11* DragTarget
             DragTarget(
               onAccept: (Color color) {
-                caughtColor = color;  // color is Draggable data
+                caughtColor = color; // color is Draggable data
               },
-              builder: (BuildContext context,
-                        List<dynamic> accepted,
-                        List<dynamic> rejected,) {
+              builder: (BuildContext context, List<dynamic> accepted, List<dynamic> rejected) {
                 return Container(
                   width: 200.0,
                   height: 200.0,
-                  color: accepted.isEmpty ? caughtColor : Colors.grey.shade200,
+                  color: accepted.isEmpty
+                      ? caughtColor
+                      : Colors.grey.shade200,
                   child: const Center(
                     child: Text("Drag here"),
                   ),
                 );
-              }
+              },
             ),
             //@-others
-            ],
-          )
-          //@-others
+          ],
+        )
+        //@-others
       )
       //@-others
       //@-others
@@ -3453,7 +3772,7 @@ class _DragTargetExampleState extends State<DragTargetExample>{
 //@@language dart
 //@@tabwidth -2
 class DrawerExample extends StatelessWidget {
-  const DrawerExample({ Key? key }) : super(key: key);
+  const DrawerExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221025095334.3: *6* build()
   @override
@@ -3489,14 +3808,8 @@ class DrawerExample extends StatelessWidget {
               ),
               child: Text('Drawer Header'),
             ),
-            ListTile(
-              title: const Text('Item 1'),
-              onTap: () {}
-            ),
-            ListTile(
-              title: const Text('Item 2'),
-              onTap: () {}
-            ),
+            ListTile(title: const Text('Item 1'), onTap: () {}),
+            ListTile(title: const Text('Item 2'), onTap: () {}),
           ],
         ),
       ),
@@ -3507,6 +3820,7 @@ class DrawerExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221025205925.1: *3* E Example
 //@+node:swot.20221025205946.1: *4* E  -- Scaffold
 class E extends StatelessWidget {
@@ -3516,40 +3830,41 @@ class E extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221025205946.2: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo E'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221025205946.2: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo E'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoE(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoE(),
       ),
     );
   }
 }
+
 //@+node:swot.20221025211051.1: *4* DemoE
 //@@language dart
 //@@tabwidth -2
@@ -3566,29 +3881,26 @@ class _DemoEState extends State<DemoE> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221025211051.3: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221025211051.3: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221025211051.4: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221025211051.4: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221026194030.1: *8* show ExpandedExample
-            ExpandedExample(),
-            Divider(),
-            //@+node:swot.20221031073947.1: *8* show ExpansionTileExample
-            ExpansionTileExample(),
-            Divider(),
-            //@-others
-          ]
-        ),
-
+        //@+node:swot.20221026194030.1: *8* show ExpandedExample
+        ExpandedExample(),
+        Divider(),
+        //@+node:swot.20221031073947.1: *8* show ExpansionTileExample
+        ExpansionTileExample(),
+        Divider(),
         //@-others
-      )
+      ]),
+
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -3599,7 +3911,7 @@ class _DemoEState extends State<DemoE> {
 //@@language dart
 //@@tabwidth -2
 class ExpandedExample extends StatelessWidget {
-  const ExpandedExample({ Key? key }) : super(key: key);
+  const ExpandedExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221026073602.3: *6* build()
   @override
@@ -3647,6 +3959,7 @@ class ExpandedExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221031070602.2: *5* ExpansionTileExample
 //@@language dart
 //@@tabwidth -2
@@ -3657,7 +3970,7 @@ class ExpansionTileExample extends StatefulWidget {
   State<ExpansionTileExample> createState() => _ExpansionTileExampleState();
 }
 
-class _ExpansionTileExampleState extends State<ExpansionTileExample>{
+class _ExpansionTileExampleState extends State<ExpansionTileExample> {
   //@+others
   //@+node:swot.20221031070602.3: *6* varible
   bool _customIcon = false;
@@ -3669,60 +3982,64 @@ class _ExpansionTileExampleState extends State<ExpansionTileExample>{
     //@+node:swot.20221031074359.2: *7* Column
     Column(
       children: [
-      //@+others
-      //@+node:swot.20221031073139.1: *8* ExpansionTile -- _customIcon
-      ExpansionTile(
-        title: const Text('Expansion Tile -- custom icon'),
-        trailing: Icon(
-          _customIcon ? Icons.arrow_drop_down_circle : Icons.arrow_drop_down,
+        //@+others
+        //@+node:swot.20221031073139.1: *8* ExpansionTile -- _customIcon
+        ExpansionTile(
+          title: const Text('Expansion Tile -- custom icon'),
+          trailing: Icon(
+            _customIcon ? Icons.arrow_drop_down_circle : Icons.arrow_drop_down,
+          ),
+          children: const [
+            ListTile(
+              title: Text('This is tile number 2'),
+            ),
+          ],
+          onExpansionChanged: (bool expanded) {
+            setState(() {
+              _customIcon = expanded;
+            });
+          },
         ),
-        children: const [
-          ListTile(
-            title: Text('This is tile number 2'),
-          ),
-        ],
-        onExpansionChanged: (bool expanded) {
-          setState(() {
-            _customIcon = expanded;
-          });
-        },
-      ),
-      //@+node:swot.20221031074310.1: *8* ExpansionTile -- basic icon
-      ExpansionTile(
-        title: const Text('Expansion Tile -- basic icon'),
-        // trailing: Icon(
+        //@+node:swot.20221031074310.1: *8* ExpansionTile -- basic icon
+        ExpansionTile(
+          title: const Text('Expansion Tile -- basic icon'),
+          // trailing: Icon(
           // _customIcon ? Icons.arrow_drop_down_circle : Icons.arrow_drop_down,
-        // ),
-        children: const [
-          ListTile(
-            title: Text('This is tile number 2'),
-          ),
-        ],
-        onExpansionChanged: (bool expanded) {
-          // setState(() {
+          // ),
+          children: const [
+            ListTile(
+              title: Text('This is tile number 2'),
+            ),
+            ListTile(
+              title: Text('This is tile number 3'),
+            ),
+          ],
+          onExpansionChanged: (bool expanded) {
+            // setState(() {
             // _customIcon = expanded;
-          // });
-        },
-      ),
-      //@+node:swot.20221031074605.1: *8* ExpansionTile -- change icon location
-      ExpansionTile(
-        title: const Text('Expansion Tile -- basic icon'),
-        // trailing: Icon(
+            // });
+          },
+        ),
+        //@+node:swot.20221031074605.1: *8* ExpansionTile -- change icon location
+        ExpansionTile(
+          title: const Text('Expansion Tile -- basic icon'),
+          onExpansionChanged: (bool expanded) {
+            // setState(() {
+            // _customIcon = expanded;
+            // });
+          },
+          controlAffinity: ListTileControlAffinity.leading,
+          // leading: const Icon(Icons.info),
+          // trailing: Icon(
           // _customIcon ? Icons.arrow_drop_down_circle : Icons.arrow_drop_down,
-        // ),
-        children: const [
-          ListTile(
-            title: Text('This is tile number 2'),
-          ),
-        ],
-        onExpansionChanged: (bool expanded) {
-          // setState(() {
-            // _customIcon = expanded;
-          // });
-        },
-        controlAffinity: ListTileControlAffinity.leading,  // icon location
-      ),
-      //@-others
+          // ),
+          children: const [
+            ListTile(
+              title: Text('This is tile number 2'),
+            ),
+          ], // icon location
+        ),
+        //@-others
       ],
     )
     //@-others
@@ -3738,7 +4055,7 @@ class F extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return 
+    return
     //@+others
     //@+node:swot.20221027113937.1: *5* SafeArea
     SafeArea(
@@ -3753,14 +4070,14 @@ class F extends StatelessWidget {
           centerTitle: true,
 
           // leading: IconButton(
-            // icon: const Icon(Icons.menu),
-            // onPressed: (){},
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
           // ),
 
           actions: [
             IconButton(
               icon: const Icon(Icons.notifications),
-              onPressed: (){},
+              onPressed: () {},
             ),
           ],
           // AppBar 的下边变成了圆角
@@ -3772,18 +4089,16 @@ class F extends StatelessWidget {
           ),
 
           backgroundColor: Colors.orangeAccent,
-          elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
         ),
         //@+node:swot.20221027114010.4: *7* body
         body: DemoF(),
         //@+node:swot.20221027114010.6: *7* floatingActionButton
-        //@@language dart
-        //@@tabwidth -2
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
         floatingActionButton: FloatingActionButton(
-            onPressed: () {},
-            backgroundColor: Colors.deepPurple.shade400,
-            child: Icon(Icons.add),
+          onPressed: () {},
+          backgroundColor: Colors.deepPurple.shade400,
+          child: Icon(Icons.add),
         ),
         //@-others
       ),
@@ -3810,91 +4125,88 @@ class _DemoFState extends State<DemoF> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221026200827.6: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221026200827.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221026200827.7: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221026200827.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221031063757.2: *8* ElevatedButton -- show FittedBoxExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221031063757.2: *8* ElevatedButton -- show FittedBoxExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => FittedBoxExample(),
-                  ),
-                );
-              },
-              child: const Text('FittedBoxExample'),
-            ),
-
-            //@+node:swot.20221027112321.2: *8* show FlexbleExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FittedBoxExample(),
               ),
-              child: const Text('FlexibleExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => FlexibleExample(),
-                  ),
-                );
-              },
-            ),
-
-            //@+node:swot.20221027121244.1: *8* show FormExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              child: const Text('FormExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => FormExample(),
-                  ),
-                );
-              },
-            ),
-
-            //@+node:swot.20221027203755.1: *8* show FadeInImageExample
-            FadeInImageExample(),
-            //@+node:swot.20221027213559.2: *8* show FractionallySizedBoxExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              child: const Text('FractionallySizedBox'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => FractionallySizedBoxExample(),
-                  ),
-                );
-              },
-            ),
-
-            //@+node:swot.20221028065632.1: *8* show FutureBuilderExample
-            FutureBuilderExample(),
-            //@-others
-          ]
+            );
+          },
+          child: const Text('FittedBoxExample'),
         ),
 
+        //@+node:swot.20221027112321.2: *8* show FlexbleExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          child: const Text('FlexibleExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FlexibleExample(),
+              ),
+            );
+          },
+        ),
+
+        //@+node:swot.20221027121244.1: *8* show FormExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          child: const Text('FormExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FormExample(),
+              ),
+            );
+          },
+        ),
+
+        //@+node:swot.20221027203755.1: *8* show FadeInImageExample
+        FadeInImageExample(),
+        //@+node:swot.20221027213559.2: *8* show FractionallySizedBoxExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          child: const Text('FractionallySizedBox'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FractionallySizedBoxExample(),
+              ),
+            );
+          },
+        ),
+
+        //@+node:swot.20221028065632.1: *8* show FutureBuilderExample
+        FutureBuilderExample(),
         //@-others
-      )
+      ]),
+
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -3905,7 +4217,7 @@ class _DemoFState extends State<DemoF> {
 //@@language dart
 //@@tabwidth -2
 class FittedBoxExample extends StatelessWidget {
-  const FittedBoxExample({ Key? key }) : super(key: key);
+  const FittedBoxExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221030234221.3: *6* build()
   @override
@@ -3946,10 +4258,10 @@ class FittedBoxExample extends StatelessWidget {
             child: Text(
               'This is a pretty long text',
               style: TextStyle(color: Colors.black),
-            )
-          )
+            ),
+          ),
           //@-others
-        )
+        ),
         //@-others
       )
       //@-others
@@ -3960,11 +4272,12 @@ class FittedBoxExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221027111458.2: *5* FlexibleExample
 //@@language dart
 //@@tabwidth -2
 class FlexibleExample extends StatelessWidget {
-  const FlexibleExample({ Key? key }) : super(key: key);
+  const FlexibleExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221027111458.3: *6* build()
   @override
@@ -3992,23 +4305,23 @@ class FlexibleExample extends StatelessWidget {
           //@+others
           //@+node:swot.20221027111848.1: *10* Flexible -- FlexFit.loose is default
           Flexible(
-            flex: 5,
+            flex: 6,
             child: Container(
-              height: 50,
+              height: 50, // flex takes no effect
               color: Colors.yellow,
             ),
           ),
           Flexible(
             flex: 4,
             child: Container(
-              height: 100,
+              height: 100, // flex takes no effect
               color: Colors.orange,
             ),
           ),
           Flexible(
-            flex: 3,
+            flex: 2,
             child: Container(
-              height: 200,
+              height: 200, // flex takes no effect
               color: Colors.red,
             ),
           ),
@@ -4023,11 +4336,12 @@ class FlexibleExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221027115627.2: *5* FormExample
 //@@language dart
 //@@tabwidth -2
 class FormExample extends StatelessWidget {
-  FormExample({ Key? key }) : super(key: key);
+  FormExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221027120023.1: *6* value
   final _formKey = GlobalKey<FormState>();
@@ -4082,7 +4396,7 @@ class FormExample extends StatelessWidget {
                 child: const Text('Validate'),
               ),
             ],
-          )
+          ),
         ),
         //@-others
       ),
@@ -4095,11 +4409,12 @@ class FormExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221027203431.2: *5* FadeInImageExample
 //@@language dart
 //@@tabwidth -2
 class FadeInImageExample extends StatelessWidget {
-  const FadeInImageExample({ Key? key }) : super(key: key);
+  const FadeInImageExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221027203431.3: *6* build()
   @override
@@ -4109,17 +4424,19 @@ class FadeInImageExample extends StatelessWidget {
         width: 100,
         height: 100,
         placeholder: 'assets/loading.gif',
-        image: 'https://img2.baidu.com/it/u=1559210821,716203173&fm=253&fmt=auto&app=120&f=JPEG?w=200&h=200',
+        image:
+            'https://img2.baidu.com/it/u=1559210821,716203173&fm=253&fmt=auto&app=120&f=JPEG?w=200&h=200',
       ),
     );
   }
   //@-others
 }
+
 //@+node:swot.20221027212222.2: *5* FractionallySizedBoxExample
 //@@language dart
 //@@tabwidth -2
 class FractionallySizedBoxExample extends StatelessWidget {
-  const FractionallySizedBoxExample({ Key? key }) : super(key: key);
+  const FractionallySizedBoxExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221027212222.3: *6* build()
   @override
@@ -4139,7 +4456,7 @@ class FractionallySizedBoxExample extends StatelessWidget {
         elevation: 0.0,
         centerTitle: true,
       ),
-      //@+node:swot.20221027212407.4: *8* body 
+      //@+node:swot.20221027212407.4: *8* body
       body:
       //@+others
       //@+node:swot.20221027212916.2: *9* Center
@@ -4151,7 +4468,7 @@ class FractionallySizedBoxExample extends StatelessWidget {
           widthFactor: 0.5,
           heightFactor: 0.5,
           child: Container(
-            color: Colors.amberAccent,
+          color: Colors.amberAccent,
           ),
         ),
         //@-others
@@ -4164,6 +4481,7 @@ class FractionallySizedBoxExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221028064229.2: *5* FutureBuilderExample
 //@@language dart
 //@@tabwidth -2
@@ -4174,7 +4492,7 @@ class FutureBuilderExample extends StatefulWidget {
   State<FutureBuilderExample> createState() => _FutureBuilderExampleState();
 }
 
-class _FutureBuilderExampleState extends State<FutureBuilderExample>{
+class _FutureBuilderExampleState extends State<FutureBuilderExample> {
   //@+others
   //@+node:swot.20221028064229.3: *6* varible
   Future<String> getData() async {
@@ -4184,16 +4502,7 @@ class _FutureBuilderExampleState extends State<FutureBuilderExample>{
     // throw 'Error';
     return 'Super!';
   }
-  //@+node:swot.20221028064229.4: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221028064229.5: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
+
   //@+node:swot.20221028064229.6: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -4214,13 +4523,15 @@ class _FutureBuilderExampleState extends State<FutureBuilderExample>{
             children: [
               Text(snapshot.data.toString()),
               ElevatedButton(
-                onPressed: () { setState(() {}); },
-                child: const Text('Refresh'),
+                onPressed: () {
+                  setState(() {});
+                },
+                child: const Text('FutureBuilder Refresh'),
               ),
             ],
           );
         }
-      }
+      },
     )
     //@-others
     ;
@@ -4235,7 +4546,7 @@ class G extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return 
+    return
     //@+others
     //@+node:swot.20221028070508.3: *5* SafeArea
     SafeArea(
@@ -4250,14 +4561,14 @@ class G extends StatelessWidget {
           centerTitle: true,
 
           // leading: IconButton(
-            // icon: const Icon(Icons.menu),
-            // onPressed: (){},
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
           // ),
 
           actions: [
             IconButton(
               icon: const Icon(Icons.notifications),
-              onPressed: (){},
+              onPressed: () {},
             ),
           ],
           // AppBar 的下边变成了圆角
@@ -4269,18 +4580,16 @@ class G extends StatelessWidget {
           ),
 
           backgroundColor: Colors.orangeAccent,
-          elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
         ),
         //@+node:swot.20221028070508.6: *7* body
         body: DemoG(),
         //@+node:swot.20221028070508.7: *7* floatingActionButton
-        //@@language dart
-        //@@tabwidth -2
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
         floatingActionButton: FloatingActionButton(
-            onPressed: () {},
-            backgroundColor: Colors.deepPurple.shade400,
-            child: Icon(Icons.add),
+          onPressed: () {},
+          backgroundColor: Colors.deepPurple.shade400,
+          child: Icon(Icons.add),
         ),
         //@-others
       ),
@@ -4307,59 +4616,72 @@ class _DemoGState extends State<DemoG> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221028070508.10: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221028070508.10: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221028070508.11: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221028070508.11: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221028090546.1: *8* SizedBox
-            SizedBox(height: 5.00),
-            //@+node:swot.20221028085926.1: *8* show GestureDetectorExample
-            GestureDetectorExample(),
-            //@+node:swot.20221028095636.2: *8* show GridViewExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221028090546.1: *8* SizedBox
+        SizedBox(height: 5.00),
+        //@+node:swot.20221028085926.1: *8* show GestureDetectorExample
+        GestureDetectorExample(),
+        //@+node:swot.20221028095636.2: *8* show GridViewExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              child: const Text('GridView'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => GridViewExample(),
-                  ),
-                );
-              },
-            ),
-
-            //@+node:swot.20221028131344.2: *8* show GridTileExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+          child: const Text('GridView'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => GridViewExample(),
               ),
-              child: const Text('GridTileExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => GridTileExample(),
-                  ),
-                );
-              },
-            ),
+            );
+          },
+        ),
 
-            //@-others
-          ]
+        //@+node:swot.20221028131344.2: *8* show GridTileExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          child: const Text('GridTileExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => GridTileExample(),
+              ),
+            );
+          },
+        ),
+
+        //@+node:swot.20221031213940.2: *8* ElevatedButton -- show GridPaperExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => GridPaperExample(),
+              ),
+            );
+          },
+          child: const Text('GridPaperExample'),
         ),
 
         //@-others
-      )
+      ]),
+
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -4376,7 +4698,7 @@ class GestureDetectorExample extends StatefulWidget {
   State<GestureDetectorExample> createState() => _GestureDetectorExampleState();
 }
 
-class _GestureDetectorExampleState extends State<GestureDetectorExample>{
+class _GestureDetectorExampleState extends State<GestureDetectorExample> {
   //@+others
   //@+node:swot.20221028084729.3: *6* varible
   int _counter = 0;
@@ -4386,23 +4708,74 @@ class _GestureDetectorExampleState extends State<GestureDetectorExample>{
     return Center(
       child: GestureDetector(
         onTap: () {
-          setState(() { _counter += 1; });
+          setState(() {
+            _counter += 1;
+          });
         },
         child: Container(
           height: 50,
           color: Colors.orangeAccent,
-          child: Row(
-            children: [
-              const Text("GestureDetector"),
-              Text(
-                _counter.toString(),
-                style: const TextStyle(fontSize: 40),
-              ),
-            ]
-          ),
+          child: Row(children: [
+            const Text("GestureDetector"),
+            Text(
+              _counter.toString(),
+              style: const TextStyle(fontSize: 40),
+            ),
+          ]),
         ),
       ),
     );
+  }
+  //@-others
+}
+
+//@+node:swot.20221031213433.2: *5* GridPaperExample
+//@@language dart
+//@@tabwidth -2
+class GridPaperExample extends StatelessWidget {
+  const GridPaperExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221031213433.3: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221031213506.2: *7* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221031213506.3: *8* appBar
+      appBar: AppBar(
+        title: Text('GridPaper'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221031213506.4: *8* body
+      body:
+      //@+others
+      //@+node:swot.20221031213547.1: *9* SizedBox
+      const SizedBox(
+        width: double.infinity,
+        height: double.infinity,
+        child:
+        //@+others
+        //@+node:swot.20221031213653.1: *10* GridPaper
+        GridPaper(
+          color: Colors.pink,
+          divisions: 2,
+          interval: 200,
+          subdivisions: 5,
+        )
+        //@-others
+      )
+      //@-others
+      //@-others
+    )
+    //@-others
+    ;
   }
   //@-others
 }
@@ -4411,7 +4784,7 @@ class _GestureDetectorExampleState extends State<GestureDetectorExample>{
 //@@language dart
 //@@tabwidth -2
 class GridViewExample extends StatelessWidget {
-  const GridViewExample({ Key? key }) : super(key: key);
+  const GridViewExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221028093414.3: *6* build()
   @override
@@ -4476,11 +4849,12 @@ class GridViewExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221028130417.2: *5* GridTileExample
 //@@language dart
 //@@tabwidth -2
 class GridTileExample extends StatelessWidget {
-  const GridTileExample({ Key? key }) : super(key: key);
+  const GridTileExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221028130417.3: *6* build()
   @override
@@ -4514,7 +4888,7 @@ class GridTileExample extends StatelessWidget {
           child:
           //@+others
           //@+node:swot.20221029070636.1: *11* GridTile  -- use Container
-          GridTile(
+            GridTile(
             header: Container(
               height: 40,
               color: Colors.black38,
@@ -4552,6 +4926,7 @@ class GridTileExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221029131000.1: ** Example H-N
 //@+node:swot.20221023124355.1: *3* H Example
 //@+node:swot.20221023124355.2: *4* H  -- Scaffold
@@ -4562,40 +4937,41 @@ class H extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221023124355.3: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo H'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221023124355.3: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo H'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoH(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoH(),
       ),
     );
   }
 }
+
 //@+node:swot.20221023124355.4: *4* DemoH
 //@@language dart
 //@@tabwidth -2
@@ -4612,35 +4988,52 @@ class _DemoHState extends State<DemoH> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221023124355.6: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221023124355.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221023124355.7: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221023124355.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221029090411.1: *8* show HeroExample
-            ListTile(
-              title: const Text('Hero click'),
-              trailing: const Hero(
-                tag: 'tag-1',
-                child: Icon(Icons.person),
+        //@+node:swot.20221029090411.1: *8* show HeroExample
+        ListTile(
+          title: const Text('Hero click'),
+          trailing: const Hero(
+            tag: 'tag-1',
+            child: Icon(Icons.person),
+          ),
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const HeroExample(),
+            ),
+          ),
+        ),
+        //@+node:swot.20221031151733.1: *8* show HeroExample2
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => HeroExample2(),
               ),
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const HeroExample(),
-                ),
+            );
+          },
+          child: ClipRRect(
+            child: Hero(
+              tag: 'tag-2',
+              child: Image.asset(
+                'assets/fengjing.webp',
+                width: 100,
               ),
             ),
-            //@-others
-          ]
-        ),
+          ),
+        )
         //@-others
-      )
+      ]),
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -4651,7 +5044,7 @@ class _DemoHState extends State<DemoH> {
 //@@language dart
 //@@tabwidth -2
 class HeroExample extends StatelessWidget {
-  const HeroExample({ Key? key }) : super(key: key);
+  const HeroExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221029092751.3: *6* build()
   @override
@@ -4697,6 +5090,48 @@ class HeroExample extends StatelessWidget {
   }
   //@-others
 }
+
+//@+node:swot.20221031143139.2: *5* HeroExample2
+//@@language dart
+//@@tabwidth -2
+class HeroExample2 extends StatelessWidget {
+  const HeroExample2({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221031143139.3: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221031143419.2: *7* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221031143419.3: *8* appBar
+      appBar: AppBar(
+        title: Text('HeroExample2'),
+        // leading: Icon(Icons.menu),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221031143419.4: *8* body
+      body:
+      //@+others
+      //@+node:swot.20221031143456.1: *9* Hero
+      Hero(
+        tag: 'tag-2',
+        child: Image.asset('assets/fengjing.webp'),
+      ),
+      //@-others
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
 //@+node:swot.20221029081714.1: *3* I Example
 //@+node:swot.20221029081714.2: *4* I  -- Scaffold
 class I extends StatelessWidget {
@@ -4706,40 +5141,41 @@ class I extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221029081714.3: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo I'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221029081714.3: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo I'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoI(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoI(),
       ),
     );
   }
 }
+
 //@+node:swot.20221029081714.4: *4* DemoI
 //@@language dart
 //@@tabwidth -2
@@ -4756,54 +5192,69 @@ class _DemoIState extends State<DemoI> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221029081714.6: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221029081714.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221029081714.7: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221029081714.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221029081714.8: *8* ElevatedButton -- show InteractiveViewerExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221029081714.8: *8* ElevatedButton -- show InteractiveViewerExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              child: const Text('InteractiveViewerExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => InteractiveViewerExample(),
-                  ),
-                );
-              },
-            ),
-            //@+node:swot.20221029121446.1: *8* show IgnorePointerExample
-            IgnorePointerExample(),
-            //@+node:swot.20221029125017.1: *8* ElevatedButton -- show IndexedStackExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+          child: const Text('InteractiveViewerExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => InteractiveViewerExample(),
               ),
-              child: const Text('IndexedStackExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => IndexedStackExample(),
-                  ),
-                );
-              },
-            ),
-            //@-others
-          ]
+            );
+          },
         ),
+        //@+node:swot.20221101065031.2: *8* ElevatedButton -- show InteractiveViewerExample2
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => InteractiveViewerExample2(),
+              ),
+            );
+          },
+          child: const Text('InteractiveViewerExample2'),
+        ),
+
+        //@+node:swot.20221029121446.1: *8* show IgnorePointerExample
+        IgnorePointerExample(),
+        //@+node:swot.20221029125017.1: *8* ElevatedButton -- show IndexedStackExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          child: const Text('IndexedStackExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => IndexedStackExample(),
+              ),
+            );
+          },
+        ),
+        //@+node:swot.20221101063450.1: *8* show InkwellExample
+        InkwellExample(),
         //@-others
-      )
+      ]),
       //@-others
+    )
+    //@-others
     ;
   }
   //@-others
@@ -4817,21 +5268,12 @@ class InteractiveViewerExample extends StatefulWidget {
   const InteractiveViewerExample({super.key});
 
   @override
-  State<InteractiveViewerExample> createState() => _InteractiveViewerExampleState();
+  State<InteractiveViewerExample> createState() =>
+      _InteractiveViewerExampleState();
 }
 
-class _InteractiveViewerExampleState extends State<InteractiveViewerExample>{
+class _InteractiveViewerExampleState extends State<InteractiveViewerExample> {
   //@+others
-  //@+node:swot.20221029081714.15: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221029081714.16: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
   //@+node:swot.20221029081714.17: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -4856,6 +5298,37 @@ class _InteractiveViewerExampleState extends State<InteractiveViewerExample>{
   //@-others
 }
 
+//@+node:swot.20221101064424.1: *5* InteractiveViewerExample2 -- scale the image
+//@@language dart
+//@@tabwidth -2
+class InteractiveViewerExample2 extends StatefulWidget {
+  const InteractiveViewerExample2({super.key});
+
+  @override
+  State<InteractiveViewerExample2> createState() =>
+      _InteractiveViewerExample2State();
+}
+
+class _InteractiveViewerExample2State extends State<InteractiveViewerExample2> {
+  //@+others
+  //@+node:swot.20221101064424.2: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Scall'),
+      ),
+      body: Center(
+        child: InteractiveViewer(
+          maxScale: 5,
+          child: Image.asset('assets/fengjing.webp'),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+
 //@+node:swot.20221029115307.2: *5* IgnorePointerExample
 //@@language dart
 //@@tabwidth -2
@@ -4866,7 +5339,7 @@ class IgnorePointerExample extends StatefulWidget {
   State<IgnorePointerExample> createState() => _IgnorePointerExampleState();
 }
 
-class _IgnorePointerExampleState extends State<IgnorePointerExample>{
+class _IgnorePointerExampleState extends State<IgnorePointerExample> {
   //@+others
   //@+node:swot.20221029115307.3: *6* varible
   bool ignore = false;
@@ -4875,11 +5348,13 @@ class _IgnorePointerExampleState extends State<IgnorePointerExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221029115307.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221029115307.6: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -4888,28 +5363,30 @@ class _IgnorePointerExampleState extends State<IgnorePointerExample>{
     //@+node:swot.20221029115522.1: *7* Row
     Row(
       children: [
-      //@+others
-      //@+node:swot.20221029115652.2: *8* ElevatedButton
-      ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: ignore ? Colors.red : Colors.green,
+        //@+others
+        //@+node:swot.20221029115652.2: *8* ElevatedButton
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: ignore ? Colors.red : Colors.green,
+          ),
+          onPressed: () {
+            setState(() {
+              ignore = !ignore;
+            });
+          },
+          child: Text(
+            ignore ? 'Blocked IgnorePointer' : 'Can press IgnorePointer',
+          ),
         ),
-        onPressed: () {
-          setState(() { ignore = !ignore; });
-        },
-        child: Text(
-          ignore ? 'Blocked IgnorePointer' : 'Can press IgnorePointer',
+        //@+node:swot.20221029120401.1: *8* IgnorePointer
+        IgnorePointer(
+          ignoring: ignore,
+          child: ElevatedButton(
+            onPressed: () {},
+            child: const Text('IgnorePointer'),
+          ),
         ),
-      ),
-      //@+node:swot.20221029120401.1: *8* IgnorePointer
-      IgnorePointer(
-        ignoring: ignore,
-        child: ElevatedButton(
-          onPressed: () {},
-          child: const Text('IgnorePointer'),
-        ),
-      ),
-      //@-others
+        //@-others
       ],
     )
     //@-others
@@ -4928,7 +5405,7 @@ class IndexedStackExample extends StatefulWidget {
   State<IndexedStackExample> createState() => _IndexedStackExampleState();
 }
 
-class _IndexedStackExampleState extends State<IndexedStackExample>{
+class _IndexedStackExampleState extends State<IndexedStackExample> {
   //@+others
   //@+node:swot.20221029122755.3: *6* varible
   int index = 0;
@@ -4937,11 +5414,13 @@ class _IndexedStackExampleState extends State<IndexedStackExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221029122755.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221029122755.6: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -4971,70 +5450,126 @@ class _IndexedStackExampleState extends State<IndexedStackExample>{
         //@+node:swot.20221029123925.2: *10* Column
         Column(
           children: [
-          //@+others
-          //@+node:swot.20221029124213.2: *11* Row
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
             //@+others
-            //@+node:swot.20221029124242.2: *12* ElevatedButton 0
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                setState(() { index = 0; });
-              },
-              child: const Text('0'),
-            ),
+            //@+node:swot.20221029124213.2: *11* Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                //@+others
+                //@+node:swot.20221029124242.2: *12* ElevatedButton 0
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                      ),
+                  onPressed: () {
+                    setState(() {
+                      index = 0;
+                    });
+                  },
+                  child: const Text('0'),
+                ),
 
-            //@+node:swot.20221029124327.1: *12* ElevatedButton 1
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                setState(() { index = 1; });
-              },
-              child: const Text('1'),
-            ),
+                //@+node:swot.20221029124327.1: *12* ElevatedButton 1
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                      ),
+                  onPressed: () {
+                    setState(() {
+                      index = 1;
+                    });
+                  },
+                  child: const Text('1'),
+                ),
 
-            //@+node:swot.20221029124328.1: *12* ElevatedButton 2
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                setState(() { index = 2; });
-              },
-              child: const Text('2'),
-            ),
+                //@+node:swot.20221029124328.1: *12* ElevatedButton 2
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                      ),
+                  onPressed: () {
+                    setState(() {
+                      index = 2;
+                    });
+                  },
+                  child: const Text('2'),
+                ),
 
+                //@-others
+              ],
+            ),
+            //@+node:swot.20221029124503.1: *11* IndexedStack
+            IndexedStack(
+              index: index,
+              children: [
+                Center(
+                  child: Image.network(
+                      'https://img1.baidu.com/it/u=2346614730,4149113350&fm=253&fmt=auto&app=138&f=JPEG?w=300&h=231'),
+                ),
+                Center(
+                  child: Image.network(
+                      'https://img0.baidu.com/it/u=3654949633,659950172&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=612'),
+                ),
+                Center(
+                  child: Image.network(
+                      'https://img0.baidu.com/it/u=2809418066,998395186&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=622'),
+                ),
+              ],
+            ),
             //@-others
-            ],
-          ),
-          //@+node:swot.20221029124503.1: *11* IndexedStack
-          IndexedStack(
-            index: index,
-            children: [
-              Center(
-                child: Image.network('https://img1.baidu.com/it/u=2346614730,4149113350&fm=253&fmt=auto&app=138&f=JPEG?w=300&h=231'),
-              ),
-              Center(
-                child: Image.network('https://img0.baidu.com/it/u=3654949633,659950172&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=612'),
-              ),
-              Center(
-                child: Image.network('https://img0.baidu.com/it/u=2809418066,998395186&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=622'),
-              ),
-            ],
-          ),
-          //@-others
           ],
         ),
         //@-others
       )
       //@-others
       //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221031231919.2: *5* InkwellExample -- press ALT to scale
+//@@language dart
+//@@tabwidth -2
+class InkwellExample extends StatefulWidget {
+  const InkwellExample({super.key});
+
+  @override
+  State<InkwellExample> createState() => _InkwellExampleState();
+}
+
+class _InkwellExampleState extends State<InkwellExample> {
+  //@+others
+  //@+node:swot.20221031231919.3: *6* varible
+  Color boxColor = Colors.blue;
+  //@+node:swot.20221031231919.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221101062927.1: *7* InkWell
+    InkWell(
+      onTap: () {
+        setState(() { boxColor = Colors.blue; });
+      },
+      onDoubleTap: () {
+        setState(() {
+          boxColor = Colors.red;
+        });
+      },
+      onLongPress: () {
+        setState(() {
+          boxColor = Colors.yellow;
+        });
+      },
+      child: Ink(
+        width: 100.0,
+        height: 100.0,
+        color: boxColor,
+        child: const FlutterLogo(size: 100),
+      ),
     )
     //@-others
     ;
@@ -5051,40 +5586,41 @@ class L extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221023105152.2: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo L'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221023105152.2: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo L'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoL(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoL(),
       ),
     );
   }
 }
+
 //@+node:swot.20221023105258.1: *4* DemoL
 //@@language dart
 //@@tabwidth -2
@@ -5101,65 +5637,62 @@ class _DemoLState extends State<DemoL> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221023105258.3: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221023105258.3: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221023105258.4: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221023105258.4: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221030230436.2: *8* ElevatedButton -- show LayoutBuilderExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221030230436.2: *8* ElevatedButton -- show LayoutBuilderExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => LayoutBuilderExample(),
-                  ),
-                );
-              },
-              child: const Text('LayoutBuilderExample'),
-            ),
-
-            //@+node:swot.20221023122724.2: *8* ElevatedButton -- show LongPressDraggableExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => LayoutBuilderExample(),
               ),
-              child: const Text('LongPressDraggableExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => LongPressDraggableExample(),
-                  ),
-                );
-              },
-            ),
-            //@+node:swot.20221029132948.2: *8* ElevatedButton -- show ListViewExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => ListViewExample()));
-              },
-              child: const Text('ListView'),
-            ),
-
-            //@-others
-          ]
+            );
+          },
+          child: const Text('LayoutBuilderExample'),
         ),
+
+        //@+node:swot.20221023122724.2: *8* ElevatedButton -- show LongPressDraggableExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          child: const Text('LongPressDraggableExample'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => LongPressDraggableExample(),
+              ),
+            );
+          },
+        ),
+        //@+node:swot.20221029132948.2: *8* ElevatedButton -- show ListViewExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
+              ),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ListViewExample()));
+          },
+          child: const Text('ListView'),
+        ),
+
         //@-others
-      );
+      ]),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
@@ -5169,7 +5702,7 @@ class _DemoLState extends State<DemoL> {
 //@@language dart
 //@@tabwidth -2
 class LayoutBuilderExample extends StatelessWidget {
-  const LayoutBuilderExample({ Key? key }) : super(key: key);
+  const LayoutBuilderExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221030225430.3: *6* build()
   @override
@@ -5206,8 +5739,8 @@ class LayoutBuilderExample extends StatelessWidget {
               child: Text('Screen under 600'),
             );
           }
-        }
-      )
+        },
+      ),
       //@-others
       //@-others
     )
@@ -5216,6 +5749,7 @@ class LayoutBuilderExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221023105920.2: *5* LongPressDraggableExample
 //@@language dart
 //@@tabwidth -2
@@ -5223,10 +5757,11 @@ class LongPressDraggableExample extends StatefulWidget {
   const LongPressDraggableExample({super.key});
 
   @override
-  State<LongPressDraggableExample> createState() => _LongPressDraggableExampleState();
+  State<LongPressDraggableExample> createState() =>
+      _LongPressDraggableExampleState();
 }
 
-class _LongPressDraggableExampleState extends State<LongPressDraggableExample>{
+class _LongPressDraggableExampleState extends State<LongPressDraggableExample> {
   //@+others
   //@+node:swot.20221023105947.1: *6* varible
   Offset _offset = const Offset(200, 250);
@@ -5235,11 +5770,13 @@ class _LongPressDraggableExampleState extends State<LongPressDraggableExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221023105920.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221023105920.5: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -5261,42 +5798,41 @@ class _LongPressDraggableExampleState extends State<LongPressDraggableExample>{
       body: Center(
         child: LayoutBuilder(
           builder: (context, constrains) {
-            return Stack(
-              children: [
+            return Stack(children: [
+              //@+others
+              //@+node:swot.20221023110506.1: *9* Positioned
+              Positioned(
+                left: _offset.dx,
+                top: _offset.dy,
+                child:
                 //@+others
-                //@+node:swot.20221023110506.1: *9* Positioned
-                Positioned(
-                  left: _offset.dx,
-                  top: _offset.dy,
-                  child:
-                  //@+others
-                  //@+node:swot.20221023110634.1: *10* LongPressDraggable
-                  LongPressDraggable(
-                    feedback: Image.network(
-                      'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
-                      height: 100,
-                      color: Colors.orangeAccent,
-                      colorBlendMode: BlendMode.colorBurn,
-                    ),
-                    child: Image.network(
-                      'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
-                      height: 100,
-                    ),
-                    onDragEnd: (details) {
-                      setState(() {
-                        double adjustment = MediaQuery.of(context).size.height - constrains.maxHeight;
-                        _offset = Offset(
-                          details.offset.dx,
-                          details.offset.dy - adjustment,
-                        );
-                      });
-                    },
+                //@+node:swot.20221023110634.1: *10* LongPressDraggable
+                LongPressDraggable(
+                  feedback: Image.network(
+                    'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
+                    height: 100,
+                    color: Colors.orangeAccent,
+                    colorBlendMode: BlendMode.colorBurn,
                   ),
-                  //@-others
+                  child: Image.network(
+                    'https://img2.baidu.com/it/u=935142738,1114949296&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200',
+                    height: 100,
+                  ),
+                  onDragEnd: (details) {
+                    setState(() {
+                      double adjustment = MediaQuery.of(context).size.height -
+                          constrains.maxHeight;
+                      _offset = Offset(
+                        details.offset.dx,
+                        details.offset.dy - adjustment,
+                      );
+                    });
+                  },
                 ),
                 //@-others
-              ]
-            );
+              ),
+              //@-others
+            ]);
           },
         ),
       ),
@@ -5312,7 +5848,7 @@ class _LongPressDraggableExampleState extends State<LongPressDraggableExample>{
 //@@language dart
 //@@tabwidth -2
 class ListViewExample extends StatelessWidget {
-  const ListViewExample({ Key? key }) : super(key: key);
+  const ListViewExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221029130827.3: *6* build()
   @override
@@ -5337,9 +5873,7 @@ class ListViewExample extends StatelessWidget {
       //@+others
       //@+node:swot.20221029132335.1: *9* ListView
       ListView.separated(
-        separatorBuilder: (BuildContext context, int index) => const Divider(
-          color: Colors.white,
-        ),
+        separatorBuilder: (BuildContext context, int index) => const Divider(color: Colors.white),
         itemCount: 5,
         itemBuilder: (BuildContext context, int index) {
           return
@@ -5355,7 +5889,7 @@ class ListViewExample extends StatelessWidget {
           //@-others
           ;
         },
-      )
+      ),
       //@-others
       //@-others
     )
@@ -5364,6 +5898,7 @@ class ListViewExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221023080501.1: *3* M Example
 //@+node:swot.20221023080540.1: *4* M  -- Scaffold
 class M extends StatelessWidget {
@@ -5373,40 +5908,41 @@ class M extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221023080540.2: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo M'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221023080540.2: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo M'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoM(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoM(),
       ),
     );
   }
 }
+
 //@+node:swot.20221023081047.1: *4* DemoM
 //@@language dart
 //@@tabwidth -2
@@ -5423,34 +5959,21 @@ class _DemoMState extends State<DemoM> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221023081047.3: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221023081047.3: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221023081047.4: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221023081047.4: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221023081047.5: *8* show MaterialBannerExample
-            MaterialBannerExample(),
-            //@+node:swot.20221023081047.6: *8* Divider
-            Divider(),
-            //@+node:swot.20221023081815.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221023081816.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221023081817.1: *8* Divider
-            Divider(),
-            //@+node:swot.20221023081819.1: *8* Divider
-            Divider(),
-            //@-others
-          ]
-        ),
+        //@+node:swot.20221023081047.5: *8* show MaterialBannerExample
+        MaterialBannerExample(),
         //@-others
-      );
+      ]),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
@@ -5460,7 +5983,7 @@ class _DemoMState extends State<DemoM> {
 //@@language dart
 //@@tabwidth -2
 class MaterialBannerExample extends StatelessWidget {
-  const MaterialBannerExample({ Key? key }) : super(key: key);
+  const MaterialBannerExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221023081535.3: *6* build()
   @override
@@ -5469,25 +5992,23 @@ class MaterialBannerExample extends StatelessWidget {
       child: ElevatedButton(
         child: const Text('Open MaterialBanner'),
         onPressed: () {
-          ScaffoldMessenger.of(context).showMaterialBanner(
-            MaterialBanner(
-              padding: const EdgeInsets.all(20),
-              content: const Text('Subscribe!'),
-              leading: const Icon(Icons.notifications_active_outlined),
-              elevation: 5,
-              backgroundColor: Colors.white12,
-              actions: [
-                Builder(
-                  builder: (context) => TextButton(
-                    onPressed: () {
-                      ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
-                    },
-                    child: const Text('Dismiss'),
-                  ),
+          ScaffoldMessenger.of(context).showMaterialBanner(MaterialBanner(
+            padding: const EdgeInsets.all(20),
+            content: const Text('Subscribe!'),
+            leading: const Icon(Icons.notifications_active_outlined),
+            elevation: 5,
+            backgroundColor: Colors.white12,
+            actions: [
+              Builder(
+                builder: (context) => TextButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
+                  },
+                  child: const Text('Dismiss'),
                 ),
-              ],
-            )
-          );
+              ),
+            ],
+          ));
         },
       ),
     );
@@ -5514,6 +6035,7 @@ class MaterialBannerExample extends StatelessWidget {
   // )
   //@-others
 }
+
 //@+node:swot.20221029134405.1: *3* N Example
 //@+node:swot.20221029134405.2: *4* N  -- Scaffold
 class N extends StatelessWidget {
@@ -5523,40 +6045,41 @@ class N extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221029134405.3: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo N'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221029134405.3: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo N'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoN(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoN(),
       ),
     );
   }
 }
+
 //@+node:swot.20221029134405.4: *4* DemoN
 //@@language dart
 //@@tabwidth -2
@@ -5573,38 +6096,35 @@ class _DemoNState extends State<DemoN> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221029134405.6: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221029134405.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221029134405.7: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221029134405.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221029141845.2: *8* ElevatedButton -- show NavigationBarExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221029141845.2: *8* ElevatedButton -- show NavigationBarExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              onPressed: () {
+          onPressed: () {
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => NavigationBarExample(),
               ),
             );
-              },
-              child: const Text('NavigationBarExample'),
-            ),
-
-            //@-others
-          ]
+          },
+          child: const Text('NavigationBarExample'),
         ),
+
         //@-others
-      );
+      ]),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
@@ -5620,7 +6140,7 @@ class NavigationBarExample extends StatefulWidget {
   State<NavigationBarExample> createState() => _NavigationBarExampleState();
 }
 
-class _NavigationBarExampleState extends State<NavigationBarExample>{
+class _NavigationBarExampleState extends State<NavigationBarExample> {
   //@+others
   //@+node:swot.20221029140231.3: *6* varible
   int currentIndex = 0;
@@ -5635,11 +6155,13 @@ class _NavigationBarExampleState extends State<NavigationBarExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221029140231.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221029140231.6: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -5681,8 +6203,10 @@ class _NavigationBarExampleState extends State<NavigationBarExample>{
         ],
         selectedIndex: currentIndex,
         onDestinationSelected: (int index) {
-          setState(() { currentIndex = index; });
-        }
+          setState(() {
+            currentIndex = index;
+          });
+        },
       ),
       //@-others
     )
@@ -5708,14 +6232,14 @@ class O extends StatelessWidget {
         centerTitle: true,
 
         // leading: IconButton(
-          // icon: const Icon(Icons.menu),
-          // onPressed: (){},
+        // icon: const Icon(Icons.menu),
+        // onPressed: (){},
         // ),
 
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
-            onPressed: (){},
+            onPressed: () {},
           ),
         ],
         // AppBar 的下边变成了圆角
@@ -5727,13 +6251,14 @@ class O extends StatelessWidget {
         ),
 
         backgroundColor: Colors.orangeAccent,
-        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+        elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
       ),
       //@-others
       body: DemoO(),
     );
   }
 }
+
 //@+node:swot.20221030231300.4: *4* DemoO
 //@@language dart
 //@@tabwidth -2
@@ -5750,53 +6275,50 @@ class _DemoOState extends State<DemoO> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221030231300.6: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221030231300.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221030231300.7: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221030231300.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221030232506.2: *8* ElevatedButton -- show OrientationBuilderExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221030232506.2: *8* ElevatedButton -- show OrientationBuilderExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => OrientationBuilderExample(),
-                  ),
-                );
-              },
-              child: const Text('OrientationBuilderExample'),
-            ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => OrientationBuilderExample(),
+              ),
+            );
+          },
+          child: const Text('OrientationBuilderExample'),
+        ),
 
-            //@+node:swot.20221030233533.2: *8* ElevatedButton -- show OverflowBarExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221030233533.2: *8* ElevatedButton -- show OverflowBarExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => OverflowBarExample(),
-                  ),
-                );
-              },
-              child: const Text('OverflowBarExample'),
-            ),
-            //@-others
-          ]
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => OverflowBarExample(),
+              ),
+            );
+          },
+          child: const Text('OverflowBarExample'),
         ),
         //@-others
-      );
+      ]),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
@@ -5806,7 +6328,7 @@ class _DemoOState extends State<DemoO> {
 //@@language dart
 //@@tabwidth -2
 class OrientationBuilderExample extends StatelessWidget {
-  const OrientationBuilderExample({ Key? key }) : super(key: key);
+  const OrientationBuilderExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221030231950.3: *6* build()
   @override
@@ -5851,11 +6373,12 @@ class OrientationBuilderExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221030232847.2: *5* OverflowBarExample -- auto adjust row or column
 //@@language dart
 //@@tabwidth -2
 class OverflowBarExample extends StatelessWidget {
-  const OverflowBarExample({ Key? key }) : super(key: key);
+  const OverflowBarExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221030232847.3: *6* build()
   @override
@@ -5887,57 +6410,57 @@ class OverflowBarExample extends StatelessWidget {
         OverflowBar(
           spacing: 8,
           children: [
-          //@+others
-          //@+node:swot.20221030233258.2: *11* ElevatedButton
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              // backgroundColor: Colors.orangeAccent,
+            //@+others
+            //@+node:swot.20221030233258.2: *11* ElevatedButton
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
+              onPressed: () {},
+              child: const Text('linux'),
             ),
-            onPressed: () {},
-            child: const Text('linux'),
-          ),
 
-          //@+node:swot.20221030233342.2: *11* ElevatedButton
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              // backgroundColor: Colors.orangeAccent,
+            //@+node:swot.20221030233342.2: *11* ElevatedButton
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
+              onPressed: () {},
+              child: const Text('flutter'),
             ),
-            onPressed: () {},
-            child: const Text('flutter'),
-          ),
 
-          //@+node:swot.20221030233342.1: *11* ElevatedButton
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              // backgroundColor: Colors.orangeAccent,
+            //@+node:swot.20221030233342.1: *11* ElevatedButton
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
+              onPressed: () {},
+              child: const Text('javascript'),
             ),
-            onPressed: () {},
-            child: const Text('javascript'),
-          ),
 
-          //@+node:swot.20221030233809.1: *11* ElevatedButton
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              // backgroundColor: Colors.orangeAccent,
+            //@+node:swot.20221030233809.1: *11* ElevatedButton
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
+              onPressed: () {},
+              child: const Text('python'),
             ),
-            onPressed: () {},
-            child: const Text('python'),
-          ),
 
-          //@+node:swot.20221030233843.1: *11* ElevatedButton
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              // backgroundColor: Colors.orangeAccent,
+            //@+node:swot.20221030233843.1: *11* ElevatedButton
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
+              onPressed: () {},
+              child: const Text('dart'),
             ),
-            onPressed: () {},
-            child: const Text('dart'),
-          ),
 
-          //@-others
+            //@-others
           ],
         )
         //@-others
-      )
+        )
 
       //@-others
       //@-others
@@ -5947,6 +6470,7 @@ class OverflowBarExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221023093033.1: *3* P Example
 //@+node:swot.20221023093033.2: *4* P  -- Scaffold
 class P extends StatelessWidget {
@@ -5990,6 +6514,7 @@ class P extends StatelessWidget {
     );
   }
 }
+
 //@+node:swot.20221023093033.4: *4* DemoP
 //@@language dart
 //@@tabwidth -2
@@ -6006,56 +6531,53 @@ class _DemoPState extends State<DemoP> {
   @override
   Widget build(BuildContext context) {
     return
+    //@+others
+    //@+node:swot.20221023093033.6: *6* SingleChildScrollView
+    SingleChildScrollView(
+      child:
       //@+others
-      //@+node:swot.20221023093033.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
+      //@+node:swot.20221023093033.7: *7* Column
+      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
-        //@+node:swot.20221023093033.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221029234843.2: *8* ElevatedButton -- show PageViewExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221029234843.2: *8* ElevatedButton -- show PageViewExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PageViewExample(),
-                  ),
-                );
-              },
-              child: const Text('PageViewExample'),
-            ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => PageViewExample(),
+              ),
+            );
+          },
+          child: const Text('PageViewExample'),
+        ),
 
-            //@+node:swot.20221025191831.1: *8* show PopupMenuButtonExample
-            PopupMenuButtonExample(),
-            Divider(),
-            //@+node:swot.20221030082123.2: *8* ElevatedButton -- show PositionedExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+        //@+node:swot.20221025191831.1: *8* show PopupMenuButtonExample
+        PopupMenuButtonExample(),
+        Divider(),
+        //@+node:swot.20221030082123.2: *8* ElevatedButton -- show PositionedExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              // backgroundColor: Colors.orangeAccent,
               ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PositionedExample(),
-                  ),
-                );
-              },
-              child: const Text('PositionedExample'),
-            ),
-            //@-others
-          ]
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => PositionedExample(),
+              ),
+            );
+          },
+          child: const Text('PositionedExample'),
         ),
         //@-others
-      );
+      ]),
       //@-others
+    );
+    //@-others
   }
   //@-others
 }
@@ -6071,7 +6593,7 @@ class PageViewExample extends StatefulWidget {
   State<PageViewExample> createState() => _PageViewExampleState();
 }
 
-class _PageViewExampleState extends State<PageViewExample>{
+class _PageViewExampleState extends State<PageViewExample> {
   //@+others
   //@+node:swot.20221029234453.6: *6* build()
   @override
@@ -6097,42 +6619,41 @@ class _PageViewExampleState extends State<PageViewExample>{
       //@+node:swot.20221029234534.1: *9* PageView
       PageView(
         children: [
-        //@+others
-        //@+node:swot.20221029234605.1: *10* Container
-        Container(
-          color: Colors.orangeAccent,
-          child: const Center(
-            child: Text(
-              '1',
-              style: TextStyle(fontSize: 100),
+          //@+others
+          //@+node:swot.20221029234605.1: *10* Container
+          Container(
+            color: Colors.orangeAccent,
+            child: const Center(
+              child: Text(
+                '1',
+                style: TextStyle(fontSize: 100),
+              ),
             ),
           ),
-        ),
-        //@+node:swot.20221029234724.1: *10* Container
-        Container(
-          color: Colors.redAccent,
-          child: const Center(
-            child: Text(
-              '2',
-              style: TextStyle(fontSize: 100),
+          //@+node:swot.20221029234724.1: *10* Container
+          Container(
+            color: Colors.redAccent,
+            child: const Center(
+              child: Text(
+                '2',
+                style: TextStyle(fontSize: 100),
+              ),
             ),
           ),
-        ),
-        //@+node:swot.20221029234725.1: *10* Container
-        Container(
-          color: Colors.blueGrey,
-          child: const Center(
-            child: Text(
-              '3',
-              style: TextStyle(fontSize: 100),
+          //@+node:swot.20221029234725.1: *10* Container
+          Container(
+            color: Colors.blueGrey,
+            child: const Center(
+              child: Text(
+                '3',
+                style: TextStyle(fontSize: 100),
+              ),
             ),
           ),
-        ),
-        //@-others
+          //@-others
         ],
-      )
+      ),
       //@-others
-      ,
       //@-others
     )
     //@-others
@@ -6151,7 +6672,7 @@ class PopupMenuButtonExample extends StatefulWidget {
   State<PopupMenuButtonExample> createState() => _PopupMenuButtonExampleState();
 }
 
-class _PopupMenuButtonExampleState extends State<PopupMenuButtonExample>{
+class _PopupMenuButtonExampleState extends State<PopupMenuButtonExample> {
   //@+others
   //@+node:swot.20221025114730.3: *6* varible
   String title = 'PopupMenuButton';
@@ -6162,33 +6683,34 @@ class _PopupMenuButtonExampleState extends State<PopupMenuButtonExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221025114730.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221025114730.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(title),
       trailing: PopupMenuButton(
-        itemBuilder: (context) => [
-          PopupMenuItem(
-            value: item1,
-            child: Text(item1),
-          ),
-          PopupMenuItem(
-            value: item2,
-            child: Text(item2),
-          ),
-        ],
-        onSelected: (String newValue) {
-          setState(() {
-            title = newValue;
-          });
-        }
-      ),
+          itemBuilder: (context) => [
+                PopupMenuItem(
+                  value: item1,
+                  child: Text(item1),
+                ),
+                PopupMenuItem(
+                  value: item2,
+                  child: Text(item2),
+                ),
+              ],
+          onSelected: (String newValue) {
+            setState(() {
+              title = newValue;
+            });
+          }),
     );
   }
   //@-others
@@ -6198,7 +6720,7 @@ class _PopupMenuButtonExampleState extends State<PopupMenuButtonExample>{
 //@@language dart
 //@@tabwidth -2
 class PositionedExample extends StatelessWidget {
-  const PositionedExample({ Key? key }) : super(key: key);
+  const PositionedExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221029235922.3: *6* build()
   @override
@@ -6228,41 +6750,40 @@ class PositionedExample extends StatelessWidget {
         //@+node:swot.20221030081235.1: *10* Stack
         Stack(
           children: [
-          //@+others
-          //@+node:swot.20221030081313.1: *11* Positioned
-          Positioned(
-            left: 20,
-            top: 20,
-            child: Image.network(
-              'https://img0.baidu.com/it/u=3216067279,1683207701&fm=253&fmt=auto&app=138&f=JPEG?w=250&h=238',
-              width: 250,
+            //@+others
+            //@+node:swot.20221030081313.1: *11* Positioned
+            Positioned(
+              left: 20,
+              top: 20,
+              child: Image.network(
+                'https://img0.baidu.com/it/u=3216067279,1683207701&fm=253&fmt=auto&app=138&f=JPEG?w=250&h=238',
+                width: 250,
+              ),
             ),
-          ),
-          //@+node:swot.20221030081540.1: *11* Positioned
-          Positioned(
-            left: 60,
-            top: 120,
-            child: Image.network(
-              'https://img2.baidu.com/it/u=3325552638,2237228879&fm=253&fmt=auto&app=138&f=JPEG?w=260&h=298',
-              width: 250,
+            //@+node:swot.20221030081540.1: *11* Positioned
+            Positioned(
+              left: 60,
+              top: 120,
+              child: Image.network(
+                'https://img2.baidu.com/it/u=3325552638,2237228879&fm=253&fmt=auto&app=138&f=JPEG?w=260&h=298',
+                width: 250,
+              ),
             ),
-          ),
-          //@+node:swot.20221030081542.1: *11* Positioned
-          Positioned(
-            left: 100,
-            top: 220,
-            child: Image.network(
-              'https://img1.baidu.com/it/u=3146473707,3528165124&fm=253&fmt=auto&app=138&f=JPEG?w=307&h=298',
-              width: 250,
+            //@+node:swot.20221030081542.1: *11* Positioned
+            Positioned(
+              left: 100,
+              top: 220,
+              child: Image.network(
+                'https://img1.baidu.com/it/u=3146473707,3528165124&fm=253&fmt=auto&app=138&f=JPEG?w=307&h=298',
+                width: 250,
+              ),
             ),
-          ),
-          //@-others
+            //@-others
           ],
         ),
         //@-others
-      )
+      ),
       //@-others
-      ,
       //@-others
     )
     //@-others
@@ -6270,6 +6791,7 @@ class PositionedExample extends StatelessWidget {
   }
   //@-others
 }
+
 //@+node:swot.20221023152107.1: *3* R Example
 //@+node:swot.20221023152107.2: *4* R  -- Scaffold
 class R extends StatelessWidget {
@@ -6285,14 +6807,14 @@ class R extends StatelessWidget {
         centerTitle: true,
 
         // leading: IconButton(
-          // icon: const Icon(Icons.menu),
-          // onPressed: (){},
+        // icon: const Icon(Icons.menu),
+        // onPressed: (){},
         // ),
 
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
-            onPressed: (){},
+            onPressed: () {},
           ),
         ],
         // AppBar 的下边变成了圆角
@@ -6304,13 +6826,14 @@ class R extends StatelessWidget {
         ),
 
         backgroundColor: Colors.orangeAccent,
-        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+        elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
       ),
       //@-others
       body: DemoR(),
     );
   }
 }
+
 //@+node:swot.20221023152107.4: *4* DemoR
 //@@language dart
 //@@tabwidth -2
@@ -6327,21 +6850,19 @@ class _DemoRState extends State<DemoR> {
   @override
   Widget build(BuildContext context) {
     return
-      //@+others
-      //@+node:swot.20221023152107.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
         //@+others
-        //@+node:swot.20221023152107.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+        //@+node:swot.20221023152107.6: *6* SingleChildScrollView
+        SingleChildScrollView(
+          child:
+          //@+others
+          //@+node:swot.20221023152107.7: *7* Column
+          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             //@+others
             //@+node:swot.20221023154547.2: *8* ElevatedButton -- show ReorderableListViewExample
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
               child: const Text('ReorderableListView'),
               onPressed: () {
                 Navigator.push(
@@ -6357,27 +6878,28 @@ class _DemoRState extends State<DemoR> {
             //@+node:swot.20221030181409.2: *8* ElevatedButton -- show RefreshIndicatorExample
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
               onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => RefreshIndicatorExample(),
-              ),
-            );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => RefreshIndicatorExample(),
+                  ),
+                );
               },
               child: const Text('RefreshIndicatorExample'),
             ),
 
             //@+node:swot.20221030205503.1: *8* show RotatedBoxExample
             RotatedBoxExample(),
+            //@+node:swot.20221031182942.1: *8* show RangeSliderExample
+            RangeSliderExample(),
             //@-others
-          ]
-        ),
+          ]),
+          //@-others
+        );
         //@-others
-      );
-      //@-others
   }
   //@-others
 }
@@ -6385,6 +6907,7 @@ class _DemoRState extends State<DemoR> {
 //@+node:swot.20221023152107.13: *4* ExampleR
 //@+node:swot.20221030084432.1: *5* radioListTileOptions
 List<String> radioListTileOptions = ['Option 1', 'Option 2'];
+
 //@+node:swot.20221030083241.2: *5* RadioListTileExample
 //@@language dart
 //@@tabwidth -2
@@ -6395,7 +6918,7 @@ class RadioListTileExample extends StatefulWidget {
   State<RadioListTileExample> createState() => _RadioListTileExampleState();
 }
 
-class _RadioListTileExampleState extends State<RadioListTileExample>{
+class _RadioListTileExampleState extends State<RadioListTileExample> {
   //@+others
   //@+node:swot.20221030083241.3: *6* varible
   String currentOption = radioListTileOptions[0];
@@ -6404,49 +6927,108 @@ class _RadioListTileExampleState extends State<RadioListTileExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221030083241.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221030083241.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221030083721.2: *7* Column
-    Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-      //@+others
-      //@+node:swot.20221030083736.1: *8* RadioListTile
-      RadioListTile(
-        title: const Text('Option 1'),
-        value: radioListTileOptions[0],
-        groupValue: currentOption,
-        onChanged: (value) {
-          setState(() {
-            currentOption = value.toString();
-          });
-        },
-      ),
-      //@+node:swot.20221030084017.1: *8* RadioListTile
-      RadioListTile(
-        title: const Text('Option 2'),
-        value: radioListTileOptions[1],
-        groupValue: currentOption,
-        onChanged: (value) {
-          setState(() {
-            currentOption = value.toString();
-          });
-        },
-      ),
-      //@-others
-      ],
-    )
+        //@+others
+        //@+node:swot.20221030083721.2: *7* Column
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            //@+others
+            //@+node:swot.20221030083736.1: *8* RadioListTile
+            RadioListTile(
+              title: const Text('Option 1'),
+              value: radioListTileOptions[0],
+              groupValue: currentOption,
+              onChanged: (value) {
+                setState(() {
+                  currentOption = value.toString();
+                });
+              },
+            ),
+            //@+node:swot.20221030084017.1: *8* RadioListTile
+            RadioListTile(
+              title: const Text('Option 2'),
+              value: radioListTileOptions[1],
+              groupValue: currentOption,
+              onChanged: (value) {
+                setState(() {
+                  currentOption = value.toString();
+                });
+              },
+            ),
+            //@-others
+          ],
+        )
 
+        //@-others
+        ;
+  }
+  //@-others
+}
+
+//@+node:swot.20221031182202.2: *5* RangeSliderExample
+//@@language dart
+//@@tabwidth -2
+class RangeSliderExample extends StatefulWidget {
+  const RangeSliderExample({super.key});
+
+  @override
+  State<RangeSliderExample> createState() => _RangeSliderExampleState();
+}
+
+class _RangeSliderExampleState extends State<RangeSliderExample> {
+  //@+others
+  //@+node:swot.20221031182202.3: *6* varible
+  RangeValues values = const RangeValues(0.1, 0.5);
+  //@+node:swot.20221031182202.4: *6* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  //@+node:swot.20221031182202.5: *6* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  //@+node:swot.20221031182202.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221031182439.1: *7* varible
+    RangeLabels labels = RangeLabels(
+      values.start.toString(),
+      values.end.toString(),
+    );
+    //@+node:swot.20221031182617.2: *7* Center
+    return Center(
+      child:
+          //@+others
+          //@+node:swot.20221031182643.1: *8* RangeSlider
+          RangeSlider(
+            values: values,
+            divisions: 8,
+            labels: labels,
+            onChanged: (newValues) {
+              setState(() {
+                values = newValues;
+              });
+            },
+          ),
+          //@-others
+    );
     //@-others
-    ;
   }
   //@-others
 }
@@ -6458,10 +7040,11 @@ class RefreshIndicatorExample extends StatefulWidget {
   const RefreshIndicatorExample({super.key});
 
   @override
-  State<RefreshIndicatorExample> createState() => _RefreshIndicatorExampleState();
+  State<RefreshIndicatorExample> createState() =>
+      _RefreshIndicatorExampleState();
 }
 
-class _RefreshIndicatorExampleState extends State<RefreshIndicatorExample>{
+class _RefreshIndicatorExampleState extends State<RefreshIndicatorExample> {
   //@+others
   //@+node:swot.20221030172700.3: *6* varible
   List<String> items = [
@@ -6473,64 +7056,64 @@ class _RefreshIndicatorExampleState extends State<RefreshIndicatorExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221030172700.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221030172700.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221030182420.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221030182420.3: *8* appBar
-      appBar: AppBar(
-        title: Text('RefreshIndicatorExample'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221030182420.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221030173047.1: *9* RefreshIndicator
-      RefreshIndicator(
-        color: Colors.white,
-        backgroundColor: Colors.orangeAccent,
-
-        onRefresh: () async {
-          await Future.delayed(const Duration(seconds: 1));
-          int nextItem = items.length + 1;
-          setState(() {
-            items.add("Item $nextItem");
-          });
-        },
-
-        child: ListView.builder(
-          padding: const EdgeInsets.all(5),
-          itemCount: items.length,
-          itemBuilder: (
-            (context, index) => Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ListTile(
-                title: Text(items[index]),
-                tileColor: Colors.white24,
-              ),
-            )
+        //@+others
+        //@+node:swot.20221030182420.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221030182420.3: *8* appBar
+          appBar: AppBar(
+            title: Text('RefreshIndicatorExample'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
           ),
-        ),
-      ),
-      //@-others
-      //@-others
-    )
-    //@-others
-    ;
+          //@+node:swot.20221030182420.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221030173047.1: *9* RefreshIndicator
+              RefreshIndicator(
+                color: Colors.white,
+                backgroundColor: Colors.orangeAccent,
+                onRefresh: () async {
+                  await Future.delayed(const Duration(seconds: 1));
+                  int nextItem = items.length + 1;
+                  setState(() {
+                    items.add("Item $nextItem");
+                  });
+                },
+                child: ListView.builder(
+                  padding: const EdgeInsets.all(5),
+                  itemCount: items.length,
+                  itemBuilder: ((context, index) =>
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: ListTile(
+                        title: Text(items[index]),
+                        tileColor: Colors.white24,
+                      ),
+                    )
+                  ),
+                ),
+              ),
+              //@-others
+          //@-others
+        )
+        //@-others
+        ;
   }
   //@-others
 }
@@ -6542,10 +7125,12 @@ class ReorderableListViewExample extends StatefulWidget {
   const ReorderableListViewExample({super.key});
 
   @override
-  State<ReorderableListViewExample> createState() => _ReorderableListViewExampleState();
+  State<ReorderableListViewExample> createState() =>
+      _ReorderableListViewExampleState();
 }
 
-class _ReorderableListViewExampleState extends State<ReorderableListViewExample>{
+class _ReorderableListViewExampleState
+    extends State<ReorderableListViewExample> {
   //@+others
   //@+node:swot.20221023152933.1: *6* varible
   final List<int> items = List<int>.generate(30, (int index) => index);
@@ -6554,58 +7139,60 @@ class _ReorderableListViewExampleState extends State<ReorderableListViewExample>
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221023152801.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221023152801.5: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221023154334.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221023154334.3: *8* appBar
-      appBar: AppBar(
-        title: Text('ReorderableListView'),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221023154334.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221023153058.1: *9* ReorderableListView
-      ReorderableListView(
-        children: List.generate(
-          items.length,
-          (index) => ListTile(
-            key: Key('$index'),
-            // tileColor: items[index].isOdd ? Colors.white12 : Colors.white30,
-            tileColor: items[index].isOdd ? Colors.grey : Colors.white30,
-            title: Text('Item ${items[index]}'),
-            trailing: const Icon(Icons.drag_handle_sharp),
+        //@+others
+        //@+node:swot.20221023154334.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221023154334.3: *8* appBar
+          appBar: AppBar(
+            title: Text('ReorderableListView'),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
           ),
-        ),
-        onReorder: (int oldIndex, int newIndex) {
-          setState(() {
-            if (oldIndex < newIndex) {
-              newIndex -= 1;
-            }
-            final int item = items.removeAt(oldIndex);
-            items.insert(newIndex, item);
-          });
-        },
-      ),
-      //@-others
-      //@-others
-    );
+          //@+node:swot.20221023154334.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221023153058.1: *9* ReorderableListView
+              ReorderableListView(
+                children: List.generate(
+                  items.length,
+                  (index) => ListTile(
+                    key: Key('$index'),
+                    // tileColor: items[index].isOdd ? Colors.white12 : Colors.white30,
+                    tileColor: items[index].isOdd ? Colors.grey : Colors.white30,
+                    title: Text('Item ${items[index]}'),
+                    trailing: const Icon(Icons.drag_handle_sharp),
+                  ),
+                ),
+                onReorder: (int oldIndex, int newIndex) {
+                  setState(() {
+                    if (oldIndex < newIndex) {
+                      newIndex -= 1;
+                    }
+                    final int item = items.removeAt(oldIndex);
+                    items.insert(newIndex, item);
+                  });
+                },
+              ),
+              //@-others
+          //@-others
+        );
 
-    //@-others
+        //@-others
   }
   //@-others
 }
@@ -6614,25 +7201,26 @@ class _ReorderableListViewExampleState extends State<ReorderableListViewExample>
 //@@language dart
 //@@tabwidth -2
 class RotatedBoxExample extends StatelessWidget {
-  const RotatedBoxExample({ Key? key }) : super(key: key);
+  const RotatedBoxExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221030205049.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221030205124.1: *7* RotatedBox
-    const RotatedBox(
-      // change this
-      quarterTurns: 1,
-      // quarterTurns: 2,
-      child: FlutterLogo(size: 60),
-    )
-    //@-others
-    ;
+        //@+others
+        //@+node:swot.20221030205124.1: *7* RotatedBox
+        const RotatedBox(
+          // change this
+          quarterTurns: 1,
+          // quarterTurns: 2,
+          child: FlutterLogo(size: 60),
+        )
+        //@-others
+        ;
   }
   //@-others
 }
+
 //@+node:swot.20221024070848.1: *3* S Example
 //@+node:swot.20221024070848.2: *4* S  -- Scaffold
 class S extends StatelessWidget {
@@ -6642,40 +7230,41 @@ class S extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          //@+others
-          //@+node:swot.20221024070848.3: *5* AppBar
-          appBar: AppBar(
-            title: const Text('Demo S'),
-            centerTitle: true,
+        //@+others
+        //@+node:swot.20221024070848.3: *5* AppBar
+        appBar: AppBar(
+          title: const Text('Demo S'),
+          centerTitle: true,
 
-            // leading: IconButton(
-              // icon: const Icon(Icons.menu),
-              // onPressed: (){},
-            // ),
+          // leading: IconButton(
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
+          // ),
 
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: (){},
-              ),
-            ],
-            // AppBar 的下边变成了圆角
-            shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25),
-              ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.notifications),
+              onPressed: () {},
             ),
-
-            backgroundColor: Colors.orangeAccent,
-            elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+          ],
+          // AppBar 的下边变成了圆角
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
           ),
-          //@-others
-          body: DemoS(),
+
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        ),
+        //@-others
+        body: DemoS(),
       ),
     );
   }
 }
+
 //@+node:swot.20221024070848.4: *4* DemoS
 //@@language dart
 //@@tabwidth -2
@@ -6692,104 +7281,150 @@ class _DemoSState extends State<DemoS> {
   @override
   Widget build(BuildContext context) {
     return
-      //@+others
-      //@+node:swot.20221024070848.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
         //@+others
-        //@+node:swot.20221024070848.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221024100552.1: *8* show DatePickerExample
-            DatePickerExample(),
-            Divider(),
-            //@+node:swot.20221024103554.1: *8* show TimePickerExample
-            TimePickerExample(),
-            Divider(),
-            //@+node:swot.20221024110745.1: *8* show DateRangePickerExample
-            DateRangePickerExample(),
-            Divider(),
-            //@+node:swot.20221029143324.2: *8* ElevatedButton -- show StackExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => StackExample(),
+        //@+node:swot.20221024070848.6: *6* SingleChildScrollView
+        SingleChildScrollView(
+          child:
+              //@+others
+              //@+node:swot.20221024070848.7: *7* Column
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  //@+others
+                  //@+node:swot.20221024100552.1: *8* show DatePickerExample
+                  DatePickerExample(),
+                  Divider(),
+                  //@+node:swot.20221024103554.1: *8* show TimePickerExample
+                  TimePickerExample(),
+                  Divider(),
+                  //@+node:swot.20221024110745.1: *8* show DateRangePickerExample
+                  DateRangePickerExample(),
+                  Divider(),
+                  //@+node:swot.20221029143324.2: *8* ElevatedButton -- show StackExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => StackExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('StackExample'),
                   ),
-                );
-              },
-              child: const Text('StackExample'),
-            ),
 
-            //@+node:swot.20221029190037.1: *8* ElevatedButton -- show StepperExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => StepperExample(),
+                  //@+node:swot.20221029190037.1: *8* ElevatedButton -- show StepperExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => StepperExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('StepperExample'),
                   ),
-                );
-              },
-              child: const Text('StepperExample'),
-            ),
 
-            //@+node:swot.20221029213808.1: *8* ElevatedButton -- show StreamBuilderExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => StreamBuilderExample(),
+                  //@+node:swot.20221029213808.1: *8* ElevatedButton -- show StreamBuilderExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => StreamBuilderExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('StreamBuilderExample'),
                   ),
-                );
-              },
-              child: const Text('StreamBuilderExample'),
-            ),
-            //@+node:swot.20221029215656.1: *8* show SwitchExample
-            SwitchExample(),
-            //@+node:swot.20221030210255.1: *8* show SelectableTextExample
-            SelectableTextExample(),
-            //@+node:swot.20221030211748.1: *8* show SliderExample
-            SliderExample(),
-            //@+node:swot.20221030212913.1: *8* show SnackBarExample
-            SnackBarExample(),
-            //@+node:swot.20221030225013.2: *8* ElevatedButton -- show SafeAreaExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => SafeAreaExample(),
+                  //@+node:swot.20221029215656.1: *8* show SwitchExample
+                  SwitchExample(),
+                  //@+node:swot.20221030210255.1: *8* show SelectableTextExample
+                  SelectableTextExample(),
+                  //@+node:swot.20221030211748.1: *8* show SliderExample
+                  SliderExample(),
+                  //@+node:swot.20221030212913.1: *8* show SnackBarExample
+                  SnackBarExample(),
+                  //@+node:swot.20221030225013.2: *8* ElevatedButton -- show SafeAreaExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SafeAreaExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('SafeAreaExample'),
                   ),
-                );
-              },
-              child: const Text('SafeAreaExample'),
-            ),
 
-            //@-others
-          ]
-        ),
+                  //@+node:swot.20221031122837.2: *8* ElevatedButton -- show SearchDelegateExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SearchDelegateExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('CustomSearchDelegate'),
+                  ),
+                  //@+node:swot.20221031172540.2: *8* ElevatedButton -- show SliveAppBarExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SliveAppBarExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('SliveAppBarExample'),
+                  ),
+                  //@+node:swot.20221031225347.2: *8* ElevatedButton -- show SpreadOperatorExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SpreadOperatorExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('SpreadOperatorExample'),
+                  ),
 
+                  //@-others
+                ],
+              ),
+
+              //@-others
+        )
         //@-others
-      )
-      //@-others
-    ;
+        ;
   }
   //@-others
 }
@@ -6799,29 +7434,154 @@ class _DemoSState extends State<DemoS> {
 //@@language dart
 //@@tabwidth -2
 class SafeAreaExample extends StatelessWidget {
-  const SafeAreaExample({ Key? key }) : super(key: key);
+  const SafeAreaExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221030224821.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221030225147.1: *7* SafeArea
-    SafeArea(
-      child:
-      //@+others
-      //@+node:swot.20221030224837.1: *8* Text
-      Text(
-        'Swotpp App',
-        style: TextStyle(fontSize: 30),
-      )
-      //@-others
-    )
-    //@-others
-    ;
+        //@+others
+        //@+node:swot.20221030225147.1: *7* SafeArea
+        SafeArea(
+        child:
+            //@+others
+            //@+node:swot.20221030224837.1: *8* Text
+            Text(
+              'Swotpp App',
+              style: TextStyle(fontSize: 30),
+            )
+            //@-others
+        );
+        //@-others
   }
   //@-others
 }
+
+//@+node:swot.20221031115636.1: *5* CustomSearchDelegate
+class CustomSearchDelegate extends SearchDelegate {
+  List<String> searchTerms = [
+    'Apple',
+    'Banana',
+    'Pear',
+    'Watermelons',
+    'Oranges',
+    'Blueberries',
+    'Strawberries',
+    'Raspberries',
+  ];
+
+  @override
+  List<Widget>? buildActions(BuildContext context) {
+    return [
+      IconButton(
+        onPressed: () {
+          query = '';
+        },
+        icon: const Icon(Icons.clear),
+      )
+    ];
+  }
+
+  @override
+  Widget? buildLeading(BuildContext context) {
+    return IconButton(
+      onPressed: () {
+        close(context, null);
+      },
+      icon: const Icon(Icons.arrow_back),
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var fruit in searchTerms) {
+      if (fruit.toLowerCase().contains(query.toLowerCase())) {
+        matchQuery.add(fruit);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var fruit in searchTerms) {
+      if (fruit.toLowerCase().contains(query.toLowerCase())) {
+        matchQuery.add(fruit);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+}
+
+//@+node:swot.20221031114947.2: *5* SearchDelegateExample
+//@@language dart
+//@@tabwidth -2
+class SearchDelegateExample extends StatefulWidget {
+  const SearchDelegateExample({super.key});
+
+  @override
+  State<SearchDelegateExample> createState() => _SearchDelegateExampleState();
+}
+
+class _SearchDelegateExampleState extends State<SearchDelegateExample> {
+  //@+others
+  //@+node:swot.20221031114947.3: *6* varible
+  //@+node:swot.20221031114947.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221031115107.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221031115107.3: *8* appBar
+          appBar: AppBar(
+            title: Text('SearchDelegateExample'),
+            elevation: 0.0,
+            centerTitle: true,
+            actions: [
+              //@+others
+              //@+node:swot.20221031115310.2: *9* IconButton !!!
+              IconButton(
+                icon: Icon(Icons.search),
+                onPressed: () {
+                  showSearch(
+                    // call search
+                    context: context,
+                    delegate: CustomSearchDelegate(),
+                  );
+                },
+              ),
+              //@-others
+            ],
+          ),
+          //@+node:swot.20221031115107.4: *8* body
+          body: null,
+          //@-others
+        );
+        //@-others
+  }
+  //@-others
+}
+
 //@+node:swot.20221030210033.2: *5* SelectableTextExample
 //@@language dart
 //@@tabwidth -2
@@ -6832,97 +7592,62 @@ class SelectableTextExample extends StatefulWidget {
   State<SelectableTextExample> createState() => _SelectableTextExampleState();
 }
 
-class _SelectableTextExampleState extends State<SelectableTextExample>{
+class _SelectableTextExampleState extends State<SelectableTextExample> {
   //@+others
+  //@+node:swot.20221101072329.1: *6* varible
+  String selectedText = '';
+
+  final String _selectableText = 'This is a selectable text';
+
+  final TextStyle _styleBlue = const TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.bold,
+    color: Colors.blue,
+  );
+
+  final TextStyle _style = const TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.bold,
+  );
   //@+node:swot.20221030210033.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221030210100.1: *7* SelectableText
-    SelectableText(
-      'This is selectable',
-      style: const TextStyle(fontSize: 30),
-      onSelectionChanged: (selection, cause) {},
-    )
-    //@-others
-    ;
-  }
-  //@-others
-}
-
-//@+node:swot.20221030210547.2: *5* SliderExample
-//@@language dart
-//@@tabwidth -2
-class SliderExample extends StatefulWidget {
-  const SliderExample({super.key});
-
-  @override
-  State<SliderExample> createState() => _SliderExampleState();
-}
-
-class _SliderExampleState extends State<SliderExample>{
-  //@+others
-  //@+node:swot.20221030210547.3: *6* varible
-  double _currentSliderValue = 20;
-  //@+node:swot.20221030210547.6: *6* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221030211118.1: *7* Slider
-    Slider(
-      value: _currentSliderValue,
-      max: 100,
-      divisions: 5,
-      label: _currentSliderValue.round().toString(),
-      onChanged: (double value) {
-        setState(() {
-          _currentSliderValue = value;
-        });
-      },
-    )
-    //@-others
-    ;
-  }
-  //@-others
-}
-
-//@+node:swot.20221030212509.2: *5* SnackBarExample
-//@@language dart
-//@@tabwidth -2
-class SnackBarExample extends StatelessWidget {
-  const SnackBarExample({ Key? key }) : super(key: key);
-  //@+others
-  //@+node:swot.20221030212509.3: *6* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221030212550.2: *7* ElevatedButton
-    ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        // backgroundColor: Colors.orangeAccent,
-      ),
-      onPressed: () {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: const Text('Flutter App'),
-            action: SnackBarAction(
-              label: 'Undo',
-              onPressed: (){},
+        //@+others
+        //@+node:swot.20221101072843.2: *7* Column
+        Column(
+          children: [
+            //@+others
+            //@+node:swot.20221030210100.1: *8* SelectableText
+            Text(
+              selectedText,
+              style: _styleBlue,
             ),
-          ),
+            TextSelectionTheme(
+              data: const TextSelectionThemeData(
+                selectionColor: Colors.yellow,
+              ),
+              child: SelectableText(
+                _selectableText,
+                style: _style,
+                onSelectionChanged: (selection, cause) {
+                  setState(() {
+                    selectedText = _selectableText.substring(
+                      selection.start,
+                      selection.end,
+                    );
+                  });
+                },
+              ),
+            ),
+            //@-others
+          ],
         );
-      },
-      child: const Text('Show SnackBar'),
-    )
-
-    //@-others
-    ;
+        //@-others
   }
   //@-others
 }
+
 //@+node:swot.20221024095344.2: *5* DatePickerExample
 //@@language dart
 //@@tabwidth -2
@@ -6933,27 +7658,30 @@ class DatePickerExample extends StatefulWidget {
   State<DatePickerExample> createState() => _DatePickerExampleState();
 }
 
-class _DatePickerExampleState extends State<DatePickerExample>{
+class _DatePickerExampleState extends State<DatePickerExample> {
   //@+others
   //@+node:swot.20221024095406.1: *6* varible
   DateTime selectedDate = DateTime.now();
+  // DateTime selectedDate = DateTime(2100);
   //@+node:swot.20221024095344.3: *6* initState()
   @override
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221024095344.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221024095344.5: *6* build()
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
-        children:[
+        children: [
           ElevatedButton(
             child: const Text('Choose Date'),
             onPressed: () async {
@@ -6971,7 +7699,8 @@ class _DatePickerExampleState extends State<DatePickerExample>{
             },
           ),
           SizedBox(width: 10),
-          Text("${selectedDate.year}-${selectedDate.month}-${selectedDate.day}"),
+          Text(
+              "${selectedDate.year}-${selectedDate.month}-${selectedDate.day}"),
         ],
       ),
     );
@@ -6989,27 +7718,30 @@ class TimePickerExample extends StatefulWidget {
   State<TimePickerExample> createState() => _TimePickerExampleState();
 }
 
-class _TimePickerExampleState extends State<TimePickerExample>{
+class _TimePickerExampleState extends State<TimePickerExample> {
   //@+others
   //@+node:swot.20221024103850.1: *6* varible
   TimeOfDay selectedTime = TimeOfDay.now();
+  // TimeOfDay? time = const TimeOfDay(hour: 12, minute: 12);
   //@+node:swot.20221024103523.3: *6* initState()
   @override
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221024103523.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221024103957.1: *6* build()
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
-        children:[
+        children: [
           ElevatedButton(
             child: const Text('Choose Time'),
             onPressed: () async {
@@ -7044,7 +7776,7 @@ class DateRangePickerExample extends StatefulWidget {
   State<DateRangePickerExample> createState() => _DateRangePickerExampleState();
 }
 
-class _DateRangePickerExampleState extends State<DateRangePickerExample>{
+class _DateRangePickerExampleState extends State<DateRangePickerExample> {
   //@+others
   //@+node:swot.20221024110048.1: *6* varible
   DateTimeRange selectedDates = DateTimeRange(
@@ -7056,18 +7788,20 @@ class _DateRangePickerExampleState extends State<DateRangePickerExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221024110030.4: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221024110030.5: *6* build()
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
-        children:[
+        children: [
           ElevatedButton(
             child: const Text('Choose Dates'),
             onPressed: () async {
@@ -7092,65 +7826,250 @@ class _DateRangePickerExampleState extends State<DateRangePickerExample>{
   //@-others
 }
 
+//@+node:swot.20221030210547.2: *5* SliderExample
+//@@language dart
+//@@tabwidth -2
+class SliderExample extends StatefulWidget {
+  const SliderExample({super.key});
+
+  @override
+  State<SliderExample> createState() => _SliderExampleState();
+}
+
+class _SliderExampleState extends State<SliderExample> {
+  //@+others
+  //@+node:swot.20221030210547.3: *6* varible
+  double _currentSliderValue = 20;
+  //@+node:swot.20221030210547.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221030211118.1: *7* Slider
+        Slider(
+          value: _currentSliderValue,
+          max: 100,
+          divisions: 5,
+          label: _currentSliderValue.round().toString(),
+          onChanged: (double value) {
+            setState(() {
+              _currentSliderValue = value;
+            });
+          },
+        );
+        //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221031171010.2: *5* SliveAppBarExample
+//@@language dart
+//@@tabwidth -2
+class SliveAppBarExample extends StatefulWidget {
+  const SliveAppBarExample({super.key});
+
+  @override
+  State<SliveAppBarExample> createState() => _SliveAppBarExampleState();
+}
+
+class _SliveAppBarExampleState extends State<SliveAppBarExample> {
+  //@+others
+  //@+node:swot.20221031171010.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221031171922.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221031171922.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221031172002.1: *9* CustomScrollView
+              CustomScrollView(
+                slivers: [
+                  const SliverAppBar(
+                    title: Text('Flutter'),
+                    centerTitle: false,
+                    // pinned: true,
+                    floating: true,
+                    // snap: true,
+                    expandedHeight: 150.0,
+                    flexibleSpace: FlexibleSpaceBar(
+                      title: Text('Swot'),
+                      centerTitle: true,
+                    ),
+                  ),
+                  SliverList(
+                    delegate: SliverChildListDelegate([
+                      const Text(
+                        'SLIVER',
+                        style: TextStyle(fontSize: 600),
+                      ),
+                    ]),
+                  ),
+                ],
+              ),
+              //@-others
+          //@-others
+        );
+        //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221030212509.2: *5* SnackBarExample
+//@@language dart
+//@@tabwidth -2
+class SnackBarExample extends StatelessWidget {
+  const SnackBarExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221030212509.3: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221030212550.2: *7* ElevatedButton
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            // backgroundColor: Colors.orangeAccent,
+          ),
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text('Flutter App'),
+                action: SnackBarAction(
+                  label: 'Undo',
+                  onPressed: () {},
+                ),
+              ),
+            );
+          },
+          child: const Text('Show SnackBar'),
+        );
+
+        //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221031222131.2: *5* SpreadOperatorExample
+//@@language dart
+//@@tabwidth -2
+class SpreadOperatorExample extends StatelessWidget {
+  const SpreadOperatorExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221031222131.3: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221031222154.1: *7* varible
+    List<Widget> imagesList = [
+      Image.asset(
+        'assets/fengjing.webp',
+        height: 50,
+      ),
+      Image.asset(
+        'assets/fengjing.webp',
+        height: 50,
+      ),
+      Image.asset(
+        'assets/fengjing.webp',
+        height: 50,
+      ),
+    ];
+    //@+node:swot.20221031225000.2: *7* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221031225000.3: *8* appBar
+      appBar: AppBar(
+        title: Text('SpreadOperator'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221031225000.4: *8* body
+      body:
+          //@+others
+          //@+node:swot.20221031225029.2: *9* Column
+          Column(
+            children: [
+              Image.asset('assets/avatar.webp'),
+              SizedBox(height: 20.0),
+              Column(children: imagesList),
+              SizedBox(height: 20.0),
+              ...imagesList, // same result with above Column
+            ],
+          ),
+          //@-others
+      //@-others
+    );
+    //@-others
+  }
+  //@-others
+}
+
 //@+node:swot.20221029142534.2: *5* StackExample
 //@@language dart
 //@@tabwidth -2
 class StackExample extends StatelessWidget {
-  const StackExample({ Key? key }) : super(key: key);
+  const StackExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221029142534.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221029142715.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221029142715.3: *8* appBar
-      appBar: AppBar(
-        title: Text('Stack'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221029142715.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221029142815.2: *9* Center
-      Center(
-        child:
         //@+others
-        //@+node:swot.20221029142627.1: *10* Stack
-        Stack(
-          children: [
-            Center(
-              child: Image.network(
-                'https://img0.baidu.com/it/u=3512755295,746862310&fm=253&fmt=auto&app=120&f=JPEG?w=236&h=500',
-                width: 500,
+        //@+node:swot.20221029142715.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221029142715.3: *8* appBar
+          appBar: AppBar(
+            title: Text('Stack'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
+          ),
+          //@+node:swot.20221029142715.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221029142815.2: *9* Center
+              Center(
+                child:
+                    //@+others
+                    //@+node:swot.20221029142627.1: *10* Stack
+                    Stack(
+                      children: [
+                        Center(
+                          child: Image.network(
+                            'https://img0.baidu.com/it/u=3512755295,746862310&fm=253&fmt=auto&app=120&f=JPEG?w=236&h=500',
+                            width: 500,
+                          ),
+                        ),
+                        Center(
+                          child: Image.network(
+                            'https://img1.baidu.com/it/u=695618151,2431461217&fm=253&fmt=auto&app=138&f=JPEG?w=350&h=250',
+                            width: 200,
+                          ),
+                        ),
+                      ],
+                    )
+                    //@-others
               ),
-            ),
-            Center(
-              child: Image.network(
-                'https://img1.baidu.com/it/u=695618151,2431461217&fm=253&fmt=auto&app=138&f=JPEG?w=350&h=250',
-                width: 200,
-              ),
-            ),
-          ],
-        )
+              //@-others
+          //@-others
+        );
         //@-others
-      )
-      //@-others
-      ,
-      //@-others
-    )
-    //@-others
-    ;
   }
   //@-others
 }
+
 //@+node:swot.20221029144530.2: *5* StepperExample
 //@@language dart
 //@@tabwidth -2
@@ -7161,7 +8080,7 @@ class StepperExample extends StatefulWidget {
   State<StepperExample> createState() => _StepperExampleState();
 }
 
-class _StepperExampleState extends State<StepperExample>{
+class _StepperExampleState extends State<StepperExample> {
   //@+others
   //@+node:swot.20221029144530.3: *6* varible
   int _currentStep = 0;
@@ -7170,102 +8089,104 @@ class _StepperExampleState extends State<StepperExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221029144530.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221029144530.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221029144924.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221029144924.3: *8* appBar
-      appBar: AppBar(
-        title: Text('Stepper'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221029144924.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221029144954.2: *9* Center
-      Center(
-        child:
         //@+others
-        //@+node:swot.20221029145033.1: *10* Stepper
-        Stepper(
+        //@+node:swot.20221029144924.2: *7* Scaffold
+        Scaffold(
           //@+others
-          //@+node:swot.20221029191553.1: *11* steps
-          steps: [
-            Step(
-              isActive: _currentStep == 0,
-              title: const Text('Step 1'),
-              content: const Text(
-                'Information for step 1',
-                style: TextStyle(
-                  color: Colors.redAccent,
-                ),
-              ),
-            ),
-            Step(
-              isActive: _currentStep == 1,
-              title: const Text('Step 2'),
-              content: const Text(
-                'Information for step 2',
-                style: TextStyle(
-                  color: Colors.redAccent,
-                ),
-              ),
-            ),
-            Step(
-              isActive: _currentStep == 2,
-              title: const Text('Step 3'),
-              content: const Text(
-                'Information for step 3',
-                style: TextStyle(
-                  color: Colors.redAccent,
-                ),
-              ),
-            ),
-          ],
-          //@-others
-          // type: StepperType.horizontal,
-          currentStep: _currentStep,
+          //@+node:swot.20221029144924.3: *8* appBar
+          appBar: AppBar(
+            title: Text('Stepper'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
+          ),
+          //@+node:swot.20221029144924.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221029144954.2: *9* Center
+              Center(
+                child:
+                    //@+others
+                    //@+node:swot.20221029145033.1: *10* Stepper
+                    Stepper(
+                      //@+others
+                      //@+node:swot.20221029191553.1: *11* steps
+                      steps: [
+                        Step(
+                          isActive: _currentStep == 0,
+                          title: const Text('Step 1'),
+                          content: const Text(
+                            'Information for step 1',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                            ),
+                          ),
+                        ),
+                        Step(
+                          isActive: _currentStep == 1,
+                          title: const Text('Step 2'),
+                          content: const Text(
+                            'Information for step 2',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                            ),
+                          ),
+                        ),
+                        Step(
+                          isActive: _currentStep == 2,
+                          title: const Text('Step 3'),
+                          content: const Text(
+                            'Information for step 3',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                            ),
+                          ),
+                        ),
+                      ],
+                      //@-others
+                      // type: StepperType.horizontal,
+                      currentStep: _currentStep,
 
-          onStepTapped: (int newIndex) {
-            setState(() { _currentStep = newIndex; });
-          },
-          onStepContinue: () {
-            if (_currentStep != 2) {
-              setState(() {
-                _currentStep += 1;
-              });
-            }
-          },
-          onStepCancel: () {
-            if (_currentStep != 0) {
-              setState(() {
-                _currentStep -= 1;
-              });
-            }
-          },
-        ),
+                      onStepTapped: (int newIndex) {
+                        setState(() {
+                          _currentStep = newIndex;
+                        });
+                      },
+                      onStepContinue: () {
+                        if (_currentStep != 2) {
+                          setState(() {
+                            _currentStep += 1;
+                          });
+                        }
+                      },
+                      onStepCancel: () {
+                        if (_currentStep != 0) {
+                          setState(() {
+                            _currentStep -= 1;
+                          });
+                        }
+                      },
+                    ),
+                    //@-others
+              ),
+              //@-others
+          //@-others
+        );
         //@-others
-      )
-      //@-others
-      ,
-      //@-others
-    )
-    //@-others
-    ;
   }
   //@-others
 }
@@ -7282,6 +8203,7 @@ Stream<int> generateStream = (() async* {
   await Future<void>.delayed(const Duration(seconds: 1));
   yield 3;
 })();
+
 //@+node:swot.20221029211533.2: *5* StreamBuilderExample
 //@@language dart
 //@@tabwidth -2
@@ -7292,59 +8214,57 @@ class StreamBuilderExample extends StatefulWidget {
   State<StreamBuilderExample> createState() => _StreamBuilderExampleState();
 }
 
-class _StreamBuilderExampleState extends State<StreamBuilderExample>{
+class _StreamBuilderExampleState extends State<StreamBuilderExample> {
   //@+others
   //@+node:swot.20221029211533.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221029213944.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221029213944.3: *8* appBar
-      appBar: AppBar(
-        title: Text('StreamBuilder'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221029213944.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221029212803.2: *9* Center
-      Center(
-        child:
         //@+others
-        //@+node:swot.20221029212812.1: *10* StreamBuilder
-        StreamBuilder(
-          stream: generateStream,
-          initialData: 0,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const CircularProgressIndicator.adaptive();
-            }
-            if (snapshot.hasError) {
-              return const Text('Error');
-            } else {
-              return Text(
-                snapshot.data.toString(),
-                style: const TextStyle(fontSize: 40),
-              );
-            }
-          },
-        ),
+        //@+node:swot.20221029213944.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221029213944.3: *8* appBar
+          appBar: AppBar(
+            title: Text('StreamBuilder'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
+          ),
+          //@+node:swot.20221029213944.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221029212803.2: *9* Center
+              Center(
+                child:
+                    //@+others
+                    //@+node:swot.20221029212812.1: *10* StreamBuilder
+                    StreamBuilder(
+                      stream: generateStream,
+                      initialData: 0,
+                      builder: (context, snapshot) {
+                        if (snapshot.connectionState == ConnectionState.waiting) {
+                          return const CircularProgressIndicator.adaptive();
+                        }
+                        if (snapshot.hasError) {
+                          return const Text('Error');
+                        } else {
+                          return Text(
+                            snapshot.data.toString(),
+                            style: const TextStyle(fontSize: 40),
+                          );
+                        }
+                      },
+                    ),
+                    //@-others
+              ),
+              //@-others
+          //@-others
+        );
         //@-others
-      )
-      //@-others
-      ,
-      //@-others
-    )
-    //@-others
-    ;
   }
   //@-others
 }
@@ -7359,7 +8279,7 @@ class SwitchExample extends StatefulWidget {
   State<SwitchExample> createState() => _SwitchExampleState();
 }
 
-class _SwitchExampleState extends State<SwitchExample>{
+class _SwitchExampleState extends State<SwitchExample> {
   //@+others
   //@+node:swot.20221029215403.3: *6* varible
   bool isSwitched = false;
@@ -7368,33 +8288,34 @@ class _SwitchExampleState extends State<SwitchExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221029215403.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221029215403.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221029215500.2: *7* Center
-    Center(
-      child:
-      //@+others
-      //@+node:swot.20221029215505.1: *8* Switch
-      Switch(
-        value: isSwitched,
-        onChanged: (value) {
-          setState(() {
-            isSwitched = value;
-          });
-        },
-      )
-      //@-others
-    )
-    //@-others
-    ;
+        //@+others
+        //@+node:swot.20221029215500.2: *7* Center
+        Center(
+          child:
+              //@+others
+              //@+node:swot.20221029215505.1: *8* Switch
+              Switch(
+                value: isSwitched,
+                onChanged: (value) {
+                  setState(() {
+                    isSwitched = value;
+                  });
+                },
+              )
+              //@-others
+        );
+        //@-others
   }
   //@-others
 }
@@ -7414,14 +8335,14 @@ class T extends StatelessWidget {
         centerTitle: true,
 
         // leading: IconButton(
-          // icon: const Icon(Icons.menu),
-          // onPressed: (){},
+        // icon: const Icon(Icons.menu),
+        // onPressed: (){},
         // ),
 
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
-            onPressed: (){},
+            onPressed: () {},
           ),
         ],
         // AppBar 的下边变成了圆角
@@ -7433,13 +8354,14 @@ class T extends StatelessWidget {
         ),
 
         backgroundColor: Colors.orangeAccent,
-        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+        elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
       ),
       //@-others
       body: const DemoT(),
     );
   }
 }
+
 //@+node:swot.20221023175859.4: *4* DemoT
 //@@language dart
 //@@tabwidth -2
@@ -7456,87 +8378,88 @@ class _DemoTState extends State<DemoT> {
   @override
   Widget build(BuildContext context) {
     return
-      //@+others
-      //@+node:swot.20221023175859.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
         //@+others
-        //@+node:swot.20221023175859.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221023195608.1: *8* show TableExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              child: const Text('Table'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const TableExample(),
+        //@+node:swot.20221023175859.6: *6* SingleChildScrollView
+        SingleChildScrollView(
+          child:
+              //@+others
+              //@+node:swot.20221023175859.7: *7* Column
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  //@+others
+                  //@+node:swot.20221023195608.1: *8* show TableExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    child: const Text('Table'),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const TableExample(),
+                        ),
+                      );
+                    },
                   ),
-                );
-              },
-            ),
+                  Divider(),
+                  //@+node:swot.20221027182544.1: *8* show TextFormFieldExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    child: const Text('TextFormFieldExample'),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const TextFormFieldExample(),
+                        ),
+                      );
+                    },
+                  ),
+                  Divider(),
+                  //@+node:swot.20221029222412.2: *8* ElevatedButton -- show TabPageSelectorExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => TabPageSelectorExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('TabPageSelector'),
+                  ),
 
-            Divider(),
-            //@+node:swot.20221027182544.1: *8* show TextFormFieldExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              child: const Text('TextFormFieldExample'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const TextFormFieldExample(),
+                  //@+node:swot.20221029232032.2: *8* ElevatedButton -- show TabBarExample
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        // backgroundColor: Colors.orangeAccent,
+                        ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => TabBarExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('TabBarExample'),
                   ),
-                );
-              },
-            ),
-            Divider(),
-            //@+node:swot.20221029222412.2: *8* ElevatedButton -- show TabPageSelectorExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => TabPageSelectorExample(),
-                  ),
-                );
-              },
-              child: const Text('TabPageSelector'),
-            ),
 
-            //@+node:swot.20221029232032.2: *8* ElevatedButton -- show TabBarExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
+                  //@+node:swot.20221031220908.1: *8* show TooltipExample
+                  TooltipExample(),
+                  //@-others
+                ],
               ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => TabBarExample(),
-                  ),
-                );
-              },
-              child: const Text('TabBarExample'),
-            ),
-
-            //@-others
-          ]
-        ),
+              //@-others
+        );
         //@-others
-      );
-      //@-others
   }
   //@-others
 }
@@ -7546,7 +8469,7 @@ class _DemoTState extends State<DemoT> {
 //@@language dart
 //@@tabwidth -2
 class TableExample extends StatelessWidget {
-  const TableExample({ Key? key }) : super(key: key);
+  const TableExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221023193833.3: *6* build()
   @override
@@ -7563,210 +8486,104 @@ class TableExample extends StatelessWidget {
       ),
       //@+node:swot.20221023193950.4: *8* body
       body:
-      //@+others
-      //@+node:swot.20221023194122.1: *9* Center
-      Center(
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child:
           //@+others
-          //@+node:swot.20221023200224.1: *10* SingleChildScrollView
-          SingleChildScrollView(
+          //@+node:swot.20221023194122.1: *9* Center
+          Center(
+            child: Padding(
+            padding: const EdgeInsets.all(15.0),
             child:
-            //@+others
-            //@+node:swot.20221023194310.1: *11* Table
-            Table(
-              border: TableBorder.all(color: Colors.white30),
-              defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-              children: [
                 //@+others
-                //@+node:swot.20221023194533.1: *12* TableRow
-                const TableRow(
-                  decoration: BoxDecoration(
-                    color: Colors.redAccent,
-                  ),
-                  children: [
-                    //@+others
-                    //@+node:swot.20221023194941.1: *13* TableCell
-                    TableCell(
-                      verticalAlignment: TableCellVerticalAlignment.middle,
-                      child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text('Title 1'),
-                      ),
-                    ),
-                    //@+node:swot.20221023194949.1: *13* TableCell
-                    TableCell(
-                      verticalAlignment: TableCellVerticalAlignment.middle,
-                      child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text('Title 2'),
-                      ),
-                    ),
-                    //@+node:swot.20221023194950.1: *13* TableCell
-                    TableCell(
-                      verticalAlignment: TableCellVerticalAlignment.middle,
-                      child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text('Title 3'),
-                      ),
-                    ),
-                    //@-others
-                  ],
-                ),
-                //@+node:swot.20221023195102.1: *12* List.generate
-                ...List.generate(
-                  30,
-                  (index) => const TableRow(
-                    children: [
+                //@+node:swot.20221023200224.1: *10* SingleChildScrollView
+                SingleChildScrollView(
+                  child:
                       //@+others
-                      //@+node:swot.20221023195414.1: *13* TableCell
-                      TableCell(
-                        verticalAlignment: TableCellVerticalAlignment.middle,
-                        child: Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text('Cell 1'),
-                        ),
-                      ),
-                      //@+node:swot.20221023195426.1: *13* TableCell
-                      TableCell(
-                        verticalAlignment: TableCellVerticalAlignment.middle,
-                        child: Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text('Cell 2'),
-                        ),
-                      ),
-                      //@+node:swot.20221023195426.2: *13* TableCell
-                      TableCell(
-                        verticalAlignment: TableCellVerticalAlignment.middle,
-                        child: Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text('Cell 3'),
-                        ),
+                      //@+node:swot.20221023194310.1: *11* Table
+                      Table(
+                          border: TableBorder.all(color: Colors.white30),
+                          defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                          children: [
+                            //@+others
+                            //@+node:swot.20221023194533.1: *12* TableRow
+                            const TableRow(
+                              decoration: BoxDecoration(
+                                color: Colors.redAccent,
+                              ),
+                              children: [
+                                //@+others
+                                //@+node:swot.20221023194941.1: *13* TableCell
+                                TableCell(
+                                  verticalAlignment: TableCellVerticalAlignment.middle,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Text('Title 1'),
+                                  ),
+                                ),
+                                //@+node:swot.20221023194949.1: *13* TableCell
+                                TableCell(
+                                  verticalAlignment: TableCellVerticalAlignment.middle,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Text('Title 2'),
+                                  ),
+                                ),
+                                //@+node:swot.20221023194950.1: *13* TableCell
+                                TableCell(
+                                  verticalAlignment: TableCellVerticalAlignment.middle,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Text('Title 3'),
+                                  ),
+                                ),
+                                //@-others
+                              ],
+                            ),
+                            //@+node:swot.20221023195102.1: *12* List.generate
+                            ...List.generate(
+                              30,
+                              (index) => const TableRow(
+                                children: [
+                                  //@+others
+                                  //@+node:swot.20221023195414.1: *13* TableCell
+                                  TableCell(
+                                    verticalAlignment: TableCellVerticalAlignment.middle,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Text('Cell 1'),
+                                    ),
+                                  ),
+                                  //@+node:swot.20221023195426.1: *13* TableCell
+                                  TableCell(
+                                    verticalAlignment: TableCellVerticalAlignment.middle,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Text('Cell 2'),
+                                    ),
+                                  ),
+                                  //@+node:swot.20221023195426.2: *13* TableCell
+                                  TableCell(
+                                    verticalAlignment: TableCellVerticalAlignment.middle,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Text('Cell 3'),
+                                    ),
+                                  ),
+                                  //@-others
+                                ],
+                              ),
+                            ),
+                            //@-others
+                          ],
                       ),
                       //@-others
-                    ],
-                  ),
                 ),
                 //@-others
-              ]
             ),
-            //@-others
           ),
           //@-others
-        ),
-      ),
-      //@-others
       //@-others
     );
 
     //@-others
-  }
-  //@-others
-}
-//@+node:swot.20221027175533.2: *5* TextFormFieldExample
-//@@language dart
-//@@tabwidth -2
-class TextFormFieldExample extends StatefulWidget {
-  const TextFormFieldExample({super.key});
-
-  @override
-  State<TextFormFieldExample> createState() => _TextFormFieldExampleState();
-}
-
-class _TextFormFieldExampleState extends State<TextFormFieldExample>{
-  //@+others
-  //@+node:swot.20221027175533.3: *6* varible
-  List<String> titles = [
-    '',
-    '',
-    '',
-  ];
-  //@+node:swot.20221027175533.4: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221027175533.5: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
-  //@+node:swot.20221027175533.6: *6* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221027183133.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221027183133.3: *8* appBar
-      appBar: AppBar(
-        title: Text('TextFormField'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221027183133.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221027180846.1: *9* SingleChildScrollView
-      SingleChildScrollView(
-        child:
-        //@+others
-        //@+node:swot.20221027180945.1: *10* Form
-        Form(
-          autovalidateMode: AutovalidateMode.always,
-          onChanged: () {
-            setState(() {
-              Form.of(primaryFocus!.context!)!.save();
-            });
-          },
-          child:
-          //@+others
-          //@+node:swot.20221027182206.1: *11* Column
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            children: List.generate(
-              3,
-              (int index) {
-                return Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      TextFormField(
-                        onSaved: (String? value) {
-                          if (value != null) {
-                            titles[index] = value;
-                          }
-                        },
-                      ),
-                      const SizedBox(height: 10),
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(titles[index]),
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
-          ),
-          //@-others
-        ),
-        //@-others
-      ),
-      //@-others
-      //@-others
-    )
-    //@-others
-    ;
   }
   //@-others
 }
@@ -7775,78 +8592,78 @@ class _TextFormFieldExampleState extends State<TextFormFieldExample>{
 //@@language dart
 //@@tabwidth -2
 class TabBarExample extends StatelessWidget {
-  const TabBarExample({ Key? key }) : super(key: key);
+  const TabBarExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221029230649.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221029230800.1: *7* DefaultTabController
-    DefaultTabController(
-      length: 3,
-      child:
-      //@+others
-      //@+node:swot.20221029230841.2: *8* Scaffold
-      Scaffold(
         //@+others
-        //@+node:swot.20221029230841.3: *9* appBar
-        appBar: AppBar(
-          title: Text('TabBar'),
-          bottom: const TabBar(
-            tabs: [
-              Tab(icon: Icon(Icons.home)),
-              Tab(icon: Icon(Icons.settings)),
-              Tab(icon: Icon(Icons.person)),
-            ],
-          ),
-          // leading: Icon(Icons.menu),
-          actions: [
-            Icon(Icons.settings),
-          ],
-          elevation: 0.0,
-          centerTitle: true,
-        ),
-        //@+node:swot.20221029230841.4: *9* body
-        body:
-        //@+others
-        //@+node:swot.20221029231559.1: *10* TabBarView
-        TabBarView(
-          children: [
-          //@+others
-          //@+node:swot.20221029231700.1: *11* Container 3
-          Container(
-            color: Colors.orangeAccent,
-            child: const Icon(Icons.home),
-          ),
-          Container(
-            color: Colors.redAccent,
-            child: const Icon(Icons.settings),
-          ),
-          Container(
-            color: Colors.orangeAccent,
-            child: const Icon(Icons.person),
-          ),
-          //@-others
-          ],
-        )
+        //@+node:swot.20221029230800.1: *7* DefaultTabController
+        DefaultTabController(
+          length: 3,
+          child:
+              //@+others
+              //@+node:swot.20221029230841.2: *8* Scaffold
+              Scaffold(
+                //@+others
+                //@+node:swot.20221029230841.3: *9* appBar
+                appBar: AppBar(
+                  title: Text('TabBar'),
+                  bottom: const TabBar(
+                    tabs: [
+                      Tab(icon: Icon(Icons.home)),
+                      Tab(icon: Icon(Icons.settings)),
+                      Tab(icon: Icon(Icons.person)),
+                    ],
+                  ),
+                  // leading: Icon(Icons.menu),
+                  actions: [
+                    Icon(Icons.settings),
+                  ],
+                  elevation: 0.0,
+                  centerTitle: true,
+                ),
+                //@+node:swot.20221029230841.4: *9* body
+                body:
+                    //@+others
+                    //@+node:swot.20221029231559.1: *10* TabBarView
+                    TabBarView(
+                      children: [
+                        //@+others
+                        //@+node:swot.20221029231700.1: *11* Container 3
+                        Container(
+                          color: Colors.orangeAccent,
+                          child: const Icon(Icons.home),
+                        ),
+                        Container(
+                          color: Colors.redAccent,
+                          child: const Icon(Icons.settings),
+                        ),
+                        Container(
+                          color: Colors.orangeAccent,
+                          child: const Icon(Icons.person),
+                        ),
+                        //@-others
+                      ],
+                    )
+                    //@-others
+                //@-others
+              ),
+              //@-others
+        );
         //@-others
-        ,
-        //@-others
-      )
-      //@-others
-    )
-    //@-others
-    ;
   }
   //@-others
 }
+
 //@+node:swot.20221029220342.1: *5* tabPageSelectorWidgets
 List<Widget> tabPageSelectorWidgets = const [
   Icon(Icons.home, size: 80),
   Icon(Icons.settings, size: 80),
   Icon(Icons.person, size: 80),
 ];
+
 //@+node:swot.20221029220227.2: *5* TabPageSelectorExample
 //@@language dart
 //@@tabwidth -2
@@ -7873,70 +8690,210 @@ class _TabPageSelectorExampleState extends State<TabPageSelectorExample>
       vsync: this,
     );
   }
+
   //@+node:swot.20221029220227.5: *6* dispose()
   @override
   void dispose() {
     controller.dispose();
     super.dispose();
   }
+
   //@+node:swot.20221029220227.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221029221243.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221029221243.3: *8* appBar
-      appBar: AppBar(
-        title: Text('TabPageSelector'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221029221243.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221029221337.1: *9* Stack
-      Stack(
-        alignment: Alignment.center,
-        children: [
-          TabBarView(
-            controller: controller,  // TabController
-            children: tabPageSelectorWidgets,
+        //@+others
+        //@+node:swot.20221029221243.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221029221243.3: *8* appBar
+          appBar: AppBar(
+            title: Text('TabPageSelector'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
           ),
-          Positioned(
-            bottom: 40,
-            child: TabPageSelector(
-              controller: controller,  // TabController
-              color: Colors.black38,
-            ),
+          //@+node:swot.20221029221243.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221029221337.1: *9* Stack
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  TabBarView(
+                    controller: controller, // TabController
+                    children: tabPageSelectorWidgets,
+                  ),
+                  Positioned(
+                    bottom: 40,
+                    child: TabPageSelector(
+                      controller: controller, // TabController
+                      color: Colors.black38,
+                    ),
+                  ),
+                ],
+              ),
+              //@-others
+          //@+node:swot.20221029221243.6: *8* floatingActionButton
+          floatingActionButton: ButtonBar(
+            children: [
+              FloatingActionButton.small(
+                onPressed: () {
+                  (_index != tabPageSelectorWidgets.length - 1)
+                  ? _index++
+                  : _index = 0;
+                  controller.animateTo(_index);
+                },
+                hoverElevation: 0,
+                elevation: 0,
+                child: const Icon(Icons.navigate_next),
+              ),
+            ],
           ),
-        ],
-      )
-      //@-others
-      ,
-      //@+node:swot.20221029221243.6: *8* floatingActionButton
-      floatingActionButton: ButtonBar(
-        children: [
-          FloatingActionButton.small(
-            onPressed: () {
-              (_index != tabPageSelectorWidgets.length - 1) ? _index++ : _index = 0;
-              controller.animateTo(_index);
-            },
-            hoverElevation: 0,
-            elevation: 0,
-            child: const Icon(Icons.navigate_next),
+          //@-others
+        );
+        //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221027175533.2: *5* TextFormFieldExample
+//@@language dart
+//@@tabwidth -2
+class TextFormFieldExample extends StatefulWidget {
+  const TextFormFieldExample({super.key});
+
+  @override
+  State<TextFormFieldExample> createState() => _TextFormFieldExampleState();
+}
+
+class _TextFormFieldExampleState extends State<TextFormFieldExample> {
+  //@+others
+  //@+node:swot.20221027175533.3: *6* varible
+  List<String> titles = [
+    '',
+    '',
+    '',
+  ];
+  //@+node:swot.20221027175533.4: *6* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  //@+node:swot.20221027175533.5: *6* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  //@+node:swot.20221027175533.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221027183133.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221027183133.3: *8* appBar
+          appBar: AppBar(
+            title: Text('TextFormField'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
           ),
-        ],
-      ),
-      //@-others
-    )
-    //@-others
-    ;
+          //@+node:swot.20221027183133.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221027180846.1: *9* SingleChildScrollView
+              SingleChildScrollView(
+                child:
+                    //@+others
+                    //@+node:swot.20221027180945.1: *10* Form
+                    Form(
+                      autovalidateMode: AutovalidateMode.always,
+                      onChanged: () {
+                        setState(() {
+                          Form.of(primaryFocus!.context!)!.save();
+                        });
+                      },
+                      child:
+                          //@+others
+                          //@+node:swot.20221027182206.1: *11* Column
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: List.generate(
+                              3,
+                              (int index) {
+                                return Padding(
+                                  padding: const EdgeInsets.all(20.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      TextFormField(
+                                        onSaved: (String? value) {
+                                          if (value != null) {
+                                            titles[index] = value;
+                                          }
+                                        },
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Card(
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(titles[index]),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                          //@-others
+                    ),
+                    //@-others
+              ),
+              //@-others
+          //@-others
+        );
+        //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221031220414.2: *5* TooltipExample
+//@@language dart
+//@@tabwidth -2
+class TooltipExample extends StatelessWidget {
+  const TooltipExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221031220414.3: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221031220639.2: *7* Center
+        Center(
+          child:
+              //@+others
+              //@+node:swot.20221031220649.1: *8* Tooltip
+              Tooltip(
+                message: 'Image message',
+                child: Image.asset(
+                  width: 200,
+                  'assets/fengjing.webp',
+                ),
+              )
+              //@-others
+        );
+        //@-others
   }
   //@-others
 }
@@ -7957,14 +8914,14 @@ class V extends StatelessWidget {
         centerTitle: true,
 
         // leading: IconButton(
-          // icon: const Icon(Icons.menu),
-          // onPressed: (){},
+        // icon: const Icon(Icons.menu),
+        // onPressed: (){},
         // ),
 
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
-            onPressed: (){},
+            onPressed: () {},
           ),
         ],
         // AppBar 的下边变成了圆角
@@ -7976,13 +8933,14 @@ class V extends StatelessWidget {
         ),
 
         backgroundColor: Colors.orangeAccent,
-        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+        elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
       ),
       //@-others
       body: const DemoV(),
     );
   }
 }
+
 //@+node:swot.20221030213518.4: *4* DemoV
 //@@language dart
 //@@tabwidth -2
@@ -7999,24 +8957,21 @@ class _DemoVState extends State<DemoV> {
   @override
   Widget build(BuildContext context) {
     return
-      //@+others
-      //@+node:swot.20221030213518.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
         //@+others
-        //@+node:swot.20221030213518.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+        //@+node:swot.20221030213518.6: *6* SingleChildScrollView
+        SingleChildScrollView(
+          child:
+          //@+others
+          //@+node:swot.20221030213518.7: *7* Column
+          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             //@+others
             //@+node:swot.20221030222854.1: *8* show VisibilityExample
             VisibilityExample(),
             //@-others
-          ]
-        ),
+          ]),
+          //@-others
+        );
         //@-others
-      );
-      //@-others
   }
   //@-others
 }
@@ -8032,7 +8987,7 @@ class VisibilityExample extends StatefulWidget {
   State<VisibilityExample> createState() => _VisibilityExampleState();
 }
 
-class _VisibilityExampleState extends State<VisibilityExample>{
+class _VisibilityExampleState extends State<VisibilityExample> {
   //@+others
   //@+node:swot.20221030222244.3: *6* varible
   bool isVisible = true;
@@ -8041,47 +8996,48 @@ class _VisibilityExampleState extends State<VisibilityExample>{
   void initState() {
     super.initState();
   }
+
   //@+node:swot.20221030222244.5: *6* dispose()
   @override
   void dispose() {
     super.dispose();
   }
+
   //@+node:swot.20221030222244.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221030222322.2: *7* Row
-    Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-      //@+others
-      //@+node:swot.20221030222414.2: *8* ElevatedButton
-      ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          // backgroundColor: Colors.orangeAccent,
-        ),
-        onPressed: () {
-          setState(() {
-            isVisible = !isVisible;
-          });
-        },
-        child: const Text('Show/Hide Visibility'),
-      ),
+        //@+others
+        //@+node:swot.20221030222322.2: *7* Row
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            //@+others
+            //@+node:swot.20221030222414.2: *8* ElevatedButton
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  // backgroundColor: Colors.orangeAccent,
+                  ),
+              onPressed: () {
+                setState(() {
+                  isVisible = !isVisible;
+                });
+              },
+              child: const Text('Show/Hide Visibility'),
+            ),
 
-      //@+node:swot.20221030222619.1: *8* Visibility
-      Visibility(
-        visible: isVisible,
-        child: Image.network(
-          'https://img2.baidu.com/it/u=11150005,537174686&fm=253&fmt=auto&app=138&f=JPEG?w=435&h=500',
-          width: 100,
-        ),
-      ),
-      //@-others
-      ],
-    )
-    //@-others
-    ;
+            //@+node:swot.20221030222619.1: *8* Visibility
+            Visibility(
+              visible: isVisible,
+              child: Image.network(
+                'https://img2.baidu.com/it/u=11150005,537174686&fm=253&fmt=auto&app=138&f=JPEG?w=435&h=500',
+                width: 100,
+              ),
+            ),
+            //@-others
+          ],
+        );
+        //@-others
   }
   //@-others
 }
@@ -8101,14 +9057,14 @@ class W extends StatelessWidget {
         centerTitle: true,
 
         // leading: IconButton(
-          // icon: const Icon(Icons.menu),
-          // onPressed: (){},
+        // icon: const Icon(Icons.menu),
+        // onPressed: (){},
         // ),
 
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
-            onPressed: (){},
+            onPressed: () {},
           ),
         ],
         // AppBar 的下边变成了圆角
@@ -8120,13 +9076,14 @@ class W extends StatelessWidget {
         ),
 
         backgroundColor: Colors.orangeAccent,
-        elevation: 0.0,  // 去掉 appBar 与 body 之间的阴影
+        elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
       ),
       //@-others
       body: const DemoW(),
     );
   }
 }
+
 //@+node:swot.20221030223524.4: *4* DemoW
 //@@language dart
 //@@tabwidth -2
@@ -8143,96 +9100,157 @@ class _DemoWState extends State<DemoW> {
   @override
   Widget build(BuildContext context) {
     return
-      //@+others
-      //@+node:swot.20221030223524.6: *6* SingleChildScrollView
-      SingleChildScrollView(
-        child:
         //@+others
-        //@+node:swot.20221030223524.7: *7* Column
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //@+others
-            //@+node:swot.20221030224243.2: *8* ElevatedButton -- show WrapExample
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                // backgroundColor: Colors.orangeAccent,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => WrapExample(),
-                  ),
-                );
-              },
-              child: const Text('WrapExample'),
-            ),
+        //@+node:swot.20221030223524.6: *6* SingleChildScrollView
+        SingleChildScrollView(
+          child:
+              //@+others
+              //@+node:swot.20221030223524.7: *7* Column
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                //@+others
+                //@+node:swot.20221031202945.2: *8* ElevatedButton -- show WillPopScopeExample
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                      ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => WillPopScopeExample(),
+                      ),
+                    );
+                  },
+                  child: const Text('WillPopScopeExample'),
+                ),
 
-            //@-others
-          ]
-        ),
+                //@+node:swot.20221030224243.2: *8* ElevatedButton -- show WrapExample
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                      ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => WrapExample(),
+                      ),
+                    );
+                  },
+                  child: const Text('WrapExample'),
+                ),
+
+                //@-others
+              ]),
+              //@-others
+        );
         //@-others
-      );
-      //@-others
   }
   //@-others
 }
 
 //@+node:swot.20221030223524.9: *4* ExampleW
+//@+node:swot.20221031202343.2: *5* WillPopScopeExample
+//@@language dart
+//@@tabwidth -2
+class WillPopScopeExample extends StatelessWidget {
+  const WillPopScopeExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221031202343.3: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221031202510.1: *7* WillPopScope -- disable or enable back button
+        WillPopScope(
+          onWillPop: () async {
+            return false; // disable Android back button
+            // return true;    // enable Android back button
+          },
+          child:
+              //@+others
+              //@+node:swot.20221031202632.2: *8* Scaffold
+              Scaffold(
+                backgroundColor: Colors.blue,
+                //@+others
+                //@+node:swot.20221031202632.3: *9* appBar
+                appBar: AppBar(
+                  title: Text('WillPopScope'),
+                  leading: IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: Icon(Icons.arrow_back_ios_new),
+                  ),
+                  elevation: 0.0,
+                  centerTitle: true,
+                  actions: [
+                    Icon(Icons.settings),
+                  ],
+                ),
+                //@+node:swot.20221031202632.4: *9* body
+                body: const Center(),
+                //@-others
+              ),
+              //@-others
+        );
+        //@-others
+  }
+  //@-others
+}
+
 //@+node:swot.20221030223719.2: *5* WrapExample
 //@@language dart
 //@@tabwidth -2
 class WrapExample extends StatelessWidget {
-  const WrapExample({ Key? key }) : super(key: key);
+  const WrapExample({Key? key}) : super(key: key);
   //@+others
   //@+node:swot.20221030223719.3: *6* build()
   @override
   Widget build(BuildContext context) {
     return
-    //@+others
-    //@+node:swot.20221030224541.2: *7* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221030224541.3: *8* appBar
-      appBar: AppBar(
-        title: Text('WrapExample'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221030224541.4: *8* body
-      body:
-      //@+others
-      //@+node:swot.20221030223755.2: *9* Center
-      Center(
-        child:
         //@+others
-        //@+node:swot.20221030223816.1: *10* Wrap
-        Wrap(
-          spacing: 10.0,
-          runSpacing: 40.0,
-          children: List.generate(
-            10,
-            (index) => const Chip(
-              avatar: CircleAvatar(
-                backgroundColor: Colors.orangeAccent,
-                child: Icon(Icons.person),
-              ),
-              label: Text('SwotPP'),
-            ),
+        //@+node:swot.20221030224541.2: *7* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221030224541.3: *8* appBar
+          appBar: AppBar(
+            title: Text('WrapExample'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
           ),
-        )
+          //@+node:swot.20221030224541.4: *8* body
+          body:
+              //@+others
+              //@+node:swot.20221030223755.2: *9* Center
+              Center(
+                child:
+                    //@+others
+                    //@+node:swot.20221030223816.1: *10* Wrap
+                    Wrap(
+                      spacing: 10.0,
+                      runSpacing: 40.0,
+                      children: List.generate(
+                        10,
+                        (index) => const Chip(
+                          avatar: CircleAvatar(
+                            backgroundColor: Colors.orangeAccent,
+                            child: Icon(Icons.person),
+                          ),
+                          label: Text('SwotPP'),
+                        ),
+                      ),
+                    )
+                    //@-others
+              ),
+              //@-others
+          //@-others
+        );
         //@-others
-      )
-      //@-others
-      //@-others
-    )
-    //@-others
-    ;
   }
   //@-others
 }
