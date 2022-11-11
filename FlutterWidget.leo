@@ -418,7 +418,11 @@
 <v t="swot.20221022141315.1"><vh>varible</vh></v>
 <v t="swot.20221022141252.3"><vh>initState()</vh></v>
 <v t="swot.20221022141252.4"><vh>dispose()</vh></v>
-<v t="swot.20221022141252.5"><vh>build()</vh></v>
+<v t="swot.20221022141252.5"><vh>build()</vh>
+<v t="swot.20221110225519.1"><vh>Theme</vh>
+<v t="swot.20221110225224.1"><vh>Checkbox !!!</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221022141946.2"><vh>CheckboxListTileExample</vh>
 <v t="swot.20221022142005.1"><vh>varible</vh></v>
@@ -513,6 +517,7 @@
 <v t="swot.20221025075357.1"><vh>show DraggableScrollableExample</vh></v>
 <v t="swot.20221025091113.1"><vh>show DragTargetExample</vh></v>
 <v t="swot.20221025095859.1"><vh>show DrawerExample</vh></v>
+<v t="swot.20221110233828.1"><vh>show DropDownButtonExample</vh></v>
 </v>
 </v>
 </v>
@@ -582,6 +587,21 @@
 </v>
 </v>
 </v>
+<v t="swot.20221110233138.2"><vh>DropDownButtonExample</vh>
+<v t="swot.20221110233138.3"><vh>varible</vh></v>
+<v t="swot.20221110233138.4"><vh>initState()</vh></v>
+<v t="swot.20221110233138.5"><vh>dispose()</vh></v>
+<v t="swot.20221110233138.6"><vh>build()</vh>
+<v t="swot.20221111000936.2"><vh>Column</vh>
+<v t="swot.20221111000057.1"><vh>SizedBox</vh>
+<v t="swot.20221110233541.2"><vh>DropdownButton !!!</vh></v>
+</v>
+<v t="swot.20221111001008.1"><vh>SizedBox</vh>
+<v t="swot.20221111001008.2"><vh>DropdownButtonFormField !!!</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221025205925.1"><vh>E Example</vh>
@@ -593,6 +613,7 @@
 <v t="swot.20221025211051.3"><vh>SingleChildScrollView</vh>
 <v t="swot.20221025211051.4"><vh>Column</vh>
 <v t="swot.20221026194030.1"><vh>show ExpandedExample</vh></v>
+<v t="swot.20221111204125.2"><vh>show ExpansionPanelListExample</vh></v>
 <v t="swot.20221031073947.1"><vh>show ExpansionTileExample</vh></v>
 </v>
 </v>
@@ -606,12 +627,34 @@
 <v t="swot.20221026193706.1"><vh>Expanded</vh></v>
 </v>
 </v>
+<v t="swot.20221111204854.1"><vh>class Item</vh></v>
+<v t="swot.20221111201811.2"><vh>ExpansionPanelListExample</vh>
+<v t="swot.20221111201811.3"><vh>varible</vh></v>
+<v t="swot.20221111201811.4"><vh>initState()</vh></v>
+<v t="swot.20221111201811.5"><vh>dispose()</vh></v>
+<v t="swot.20221111201811.6"><vh>build()</vh>
+<v t="swot.20221111202207.2"><vh>Scaffold</vh>
+<v t="swot.20221111202207.3"><vh>appBar</vh></v>
+<v t="swot.20221111202207.4"><vh>body</vh>
+<v t="swot.20221111202707.2"><vh>SingleChildScrollView</vh>
+<v t="swot.20221111213642.2"><vh>Column</vh>
+<v t="swot.20221111213817.1"><vh>Text('Radio')</vh></v>
+<v t="swot.20221111202728.1"><vh>ExpansionPanelList.radio !!!</vh></v>
+<v t="swot.20221111214514.1"><vh>SizedBox</vh></v>
+<v t="swot.20221111214154.1"><vh>Text('Multiple')</vh></v>
+<v t="swot.20221111212929.1"><vh>ExpansionPanelList !!!</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 <v t="swot.20221031070602.2"><vh>ExpansionTileExample</vh>
 <v t="swot.20221031070602.3"><vh>varible</vh></v>
 <v t="swot.20221031070602.6"><vh>build()</vh>
 <v t="swot.20221031074359.2"><vh>Column</vh>
-<v t="swot.20221031073139.1"><vh>ExpansionTile -- _customIcon</vh></v>
 <v t="swot.20221031074310.1"><vh>ExpansionTile -- basic icon</vh></v>
+<v t="swot.20221031073139.1"><vh>ExpansionTile -- _customIcon</vh></v>
 <v t="swot.20221031074605.1"><vh>ExpansionTile -- change icon location</vh></v>
 </v>
 </v>
@@ -1045,11 +1088,16 @@
 </v>
 <v t="swot.20221023093033.14"><vh>ExampleP</vh>
 <v t="swot.20221029234453.2"><vh>PageViewExample</vh>
+<v t="swot.20221111064532.1"><vh>varible</vh></v>
+<v t="swot.20221111064612.1"><vh>dispose()</vh></v>
 <v t="swot.20221029234453.6"><vh>build()</vh>
 <v t="swot.20221029235310.2"><vh>Scaffold</vh>
-<v t="swot.20221029235310.3"><vh>appBar</vh></v>
+<v t="swot.20221029235310.3"><vh>appBar</vh>
+<v t="swot.20221111065157.2"><vh>IconButton left !!!</vh></v>
+<v t="swot.20221111065339.1"><vh>IconButton right !!!</vh></v>
+</v>
 <v t="swot.20221029235310.4"><vh>body</vh>
-<v t="swot.20221029234534.1"><vh>PageView</vh>
+<v t="swot.20221029234534.1"><vh>PageView !!!</vh>
 <v t="swot.20221029234605.1"><vh>Container</vh></v>
 <v t="swot.20221029234724.1"><vh>Container</vh></v>
 <v t="swot.20221029234725.1"><vh>Container</vh></v>
@@ -1060,8 +1108,6 @@
 </v>
 <v t="swot.20221025114730.2"><vh>PopupMenuButtonExample</vh>
 <v t="swot.20221025114730.3"><vh>varible</vh></v>
-<v t="swot.20221025114730.4"><vh>initState()</vh></v>
-<v t="swot.20221025114730.5"><vh>dispose()</vh></v>
 <v t="swot.20221025114730.6"><vh>build()</vh></v>
 </v>
 <v t="swot.20221029235922.2"><vh>PositionedExample</vh>
@@ -1358,13 +1404,13 @@
 </v>
 <v t="swot.20221029230649.2"><vh>TabBarExample</vh>
 <v t="swot.20221029230649.3"><vh>build()</vh>
-<v t="swot.20221029230800.1"><vh>DefaultTabController</vh>
+<v t="swot.20221029230800.1"><vh>DefaultTabController !!!</vh>
 <v t="swot.20221029230841.2"><vh>Scaffold</vh>
-<v t="swot.20221029230841.3"><vh>appBar</vh></v>
-<v t="swot.20221029230841.4"><vh>body</vh>
-<v t="swot.20221029231559.1"><vh>TabBarView</vh>
-<v t="swot.20221029231700.1"><vh>Container 3</vh></v>
+<v t="swot.20221029230841.3"><vh>appBar</vh>
+<v t="swot.20221111222446.1"><vh>TabBar !!!</vh></v>
 </v>
+<v t="swot.20221029230841.4"><vh>body</vh>
+<v t="swot.20221029231559.1"><vh>TabBarView !!!</vh></v>
 </v>
 </v>
 </v>
@@ -1484,7 +1530,30 @@
 <v t="swot.20221027203033.1"><vh>#file pubspec.yaml</vh>
 <v t="swot.20221027203224.1"><vh>&lt;&lt; assets &gt;&gt;</vh></v>
 </v>
-<v t="swot.20221017093031.150"><vh>@clean README.md</vh></v>
+<v t="swot.20221017093031.150"><vh>#auto-md README.md</vh>
+<v t="swot.20221111231601.1"><vh>Flutter built in Widgets</vh>
+<v t="swot.20221111231628.1"><vh>A...</vh></v>
+<v t="swot.20221111231641.1"><vh>B...</vh></v>
+<v t="swot.20221111232117.1"><vh>C...</vh></v>
+<v t="swot.20221111232624.1"><vh>D...</vh></v>
+<v t="swot.20221111232642.1"><vh>E...</vh></v>
+<v t="swot.20221111232852.1"><vh>F...</vh></v>
+<v t="swot.20221111232900.1"><vh>G...</vh></v>
+<v t="swot.20221111232905.1"><vh>H...</vh></v>
+<v t="swot.20221111232913.1"><vh>I...</vh></v>
+<v t="swot.20221111232919.1"><vh>L...</vh></v>
+<v t="swot.20221111233018.1"><vh>M...</vh></v>
+<v t="swot.20221111233024.1"><vh>N...</vh></v>
+<v t="swot.20221111233029.1"><vh>O...</vh></v>
+<v t="swot.20221111233034.1"><vh>P...</vh></v>
+<v t="swot.20221111233158.1"><vh>R...</vh></v>
+<v t="swot.20221111233201.1"><vh>S...</vh></v>
+<v t="swot.20221111233205.1"><vh>T...</vh></v>
+<v t="swot.20221111233207.1"><vh>V...</vh></v>
+<v t="swot.20221111233210.1"><vh>W...</vh></v>
+</v>
+</v>
+<v t="swot.20221111231424.1"><vh>##clean README.md</vh></v>
 </v>
 <v t="swot.20221027111311.1"><vh>Logic -- Focus use in one place</vh>
 <v t="swot.20221017093031.151"><vh>A</vh>
@@ -1708,11 +1777,20 @@
 <v t="swot.20221025095859.1"></v>
 <v t="swot.20221025095334.2"></v>
 </v>
+<v t="swot.20221110233027.1"><vh>DropDownButtonExample</vh>
+<v t="swot.20221110233828.1"></v>
+<v t="swot.20221110233138.2"></v>
+</v>
 </v>
 <v t="swot.20221026064223.1"><vh>E</vh>
 <v t="swot.20221026072859.1"><vh>ExpandedExample</vh>
 <v t="swot.20221026194030.1"></v>
 <v t="swot.20221026073602.2"></v>
+</v>
+<v t="swot.20221111201724.1"><vh>ExpansionPanelListExample</vh>
+<v t="swot.20221111204125.2"></v>
+<v t="swot.20221111204854.1"></v>
+<v t="swot.20221111201811.2"></v>
 </v>
 <v t="swot.20221031070401.1"><vh>ExpansionTileExample</vh>
 <v t="swot.20221031073947.1"></v>
@@ -1838,8 +1916,8 @@
 <v t="swot.20221029234453.2"></v>
 </v>
 <v t="swot.20221025114659.1"><vh>PopupMenuButtonExample</vh>
-<v t="swot.20221025114730.2"></v>
 <v t="swot.20221025191831.1"></v>
+<v t="swot.20221025114730.2"></v>
 </v>
 <v t="swot.20221029235908.1"><vh>PositionedExample</vh>
 <v t="swot.20221030082123.2"></v>
@@ -1978,21 +2056,14 @@
 <v t="swot.20221031114906.1"></v>
 <v t="swot.20221031125205.1"><vh>Waiting...</vh></v>
 </v>
+<v t="swot.20221111002547.1"><vh>Button -- popup &amp; dropdown</vh>
+<v t="swot.20221025114730.2"></v>
+<v t="swot.20221110233138.2"></v>
+</v>
 </v>
 <v t="swot.20221027213439.1"><vh>@spot</vh>
-<v t="swot.20221031114947.2"></v>
-<v t="swot.20221031134256.2"></v>
-<v t="swot.20221031143139.2"></v>
-<v t="swot.20221031171010.2"></v>
-<v t="swot.20221031182202.2"></v>
-<v t="swot.20221031202343.2"></v>
-<v t="swot.20221031213433.2"></v>
-<v t="swot.20221031220414.2"></v>
-<v t="swot.20221031222131.2"></v>
-<v t="swot.20221031231919.2"></v>
-<v t="swot.20221101064424.1"></v>
-<v t="swot.20221102101634.2"></v>
-<v t="swot.20221110214259.1"><vh>newHeadline</vh></v>
+<v t="swot.20221110233138.2"></v>
+<v t="swot.20221111201811.2"></v>
 </v>
 </vnodes>
 <tnodes>
@@ -2010,186 +2081,7 @@ https://www.youtube.com/watch?v=M9J-JJOuyE0
 bool selected = false;
 </t>
 <t tx="swot.20221017093031.150">@language md
-## Flutter built in Widgets
-
-This project is for main using Widgets.
-
-Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
-
-&lt;img src="assets/introduce.png" width="100%" /&gt;
-
-### A...
-
-    AboutDialog
-    AboutListTile
-    AbsorbPointer -- include button can not be clicked
-    AdaptiveExample
-    AlertDialog
-    Align
-    AnimatedAlign
-    AnimatedBuilder
-    AnimatedContainer
-    AnimatedCrossFade
-    AnimatedDefaultTextStyle
-    AnimatedIcon
-    AnimatedList
-    AnimatedModalBarrier
-    AnimatedOpacity
-    AnimatedPadding
-    AnimatedPhysicalModel
-    AnimatedPositioned
-    AnimatedRotation
-    AnimatedSize
-    AnimatedSwitcher
-    AppBar
-    AspectRatio
-    AutoComplete
-
-### B...
-
-    BackdropFilterExample
-    BannerExample
-    BaselineExample
-    BlockSemanticsExample
-    BottomNavigationBarExample
-    BottomSheetExample
-    BuilderExample
-
-### C...
-
-    CardExample
-    CenterExample
-    CheckboxExample
-    CheckboxListTileExample
-    ChipExample
-    ChoiceChipExample
-    CircleAvatarExample
-    CircularProgressIndicatorExample
-    ClipOvalExample
-    ClipPathExample
-    ClipRectExample
-    ClipRRectExample
-    CloseButtonExample
-    ColoredBoxExample
-    ColorFilteredExample
-    ConstrainedBoxExample
-    ContainerExample
-    ColumnExample
-    CupertinoActionSheetExample
-    CupertinoAppExample
-    CupertinoContextMenuExample  -- longPress
-    CupertinoSlidingSegmentedControlExample
-
-### D...
-
-    DismissibleExample
-    DividerExample
-    DraggableScrollableExample
-    DragTargetExample
-    DrawerExample
-
-### E
-
-    ExpandedExample -- height in Expanded takes no effect
-    ExpansionTileExample
-
-### F
-
-    FadeInImageExample
-    FittedBoxExample
-    FlexibleExample
-    floatingActionButton
-    FormExample
-    FractionallySizedBoxExample
-    FutureBuilderExample
-
-### G
-
-    GestureDetectorExample
-    GridPaperExample
-    GridViewExample
-    GridTileExample
-
-### H
-
-    HeroExample
-    HeroExample2
-
-### I...
-
-    IgnorePointerExample
-    IndexedStackExample
-    InkwellExample
-    InteractiveViewerExample
-    InteractiveViewerExample2
-
-### L...
-
-    LayoutBuilderExample
-    LongPressDraggableExample
-    ListViewExample
-
-### M...
-
-    MaterialBannerExample
-
-### N
-
-    NavigationBarExample
-
-### O...
-
-    OrientationBuilderExample
-    OverflowBarExample
-
-### P...
-
-    PageViewExample
-    PopupMenuButtonExample
-    PositionedExample
-    PreferredSizeExample
-
-### R...
-
-    RadioListTileExample
-    RangeSliderExample
-    RefreshIndicatorExample
-    ReorderableListViewExample  -- longPress
-    RotatedBoxExample
-
-### S...
-
-    SafeAreaExample
-    SearchDelegateExample
-    SelectableTextExample
-    SliderExample
-    SliveAppBarExample
-    SnackBarExample
-    SpreadOperatorExample
-    StackExample
-    StepperExample
-    StreamBuilderExample
-    SwitchExample
-    showDatePickerExample
-    showDateRangePickerExample
-    showTimePickerExample
-
-### T...
-
-    TabBarExample
-    TableExample
-    TextFormFieldExample
-    TabPageSelectorExample
-    TooltipExample
-
-### V...
-
-    VisibilityExample
-
-### W...
-
-    WillPopScopeExample
-    WrapExample
+@others
 </t>
 <t tx="swot.20221017093031.151">for node in p.children():
   print(node.h);
@@ -2250,17 +2142,23 @@ ElevatedButton(
 ),
 </t>
 <t tx="swot.20221017093031.156">AlertDialog(
+  title: const Text('Flutter App'),
+  content: const Text('This is the alert Dialog'),
+  contentPadding: const EdgeInsets.all(20.0),
   actions: [
     TextButton(
       onPressed: () {
         Navigator.of(context).pop();
       },
-      child: const Text('Close'),
+      child: const Text('CANCEL'),
     ),
+    TextButton(
+      onPressed: () {
+        Navigator.of(context).pop();
+      },
+      child: const Text('OK'),
+    )
   ],
-  title: const Text('Flutter App'),
-  contentPadding: const EdgeInsets.all(20.0),
-  content: const Text('This is the alert Dialog'),
 ),
 </t>
 <t tx="swot.20221017093031.157">@doc
@@ -2925,11 +2823,15 @@ Divider(),
   centerTitle: true,
 
   // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
+    // icon: const Icon(Icons.menu),
+    // onPressed: (){},
   // ),
 
   actions: [
+    IconButton(
+      icon: const Icon(Icons.search),
+      onPressed: () {},
+    ),
     IconButton(
       icon: const Icon(Icons.notifications),
       onPressed: () {},
@@ -2945,6 +2847,15 @@ Divider(),
 
   backgroundColor: Colors.orangeAccent,
   elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+  
+  bottom: PreferredSize(
+    preferredSize: const Size.fromHeight(80),
+    child: Container(
+      height: 80,
+      color: Colors.black26,
+      child: const Center(child: Text('Appbar Bottom')),
+    ),
+  ),
 ),
 </t>
 <t tx="swot.20221017093031.253">Container(
@@ -3951,16 +3862,8 @@ void dispose() {
 <t tx="swot.20221022141252.5">@override
 Widget build(BuildContext context) {
   return Center(
-    child: Checkbox(
-      value: isChecked,
-      activeColor: Colors.orangeAccent,
-      tristate: true, // allow null value
-      onChanged: (newBool) {
-        setState(() {
-          isChecked = newBool;
-        });
-      },
-    ),
+    child:
+        @others
   );
 }
 </t>
@@ -6280,38 +6183,27 @@ class _PopupMenuButtonExampleState extends State&lt;PopupMenuButtonExample&gt; {
 String item1 = 'First item';
 String item2 = 'Second item';
 </t>
-<t tx="swot.20221025114730.4">@override
-void initState() {
-  super.initState();
-}
-
-</t>
-<t tx="swot.20221025114730.5">@override
-void dispose() {
-  super.dispose();
-}
-
-</t>
 <t tx="swot.20221025114730.6">@override
 Widget build(BuildContext context) {
   return ListTile(
     title: Text(title),
     trailing: PopupMenuButton(
-        itemBuilder: (context) =&gt; [
-              PopupMenuItem(
-                value: item1,
-                child: Text(item1),
-              ),
-              PopupMenuItem(
-                value: item2,
-                child: Text(item2),
-              ),
-            ],
-        onSelected: (String newValue) {
-          setState(() {
-            title = newValue;
-          });
-        }),
+      itemBuilder: (context) =&gt; [
+        PopupMenuItem(
+          value: item1,
+          child: Text(item1),
+        ),
+        PopupMenuItem(
+          value: item2,
+          child: Text(item2),
+        ),
+      ],
+      onSelected: (String newValue) {
+        setState(() {
+          title = newValue;
+        });
+      },
+    ),
   );
 }
 </t>
@@ -8621,13 +8513,8 @@ Widget build(BuildContext context) {
 </t>
 <t tx="swot.20221029230841.3">appBar: AppBar(
   title: Text('TabBar'),
-  bottom: const TabBar(
-    tabs: [
-      Tab(icon: Icon(Icons.home)),
-      Tab(icon: Icon(Icons.settings)),
-      Tab(icon: Icon(Icons.person)),
-    ],
-  ),
+  bottom:
+      @others
   // leading: Icon(Icons.menu),
   actions: [
     Icon(Icons.settings),
@@ -8641,22 +8528,20 @@ Widget build(BuildContext context) {
 </t>
 <t tx="swot.20221029231559.1">TabBarView(
   children: [
-    @others
+    Container(
+      color: Colors.orangeAccent,
+      child: const Icon(Icons.home),
+    ),
+    Container(
+      color: Colors.redAccent,
+      child: const Icon(Icons.settings),
+    ),
+    Container(
+      color: Colors.orangeAccent,
+      child: const Icon(Icons.person),
+    ),
   ],
 )
-</t>
-<t tx="swot.20221029231700.1">Container(
-  color: Colors.orangeAccent,
-  child: const Icon(Icons.home),
-),
-Container(
-  color: Colors.redAccent,
-  child: const Icon(Icons.settings),
-),
-Container(
-  color: Colors.orangeAccent,
-  child: const Icon(Icons.person),
-),
 </t>
 <t tx="swot.20221029232032.2">ElevatedButton(
   style: ElevatedButton.styleFrom(
@@ -8697,6 +8582,12 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221029234534.1">PageView(
+  // physics: const NeverScrollableScrollPhysics(),
+  // scrollDirection: Axis.vertical,  // default is Axis.horizontal
+  controller: controller,
+  onPageChanged: (index) {
+    print('Page ${index + 1}');
+  },
   children: [
     @others
   ],
@@ -8706,7 +8597,7 @@ Widget build(BuildContext context) {
   color: Colors.orangeAccent,
   child: const Center(
     child: Text(
-      '1',
+      'Page 1',
       style: TextStyle(fontSize: 100),
     ),
   ),
@@ -8716,7 +8607,7 @@ Widget build(BuildContext context) {
   color: Colors.redAccent,
   child: const Center(
     child: Text(
-      '2',
+      'Page 2',
       style: TextStyle(fontSize: 100),
     ),
   ),
@@ -8726,7 +8617,7 @@ Widget build(BuildContext context) {
   color: Colors.blueGrey,
   child: const Center(
     child: Text(
-      '3',
+      'Page 3',
       style: TextStyle(fontSize: 100),
     ),
   ),
@@ -8755,11 +8646,11 @@ Widget build(BuildContext context) {
 <t tx="swot.20221029235310.3">appBar: AppBar(
   title: Text('PageViewExample'),
   // leading: Icon(Icons.menu),
-  actions: [
-    Icon(Icons.settings),
-  ],
   elevation: 0.0,
   centerTitle: true,
+  actions: [
+    @others
+  ],
 ),
 </t>
 <t tx="swot.20221029235310.4">body:
@@ -11253,17 +11144,642 @@ Widget build(BuildContext context) {
   },
 );
 </t>
-<t tx="swot.20221110214259.1">SearchDelegateExample
-AdaptiveExample
-HeroExample2
-SliveAppBarExample
-RangeSliderExample
-WillPopScopeExample
-GridPaperExample
-TooltipExample
-SpreadOperatorExample
-InkwellExample -- press ALT to scale
-InteractiveViewerExample2 -- scale the image
-DividerExample</t>
+<t tx="swot.20221110225224.1">Checkbox(
+  value: isChecked,
+  activeColor: Colors.orangeAccent,
+  checkColor: Colors.red,
+  tristate: true, // allow null value
+  onChanged: (newBool) {
+    setState(() {
+      isChecked = newBool;
+    });
+  },
+),
+</t>
+<t tx="swot.20221110225519.1">Theme(
+  data: Theme.of(context).copyWith(
+    unselectedWidgetColor: Colors.blue,
+  ),
+  child:
+      @others
+),
+</t>
+<t tx="swot.20221110233027.1"></t>
+<t tx="swot.20221110233138.2">@language dart
+@tabwidth -2
+class DropDownButtonExample extends StatefulWidget {
+  const DropDownButtonExample({super.key});
+
+  @override
+  State&lt;DropDownButtonExample&gt; createState() =&gt; _DropDownButtonExampleState();
+}
+
+class _DropDownButtonExampleState extends State&lt;DropDownButtonExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221110233138.3">List&lt;String&gt; items = [
+  'Item 1',
+  'Item 2',
+  'Item 3',
+  'Item 4',
+];
+
+String? selectedItem = 'Item 1';
+</t>
+<t tx="swot.20221110233138.4">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221110233138.5">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221110233138.6">@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221110233541.2">DropdownButton(
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20),
+    ),
+  )).toList(),
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221110233828.1">DropDownButtonExample(),
+</t>
+<t tx="swot.20221111000057.1">SizedBox(
+  width: 240,
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221111000936.2">Column(
+  children: [
+    @others
+  ],
+)
+</t>
+<t tx="swot.20221111001008.1">SizedBox(
+  width: 240,
+  child:
+  @others
+)
+</t>
+<t tx="swot.20221111001008.2">DropdownButtonFormField(
+  decoration: InputDecoration(
+    enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12),
+      borderSide: const BorderSide(width: 3, color: Colors.blue)
+    )
+  ),
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20),
+    ),
+  )).toList(),
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221111002547.1"></t>
+<t tx="swot.20221111064532.1">final controller = PageController(initialPage: 1);  // Page 2
+</t>
+<t tx="swot.20221111064612.1">dispose() {
+  super.dispose();
+  controller.dispose();
+}
+</t>
+<t tx="swot.20221111065157.2">IconButton(
+  icon: const Icon(Icons.keyboard_arrow_left),
+  onPressed: (){
+    // controller.animateToPage(
+      // 0,  // index 0 is the first page
+      // duration: const Duration(seconds: 1),
+      // curve: Curves.easeInOut,
+    // );
+    controller.previousPage(
+      duration: const Duration(seconds: 1),
+      curve: Curves.easeInOut,
+    );
+  },
+),
+</t>
+<t tx="swot.20221111065339.1">IconButton(
+  icon: const Icon(Icons.keyboard_arrow_right),
+  onPressed: (){
+    // controller.animateToPage(
+      // 2,  // index 2 is the last page
+      // duration: const Duration(seconds: 1),
+      // curve: Curves.easeInOut,
+    // );
+    controller.nextPage(
+      duration: const Duration(seconds: 1),
+      curve: Curves.easeInOut,
+    );
+  },
+),
+</t>
+<t tx="swot.20221111201724.1"></t>
+<t tx="swot.20221111201811.2">@language dart
+@tabwidth -2
+class ExpansionPanelListExample extends StatefulWidget {
+  const ExpansionPanelListExample({super.key});
+
+  @override
+  State&lt;ExpansionPanelListExample&gt; createState() =&gt; _ExpansionPanelListExampleState();
+}
+
+class _ExpansionPanelListExampleState extends State&lt;ExpansionPanelListExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221111201811.3">static const loremIpsum = 'Officia elit et minim, est et lorem excepteur in et laborum velit. Id sit incididunt laborum fugiat ad est. Laborum non cillum ad in eu. Tempor aute consequat exercitation anim excepteur dolor nulla. Ea lorem ea proident consectetur proident.';
+
+final List&lt;Item&gt; items = [
+  Item(header: 'Panel 1', body: loremIpsum),
+  Item(header: 'Panel 2', body: loremIpsum),
+  Item(header: 'Panel 3', body: loremIpsum),
+];
+</t>
+<t tx="swot.20221111201811.4">@override
+void initState() {
+  super.initState();
+}
+</t>
+<t tx="swot.20221111201811.5">@override
+void dispose() {
+  super.dispose();
+}
+</t>
+<t tx="swot.20221111201811.6">@override
+Widget build(BuildContext context) {
+  return
+  @others
+}
+</t>
+<t tx="swot.20221111202207.2">Scaffold(
+  @others
+);
+</t>
+<t tx="swot.20221111202207.3">appBar: AppBar(
+  title: Text('ExpansionPanelListExample'),
+),
+</t>
+<t tx="swot.20221111202207.4">body:
+@others
+</t>
+<t tx="swot.20221111202707.2">SingleChildScrollView(
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221111202728.1">ExpansionPanelList.radio(
+  children: items.map(
+    (item) =&gt; ExpansionPanelRadio(
+      canTapOnHeader: true,
+      value: item.header,  // has to be unique!
+      headerBuilder: (context, isExpanded) =&gt; ListTile(
+        title: Text(
+          item.header,
+          style: const TextStyle(fontSize: 20),
+        ),
+      ),
+      body: ListTile(
+        title: Text(
+          item.body,
+          style: const TextStyle(fontSize: 16),
+        ),
+      ),
+    ),
+  ).toList(),
+),
+</t>
+<t tx="swot.20221111204125.2">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; ExpansionPanelListExample(),
+      ),
+    );
+  },
+  child: const Text('ExpansionPanelListExample'),
+),
+
+</t>
+<t tx="swot.20221111204854.1">class Item {
+  final String header;
+  final String body;
+  bool isExpanded;
+
+  Item({
+    required this.header,
+    required this.body,
+    this.isExpanded = false,
+  });
+}
+</t>
+<t tx="swot.20221111212929.1">// ExpansionPanelList.radio(
+ExpansionPanelList(
+  expansionCallback: (index, isExpanded) {
+    setState(() {
+      items[index].isExpanded = !isExpanded;
+    });
+  },
+  children: items.map(
+    // (item) =&gt; ExpansionPanelRadio(
+    (item) =&gt; ExpansionPanel(
+      canTapOnHeader: true,
+      // value: item.header,  // has to be unique!
+      isExpanded: item.isExpanded,
+      headerBuilder: (context, isExpanded) =&gt; ListTile(
+        title: Text(
+          item.header,
+          style: const TextStyle(fontSize: 20),
+        ),
+      ),
+      body: ListTile(
+        title: Text(
+          item.body,
+          style: const TextStyle(fontSize: 16),
+        ),
+      ),
+    ),
+  ).toList(),
+),
+</t>
+<t tx="swot.20221111213642.2">Column(
+  children: [
+    @others
+  ],
+)
+</t>
+<t tx="swot.20221111213817.1">Text(
+  'Radio',
+  style: TextStyle(fontSize: 20),
+),
+</t>
+<t tx="swot.20221111214154.1">Text(
+  'Multiple',
+  style: TextStyle(fontSize: 20),
+),
+</t>
+<t tx="swot.20221111214514.1">SizedBox(height: 20.0),</t>
+<t tx="swot.20221111222446.1">const TabBar(
+  tabs: [
+    Tab(text: 'Tab 1', icon: Icon(Icons.home)),
+    Tab(text: 'Tab 2', icon: Icon(Icons.settings)),
+    Tab(text: 'Tab 3', icon: Icon(Icons.person)),
+  ],
+),
+</t>
+<t tx="swot.20221111231424.1">@language md
+## Flutter built in Widgets
+
+This project is for main using Widgets.
+
+Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
+
+&lt;img src="assets/introduce.png" width="100%" /&gt;
+
+### A...
+
+    AboutDialog
+    AboutListTile
+    AbsorbPointer -- include button can not be clicked
+    AdaptiveExample
+    AlertDialog
+    Align
+    AnimatedAlign
+    AnimatedBuilder
+    AnimatedContainer
+    AnimatedCrossFade
+    AnimatedDefaultTextStyle
+    AnimatedIcon
+    AnimatedList
+    AnimatedModalBarrier
+    AnimatedOpacity
+    AnimatedPadding
+    AnimatedPhysicalModel
+    AnimatedPositioned
+    AnimatedRotation
+    AnimatedSize
+    AnimatedSwitcher
+    AppBar
+    AspectRatio
+    AutoComplete
+
+### B...
+
+    BackdropFilterExample
+    BannerExample
+    BaselineExample
+    BlockSemanticsExample
+    BottomNavigationBarExample
+    BottomSheetExample
+    BuilderExample
+
+### C...
+
+    CardExample
+    CenterExample
+    CheckboxExample
+    CheckboxListTileExample
+    ChipExample
+    ChoiceChipExample
+    CircleAvatarExample
+    CircularProgressIndicatorExample
+    ClipOvalExample
+    ClipPathExample
+    ClipRectExample
+    ClipRRectExample
+    CloseButtonExample
+    ColoredBoxExample
+    ColorFilteredExample
+    ConstrainedBoxExample
+    ContainerExample
+    ColumnExample
+    CupertinoActionSheetExample
+    CupertinoAppExample
+    CupertinoContextMenuExample  -- longPress
+    CupertinoSlidingSegmentedControlExample
+
+### D...
+
+    DismissibleExample
+    DividerExample
+    DraggableScrollableExample
+    DragTargetExample
+    DrawerExample
+
+### E
+
+    ExpandedExample -- height in Expanded takes no effect
+    ExpansionTileExample
+
+### F
+
+    FadeInImageExample
+    FittedBoxExample
+    FlexibleExample
+    floatingActionButton
+    FormExample
+    FractionallySizedBoxExample
+    FutureBuilderExample
+
+### G
+
+    GestureDetectorExample
+    GridPaperExample
+    GridViewExample
+    GridTileExample
+
+### H
+
+    HeroExample
+    HeroExample2
+
+### I...
+
+    IgnorePointerExample
+    IndexedStackExample
+    InkwellExample
+    InteractiveViewerExample
+    InteractiveViewerExample2
+
+### L...
+
+    LayoutBuilderExample
+    LongPressDraggableExample
+    ListViewExample
+
+### M...
+
+    MaterialBannerExample
+
+### N
+
+    NavigationBarExample
+
+### O...
+
+    OrientationBuilderExample
+    OverflowBarExample
+
+### P...
+
+    PageViewExample
+    PopupMenuButtonExample
+    PositionedExample
+    PreferredSizeExample
+
+### R...
+
+    RadioListTileExample
+    RangeSliderExample
+    RefreshIndicatorExample
+    ReorderableListViewExample  -- longPress
+    RotatedBoxExample
+
+### S...
+
+    SafeAreaExample
+    SearchDelegateExample
+    SelectableTextExample
+    SliderExample
+    SliveAppBarExample
+    SnackBarExample
+    SpreadOperatorExample
+    StackExample
+    StepperExample
+    StreamBuilderExample
+    SwitchExample
+    showDatePickerExample
+    showDateRangePickerExample
+    showTimePickerExample
+
+### T...
+
+    TabBarExample
+    TableExample
+    TextFormFieldExample
+    TabPageSelectorExample
+    TooltipExample
+
+### V...
+
+    VisibilityExample
+
+### W...
+
+    WillPopScopeExample
+    WrapExample
+</t>
+<t tx="swot.20221111231601.1">This project is for main using Widgets.
+
+Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
+
+&lt;img src="assets/introduce.png" width="100%" /&gt;
+
+</t>
+<t tx="swot.20221111231628.1">    AboutDialog
+    AboutListTile
+    AbsorbPointer -- include button can not be clicked
+    AdaptiveExample
+    AlertDialog
+    Align
+    AnimatedAlign
+    AnimatedBuilder
+    AnimatedContainer
+    AnimatedCrossFade
+    AnimatedDefaultTextStyle
+    AnimatedIcon
+    AnimatedList
+    AnimatedModalBarrier
+    AnimatedOpacity
+    AnimatedPadding
+    AnimatedPhysicalModel
+    AnimatedPositioned
+    AnimatedRotation
+    AnimatedSize
+    AnimatedSwitcher
+    AppBar
+    AspectRatio
+    AutoComplete
+</t>
+<t tx="swot.20221111231641.1">    BackdropFilterExample
+    BannerExample
+    BaselineExample
+    BlockSemanticsExample
+    BottomNavigationBarExample
+    BottomSheetExample
+    BuilderExample
+</t>
+<t tx="swot.20221111232117.1">    CardExample
+    CenterExample
+    CheckboxExample
+    CheckboxListTileExample
+    ChipExample
+    ChoiceChipExample
+    CircleAvatarExample
+    CircularProgressIndicatorExample
+    ClipOvalExample
+    ClipPathExample
+    ClipRectExample
+    ClipRRectExample
+    CloseButtonExample
+    ColoredBoxExample
+    ColorFilteredExample
+    ConstrainedBoxExample
+    ContainerExample
+    ColumnExample
+    CupertinoActionSheetExample
+    CupertinoAppExample
+    CupertinoContextMenuExample  -- longPress
+    CupertinoSlidingSegmentedControlExample
+</t>
+<t tx="swot.20221111232624.1">    DismissibleExample
+    DividerExample
+    DraggableScrollableExample
+    DragTargetExample
+    DrawerExample
+</t>
+<t tx="swot.20221111232642.1">    ExpandedExample -- height in Expanded takes no effect
+    ExpansionTileExample
+</t>
+<t tx="swot.20221111232852.1">    FadeInImageExample
+    FittedBoxExample
+    FlexibleExample
+    floatingActionButton
+    FormExample
+    FractionallySizedBoxExample
+    FutureBuilderExample
+</t>
+<t tx="swot.20221111232900.1">    GestureDetectorExample
+    GridPaperExample
+    GridViewExample
+    GridTileExample
+</t>
+<t tx="swot.20221111232905.1">    HeroExample
+    HeroExample2
+</t>
+<t tx="swot.20221111232913.1">    IgnorePointerExample
+    IndexedStackExample
+    InkwellExample
+    InteractiveViewerExample
+    InteractiveViewerExample2
+</t>
+<t tx="swot.20221111232919.1">    LayoutBuilderExample
+    LongPressDraggableExample
+    ListViewExample
+</t>
+<t tx="swot.20221111233018.1">    MaterialBannerExample
+</t>
+<t tx="swot.20221111233024.1">    NavigationBarExample
+</t>
+<t tx="swot.20221111233029.1">    OrientationBuilderExample
+    OverflowBarExample
+</t>
+<t tx="swot.20221111233034.1">    PageViewExample
+    PopupMenuButtonExample
+    PositionedExample
+    PreferredSizeExample
+</t>
+<t tx="swot.20221111233158.1">    RadioListTileExample
+    RangeSliderExample
+    RefreshIndicatorExample
+    ReorderableListViewExample  -- longPress
+    RotatedBoxExample
+</t>
+<t tx="swot.20221111233201.1">    SafeAreaExample
+    SearchDelegateExample
+    SelectableTextExample
+    SliderExample
+    SliveAppBarExample
+    SnackBarExample
+    SpreadOperatorExample
+    StackExample
+    StepperExample
+    StreamBuilderExample
+    SwitchExample
+    showDatePickerExample
+    showDateRangePickerExample
+    showTimePickerExample
+</t>
+<t tx="swot.20221111233205.1">    TabBarExample
+    TableExample
+    TextFormFieldExample
+    TabPageSelectorExample
+    TooltipExample
+</t>
+<t tx="swot.20221111233207.1">    VisibilityExample
+</t>
+<t tx="swot.20221111233210.1">    WillPopScopeExample
+    WrapExample
+</t>
 </tnodes>
 </leo_file>

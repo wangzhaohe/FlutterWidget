@@ -326,11 +326,15 @@ class A extends StatelessWidget {
         centerTitle: true,
 
         // leading: IconButton(
-        // icon: const Icon(Icons.menu),
-        // onPressed: (){},
+          // icon: const Icon(Icons.menu),
+          // onPressed: (){},
         // ),
 
         actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {},
+          ),
           IconButton(
             icon: const Icon(Icons.notifications),
             onPressed: () {},
@@ -346,6 +350,15 @@ class A extends StatelessWidget {
 
         backgroundColor: Colors.orangeAccent,
         elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
+        
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(80),
+          child: Container(
+            height: 80,
+            color: Colors.black26,
+            child: const Center(child: Text('Appbar Bottom')),
+          ),
+        ),
       ),
       //@-others
       body: DemoA(),
@@ -537,17 +550,23 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
                           //@+others
                           //@+node:swot.20221017093031.156: *11* AlertDialog
                           AlertDialog(
+                            title: const Text('Flutter App'),
+                            content: const Text('This is the alert Dialog'),
+                            contentPadding: const EdgeInsets.all(20.0),
                             actions: [
                               TextButton(
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: const Text('Close'),
+                                child: const Text('CANCEL'),
                               ),
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: const Text('OK'),
+                              )
                             ],
-                            title: const Text('Flutter App'),
-                            contentPadding: const EdgeInsets.all(20.0),
-                            content: const Text('This is the alert Dialog'),
                           ),
                           //@-others
                     );
@@ -2618,16 +2637,30 @@ class _CheckboxExampleState extends State<CheckboxExample> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Checkbox(
-        value: isChecked,
-        activeColor: Colors.orangeAccent,
-        tristate: true, // allow null value
-        onChanged: (newBool) {
-          setState(() {
-            isChecked = newBool;
-          });
-        },
-      ),
+      child:
+          //@+others
+          //@+node:swot.20221110225519.1: *7* Theme
+          Theme(
+            data: Theme.of(context).copyWith(
+              unselectedWidgetColor: Colors.blue,
+            ),
+            child:
+                //@+others
+                //@+node:swot.20221110225224.1: *8* Checkbox !!!
+                Checkbox(
+                  value: isChecked,
+                  activeColor: Colors.orangeAccent,
+                  checkColor: Colors.red,
+                  tristate: true, // allow null value
+                  onChanged: (newBool) {
+                    setState(() {
+                      isChecked = newBool;
+                    });
+                  },
+                ),
+                //@-others
+          ),
+          //@-others
     );
   }
   //@-others
@@ -3448,6 +3481,8 @@ class _DemoDState extends State<DemoD> {
           },
         ),
         Divider(),
+        //@+node:swot.20221110233828.1: *8* show DropDownButtonExample
+        DropDownButtonExample(),
         //@-others
       ]),
 
@@ -3821,6 +3856,105 @@ class DrawerExample extends StatelessWidget {
   //@-others
 }
 
+//@+node:swot.20221110233138.2: *5* DropDownButtonExample
+//@@language dart
+//@@tabwidth -2
+class DropDownButtonExample extends StatefulWidget {
+  const DropDownButtonExample({super.key});
+
+  @override
+  State<DropDownButtonExample> createState() => _DropDownButtonExampleState();
+}
+
+class _DropDownButtonExampleState extends State<DropDownButtonExample>{
+  //@+others
+  //@+node:swot.20221110233138.3: *6* varible
+  List<String> items = [
+    'Item 1',
+    'Item 2',
+    'Item 3',
+    'Item 4',
+  ];
+
+  String? selectedItem = 'Item 1';
+  //@+node:swot.20221110233138.4: *6* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221110233138.5: *6* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221110233138.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221111000936.2: *7* Column
+    Column(
+      children: [
+        //@+others
+        //@+node:swot.20221111000057.1: *8* SizedBox
+        SizedBox(
+          width: 240,
+          child:
+          //@+others
+          //@+node:swot.20221110233541.2: *9* DropdownButton !!!
+          DropdownButton(
+            // hint: const Text("Filter by"),
+            value: selectedItem,
+            items: items.map((item) => DropdownMenuItem<String>(
+              value: item,
+              child: Text(item, style: const TextStyle(fontSize: 20),
+              ),
+            )).toList(),
+            onChanged: (item) {
+              setState(() {
+                selectedItem = item;
+              });
+            },
+          ),
+          //@-others
+        ),
+        //@+node:swot.20221111001008.1: *8* SizedBox
+        SizedBox(
+          width: 240,
+          child:
+          //@+others
+          //@+node:swot.20221111001008.2: *9* DropdownButtonFormField !!!
+          DropdownButtonFormField(
+            decoration: InputDecoration(
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: const BorderSide(width: 3, color: Colors.blue)
+              )
+            ),
+            // hint: const Text("Filter by"),
+            value: selectedItem,
+            items: items.map((item) => DropdownMenuItem<String>(
+              value: item,
+              child: Text(item, style: const TextStyle(fontSize: 20),
+              ),
+            )).toList(),
+            onChanged: (item) {
+              setState(() {
+                selectedItem = item;
+              });
+            },
+          ),
+          //@-others
+        )
+        //@-others
+      ],
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
 //@+node:swot.20221025205925.1: *3* E Example
 //@+node:swot.20221025205946.1: *4* E  -- Scaffold
 class E extends StatelessWidget {
@@ -3892,6 +4026,22 @@ class _DemoEState extends State<DemoE> {
         //@+node:swot.20221026194030.1: *8* show ExpandedExample
         ExpandedExample(),
         Divider(),
+        //@+node:swot.20221111204125.2: *8* show ExpansionPanelListExample
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            // backgroundColor: Colors.orangeAccent,
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ExpansionPanelListExample(),
+              ),
+            );
+          },
+          child: const Text('ExpansionPanelListExample'),
+        ),
+
         //@+node:swot.20221031073947.1: *8* show ExpansionTileExample
         ExpansionTileExample(),
         Divider(),
@@ -3960,6 +4110,146 @@ class ExpandedExample extends StatelessWidget {
   //@-others
 }
 
+//@+node:swot.20221111204854.1: *5* class Item
+class Item {
+  final String header;
+  final String body;
+  bool isExpanded;
+
+  Item({
+    required this.header,
+    required this.body,
+    this.isExpanded = false,
+  });
+}
+//@+node:swot.20221111201811.2: *5* ExpansionPanelListExample
+//@@language dart
+//@@tabwidth -2
+class ExpansionPanelListExample extends StatefulWidget {
+  const ExpansionPanelListExample({super.key});
+
+  @override
+  State<ExpansionPanelListExample> createState() => _ExpansionPanelListExampleState();
+}
+
+class _ExpansionPanelListExampleState extends State<ExpansionPanelListExample>{
+  //@+others
+  //@+node:swot.20221111201811.3: *6* varible
+  static const loremIpsum = 'Officia elit et minim, est et lorem excepteur in et laborum velit. Id sit incididunt laborum fugiat ad est. Laborum non cillum ad in eu. Tempor aute consequat exercitation anim excepteur dolor nulla. Ea lorem ea proident consectetur proident.';
+
+  final List<Item> items = [
+    Item(header: 'Panel 1', body: loremIpsum),
+    Item(header: 'Panel 2', body: loremIpsum),
+    Item(header: 'Panel 3', body: loremIpsum),
+  ];
+  //@+node:swot.20221111201811.4: *6* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+  //@+node:swot.20221111201811.5: *6* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+  //@+node:swot.20221111201811.6: *6* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221111202207.2: *7* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221111202207.3: *8* appBar
+      appBar: AppBar(
+        title: Text('ExpansionPanelListExample'),
+      ),
+      //@+node:swot.20221111202207.4: *8* body
+      body:
+      //@+others
+      //@+node:swot.20221111202707.2: *9* SingleChildScrollView
+      SingleChildScrollView(
+        child:
+        //@+others
+        //@+node:swot.20221111213642.2: *10* Column
+        Column(
+          children: [
+            //@+others
+            //@+node:swot.20221111213817.1: *11* Text('Radio')
+            Text(
+              'Radio',
+              style: TextStyle(fontSize: 20),
+            ),
+            //@+node:swot.20221111202728.1: *11* ExpansionPanelList.radio !!!
+            ExpansionPanelList.radio(
+              children: items.map(
+                (item) => ExpansionPanelRadio(
+                  canTapOnHeader: true,
+                  value: item.header,  // has to be unique!
+                  headerBuilder: (context, isExpanded) => ListTile(
+                    title: Text(
+                      item.header,
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                  ),
+                  body: ListTile(
+                    title: Text(
+                      item.body,
+                      style: const TextStyle(fontSize: 16),
+                    ),
+                  ),
+                ),
+              ).toList(),
+            ),
+            //@+node:swot.20221111214514.1: *11* SizedBox
+            SizedBox(height: 20.0),
+            //@+node:swot.20221111214154.1: *11* Text('Multiple')
+            Text(
+              'Multiple',
+              style: TextStyle(fontSize: 20),
+            ),
+            //@+node:swot.20221111212929.1: *11* ExpansionPanelList !!!
+            // ExpansionPanelList.radio(
+            ExpansionPanelList(
+              expansionCallback: (index, isExpanded) {
+                setState(() {
+                  items[index].isExpanded = !isExpanded;
+                });
+              },
+              children: items.map(
+                // (item) => ExpansionPanelRadio(
+                (item) => ExpansionPanel(
+                  canTapOnHeader: true,
+                  // value: item.header,  // has to be unique!
+                  isExpanded: item.isExpanded,
+                  headerBuilder: (context, isExpanded) => ListTile(
+                    title: Text(
+                      item.header,
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                  ),
+                  body: ListTile(
+                    title: Text(
+                      item.body,
+                      style: const TextStyle(fontSize: 16),
+                    ),
+                  ),
+                ),
+              ).toList(),
+            ),
+            //@-others
+          ],
+        )
+        //@-others
+      ),
+      //@-others
+      //@-others
+    );
+    //@-others
+  }
+  //@-others
+}
+
 //@+node:swot.20221031070602.2: *5* ExpansionTileExample
 //@@language dart
 //@@tabwidth -2
@@ -3983,23 +4273,6 @@ class _ExpansionTileExampleState extends State<ExpansionTileExample> {
     Column(
       children: [
         //@+others
-        //@+node:swot.20221031073139.1: *8* ExpansionTile -- _customIcon
-        ExpansionTile(
-          title: const Text('Expansion Tile -- custom icon'),
-          trailing: Icon(
-            _customIcon ? Icons.arrow_drop_down_circle : Icons.arrow_drop_down,
-          ),
-          children: const [
-            ListTile(
-              title: Text('This is tile number 2'),
-            ),
-          ],
-          onExpansionChanged: (bool expanded) {
-            setState(() {
-              _customIcon = expanded;
-            });
-          },
-        ),
         //@+node:swot.20221031074310.1: *8* ExpansionTile -- basic icon
         ExpansionTile(
           title: const Text('Expansion Tile -- basic icon'),
@@ -4018,6 +4291,23 @@ class _ExpansionTileExampleState extends State<ExpansionTileExample> {
             // setState(() {
             // _customIcon = expanded;
             // });
+          },
+        ),
+        //@+node:swot.20221031073139.1: *8* ExpansionTile -- _customIcon
+        ExpansionTile(
+          title: const Text('Expansion Tile -- custom icon'),
+          trailing: Icon(
+            _customIcon ? Icons.arrow_drop_down_circle : Icons.arrow_drop_down,
+          ),
+          children: const [
+            ListTile(
+              title: Text('This is tile number 2'),
+            ),
+          ],
+          onExpansionChanged: (bool expanded) {
+            setState(() {
+              _customIcon = expanded;
+            });
           },
         ),
         //@+node:swot.20221031074605.1: *8* ExpansionTile -- change icon location
@@ -6595,6 +6885,13 @@ class PageViewExample extends StatefulWidget {
 
 class _PageViewExampleState extends State<PageViewExample> {
   //@+others
+  //@+node:swot.20221111064532.1: *6* varible
+  final controller = PageController(initialPage: 1);  // Page 2
+  //@+node:swot.20221111064612.1: *6* dispose()
+  dispose() {
+    super.dispose();
+    controller.dispose();
+  }
   //@+node:swot.20221029234453.6: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -6607,17 +6904,54 @@ class _PageViewExampleState extends State<PageViewExample> {
       appBar: AppBar(
         title: Text('PageViewExample'),
         // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
         elevation: 0.0,
         centerTitle: true,
+        actions: [
+          //@+others
+          //@+node:swot.20221111065157.2: *9* IconButton left !!!
+          IconButton(
+            icon: const Icon(Icons.keyboard_arrow_left),
+            onPressed: (){
+              // controller.animateToPage(
+                // 0,  // index 0 is the first page
+                // duration: const Duration(seconds: 1),
+                // curve: Curves.easeInOut,
+              // );
+              controller.previousPage(
+                duration: const Duration(seconds: 1),
+                curve: Curves.easeInOut,
+              );
+            },
+          ),
+          //@+node:swot.20221111065339.1: *9* IconButton right !!!
+          IconButton(
+            icon: const Icon(Icons.keyboard_arrow_right),
+            onPressed: (){
+              // controller.animateToPage(
+                // 2,  // index 2 is the last page
+                // duration: const Duration(seconds: 1),
+                // curve: Curves.easeInOut,
+              // );
+              controller.nextPage(
+                duration: const Duration(seconds: 1),
+                curve: Curves.easeInOut,
+              );
+            },
+          ),
+          //@-others
+        ],
       ),
       //@+node:swot.20221029235310.4: *8* body
       body:
       //@+others
-      //@+node:swot.20221029234534.1: *9* PageView
+      //@+node:swot.20221029234534.1: *9* PageView !!!
       PageView(
+        // physics: const NeverScrollableScrollPhysics(),
+        // scrollDirection: Axis.vertical,  // default is Axis.horizontal
+        controller: controller,
+        onPageChanged: (index) {
+          print('Page ${index + 1}');
+        },
         children: [
           //@+others
           //@+node:swot.20221029234605.1: *10* Container
@@ -6625,7 +6959,7 @@ class _PageViewExampleState extends State<PageViewExample> {
             color: Colors.orangeAccent,
             child: const Center(
               child: Text(
-                '1',
+                'Page 1',
                 style: TextStyle(fontSize: 100),
               ),
             ),
@@ -6635,7 +6969,7 @@ class _PageViewExampleState extends State<PageViewExample> {
             color: Colors.redAccent,
             child: const Center(
               child: Text(
-                '2',
+                'Page 2',
                 style: TextStyle(fontSize: 100),
               ),
             ),
@@ -6645,7 +6979,7 @@ class _PageViewExampleState extends State<PageViewExample> {
             color: Colors.blueGrey,
             child: const Center(
               child: Text(
-                '3',
+                'Page 3',
                 style: TextStyle(fontSize: 100),
               ),
             ),
@@ -6678,39 +7012,28 @@ class _PopupMenuButtonExampleState extends State<PopupMenuButtonExample> {
   String title = 'PopupMenuButton';
   String item1 = 'First item';
   String item2 = 'Second item';
-  //@+node:swot.20221025114730.4: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  //@+node:swot.20221025114730.5: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   //@+node:swot.20221025114730.6: *6* build()
   @override
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(title),
       trailing: PopupMenuButton(
-          itemBuilder: (context) => [
-                PopupMenuItem(
-                  value: item1,
-                  child: Text(item1),
-                ),
-                PopupMenuItem(
-                  value: item2,
-                  child: Text(item2),
-                ),
-              ],
-          onSelected: (String newValue) {
-            setState(() {
-              title = newValue;
-            });
-          }),
+        itemBuilder: (context) => [
+          PopupMenuItem(
+            value: item1,
+            child: Text(item1),
+          ),
+          PopupMenuItem(
+            value: item2,
+            child: Text(item2),
+          ),
+        ],
+        onSelected: (String newValue) {
+          setState(() {
+            title = newValue;
+          });
+        },
+      ),
     );
   }
   //@-others
@@ -8599,7 +8922,7 @@ class TabBarExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return
         //@+others
-        //@+node:swot.20221029230800.1: *7* DefaultTabController
+        //@+node:swot.20221029230800.1: *7* DefaultTabController !!!
         DefaultTabController(
           length: 3,
           child:
@@ -8610,13 +8933,17 @@ class TabBarExample extends StatelessWidget {
                 //@+node:swot.20221029230841.3: *9* appBar
                 appBar: AppBar(
                   title: Text('TabBar'),
-                  bottom: const TabBar(
-                    tabs: [
-                      Tab(icon: Icon(Icons.home)),
-                      Tab(icon: Icon(Icons.settings)),
-                      Tab(icon: Icon(Icons.person)),
-                    ],
-                  ),
+                  bottom:
+                      //@+others
+                      //@+node:swot.20221111222446.1: *10* TabBar !!!
+                      const TabBar(
+                        tabs: [
+                          Tab(text: 'Tab 1', icon: Icon(Icons.home)),
+                          Tab(text: 'Tab 2', icon: Icon(Icons.settings)),
+                          Tab(text: 'Tab 3', icon: Icon(Icons.person)),
+                        ],
+                      ),
+                      //@-others
                   // leading: Icon(Icons.menu),
                   actions: [
                     Icon(Icons.settings),
@@ -8627,11 +8954,9 @@ class TabBarExample extends StatelessWidget {
                 //@+node:swot.20221029230841.4: *9* body
                 body:
                     //@+others
-                    //@+node:swot.20221029231559.1: *10* TabBarView
+                    //@+node:swot.20221029231559.1: *10* TabBarView !!!
                     TabBarView(
                       children: [
-                        //@+others
-                        //@+node:swot.20221029231700.1: *11* Container 3
                         Container(
                           color: Colors.orangeAccent,
                           child: const Icon(Icons.home),
@@ -8644,7 +8969,6 @@ class TabBarExample extends StatelessWidget {
                           color: Colors.orangeAccent,
                           child: const Icon(Icons.person),
                         ),
-                        //@-others
                       ],
                     )
                     //@-others
