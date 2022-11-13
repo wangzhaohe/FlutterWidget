@@ -70,9 +70,11 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
     DraggableScrollableExample
     DragTargetExample
     DrawerExample
+    DropDownButtonExample
 
 ## E...
     ExpandedExample -- height in Expanded takes no effect
+    ExpansionPanelListExample
     ExpansionTileExample
 
 ## F...
@@ -148,6 +150,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ## T...
     TabBarExample
     TableExample
+    TextFieldExample
     TextFormFieldExample
     TabPageSelectorExample
     TooltipExample

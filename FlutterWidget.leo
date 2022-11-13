@@ -18,6 +18,8 @@
 <v t="swot.20221021133107.3"><vh>build()</vh>
 <v t="swot.20221021135715.1"><vh>SafeArea</vh>
 <v t="swot.20221021141328.1"><vh>Scaffold</vh>
+<v t="swot.20221112195018.2"><vh>Column</vh>
+<v t="swot.20221112195648.1"><vh>Center -- Alphabetical Example</vh></v>
 <v t="swot.20221021133625.1"><vh>Wrap</vh>
 <v t="swot.20221021134037.2"><vh>ElevatedButton A</vh></v>
 <v t="swot.20221021171707.1"><vh>ElevatedButton B</vh></v>
@@ -39,10 +41,15 @@
 <v t="swot.20221030213345.1"><vh>ElevatedButton V</vh></v>
 <v t="swot.20221030223324.1"><vh>ElevatedButton W</vh></v>
 </v>
+<v t="swot.20221112195040.1"><vh>Divider</vh></v>
+<v t="swot.20221112195208.1"><vh>Center -- Composite Example</vh></v>
+<v t="swot.20221112213542.1"><vh>ListTile -- User Login</vh></v>
 </v>
 </v>
 </v>
 </v>
+</v>
+<v t="swot.20221112223923.1"><vh>AlphabeticalExample</vh>
 <v t="swot.20221029130915.1"><vh>Example A-G</vh>
 <v t="swot.20221021133027.1"><vh>A Example</vh>
 <v t="swot.20221017093031.6"><vh>A  -- Scaffold</vh>
@@ -719,7 +726,16 @@
 <v t="swot.20221027115750.3"><vh>appBar</vh></v>
 <v t="swot.20221027115750.4"><vh>body</vh>
 <v t="swot.20221027115911.1"><vh>Padding</vh>
-<v t="swot.20221027115952.1"><vh>Form</vh></v>
+<v t="swot.20221027115952.1"><vh>Form !!! -- _formKey</vh>
+<v t="swot.20221112175512.1"><vh>TextFormField</vh>
+<v t="swot.20221112181907.1"><vh>2) validator !!!</vh></v>
+</v>
+<v t="swot.20221112175530.1"><vh>ElevatedButton</vh>
+<v t="swot.20221112182043.1"><vh>1) onPressed !!! _formKey.currentState!.validate()</vh>
+<v t="swot.20221112182228.1"><vh>3) showSnackBar</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 </v>
@@ -1368,6 +1384,7 @@
 <v t="swot.20221023175859.6"><vh>SingleChildScrollView</vh>
 <v t="swot.20221023175859.7"><vh>Column</vh>
 <v t="swot.20221023195608.1"><vh>show TableExample</vh></v>
+<v t="swot.20221113181739.2"><vh>ElevatedButton -- show TextFieldExample</vh></v>
 <v t="swot.20221027182544.1"><vh>show TextFormFieldExample</vh></v>
 <v t="swot.20221029222412.2"><vh>ElevatedButton -- show TabPageSelectorExample</vh></v>
 <v t="swot.20221029232032.2"><vh>ElevatedButton -- show TabBarExample</vh></v>
@@ -1431,17 +1448,41 @@
 </v>
 </v>
 </v>
+<v t="swot.20221113174434.2"><vh>TextFieldExample</vh>
+<v t="swot.20221113174434.3"><vh>build()</vh>
+<v t="swot.20221113180505.1"><vh>GestureDetector -- unfocus()</vh>
+<v t="swot.20221113180641.1"><vh>Scaffold</vh>
+<v t="swot.20221113180931.1"><vh>appBar</vh></v>
+<v t="swot.20221113181008.1"><vh>body</vh>
+<v t="swot.20221113181132.1"><vh>TextField -- number</vh></v>
+<v t="swot.20221113181152.1"><vh>TextField -- decimal</vh></v>
+<v t="swot.20221113181202.1"><vh>TextField -- phone</vh></v>
+<v t="swot.20221113181209.1"><vh>TextField -- done</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 <v t="swot.20221027175533.2"><vh>TextFormFieldExample</vh>
 <v t="swot.20221027175533.3"><vh>varible</vh></v>
-<v t="swot.20221027175533.4"><vh>initState()</vh></v>
-<v t="swot.20221027175533.5"><vh>dispose()</vh></v>
 <v t="swot.20221027175533.6"><vh>build()</vh>
 <v t="swot.20221027183133.2"><vh>Scaffold</vh>
 <v t="swot.20221027183133.3"><vh>appBar</vh></v>
 <v t="swot.20221027183133.4"><vh>body</vh>
 <v t="swot.20221027180846.1"><vh>SingleChildScrollView</vh>
 <v t="swot.20221027180945.1"><vh>Form</vh>
-<v t="swot.20221027182206.1"><vh>Column</vh></v>
+<v t="swot.20221112184234.1"><vh>2) onChanged !!! Form.of(primaryFocus!.context!).save -&gt; setState(() {})</vh></v>
+<v t="swot.20221112184709.1"><vh>child</vh>
+<v t="swot.20221027182206.1"><vh>Column</vh>
+<v t="swot.20221112180710.1"><vh>List.generate</vh>
+<v t="swot.20221112180550.1"><vh>1) TextFormField input string</vh>
+<v t="swot.20221112182519.1"><vh>3) onSaved !!! titles[index] = value</vh></v>
+</v>
+<v t="swot.20221112180604.1"><vh>SizedBox</vh></v>
+<v t="swot.20221112180616.1"><vh>4) Card !!! titles[index]</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 </v>
@@ -1519,6 +1560,28 @@
 <v t="swot.20221030223755.2"><vh>Center</vh>
 <v t="swot.20221030223816.1"><vh>Wrap</vh></v>
 </v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221112223828.1"><vh>Composite Example</vh>
+<v t="swot.20221112214058.2"><vh>UserLoginExample</vh>
+<v t="swot.20221112214058.3"><vh>varible</vh></v>
+<v t="swot.20221112223203.1"><vh>_login()</vh></v>
+<v t="swot.20221112214058.6"><vh>build()</vh>
+<v t="swot.20221112223644.2"><vh>Scaffold</vh>
+<v t="swot.20221112223644.3"><vh>appBar</vh></v>
+<v t="swot.20221112223644.4"><vh>body</vh>
+<v t="swot.20221112214751.1"><vh>Form</vh>
+<v t="swot.20221112215637.1"><vh>onWillPop</vh></v>
+<v t="swot.20221112215730.1"><vh>Column</vh>
+<v t="swot.20221112215838.1"><vh>TextFormField _account</vh></v>
+<v t="swot.20221112220311.1"><vh>TextFormField _pwd</vh></v>
+<v t="swot.20221112220552.2"><vh>ElevatedButton login</vh></v>
 </v>
 </v>
 </v>
@@ -1810,8 +1873,8 @@
 <v t="swot.20221027114010.6"></v>
 </v>
 <v t="swot.20221027115609.1"><vh>FormExample</vh>
-<v t="swot.20221027115627.2"></v>
 <v t="swot.20221027121244.1"></v>
+<v t="swot.20221027115627.2"></v>
 </v>
 <v t="swot.20221027195901.1"><vh>FadeInImageExample</vh>
 <v t="swot.20221027203431.2"></v>
@@ -2015,6 +2078,10 @@
 <v t="swot.20221023195608.1"></v>
 <v t="swot.20221023193833.2"></v>
 </v>
+<v t="swot.20221113174340.1"><vh>TextFieldExample</vh>
+<v t="swot.20221113181739.2"></v>
+<v t="swot.20221113174434.2"></v>
+</v>
 <v t="swot.20221027182452.1"><vh>TextFormFieldExample</vh>
 <v t="swot.20221027182544.1"></v>
 <v t="swot.20221027175533.2"></v>
@@ -2051,19 +2118,38 @@
 </v>
 </v>
 <v t="swot.20221031125101.1"><vh>Function</vh>
-<v t="swot.20221031125115.1"><vh>Search</vh>
-<v t="swot.20221017093031.254"></v>
-<v t="swot.20221031114906.1"></v>
-<v t="swot.20221031125205.1"><vh>Waiting...</vh></v>
-</v>
 <v t="swot.20221111002547.1"><vh>Button -- popup &amp; dropdown</vh>
 <v t="swot.20221025114730.2"></v>
 <v t="swot.20221110233138.2"></v>
+</v>
+<v t="swot.20221112114354.1"><vh>Form</vh>
+<v t="swot.20221027115609.1"></v>
+<v t="swot.20221027182452.1"></v>
+<v t="swot.20221113174340.1"></v>
+</v>
+<v t="swot.20221031125115.1"><vh>Search</vh>
+<v t="swot.20221017093031.254"></v>
+<v t="swot.20221031114906.1"></v>
+<v t="swot.20221031125205.1"><vh>Waiting learing</vh></v>
+</v>
+<v t="swot.20221112203550.1"><vh>XListTile</vh>
+<v t="swot.20221017093031.153"></v>
+<v t="swot.20221031140355.1"></v>
+<v t="swot.20221029133717.1"></v>
+<v t="swot.20221022141927.1"></v>
+<v t="swot.20221030083029.1"></v>
+</v>
+<v t="swot.20221112193821.1"><vh>Composite Example</vh>
+<v t="swot.20221112193843.1"><vh>User Login Example: Form + onWillPop + showDialog + RegExp</vh>
+<v t="swot.20221112213542.1"></v>
+<v t="swot.20221112214058.2"></v>
+</v>
 </v>
 </v>
 <v t="swot.20221027213439.1"><vh>@spot</vh>
 <v t="swot.20221110233138.2"></v>
 <v t="swot.20221111201811.2"></v>
+<v t="swot.20221113174434.2"></v>
 </v>
 </vnodes>
 <tnodes>
@@ -2109,14 +2195,14 @@ const AboutDialog(
 image::../image/AboutListTile.png[AboutListTile,240]
 @c
 @language dart
-const AboutListTile(
+AboutListTile(
   icon: Icon(Icons.info),
   applicationIcon: FlutterLogo(),
   applicationLegalese: 'Legalese',
-  applicationName: 'Flutter',
+  applicationName: 'XCall',
   applicationVersion: 'version 1.0.0',
   aboutBoxChildren: [
-    Text('This is a text created by Flutter Mapp'),
+    Text('This is a text created by Flutter Swot'),
   ],
 ),
 </t>
@@ -2703,7 +2789,6 @@ void dispose() {
     @others
   ],
 ),
-
 Divider(),
 </t>
 <t tx="swot.20221017093031.240">@language dart
@@ -2928,7 +3013,7 @@ https://www.flutterbeads.com/renderbox-was-not-laid-out/?[3 Ways to Fix RenderBo
 使用 SizedBox 可以解决上面报错的问题
 @c
 @language dart
-SizedBox(
+const SizedBox(
   width: 200.0,
   height: 40.0,
   child:
@@ -2938,9 +3023,11 @@ SizedBox(
 <t tx="swot.20221017093031.3">import 'dart:async';
 import 'dart:math' as math;
 import 'dart:ui';
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 </t>
 <t tx="swot.20221017093031.31">Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -3185,7 +3272,7 @@ Widget build(BuildContext context) {
   ;
 }
 </t>
-<t tx="swot.20221021133625.1" annotate="7d71002858080000007072696f7269747971014b02580a000000707269736574646174657102580a000000323032322d31302d32367103752e" icons="5d71007d7101285804000000747970657102580400000066696c657103680358320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269322e706e677104580700000072656c506174687105580d000000636c656f2f707269322e706e677106580500000077686572657107580e0000006265666f7265486561646c696e6571085807000000796f666673657471094b005807000000786f6666736574710a4b02580400000078706164710b4b0158020000006f6e710c5805000000766e6f6465710d5808000000636c656f49636f6e710e580100000031710f75612e">Wrap(spacing: 8.0, children: [
+<t tx="swot.20221021133625.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31302d32367103752e">Wrap(spacing: 8.0, children: [
   @others
 ]),
 </t>
@@ -6532,7 +6619,12 @@ floatingActionButton: FloatingActionButton(
 ),
 </t>
 <t tx="swot.20221027114210.1"></t>
-<t tx="swot.20221027115609.1"></t>
+<t tx="swot.20221027115609.1">@language asciidoc
+:nofooter:
+.FormExample
+image:image/FlutterWidget/FormExample1.png[,200]
+image:image/FlutterWidget/FormExample2.png[,200]
+</t>
 <t tx="swot.20221027115627.2">@language dart
 @tabwidth -2
 class FormExample extends StatelessWidget {
@@ -6575,26 +6667,7 @@ Widget build(BuildContext context) {
   key: _formKey,
   child: Column(
     children: [
-      TextFormField(
-        validator: (value) {
-          if (value == null || value.isEmpty) {
-            return 'Enter something';
-          }
-          return null;
-        },
-      ),
-      ElevatedButton(
-        onPressed: () {
-          if (_formKey.currentState!.validate()) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Great!'),
-              ),
-            );
-          }
-        },
-        child: const Text('Validate'),
-      ),
+      @others
     ],
   ),
 ),
@@ -6637,18 +6710,6 @@ class _TextFormFieldExampleState extends State&lt;TextFormFieldExample&gt; {
   '',
 ];
 </t>
-<t tx="swot.20221027175533.4">@override
-void initState() {
-  super.initState();
-}
-
-</t>
-<t tx="swot.20221027175533.5">@override
-void dispose() {
-  super.dispose();
-}
-
-</t>
 <t tx="swot.20221027175533.6">@override
 Widget build(BuildContext context) {
   return
@@ -6660,49 +6721,22 @@ Widget build(BuildContext context) {
       @others
 ),
 </t>
-<t tx="swot.20221027180945.1">Form(
+<t tx="swot.20221027180945.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31327103752e">Form(
   autovalidateMode: AutovalidateMode.always,
-  onChanged: () {
-    setState(() {
-      Form.of(primaryFocus!.context!)!.save();
-    });
-  },
-  child:
-      @others
+  @others
 ),
 </t>
 <t tx="swot.20221027182206.1">Column(
   mainAxisSize: MainAxisSize.min,
-  children: List.generate(
-    3,
-    (int index) {
-      return Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TextFormField(
-              onSaved: (String? value) {
-                if (value != null) {
-                  titles[index] = value;
-                }
-              },
-            ),
-            const SizedBox(height: 10),
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(titles[index]),
-              ),
-            ),
-          ],
-        ),
-      );
-    },
-  ),
+  children:
+  @others
 ),
 </t>
-<t tx="swot.20221027182452.1"></t>
+<t tx="swot.20221027182452.1">@language asciidoc
+:nofooter:
+.TextFormField
+image::image/FlutterWidget/TextFormField.png[,300]
+</t>
 <t tx="swot.20221027182544.1">ElevatedButton(
   style: ElevatedButton.styleFrom(
       // backgroundColor: Colors.orangeAccent,
@@ -11448,7 +11482,8 @@ ExpansionPanelList(
   style: TextStyle(fontSize: 20),
 ),
 </t>
-<t tx="swot.20221111214514.1">SizedBox(height: 20.0),</t>
+<t tx="swot.20221111214514.1">SizedBox(height: 20.0),
+</t>
 <t tx="swot.20221111222446.1">const TabBar(
   tabs: [
     Tab(text: 'Tab 1', icon: Icon(Icons.home)),
@@ -11707,8 +11742,10 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
     DraggableScrollableExample
     DragTargetExample
     DrawerExample
+    DropDownButtonExample
 </t>
 <t tx="swot.20221111232642.1">    ExpandedExample -- height in Expanded takes no effect
+    ExpansionPanelListExample
     ExpansionTileExample
 </t>
 <t tx="swot.20221111232852.1">    FadeInImageExample
@@ -11772,6 +11809,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 </t>
 <t tx="swot.20221111233205.1">    TabBarExample
     TableExample
+    TextFieldExample
     TextFormFieldExample
     TabPageSelectorExample
     TooltipExample
@@ -11780,6 +11818,376 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 </t>
 <t tx="swot.20221111233210.1">    WillPopScopeExample
     WrapExample
+</t>
+<t tx="swot.20221112114354.1"></t>
+<t tx="swot.20221112175512.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31327103752e">TextFormField(
+  @others
+),
+</t>
+<t tx="swot.20221112175530.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31327103752e">ElevatedButton(
+  @others
+  child: const Text('Validate'),
+),
+</t>
+<t tx="swot.20221112180550.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31327103752e">TextFormField(
+  @others
+),
+</t>
+<t tx="swot.20221112180604.1">const SizedBox(height: 10),
+</t>
+<t tx="swot.20221112180616.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31327103752e">Card(
+  child: Padding(
+    padding: const EdgeInsets.all(8.0),
+    child: Text(titles[index]),
+  ),
+),
+</t>
+<t tx="swot.20221112180710.1">List.generate(3, (int index) {
+  return Padding(
+    padding: const EdgeInsets.all(20.0),
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        @others
+      ],
+    ),
+  );
+}),
+</t>
+<t tx="swot.20221112181907.1">validator: (value) {
+  if (value == null || value.isEmpty) {
+    return 'Enter something';
+  }
+  return null;
+},
+</t>
+<t tx="swot.20221112182043.1">onPressed: () {
+  if (_formKey.currentState!.validate()) {
+    @others
+  }
+},
+</t>
+<t tx="swot.20221112182228.1">ScaffoldMessenger.of(context).showSnackBar(
+  const SnackBar(
+    content: Text('Great!'),
+  ),
+);
+</t>
+<t tx="swot.20221112182519.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31327103752e">onSaved: (String? value) {
+  if (value != null) {
+    titles[index] = value;
+    print('index: $index');  // will print all index: 0,1,2
+  }
+},
+</t>
+<t tx="swot.20221112184234.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31327103752e">// TextFormField changed then call onSaved()
+onChanged: () {
+  setState(() {
+    Form.of(primaryFocus!.context!)!.save();
+  });
+},
+</t>
+<t tx="swot.20221112184709.1">child:
+    @others
+</t>
+<t tx="swot.20221112193821.1"></t>
+<t tx="swot.20221112193843.1">@language asciidoc
+:nofooter:
+可以练习一下：
+https://blog.csdn.net/wywinstonwy/article/details/122274788
+
+.UserLogin
+image::image/FlutterWidget/UserLoginOnWillPop.png[,300]
+</t>
+<t tx="swot.20221112195018.2">Column(
+  children: [
+    @others
+  ],
+),
+</t>
+<t tx="swot.20221112195040.1">const Divider(),
+</t>
+<t tx="swot.20221112195208.1">const Center(
+  child: Text(
+    'Composite Example',
+    style: TextStyle(fontSize: 18),
+  ),
+),
+</t>
+<t tx="swot.20221112195648.1">Center(
+  child: Text(
+    'Alphabetical Example',
+    style: TextStyle(fontSize: 18),
+  ),
+),
+</t>
+<t tx="swot.20221112203550.1"></t>
+<t tx="swot.20221112213542.1">ListTile(
+  tileColor: Colors.blueAccent,
+  leading: const Icon(Icons.person),
+  title: const Text('User Login'),
+  trailing: const Icon(Icons.menu),
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; UserLoginExample(),
+      ),
+    );
+  },
+)
+</t>
+<t tx="swot.20221112214058.2">@language dart
+@tabwidth -2
+class UserLoginExample extends StatefulWidget {
+  const UserLoginExample({super.key});
+
+  @override
+  State&lt;UserLoginExample&gt; createState() =&gt; _UserLoginExampleState();
+}
+
+class _UserLoginExampleState extends State&lt;UserLoginExample&gt;{
+  @others
+}
+
+</t>
+<t tx="swot.20221112214058.3">String? _account;
+String? _pwd;
+final _formKey = GlobalKey&lt;FormState&gt;();
+</t>
+<t tx="swot.20221112214058.6">@override
+Widget build(BuildContext context) {
+  return
+  @others
+}
+</t>
+<t tx="swot.20221112214751.1">Form(
+  key: _formKey,
+  @others
+),
+</t>
+<t tx="swot.20221112215637.1">onWillPop: () async {
+  return await showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('提示'),
+        content: Text('确认退出吗？'),
+        actions: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context, false);
+            },
+            child: Text('取消')
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context, true);
+            },
+            child: Text('确定'),
+          ),
+        ],
+      );
+    },
+  );
+},
+</t>
+<t tx="swot.20221112215730.1">child: Column(
+  children: [
+  @others
+  ],
+),
+</t>
+<t tx="swot.20221112215838.1">TextFormField(
+  autovalidateMode: AutovalidateMode.always,
+  decoration: InputDecoration(hintText: '请输入账号'),
+  onSaved: (value) {
+    _account = value;
+  },
+  validator: (value) {
+    RegExp reg = RegExp(r'^.{4}$');
+    if (!reg.hasMatch(value!)) {
+      return '账号最少4个字符';
+    }
+    return null;
+  },
+),
+</t>
+<t tx="swot.20221112220311.1">TextFormField(
+  autovalidateMode: AutovalidateMode.always,
+  decoration: InputDecoration(hintText: '请输入密码'),
+  obscureText: true,
+  onSaved: (value) {
+    _pwd = value;
+  },
+  validator: (value) {
+    return value!.length &gt;= 6 ? null : '密码最少6个字符';
+  },
+),
+</t>
+<t tx="swot.20221112220552.2">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  onPressed: () {
+    var state = _formKey.currentState;
+    if (state!.validate()) {
+      state.save();
+      _login(_account, _pwd);
+    }
+  },
+  child: const Text('登录'),
+),
+</t>
+<t tx="swot.20221112223203.1">_login(account, pwd) {
+  print('账号：$account\n密码：$pwd');
+}
+</t>
+<t tx="swot.20221112223644.2">Scaffold(
+  @others
+);
+</t>
+<t tx="swot.20221112223644.3">appBar: AppBar(
+  title: Text('UserLoginExample'),
+  // leading: Icon(Icons.menu),
+  elevation: 0.0,
+  centerTitle: true,
+  actions: [
+    Icon(Icons.settings),
+  ],
+),
+</t>
+<t tx="swot.20221112223644.4">body:
+@others
+</t>
+<t tx="swot.20221112223828.1"></t>
+<t tx="swot.20221112223923.1"></t>
+<t tx="swot.20221113174340.1">@language asciidoc
+:nofooter:
+https://www.flutterbeads.com/numeric-input-keyboard-in-flutter/
+
+@language dart
+import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
+
+@language asciidoc
+.TextField: number &amp; decimal
+image:image/FlutterWidget/number.png[,200]
+image:image/FlutterWidget/decimal.png[,200]
+
+.TextField: phone &amp; done
+image:image/FlutterWidget/phone.png[,200]
+image:image/FlutterWidget/done.png[,200]
+
+.TextField: number/decimal/done &amp; phone
+image:image/FlutterWidget/number2.png[,200]
+image:image/FlutterWidget/phone2.png[,200]
+</t>
+<t tx="swot.20221113174434.2">@language dart
+@tabwidth -2
+class TextFieldExample extends StatelessWidget {
+  const TextFieldExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221113174434.3">@override
+Widget build(BuildContext context) {
+  return
+  @others
+}
+</t>
+<t tx="swot.20221113180505.1">GestureDetector(
+  onTap: () {
+    FocusManager.instance.primaryFocus?.unfocus();
+  },
+  child:
+  @others
+);
+</t>
+<t tx="swot.20221113180641.1">Scaffold(
+  @others
+),
+</t>
+<t tx="swot.20221113180931.1">appBar: AppBar(
+  centerTitle: true,
+  title: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      // Image.asset(
+        // 'assets/images/logo.png',
+        // scale: 12,
+      // ),
+      // const SizedBox(
+        // width: 10,
+      // ),
+      const Text(
+        'FlutterBeads',
+        style: TextStyle(color: Colors.black),
+      ),
+    ],
+  ),
+  backgroundColor: const Color(0xff6ae792),
+),
+</t>
+<t tx="swot.20221113181008.1">@language dart
+@tabwidth -2
+body: Column(
+  children: [
+    @others
+  ],
+),
+</t>
+<t tx="swot.20221113181132.1">@language dart
+@tabwidth -2
+TextField(
+  decoration: InputDecoration(labelText: 'Enter Number'),
+  keyboardType: TextInputType.number,
+  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+),
+</t>
+<t tx="swot.20221113181152.1">@language dart
+@tabwidth -2
+TextField(
+  decoration: InputDecoration(labelText: 'Enter Decimal value'),
+  keyboardType: TextInputType.numberWithOptions(decimal: true),
+  inputFormatters: [
+    FilteringTextInputFormatter.allow(RegExp('[0-9.,]')),
+  ],
+),
+</t>
+<t tx="swot.20221113181202.1">@language dart
+@tabwidth -2
+TextField(
+  decoration: InputDecoration(labelText: 'Enter phone number'),
+  keyboardType: TextInputType.phone,
+),
+</t>
+<t tx="swot.20221113181209.1">@language dart
+@tabwidth -2
+TextField(
+  decoration: InputDecoration(labelText: 'Enter Number'),
+  keyboardType: defaultTargetPlatform == TargetPlatform.iOS
+      ? TextInputType.numberWithOptions(decimal: true, signed: true)
+      : TextInputType.number,
+  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+),
+</t>
+<t tx="swot.20221113181739.2">ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    // backgroundColor: Colors.orangeAccent,
+  ),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; TextFieldExample(),
+      ),
+    );
+  },
+  child: const Text('TextFieldExample'),
+),
+Divider(),
 </t>
 </tnodes>
 </leo_file>
