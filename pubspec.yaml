@@ -72,6 +72,7 @@ flutter:
     - assets/loading.gif
     - assets/fengjing.webp
     - assets/avatar.webp
+    - assets/FlutterWidgets.png
 
   #@-<< assets >>
 

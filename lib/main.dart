@@ -87,17 +87,25 @@ class Home extends StatelessWidget {
       //@+others
       //@+node:swot.20221021141328.1: *5* Scaffold
       Scaffold(
-        body:
         //@+others
-        //@+node:swot.20221112195018.2: *6* Column
-        Column(
+        //@+node:swot.20221113194855.1: *6* appBar: AppBar
+        appBar: AppBar(
+          title: const Text('Flutter Widgets'),
+          centerTitle: true,
+          elevation: 4.0,
+        ),
+        //@+node:swot.20221112195018.2: *6* body: Column
+        body: Column(
           children: [
             //@+others
             //@+node:swot.20221112195648.1: *7* Center -- Alphabetical Example
-            Center(
-              child: Text(
-                'Alphabetical Example',
-                style: TextStyle(fontSize: 18),
+            const Center(
+              child: Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Text(
+                  'Alphabetical Example',
+                  style: TextStyle(fontSize: 18),
+                ),
               ),
             ),
             //@+node:swot.20221021133625.1: *7* Wrap
@@ -317,14 +325,17 @@ class Home extends StatelessWidget {
             const Divider(),
             //@+node:swot.20221112195208.1: *7* Center -- Composite Example
             const Center(
-              child: Text(
-                'Composite Example',
-                style: TextStyle(fontSize: 18),
+              child: Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Text(
+                  'Composite Example',
+                  style: TextStyle(fontSize: 18),
+                ),
               ),
             ),
             //@+node:swot.20221112213542.1: *7* ListTile -- User Login
             ListTile(
-              tileColor: Colors.blueAccent,
+              tileColor: Colors.blue,
               leading: const Icon(Icons.person),
               title: const Text('User Login'),
               trailing: const Icon(Icons.menu),
@@ -9196,16 +9207,22 @@ class TextFieldExample extends StatelessWidget {
           backgroundColor: const Color(0xff6ae792),
         ),
         //@+node:swot.20221113181008.1: *10* body
+        //@@language dart
+        //@@tabwidth -2
         body: Column(
           children: [
             //@+others
             //@+node:swot.20221113181132.1: *11* TextField -- number
+            //@@language dart
+            //@@tabwidth -2
             TextField(
               decoration: InputDecoration(labelText: 'Enter Number'),
               keyboardType: TextInputType.number,
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
             ),
             //@+node:swot.20221113181152.1: *11* TextField -- decimal
+            //@@language dart
+            //@@tabwidth -2
             TextField(
               decoration: InputDecoration(labelText: 'Enter Decimal value'),
               keyboardType: TextInputType.numberWithOptions(decimal: true),
@@ -9214,11 +9231,15 @@ class TextFieldExample extends StatelessWidget {
               ],
             ),
             //@+node:swot.20221113181202.1: *11* TextField -- phone
+            //@@language dart
+            //@@tabwidth -2
             TextField(
               decoration: InputDecoration(labelText: 'Enter phone number'),
               keyboardType: TextInputType.phone,
             ),
             //@+node:swot.20221113181209.1: *11* TextField -- done
+            //@@language dart
+            //@@tabwidth -2
             TextField(
               decoration: InputDecoration(labelText: 'Enter Number'),
               keyboardType: defaultTargetPlatform == TargetPlatform.iOS

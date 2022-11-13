@@ -18,7 +18,8 @@
 <v t="swot.20221021133107.3"><vh>build()</vh>
 <v t="swot.20221021135715.1"><vh>SafeArea</vh>
 <v t="swot.20221021141328.1"><vh>Scaffold</vh>
-<v t="swot.20221112195018.2"><vh>Column</vh>
+<v t="swot.20221113194855.1"><vh>appBar: AppBar</vh></v>
+<v t="swot.20221112195018.2"><vh>body: Column</vh>
 <v t="swot.20221112195648.1"><vh>Center -- Alphabetical Example</vh></v>
 <v t="swot.20221021133625.1"><vh>Wrap</vh>
 <v t="swot.20221021134037.2"><vh>ElevatedButton A</vh></v>
@@ -2146,11 +2147,7 @@
 </v>
 </v>
 </v>
-<v t="swot.20221027213439.1"><vh>@spot</vh>
-<v t="swot.20221110233138.2"></v>
-<v t="swot.20221111201811.2"></v>
-<v t="swot.20221113174434.2"></v>
-</v>
+<v t="swot.20221027213439.1"><vh>@spot</vh></v>
 </vnodes>
 <tnodes>
 <t tx="swot.20221017093031.1">Every Flutter Widgets - Part One - 50 Widgets
@@ -3293,7 +3290,6 @@ Widget build(BuildContext context) {
 )
 </t>
 <t tx="swot.20221021141328.1">Scaffold(
-  body:
   @others
 ),
 </t>
@@ -6938,6 +6934,7 @@ assets:
   - assets/loading.gif
   - assets/fengjing.webp
   - assets/avatar.webp
+  - assets/FlutterWidgets.png
 
 </t>
 <t tx="swot.20221027203431.2">@language dart
@@ -11676,6 +11673,8 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 </t>
 <t tx="swot.20221111231601.1">This project is for main using Widgets.
 
+&lt;img src="assets/FlutterWidgets.png" width="50%" /&gt;
+
 Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
 
 &lt;img src="assets/introduce.png" width="100%" /&gt;
@@ -11899,7 +11898,7 @@ https://blog.csdn.net/wywinstonwy/article/details/122274788
 .UserLogin
 image::image/FlutterWidget/UserLoginOnWillPop.png[,300]
 </t>
-<t tx="swot.20221112195018.2">Column(
+<t tx="swot.20221112195018.2">body: Column(
   children: [
     @others
   ],
@@ -11908,22 +11907,28 @@ image::image/FlutterWidget/UserLoginOnWillPop.png[,300]
 <t tx="swot.20221112195040.1">const Divider(),
 </t>
 <t tx="swot.20221112195208.1">const Center(
-  child: Text(
-    'Composite Example',
-    style: TextStyle(fontSize: 18),
+  child: Padding(
+    padding: EdgeInsets.all(5.0),
+    child: Text(
+      'Composite Example',
+      style: TextStyle(fontSize: 18),
+    ),
   ),
 ),
 </t>
-<t tx="swot.20221112195648.1">Center(
-  child: Text(
-    'Alphabetical Example',
-    style: TextStyle(fontSize: 18),
+<t tx="swot.20221112195648.1">const Center(
+  child: Padding(
+    padding: EdgeInsets.all(5.0),
+    child: Text(
+      'Alphabetical Example',
+      style: TextStyle(fontSize: 18),
+    ),
   ),
 ),
 </t>
 <t tx="swot.20221112203550.1"></t>
 <t tx="swot.20221112213542.1">ListTile(
-  tileColor: Colors.blueAccent,
+  tileColor: Colors.blue,
   leading: const Icon(Icons.person),
   title: const Text('User Login'),
   trailing: const Icon(Icons.menu),
@@ -12188,6 +12193,12 @@ TextField(
   child: const Text('TextFieldExample'),
 ),
 Divider(),
+</t>
+<t tx="swot.20221113194855.1">appBar: AppBar(
+  title: const Text('Flutter Widgets'),
+  centerTitle: true,
+  elevation: 4.0,
+),
 </t>
 </tnodes>
 </leo_file>

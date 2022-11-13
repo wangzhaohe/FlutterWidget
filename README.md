@@ -1,6 +1,8 @@
 # Flutter built in Widgets
 This project is for main using Widgets.
 
+<img src="assets/FlutterWidgets.png" width="50%" />
+
 Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
 
 <img src="assets/introduce.png" width="100%" />
