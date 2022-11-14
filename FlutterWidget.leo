@@ -8,6 +8,7 @@
 <vnodes>
 <v t="swot.20221017093031.1"><vh>widgets</vh>
 <v t="swot.20221017093031.2" descendentVnodeUnknownAttributes="7d7100285805000000302e322e3171017d7102285808000000616e6e6f7461746571037d71042858080000007072696f7269747971054b01580a000000707269736574646174657106580a000000323032322d31302d3233710775580500000069636f6e7371085d71097d710a28580400000074797065710b580400000066696c65710c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269312e706e67710d580700000072656c50617468710e580d000000636c656f2f707269312e706e67710f580500000077686572657110580e0000006265666f7265486561646c696e6571115807000000796f666673657471124b005807000000786f666673657471134b0258040000007870616471144b0158020000006f6e71155805000000766e6f646571165808000000636c656f49636f6e71175801000000317118756175580d000000302e332e302e302e302e312e3171197d711a68037d711b2858080000007072696f72697479711c4d0f27580a00000070726973657464617465711d580a000000323032322d31302d3236711e75735811000000302e342e302e332e312e302e302e302e30711f7d712068037d71212858080000007072696f7269747971224d0f27580a000000707269736574646174657123580a000000323032322d31302d3235712475735813000000302e342e302e352e322e302e302e302e312e3071257d712668037d71272858080000007072696f7269747971284d0f27580a000000707269736574646174657129580a000000323032322d31302d3330712a75735817000000302e342e302e352e322e322e312e302e312e302e302e30712b7d712c68037d712d2858080000007072696f72697479712e4d0f27580a00000070726973657464617465712f580a000000323032322d31312d3132713075735817000000302e342e302e352e322e322e312e302e312e302e302e3171317d713268037d71332858080000007072696f7269747971344d0f27580a000000707269736574646174657135580a000000323032322d31312d313271367573580d000000302e342e312e322e312e302e3071377d713868037d71392858080000007072696f72697479713a4d0f27580a00000070726973657464617465713b580a000000323032322d31302d3233713c7573580f000000302e342e312e322e312e302e302e30713d7d713e68037d713f2858080000007072696f7269747971404d0f27580a000000707269736574646174657141580a000000323032322d31302d3233714275735815000000302e342e322e342e322e362e312e302e312e302e3071437d714468037d71452858080000007072696f7269747971464d0f27580a000000707269736574646174657147580a000000323032322d31312d3132714875735817000000302e342e322e342e322e362e312e302e312e302e302e3071497d714a68037d714b2858080000007072696f72697479714c4d0f27580a00000070726973657464617465714d580a000000323032322d31312d3132714e7573581d000000302e342e322e342e322e362e312e302e312e302e302e312e302e302e30714f7d715068037d71512858080000007072696f7269747971524d0f27580a000000707269736574646174657153580a000000323032322d31312d313271547573581f000000302e342e322e342e322e362e312e302e312e302e302e312e302e302e302e3071557d715668037d71572858080000007072696f7269747971584d0f27580a000000707269736574646174657159580a000000323032322d31312d3132715a7573581d000000302e342e322e342e322e362e312e302e312e302e302e312e302e302e32715b7d715c68037d715d2858080000007072696f72697479715e4d0f27580a00000070726973657464617465715f580a000000323032322d31312d313271607573752e"><vh>@file lib/main.dart</vh></v>
+<v t="swot.20221114214205.1"><vh>@file lib/functionality.dart</vh></v>
 <v t="swot.20221027203033.1"><vh>#file pubspec.yaml</vh>
 <v t="swot.20221027203224.1"><vh>&lt;&lt; assets &gt;&gt;</vh></v>
 </v>
@@ -1548,40 +1549,6 @@
 </v>
 </v>
 </v>
-</v>
-</v>
-<v t="swot.20221114130941.1"><vh>Functional Example</vh>
-<v t="swot.20221114130927.1"><vh>CheckPlatformExample</vh>
-<v t="swot.20221114130724.1"><vh>ListTile -- Check Platform</vh>
-<v t="swot.20221114153230.1"><vh>&lt;&lt; trailing &gt;&gt;</vh></v>
-</v>
-<v t="swot.20221114121936.2"><vh>CheckPlatformExample</vh>
-<v t="swot.20221114121936.3"><vh>build()</vh>
-<v t="swot.20221114131437.2"><vh>Scaffold</vh>
-<v t="swot.20221114131437.3"><vh>appBar</vh></v>
-<v t="swot.20221114131437.4"><vh>body</vh>
-<v t="swot.20221114124925.1"><vh>Column</vh>
-<v t="swot.20221114125432.1"><vh>android</vh></v>
-<v t="swot.20221114125540.1"><vh>iOS</vh></v>
-<v t="swot.20221114125637.1"><vh>other</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221114161341.2"><vh>CheckTopLevelPlatformExample</vh>
-<v t="swot.20221114161341.3"><vh>build()</vh>
-<v t="swot.20221114163419.2"><vh>Scaffold</vh>
-<v t="swot.20221114163419.3"><vh>appBar</vh></v>
-<v t="swot.20221114163419.4"><vh>body</vh>
-<v t="swot.20221114163410.1"><vh>Column</vh>
-<v t="swot.20221114163707.1"><vh>isMobile &amp; isDesktop</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221114161552.1"><vh>class PlatformDetails</vh></v>
 </v>
 </v>
 <v t="swot.20221027213439.1"><vh>@spot</vh></v>
@@ -9557,13 +9524,17 @@ Widget build(BuildContext context) {
   );
 },
 </t>
-<t tx="swot.20221112215730.1">child: Column(
+<t tx="swot.20221112215730.1">@language dart
+@tabwidth -2
+child: Column(
   children: [
   @others
   ],
 ),
 </t>
-<t tx="swot.20221112215838.1">TextFormField(
+<t tx="swot.20221112215838.1">@language dart
+@tabwidth -2
+TextFormField(
   autovalidateMode: AutovalidateMode.always,
   decoration: InputDecoration(hintText: '请输入账号'),
   onSaved: (value) {
@@ -9578,7 +9549,9 @@ Widget build(BuildContext context) {
   },
 ),
 </t>
-<t tx="swot.20221112220311.1">TextFormField(
+<t tx="swot.20221112220311.1">@language dart
+@tabwidth -2
+TextFormField(
   autovalidateMode: AutovalidateMode.always,
   decoration: InputDecoration(hintText: '请输入密码'),
   obscureText: true,
@@ -9590,7 +9563,9 @@ Widget build(BuildContext context) {
   },
 ),
 </t>
-<t tx="swot.20221112220552.2">ElevatedButton(
+<t tx="swot.20221112220552.2">@language dart
+@tabwidth -2
+ElevatedButton(
   style: ElevatedButton.styleFrom(
     // backgroundColor: Colors.orangeAccent,
   ),
@@ -9751,210 +9726,6 @@ TextField(
   child: const Text('TextFieldExample'),
 ),
 Divider(),
-</t>
-<t tx="swot.20221114121936.2">@language dart
-@tabwidth -2
-class CheckPlatformExample extends StatelessWidget {
-  const CheckPlatformExample({ Key? key }) : super(key: key);
-  @others
-}
-</t>
-<t tx="swot.20221114121936.3">@override
-Widget build(BuildContext context) {
-  return
-  @others
-}
-</t>
-<t tx="swot.20221114124925.1">Column(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221114125432.1">if (defaultTargetPlatform == TargetPlatform.android) ...[
-  const Center(
-    child: Text(
-      'Android',
-      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-    ),
-  )
-]
-</t>
-<t tx="swot.20221114125540.1">else if (defaultTargetPlatform == TargetPlatform.iOS) ...[
-  const Center(
-    child: Text(
-      'iOS',
-      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-    ),
-  )
-]
-</t>
-<t tx="swot.20221114125637.1">else ...[
-  const Center(
-    child: Text(
-      'Web',
-      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-    ),
-  )
-]
-</t>
-<t tx="swot.20221114130724.1">ListTile(
-  tileColor: Colors.blue,
-  leading: const Icon(Icons.apple),
-  title: const Text('Check Platform'),
-  &lt;&lt; trailing &gt;&gt;
-  onTap: () {},
-),
-</t>
-<t tx="swot.20221114130927.1">@language asciidoc
-Check Platform in Flutter The Right Way in 2022
-
-https://www.flutterbeads.com/how-to-check-platform-in-flutter-the-right-way/#How-to-Check-Platform-in-Flutter
-
-The platform in Fluter is determined by checking the `defaultTargetPlatform` and comparing it with `TargetPlatform` enum.
-
-@language dart
-import ‘package:flutter/foundation.dart’;
-
-if (defaultTargetPlatform == TargetPlatform.android){
-  // Android specific code
-}
-else if (defaultTargetPlatform == TargetPlatform.iOS){
-  //iOS specific code
-}
-else {
-  //web or desktop specific code
-}
-
-</t>
-<t tx="swot.20221114130941.1"></t>
-<t tx="swot.20221114131437.2">Scaffold(
-  @others
-);
-</t>
-<t tx="swot.20221114131437.3">appBar: AppBar(
-  title: Text('CheckPlatform'),
-  // leading: Icon(Icons.menu),
-  elevation: 0.0,
-  centerTitle: true,
-  actions: [
-    Icon(Icons.settings),
-  ],
-),
-</t>
-<t tx="swot.20221114131437.4">body:
-@others
-</t>
-<t tx="swot.20221114153230.1">trailing: PopupMenuButton(
-  itemBuilder: (context) =&gt; [
-    const PopupMenuItem(
-      value: "checkPlatform",
-      child: Text("Check Platform"),
-    ),
-    const PopupMenuItem(
-      value: "checkTopLevelPlatform",
-      child: Text("Check Top Level Platform"),
-    ),
-  ],
-  onSelected: (String newValue) {
-    if (newValue == "checkPlatform") {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) =&gt; const CheckPlatformExample(),
-        ),
-      );
-    } else if (newValue == "checkTopLevelPlatform") {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) =&gt; const CheckTopLevelPlatformExample(),
-        ),
-      );
-    }
-  },
-),
-</t>
-<t tx="swot.20221114161341.2">@language dart
-@tabwidth -2
-class CheckTopLevelPlatformExample extends StatelessWidget {
-  const CheckTopLevelPlatformExample({ Key? key }) : super(key: key);
-  @others
-}
-</t>
-<t tx="swot.20221114161341.3">@override
-Widget build(BuildContext context) {
-  return
-  @others
-}
-
-</t>
-<t tx="swot.20221114161552.1">class PlatformDetails {
-  static final PlatformDetails _singleton = PlatformDetails._internal();
-
-  factory PlatformDetails() {
-    return _singleton;
-  }
-
-  PlatformDetails._internal();
-
-  bool get isDesktop =&gt;
-      defaultTargetPlatform == TargetPlatform.macOS ||
-      defaultTargetPlatform == TargetPlatform.linux ||
-      defaultTargetPlatform == TargetPlatform.windows;
-
-  bool get isMobile =&gt;
-      defaultTargetPlatform == TargetPlatform.iOS ||
-      defaultTargetPlatform == TargetPlatform.android;
-}
-</t>
-<t tx="swot.20221114163410.1">Column(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221114163419.2">Scaffold(
-  @others
-);
-</t>
-<t tx="swot.20221114163419.3">appBar: AppBar(
-  title: Text('CheckTopLevelPlatform'),
-  // leading: Icon(Icons.menu),
-  elevation: 0.0,
-  centerTitle: true,
-  actions: [
-    Icon(Icons.settings),
-  ],
-),
-</t>
-<t tx="swot.20221114163419.4">body:
-@others
-</t>
-<t tx="swot.20221114163707.1">if (PlatformDetails().isMobile) ...[
-  const Center(
-    child: Text(
-      'Mobile',
-      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-    ),
-  )
-] else if (PlatformDetails().isDesktop) ...[
-  const Center(
-    child: Text(
-      'Desktop',
-      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-    ),
-  )
-] else ...[
-  const Center(
-    child: Text(
-      'Web',
-      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-    ),
-  )
-]
 </t>
 <t tx="swot.20221114192038.1">@language asciidoc
 :nofooter:

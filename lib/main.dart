@@ -12,6 +12,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'functionality.dart';
+
 //@+node:swot.20221017093031.4: ** main
 void main() {
   runApp(const MyApp());
@@ -358,7 +361,9 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            //@+node:swot.20221114130724.1: *7* ListTile -- Check Platform
+            //@-others
+            //@+<< ListTile -- Check Platform >>
+            //@+node:swot.20221114130724.1: *7* << ListTile -- Check Platform >>
             ListTile(
               tileColor: Colors.blue,
               leading: const Icon(Icons.apple),
@@ -397,7 +402,7 @@ class Home extends StatelessWidget {
               //@-<< trailing >>
               onTap: () {},
             ),
-            //@-others
+            //@-<< ListTile -- Check Platform >>
           ],
         ),
         //@-others
@@ -10045,10 +10050,14 @@ class _UserLoginExampleState extends State<UserLoginExample>{
           );
         },
         //@+node:swot.20221112215730.1: *8* Column
+        //@@language dart
+        //@@tabwidth -2
         child: Column(
           children: [
           //@+others
           //@+node:swot.20221112215838.1: *9* TextFormField _account
+          //@@language dart
+          //@@tabwidth -2
           TextFormField(
             autovalidateMode: AutovalidateMode.always,
             decoration: InputDecoration(hintText: '请输入账号'),
@@ -10064,6 +10073,8 @@ class _UserLoginExampleState extends State<UserLoginExample>{
             },
           ),
           //@+node:swot.20221112220311.1: *9* TextFormField _pwd
+          //@@language dart
+          //@@tabwidth -2
           TextFormField(
             autovalidateMode: AutovalidateMode.always,
             decoration: InputDecoration(hintText: '请输入密码'),
@@ -10076,6 +10087,8 @@ class _UserLoginExampleState extends State<UserLoginExample>{
             },
           ),
           //@+node:swot.20221112220552.2: *9* ElevatedButton login
+          //@@language dart
+          //@@tabwidth -2
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               // backgroundColor: Colors.orangeAccent,
@@ -10102,160 +10115,5 @@ class _UserLoginExampleState extends State<UserLoginExample>{
   //@-others
 }
 
-//@+node:swot.20221114070124.1: ** Functional Example
-//@+node:swot.20221114121936.2: *3* CheckPlatformExample
-//@@language dart
-//@@tabwidth -2
-class CheckPlatformExample extends StatelessWidget {
-  const CheckPlatformExample({ Key? key }) : super(key: key);
-  //@+others
-  //@+node:swot.20221114121936.3: *4* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221114131437.2: *5* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221114131437.3: *6* appBar
-      appBar: AppBar(
-        title: Text('CheckPlatform'),
-        // leading: Icon(Icons.menu),
-        elevation: 0.0,
-        centerTitle: true,
-        actions: [
-          Icon(Icons.settings),
-        ],
-      ),
-      //@+node:swot.20221114131437.4: *6* body
-      body:
-      //@+others
-      //@+node:swot.20221114124925.1: *7* Column
-      Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          //@+others
-          //@+node:swot.20221114125432.1: *8* android
-          if (defaultTargetPlatform == TargetPlatform.android) ...[
-            const Center(
-              child: Text(
-                'Android',
-                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-              ),
-            )
-          ]
-          //@+node:swot.20221114125540.1: *8* iOS
-          else if (defaultTargetPlatform == TargetPlatform.iOS) ...[
-            const Center(
-              child: Text(
-                'iOS',
-                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-              ),
-            )
-          ]
-          //@+node:swot.20221114125637.1: *8* other
-          else ...[
-            const Center(
-              child: Text(
-                'Web',
-                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-              ),
-            )
-          ]
-          //@-others
-        ],
-      ),
-      //@-others
-      //@-others
-    );
-    //@-others
-  }
-  //@-others
-}
-//@+node:swot.20221114161341.2: *3* CheckTopLevelPlatformExample
-//@@language dart
-//@@tabwidth -2
-class CheckTopLevelPlatformExample extends StatelessWidget {
-  const CheckTopLevelPlatformExample({ Key? key }) : super(key: key);
-  //@+others
-  //@+node:swot.20221114161341.3: *4* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221114163419.2: *5* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221114163419.3: *6* appBar
-      appBar: AppBar(
-        title: Text('CheckTopLevelPlatform'),
-        // leading: Icon(Icons.menu),
-        elevation: 0.0,
-        centerTitle: true,
-        actions: [
-          Icon(Icons.settings),
-        ],
-      ),
-      //@+node:swot.20221114163419.4: *6* body
-      body:
-      //@+others
-      //@+node:swot.20221114163410.1: *7* Column
-      Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          //@+others
-          //@+node:swot.20221114163707.1: *8* isMobile & isDesktop
-          if (PlatformDetails().isMobile) ...[
-            const Center(
-              child: Text(
-                'Mobile',
-                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-              ),
-            )
-          ] else if (PlatformDetails().isDesktop) ...[
-            const Center(
-              child: Text(
-                'Desktop',
-                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-              ),
-            )
-          ] else ...[
-            const Center(
-              child: Text(
-                'Web',
-                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
-              ),
-            )
-          ]
-          //@-others
-        ],
-      ),
-      //@-others
-      //@-others
-    );
-    //@-others
-  }
-
-  //@-others
-}
-//@+node:swot.20221114161552.1: *3* class PlatformDetails
-class PlatformDetails {
-  static final PlatformDetails _singleton = PlatformDetails._internal();
-
-  factory PlatformDetails() {
-    return _singleton;
-  }
-
-  PlatformDetails._internal();
-
-  bool get isDesktop =>
-      defaultTargetPlatform == TargetPlatform.macOS ||
-      defaultTargetPlatform == TargetPlatform.linux ||
-      defaultTargetPlatform == TargetPlatform.windows;
-
-  bool get isMobile =>
-      defaultTargetPlatform == TargetPlatform.iOS ||
-      defaultTargetPlatform == TargetPlatform.android;
-}
 //@-others
 //@-leo
