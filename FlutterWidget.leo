@@ -7,1590 +7,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="swot.20221017093031.1"><vh>widgets</vh>
-<v t="swot.20221017093031.2"><vh>#file lib/main.dart</vh>
-<v t="swot.20221017093031.3"><vh>import</vh></v>
-<v t="swot.20221017093031.4"><vh>main</vh></v>
-<v t="swot.20221017093031.5"><vh>MyApp -- MaterialApp</vh>
-<v t="swot.20221022083314.1"><vh>&lt;&lt; showSemanticsDebugger &gt;&gt;</vh></v>
-<v t="swot.20221021132401.1"><vh>&lt;&lt; routes &gt;&gt;</vh></v>
-</v>
-<v t="swot.20221021133107.2"><vh>Home</vh>
-<v t="swot.20221021133107.3"><vh>build()</vh>
-<v t="swot.20221021135715.1"><vh>SafeArea</vh>
-<v t="swot.20221021141328.1"><vh>Scaffold</vh>
-<v t="swot.20221113194855.1"><vh>appBar: AppBar</vh></v>
-<v t="swot.20221112195018.2"><vh>body: Column</vh>
-<v t="swot.20221112195648.1"><vh>Center -- Alphabetical Example</vh></v>
-<v t="swot.20221021133625.1"><vh>Wrap</vh>
-<v t="swot.20221021134037.2"><vh>ElevatedButton A</vh></v>
-<v t="swot.20221021171707.1"><vh>ElevatedButton B</vh></v>
-<v t="swot.20221022115433.1"><vh>ElevatedButton C</vh></v>
-<v t="swot.20221024065732.1"><vh>ElevatedButton D</vh></v>
-<v t="swot.20221026064030.1"><vh>ElevatedButton E</vh></v>
-<v t="swot.20221026200727.1"><vh>ElevatedButton F</vh></v>
-<v t="swot.20221028090127.1"><vh>ElevatedButton G</vh></v>
-<v t="swot.20221023124300.1"><vh>ElevatedButton H</vh></v>
-<v t="swot.20221029081545.1"><vh>ElevatedButton I</vh></v>
-<v t="swot.20221023105031.1"><vh>ElevatedButton L</vh></v>
-<v t="swot.20221023081344.1"><vh>ElevatedButton M</vh></v>
-<v t="swot.20221029134319.1"><vh>ElevatedButton N</vh></v>
-<v t="swot.20221023093000.1"><vh>ElevatedButton O</vh></v>
-<v t="swot.20221030231220.1"><vh>ElevatedButton P</vh></v>
-<v t="swot.20221023152035.1"><vh>ElevatedButton R</vh></v>
-<v t="swot.20221024091106.1"><vh>ElevatedButton S</vh></v>
-<v t="swot.20221023180102.1"><vh>ElevatedButton T</vh></v>
-<v t="swot.20221030213345.1"><vh>ElevatedButton V</vh></v>
-<v t="swot.20221030223324.1"><vh>ElevatedButton W</vh></v>
-</v>
-<v t="swot.20221112195040.1"><vh>Divider</vh></v>
-<v t="swot.20221112195208.1"><vh>Center -- Composite Example</vh></v>
-<v t="swot.20221112213542.1"><vh>ListTile -- User Login</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221112223923.1"><vh>AlphabeticalExample</vh>
-<v t="swot.20221029130915.1"><vh>Example A-G</vh>
-<v t="swot.20221021133027.1"><vh>A Example</vh>
-<v t="swot.20221017093031.6"><vh>A  -- Scaffold</vh>
-<v t="swot.20221017093031.252"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221017093031.8"><vh>DemoA</vh>
-<v t="swot.20221017093031.9"><vh>variable</vh>
-<v t="swot.20221017093031.10"><vh>var for AnimatedXXX</vh></v>
-</v>
-<v t="swot.20221017093031.17"><vh>initState()</vh></v>
-<v t="swot.20221017093031.20"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.21"><vh>build()</vh>
-<v t="swot.20221017093031.22"><vh>SingleChildScrollView</vh>
-<v t="swot.20221017093031.23"><vh>Column</vh>
-<v t="swot.20221017093031.24"><vh>Row</vh>
-<v t="swot.20221017093031.25"><vh>ElevatedButton  -- show AboutDialog</vh>
-<v t="swot.20221017093031.26"><vh>showDialog</vh>
-<v t="swot.20221017093031.152"><vh>AboutDialog</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.28"><vh>SizedBox -- show AboutListTile</vh>
-<v t="swot.20221017093031.153"><vh>AboutListTile</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.31"><vh>Row</vh>
-<v t="swot.20221017093031.32"><vh>Stack           -- show AbsorbPointer包含按钮不可点击</vh>
-<v t="swot.20221017093031.33"><vh>SizedBox</vh></v>
-<v t="swot.20221017093031.34"><vh>SizedBox</vh>
-<v t="swot.20221017093031.154"><vh>AbsorbPointer -- include button can not be clicked</vh>
-<v t="swot.20221017093031.155"><vh>ElevatedButton 不可点击</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.37"><vh>ElevatedButton  -- show AlertDialog</vh>
-<v t="swot.20221017093031.38"><vh>showDialog</vh>
-<v t="swot.20221017093031.156"><vh>AlertDialog</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.41"><vh>Row</vh>
-<v t="swot.20221017093031.42"><vh>Container       -- show Align</vh>
-<v t="swot.20221017093031.157"><vh>Align</vh></v>
-</v>
-<v t="swot.20221017093031.44"><vh>GestureDetector -- show AnimatedAlign</vh>
-<v t="swot.20221017093031.159"><vh>AnimatedAlign</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.47"><vh>Row</vh>
-<v t="swot.20221101141445.1"><vh>show AnimatedBuilderExample</vh></v>
-<v t="swot.20221101163555.1"><vh>show AnimatedContainerExample</vh></v>
-</v>
-<v t="swot.20221031193616.1"><vh>show AnimatedCrossFadeExample</vh></v>
-<v t="swot.20221101175441.1"><vh>show AnimatedDefaultTextStyleExample</vh></v>
-<v t="swot.20221017093031.61"><vh>Row</vh>
-<v t="swot.20221027194417.2"><vh>show AnimatedIconExample</vh></v>
-<v t="swot.20221017093031.179"><vh>AnimatedModalBarrier  -- show AnimatedModalBarrier</vh></v>
-</v>
-<v t="swot.20221031135430.2"><vh>ElevatedButton -- show AdaptiveExample</vh></v>
-<v t="swot.20221101181724.1"><vh>show AnimatedListExample</vh></v>
-<v t="swot.20221017093031.194"><vh>show AnimatedOpacity</vh></v>
-<v t="swot.20221017093031.196"><vh>show AnimatedPadding</vh></v>
-<v t="swot.20221017093031.207"><vh>show AnimatedPhysicalModel</vh></v>
-<v t="swot.20221017093031.216"><vh>show AnimatedPositionedExample</vh></v>
-<v t="swot.20221017093031.226"><vh>show AnimatedRotationExample</vh></v>
-<v t="swot.20221017093031.235"><vh>show AnimatedSizeExample</vh>
-<v t="swot.20221017093031.251"><vh>show AnimatedSwitcherExample</vh></v>
-</v>
-<v t="swot.20221017093031.253"><vh>AspectRatio</vh></v>
-<v t="swot.20221017093031.255"><vh>show AutoCompleteExample</vh></v>
-<v t="swot.20221017093031.88"><vh>SizedBox</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221031134256.2"><vh>AdaptiveExample</vh>
-<v t="swot.20221031134256.6"><vh>build()</vh>
-<v t="swot.20221031134345.2"><vh>Scaffold</vh>
-<v t="swot.20221031134345.3"><vh>appBar</vh></v>
-<v t="swot.20221031134345.4"><vh>body</vh>
-<v t="swot.20221031134422.2"><vh>Center</vh>
-<v t="swot.20221031134446.2"><vh>Column</vh>
-<v t="swot.20221031134619.1"><vh>Slider.adaptive</vh></v>
-<v t="swot.20221031140355.1"><vh>SwitchListTile.adaptive</vh></v>
-<v t="swot.20221031140635.1"><vh>Switch.adaptive</vh></v>
-<v t="swot.20221031140816.1"><vh>Icons.adaptive</vh></v>
-<v t="swot.20221031140929.1"><vh>CircularProgressIndicator.adaptive</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221101080952.2"><vh>AnimatedBuilderExample -- step 1</vh>
-<v t="swot.20221101080952.3"><vh>varible             -- step 2</vh></v>
-<v t="swot.20221101080952.4"><vh>initState()         -- step 3</vh></v>
-<v t="swot.20221101080952.5"><vh>dispose()           -- step 4</vh></v>
-<v t="swot.20221101080952.6"><vh>build()</vh>
-<v t="swot.20221101140943.1"><vh>AnimatedBuilder  -- step 5</vh></v>
-</v>
-</v>
-<v t="swot.20221101163948.2"><vh>AnimatedContainerExample</vh>
-<v t="swot.20221101163948.3"><vh>varible</vh></v>
-<v t="swot.20221101163948.6"><vh>build()</vh>
-<v t="swot.20221101165100.1"><vh>GestureDetector</vh>
-<v t="swot.20221101165100.2"><vh>AnimatedContainer</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221031193012.2"><vh>AnimatedCrossFadeExample</vh>
-<v t="swot.20221031193012.3"><vh>varible</vh></v>
-<v t="swot.20221031193012.6"><vh>build()</vh>
-<v t="swot.20221031193341.2"><vh>Row</vh>
-<v t="swot.20221031193450.1"><vh>TextButton</vh></v>
-<v t="swot.20221017093031.165"><vh>AnimatedCrossFade</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221101175102.2"><vh>AnimatedDefaultTextStyleExample</vh>
-<v t="swot.20221101175102.3"><vh>varible</vh></v>
-<v t="swot.20221101175102.6"><vh>build()</vh>
-<v t="swot.20221101175533.1"><vh>Row</vh>
-<v t="swot.20221101175533.2"><vh>TextButton</vh></v>
-<v t="swot.20221101175533.3"><vh>SizedBox</vh>
-<v t="swot.20221101175533.4"><vh>AnimatedDefaultTextStyle</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221027192851.2"><vh>AnimatedIconExample -- TickerProviderStateMixin</vh>
-<v t="swot.20221027192851.3"><vh>varible</vh></v>
-<v t="swot.20221027192851.4"><vh>initState()</vh></v>
-<v t="swot.20221027192851.5"><vh>dispose()</vh></v>
-<v t="swot.20221027192851.6"><vh>build()</vh>
-<v t="swot.20221027194101.1"><vh>GestureDetector</vh>
-<v t="swot.20221027194101.2"><vh>AnimatedIcon</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221101181708.2"><vh>AnimatedListExample</vh>
-<v t="swot.20221101181708.3"><vh>varible</vh></v>
-<v t="swot.20221101181708.4"><vh>initState()</vh></v>
-<v t="swot.20221101181708.5"><vh>dispose()</vh></v>
-<v t="swot.20221101181708.6"><vh>build()</vh>
-<v t="swot.20221101182425.2"><vh>Column</vh>
-<v t="swot.20221101182506.1"><vh>IconButton</vh></v>
-<v t="swot.20221101182536.1"><vh>SizedBox</vh>
-<v t="swot.20221101182340.2"><vh>AnimatedList</vh>
-<v t="swot.20221101182340.3"><vh>SizeTransition</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.180"><vh>AnimatedModalBarrierExample</vh>
-<v t="swot.20221017093031.181"><vh>varible</vh></v>
-<v t="swot.20221017093031.182"><vh>initState()</vh></v>
-<v t="swot.20221017093031.183"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.184"><vh>build()</vh>
-<v t="swot.20221101193037.1"><vh>Stack</vh>
-<v t="swot.20221017093031.185"><vh>ElevatedButton</vh></v>
-<v t="swot.20221017093031.186"><vh>_animatedModalBarrier</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.188"><vh>AnimatedOpacityExample</vh>
-<v t="swot.20221017093031.189"><vh>varible</vh></v>
-<v t="swot.20221017093031.191"><vh>build()</vh>
-<v t="swot.20221017093031.192"><vh>AnimatedOpacity</vh></v>
-<v t="swot.20221017093031.193"><vh>ElevatedButton</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.197"><vh>AnimatedPaddingExample</vh>
-<v t="swot.20221017093031.198"><vh>varible</vh></v>
-<v t="swot.20221017093031.199"><vh>initState()</vh></v>
-<v t="swot.20221017093031.200"><vh>build()</vh>
-<v t="swot.20221017093031.201"><vh>Column</vh>
-<v t="swot.20221017093031.202"><vh>Row</vh>
-<v t="swot.20221017093031.203"><vh>ElevatedButton</vh></v>
-<v t="swot.20221017093031.204"><vh>Text</vh></v>
-</v>
-<v t="swot.20221017093031.205"><vh>AnimatedPadding</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.208"><vh>AnimatedPhysicalModelExample</vh>
-<v t="swot.20221017093031.209"><vh>varible</vh></v>
-<v t="swot.20221017093031.210"><vh>initState()</vh></v>
-<v t="swot.20221017093031.211"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.212"><vh>build()</vh>
-<v t="swot.20221017093031.213"><vh>ElevatedButton</vh></v>
-<v t="swot.20221017093031.214"><vh>AnimatedPhysicalModel</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.217"><vh>AnimatedPositionedExample</vh>
-<v t="swot.20221017093031.218"><vh>varible</vh></v>
-<v t="swot.20221017093031.219"><vh>initState()</vh></v>
-<v t="swot.20221017093031.220"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.221"><vh>build()</vh>
-<v t="swot.20221017093031.222"><vh>SizedBox</vh>
-<v t="swot.20221017093031.223"><vh>Stack</vh>
-<v t="swot.20221017093031.224"><vh>AnimatedPositioned</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.227"><vh>AnimatedRotationExample</vh>
-<v t="swot.20221017093031.228"><vh>varible</vh></v>
-<v t="swot.20221017093031.229"><vh>initState()</vh></v>
-<v t="swot.20221017093031.230"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.231"><vh>build()</vh>
-<v t="swot.20221017093031.232"><vh>ElevatedButton</vh></v>
-<v t="swot.20221017093031.233"><vh>Padding</vh>
-<v t="swot.20221101201546.1"><vh>AnimatedRotation</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221017093031.236"><vh>AnimatedSizeExample</vh>
-<v t="swot.20221017093031.237"><vh>varible</vh></v>
-<v t="swot.20221017093031.238"><vh>initState()</vh></v>
-<v t="swot.20221017093031.239"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.240"><vh>build()</vh>
-<v t="swot.20221017093031.241"><vh>Text</vh></v>
-<v t="swot.20221017093031.242"><vh>GestureDetector AnimatedSize FlutterLogo</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.244"><vh>AnimatedSwitcherExample</vh>
-<v t="swot.20221017093031.245"><vh>varible</vh></v>
-<v t="swot.20221017093031.246"><vh>initState()</vh></v>
-<v t="swot.20221017093031.247"><vh>dispose()</vh></v>
-<v t="swot.20221017093031.248"><vh>build()</vh>
-<v t="swot.20221017093031.249"><vh>ElevatedButton</vh></v>
-<v t="swot.20221017093031.250"><vh>AnimatedSwitcher</vh></v>
-</v>
-</v>
-<v t="swot.20221017093031.256"><vh>AutoCompleteExample 不要在屏幕中部以下(会被软键盘挡住)</vh>
-<v t="swot.20221017093031.257"><vh>varible</vh></v>
-<v t="swot.20221017093031.258"><vh>build()</vh></v>
-</v>
-</v>
-<v t="swot.20221021133039.1"><vh>B Example</vh>
-<v t="swot.20221021171949.1"><vh>B  -- Scaffold</vh>
-<v t="swot.20221021173128.1"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221021172558.1"><vh>DemoB</vh>
-<v t="swot.20221021172558.14"><vh>build()</vh>
-<v t="swot.20221021172558.15"><vh>SingleChildScrollView</vh>
-<v t="swot.20221021172558.16"><vh>Column</vh>
-<v t="swot.20221021173506.1"><vh>show BackdropFilterExample</vh></v>
-<v t="swot.20221021181118.1"><vh>show BannerExample</vh></v>
-<v t="swot.20221021181700.1"><vh>show BaselineExample</vh></v>
-<v t="swot.20221022085519.1"><vh>show BlockSemanticsExample</vh></v>
-<v t="swot.20221022101129.1"><vh>show BottomNavigationBarExample</vh></v>
-<v t="swot.20221022094818.1"><vh>show BottomSheetExample</vh></v>
-<v t="swot.20221022111104.1"><vh>show BuilderExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221022121355.1"><vh>ExampleB</vh>
-<v t="swot.20221019111317.2"><vh>BackdropFilterExample</vh>
-<v t="swot.20221019111317.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221021175217.2"><vh>BannerExample</vh>
-<v t="swot.20221021175217.3"><vh>build()</vh>
-<v t="swot.20221021175330.1"><vh>Center</vh>
-<v t="swot.20221021175401.1"><vh>Container</vh>
-<v t="swot.20221021180745.1"><vh>ClipRect</vh>
-<v t="swot.20221021180828.1"><vh>Banner</vh>
-<v t="swot.20221021175506.1"><vh>Container</vh>
-<v t="swot.20221021175604.1"><vh>Padding</vh>
-<v t="swot.20221021175702.1"><vh>Column</vh>
-<v t="swot.20221021175915.1"><vh>Image</vh></v>
-<v t="swot.20221021180035.1"><vh>SizedBox</vh></v>
-<v t="swot.20221021180106.1"><vh>Row</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221021181642.2"><vh>BaselineExample</vh>
-<v t="swot.20221021181642.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022080218.2"><vh>BlockSemanticsExample</vh>
-<v t="swot.20221022083723.1"><vh>varible</vh></v>
-<v t="swot.20221022080218.3"><vh>initState()</vh></v>
-<v t="swot.20221022080218.4"><vh>dispose()</vh></v>
-<v t="swot.20221022080218.5"><vh>build()</vh>
-<v t="swot.20221022080422.1"><vh>SizedBox</vh>
-<v t="swot.20221022083203.1"><vh>SizedBox</vh>
-<v t="swot.20221022083954.1"><vh>Column</vh>
-<v t="swot.20221022084045.1"><vh>OutlinedButton</vh></v>
-<v t="swot.20221022084513.1"><vh>if (isShow)</vh>
-<v t="swot.20221022091825.1"><vh>BlockSemantics</vh>
-<v t="swot.20221022090937.1"><vh>Card</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221022094100.2"><vh>BottomNavigationBarExample</vh>
-<v t="swot.20221022094133.1"><vh>varible</vh></v>
-<v t="swot.20221022094100.5"><vh>build()</vh>
-<v t="swot.20221022095720.2"><vh>Scaffold</vh>
-<v t="swot.20221022101748.1"><vh>appBar</vh></v>
-<v t="swot.20221022095720.4"><vh>body</vh></v>
-<v t="swot.20221022095720.5"><vh>bottomNavigationBar</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221022104843.2"><vh>BottomSheetExample</vh>
-<v t="swot.20221022104843.5"><vh>build()</vh>
-<v t="swot.20221110210618.1"><vh>showModalBottomSheet !!!</vh></v>
-</v>
-</v>
-<v t="swot.20221022110627.2"><vh>BuilderExample</vh>
-<v t="swot.20221022110627.3"><vh>build()</vh></v>
-<v t="swot.20221022110900.1"><vh>myBuilderWidget()</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221022121254.1"><vh>C Example</vh>
-<v t="swot.20221022121336.1"><vh>C  -- Scaffold</vh>
-<v t="swot.20221022121336.2"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221022121559.1"><vh>DemoC</vh>
-<v t="swot.20221022121559.2"><vh>build()</vh>
-<v t="swot.20221022121559.3"><vh>SingleChildScrollView</vh>
-<v t="swot.20221022121559.4"><vh>Column</vh>
-<v t="swot.20221022121559.5"><vh>show CardExample</vh></v>
-<v t="swot.20221022123052.1"><vh>show CenterExample</vh></v>
-<v t="swot.20221022141621.1"><vh>show CheckboxExample</vh></v>
-<v t="swot.20221022142602.1"><vh>show CheckboxListTileExample</vh></v>
-<v t="swot.20221022143204.1"><vh>show ChipExample</vh></v>
-<v t="swot.20221022144701.1"><vh>show ChoiceChipExample</vh></v>
-<v t="swot.20221022145230.1"><vh>show CircleAvatarExample</vh></v>
-<v t="swot.20221022153425.1"><vh>show CircularProgressIndicatorExample</vh></v>
-<v t="swot.20221022154220.1"><vh>show ClipOvalExample</vh></v>
-<v t="swot.20221022162124.1"><vh>show ClipPathExample</vh></v>
-<v t="swot.20221022164554.1"><vh>show ClipRectExample</vh></v>
-<v t="swot.20221022165721.1"><vh>show ClipRRectExample</vh></v>
-<v t="swot.20221022170737.1"><vh>show CloseButtonExample</vh></v>
-<v t="swot.20221022171708.1"><vh>show ColoredBoxExample</vh></v>
-<v t="swot.20221022173017.1"><vh>show ColorFilteredExample</vh></v>
-<v t="swot.20221022202111.1"><vh>show ConstrainedBoxExample</vh></v>
-<v t="swot.20221022203303.1"><vh>show ContainerExample</vh></v>
-<v t="swot.20221022203824.1"><vh>show ColumnExample</vh></v>
-<v t="swot.20221022210532.1"><vh>show CupertinoActionSheetExample</vh></v>
-<v t="swot.20221022214055.1"><vh>show CupertinoAppExample</vh></v>
-<v t="swot.20221023164513.1"><vh>show CupertinoContextMenuExample</vh></v>
-<v t="swot.20221031083344.1"><vh>show CupertinoSlidingSegmentedControlExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221022121728.1"><vh>ExampleC</vh>
-<v t="swot.20221022121755.2"><vh>CardExample</vh>
-<v t="swot.20221022121755.3"><vh>build()</vh>
-<v t="swot.20221022122022.1"><vh>Card</vh></v>
-</v>
-</v>
-<v t="swot.20221022122655.2"><vh>CenterExample</vh>
-<v t="swot.20221022122655.3"><vh>build()</vh>
-<v t="swot.20221022122945.1"><vh>Center</vh></v>
-</v>
-</v>
-<v t="swot.20221022141252.2"><vh>CheckboxExample</vh>
-<v t="swot.20221022141315.1"><vh>varible</vh></v>
-<v t="swot.20221022141252.3"><vh>initState()</vh></v>
-<v t="swot.20221022141252.4"><vh>dispose()</vh></v>
-<v t="swot.20221022141252.5"><vh>build()</vh>
-<v t="swot.20221110225519.1"><vh>Theme</vh>
-<v t="swot.20221110225224.1"><vh>Checkbox !!!</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221022141946.2"><vh>CheckboxListTileExample</vh>
-<v t="swot.20221022142005.1"><vh>varible</vh></v>
-<v t="swot.20221022141946.5"><vh>build()</vh>
-<v t="swot.20221022142124.1"><vh>CheckboxListTile</vh></v>
-</v>
-</v>
-<v t="swot.20221022142919.2"><vh>ChipExample</vh>
-<v t="swot.20221022142919.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022144339.2"><vh>ChoiceChipExample</vh>
-<v t="swot.20221022144356.1"><vh>varible</vh></v>
-<v t="swot.20221022144339.5"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022145018.2"><vh>CircleAvatarExample</vh>
-<v t="swot.20221022145018.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022153237.2"><vh>CircularProgressIndicatorExample</vh>
-<v t="swot.20221022153237.3"><vh>initState()</vh></v>
-<v t="swot.20221022153237.4"><vh>dispose()</vh></v>
-<v t="swot.20221022153237.5"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022153848.2"><vh>ClipOvalExample</vh>
-<v t="swot.20221022153848.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022154849.1"><vh>CustomClip</vh></v>
-<v t="swot.20221022161946.2"><vh>ClipPathExample</vh>
-<v t="swot.20221022161946.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022162343.1"><vh>MyClipper1</vh></v>
-<v t="swot.20221022163926.2"><vh>ClipRectExample</vh>
-<v t="swot.20221022163926.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022164337.1"><vh>MyClipper2</vh></v>
-<v t="swot.20221022165324.2"><vh>ClipRRectExample</vh>
-<v t="swot.20221022165324.3"><vh>initState()</vh></v>
-<v t="swot.20221022165324.4"><vh>dispose()</vh></v>
-<v t="swot.20221022165324.5"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022170557.2"><vh>CloseButtonExample</vh>
-<v t="swot.20221022170557.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022171523.2"><vh>ColoredBoxExample</vh>
-<v t="swot.20221022171523.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022172641.2"><vh>ColorFilteredExample</vh>
-<v t="swot.20221022172641.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022201619.2"><vh>ConstrainedBoxExample</vh>
-<v t="swot.20221022201619.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022202825.2"><vh>ContainerExample</vh>
-<v t="swot.20221022202825.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022203601.2"><vh>ColumnExample</vh>
-<v t="swot.20221022203601.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022210338.2"><vh>CupertinoActionSheetExample</vh>
-<v t="swot.20221022210338.3"><vh>initState()</vh></v>
-<v t="swot.20221022210338.4"><vh>dispose()</vh></v>
-<v t="swot.20221022210338.5"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022213243.2"><vh>CupertinoAppExample</vh>
-<v t="swot.20221022213243.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221022213726.2"><vh>MyCupertinoApp</vh>
-<v t="swot.20221022213726.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221023163418.2"><vh>CupertinoContextMenuExample</vh>
-<v t="swot.20221023163418.3"><vh>build()</vh>
-<v t="swot.20221023163626.1"><vh>CupertinoContextMenu</vh></v>
-</v>
-</v>
-<v t="swot.20221031082929.2"><vh>CupertinoSlidingSegmentedControlExample</vh>
-<v t="swot.20221031083017.1"><vh>value</vh></v>
-<v t="swot.20221031082929.3"><vh>build()</vh>
-<v t="swot.20221031083051.1"><vh>CupertinoSlidingSegmentedControl</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221024065815.1"><vh>D Example</vh>
-<v t="swot.20221024065902.1"><vh>D  -- Scaffold</vh>
-<v t="swot.20221024065902.2"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221024070012.1"><vh>DemoD</vh>
-<v t="swot.20221024070127.1"><vh>build()</vh>
-<v t="swot.20221024070127.2"><vh>SingleChildScrollView</vh>
-<v t="swot.20221024070127.3"><vh>Column</vh>
-<v t="swot.20221024112602.1"><vh>show DismissibleExample</vh></v>
-<v t="swot.20221102102136.1"><vh>ElevatedButton -- show DividerExample</vh></v>
-<v t="swot.20221025075357.1"><vh>show DraggableScrollableExample</vh></v>
-<v t="swot.20221025091113.1"><vh>show DragTargetExample</vh></v>
-<v t="swot.20221025095859.1"><vh>show DrawerExample</vh></v>
-<v t="swot.20221110233828.1"><vh>show DropDownButtonExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221024070225.1"><vh>ExampleD</vh>
-<v t="swot.20221024112614.2"><vh>DismissibleExample</vh>
-<v t="swot.20221024112703.1"><vh>varible</vh></v>
-<v t="swot.20221024112614.3"><vh>initState()</vh></v>
-<v t="swot.20221024112614.4"><vh>dispose()</vh></v>
-<v t="swot.20221024112614.5"><vh>build()</vh>
-<v t="swot.20221024113603.2"><vh>Scaffold</vh>
-<v t="swot.20221024113603.3"><vh>appBar</vh></v>
-<v t="swot.20221024113603.4"><vh>body</vh>
-<v t="swot.20221024113627.1"><vh>ListView</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221102101634.2"><vh>DividerExample</vh>
-<v t="swot.20221102101634.3"><vh>build()</vh>
-<v t="swot.20221102103902.2"><vh>Scaffold</vh>
-<v t="swot.20221102103902.3"><vh>appBar</vh></v>
-<v t="swot.20221102103902.4"><vh>body</vh>
-<v t="swot.20221102103050.2"><vh>Column</vh>
-<v t="swot.20221102102110.1"><vh>Container</vh></v>
-<v t="swot.20221102101649.1"><vh>Divider</vh></v>
-<v t="swot.20221102101920.2"><vh>Container</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221025074739.2"><vh>DraggableScrollableExample</vh>
-<v t="swot.20221025074739.3"><vh>build()</vh>
-<v t="swot.20221025081258.2"><vh>Scaffold</vh>
-<v t="swot.20221025081258.3"><vh>appBar</vh></v>
-<v t="swot.20221025081258.4"><vh>body</vh>
-<v t="swot.20221025081316.1"><vh>DraggableScrollableSheet</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221025081939.2"><vh>DragTargetExample</vh>
-<v t="swot.20221025081939.3"><vh>varible</vh></v>
-<v t="swot.20221025081939.4"><vh>initState()</vh></v>
-<v t="swot.20221025081939.5"><vh>dispose()</vh></v>
-<v t="swot.20221025081939.6"><vh>build()</vh>
-<v t="swot.20221025091431.2"><vh>Scaffold</vh>
-<v t="swot.20221025091431.3"><vh>appBar</vh></v>
-<v t="swot.20221025091431.4"><vh>body</vh>
-<v t="swot.20221025083125.1"><vh>SizedBox</vh>
-<v t="swot.20221025083519.1"><vh>Column</vh>
-<v t="swot.20221025083732.1"><vh>Draggable</vh></v>
-<v t="swot.20221025084843.1"><vh>DragTarget</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221025095334.2"><vh>DrawerExample</vh>
-<v t="swot.20221025095334.3"><vh>build()</vh>
-<v t="swot.20221025095436.2"><vh>Scaffold</vh>
-<v t="swot.20221025095436.3"><vh>appBar</vh></v>
-<v t="swot.20221025095436.4"><vh>body</vh></v>
-<v t="swot.20221025095602.1"><vh>endDrawer</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221110233138.2"><vh>DropDownButtonExample</vh>
-<v t="swot.20221110233138.3"><vh>varible</vh></v>
-<v t="swot.20221110233138.4"><vh>initState()</vh></v>
-<v t="swot.20221110233138.5"><vh>dispose()</vh></v>
-<v t="swot.20221110233138.6"><vh>build()</vh>
-<v t="swot.20221111000936.2"><vh>Column</vh>
-<v t="swot.20221111000057.1"><vh>SizedBox</vh>
-<v t="swot.20221110233541.2"><vh>DropdownButton !!!</vh></v>
-</v>
-<v t="swot.20221111001008.1"><vh>SizedBox</vh>
-<v t="swot.20221111001008.2"><vh>DropdownButtonFormField !!!</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221025205925.1"><vh>E Example</vh>
-<v t="swot.20221025205946.1"><vh>E  -- Scaffold</vh>
-<v t="swot.20221025205946.2"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221025211051.1"><vh>DemoE</vh>
-<v t="swot.20221025211051.2"><vh>build()</vh>
-<v t="swot.20221025211051.3"><vh>SingleChildScrollView</vh>
-<v t="swot.20221025211051.4"><vh>Column</vh>
-<v t="swot.20221026194030.1"><vh>show ExpandedExample</vh></v>
-<v t="swot.20221111204125.2"><vh>show ExpansionPanelListExample</vh></v>
-<v t="swot.20221031073947.1"><vh>show ExpansionTileExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221025211157.1"><vh>ExampleE</vh>
-<v t="swot.20221026073602.2"><vh>ExpandedExample -- height in Expanded takes no effect</vh>
-<v t="swot.20221026073602.3"><vh>build()</vh>
-<v t="swot.20221026193458.1"><vh>Expanded</vh></v>
-<v t="swot.20221026193703.1"><vh>Expanded</vh></v>
-<v t="swot.20221026193706.1"><vh>Expanded</vh></v>
-</v>
-</v>
-<v t="swot.20221111204854.1"><vh>class Item</vh></v>
-<v t="swot.20221111201811.2"><vh>ExpansionPanelListExample</vh>
-<v t="swot.20221111201811.3"><vh>varible</vh></v>
-<v t="swot.20221111201811.4"><vh>initState()</vh></v>
-<v t="swot.20221111201811.5"><vh>dispose()</vh></v>
-<v t="swot.20221111201811.6"><vh>build()</vh>
-<v t="swot.20221111202207.2"><vh>Scaffold</vh>
-<v t="swot.20221111202207.3"><vh>appBar</vh></v>
-<v t="swot.20221111202207.4"><vh>body</vh>
-<v t="swot.20221111202707.2"><vh>SingleChildScrollView</vh>
-<v t="swot.20221111213642.2"><vh>Column</vh>
-<v t="swot.20221111213817.1"><vh>Text('Radio')</vh></v>
-<v t="swot.20221111202728.1"><vh>ExpansionPanelList.radio !!!</vh></v>
-<v t="swot.20221111214514.1"><vh>SizedBox</vh></v>
-<v t="swot.20221111214154.1"><vh>Text('Multiple')</vh></v>
-<v t="swot.20221111212929.1"><vh>ExpansionPanelList !!!</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221031070602.2"><vh>ExpansionTileExample</vh>
-<v t="swot.20221031070602.3"><vh>varible</vh></v>
-<v t="swot.20221031070602.6"><vh>build()</vh>
-<v t="swot.20221031074359.2"><vh>Column</vh>
-<v t="swot.20221031074310.1"><vh>ExpansionTile -- basic icon</vh></v>
-<v t="swot.20221031073139.1"><vh>ExpansionTile -- _customIcon</vh></v>
-<v t="swot.20221031074605.1"><vh>ExpansionTile -- change icon location</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221026200827.1"><vh>F Example</vh>
-<v t="swot.20221026200827.2"><vh>F  -- Scaffold</vh>
-<v t="swot.20221027113937.1"><vh>SafeArea</vh>
-<v t="swot.20221027114010.2"><vh>Scaffold</vh>
-<v t="swot.20221026200827.3"><vh>appBar</vh></v>
-<v t="swot.20221027114010.4"><vh>body</vh></v>
-<v t="swot.20221027114010.6"><vh>floatingActionButton</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221026200827.4"><vh>DemoF</vh>
-<v t="swot.20221026200827.5"><vh>build()</vh>
-<v t="swot.20221026200827.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221026200827.7"><vh>Column</vh>
-<v t="swot.20221031063757.2"><vh>ElevatedButton -- show FittedBoxExample</vh></v>
-<v t="swot.20221027112321.2"><vh>show FlexbleExample</vh></v>
-<v t="swot.20221027121244.1"><vh>show FormExample</vh></v>
-<v t="swot.20221027203755.1"><vh>show FadeInImageExample</vh></v>
-<v t="swot.20221027213559.2"><vh>show FractionallySizedBoxExample</vh></v>
-<v t="swot.20221028065632.1"><vh>show FutureBuilderExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221026200827.9"><vh>ExampleF</vh>
-<v t="swot.20221030234221.2"><vh>FittedBoxExample</vh>
-<v t="swot.20221030234221.3"><vh>build()</vh>
-<v t="swot.20221031064454.2"><vh>Scaffold</vh>
-<v t="swot.20221031064454.3"><vh>appBar</vh></v>
-<v t="swot.20221031064454.4"><vh>body</vh>
-<v t="swot.20221030234303.2"><vh>Center</vh>
-<v t="swot.20221031063239.2"><vh>Container</vh>
-<v t="swot.20221031070048.1"><vh>FittedBox</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221027111458.2"><vh>FlexibleExample</vh>
-<v t="swot.20221027111458.3"><vh>build()</vh>
-<v t="swot.20221027112522.2"><vh>Scaffold</vh>
-<v t="swot.20221027112522.3"><vh>appBar</vh></v>
-<v t="swot.20221027112522.4"><vh>body</vh>
-<v t="swot.20221027111807.1"><vh>Column</vh>
-<v t="swot.20221027111848.1"><vh>Flexible -- FlexFit.loose is default</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221027115627.2"><vh>FormExample</vh>
-<v t="swot.20221027120023.1"><vh>value</vh></v>
-<v t="swot.20221027115627.3"><vh>build()</vh>
-<v t="swot.20221027115750.2"><vh>Scaffold</vh>
-<v t="swot.20221027115750.3"><vh>appBar</vh></v>
-<v t="swot.20221027115750.4"><vh>body</vh>
-<v t="swot.20221027115911.1"><vh>Padding</vh>
-<v t="swot.20221027115952.1"><vh>Form !!! -- _formKey</vh>
-<v t="swot.20221112175512.1"><vh>TextFormField</vh>
-<v t="swot.20221112181907.1"><vh>2) validator !!!</vh></v>
-</v>
-<v t="swot.20221112175530.1"><vh>ElevatedButton</vh>
-<v t="swot.20221112182043.1"><vh>1) onPressed !!! _formKey.currentState!.validate()</vh>
-<v t="swot.20221112182228.1"><vh>3) showSnackBar</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221027203431.2"><vh>FadeInImageExample</vh>
-<v t="swot.20221027203431.3"><vh>build()</vh></v>
-</v>
-<v t="swot.20221027212222.2"><vh>FractionallySizedBoxExample</vh>
-<v t="swot.20221027212222.3"><vh>build()</vh>
-<v t="swot.20221027212407.2"><vh>Scaffold</vh>
-<v t="swot.20221027212407.3"><vh>appBar</vh></v>
-<v t="swot.20221027212407.4"><vh>body</vh>
-<v t="swot.20221027212916.2"><vh>Center</vh>
-<v t="swot.20221027212959.1"><vh>FractionallySizedBox</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221028064229.2"><vh>FutureBuilderExample</vh>
-<v t="swot.20221028064229.3"><vh>varible</vh></v>
-<v t="swot.20221028064229.6"><vh>build()</vh>
-<v t="swot.20221028064815.1"><vh>FutureBuilder</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221028070508.1"><vh>G Example</vh>
-<v t="swot.20221028070508.2"><vh>G  -- Scaffold</vh>
-<v t="swot.20221028070508.3"><vh>SafeArea</vh>
-<v t="swot.20221028070508.4"><vh>Scaffold</vh>
-<v t="swot.20221028070508.5"><vh>appBar</vh></v>
-<v t="swot.20221028070508.6"><vh>body</vh></v>
-<v t="swot.20221028070508.7"><vh>floatingActionButton</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221028070508.8"><vh>DemoG</vh>
-<v t="swot.20221028070508.9"><vh>build()</vh>
-<v t="swot.20221028070508.10"><vh>SingleChildScrollView</vh>
-<v t="swot.20221028070508.11"><vh>Column</vh>
-<v t="swot.20221028090546.1"><vh>SizedBox</vh></v>
-<v t="swot.20221028085926.1"><vh>show GestureDetectorExample</vh></v>
-<v t="swot.20221028095636.2"><vh>show GridViewExample</vh></v>
-<v t="swot.20221028131344.2"><vh>show GridTileExample</vh></v>
-<v t="swot.20221031213940.2"><vh>ElevatedButton -- show GridPaperExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221028070508.17"><vh>ExampleG</vh>
-<v t="swot.20221028084729.2"><vh>GestureDetectorExample</vh>
-<v t="swot.20221028084729.3"><vh>varible</vh></v>
-<v t="swot.20221028084729.6"><vh>build()</vh></v>
-</v>
-<v t="swot.20221031213433.2"><vh>GridPaperExample</vh>
-<v t="swot.20221031213433.3"><vh>build()</vh>
-<v t="swot.20221031213506.2"><vh>Scaffold</vh>
-<v t="swot.20221031213506.3"><vh>appBar</vh></v>
-<v t="swot.20221031213506.4"><vh>body</vh>
-<v t="swot.20221031213547.1"><vh>SizedBox</vh>
-<v t="swot.20221031213653.1"><vh>GridPaper</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221028093414.2"><vh>GridViewExample</vh>
-<v t="swot.20221028093414.3"><vh>build()</vh>
-<v t="swot.20221028122703.2"><vh>Scaffold</vh>
-<v t="swot.20221028122703.3"><vh>appBar</vh></v>
-<v t="swot.20221028122703.4"><vh>body</vh>
-<v t="swot.20221028093753.1"><vh>GridView</vh>
-<v t="swot.20221029070417.1"><vh>GridTile -- use GridTileBar</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221028130417.2"><vh>GridTileExample</vh>
-<v t="swot.20221028130417.3"><vh>build()</vh>
-<v t="swot.20221028131715.2"><vh>Scaffold</vh>
-<v t="swot.20221028131715.3"><vh>appBar</vh></v>
-<v t="swot.20221028131715.4"><vh>body</vh>
-<v t="swot.20221028130528.1"><vh>Center</vh>
-<v t="swot.20221029070735.1"><vh>SizedBox</vh>
-<v t="swot.20221029070636.1"><vh>GridTile  -- use Container</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029131000.1"><vh>Example H-N</vh>
-<v t="swot.20221023124355.1"><vh>H Example</vh>
-<v t="swot.20221023124355.2"><vh>H  -- Scaffold</vh>
-<v t="swot.20221023124355.3"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221023124355.4"><vh>DemoH</vh>
-<v t="swot.20221023124355.5"><vh>build()</vh>
-<v t="swot.20221023124355.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221023124355.7"><vh>Column</vh>
-<v t="swot.20221029090411.1"><vh>show HeroExample</vh></v>
-<v t="swot.20221031151733.1"><vh>show HeroExample2</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023124644.1"><vh>ExampleH</vh>
-<v t="swot.20221029092751.2"><vh>HeroExample</vh>
-<v t="swot.20221029092751.3"><vh>build()</vh>
-<v t="swot.20221029094712.2"><vh>Scaffold</vh>
-<v t="swot.20221029094712.3"><vh>appBar</vh></v>
-<v t="swot.20221029094712.4"><vh>body</vh>
-<v t="swot.20221029092810.1"><vh>Center</vh>
-<v t="swot.20221029092914.1"><vh>Hero</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221031143139.2"><vh>HeroExample2</vh>
-<v t="swot.20221031143139.3"><vh>build()</vh>
-<v t="swot.20221031143419.2"><vh>Scaffold</vh>
-<v t="swot.20221031143419.3"><vh>appBar</vh></v>
-<v t="swot.20221031143419.4"><vh>body</vh>
-<v t="swot.20221031143456.1"><vh>Hero</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029081714.1"><vh>I Example</vh>
-<v t="swot.20221029081714.2"><vh>I  -- Scaffold</vh>
-<v t="swot.20221029081714.3"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221029081714.4"><vh>DemoI</vh>
-<v t="swot.20221029081714.5"><vh>build()</vh>
-<v t="swot.20221029081714.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221029081714.7"><vh>Column</vh>
-<v t="swot.20221029081714.8"><vh>ElevatedButton -- show InteractiveViewerExample</vh></v>
-<v t="swot.20221101065031.2"><vh>ElevatedButton -- show InteractiveViewerExample2</vh></v>
-<v t="swot.20221029121446.1"><vh>show IgnorePointerExample</vh></v>
-<v t="swot.20221029125017.1"><vh>ElevatedButton -- show IndexedStackExample</vh></v>
-<v t="swot.20221101063450.1"><vh>show InkwellExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029081714.13"><vh>ExampleI</vh>
-<v t="swot.20221029081714.14"><vh>InteractiveViewerExample</vh>
-<v t="swot.20221029081714.17"><vh>build()</vh></v>
-</v>
-<v t="swot.20221101064424.1"><vh>InteractiveViewerExample2 -- scale the image</vh>
-<v t="swot.20221101064424.2"><vh>build()</vh></v>
-</v>
-<v t="swot.20221029115307.2"><vh>IgnorePointerExample</vh>
-<v t="swot.20221029115307.3"><vh>varible</vh></v>
-<v t="swot.20221029115307.4"><vh>initState()</vh></v>
-<v t="swot.20221029115307.5"><vh>dispose()</vh></v>
-<v t="swot.20221029115307.6"><vh>build()</vh>
-<v t="swot.20221029115522.1"><vh>Row</vh>
-<v t="swot.20221029115652.2"><vh>ElevatedButton</vh></v>
-<v t="swot.20221029120401.1"><vh>IgnorePointer</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221029122755.2"><vh>IndexedStackExample</vh>
-<v t="swot.20221029122755.3"><vh>varible</vh></v>
-<v t="swot.20221029122755.4"><vh>initState()</vh></v>
-<v t="swot.20221029122755.5"><vh>dispose()</vh></v>
-<v t="swot.20221029122755.6"><vh>build()</vh>
-<v t="swot.20221029125202.2"><vh>Scaffold</vh>
-<v t="swot.20221029125202.3"><vh>appBar</vh></v>
-<v t="swot.20221029125202.4"><vh>body</vh>
-<v t="swot.20221029123730.2"><vh>Padding</vh>
-<v t="swot.20221029123925.2"><vh>Column</vh>
-<v t="swot.20221029124213.2"><vh>Row</vh>
-<v t="swot.20221029124242.2"><vh>ElevatedButton 0</vh></v>
-<v t="swot.20221029124327.1"><vh>ElevatedButton 1</vh></v>
-<v t="swot.20221029124328.1"><vh>ElevatedButton 2</vh></v>
-</v>
-<v t="swot.20221029124503.1"><vh>IndexedStack</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221031231919.2"><vh>InkwellExample -- press ALT to scale</vh>
-<v t="swot.20221031231919.3"><vh>varible</vh></v>
-<v t="swot.20221031231919.6"><vh>build()</vh>
-<v t="swot.20221101062927.1"><vh>InkWell</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023105117.1"><vh>L Example</vh>
-<v t="swot.20221023105152.1"><vh>L  -- Scaffold</vh>
-<v t="swot.20221023105152.2"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221023105258.1"><vh>DemoL</vh>
-<v t="swot.20221023105258.2"><vh>build()</vh>
-<v t="swot.20221023105258.3"><vh>SingleChildScrollView</vh>
-<v t="swot.20221023105258.4"><vh>Column</vh>
-<v t="swot.20221030230436.2"><vh>ElevatedButton -- show LayoutBuilderExample</vh></v>
-<v t="swot.20221023122724.2"><vh>ElevatedButton -- show LongPressDraggableExample</vh></v>
-<v t="swot.20221029132948.2"><vh>ElevatedButton -- show ListViewExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023105408.1"><vh>ExampleL</vh>
-<v t="swot.20221030225430.2"><vh>LayoutBuilderExample</vh>
-<v t="swot.20221030225430.3"><vh>build()</vh>
-<v t="swot.20221030230818.2"><vh>Scaffold</vh>
-<v t="swot.20221030230818.3"><vh>appBar</vh></v>
-<v t="swot.20221030230818.4"><vh>body</vh>
-<v t="swot.20221030225455.1"><vh>LayoutBuilder</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023105920.2"><vh>LongPressDraggableExample</vh>
-<v t="swot.20221023105947.1"><vh>varible</vh></v>
-<v t="swot.20221023105920.3"><vh>initState()</vh></v>
-<v t="swot.20221023105920.4"><vh>dispose()</vh></v>
-<v t="swot.20221023105920.5"><vh>build()</vh>
-<v t="swot.20221023123049.2"><vh>Scaffold</vh>
-<v t="swot.20221023123049.3"><vh>appBar</vh></v>
-<v t="swot.20221023123049.4"><vh>body</vh>
-<v t="swot.20221023110506.1"><vh>Positioned</vh>
-<v t="swot.20221023110634.1"><vh>LongPressDraggable</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029130827.2"><vh>ListViewExample</vh>
-<v t="swot.20221029130827.3"><vh>build()</vh>
-<v t="swot.20221029133516.2"><vh>Scaffold</vh>
-<v t="swot.20221029133516.3"><vh>appBar</vh></v>
-<v t="swot.20221029133516.4"><vh>body</vh>
-<v t="swot.20221029132335.1"><vh>ListView</vh>
-<v t="swot.20221029133717.1"><vh>ListTile</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023080501.1"><vh>M Example</vh>
-<v t="swot.20221023080540.1"><vh>M  -- Scaffold</vh>
-<v t="swot.20221023080540.2"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221023081047.1"><vh>DemoM</vh>
-<v t="swot.20221023081047.2"><vh>build()</vh>
-<v t="swot.20221023081047.3"><vh>SingleChildScrollView</vh>
-<v t="swot.20221023081047.4"><vh>Column</vh>
-<v t="swot.20221023081047.5"><vh>show MaterialBannerExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023081258.1"><vh>ExampleM</vh>
-<v t="swot.20221023081535.2"><vh>MaterialBannerExample</vh>
-<v t="swot.20221023081535.3"><vh>build()</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221029134405.1"><vh>N Example</vh>
-<v t="swot.20221029134405.2"><vh>N  -- Scaffold</vh>
-<v t="swot.20221029134405.3"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221029134405.4"><vh>DemoN</vh>
-<v t="swot.20221029134405.5"><vh>build()</vh>
-<v t="swot.20221029134405.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221029134405.7"><vh>Column</vh>
-<v t="swot.20221029141845.2"><vh>ElevatedButton -- show NavigationBarExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029134405.14"><vh>ExampleN</vh>
-<v t="swot.20221029140231.2"><vh>NavigationBarExample</vh>
-<v t="swot.20221029140231.3"><vh>varible</vh></v>
-<v t="swot.20221029140231.4"><vh>initState()</vh></v>
-<v t="swot.20221029140231.5"><vh>dispose()</vh></v>
-<v t="swot.20221029140231.6"><vh>build()</vh>
-<v t="swot.20221029141046.2"><vh>Scaffold</vh>
-<v t="swot.20221029141046.3"><vh>appBar</vh></v>
-<v t="swot.20221029141046.4"><vh>body</vh></v>
-<v t="swot.20221029141046.5"><vh>bottomNavigationBar</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029131010.1"><vh>Example O-T</vh>
-<v t="swot.20221030231300.1"><vh>O Example</vh>
-<v t="swot.20221030231300.2"><vh>O  -- Scaffold</vh>
-<v t="swot.20221030231748.1"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221030231300.4"><vh>DemoO</vh>
-<v t="swot.20221030231300.5"><vh>build()</vh>
-<v t="swot.20221030231300.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221030231300.7"><vh>Column</vh>
-<v t="swot.20221030232506.2"><vh>ElevatedButton -- show OrientationBuilderExample</vh></v>
-<v t="swot.20221030233533.2"><vh>ElevatedButton -- show OverflowBarExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030231300.11"><vh>ExampleO</vh>
-<v t="swot.20221030231950.2"><vh>OrientationBuilderExample</vh>
-<v t="swot.20221030231950.3"><vh>build()</vh>
-<v t="swot.20221030232043.2"><vh>Scaffold</vh>
-<v t="swot.20221030232043.3"><vh>appBar</vh></v>
-<v t="swot.20221030232043.4"><vh>body</vh>
-<v t="swot.20221030232118.1"><vh>OrientationBuilder</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030232847.2"><vh>OverflowBarExample -- auto adjust row or column</vh>
-<v t="swot.20221030232847.3"><vh>build()</vh>
-<v t="swot.20221030233721.2"><vh>Scaffold</vh>
-<v t="swot.20221030233721.3"><vh>appBar</vh></v>
-<v t="swot.20221030233721.4"><vh>body</vh>
-<v t="swot.20221030233137.2"><vh>Padding</vh>
-<v t="swot.20221030233211.1"><vh>OverflowBar</vh>
-<v t="swot.20221030233258.2"><vh>ElevatedButton</vh></v>
-<v t="swot.20221030233342.2"><vh>ElevatedButton</vh></v>
-<v t="swot.20221030233342.1"><vh>ElevatedButton</vh></v>
-<v t="swot.20221030233809.1"><vh>ElevatedButton</vh></v>
-<v t="swot.20221030233843.1"><vh>ElevatedButton</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023093033.1"><vh>P Example</vh>
-<v t="swot.20221023093033.2"><vh>P  -- Scaffold</vh>
-<v t="swot.20221023093803.1"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221023093033.4"><vh>DemoP</vh>
-<v t="swot.20221023093033.5"><vh>build()</vh>
-<v t="swot.20221023093033.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221023093033.7"><vh>Column</vh>
-<v t="swot.20221029234843.2"><vh>ElevatedButton -- show PageViewExample</vh></v>
-<v t="swot.20221025191831.1"><vh>show PopupMenuButtonExample</vh></v>
-<v t="swot.20221030082123.2"><vh>ElevatedButton -- show PositionedExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023093033.14"><vh>ExampleP</vh>
-<v t="swot.20221029234453.2"><vh>PageViewExample</vh>
-<v t="swot.20221111064532.1"><vh>varible</vh></v>
-<v t="swot.20221111064612.1"><vh>dispose()</vh></v>
-<v t="swot.20221029234453.6"><vh>build()</vh>
-<v t="swot.20221029235310.2"><vh>Scaffold</vh>
-<v t="swot.20221029235310.3"><vh>appBar</vh>
-<v t="swot.20221111065157.2"><vh>IconButton left !!!</vh></v>
-<v t="swot.20221111065339.1"><vh>IconButton right !!!</vh></v>
-</v>
-<v t="swot.20221029235310.4"><vh>body</vh>
-<v t="swot.20221029234534.1"><vh>PageView !!!</vh>
-<v t="swot.20221029234605.1"><vh>Container</vh></v>
-<v t="swot.20221029234724.1"><vh>Container</vh></v>
-<v t="swot.20221029234725.1"><vh>Container</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221025114730.2"><vh>PopupMenuButtonExample</vh>
-<v t="swot.20221025114730.3"><vh>varible</vh></v>
-<v t="swot.20221025114730.6"><vh>build()</vh></v>
-</v>
-<v t="swot.20221029235922.2"><vh>PositionedExample</vh>
-<v t="swot.20221029235922.3"><vh>build()</vh>
-<v t="swot.20221030082723.2"><vh>Scaffold</vh>
-<v t="swot.20221030082723.3"><vh>appBar</vh></v>
-<v t="swot.20221030082723.4"><vh>body</vh>
-<v t="swot.20221030081223.2"><vh>Center</vh>
-<v t="swot.20221030081235.1"><vh>Stack</vh>
-<v t="swot.20221030081313.1"><vh>Positioned</vh></v>
-<v t="swot.20221030081540.1"><vh>Positioned</vh></v>
-<v t="swot.20221030081542.1"><vh>Positioned</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023152107.1"><vh>R Example</vh>
-<v t="swot.20221023152107.2"><vh>R  -- Scaffold</vh>
-<v t="swot.20221023152533.1"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221023152107.4"><vh>DemoR</vh>
-<v t="swot.20221023152107.5"><vh>build()</vh>
-<v t="swot.20221023152107.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221023152107.7"><vh>Column</vh>
-<v t="swot.20221023154547.2"><vh>ElevatedButton -- show ReorderableListViewExample</vh></v>
-<v t="swot.20221030084137.1"><vh>show RadioListTileExample</vh></v>
-<v t="swot.20221030181409.2"><vh>ElevatedButton -- show RefreshIndicatorExample</vh></v>
-<v t="swot.20221030205503.1"><vh>show RotatedBoxExample</vh></v>
-<v t="swot.20221031182942.1"><vh>show RangeSliderExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023152107.13"><vh>ExampleR</vh>
-<v t="swot.20221030084432.1"><vh>radioListTileOptions</vh></v>
-<v t="swot.20221030083241.2"><vh>RadioListTileExample</vh>
-<v t="swot.20221030083241.3"><vh>varible</vh></v>
-<v t="swot.20221030083241.4"><vh>initState()</vh></v>
-<v t="swot.20221030083241.5"><vh>dispose()</vh></v>
-<v t="swot.20221030083241.6"><vh>build()</vh>
-<v t="swot.20221030083721.2"><vh>Column</vh>
-<v t="swot.20221030083736.1"><vh>RadioListTile</vh></v>
-<v t="swot.20221030084017.1"><vh>RadioListTile</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221031182202.2"><vh>RangeSliderExample</vh>
-<v t="swot.20221031182202.3"><vh>varible</vh></v>
-<v t="swot.20221031182202.4"><vh>initState()</vh></v>
-<v t="swot.20221031182202.5"><vh>dispose()</vh></v>
-<v t="swot.20221031182202.6"><vh>build()</vh>
-<v t="swot.20221031182439.1"><vh>varible</vh></v>
-<v t="swot.20221031182617.2"><vh>Center</vh>
-<v t="swot.20221031182643.1"><vh>RangeSlider</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221030172700.2"><vh>RefreshIndicatorExample</vh>
-<v t="swot.20221030172700.3"><vh>varible</vh></v>
-<v t="swot.20221030172700.4"><vh>initState()</vh></v>
-<v t="swot.20221030172700.5"><vh>dispose()</vh></v>
-<v t="swot.20221030172700.6"><vh>build()</vh>
-<v t="swot.20221030182420.2"><vh>Scaffold</vh>
-<v t="swot.20221030182420.3"><vh>appBar</vh></v>
-<v t="swot.20221030182420.4"><vh>body</vh>
-<v t="swot.20221030173047.1"><vh>RefreshIndicator</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023152801.2"><vh>ReorderableListViewExample</vh>
-<v t="swot.20221023152933.1"><vh>varible</vh></v>
-<v t="swot.20221023152801.3"><vh>initState()</vh></v>
-<v t="swot.20221023152801.4"><vh>dispose()</vh></v>
-<v t="swot.20221023152801.5"><vh>build()</vh>
-<v t="swot.20221023154334.2"><vh>Scaffold</vh>
-<v t="swot.20221023154334.3"><vh>appBar</vh></v>
-<v t="swot.20221023154334.4"><vh>body</vh>
-<v t="swot.20221023153058.1"><vh>ReorderableListView</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030205049.2"><vh>RotatedBoxExample</vh>
-<v t="swot.20221030205049.3"><vh>build()</vh>
-<v t="swot.20221030205124.1"><vh>RotatedBox</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221024070848.1"><vh>S Example</vh>
-<v t="swot.20221024070848.2"><vh>S  -- Scaffold</vh>
-<v t="swot.20221024070848.3"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221024070848.4"><vh>DemoS</vh>
-<v t="swot.20221024070848.5"><vh>build()</vh>
-<v t="swot.20221024070848.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221024070848.7"><vh>Column</vh>
-<v t="swot.20221024100552.1"><vh>show DatePickerExample</vh></v>
-<v t="swot.20221024103554.1"><vh>show TimePickerExample</vh></v>
-<v t="swot.20221024110745.1"><vh>show DateRangePickerExample</vh></v>
-<v t="swot.20221029143324.2"><vh>ElevatedButton -- show StackExample</vh></v>
-<v t="swot.20221029190037.1"><vh>ElevatedButton -- show StepperExample</vh></v>
-<v t="swot.20221029213808.1"><vh>ElevatedButton -- show StreamBuilderExample</vh></v>
-<v t="swot.20221029215656.1"><vh>show SwitchExample</vh></v>
-<v t="swot.20221030210255.1"><vh>show SelectableTextExample</vh></v>
-<v t="swot.20221030211748.1"><vh>show SliderExample</vh></v>
-<v t="swot.20221030212913.1"><vh>show SnackBarExample</vh></v>
-<v t="swot.20221030225013.2"><vh>ElevatedButton -- show SafeAreaExample</vh></v>
-<v t="swot.20221031122837.2"><vh>ElevatedButton -- show SearchDelegateExample</vh></v>
-<v t="swot.20221031172540.2"><vh>ElevatedButton -- show SliveAppBarExample</vh></v>
-<v t="swot.20221031225347.2"><vh>ElevatedButton -- show SpreadOperatorExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221024070848.8"><vh>ExampleS</vh>
-<v t="swot.20221030224821.2"><vh>SafeAreaExample</vh>
-<v t="swot.20221030224821.3"><vh>build()</vh>
-<v t="swot.20221030225147.1"><vh>SafeArea</vh>
-<v t="swot.20221030224837.1"><vh>Text</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221031115636.1"><vh>CustomSearchDelegate</vh></v>
-<v t="swot.20221031114947.2"><vh>SearchDelegateExample</vh>
-<v t="swot.20221031114947.3"><vh>varible</vh></v>
-<v t="swot.20221031114947.6"><vh>build()</vh>
-<v t="swot.20221031115107.2"><vh>Scaffold</vh>
-<v t="swot.20221031115107.3"><vh>appBar</vh>
-<v t="swot.20221031115310.2"><vh>IconButton !!!</vh></v>
-</v>
-<v t="swot.20221031115107.4"><vh>body</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221030210033.2"><vh>SelectableTextExample</vh>
-<v t="swot.20221101072329.1"><vh>varible</vh></v>
-<v t="swot.20221030210033.6"><vh>build()</vh>
-<v t="swot.20221101072843.2"><vh>Column</vh>
-<v t="swot.20221030210100.1"><vh>SelectableText</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221024095344.2"><vh>DatePickerExample</vh>
-<v t="swot.20221024095406.1"><vh>varible</vh></v>
-<v t="swot.20221024095344.3"><vh>initState()</vh></v>
-<v t="swot.20221024095344.4"><vh>dispose()</vh></v>
-<v t="swot.20221024095344.5"><vh>build()</vh></v>
-</v>
-<v t="swot.20221024103523.2"><vh>TimePickerExample</vh>
-<v t="swot.20221024103850.1"><vh>varible</vh></v>
-<v t="swot.20221024103523.3"><vh>initState()</vh></v>
-<v t="swot.20221024103523.4"><vh>dispose()</vh></v>
-<v t="swot.20221024103957.1"><vh>build()</vh></v>
-</v>
-<v t="swot.20221024110030.2"><vh>DateRangePickerExample</vh>
-<v t="swot.20221024110048.1"><vh>varible</vh></v>
-<v t="swot.20221024110030.3"><vh>initState()</vh></v>
-<v t="swot.20221024110030.4"><vh>dispose()</vh></v>
-<v t="swot.20221024110030.5"><vh>build()</vh></v>
-</v>
-<v t="swot.20221030210547.2"><vh>SliderExample</vh>
-<v t="swot.20221030210547.3"><vh>varible</vh></v>
-<v t="swot.20221030210547.6"><vh>build()</vh>
-<v t="swot.20221030211118.1"><vh>Slider</vh></v>
-</v>
-</v>
-<v t="swot.20221031171010.2"><vh>SliveAppBarExample</vh>
-<v t="swot.20221031171010.6"><vh>build()</vh>
-<v t="swot.20221031171922.2"><vh>Scaffold</vh>
-<v t="swot.20221031171922.4"><vh>body</vh>
-<v t="swot.20221031172002.1"><vh>CustomScrollView</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030212509.2"><vh>SnackBarExample</vh>
-<v t="swot.20221030212509.3"><vh>build()</vh>
-<v t="swot.20221030212550.2"><vh>ElevatedButton</vh></v>
-</v>
-</v>
-<v t="swot.20221031222131.2"><vh>SpreadOperatorExample</vh>
-<v t="swot.20221031222131.3"><vh>build()</vh>
-<v t="swot.20221031222154.1"><vh>varible</vh></v>
-<v t="swot.20221031225000.2"><vh>Scaffold</vh>
-<v t="swot.20221031225000.3"><vh>appBar</vh></v>
-<v t="swot.20221031225000.4"><vh>body</vh>
-<v t="swot.20221031225029.2"><vh>Column</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029142534.2"><vh>StackExample</vh>
-<v t="swot.20221029142534.3"><vh>build()</vh>
-<v t="swot.20221029142715.2"><vh>Scaffold</vh>
-<v t="swot.20221029142715.3"><vh>appBar</vh></v>
-<v t="swot.20221029142715.4"><vh>body</vh>
-<v t="swot.20221029142815.2"><vh>Center</vh>
-<v t="swot.20221029142627.1"><vh>Stack</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029144530.2"><vh>StepperExample</vh>
-<v t="swot.20221029144530.3"><vh>varible</vh></v>
-<v t="swot.20221029144530.4"><vh>initState()</vh></v>
-<v t="swot.20221029144530.5"><vh>dispose()</vh></v>
-<v t="swot.20221029144530.6"><vh>build()</vh>
-<v t="swot.20221029144924.2"><vh>Scaffold</vh>
-<v t="swot.20221029144924.3"><vh>appBar</vh></v>
-<v t="swot.20221029144924.4"><vh>body</vh>
-<v t="swot.20221029144954.2"><vh>Center</vh>
-<v t="swot.20221029145033.1"><vh>Stepper</vh>
-<v t="swot.20221029191553.1"><vh>steps</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029211743.1"><vh>generateStream -- FAKE FIREBASE STREAM</vh></v>
-<v t="swot.20221029211533.2"><vh>StreamBuilderExample</vh>
-<v t="swot.20221029211533.6"><vh>build()</vh>
-<v t="swot.20221029213944.2"><vh>Scaffold</vh>
-<v t="swot.20221029213944.3"><vh>appBar</vh></v>
-<v t="swot.20221029213944.4"><vh>body</vh>
-<v t="swot.20221029212803.2"><vh>Center</vh>
-<v t="swot.20221029212812.1"><vh>StreamBuilder</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029215403.2"><vh>SwitchExample</vh>
-<v t="swot.20221029215403.3"><vh>varible</vh></v>
-<v t="swot.20221029215403.4"><vh>initState()</vh></v>
-<v t="swot.20221029215403.5"><vh>dispose()</vh></v>
-<v t="swot.20221029215403.6"><vh>build()</vh>
-<v t="swot.20221029215500.2"><vh>Center</vh>
-<v t="swot.20221029215505.1"><vh>Switch</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023175859.1"><vh>T Example</vh>
-<v t="swot.20221023175859.2"><vh>T  -- Scaffold</vh>
-<v t="swot.20221023175859.3"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221023175859.4"><vh>DemoT</vh>
-<v t="swot.20221023175859.5"><vh>build()</vh>
-<v t="swot.20221023175859.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221023175859.7"><vh>Column</vh>
-<v t="swot.20221023195608.1"><vh>show TableExample</vh></v>
-<v t="swot.20221113181739.2"><vh>ElevatedButton -- show TextFieldExample</vh></v>
-<v t="swot.20221027182544.1"><vh>show TextFormFieldExample</vh></v>
-<v t="swot.20221029222412.2"><vh>ElevatedButton -- show TabPageSelectorExample</vh></v>
-<v t="swot.20221029232032.2"><vh>ElevatedButton -- show TabBarExample</vh></v>
-<v t="swot.20221031220908.1"><vh>show TooltipExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221023175859.14"><vh>ExampleT</vh>
-<v t="swot.20221023193833.2"><vh>TableExample</vh>
-<v t="swot.20221023193833.3"><vh>build()</vh>
-<v t="swot.20221023193950.2"><vh>Scaffold</vh>
-<v t="swot.20221023193950.3"><vh>appBar</vh></v>
-<v t="swot.20221023193950.4"><vh>body</vh>
-<v t="swot.20221023194122.1"><vh>Center</vh>
-<v t="swot.20221023200224.1"><vh>SingleChildScrollView</vh>
-<v t="swot.20221023194310.1"><vh>Table</vh>
-<v t="swot.20221023194533.1"><vh>TableRow</vh>
-<v t="swot.20221023194941.1"><vh>TableCell</vh></v>
-<v t="swot.20221023194949.1"><vh>TableCell</vh></v>
-<v t="swot.20221023194950.1"><vh>TableCell</vh></v>
-</v>
-<v t="swot.20221023195102.1"><vh>List.generate</vh>
-<v t="swot.20221023195414.1"><vh>TableCell</vh></v>
-<v t="swot.20221023195426.1"><vh>TableCell</vh></v>
-<v t="swot.20221023195426.2"><vh>TableCell</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029230649.2"><vh>TabBarExample</vh>
-<v t="swot.20221029230649.3"><vh>build()</vh>
-<v t="swot.20221029230800.1"><vh>DefaultTabController !!!</vh>
-<v t="swot.20221029230841.2"><vh>Scaffold</vh>
-<v t="swot.20221029230841.3"><vh>appBar</vh>
-<v t="swot.20221111222446.1"><vh>TabBar !!!</vh></v>
-</v>
-<v t="swot.20221029230841.4"><vh>body</vh>
-<v t="swot.20221029231559.1"><vh>TabBarView !!!</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221029220342.1"><vh>tabPageSelectorWidgets</vh></v>
-<v t="swot.20221029220227.2"><vh>TabPageSelectorExample</vh>
-<v t="swot.20221029220227.3"><vh>varible</vh></v>
-<v t="swot.20221029220227.4"><vh>initState()</vh></v>
-<v t="swot.20221029220227.5"><vh>dispose()</vh></v>
-<v t="swot.20221029220227.6"><vh>build()</vh>
-<v t="swot.20221029221243.2"><vh>Scaffold</vh>
-<v t="swot.20221029221243.3"><vh>appBar</vh></v>
-<v t="swot.20221029221243.4"><vh>body</vh>
-<v t="swot.20221029221337.1"><vh>Stack</vh></v>
-</v>
-<v t="swot.20221029221243.6"><vh>floatingActionButton</vh></v>
-</v>
-</v>
-</v>
-<v t="swot.20221113174434.2"><vh>TextFieldExample</vh>
-<v t="swot.20221113174434.3"><vh>build()</vh>
-<v t="swot.20221113180505.1"><vh>GestureDetector -- unfocus()</vh>
-<v t="swot.20221113180641.1"><vh>Scaffold</vh>
-<v t="swot.20221113180931.1"><vh>appBar</vh></v>
-<v t="swot.20221113181008.1"><vh>body</vh>
-<v t="swot.20221113181132.1"><vh>TextField -- number</vh></v>
-<v t="swot.20221113181152.1"><vh>TextField -- decimal</vh></v>
-<v t="swot.20221113181202.1"><vh>TextField -- phone</vh></v>
-<v t="swot.20221113181209.1"><vh>TextField -- done</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221027175533.2"><vh>TextFormFieldExample</vh>
-<v t="swot.20221027175533.3"><vh>varible</vh></v>
-<v t="swot.20221027175533.6"><vh>build()</vh>
-<v t="swot.20221027183133.2"><vh>Scaffold</vh>
-<v t="swot.20221027183133.3"><vh>appBar</vh></v>
-<v t="swot.20221027183133.4"><vh>body</vh>
-<v t="swot.20221027180846.1"><vh>SingleChildScrollView</vh>
-<v t="swot.20221027180945.1"><vh>Form</vh>
-<v t="swot.20221112184234.1"><vh>2) onChanged !!! Form.of(primaryFocus!.context!).save -&gt; setState(() {})</vh></v>
-<v t="swot.20221112184709.1"><vh>child</vh>
-<v t="swot.20221027182206.1"><vh>Column</vh>
-<v t="swot.20221112180710.1"><vh>List.generate</vh>
-<v t="swot.20221112180550.1"><vh>1) TextFormField input string</vh>
-<v t="swot.20221112182519.1"><vh>3) onSaved !!! titles[index] = value</vh></v>
-</v>
-<v t="swot.20221112180604.1"><vh>SizedBox</vh></v>
-<v t="swot.20221112180616.1"><vh>4) Card !!! titles[index]</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221031220414.2"><vh>TooltipExample</vh>
-<v t="swot.20221031220414.3"><vh>build()</vh>
-<v t="swot.20221031220639.2"><vh>Center</vh>
-<v t="swot.20221031220649.1"><vh>Tooltip</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030213442.1"><vh>Example U-Z</vh>
-<v t="swot.20221030213518.1"><vh>V Example</vh>
-<v t="swot.20221030213518.2"><vh>V  -- Scaffold</vh>
-<v t="swot.20221030213518.3"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221030213518.4"><vh>DemoV</vh>
-<v t="swot.20221030213518.5"><vh>build()</vh>
-<v t="swot.20221030213518.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221030213518.7"><vh>Column</vh>
-<v t="swot.20221030222854.1"><vh>show VisibilityExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030213518.12"><vh>ExampleV</vh>
-<v t="swot.20221030222244.2"><vh>VisibilityExample</vh>
-<v t="swot.20221030222244.3"><vh>varible</vh></v>
-<v t="swot.20221030222244.4"><vh>initState()</vh></v>
-<v t="swot.20221030222244.5"><vh>dispose()</vh></v>
-<v t="swot.20221030222244.6"><vh>build()</vh>
-<v t="swot.20221030222322.2"><vh>Row</vh>
-<v t="swot.20221030222414.2"><vh>ElevatedButton</vh></v>
-<v t="swot.20221030222619.1"><vh>Visibility</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030223524.1"><vh>W Example</vh>
-<v t="swot.20221030223524.2"><vh>W  -- Scaffold</vh>
-<v t="swot.20221030223524.3"><vh>AppBar</vh></v>
-</v>
-<v t="swot.20221030223524.4"><vh>DemoW</vh>
-<v t="swot.20221030223524.5"><vh>build()</vh>
-<v t="swot.20221030223524.6"><vh>SingleChildScrollView</vh>
-<v t="swot.20221030223524.7"><vh>Column</vh>
-<v t="swot.20221031202945.2"><vh>ElevatedButton -- show WillPopScopeExample</vh></v>
-<v t="swot.20221030224243.2"><vh>ElevatedButton -- show WrapExample</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030223524.9"><vh>ExampleW</vh>
-<v t="swot.20221031202343.2"><vh>WillPopScopeExample</vh>
-<v t="swot.20221031202343.3"><vh>build()</vh>
-<v t="swot.20221031202510.1"><vh>WillPopScope -- disable or enable back button</vh>
-<v t="swot.20221031202632.2"><vh>Scaffold</vh>
-<v t="swot.20221031202632.3"><vh>appBar</vh></v>
-<v t="swot.20221031202632.4"><vh>body</vh></v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221030223719.2"><vh>WrapExample</vh>
-<v t="swot.20221030223719.3"><vh>build()</vh>
-<v t="swot.20221030224541.2"><vh>Scaffold</vh>
-<v t="swot.20221030224541.3"><vh>appBar</vh></v>
-<v t="swot.20221030224541.4"><vh>body</vh>
-<v t="swot.20221030223755.2"><vh>Center</vh>
-<v t="swot.20221030223816.1"><vh>Wrap</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-<v t="swot.20221112223828.1"><vh>Composite Example</vh>
-<v t="swot.20221112214058.2"><vh>UserLoginExample</vh>
-<v t="swot.20221112214058.3"><vh>varible</vh></v>
-<v t="swot.20221112223203.1"><vh>_login()</vh></v>
-<v t="swot.20221112214058.6"><vh>build()</vh>
-<v t="swot.20221112223644.2"><vh>Scaffold</vh>
-<v t="swot.20221112223644.3"><vh>appBar</vh></v>
-<v t="swot.20221112223644.4"><vh>body</vh>
-<v t="swot.20221112214751.1"><vh>Form</vh>
-<v t="swot.20221112215637.1"><vh>onWillPop</vh></v>
-<v t="swot.20221112215730.1"><vh>Column</vh>
-<v t="swot.20221112215838.1"><vh>TextFormField _account</vh></v>
-<v t="swot.20221112220311.1"><vh>TextFormField _pwd</vh></v>
-<v t="swot.20221112220552.2"><vh>ElevatedButton login</vh></v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
-</v>
+<v t="swot.20221017093031.2" descendentVnodeUnknownAttributes="7d7100285805000000302e322e3171017d7102285808000000616e6e6f7461746571037d71042858080000007072696f7269747971054b01580a000000707269736574646174657106580a000000323032322d31302d3233710775580500000069636f6e7371085d71097d710a28580400000074797065710b580400000066696c65710c680c58320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269312e706e67710d580700000072656c50617468710e580d000000636c656f2f707269312e706e67710f580500000077686572657110580e0000006265666f7265486561646c696e6571115807000000796f666673657471124b005807000000786f666673657471134b0258040000007870616471144b0158020000006f6e71155805000000766e6f646571165808000000636c656f49636f6e71175801000000317118756175580d000000302e332e302e302e302e312e3171197d711a68037d711b2858080000007072696f72697479711c4d0f27580a00000070726973657464617465711d580a000000323032322d31302d3236711e75735811000000302e342e302e332e312e302e302e302e30711f7d712068037d71212858080000007072696f7269747971224d0f27580a000000707269736574646174657123580a000000323032322d31302d3235712475735813000000302e342e302e352e322e302e302e302e312e3071257d712668037d71272858080000007072696f7269747971284d0f27580a000000707269736574646174657129580a000000323032322d31302d3330712a75735817000000302e342e302e352e322e322e312e302e312e302e302e30712b7d712c68037d712d2858080000007072696f72697479712e4d0f27580a00000070726973657464617465712f580a000000323032322d31312d3132713075735817000000302e342e302e352e322e322e312e302e312e302e302e3171317d713268037d71332858080000007072696f7269747971344d0f27580a000000707269736574646174657135580a000000323032322d31312d313271367573580d000000302e342e312e322e312e302e3071377d713868037d71392858080000007072696f72697479713a4d0f27580a00000070726973657464617465713b580a000000323032322d31302d3233713c7573580f000000302e342e312e322e312e302e302e30713d7d713e68037d713f2858080000007072696f7269747971404d0f27580a000000707269736574646174657141580a000000323032322d31302d3233714275735815000000302e342e322e342e322e352e312e302e312e302e3071437d714468037d71452858080000007072696f7269747971464d0f27580a000000707269736574646174657147580a000000323032322d31312d3132714875735817000000302e342e322e342e322e352e312e302e312e302e302e3071497d714a68037d714b2858080000007072696f72697479714c4d0f27580a00000070726973657464617465714d580a000000323032322d31312d3132714e7573581d000000302e342e322e342e322e352e312e302e312e302e302e312e302e302e30714f7d715068037d71512858080000007072696f7269747971524d0f27580a000000707269736574646174657153580a000000323032322d31312d313271547573581f000000302e342e322e342e322e352e312e302e312e302e302e312e302e302e302e3071557d715668037d71572858080000007072696f7269747971584d0f27580a000000707269736574646174657159580a000000323032322d31312d3132715a7573581d000000302e342e322e342e322e352e312e302e312e302e302e312e302e302e32715b7d715c68037d715d2858080000007072696f72697479715e4d0f27580a00000070726973657464617465715f580a000000323032322d31312d313271607573752e"><vh>@file lib/main.dart</vh></v>
 <v t="swot.20221027203033.1"><vh>#file pubspec.yaml</vh>
 <v t="swot.20221027203224.1"><vh>&lt;&lt; assets &gt;&gt;</vh></v>
 </v>
@@ -1619,506 +36,1451 @@
 </v>
 <v t="swot.20221111231424.1"><vh>##clean README.md</vh></v>
 </v>
-<v t="swot.20221027111311.1"><vh>Logic -- Focus use in one place</vh>
+<v t="swot.20221027111311.1"><vh>Alphabetical Example -- Focus use in one place</vh>
 <v t="swot.20221017093031.151"><vh>A</vh>
-<v t="swot.20221017093031.152"></v>
-<v t="swot.20221017093031.153"></v>
-<v t="swot.20221017093031.154"></v>
-<v t="swot.20221031134117.1"><vh>.adaptiveExample</vh>
-<v t="swot.20221031135430.2"></v>
-<v t="swot.20221031134256.2"></v>
+<v t="swot.20221017093031.152"><vh>AboutDialog</vh></v>
+<v t="swot.20221017093031.153"><vh>AboutListTile</vh></v>
+<v t="swot.20221017093031.154"><vh>AbsorbPointer -- include button can not be clicked</vh>
+<v t="swot.20221017093031.155"><vh>ElevatedButton 不可点击</vh></v>
 </v>
-<v t="swot.20221017093031.156"></v>
-<v t="swot.20221017093031.157"></v>
+<v t="swot.20221031134117.1"><vh>.adaptiveExample</vh>
+<v t="swot.20221031135430.2"><vh>ElevatedButton -- show AdaptiveExample</vh></v>
+<v t="swot.20221031134256.2"><vh>AdaptiveExample</vh>
+<v t="swot.20221031134256.6"><vh>build()</vh>
+<v t="swot.20221031134345.2"><vh>Scaffold</vh>
+<v t="swot.20221031134345.3"><vh>appBar</vh></v>
+<v t="swot.20221031134345.4"><vh>body</vh>
+<v t="swot.20221031134422.2"><vh>Center</vh>
+<v t="swot.20221031134446.2"><vh>Column</vh>
+<v t="swot.20221031134619.1"><vh>Slider.adaptive</vh></v>
+<v t="swot.20221031140355.1"><vh>SwitchListTile.adaptive</vh></v>
+<v t="swot.20221031140635.1"><vh>Switch.adaptive</vh></v>
+<v t="swot.20221031140816.1"><vh>Icons.adaptive</vh></v>
+<v t="swot.20221031140929.1"><vh>CircularProgressIndicator.adaptive</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221017093031.156"><vh>AlertDialog</vh></v>
+<v t="swot.20221017093031.157"><vh>Align</vh></v>
 <v t="swot.20221017093031.158"><vh>Animated...</vh>
-<v t="swot.20221017093031.159"></v>
+<v t="swot.20221017093031.159"><vh>AnimatedAlign</vh></v>
 <v t="swot.20221017093031.160"><vh>AnimatedBuilderExample</vh>
-<v t="swot.20221101141445.1"></v>
-<v t="swot.20221101080952.2"></v>
+<v t="swot.20221101141445.1"><vh>show AnimatedBuilderExample</vh></v>
+<v t="swot.20221101080952.2"><vh>AnimatedBuilderExample -- step 1</vh>
+<v t="swot.20221101080952.3"><vh>varible             -- step 2</vh></v>
+<v t="swot.20221101080952.4"><vh>initState()         -- step 3</vh></v>
+<v t="swot.20221101080952.5"><vh>dispose()           -- step 4</vh></v>
+<v t="swot.20221101080952.6"><vh>build()</vh>
+<v t="swot.20221101140943.1"><vh>AnimatedBuilder  -- step 5</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221101163749.1"><vh>AnimatedContainerExample</vh>
-<v t="swot.20221101163555.1"></v>
-<v t="swot.20221101163948.2"></v>
+<v t="swot.20221101163555.1"><vh>show AnimatedContainerExample</vh></v>
+<v t="swot.20221101163948.2"><vh>AnimatedContainerExample</vh>
+<v t="swot.20221101163948.3"><vh>varible</vh></v>
+<v t="swot.20221101163948.6"><vh>build()</vh>
+<v t="swot.20221101165100.1"><vh>GestureDetector</vh>
+<v t="swot.20221101165100.2"><vh>AnimatedContainer</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221031192937.1"><vh>AnimatedCrossFadeExample</vh>
-<v t="swot.20221031193616.1"></v>
-<v t="swot.20221031193012.2"></v>
+<v t="swot.20221031193616.1"><vh>show AnimatedCrossFadeExample</vh></v>
+<v t="swot.20221031193012.2"><vh>AnimatedCrossFadeExample</vh>
+<v t="swot.20221031193012.3"><vh>varible</vh></v>
+<v t="swot.20221031193012.6"><vh>build()</vh>
+<v t="swot.20221031193341.2"><vh>Row</vh>
+<v t="swot.20221031193450.1"><vh>TextButton</vh></v>
+<v t="swot.20221017093031.165"><vh>AnimatedCrossFade</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221101175042.1"><vh>AnimatedDefaultTextStyleExample</vh>
-<v t="swot.20221101175441.1"></v>
-<v t="swot.20221101175102.2"></v>
+<v t="swot.20221101175441.1"><vh>show AnimatedDefaultTextStyleExample</vh></v>
+<v t="swot.20221101175102.2"><vh>AnimatedDefaultTextStyleExample</vh>
+<v t="swot.20221101175102.3"><vh>varible</vh></v>
+<v t="swot.20221101175102.6"><vh>build()</vh>
+<v t="swot.20221101175533.1"><vh>Row</vh>
+<v t="swot.20221101175533.2"><vh>TextButton</vh></v>
+<v t="swot.20221101175533.3"><vh>SizedBox</vh>
+<v t="swot.20221101175533.4"><vh>AnimatedDefaultTextStyle</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221027192806.1"><vh>AnimatedIconExample</vh>
-<v t="swot.20221027194417.2"></v>
-<v t="swot.20221027192851.2"></v>
+<v t="swot.20221027194417.2"><vh>show AnimatedIconExample</vh></v>
+<v t="swot.20221027192851.2"><vh>AnimatedIconExample -- TickerProviderStateMixin</vh>
+<v t="swot.20221027192851.3"><vh>varible</vh></v>
+<v t="swot.20221027192851.4"><vh>initState()</vh></v>
+<v t="swot.20221027192851.5"><vh>dispose()</vh></v>
+<v t="swot.20221027192851.6"><vh>build()</vh>
+<v t="swot.20221027194101.1"><vh>GestureDetector</vh>
+<v t="swot.20221027194101.2"><vh>AnimatedIcon</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221101181630.1"><vh>AnimatedListExample</vh>
-<v t="swot.20221101181724.1"></v>
-<v t="swot.20221101181708.2"></v>
+<v t="swot.20221101181724.1"><vh>show AnimatedListExample</vh></v>
+<v t="swot.20221101181708.2"><vh>AnimatedListExample</vh>
+<v t="swot.20221101181708.3"><vh>varible</vh></v>
+<v t="swot.20221101181708.4"><vh>initState()</vh></v>
+<v t="swot.20221101181708.5"><vh>dispose()</vh></v>
+<v t="swot.20221101181708.6"><vh>build()</vh>
+<v t="swot.20221101182425.2"><vh>Column</vh>
+<v t="swot.20221101182506.1"><vh>IconButton</vh></v>
+<v t="swot.20221101182536.1"><vh>SizedBox</vh>
+<v t="swot.20221101182340.2"><vh>AnimatedList</vh>
+<v t="swot.20221101182340.3"><vh>SizeTransition</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.178"><vh>AnimatedModalBarrier</vh>
-<v t="swot.20221017093031.179"></v>
-<v t="swot.20221017093031.180"></v>
+<v t="swot.20221017093031.179"><vh>AnimatedModalBarrier  -- show AnimatedModalBarrier</vh></v>
+<v t="swot.20221017093031.180"><vh>AnimatedModalBarrierExample</vh>
+<v t="swot.20221017093031.181"><vh>varible</vh></v>
+<v t="swot.20221017093031.182"><vh>initState()</vh></v>
+<v t="swot.20221017093031.183"><vh>dispose()</vh></v>
+<v t="swot.20221017093031.184"><vh>build()</vh>
+<v t="swot.20221101193037.1"><vh>Stack</vh>
+<v t="swot.20221017093031.185"><vh>ElevatedButton</vh></v>
+<v t="swot.20221017093031.186"><vh>_animatedModalBarrier</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.187"><vh>AnimatedOpacity</vh>
-<v t="swot.20221017093031.194"></v>
-<v t="swot.20221017093031.188"></v>
+<v t="swot.20221017093031.194"><vh>show AnimatedOpacity</vh></v>
+<v t="swot.20221017093031.188"><vh>AnimatedOpacityExample</vh>
+<v t="swot.20221017093031.189"><vh>varible</vh></v>
+<v t="swot.20221017093031.191"><vh>build()</vh>
+<v t="swot.20221017093031.192"><vh>AnimatedOpacity</vh></v>
+<v t="swot.20221017093031.193"><vh>ElevatedButton</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.195"><vh>AnimatedPadding</vh>
-<v t="swot.20221017093031.196"></v>
-<v t="swot.20221017093031.197"></v>
+<v t="swot.20221017093031.196"><vh>show AnimatedPadding</vh></v>
+<v t="swot.20221017093031.197"><vh>AnimatedPaddingExample</vh>
+<v t="swot.20221017093031.198"><vh>varible</vh></v>
+<v t="swot.20221017093031.199"><vh>initState()</vh></v>
+<v t="swot.20221017093031.200"><vh>build()</vh>
+<v t="swot.20221017093031.201"><vh>Column</vh>
+<v t="swot.20221017093031.202"><vh>Row</vh>
+<v t="swot.20221017093031.203"><vh>ElevatedButton</vh></v>
+<v t="swot.20221017093031.204"><vh>Text</vh></v>
+</v>
+<v t="swot.20221017093031.205"><vh>AnimatedPadding</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.206"><vh>AnimatedPhysicalModel</vh>
-<v t="swot.20221017093031.207"></v>
-<v t="swot.20221017093031.208"></v>
+<v t="swot.20221017093031.207"><vh>show AnimatedPhysicalModel</vh></v>
+<v t="swot.20221017093031.208"><vh>AnimatedPhysicalModelExample</vh>
+<v t="swot.20221017093031.209"><vh>varible</vh></v>
+<v t="swot.20221017093031.210"><vh>initState()</vh></v>
+<v t="swot.20221017093031.211"><vh>dispose()</vh></v>
+<v t="swot.20221017093031.212"><vh>build()</vh>
+<v t="swot.20221017093031.213"><vh>ElevatedButton</vh></v>
+<v t="swot.20221017093031.214"><vh>AnimatedPhysicalModel</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.215"><vh>AnimatedPositioned</vh>
-<v t="swot.20221017093031.216"></v>
-<v t="swot.20221017093031.217"></v>
+<v t="swot.20221017093031.216"><vh>show AnimatedPositionedExample</vh></v>
+<v t="swot.20221017093031.217"><vh>AnimatedPositionedExample</vh>
+<v t="swot.20221017093031.218"><vh>varible</vh></v>
+<v t="swot.20221017093031.219"><vh>initState()</vh></v>
+<v t="swot.20221017093031.220"><vh>dispose()</vh></v>
+<v t="swot.20221017093031.221"><vh>build()</vh>
+<v t="swot.20221017093031.222"><vh>SizedBox</vh>
+<v t="swot.20221017093031.223"><vh>Stack</vh>
+<v t="swot.20221017093031.224"><vh>AnimatedPositioned</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.225"><vh>AnimatedRotation</vh>
-<v t="swot.20221017093031.226"></v>
-<v t="swot.20221017093031.227"></v>
+<v t="swot.20221017093031.226"><vh>show AnimatedRotationExample</vh></v>
+<v t="swot.20221017093031.227"><vh>AnimatedRotationExample</vh>
+<v t="swot.20221017093031.228"><vh>varible</vh></v>
+<v t="swot.20221017093031.229"><vh>initState()</vh></v>
+<v t="swot.20221017093031.230"><vh>dispose()</vh></v>
+<v t="swot.20221017093031.231"><vh>build()</vh>
+<v t="swot.20221017093031.232"><vh>ElevatedButton</vh></v>
+<v t="swot.20221017093031.233"><vh>Padding</vh>
+<v t="swot.20221101201546.1"><vh>AnimatedRotation</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.234"><vh>AnimatedSize</vh>
-<v t="swot.20221017093031.235"></v>
-<v t="swot.20221017093031.236"></v>
+<v t="swot.20221017093031.235"><vh>show AnimatedSizeExample</vh>
+<v t="swot.20221017093031.251"><vh>show AnimatedSwitcherExample</vh></v>
+</v>
+<v t="swot.20221017093031.236"><vh>AnimatedSizeExample</vh>
+<v t="swot.20221017093031.237"><vh>varible</vh></v>
+<v t="swot.20221017093031.238"><vh>initState()</vh></v>
+<v t="swot.20221017093031.239"><vh>dispose()</vh></v>
+<v t="swot.20221017093031.240"><vh>build()</vh>
+<v t="swot.20221017093031.241"><vh>Text</vh></v>
+<v t="swot.20221017093031.242"><vh>GestureDetector AnimatedSize FlutterLogo</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221017093031.243"><vh>AnimatedSwitcher</vh>
 <v t="swot.20221017093031.251"></v>
-<v t="swot.20221017093031.244"></v>
+<v t="swot.20221017093031.244"><vh>AnimatedSwitcherExample</vh>
+<v t="swot.20221017093031.245"><vh>varible</vh></v>
+<v t="swot.20221017093031.246"><vh>initState()</vh></v>
+<v t="swot.20221017093031.247"><vh>dispose()</vh></v>
+<v t="swot.20221017093031.248"><vh>build()</vh>
+<v t="swot.20221017093031.249"><vh>ElevatedButton</vh></v>
+<v t="swot.20221017093031.250"><vh>AnimatedSwitcher</vh></v>
 </v>
 </v>
-<v t="swot.20221017093031.252"></v>
-<v t="swot.20221017093031.253"></v>
+</v>
+</v>
+<v t="swot.20221017093031.252"><vh>AppBar</vh></v>
+<v t="swot.20221017093031.253"><vh>AspectRatio</vh></v>
 <v t="swot.20221017093031.254"><vh>AutoComplete</vh>
-<v t="swot.20221017093031.255"></v>
-<v t="swot.20221017093031.256"></v>
+<v t="swot.20221017093031.255"><vh>show AutoCompleteExample</vh></v>
+<v t="swot.20221017093031.256"><vh>AutoCompleteExample 不要在屏幕中部以下(会被软键盘挡住)</vh>
+<v t="swot.20221017093031.257"><vh>varible</vh></v>
+<v t="swot.20221017093031.258"><vh>build()</vh></v>
+</v>
 </v>
 </v>
 <v t="swot.20221017093031.259"><vh>B</vh>
 <v t="swot.20221021173546.1"><vh>BackdropFilterExample</vh>
-<v t="swot.20221019111317.2"></v>
-<v t="swot.20221021173506.1"></v>
+<v t="swot.20221019111317.2"><vh>BackdropFilterExample</vh>
+<v t="swot.20221019111317.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221021173506.1"><vh>show BackdropFilterExample</vh></v>
 </v>
 <v t="swot.20221021174618.1"><vh>BannerExample</vh>
-<v t="swot.20221021175217.2"></v>
-<v t="swot.20221021181118.1"></v>
+<v t="swot.20221021175217.2"><vh>BannerExample</vh>
+<v t="swot.20221021175217.3"><vh>build()</vh>
+<v t="swot.20221021175330.1"><vh>Center</vh>
+<v t="swot.20221021175401.1"><vh>Container</vh>
+<v t="swot.20221021180745.1"><vh>ClipRect</vh>
+<v t="swot.20221021180828.1"><vh>Banner</vh>
+<v t="swot.20221021175506.1"><vh>Container</vh>
+<v t="swot.20221021175604.1"><vh>Padding</vh>
+<v t="swot.20221021175702.1"><vh>Column</vh>
+<v t="swot.20221021175915.1"><vh>Image</vh></v>
+<v t="swot.20221021180035.1"><vh>SizedBox</vh></v>
+<v t="swot.20221021180106.1"><vh>Row</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221021181118.1"><vh>show BannerExample</vh></v>
 </v>
 <v t="swot.20221021181511.1"><vh>BaselineExample</vh>
-<v t="swot.20221021181642.2"></v>
-<v t="swot.20221021181700.1"></v>
+<v t="swot.20221021181642.2"><vh>BaselineExample</vh>
+<v t="swot.20221021181642.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221021181700.1"><vh>show BaselineExample</vh></v>
 </v>
 <v t="swot.20221021182532.1"><vh>BlockSemanticsExample</vh>
-<v t="swot.20221022083314.1"></v>
-<v t="swot.20221022080218.2"></v>
-<v t="swot.20221022085519.1"></v>
+<v t="swot.20221022083314.1"><vh>&lt;&lt; showSemanticsDebugger &gt;&gt;</vh></v>
+<v t="swot.20221022080218.2"><vh>BlockSemanticsExample</vh>
+<v t="swot.20221022083723.1"><vh>varible</vh></v>
+<v t="swot.20221022080218.3"><vh>initState()</vh></v>
+<v t="swot.20221022080218.4"><vh>dispose()</vh></v>
+<v t="swot.20221022080218.5"><vh>build()</vh>
+<v t="swot.20221022080422.1"><vh>SizedBox</vh>
+<v t="swot.20221022083203.1"><vh>SizedBox</vh>
+<v t="swot.20221022083954.1"><vh>Column</vh>
+<v t="swot.20221022084045.1"><vh>OutlinedButton</vh></v>
+<v t="swot.20221022084513.1"><vh>if (isShow)</vh>
+<v t="swot.20221022091825.1"><vh>BlockSemantics</vh>
+<v t="swot.20221022090937.1"><vh>Card</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221022085519.1"><vh>show BlockSemanticsExample</vh></v>
 </v>
 <v t="swot.20221022093209.1"><vh>BottomNavigationBarExample</vh>
-<v t="swot.20221022101129.1"></v>
-<v t="swot.20221022094100.2"></v>
+<v t="swot.20221022101129.1"><vh>show BottomNavigationBarExample</vh></v>
+<v t="swot.20221022094100.2"><vh>BottomNavigationBarExample</vh>
+<v t="swot.20221022094133.1"><vh>varible</vh></v>
+<v t="swot.20221022094100.5"><vh>build()</vh>
+<v t="swot.20221022095720.2"><vh>Scaffold</vh>
+<v t="swot.20221022101748.1"><vh>appBar</vh></v>
+<v t="swot.20221022095720.4"><vh>body</vh></v>
+<v t="swot.20221022095720.5"><vh>bottomNavigationBar</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221022104755.1"><vh>BottomSheetExample</vh>
-<v t="swot.20221022104843.2"></v>
-<v t="swot.20221022094818.1"></v>
+<v t="swot.20221022104843.2"><vh>BottomSheetExample</vh>
+<v t="swot.20221022104843.5"><vh>build()</vh>
+<v t="swot.20221110210618.1"><vh>showModalBottomSheet !!!</vh></v>
+</v>
+</v>
+<v t="swot.20221022094818.1"><vh>show BottomSheetExample</vh></v>
 </v>
 <v t="swot.20221022104749.1"><vh>BuilderExample</vh>
-<v t="swot.20221022110627.2"></v>
+<v t="swot.20221022110627.2"><vh>BuilderExample</vh>
+<v t="swot.20221022110627.3"><vh>build()</vh></v>
+<v t="swot.20221022110900.1"><vh>myBuilderWidget()</vh></v>
+</v>
 </v>
 </v>
 <v t="swot.20221022115422.1"><vh>C</vh>
 <v t="swot.20221022121827.1"><vh>CardExample</vh>
-<v t="swot.20221022121755.2"></v>
-<v t="swot.20221022121559.5"></v>
+<v t="swot.20221022121755.2"><vh>CardExample</vh>
+<v t="swot.20221022121755.3"><vh>build()</vh>
+<v t="swot.20221022122022.1"><vh>Card</vh></v>
+</v>
+</v>
+<v t="swot.20221022121559.5"><vh>show CardExample</vh></v>
 </v>
 <v t="swot.20221022122630.1"><vh>CenterExample</vh>
-<v t="swot.20221022122655.2"></v>
-<v t="swot.20221022123052.1"></v>
+<v t="swot.20221022122655.2"><vh>CenterExample</vh>
+<v t="swot.20221022122655.3"><vh>build()</vh>
+<v t="swot.20221022122945.1"><vh>Center</vh></v>
+</v>
+</v>
+<v t="swot.20221022123052.1"><vh>show CenterExample</vh></v>
 </v>
 <v t="swot.20221022124036.1"><vh>CheckboxExample</vh>
-<v t="swot.20221022141252.2"></v>
-<v t="swot.20221022141621.1"></v>
+<v t="swot.20221022141252.2"><vh>CheckboxExample</vh>
+<v t="swot.20221022141315.1"><vh>varible</vh></v>
+<v t="swot.20221022141252.3"><vh>initState()</vh></v>
+<v t="swot.20221022141252.4"><vh>dispose()</vh></v>
+<v t="swot.20221022141252.5"><vh>build()</vh>
+<v t="swot.20221110225519.1"><vh>Theme</vh>
+<v t="swot.20221110225224.1"><vh>Checkbox !!!</vh></v>
+</v>
+</v>
+</v>
+<v t="swot.20221022141621.1"><vh>show CheckboxExample</vh></v>
 </v>
 <v t="swot.20221022141927.1"><vh>CheckboxListTileExample</vh>
-<v t="swot.20221022142602.1"></v>
-<v t="swot.20221022141946.2"></v>
+<v t="swot.20221022142602.1"><vh>show CheckboxListTileExample</vh></v>
+<v t="swot.20221022141946.2"><vh>CheckboxListTileExample</vh>
+<v t="swot.20221022142005.1"><vh>varible</vh></v>
+<v t="swot.20221022141946.5"><vh>build()</vh>
+<v t="swot.20221022142124.1"><vh>CheckboxListTile</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221022142903.1"><vh>ChipExample</vh>
-<v t="swot.20221022142919.2"></v>
-<v t="swot.20221022143204.1"></v>
+<v t="swot.20221022142919.2"><vh>ChipExample</vh>
+<v t="swot.20221022142919.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022143204.1"><vh>show ChipExample</vh></v>
 </v>
 <v t="swot.20221022144321.1"><vh>ChoiceChipExample</vh>
-<v t="swot.20221022144701.1"></v>
-<v t="swot.20221022144339.2"></v>
+<v t="swot.20221022144701.1"><vh>show ChoiceChipExample</vh></v>
+<v t="swot.20221022144339.2"><vh>ChoiceChipExample</vh>
+<v t="swot.20221022144356.1"><vh>varible</vh></v>
+<v t="swot.20221022144339.5"><vh>build()</vh></v>
+</v>
 </v>
 <v t="swot.20221022144956.1"><vh>CircleAvatarExample</vh>
-<v t="swot.20221022145018.2"></v>
-<v t="swot.20221022145230.1"></v>
+<v t="swot.20221022145018.2"><vh>CircleAvatarExample</vh>
+<v t="swot.20221022145018.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022145230.1"><vh>show CircleAvatarExample</vh></v>
 </v>
 <v t="swot.20221022153206.1"><vh>CircularProgressIndicatorExample</vh>
-<v t="swot.20221022153237.2"></v>
-<v t="swot.20221022153425.1"></v>
+<v t="swot.20221022153237.2"><vh>CircularProgressIndicatorExample</vh>
+<v t="swot.20221022153237.3"><vh>initState()</vh></v>
+<v t="swot.20221022153237.4"><vh>dispose()</vh></v>
+<v t="swot.20221022153237.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022153425.1"><vh>show CircularProgressIndicatorExample</vh></v>
 </v>
 <v t="swot.20221022153732.1"><vh>ClipOvalExample</vh>
-<v t="swot.20221022153848.2"></v>
-<v t="swot.20221022154849.1"></v>
-<v t="swot.20221022154220.1"></v>
+<v t="swot.20221022153848.2"><vh>ClipOvalExample</vh>
+<v t="swot.20221022153848.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022154849.1"><vh>CustomClip</vh></v>
+<v t="swot.20221022154220.1"><vh>show ClipOvalExample</vh></v>
 </v>
 <v t="swot.20221022161923.1"><vh>ClipPathExample</vh>
-<v t="swot.20221022161946.2"></v>
-<v t="swot.20221022162343.1"></v>
-<v t="swot.20221022162124.1"></v>
+<v t="swot.20221022161946.2"><vh>ClipPathExample</vh>
+<v t="swot.20221022161946.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022162343.1"><vh>MyClipper1</vh></v>
+<v t="swot.20221022162124.1"><vh>show ClipPathExample</vh></v>
 </v>
 <v t="swot.20221022163908.1"><vh>ClipRectExample</vh>
-<v t="swot.20221022163926.2"></v>
-<v t="swot.20221022164337.1"></v>
-<v t="swot.20221022164554.1"></v>
+<v t="swot.20221022163926.2"><vh>ClipRectExample</vh>
+<v t="swot.20221022163926.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022164337.1"><vh>MyClipper2</vh></v>
+<v t="swot.20221022164554.1"><vh>show ClipRectExample</vh></v>
 </v>
 <v t="swot.20221022165235.1"><vh>ClipRRectExample</vh>
-<v t="swot.20221022165324.2"></v>
-<v t="swot.20221022165721.1"></v>
+<v t="swot.20221022165324.2"><vh>ClipRRectExample</vh>
+<v t="swot.20221022165324.3"><vh>initState()</vh></v>
+<v t="swot.20221022165324.4"><vh>dispose()</vh></v>
+<v t="swot.20221022165324.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022165721.1"><vh>show ClipRRectExample</vh></v>
 </v>
 <v t="swot.20221022170537.1"><vh>CloseButtonExample</vh>
-<v t="swot.20221022170557.2"></v>
-<v t="swot.20221022170737.1"></v>
+<v t="swot.20221022170557.2"><vh>CloseButtonExample</vh>
+<v t="swot.20221022170557.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022170737.1"><vh>show CloseButtonExample</vh></v>
 </v>
 <v t="swot.20221022171451.1"><vh>ColoredBoxExample</vh>
-<v t="swot.20221022171523.2"></v>
-<v t="swot.20221022171708.1"></v>
+<v t="swot.20221022171523.2"><vh>ColoredBoxExample</vh>
+<v t="swot.20221022171523.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022171708.1"><vh>show ColoredBoxExample</vh></v>
 </v>
 <v t="swot.20221022172614.1"><vh>ColorFilteredExample</vh>
-<v t="swot.20221022172641.2"></v>
-<v t="swot.20221022173017.1"></v>
+<v t="swot.20221022172641.2"><vh>ColorFilteredExample</vh>
+<v t="swot.20221022172641.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022173017.1"><vh>show ColorFilteredExample</vh></v>
 </v>
 <v t="swot.20221022201311.1"><vh>ConstrainedBoxExample</vh>
-<v t="swot.20221022201619.2"></v>
-<v t="swot.20221022202111.1"></v>
+<v t="swot.20221022201619.2"><vh>ConstrainedBoxExample</vh>
+<v t="swot.20221022201619.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022202111.1"><vh>show ConstrainedBoxExample</vh></v>
 </v>
 <v t="swot.20221022202806.1"><vh>ContainerExample</vh>
-<v t="swot.20221022202825.2"></v>
-<v t="swot.20221022203303.1"></v>
+<v t="swot.20221022202825.2"><vh>ContainerExample</vh>
+<v t="swot.20221022202825.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022203303.1"><vh>show ContainerExample</vh></v>
 </v>
 <v t="swot.20221022203542.1"><vh>ColumnExample</vh>
-<v t="swot.20221022203601.2"></v>
-<v t="swot.20221022203824.1"></v>
+<v t="swot.20221022203601.2"><vh>ColumnExample</vh>
+<v t="swot.20221022203601.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022203824.1"><vh>show ColumnExample</vh></v>
 </v>
 <v t="swot.20221022210316.1"><vh>CupertinoActionSheetExample</vh>
-<v t="swot.20221022210338.2"></v>
-<v t="swot.20221022210532.1"></v>
+<v t="swot.20221022210338.2"><vh>CupertinoActionSheetExample</vh>
+<v t="swot.20221022210338.3"><vh>initState()</vh></v>
+<v t="swot.20221022210338.4"><vh>dispose()</vh></v>
+<v t="swot.20221022210338.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022210532.1"><vh>show CupertinoActionSheetExample</vh></v>
 </v>
 <v t="swot.20221022213225.1"><vh>CupertinoAppExample</vh>
-<v t="swot.20221022213243.2"></v>
-<v t="swot.20221022213726.2"></v>
-<v t="swot.20221022214055.1"></v>
+<v t="swot.20221022213243.2"><vh>CupertinoAppExample</vh>
+<v t="swot.20221022213243.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022213726.2"><vh>MyCupertinoApp</vh>
+<v t="swot.20221022213726.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221022214055.1"><vh>show CupertinoAppExample</vh></v>
 </v>
 <v t="swot.20221023163309.1"><vh>CupertinoContextMenuExample  -- longPress</vh>
-<v t="swot.20221023163418.2"></v>
-<v t="swot.20221023164513.1"></v>
+<v t="swot.20221023163418.2"><vh>CupertinoContextMenuExample</vh>
+<v t="swot.20221023163418.3"><vh>build()</vh>
+<v t="swot.20221023163626.1"><vh>CupertinoContextMenu</vh></v>
+</v>
+</v>
+<v t="swot.20221023164513.1"><vh>show CupertinoContextMenuExample</vh></v>
 </v>
 <v t="swot.20221031082839.1"><vh>CupertinoSlidingSegmentedControlExample</vh>
-<v t="swot.20221031083344.1"></v>
-<v t="swot.20221031082929.2"></v>
+<v t="swot.20221031083344.1"><vh>show CupertinoSlidingSegmentedControlExample</vh></v>
+<v t="swot.20221031082929.2"><vh>CupertinoSlidingSegmentedControlExample</vh>
+<v t="swot.20221031083017.1"><vh>value</vh></v>
+<v t="swot.20221031082929.3"><vh>build()</vh>
+<v t="swot.20221031083051.1"><vh>CupertinoSlidingSegmentedControl</vh></v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221024070739.1"><vh>D</vh>
 <v t="swot.20221024112547.1"><vh>DismissibleExample</vh>
-<v t="swot.20221024112614.2"></v>
-<v t="swot.20221024112602.1"></v>
+<v t="swot.20221024112614.2"><vh>DismissibleExample</vh>
+<v t="swot.20221024112703.1"><vh>varible</vh></v>
+<v t="swot.20221024112614.3"><vh>initState()</vh></v>
+<v t="swot.20221024112614.4"><vh>dispose()</vh></v>
+<v t="swot.20221024112614.5"><vh>build()</vh>
+<v t="swot.20221024113603.2"><vh>Scaffold</vh>
+<v t="swot.20221024113603.3"><vh>appBar</vh></v>
+<v t="swot.20221024113603.4"><vh>body</vh>
+<v t="swot.20221024113627.1"><vh>ListView</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221024112602.1"><vh>show DismissibleExample</vh></v>
 </v>
 <v t="swot.20221102101617.1"><vh>DividerExample</vh>
-<v t="swot.20221102102136.1"></v>
-<v t="swot.20221102101634.2"></v>
+<v t="swot.20221102102136.1"><vh>ElevatedButton -- show DividerExample</vh></v>
+<v t="swot.20221102101634.2"><vh>DividerExample</vh>
+<v t="swot.20221102101634.3"><vh>build()</vh>
+<v t="swot.20221102103902.2"><vh>Scaffold</vh>
+<v t="swot.20221102103902.3"><vh>appBar</vh></v>
+<v t="swot.20221102103902.4"><vh>body</vh>
+<v t="swot.20221102103050.2"><vh>Column</vh>
+<v t="swot.20221102102110.1"><vh>Container</vh></v>
+<v t="swot.20221102101649.1"><vh>Divider</vh></v>
+<v t="swot.20221102101920.2"><vh>Container</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221025074714.1"><vh>DraggableScrollableExample</vh>
-<v t="swot.20221025074739.2"></v>
-<v t="swot.20221025075357.1"></v>
+<v t="swot.20221025074739.2"><vh>DraggableScrollableExample</vh>
+<v t="swot.20221025074739.3"><vh>build()</vh>
+<v t="swot.20221025081258.2"><vh>Scaffold</vh>
+<v t="swot.20221025081258.3"><vh>appBar</vh></v>
+<v t="swot.20221025081258.4"><vh>body</vh>
+<v t="swot.20221025081316.1"><vh>DraggableScrollableSheet</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221025075357.1"><vh>show DraggableScrollableExample</vh></v>
 </v>
 <v t="swot.20221025081914.1"><vh>DragTargetExample</vh>
-<v t="swot.20221025081939.2"></v>
-<v t="swot.20221025091113.1"></v>
+<v t="swot.20221025081939.2"><vh>DragTargetExample</vh>
+<v t="swot.20221025081939.3"><vh>varible</vh></v>
+<v t="swot.20221025081939.4"><vh>initState()</vh></v>
+<v t="swot.20221025081939.5"><vh>dispose()</vh></v>
+<v t="swot.20221025081939.6"><vh>build()</vh>
+<v t="swot.20221025091431.2"><vh>Scaffold</vh>
+<v t="swot.20221025091431.3"><vh>appBar</vh></v>
+<v t="swot.20221025091431.4"><vh>body</vh>
+<v t="swot.20221025083125.1"><vh>SizedBox</vh>
+<v t="swot.20221025083519.1"><vh>Column</vh>
+<v t="swot.20221025083732.1"><vh>Draggable</vh></v>
+<v t="swot.20221025084843.1"><vh>DragTarget</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221025091113.1"><vh>show DragTargetExample</vh></v>
 </v>
 <v t="swot.20221025094932.1"><vh>DrawerExample</vh>
-<v t="swot.20221025095859.1"></v>
-<v t="swot.20221025095334.2"></v>
+<v t="swot.20221025095859.1"><vh>show DrawerExample</vh></v>
+<v t="swot.20221025095334.2"><vh>DrawerExample</vh>
+<v t="swot.20221025095334.3"><vh>build()</vh>
+<v t="swot.20221025095436.2"><vh>Scaffold</vh>
+<v t="swot.20221025095436.3"><vh>appBar</vh></v>
+<v t="swot.20221025095436.4"><vh>body</vh></v>
+<v t="swot.20221025095602.1"><vh>endDrawer</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221110233027.1"><vh>DropDownButtonExample</vh>
-<v t="swot.20221110233828.1"></v>
-<v t="swot.20221110233138.2"></v>
+<v t="swot.20221110233828.1"><vh>show DropDownButtonExample</vh></v>
+<v t="swot.20221110233138.2"><vh>DropDownButtonExample</vh>
+<v t="swot.20221110233138.3"><vh>varible</vh></v>
+<v t="swot.20221110233138.4"><vh>initState()</vh></v>
+<v t="swot.20221110233138.5"><vh>dispose()</vh></v>
+<v t="swot.20221110233138.6"><vh>build()</vh>
+<v t="swot.20221111000936.2"><vh>Column</vh>
+<v t="swot.20221111000057.1"><vh>SizedBox</vh>
+<v t="swot.20221110233541.2"><vh>DropdownButton !!!</vh></v>
+</v>
+<v t="swot.20221111001008.1"><vh>SizedBox</vh>
+<v t="swot.20221111001008.2"><vh>DropdownButtonFormField !!!</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221026064223.1"><vh>E</vh>
 <v t="swot.20221026072859.1"><vh>ExpandedExample</vh>
-<v t="swot.20221026194030.1"></v>
-<v t="swot.20221026073602.2"></v>
+<v t="swot.20221026194030.1"><vh>show ExpandedExample</vh></v>
+<v t="swot.20221026073602.2"><vh>ExpandedExample -- height in Expanded takes no effect</vh>
+<v t="swot.20221026073602.3"><vh>build()</vh>
+<v t="swot.20221026193458.1"><vh>Expanded</vh></v>
+<v t="swot.20221026193703.1"><vh>Expanded</vh></v>
+<v t="swot.20221026193706.1"><vh>Expanded</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221111201724.1"><vh>ExpansionPanelListExample</vh>
-<v t="swot.20221111204125.2"></v>
-<v t="swot.20221111204854.1"></v>
-<v t="swot.20221111201811.2"></v>
+<v t="swot.20221111204125.2"><vh>show ExpansionPanelListExample</vh></v>
+<v t="swot.20221111204854.1"><vh>class Item</vh></v>
+<v t="swot.20221111201811.2"><vh>ExpansionPanelListExample</vh>
+<v t="swot.20221111201811.3"><vh>varible</vh></v>
+<v t="swot.20221111201811.4"><vh>initState()</vh></v>
+<v t="swot.20221111201811.5"><vh>dispose()</vh></v>
+<v t="swot.20221111201811.6"><vh>build()</vh>
+<v t="swot.20221111202207.2"><vh>Scaffold</vh>
+<v t="swot.20221111202207.3"><vh>appBar</vh></v>
+<v t="swot.20221111202207.4"><vh>body</vh>
+<v t="swot.20221111202707.2"><vh>SingleChildScrollView</vh>
+<v t="swot.20221111213642.2"><vh>Column</vh>
+<v t="swot.20221111213817.1"><vh>Text('Radio')</vh></v>
+<v t="swot.20221111202728.1"><vh>ExpansionPanelList.radio !!!</vh></v>
+<v t="swot.20221111214514.1"><vh>SizedBox</vh></v>
+<v t="swot.20221111214154.1"><vh>Text('Multiple')</vh></v>
+<v t="swot.20221111212929.1"><vh>ExpansionPanelList !!!</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221031070401.1"><vh>ExpansionTileExample</vh>
-<v t="swot.20221031073947.1"></v>
-<v t="swot.20221031070602.2"></v>
+<v t="swot.20221031073947.1"><vh>show ExpansionTileExample</vh></v>
+<v t="swot.20221031070602.2"><vh>ExpansionTileExample</vh>
+<v t="swot.20221031070602.3"><vh>varible</vh></v>
+<v t="swot.20221031070602.6"><vh>build()</vh>
+<v t="swot.20221031074359.2"><vh>Column</vh>
+<v t="swot.20221031074310.1"><vh>ExpansionTile -- basic icon</vh></v>
+<v t="swot.20221031073139.1"><vh>ExpansionTile -- _customIcon</vh></v>
+<v t="swot.20221031074605.1"><vh>ExpansionTile -- change icon location</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221027111351.1"><vh>F</vh>
 <v t="swot.20221030234210.1"><vh>FittedBoxExample</vh>
-<v t="swot.20221031063757.2"></v>
-<v t="swot.20221030234221.2"></v>
+<v t="swot.20221031063757.2"><vh>ElevatedButton -- show FittedBoxExample</vh></v>
+<v t="swot.20221030234221.2"><vh>FittedBoxExample</vh>
+<v t="swot.20221030234221.3"><vh>build()</vh>
+<v t="swot.20221031064454.2"><vh>Scaffold</vh>
+<v t="swot.20221031064454.3"><vh>appBar</vh></v>
+<v t="swot.20221031064454.4"><vh>body</vh>
+<v t="swot.20221030234303.2"><vh>Center</vh>
+<v t="swot.20221031063239.2"><vh>Container</vh>
+<v t="swot.20221031070048.1"><vh>FittedBox</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221027112213.1"><vh>FlexibleExample</vh>
-<v t="swot.20221027112321.2"></v>
-<v t="swot.20221027111458.2"></v>
+<v t="swot.20221027112321.2"><vh>show FlexbleExample</vh></v>
+<v t="swot.20221027111458.2"><vh>FlexibleExample</vh>
+<v t="swot.20221027111458.3"><vh>build()</vh>
+<v t="swot.20221027112522.2"><vh>Scaffold</vh>
+<v t="swot.20221027112522.3"><vh>appBar</vh></v>
+<v t="swot.20221027112522.4"><vh>body</vh>
+<v t="swot.20221027111807.1"><vh>Column</vh>
+<v t="swot.20221027111848.1"><vh>Flexible -- FlexFit.loose is default</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221027114210.1"><vh>FloatingActionButtonExample</vh>
-<v t="swot.20221027114010.6"></v>
+<v t="swot.20221027114010.6"><vh>floatingActionButton</vh></v>
 </v>
 <v t="swot.20221027115609.1"><vh>FormExample</vh>
-<v t="swot.20221027121244.1"></v>
-<v t="swot.20221027115627.2"></v>
+<v t="swot.20221027121244.1"><vh>show FormExample</vh></v>
+<v t="swot.20221027115627.2"><vh>FormExample</vh>
+<v t="swot.20221027120023.1"><vh>value</vh></v>
+<v t="swot.20221027115627.3"><vh>build()</vh>
+<v t="swot.20221027115750.2"><vh>Scaffold</vh>
+<v t="swot.20221027115750.3"><vh>appBar</vh></v>
+<v t="swot.20221027115750.4"><vh>body</vh>
+<v t="swot.20221027115911.1"><vh>Padding</vh>
+<v t="swot.20221027115952.1"><vh>Form !!! -- _formKey</vh>
+<v t="swot.20221112175512.1"><vh>TextFormField</vh>
+<v t="swot.20221112181907.1"><vh>2) validator !!!</vh></v>
+</v>
+<v t="swot.20221112175530.1"><vh>ElevatedButton</vh>
+<v t="swot.20221112182043.1"><vh>1) onPressed !!! _formKey.currentState!.validate()</vh>
+<v t="swot.20221112182228.1"><vh>3) showSnackBar</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221027195901.1"><vh>FadeInImageExample</vh>
-<v t="swot.20221027203431.2"></v>
-<v t="swot.20221027203755.1"></v>
+<v t="swot.20221027203431.2"><vh>FadeInImageExample</vh>
+<v t="swot.20221027203431.3"><vh>build()</vh></v>
+</v>
+<v t="swot.20221027203755.1"><vh>show FadeInImageExample</vh></v>
 </v>
 <v t="swot.20221027212136.1"><vh>FractionallySizedBoxExample</vh>
-<v t="swot.20221027212222.2"></v>
-<v t="swot.20221027213559.2"></v>
+<v t="swot.20221027212222.2"><vh>FractionallySizedBoxExample</vh>
+<v t="swot.20221027212222.3"><vh>build()</vh>
+<v t="swot.20221027212407.2"><vh>Scaffold</vh>
+<v t="swot.20221027212407.3"><vh>appBar</vh></v>
+<v t="swot.20221027212407.4"><vh>body</vh>
+<v t="swot.20221027212916.2"><vh>Center</vh>
+<v t="swot.20221027212959.1"><vh>FractionallySizedBox</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221027213559.2"><vh>show FractionallySizedBoxExample</vh></v>
 </v>
 <v t="swot.20221027214525.1"><vh>FutureBuilderExample</vh>
-<v t="swot.20221028065632.1"></v>
-<v t="swot.20221028064229.2"></v>
+<v t="swot.20221028065632.1"><vh>show FutureBuilderExample</vh></v>
+<v t="swot.20221028064229.2"><vh>FutureBuilderExample</vh>
+<v t="swot.20221028064229.3"><vh>varible</vh></v>
+<v t="swot.20221028064229.6"><vh>build()</vh>
+<v t="swot.20221028064815.1"><vh>FutureBuilder</vh></v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221028070441.1"><vh>G</vh>
 <v t="swot.20221028083608.1"><vh>GestureDetectorExample</vh>
-<v t="swot.20221028085926.1"></v>
-<v t="swot.20221028084729.2"></v>
+<v t="swot.20221028085926.1"><vh>show GestureDetectorExample</vh></v>
+<v t="swot.20221028084729.2"><vh>GestureDetectorExample</vh>
+<v t="swot.20221028084729.3"><vh>varible</vh></v>
+<v t="swot.20221028084729.6"><vh>build()</vh></v>
+</v>
 </v>
 <v t="swot.20221031213407.1"><vh>GridPaperExample</vh>
-<v t="swot.20221031213940.2"></v>
-<v t="swot.20221031213433.2"></v>
+<v t="swot.20221031213940.2"><vh>ElevatedButton -- show GridPaperExample</vh></v>
+<v t="swot.20221031213433.2"><vh>GridPaperExample</vh>
+<v t="swot.20221031213433.3"><vh>build()</vh>
+<v t="swot.20221031213506.2"><vh>Scaffold</vh>
+<v t="swot.20221031213506.3"><vh>appBar</vh></v>
+<v t="swot.20221031213506.4"><vh>body</vh>
+<v t="swot.20221031213547.1"><vh>SizedBox</vh>
+<v t="swot.20221031213653.1"><vh>GridPaper</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221028091221.1"><vh>GridViewExample</vh>
-<v t="swot.20221028093414.2"></v>
-<v t="swot.20221028095636.2"></v>
+<v t="swot.20221028093414.2"><vh>GridViewExample</vh>
+<v t="swot.20221028093414.3"><vh>build()</vh>
+<v t="swot.20221028122703.2"><vh>Scaffold</vh>
+<v t="swot.20221028122703.3"><vh>appBar</vh></v>
+<v t="swot.20221028122703.4"><vh>body</vh>
+<v t="swot.20221028093753.1"><vh>GridView</vh>
+<v t="swot.20221029070417.1"><vh>GridTile -- use GridTileBar</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221028095636.2"><vh>show GridViewExample</vh></v>
 </v>
 <v t="swot.20221028122858.1"><vh>GridTileExample</vh>
-<v t="swot.20221028131344.2"></v>
-<v t="swot.20221028130417.2"></v>
+<v t="swot.20221028131344.2"><vh>show GridTileExample</vh></v>
+<v t="swot.20221028130417.2"><vh>GridTileExample</vh>
+<v t="swot.20221028130417.3"><vh>build()</vh>
+<v t="swot.20221028131715.2"><vh>Scaffold</vh>
+<v t="swot.20221028131715.3"><vh>appBar</vh></v>
+<v t="swot.20221028131715.4"><vh>body</vh>
+<v t="swot.20221028130528.1"><vh>Center</vh>
+<v t="swot.20221029070735.1"><vh>SizedBox</vh>
+<v t="swot.20221029070636.1"><vh>GridTile  -- use Container</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221029090319.1"><vh>H</vh>
 <v t="swot.20221029090332.1"><vh>HeroExample</vh>
-<v t="swot.20221029090411.1"></v>
-<v t="swot.20221029092751.2"></v>
-<v t="swot.20221031151733.1"></v>
+<v t="swot.20221029090411.1"><vh>show HeroExample</vh></v>
+<v t="swot.20221029092751.2"><vh>HeroExample</vh>
+<v t="swot.20221029092751.3"><vh>build()</vh>
+<v t="swot.20221029094712.2"><vh>Scaffold</vh>
+<v t="swot.20221029094712.3"><vh>appBar</vh></v>
+<v t="swot.20221029094712.4"><vh>body</vh>
+<v t="swot.20221029092810.1"><vh>Center</vh>
+<v t="swot.20221029092914.1"><vh>Hero</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221031151733.1"><vh>show HeroExample2</vh></v>
 <v t="swot.20221031143119.1"><vh>HeroExample2</vh>
-<v t="swot.20221031143139.2"></v>
+<v t="swot.20221031143139.2"><vh>HeroExample2</vh>
+<v t="swot.20221031143139.3"><vh>build()</vh>
+<v t="swot.20221031143419.2"><vh>Scaffold</vh>
+<v t="swot.20221031143419.3"><vh>appBar</vh></v>
+<v t="swot.20221031143419.4"><vh>body</vh>
+<v t="swot.20221031143456.1"><vh>Hero</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 </v>
 </v>
 <v t="swot.20221023124217.1"><vh>I</vh>
 <v t="swot.20221031231855.1"><vh>InkwellExample</vh>
-<v t="swot.20221101063450.1"></v>
-<v t="swot.20221031231919.2"></v>
+<v t="swot.20221101063450.1"><vh>show InkwellExample</vh></v>
+<v t="swot.20221031231919.2"><vh>InkwellExample -- press ALT to scale</vh>
+<v t="swot.20221031231919.3"><vh>varible</vh></v>
+<v t="swot.20221031231919.6"><vh>build()</vh>
+<v t="swot.20221101062927.1"><vh>InkWell</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221029115239.1"><vh>IgnorePointerExample</vh>
-<v t="swot.20221029121446.1"></v>
-<v t="swot.20221029115307.2"></v>
+<v t="swot.20221029121446.1"><vh>show IgnorePointerExample</vh></v>
+<v t="swot.20221029115307.2"><vh>IgnorePointerExample</vh>
+<v t="swot.20221029115307.3"><vh>varible</vh></v>
+<v t="swot.20221029115307.4"><vh>initState()</vh></v>
+<v t="swot.20221029115307.5"><vh>dispose()</vh></v>
+<v t="swot.20221029115307.6"><vh>build()</vh>
+<v t="swot.20221029115522.1"><vh>Row</vh>
+<v t="swot.20221029115652.2"><vh>ElevatedButton</vh></v>
+<v t="swot.20221029120401.1"><vh>IgnorePointer</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221029122138.1"><vh>IndexedStackExample</vh>
-<v t="swot.20221029125017.1"></v>
-<v t="swot.20221029122755.2"></v>
+<v t="swot.20221029125017.1"><vh>ElevatedButton -- show IndexedStackExample</vh></v>
+<v t="swot.20221029122755.2"><vh>IndexedStackExample</vh>
+<v t="swot.20221029122755.3"><vh>varible</vh></v>
+<v t="swot.20221029122755.4"><vh>initState()</vh></v>
+<v t="swot.20221029122755.5"><vh>dispose()</vh></v>
+<v t="swot.20221029122755.6"><vh>build()</vh>
+<v t="swot.20221029125202.2"><vh>Scaffold</vh>
+<v t="swot.20221029125202.3"><vh>appBar</vh></v>
+<v t="swot.20221029125202.4"><vh>body</vh>
+<v t="swot.20221029123730.2"><vh>Padding</vh>
+<v t="swot.20221029123925.2"><vh>Column</vh>
+<v t="swot.20221029124213.2"><vh>Row</vh>
+<v t="swot.20221029124242.2"><vh>ElevatedButton 0</vh></v>
+<v t="swot.20221029124327.1"><vh>ElevatedButton 1</vh></v>
+<v t="swot.20221029124328.1"><vh>ElevatedButton 2</vh></v>
+</v>
+<v t="swot.20221029124503.1"><vh>IndexedStack</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221023150449.1"><vh>InteractiveViewerExample</vh>
-<v t="swot.20221029081714.8"></v>
-<v t="swot.20221029081714.14"></v>
-<v t="swot.20221101065031.2"></v>
-<v t="swot.20221101064424.1"></v>
+<v t="swot.20221029081714.8"><vh>ElevatedButton -- show InteractiveViewerExample</vh></v>
+<v t="swot.20221029081714.14"><vh>InteractiveViewerExample</vh>
+<v t="swot.20221029081714.17"><vh>build()</vh></v>
+</v>
+<v t="swot.20221101065031.2"><vh>ElevatedButton -- show InteractiveViewerExample2</vh></v>
+<v t="swot.20221101064424.1"><vh>InteractiveViewerExample2 -- scale the image</vh>
+<v t="swot.20221101064424.2"><vh>build()</vh></v>
+</v>
 </v>
 </v>
 <v t="swot.20221023105739.1"><vh>L</vh>
 <v t="swot.20221030225416.1"><vh>LayoutBuilderExample</vh>
-<v t="swot.20221030230436.2"></v>
-<v t="swot.20221030225430.2"></v>
+<v t="swot.20221030230436.2"><vh>ElevatedButton -- show LayoutBuilderExample</vh></v>
+<v t="swot.20221030225430.2"><vh>LayoutBuilderExample</vh>
+<v t="swot.20221030225430.3"><vh>build()</vh>
+<v t="swot.20221030230818.2"><vh>Scaffold</vh>
+<v t="swot.20221030230818.3"><vh>appBar</vh></v>
+<v t="swot.20221030230818.4"><vh>body</vh>
+<v t="swot.20221030225455.1"><vh>LayoutBuilder</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221023105806.1"><vh>LongPressDraggableExample</vh>
-<v t="swot.20221023105920.2"></v>
-<v t="swot.20221023122724.2"></v>
+<v t="swot.20221023105920.2"><vh>LongPressDraggableExample</vh>
+<v t="swot.20221023105947.1"><vh>varible</vh></v>
+<v t="swot.20221023105920.3"><vh>initState()</vh></v>
+<v t="swot.20221023105920.4"><vh>dispose()</vh></v>
+<v t="swot.20221023105920.5"><vh>build()</vh>
+<v t="swot.20221023123049.2"><vh>Scaffold</vh>
+<v t="swot.20221023123049.3"><vh>appBar</vh></v>
+<v t="swot.20221023123049.4"><vh>body</vh>
+<v t="swot.20221023110506.1"><vh>Positioned</vh>
+<v t="swot.20221023110634.1"><vh>LongPressDraggable</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221023122724.2"><vh>ElevatedButton -- show LongPressDraggableExample</vh></v>
 </v>
 <v t="swot.20221029125546.1"><vh>ListViewExample</vh>
-<v t="swot.20221029132948.2"></v>
-<v t="swot.20221029130827.2"></v>
+<v t="swot.20221029132948.2"><vh>ElevatedButton -- show ListViewExample</vh></v>
+<v t="swot.20221029130827.2"><vh>ListViewExample</vh>
+<v t="swot.20221029130827.3"><vh>build()</vh>
+<v t="swot.20221029133516.2"><vh>Scaffold</vh>
+<v t="swot.20221029133516.3"><vh>appBar</vh></v>
+<v t="swot.20221029133516.4"><vh>body</vh>
+<v t="swot.20221029132335.1"><vh>ListView</vh>
+<v t="swot.20221029133717.1"><vh>ListTile</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221023080337.1"><vh>M</vh>
 <v t="swot.20221023081507.1"><vh>MaterialBannerExample</vh>
-<v t="swot.20221023081047.5"></v>
-<v t="swot.20221023081535.2"></v>
+<v t="swot.20221023081047.5"><vh>show MaterialBannerExample</vh></v>
+<v t="swot.20221023081535.2"><vh>MaterialBannerExample</vh>
+<v t="swot.20221023081535.3"><vh>build()</vh></v>
+</v>
 </v>
 </v>
 <v t="swot.20221029134124.1"><vh>N</vh>
 <v t="swot.20221029134556.1"><vh>NavigationBarExample</vh>
-<v t="swot.20221029141845.2"></v>
-<v t="swot.20221029140231.2"></v>
+<v t="swot.20221029141845.2"><vh>ElevatedButton -- show NavigationBarExample</vh></v>
+<v t="swot.20221029140231.2"><vh>NavigationBarExample</vh>
+<v t="swot.20221029140231.3"><vh>varible</vh></v>
+<v t="swot.20221029140231.4"><vh>initState()</vh></v>
+<v t="swot.20221029140231.5"><vh>dispose()</vh></v>
+<v t="swot.20221029140231.6"><vh>build()</vh>
+<v t="swot.20221029141046.2"><vh>Scaffold</vh>
+<v t="swot.20221029141046.3"><vh>appBar</vh></v>
+<v t="swot.20221029141046.4"><vh>body</vh></v>
+<v t="swot.20221029141046.5"><vh>bottomNavigationBar</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221030231020.1"><vh>O</vh>
 <v t="swot.20221030231931.1"><vh>OrientationBuilderExample</vh>
-<v t="swot.20221030232506.2"></v>
-<v t="swot.20221030231950.2"></v>
+<v t="swot.20221030232506.2"><vh>ElevatedButton -- show OrientationBuilderExample</vh></v>
+<v t="swot.20221030231950.2"><vh>OrientationBuilderExample</vh>
+<v t="swot.20221030231950.3"><vh>build()</vh>
+<v t="swot.20221030232043.2"><vh>Scaffold</vh>
+<v t="swot.20221030232043.3"><vh>appBar</vh></v>
+<v t="swot.20221030232043.4"><vh>body</vh>
+<v t="swot.20221030232118.1"><vh>OrientationBuilder</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221030232829.1"><vh>OverflowBarExample</vh>
-<v t="swot.20221030233533.2"></v>
-<v t="swot.20221030232847.2"></v>
+<v t="swot.20221030233533.2"><vh>ElevatedButton -- show OverflowBarExample</vh></v>
+<v t="swot.20221030232847.2"><vh>OverflowBarExample -- auto adjust row or column</vh>
+<v t="swot.20221030232847.3"><vh>build()</vh>
+<v t="swot.20221030233721.2"><vh>Scaffold</vh>
+<v t="swot.20221030233721.3"><vh>appBar</vh></v>
+<v t="swot.20221030233721.4"><vh>body</vh>
+<v t="swot.20221030233137.2"><vh>Padding</vh>
+<v t="swot.20221030233211.1"><vh>OverflowBar</vh>
+<v t="swot.20221030233258.2"><vh>ElevatedButton</vh></v>
+<v t="swot.20221030233342.2"><vh>ElevatedButton</vh></v>
+<v t="swot.20221030233342.1"><vh>ElevatedButton</vh></v>
+<v t="swot.20221030233809.1"><vh>ElevatedButton</vh></v>
+<v t="swot.20221030233843.1"><vh>ElevatedButton</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221023093247.1"><vh>P</vh>
 <v t="swot.20221029234439.1"><vh>PageViewExample</vh>
-<v t="swot.20221029234843.2"></v>
-<v t="swot.20221029234453.2"></v>
+<v t="swot.20221029234843.2"><vh>ElevatedButton -- show PageViewExample</vh></v>
+<v t="swot.20221029234453.2"><vh>PageViewExample</vh>
+<v t="swot.20221111064532.1"><vh>varible</vh></v>
+<v t="swot.20221111064612.1"><vh>dispose()</vh></v>
+<v t="swot.20221029234453.6"><vh>build()</vh>
+<v t="swot.20221029235310.2"><vh>Scaffold</vh>
+<v t="swot.20221029235310.3"><vh>appBar</vh>
+<v t="swot.20221111065157.2"><vh>IconButton left !!!</vh></v>
+<v t="swot.20221111065339.1"><vh>IconButton right !!!</vh></v>
+</v>
+<v t="swot.20221029235310.4"><vh>body</vh>
+<v t="swot.20221029234534.1"><vh>PageView !!!</vh>
+<v t="swot.20221029234605.1"><vh>Container</vh></v>
+<v t="swot.20221029234724.1"><vh>Container</vh></v>
+<v t="swot.20221029234725.1"><vh>Container</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221025114659.1"><vh>PopupMenuButtonExample</vh>
-<v t="swot.20221025191831.1"></v>
-<v t="swot.20221025114730.2"></v>
+<v t="swot.20221025191831.1"><vh>show PopupMenuButtonExample</vh></v>
+<v t="swot.20221025114730.2"><vh>PopupMenuButtonExample</vh>
+<v t="swot.20221025114730.3"><vh>varible</vh></v>
+<v t="swot.20221025114730.6"><vh>build()</vh></v>
+</v>
 </v>
 <v t="swot.20221029235908.1"><vh>PositionedExample</vh>
-<v t="swot.20221030082123.2"></v>
-<v t="swot.20221029235922.2"></v>
+<v t="swot.20221030082123.2"><vh>ElevatedButton -- show PositionedExample</vh></v>
+<v t="swot.20221029235922.2"><vh>PositionedExample</vh>
+<v t="swot.20221029235922.3"><vh>build()</vh>
+<v t="swot.20221030082723.2"><vh>Scaffold</vh>
+<v t="swot.20221030082723.3"><vh>appBar</vh></v>
+<v t="swot.20221030082723.4"><vh>body</vh>
+<v t="swot.20221030081223.2"><vh>Center</vh>
+<v t="swot.20221030081235.1"><vh>Stack</vh>
+<v t="swot.20221030081313.1"><vh>Positioned</vh></v>
+<v t="swot.20221030081540.1"><vh>Positioned</vh></v>
+<v t="swot.20221030081542.1"><vh>Positioned</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221023093415.1"><vh>PreferredSizeExample</vh>
-<v t="swot.20221023093803.1"></v>
+<v t="swot.20221023093803.1"><vh>AppBar</vh></v>
 </v>
 </v>
 <v t="swot.20221023152237.1"><vh>R</vh>
 <v t="swot.20221030083029.1"><vh>RadioListTileExample</vh>
-<v t="swot.20221030084137.1"></v>
-<v t="swot.20221030084432.1"></v>
-<v t="swot.20221030083241.2"></v>
+<v t="swot.20221030084137.1"><vh>show RadioListTileExample</vh></v>
+<v t="swot.20221030084432.1"><vh>radioListTileOptions</vh></v>
+<v t="swot.20221030083241.2"><vh>RadioListTileExample</vh>
+<v t="swot.20221030083241.3"><vh>varible</vh></v>
+<v t="swot.20221030083241.4"><vh>initState()</vh></v>
+<v t="swot.20221030083241.5"><vh>dispose()</vh></v>
+<v t="swot.20221030083241.6"><vh>build()</vh>
+<v t="swot.20221030083721.2"><vh>Column</vh>
+<v t="swot.20221030083736.1"><vh>RadioListTile</vh></v>
+<v t="swot.20221030084017.1"><vh>RadioListTile</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221031182144.1"><vh>RangeSliderExample</vh>
-<v t="swot.20221031182942.1"></v>
-<v t="swot.20221031182202.2"></v>
+<v t="swot.20221031182942.1"><vh>show RangeSliderExample</vh></v>
+<v t="swot.20221031182202.2"><vh>RangeSliderExample</vh>
+<v t="swot.20221031182202.3"><vh>varible</vh></v>
+<v t="swot.20221031182202.4"><vh>initState()</vh></v>
+<v t="swot.20221031182202.5"><vh>dispose()</vh></v>
+<v t="swot.20221031182202.6"><vh>build()</vh>
+<v t="swot.20221031182439.1"><vh>varible</vh></v>
+<v t="swot.20221031182617.2"><vh>Center</vh>
+<v t="swot.20221031182643.1"><vh>RangeSlider</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221030094506.1"><vh>RefreshIndicatorExample</vh>
-<v t="swot.20221030181409.2"></v>
-<v t="swot.20221030172700.2"></v>
+<v t="swot.20221030181409.2"><vh>ElevatedButton -- show RefreshIndicatorExample</vh></v>
+<v t="swot.20221030172700.2"><vh>RefreshIndicatorExample</vh>
+<v t="swot.20221030172700.3"><vh>varible</vh></v>
+<v t="swot.20221030172700.4"><vh>initState()</vh></v>
+<v t="swot.20221030172700.5"><vh>dispose()</vh></v>
+<v t="swot.20221030172700.6"><vh>build()</vh>
+<v t="swot.20221030182420.2"><vh>Scaffold</vh>
+<v t="swot.20221030182420.3"><vh>appBar</vh></v>
+<v t="swot.20221030182420.4"><vh>body</vh>
+<v t="swot.20221030173047.1"><vh>RefreshIndicator</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221023155312.1"><vh>ReorderableListViewExample  -- longPress</vh>
-<v t="swot.20221023152801.2"></v>
-<v t="swot.20221023154547.2"></v>
+<v t="swot.20221023152801.2"><vh>ReorderableListViewExample</vh>
+<v t="swot.20221023152933.1"><vh>varible</vh></v>
+<v t="swot.20221023152801.3"><vh>initState()</vh></v>
+<v t="swot.20221023152801.4"><vh>dispose()</vh></v>
+<v t="swot.20221023152801.5"><vh>build()</vh>
+<v t="swot.20221023154334.2"><vh>Scaffold</vh>
+<v t="swot.20221023154334.3"><vh>appBar</vh></v>
+<v t="swot.20221023154334.4"><vh>body</vh>
+<v t="swot.20221023153058.1"><vh>ReorderableListView</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221023154547.2"><vh>ElevatedButton -- show ReorderableListViewExample</vh></v>
 </v>
 <v t="swot.20221030204950.1"><vh>RotatedBoxExample</vh>
-<v t="swot.20221030205503.1"></v>
-<v t="swot.20221030205049.2"></v>
+<v t="swot.20221030205503.1"><vh>show RotatedBoxExample</vh></v>
+<v t="swot.20221030205049.2"><vh>RotatedBoxExample</vh>
+<v t="swot.20221030205049.3"><vh>build()</vh>
+<v t="swot.20221030205124.1"><vh>RotatedBox</vh></v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221024091445.1"><vh>S</vh>
 <v t="swot.20221030224748.1"><vh>SafeAreaExample</vh>
-<v t="swot.20221030225013.2"></v>
-<v t="swot.20221030224821.2"></v>
+<v t="swot.20221030225013.2"><vh>ElevatedButton -- show SafeAreaExample</vh></v>
+<v t="swot.20221030224821.2"><vh>SafeAreaExample</vh>
+<v t="swot.20221030224821.3"><vh>build()</vh>
+<v t="swot.20221030225147.1"><vh>SafeArea</vh>
+<v t="swot.20221030224837.1"><vh>Text</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221031114906.1"><vh>SearchDelegateExample</vh>
-<v t="swot.20221031122837.2"></v>
-<v t="swot.20221031115636.1"></v>
-<v t="swot.20221031114947.2"></v>
+<v t="swot.20221031122837.2"><vh>ElevatedButton -- show SearchDelegateExample</vh></v>
+<v t="swot.20221031115636.1"><vh>CustomSearchDelegate</vh></v>
+<v t="swot.20221031114947.2"><vh>SearchDelegateExample</vh>
+<v t="swot.20221031114947.3"><vh>varible</vh></v>
+<v t="swot.20221031114947.6"><vh>build()</vh>
+<v t="swot.20221031115107.2"><vh>Scaffold</vh>
+<v t="swot.20221031115107.3"><vh>appBar</vh>
+<v t="swot.20221031115310.2"><vh>IconButton !!!</vh></v>
+</v>
+<v t="swot.20221031115107.4"><vh>body</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221030205930.1"><vh>SelectableTextExample</vh>
-<v t="swot.20221030210255.1"></v>
-<v t="swot.20221030210033.2"></v>
+<v t="swot.20221030210255.1"><vh>show SelectableTextExample</vh></v>
+<v t="swot.20221030210033.2"><vh>SelectableTextExample</vh>
+<v t="swot.20221101072329.1"><vh>varible</vh></v>
+<v t="swot.20221030210033.6"><vh>build()</vh>
+<v t="swot.20221101072843.2"><vh>Column</vh>
+<v t="swot.20221030210100.1"><vh>SelectableText</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221030210531.1"><vh>SliderExample</vh>
-<v t="swot.20221030211748.1"></v>
-<v t="swot.20221030210547.2"></v>
+<v t="swot.20221030211748.1"><vh>show SliderExample</vh></v>
+<v t="swot.20221030210547.2"><vh>SliderExample</vh>
+<v t="swot.20221030210547.3"><vh>varible</vh></v>
+<v t="swot.20221030210547.6"><vh>build()</vh>
+<v t="swot.20221030211118.1"><vh>Slider</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221031170952.1"><vh>SliveAppBarExample</vh>
-<v t="swot.20221031172540.2"></v>
-<v t="swot.20221031171010.2"></v>
+<v t="swot.20221031172540.2"><vh>ElevatedButton -- show SliveAppBarExample</vh></v>
+<v t="swot.20221031171010.2"><vh>SliveAppBarExample</vh>
+<v t="swot.20221031171010.6"><vh>build()</vh>
+<v t="swot.20221031171922.2"><vh>Scaffold</vh>
+<v t="swot.20221031171922.4"><vh>body</vh>
+<v t="swot.20221031172002.1"><vh>CustomScrollView</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221030212445.1"><vh>SnackBarExample</vh>
-<v t="swot.20221030212913.1"></v>
-<v t="swot.20221030212509.2"></v>
+<v t="swot.20221030212913.1"><vh>show SnackBarExample</vh></v>
+<v t="swot.20221030212509.2"><vh>SnackBarExample</vh>
+<v t="swot.20221030212509.3"><vh>build()</vh>
+<v t="swot.20221030212550.2"><vh>ElevatedButton</vh></v>
+</v>
+</v>
 </v>
 <v t="swot.20221024092102.1"><vh>showDatePickerExample</vh>
-<v t="swot.20221024095344.2"></v>
-<v t="swot.20221024100552.1"></v>
+<v t="swot.20221024095344.2"><vh>DatePickerExample</vh>
+<v t="swot.20221024095406.1"><vh>varible</vh></v>
+<v t="swot.20221024095344.3"><vh>initState()</vh></v>
+<v t="swot.20221024095344.4"><vh>dispose()</vh></v>
+<v t="swot.20221024095344.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221024100552.1"><vh>show DatePickerExample</vh></v>
 </v>
 <v t="swot.20221024103418.1"><vh>showTimePickerExample</vh>
-<v t="swot.20221024103554.1"></v>
-<v t="swot.20221024103523.2"></v>
+<v t="swot.20221024103554.1"><vh>show TimePickerExample</vh></v>
+<v t="swot.20221024103523.2"><vh>TimePickerExample</vh>
+<v t="swot.20221024103850.1"><vh>varible</vh></v>
+<v t="swot.20221024103523.3"><vh>initState()</vh></v>
+<v t="swot.20221024103523.4"><vh>dispose()</vh></v>
+<v t="swot.20221024103957.1"><vh>build()</vh></v>
+</v>
 </v>
 <v t="swot.20221024105608.1"><vh>showDateRangePickerExample</vh>
-<v t="swot.20221024110030.2"></v>
-<v t="swot.20221024110745.1"></v>
+<v t="swot.20221024110030.2"><vh>DateRangePickerExample</vh>
+<v t="swot.20221024110048.1"><vh>varible</vh></v>
+<v t="swot.20221024110030.3"><vh>initState()</vh></v>
+<v t="swot.20221024110030.4"><vh>dispose()</vh></v>
+<v t="swot.20221024110030.5"><vh>build()</vh></v>
+</v>
+<v t="swot.20221024110745.1"><vh>show DateRangePickerExample</vh></v>
 </v>
 <v t="swot.20221031222105.1"><vh>SpreadOperatorExample</vh>
-<v t="swot.20221031225347.2"></v>
-<v t="swot.20221031222131.2"></v>
+<v t="swot.20221031225347.2"><vh>ElevatedButton -- show SpreadOperatorExample</vh></v>
+<v t="swot.20221031222131.2"><vh>SpreadOperatorExample</vh>
+<v t="swot.20221031222131.3"><vh>build()</vh>
+<v t="swot.20221031222154.1"><vh>varible</vh></v>
+<v t="swot.20221031225000.2"><vh>Scaffold</vh>
+<v t="swot.20221031225000.3"><vh>appBar</vh></v>
+<v t="swot.20221031225000.4"><vh>body</vh>
+<v t="swot.20221031225029.2"><vh>Column</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221029142524.1"><vh>StackExample</vh>
-<v t="swot.20221029143324.2"></v>
-<v t="swot.20221029142534.2"></v>
+<v t="swot.20221029143324.2"><vh>ElevatedButton -- show StackExample</vh></v>
+<v t="swot.20221029142534.2"><vh>StackExample</vh>
+<v t="swot.20221029142534.3"><vh>build()</vh>
+<v t="swot.20221029142715.2"><vh>Scaffold</vh>
+<v t="swot.20221029142715.3"><vh>appBar</vh></v>
+<v t="swot.20221029142715.4"><vh>body</vh>
+<v t="swot.20221029142815.2"><vh>Center</vh>
+<v t="swot.20221029142627.1"><vh>Stack</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221029144518.1"><vh>StepperExample</vh>
-<v t="swot.20221029190037.1"></v>
-<v t="swot.20221029144530.2"></v>
+<v t="swot.20221029190037.1"><vh>ElevatedButton -- show StepperExample</vh></v>
+<v t="swot.20221029144530.2"><vh>StepperExample</vh>
+<v t="swot.20221029144530.3"><vh>varible</vh></v>
+<v t="swot.20221029144530.4"><vh>initState()</vh></v>
+<v t="swot.20221029144530.5"><vh>dispose()</vh></v>
+<v t="swot.20221029144530.6"><vh>build()</vh>
+<v t="swot.20221029144924.2"><vh>Scaffold</vh>
+<v t="swot.20221029144924.3"><vh>appBar</vh></v>
+<v t="swot.20221029144924.4"><vh>body</vh>
+<v t="swot.20221029144954.2"><vh>Center</vh>
+<v t="swot.20221029145033.1"><vh>Stepper</vh>
+<v t="swot.20221029191553.1"><vh>steps</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221029211447.1"><vh>StreamBuilderExample</vh>
-<v t="swot.20221029213808.1"></v>
-<v t="swot.20221029211743.1"></v>
-<v t="swot.20221029211533.2"></v>
+<v t="swot.20221029213808.1"><vh>ElevatedButton -- show StreamBuilderExample</vh></v>
+<v t="swot.20221029211743.1"><vh>generateStream -- FAKE FIREBASE STREAM</vh></v>
+<v t="swot.20221029211533.2"><vh>StreamBuilderExample</vh>
+<v t="swot.20221029211533.6"><vh>build()</vh>
+<v t="swot.20221029213944.2"><vh>Scaffold</vh>
+<v t="swot.20221029213944.3"><vh>appBar</vh></v>
+<v t="swot.20221029213944.4"><vh>body</vh>
+<v t="swot.20221029212803.2"><vh>Center</vh>
+<v t="swot.20221029212812.1"><vh>StreamBuilder</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221029215342.1"><vh>SwitchExample</vh>
-<v t="swot.20221029215656.1"></v>
-<v t="swot.20221029215403.2"></v>
+<v t="swot.20221029215656.1"><vh>show SwitchExample</vh></v>
+<v t="swot.20221029215403.2"><vh>SwitchExample</vh>
+<v t="swot.20221029215403.3"><vh>varible</vh></v>
+<v t="swot.20221029215403.4"><vh>initState()</vh></v>
+<v t="swot.20221029215403.5"><vh>dispose()</vh></v>
+<v t="swot.20221029215403.6"><vh>build()</vh>
+<v t="swot.20221029215500.2"><vh>Center</vh>
+<v t="swot.20221029215505.1"><vh>Switch</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221023175848.1"><vh>T</vh>
 <v t="swot.20221023181752.1"><vh>TableExample</vh>
-<v t="swot.20221023195608.1"></v>
-<v t="swot.20221023193833.2"></v>
+<v t="swot.20221023195608.1"><vh>show TableExample</vh></v>
+<v t="swot.20221023193833.2"><vh>TableExample</vh>
+<v t="swot.20221023193833.3"><vh>build()</vh>
+<v t="swot.20221023193950.2"><vh>Scaffold</vh>
+<v t="swot.20221023193950.3"><vh>appBar</vh></v>
+<v t="swot.20221023193950.4"><vh>body</vh>
+<v t="swot.20221023194122.1"><vh>Center</vh>
+<v t="swot.20221023200224.1"><vh>SingleChildScrollView</vh>
+<v t="swot.20221023194310.1"><vh>Table</vh>
+<v t="swot.20221023194533.1"><vh>TableRow</vh>
+<v t="swot.20221023194941.1"><vh>TableCell</vh></v>
+<v t="swot.20221023194949.1"><vh>TableCell</vh></v>
+<v t="swot.20221023194950.1"><vh>TableCell</vh></v>
+</v>
+<v t="swot.20221023195102.1"><vh>List.generate</vh>
+<v t="swot.20221023195414.1"><vh>TableCell</vh></v>
+<v t="swot.20221023195426.1"><vh>TableCell</vh></v>
+<v t="swot.20221023195426.2"><vh>TableCell</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221113174340.1"><vh>TextFieldExample</vh>
-<v t="swot.20221113181739.2"></v>
-<v t="swot.20221113174434.2"></v>
+<v t="swot.20221113181739.2"><vh>ElevatedButton -- show TextFieldExample</vh></v>
+<v t="swot.20221113174434.2"><vh>TextFieldExample</vh>
+<v t="swot.20221113174434.3"><vh>build()</vh>
+<v t="swot.20221113180505.1"><vh>GestureDetector -- unfocus()</vh>
+<v t="swot.20221113180641.1"><vh>Scaffold</vh>
+<v t="swot.20221113180931.1"><vh>appBar</vh></v>
+<v t="swot.20221113181008.1"><vh>body</vh>
+<v t="swot.20221113181132.1"><vh>TextField -- number</vh></v>
+<v t="swot.20221113181152.1"><vh>TextField -- decimal</vh></v>
+<v t="swot.20221113181202.1"><vh>TextField -- phone</vh></v>
+<v t="swot.20221113181209.1"><vh>TextField -- done</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221027182452.1"><vh>TextFormFieldExample</vh>
-<v t="swot.20221027182544.1"></v>
-<v t="swot.20221027175533.2"></v>
+<v t="swot.20221027182544.1"><vh>show TextFormFieldExample</vh></v>
+<v t="swot.20221027175533.2"><vh>TextFormFieldExample</vh>
+<v t="swot.20221027175533.3"><vh>varible</vh></v>
+<v t="swot.20221027175533.6"><vh>build()</vh>
+<v t="swot.20221027183133.2"><vh>Scaffold</vh>
+<v t="swot.20221027183133.3"><vh>appBar</vh></v>
+<v t="swot.20221027183133.4"><vh>body</vh>
+<v t="swot.20221027180846.1"><vh>SingleChildScrollView</vh>
+<v t="swot.20221027180945.1"><vh>Form</vh>
+<v t="swot.20221112184234.1"><vh>2) onChanged !!! Form.of(primaryFocus!.context!).save -&gt; setState(() {})</vh></v>
+<v t="swot.20221112184709.1"><vh>child</vh>
+<v t="swot.20221027182206.1"><vh>Column</vh>
+<v t="swot.20221112180710.1"><vh>List.generate</vh>
+<v t="swot.20221112180550.1"><vh>1) TextFormField input string</vh>
+<v t="swot.20221112182519.1"><vh>3) onSaved !!! titles[index] = value</vh></v>
+</v>
+<v t="swot.20221112180604.1"><vh>SizedBox</vh></v>
+<v t="swot.20221112180616.1"><vh>4) Card !!! titles[index]</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221029230621.1"><vh>TabBarExample</vh>
-<v t="swot.20221029232032.2"></v>
-<v t="swot.20221029230649.2"></v>
+<v t="swot.20221029232032.2"><vh>ElevatedButton -- show TabBarExample</vh></v>
+<v t="swot.20221029230649.2"><vh>TabBarExample</vh>
+<v t="swot.20221029230649.3"><vh>build()</vh>
+<v t="swot.20221029230800.1"><vh>DefaultTabController !!!</vh>
+<v t="swot.20221029230841.2"><vh>Scaffold</vh>
+<v t="swot.20221029230841.3"><vh>appBar</vh>
+<v t="swot.20221111222446.1"><vh>TabBar !!!</vh></v>
+</v>
+<v t="swot.20221029230841.4"><vh>body</vh>
+<v t="swot.20221029231559.1"><vh>TabBarView !!!</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221029215808.1"><vh>TabPageSelectorExample</vh>
-<v t="swot.20221029222412.2"></v>
-<v t="swot.20221029220342.1"></v>
-<v t="swot.20221029220227.2"></v>
+<v t="swot.20221029222412.2"><vh>ElevatedButton -- show TabPageSelectorExample</vh></v>
+<v t="swot.20221029220342.1"><vh>tabPageSelectorWidgets</vh></v>
+<v t="swot.20221029220227.2"><vh>TabPageSelectorExample</vh>
+<v t="swot.20221029220227.3"><vh>varible</vh></v>
+<v t="swot.20221029220227.4"><vh>initState()</vh></v>
+<v t="swot.20221029220227.5"><vh>dispose()</vh></v>
+<v t="swot.20221029220227.6"><vh>build()</vh>
+<v t="swot.20221029221243.2"><vh>Scaffold</vh>
+<v t="swot.20221029221243.3"><vh>appBar</vh></v>
+<v t="swot.20221029221243.4"><vh>body</vh>
+<v t="swot.20221029221337.1"><vh>Stack</vh></v>
+</v>
+<v t="swot.20221029221243.6"><vh>floatingActionButton</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221031220315.1"><vh>TooltipExample -- long press</vh>
-<v t="swot.20221031220908.1"></v>
-<v t="swot.20221031220414.2"></v>
+<v t="swot.20221031220908.1"><vh>show TooltipExample</vh></v>
+<v t="swot.20221031220414.2"><vh>TooltipExample</vh>
+<v t="swot.20221031220414.3"><vh>build()</vh>
+<v t="swot.20221031220639.2"><vh>Center</vh>
+<v t="swot.20221031220649.1"><vh>Tooltip</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221030213205.1"><vh>V</vh>
 <v t="swot.20221030222228.1"><vh>VisibilityExample</vh>
-<v t="swot.20221030222854.1"></v>
-<v t="swot.20221030222244.2"></v>
+<v t="swot.20221030222854.1"><vh>show VisibilityExample</vh></v>
+<v t="swot.20221030222244.2"><vh>VisibilityExample</vh>
+<v t="swot.20221030222244.3"><vh>varible</vh></v>
+<v t="swot.20221030222244.4"><vh>initState()</vh></v>
+<v t="swot.20221030222244.5"><vh>dispose()</vh></v>
+<v t="swot.20221030222244.6"><vh>build()</vh>
+<v t="swot.20221030222322.2"><vh>Row</vh>
+<v t="swot.20221030222414.2"><vh>ElevatedButton</vh></v>
+<v t="swot.20221030222619.1"><vh>Visibility</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 <v t="swot.20221030223123.1"><vh>W</vh>
 <v t="swot.20221031200617.1"><vh>WillPopScopeExample</vh>
-<v t="swot.20221031202945.2"></v>
-<v t="swot.20221031202343.2"></v>
+<v t="swot.20221031202945.2"><vh>ElevatedButton -- show WillPopScopeExample</vh></v>
+<v t="swot.20221031202343.2"><vh>WillPopScopeExample</vh>
+<v t="swot.20221031202343.3"><vh>build()</vh>
+<v t="swot.20221031202510.1"><vh>WillPopScope -- disable or enable back button</vh>
+<v t="swot.20221031202632.2"><vh>Scaffold</vh>
+<v t="swot.20221031202632.3"><vh>appBar</vh></v>
+<v t="swot.20221031202632.4"><vh>body</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221030223658.1"><vh>WrapExample</vh>
-<v t="swot.20221030223719.2"></v>
-<v t="swot.20221030224243.2"></v>
+<v t="swot.20221030223719.2"><vh>WrapExample</vh>
+<v t="swot.20221030223719.3"><vh>build()</vh>
+<v t="swot.20221030224541.2"><vh>Scaffold</vh>
+<v t="swot.20221030224541.3"><vh>appBar</vh></v>
+<v t="swot.20221030224541.4"><vh>body</vh>
+<v t="swot.20221030223755.2"><vh>Center</vh>
+<v t="swot.20221030223816.1"><vh>Wrap</vh></v>
 </v>
 </v>
 </v>
-<v t="swot.20221031125101.1"><vh>Function</vh>
+</v>
+</v>
+<v t="swot.20221030224243.2"><vh>ElevatedButton -- show WrapExample</vh></v>
+</v>
+</v>
+</v>
+<v t="swot.20221031125101.1"><vh>Similar Example</vh>
 <v t="swot.20221111002547.1"><vh>Button -- popup &amp; dropdown</vh>
 <v t="swot.20221025114730.2"></v>
 <v t="swot.20221110233138.2"></v>
@@ -2140,11 +1502,63 @@
 <v t="swot.20221022141927.1"></v>
 <v t="swot.20221030083029.1"></v>
 </v>
+</v>
 <v t="swot.20221112193821.1"><vh>Composite Example</vh>
 <v t="swot.20221112193843.1"><vh>User Login Example: Form + onWillPop + showDialog + RegExp</vh>
-<v t="swot.20221112213542.1"></v>
-<v t="swot.20221112214058.2"></v>
+<v t="swot.20221112213542.1"><vh>ListTile -- User Login</vh></v>
+<v t="swot.20221112214058.2"><vh>UserLoginExample</vh>
+<v t="swot.20221112214058.3"><vh>varible</vh></v>
+<v t="swot.20221112223203.1"><vh>_login()</vh></v>
+<v t="swot.20221112214058.6"><vh>build()</vh>
+<v t="swot.20221112223644.2"><vh>Scaffold</vh>
+<v t="swot.20221112223644.3"><vh>appBar</vh></v>
+<v t="swot.20221112223644.4"><vh>body</vh>
+<v t="swot.20221112214751.1"><vh>Form</vh>
+<v t="swot.20221112215637.1"><vh>onWillPop</vh></v>
+<v t="swot.20221112215730.1"><vh>Column</vh>
+<v t="swot.20221112215838.1"><vh>TextFormField _account</vh></v>
+<v t="swot.20221112220311.1"><vh>TextFormField _pwd</vh></v>
+<v t="swot.20221112220552.2"><vh>ElevatedButton login</vh></v>
 </v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221114130941.1"><vh>Functional Example</vh>
+<v t="swot.20221114130927.1"><vh>CheckPlatformExample</vh>
+<v t="swot.20221114130724.1"><vh>ListTile -- Check Platform</vh>
+<v t="swot.20221114153230.1"><vh>&lt;&lt; trailing &gt;&gt;</vh></v>
+</v>
+<v t="swot.20221114121936.2"><vh>CheckPlatformExample</vh>
+<v t="swot.20221114121936.3"><vh>build()</vh>
+<v t="swot.20221114131437.2"><vh>Scaffold</vh>
+<v t="swot.20221114131437.3"><vh>appBar</vh></v>
+<v t="swot.20221114131437.4"><vh>body</vh>
+<v t="swot.20221114124925.1"><vh>Column</vh>
+<v t="swot.20221114125432.1"><vh>android</vh></v>
+<v t="swot.20221114125540.1"><vh>iOS</vh></v>
+<v t="swot.20221114125637.1"><vh>other</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221114161341.2"><vh>CheckTopLevelPlatformExample</vh>
+<v t="swot.20221114161341.3"><vh>build()</vh>
+<v t="swot.20221114163419.2"><vh>Scaffold</vh>
+<v t="swot.20221114163419.3"><vh>appBar</vh></v>
+<v t="swot.20221114163419.4"><vh>body</vh>
+<v t="swot.20221114163410.1"><vh>Column</vh>
+<v t="swot.20221114163707.1"><vh>isMobile &amp; isDesktop</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+<v t="swot.20221114161552.1"><vh>class PlatformDetails</vh></v>
 </v>
 </v>
 <v t="swot.20221027213439.1"><vh>@spot</vh></v>
@@ -2159,9 +1573,6 @@ https://www.youtube.com/watch?v=G1LGOH424lo
 Top 35 Flutter Widgets
 https://www.youtube.com/watch?v=M9J-JJOuyE0
 
-</t>
-<t tx="swot.20221017093031.10">// AnimatedAlign
-bool selected = false;
 </t>
 <t tx="swot.20221017093031.150">@language md
 @others
@@ -2284,12 +1695,6 @@ const Align(
       selected ? CrossFadeState.showFirst : CrossFadeState.showSecond,
   duration: const Duration(seconds: 1),
 ),
-</t>
-<t tx="swot.20221017093031.17">@override
-void initState() {
-  super.initState();
-}
-
 </t>
 <t tx="swot.20221017093031.178"></t>
 <t tx="swot.20221017093031.179">const AnimatedModalBarrierExample(),
@@ -2450,16 +1855,6 @@ void initState() {
 }
 
 </t>
-<t tx="swot.20221017093031.2">@language dart
-@tabwidth -2
-@others
-</t>
-<t tx="swot.20221017093031.20">@override
-void dispose() {
-  super.dispose();
-}
-
-</t>
 <t tx="swot.20221017093031.200">@override
 Widget build(BuildContext context) {
   return
@@ -2528,13 +1923,6 @@ class _AnimatedPhysicalModelExampleState
 
 </t>
 <t tx="swot.20221017093031.209">bool isFlat = true;
-</t>
-<t tx="swot.20221017093031.21">@override
-Widget build(BuildContext context) {
-  return
-      @others
-      ;
-}
 </t>
 <t tx="swot.20221017093031.210">@override
 void initState() {
@@ -2614,11 +2002,6 @@ void initState() {
 }
 
 </t>
-<t tx="swot.20221017093031.22">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
 <t tx="swot.20221017093031.220">@override
 void dispose() {
   super.dispose();
@@ -2691,26 +2074,6 @@ void initState() {
 }
 
 </t>
-<t tx="swot.20221017093031.23">Column(
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-  @others
-]),
-
-@doc
-@language python
-for node in p.children():
-    print(node.h);
-    if node.h == "Divider":
-        c.deletePositionsInList([node])
-c.redraw()
-
-
-for node in p.children():
-    if node.h == "Divider":
-        node.b = "Divider(),"
-c.redraw()
-</t>
 <t tx="swot.20221017093031.230">@override
 void dispose() {
   super.dispose();
@@ -2778,15 +2141,6 @@ void dispose() {
   super.dispose();
 }
 
-</t>
-<t tx="swot.20221017093031.24">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-    @others
-  ],
-),
-Divider(),
 </t>
 <t tx="swot.20221017093031.240">@language dart
 @tabwidth -2
@@ -2874,13 +2228,6 @@ Widget build(BuildContext context) {
   },
 ),
 
-</t>
-<t tx="swot.20221017093031.25">ElevatedButton(
-  child: const Text('Show About Dialog'),
-  onPressed: () {
-    @others
-  },
-),
 </t>
 <t tx="swot.20221017093031.250">AnimatedSwitcher(
   duration: const Duration(milliseconds: 500),
@@ -2996,194 +2343,6 @@ Widget build(BuildContext context) {
 <t tx="swot.20221017093031.259">for node in p.children():
   print(node.h);
 </t>
-<t tx="swot.20221017093031.26">showDialog(
-  context: context,
-  builder: (context) =&gt;
-  @others
-);
-</t>
-<t tx="swot.20221017093031.28">@doc
-@language asciidoc
-:nofooter:
-https://www.flutterbeads.com/renderbox-was-not-laid-out/?[3 Ways to Fix RenderBox was not Laid Out in Flutter [2022]]
-
-使用 SizedBox 可以解决上面报错的问题
-@c
-@language dart
-const SizedBox(
-  width: 200.0,
-  height: 40.0,
-  child:
-  @others
-),
-</t>
-<t tx="swot.20221017093031.3">import 'dart:async';
-import 'dart:math' as math;
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-</t>
-<t tx="swot.20221017093031.31">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-
-Divider(),
-</t>
-<t tx="swot.20221017093031.32">Stack(
-  alignment: AlignmentDirectional.center,
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221017093031.33">SizedBox(
-  width: 100.0,
-  height: 30.0,
-  child: ElevatedButton(
-    onPressed: () {},
-    child: null,
-  ),
-),
-</t>
-<t tx="swot.20221017093031.34">SizedBox(
-  width: 40.0,
-  height: 60.0,
-  child:
-      @others
-),
-</t>
-<t tx="swot.20221017093031.37">ElevatedButton(
-  child: const Text('Show Alert Dialog'),
-  onPressed: () {
-    @others
-  },
-),
-</t>
-<t tx="swot.20221017093031.38">showDialog(
-  context: context,
-  builder: (context) =&gt;
-      @others
-);
-</t>
-<t tx="swot.20221017093031.4">void main() {
-  runApp(const MyApp());
-}
-
-</t>
-<t tx="swot.20221017093031.41">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-
-Divider(),
-</t>
-<t tx="swot.20221017093031.42">Container(
-  margin: const EdgeInsets.symmetric(vertical: 4.0),
-  height: 40.0,
-  width: 100.0,
-  color: Colors.blueGrey,
-  child:
-  @others
-),
-</t>
-<t tx="swot.20221017093031.44">GestureDetector(
-  onTap: () {
-    setState(() {
-      selected = !selected;
-    });
-  },
-  child: Center(
-    child: Container(
-      width: 150.0,
-      height: 40.0,
-      color: Colors.grey,
-      child:
-      @others
-    ),
-  ),
-),
-</t>
-<t tx="swot.20221017093031.47">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-
-Divider(),
-</t>
-<t tx="swot.20221017093031.5">class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'demo',
-      home: const Home(),
-      theme: ThemeData(
-          // fontFamily: 'SourceSansPro',
-          ),
-      debugShowCheckedModeBanner: false,
-      &lt;&lt; showSemanticsDebugger &gt;&gt;
-      &lt;&lt; routes &gt;&gt;
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221017093031.6">class A extends StatelessWidget {
-  const A({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: DemoA(),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221017093031.61">Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  crossAxisAlignment: CrossAxisAlignment.center,
-  children: [
-    @others
-  ],
-),
-
-Divider(),
-</t>
-<t tx="swot.20221017093031.8">@language dart
-@tabwidth -2
-class DemoA extends StatefulWidget {
-  const DemoA({super.key});
-
-  @override
-  State&lt;DemoA&gt; createState() =&gt; _DemoAState();
-}
-
-class _DemoAState extends State&lt;DemoA&gt; with TickerProviderStateMixin {
-  // AnimationController use TickerProviderStateMixin
-  @others
-}
-
-</t>
-<t tx="swot.20221017093031.88">SizedBox(height: 200.0),
-Divider(),
-</t>
-<t tx="swot.20221017093031.9"></t>
 <t tx="swot.20221019111317.2">@language dart
 @tabwidth -2
 class BackdropFilterExample extends StatelessWidget {
@@ -3221,160 +2380,6 @@ Widget build(BuildContext context) {
     ],
   );
 }
-</t>
-<t tx="swot.20221021132401.1" annotate="7d71002858080000007072696f7269747971014b01580a000000707269736574646174657102580a000000323032322d31302d32337103752e" icons="5d71007d7101285804000000747970657102580400000066696c657103680358320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269312e706e677104580700000072656c506174687105580d000000636c656f2f707269312e706e677106580500000077686572657107580e0000006265666f7265486561646c696e6571085807000000796f666673657471094b005807000000786f6666736574710a4b02580400000078706164710b4b0158020000006f6e710c5805000000766e6f6465710d5808000000636c656f49636f6e710e580100000031710f75612e">@language dart
-routes: {
-  'home': (context) =&gt; const Home(),
-  'a': (context) =&gt; const A(),
-  'b': (context) =&gt; const B(),
-  'c': (context) =&gt; const C(),
-  'd': (context) =&gt; const D(),
-  'e': (context) =&gt; const E(),
-  'f': (context) =&gt; const F(),
-  'g': (context) =&gt; const G(),
-  'h': (context) =&gt; const H(),
-  'i': (context) =&gt; const I(),
-  'l': (context) =&gt; const L(),
-  'm': (context) =&gt; const M(),
-  'n': (context) =&gt; const N(),
-  'o': (context) =&gt; const O(),
-  'p': (context) =&gt; const P(),
-  'r': (context) =&gt; const R(),
-  's': (context) =&gt; const S(),
-  't': (context) =&gt; const T(),
-  'v': (context) =&gt; const V(),
-  'w': (context) =&gt; const W(),
-},
-
-initialRoute: 'home',
-
-// onUnknownRoute: (RouteSettings setting) =&gt; MaterialPageRoute(
-// builder: (context) =&gt; UnknowPage(),
-// ),
-</t>
-<t tx="swot.20221021133027.1"></t>
-<t tx="swot.20221021133039.1"></t>
-<t tx="swot.20221021133107.2">@language dart
-@tabwidth -2
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-  @others
-}
-
-</t>
-<t tx="swot.20221021133107.3">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221021133625.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31302d32367103752e">Wrap(spacing: 8.0, children: [
-  @others
-]),
-</t>
-<t tx="swot.20221021134037.2">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'a');
-  },
-  child: const Text('A'),
-),
-
-</t>
-<t tx="swot.20221021135715.1">SafeArea(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221021141328.1">Scaffold(
-  @others
-),
-</t>
-<t tx="swot.20221021171707.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'b');
-  },
-  child: const Text('B'),
-),
-
-</t>
-<t tx="swot.20221021171949.1">class B extends StatelessWidget {
-  const B({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoB(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221021172558.1">@language dart
-@tabwidth -2
-class DemoB extends StatefulWidget {
-  const DemoB({super.key});
-
-  @override
-  State&lt;DemoB&gt; createState() =&gt; _DemoBState();
-}
-
-class _DemoBState extends State&lt;DemoB&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221021172558.14">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221021172558.15">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221021172558.16">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
-<t tx="swot.20221021173128.1">appBar: AppBar(
-  title: const Text('Demo B'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
 </t>
 <t tx="swot.20221021173506.1">BackdropFilterExample(),
 Divider(),
@@ -3755,102 +2760,12 @@ myBuilderWidget() =&gt; Builder(builder: (context) {
   );
 });
 </t>
-<t tx="swot.20221022111104.1">BuilderExample(),
-Divider(),
-</t>
 <t tx="swot.20221022115422.1">for node in p.children():
   print(node.h);
-</t>
-<t tx="swot.20221022115433.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'c');
-  },
-  child: const Text('C'),
-),
-
-</t>
-<t tx="swot.20221022121254.1"></t>
-<t tx="swot.20221022121336.1">class C extends StatelessWidget {
-  const C({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoC(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221022121336.2">appBar: AppBar(
-  title: const Text('Demo C'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221022121355.1"></t>
-<t tx="swot.20221022121559.1">@language dart
-@tabwidth -2
-class DemoC extends StatefulWidget {
-  const DemoC({super.key});
-
-  @override
-  State&lt;DemoC&gt; createState() =&gt; _DemoCState();
-}
-
-class _DemoCState extends State&lt;DemoC&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221022121559.2">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221022121559.3">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221022121559.4">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-
 </t>
 <t tx="swot.20221022121559.5">CardExample(),
 Divider(),
 </t>
-<t tx="swot.20221022121728.1"></t>
 <t tx="swot.20221022121755.2">@language dart
 @tabwidth -2
 class CardExample extends StatelessWidget {
@@ -4594,91 +3509,7 @@ Widget build(BuildContext context) {
 Divider(),
 </t>
 <t tx="swot.20221023080337.1"></t>
-<t tx="swot.20221023080501.1"></t>
-<t tx="swot.20221023080540.1">class M extends StatelessWidget {
-  const M({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoM(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221023080540.2">appBar: AppBar(
-  title: const Text('Demo M'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221023081047.1">@language dart
-@tabwidth -2
-class DemoM extends StatefulWidget {
-  const DemoM({super.key});
-
-  @override
-  State&lt;DemoM&gt; createState() =&gt; _DemoMState();
-}
-
-class _DemoMState extends State&lt;DemoM&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221023081047.2">@override
-Widget build(BuildContext context) {
-  return
-  @others
-}
-</t>
-<t tx="swot.20221023081047.3">SingleChildScrollView(
-  child:
-  @others
-);
-</t>
-<t tx="swot.20221023081047.4">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
 <t tx="swot.20221023081047.5">MaterialBannerExample(),
-</t>
-<t tx="swot.20221023081258.1"></t>
-<t tx="swot.20221023081344.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'm');
-  },
-  child: const Text('M'),
-),
-
 </t>
 <t tx="swot.20221023081507.1"></t>
 <t tx="swot.20221023081535.2">@language dart
@@ -4737,61 +3568,6 @@ Builder(  // Can solve above problem
   ),
 )
 </t>
-<t tx="swot.20221023093000.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'o');
-  },
-  child: const Text('O'),
-),
-
-</t>
-<t tx="swot.20221023093033.1"></t>
-<t tx="swot.20221023093033.14"></t>
-<t tx="swot.20221023093033.2">class P extends StatelessWidget {
-  const P({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: DemoP(),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221023093033.4">@language dart
-@tabwidth -2
-class DemoP extends StatefulWidget {
-  const DemoP({super.key});
-
-  @override
-  State&lt;DemoP&gt; createState() =&gt; _DemoPState();
-}
-
-class _DemoPState extends State&lt;DemoP&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221023093033.5">@override
-Widget build(BuildContext context) {
-  return
-  @others
-}
-</t>
-<t tx="swot.20221023093033.6">SingleChildScrollView(
-  child:
-  @others
-);
-</t>
-<t tx="swot.20221023093033.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
 <t tx="swot.20221023093247.1"></t>
 <t tx="swot.20221023093415.1"></t>
 <t tx="swot.20221023093803.1">appBar: PreferredSize(
@@ -4823,90 +3599,6 @@ Widget build(BuildContext context) {
   ),
 ),
 </t>
-<t tx="swot.20221023105031.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'l');
-  },
-  child: const Text('L'),
-),
-
-</t>
-<t tx="swot.20221023105117.1"></t>
-<t tx="swot.20221023105152.1">class L extends StatelessWidget {
-  const L({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoL(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221023105152.2">appBar: AppBar(
-  title: const Text('Demo L'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221023105258.1">@language dart
-@tabwidth -2
-class DemoL extends StatefulWidget {
-  const DemoL({super.key});
-
-  @override
-  State&lt;DemoL&gt; createState() =&gt; _DemoLState();
-}
-
-class _DemoLState extends State&lt;DemoL&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221023105258.2">@override
-Widget build(BuildContext context) {
-  return
-  @others
-}
-</t>
-<t tx="swot.20221023105258.3" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31302d32337103752e">SingleChildScrollView(
-  child:
-  @others
-);
-</t>
-<t tx="swot.20221023105258.4" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31302d32337103752e">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
-<t tx="swot.20221023105408.1"></t>
 <t tx="swot.20221023105739.1"></t>
 <t tx="swot.20221023105806.1"></t>
 <t tx="swot.20221023105920.2">@language dart
@@ -5014,175 +3706,8 @@ Widget build(BuildContext context) {
 ),
 </t>
 <t tx="swot.20221023124217.1"></t>
-<t tx="swot.20221023124300.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'h');
-  },
-  child: const Text('H'),
-),
-
-</t>
-<t tx="swot.20221023124355.1"></t>
-<t tx="swot.20221023124355.2">class H extends StatelessWidget {
-  const H({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoH(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221023124355.3">appBar: AppBar(
-  title: const Text('Demo H'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221023124355.4">@language dart
-@tabwidth -2
-class DemoH extends StatefulWidget {
-  const DemoH({super.key});
-
-  @override
-  State&lt;DemoH&gt; createState() =&gt; _DemoHState();
-}
-
-class _DemoHState extends State&lt;DemoH&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221023124355.5">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221023124355.6">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221023124355.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
-<t tx="swot.20221023124644.1"></t>
 <t tx="swot.20221023150449.1"></t>
-<t tx="swot.20221023152035.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'r');
-  },
-  child: const Text('R'),
-),
-
-</t>
-<t tx="swot.20221023152107.1"></t>
-<t tx="swot.20221023152107.13"></t>
-<t tx="swot.20221023152107.2">class R extends StatelessWidget {
-  const R({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: DemoR(),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221023152107.4">@language dart
-@tabwidth -2
-class DemoR extends StatefulWidget {
-  const DemoR({super.key});
-
-  @override
-  State&lt;DemoR&gt; createState() =&gt; _DemoRState();
-}
-
-class _DemoRState extends State&lt;DemoR&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221023152107.5">@override
-Widget build(BuildContext context) {
-  return
-      @others
-}
-</t>
-<t tx="swot.20221023152107.6">SingleChildScrollView(
-  child:
-  @others
-);
-</t>
-<t tx="swot.20221023152107.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
 <t tx="swot.20221023152237.1"></t>
-<t tx="swot.20221023152533.1">appBar: AppBar(
-  title: const Text('Demo R'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
 <t tx="swot.20221023152801.2">@language dart
 @tabwidth -2
 class ReorderableListViewExample extends StatefulWidget {
@@ -5315,91 +3840,6 @@ Widget build(BuildContext context) {
 Divider(),
 </t>
 <t tx="swot.20221023175848.1"></t>
-<t tx="swot.20221023175859.1"></t>
-<t tx="swot.20221023175859.14"></t>
-<t tx="swot.20221023175859.2">class T extends StatelessWidget {
-  const T({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: const DemoT(),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221023175859.3">appBar: AppBar(
-  title: const Text('Demo T'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221023175859.4">@language dart
-@tabwidth -2
-class DemoT extends StatefulWidget {
-  const DemoT({super.key});
-
-  @override
-  State&lt;DemoT&gt; createState() =&gt; _DemoTState();
-}
-
-class _DemoTState extends State&lt;DemoT&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221023175859.5">@override
-Widget build(BuildContext context) {
-  return
-      @others
-}
-</t>
-<t tx="swot.20221023175859.6">SingleChildScrollView(
-  child:
-      @others
-);
-</t>
-<t tx="swot.20221023175859.7">Column(
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221023180102.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 't');
-  },
-  child: const Text('T'),
-),
-
-</t>
 <t tx="swot.20221023181752.1"></t>
 <t tx="swot.20221023193833.2">@language dart
 @tabwidth -2
@@ -5531,182 +3971,7 @@ Divider(),
       @others
 ),
 </t>
-<t tx="swot.20221024065732.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'd');
-  },
-  child: const Text('D'),
-),
-
-</t>
-<t tx="swot.20221024065815.1"></t>
-<t tx="swot.20221024065902.1">class D extends StatelessWidget {
-  const D({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoD(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221024065902.2">appBar: AppBar(
-  title: const Text('Demo D'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221024070012.1">@language dart
-@tabwidth -2
-class DemoD extends StatefulWidget {
-  const DemoD({super.key});
-
-  @override
-  State&lt;DemoD&gt; createState() =&gt; _DemoDState();
-}
-
-class _DemoDState extends State&lt;DemoD&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221024070127.1">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221024070127.2">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221024070127.3">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-
-</t>
-<t tx="swot.20221024070225.1"></t>
 <t tx="swot.20221024070739.1"></t>
-<t tx="swot.20221024070848.1"></t>
-<t tx="swot.20221024070848.2">class S extends StatelessWidget {
-  const S({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoS(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221024070848.3">appBar: AppBar(
-  title: const Text('Demo S'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221024070848.4">@language dart
-@tabwidth -2
-class DemoS extends StatefulWidget {
-  const DemoS({super.key});
-
-  @override
-  State&lt;DemoS&gt; createState() =&gt; _DemoSState();
-}
-
-class _DemoSState extends State&lt;DemoS&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221024070848.5">@override
-Widget build(BuildContext context) {
-  return
-      @others
-      ;
-}
-</t>
-<t tx="swot.20221024070848.6">SingleChildScrollView(
-  child:
-      @others
-)
-</t>
-<t tx="swot.20221024070848.7">Column(
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-    @others
-  ],
-),
-
-</t>
-<t tx="swot.20221024070848.8"></t>
-<t tx="swot.20221024091106.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 's');
-  },
-  child: const Text('S'),
-),
-
-</t>
 <t tx="swot.20221024091445.1">for node in p.children():
   print(node.h);
 </t>
@@ -6293,92 +4558,6 @@ Widget build(BuildContext context) {
 <t tx="swot.20221025191831.1">PopupMenuButtonExample(),
 Divider(),
 </t>
-<t tx="swot.20221025205925.1"></t>
-<t tx="swot.20221025205946.1">class E extends StatelessWidget {
-  const E({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoE(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221025205946.2">appBar: AppBar(
-  title: const Text('Demo E'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221025211051.1">@language dart
-@tabwidth -2
-class DemoE extends StatefulWidget {
-  const DemoE({super.key});
-
-  @override
-  State&lt;DemoE&gt; createState() =&gt; _DemoEState();
-}
-
-class _DemoEState extends State&lt;DemoE&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221025211051.2">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221025211051.3">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221025211051.4">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-
-</t>
-<t tx="swot.20221025211157.1"></t>
-<t tx="swot.20221026064030.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'e');
-  },
-  child: const Text('E'),
-),
-
-</t>
 <t tx="swot.20221026064223.1"></t>
 <t tx="swot.20221026072859.1"></t>
 <t tx="swot.20221026073602.2">@language dart
@@ -6435,88 +4614,6 @@ Widget build(BuildContext context) {
 <t tx="swot.20221026194030.1">ExpandedExample(),
 Divider(),
 </t>
-<t tx="swot.20221026200727.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'f');
-  },
-  child: const Text('F'),
-),
-
-</t>
-<t tx="swot.20221026200827.1"></t>
-<t tx="swot.20221026200827.2">class F extends StatelessWidget {
-  const F({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return
-    @others
-    ;
-  }
-}
-</t>
-<t tx="swot.20221026200827.3">appBar: AppBar(
-  title: const Text('Demo F'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221026200827.4">@language dart
-@tabwidth -2
-class DemoF extends StatefulWidget {
-  const DemoF({super.key});
-
-  @override
-  State&lt;DemoF&gt; createState() =&gt; _DemoFState();
-}
-
-class _DemoFState extends State&lt;DemoF&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221026200827.5">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221026200827.6">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221026200827.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-
-</t>
-<t tx="swot.20221026200827.9"></t>
 <t tx="swot.20221027111311.1"></t>
 <t tx="swot.20221027111351.1"></t>
 <t tx="swot.20221027111458.2">@language dart
@@ -6594,18 +4691,6 @@ Flexible(
 </t>
 <t tx="swot.20221027112522.4">body:
 @others
-</t>
-<t tx="swot.20221027113937.1">SafeArea(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221027114010.2">Scaffold(
-  @others
-),
-
-</t>
-<t tx="swot.20221027114010.4">body: DemoF(),
 </t>
 <t tx="swot.20221027114010.6">floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
 floatingActionButton: FloatingActionButton(
@@ -7084,96 +5169,6 @@ Widget build(BuildContext context) {
 <t tx="swot.20221028065632.1">FutureBuilderExample(),
 </t>
 <t tx="swot.20221028070441.1"></t>
-<t tx="swot.20221028070508.1"></t>
-<t tx="swot.20221028070508.10">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221028070508.11">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-
-</t>
-<t tx="swot.20221028070508.17"></t>
-<t tx="swot.20221028070508.2">class G extends StatelessWidget {
-  const G({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return
-    @others
-    ;
-  }
-}
-</t>
-<t tx="swot.20221028070508.3">SafeArea(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221028070508.4">Scaffold(
-  @others
-),
-
-</t>
-<t tx="swot.20221028070508.5">appBar: AppBar(
-  title: const Text('Demo G'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221028070508.6">body: DemoG(),
-</t>
-<t tx="swot.20221028070508.7">floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-floatingActionButton: FloatingActionButton(
-  onPressed: () {},
-  backgroundColor: Colors.deepPurple.shade400,
-  child: Icon(Icons.add),
-),
-</t>
-<t tx="swot.20221028070508.8">@language dart
-@tabwidth -2
-class DemoG extends StatefulWidget {
-  const DemoG({super.key});
-
-  @override
-  State&lt;DemoG&gt; createState() =&gt; _DemoGState();
-}
-
-class _DemoGState extends State&lt;DemoG&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221028070508.9">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
 <t tx="swot.20221028083608.1"></t>
 <t tx="swot.20221028084729.2">@language dart
 @tabwidth -2
@@ -7216,19 +5211,6 @@ Widget build(BuildContext context) {
 }
 </t>
 <t tx="swot.20221028085926.1">GestureDetectorExample(),
-</t>
-<t tx="swot.20221028090127.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'g');
-  },
-  child: const Text('G'),
-),
-
-</t>
-<t tx="swot.20221028090546.1">SizedBox(height: 5.00),
 </t>
 <t tx="swot.20221028091221.1"></t>
 <t tx="swot.20221028093414.2">@language dart
@@ -7400,19 +5382,6 @@ Widget build(BuildContext context) {
   @others
 ),
 </t>
-<t tx="swot.20221029081545.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'i');
-  },
-  child: const Text('I'),
-),
-
-</t>
-<t tx="swot.20221029081714.1"></t>
-<t tx="swot.20221029081714.13"></t>
 <t tx="swot.20221029081714.14">@language dart
 @tabwidth -2
 class InteractiveViewerExample extends StatefulWidget {
@@ -7448,78 +5417,6 @@ Widget build(BuildContext context) {
     ),
   );
 }
-</t>
-<t tx="swot.20221029081714.2">class I extends StatelessWidget {
-  const I({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoI(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221029081714.3">appBar: AppBar(
-  title: const Text('Demo I'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221029081714.4">@language dart
-@tabwidth -2
-class DemoI extends StatefulWidget {
-  const DemoI({super.key});
-
-  @override
-  State&lt;DemoI&gt; createState() =&gt; _DemoIState();
-}
-
-class _DemoIState extends State&lt;DemoI&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221029081714.5">@override
-Widget build(BuildContext context) {
-  return
-  @others
-  ;
-}
-</t>
-<t tx="swot.20221029081714.6">SingleChildScrollView(
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221029081714.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
 </t>
 <t tx="swot.20221029081714.8">ElevatedButton(
   style: ElevatedButton.styleFrom(
@@ -7823,9 +5720,6 @@ Widget build(BuildContext context) {
   ;
 }
 </t>
-<t tx="swot.20221029130915.1"></t>
-<t tx="swot.20221029131000.1"></t>
-<t tx="swot.20221029131010.1"></t>
 <t tx="swot.20221029132335.1">ListView.separated(
   separatorBuilder: (BuildContext context, int index) =&gt; const Divider(color: Colors.white),
   itemCount: 5,
@@ -7874,90 +5768,6 @@ Widget build(BuildContext context) {
 )
 </t>
 <t tx="swot.20221029134124.1"></t>
-<t tx="swot.20221029134319.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'n');
-  },
-  child: const Text('N'),
-),
-
-</t>
-<t tx="swot.20221029134405.1"></t>
-<t tx="swot.20221029134405.14"></t>
-<t tx="swot.20221029134405.2">class N extends StatelessWidget {
-  const N({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        @others
-        body: DemoN(),
-      ),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221029134405.3">appBar: AppBar(
-  title: const Text('Demo N'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221029134405.4">@language dart
-@tabwidth -2
-class DemoN extends StatefulWidget {
-  const DemoN({super.key});
-
-  @override
-  State&lt;DemoN&gt; createState() =&gt; _DemoNState();
-}
-
-class _DemoNState extends State&lt;DemoN&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221029134405.5">@override
-Widget build(BuildContext context) {
-  return
-  @others
-}
-</t>
-<t tx="swot.20221029134405.6">SingleChildScrollView(
-  child:
-  @others
-);
-</t>
-<t tx="swot.20221029134405.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
 <t tx="swot.20221029134556.1"></t>
 <t tx="swot.20221029140231.2">@language dart
 @tabwidth -2
@@ -9086,89 +6896,6 @@ Widget build(BuildContext context) {
 <t tx="swot.20221030212913.1">SnackBarExample(),
 </t>
 <t tx="swot.20221030213205.1"></t>
-<t tx="swot.20221030213345.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'v');
-  },
-  child: const Text('V'),
-),
-
-</t>
-<t tx="swot.20221030213442.1"></t>
-<t tx="swot.20221030213518.1"></t>
-<t tx="swot.20221030213518.12"></t>
-<t tx="swot.20221030213518.2">class V extends StatelessWidget {
-  const V({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: const DemoV(),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221030213518.3">appBar: AppBar(
-  title: const Text('Demo V'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221030213518.4">@language dart
-@tabwidth -2
-class DemoV extends StatefulWidget {
-  const DemoV({super.key});
-
-  @override
-  State&lt;DemoV&gt; createState() =&gt; _DemoVState();
-}
-
-class _DemoVState extends State&lt;DemoV&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221030213518.5">@override
-Widget build(BuildContext context) {
-  return
-      @others
-}
-</t>
-<t tx="swot.20221030213518.6">SingleChildScrollView(
-  child:
-  @others
-);
-</t>
-<t tx="swot.20221030213518.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
 <t tx="swot.20221030222228.1"></t>
 <t tx="swot.20221030222244.2">@language dart
 @tabwidth -2
@@ -9235,87 +6962,6 @@ Widget build(BuildContext context) {
 <t tx="swot.20221030222854.1">VisibilityExample(),
 </t>
 <t tx="swot.20221030223123.1"></t>
-<t tx="swot.20221030223324.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'w');
-  },
-  child: const Text('W'),
-),
-</t>
-<t tx="swot.20221030223524.1"></t>
-<t tx="swot.20221030223524.2">class W extends StatelessWidget {
-  const W({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: const DemoW(),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221030223524.3">appBar: AppBar(
-  title: const Text('Demo W'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
-<t tx="swot.20221030223524.4">@language dart
-@tabwidth -2
-class DemoW extends StatefulWidget {
-  const DemoW({super.key});
-
-  @override
-  State&lt;DemoW&gt; createState() =&gt; _DemoWState();
-}
-
-class _DemoWState extends State&lt;DemoW&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221030223524.5">@override
-Widget build(BuildContext context) {
-  return
-      @others
-}
-</t>
-<t tx="swot.20221030223524.6">SingleChildScrollView(
-  child:
-      @others
-);
-</t>
-<t tx="swot.20221030223524.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
-<t tx="swot.20221030223524.9"></t>
 <t tx="swot.20221030223658.1"></t>
 <t tx="swot.20221030223719.2">@language dart
 @tabwidth -2
@@ -9490,88 +7136,6 @@ Widget build(BuildContext context) {
 @others
 </t>
 <t tx="swot.20221030231020.1"></t>
-<t tx="swot.20221030231220.1">ElevatedButton(
-  style: ElevatedButton.styleFrom(
-      // backgroundColor: Colors.orangeAccent,
-      ),
-  onPressed: () {
-    Navigator.pushNamed(context, 'p');
-  },
-  child: const Text('P'),
-),
-
-</t>
-<t tx="swot.20221030231300.1"></t>
-<t tx="swot.20221030231300.11"></t>
-<t tx="swot.20221030231300.2">class O extends StatelessWidget {
-  const O({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      @others
-      body: DemoO(),
-    );
-  }
-}
-
-</t>
-<t tx="swot.20221030231300.4">@language dart
-@tabwidth -2
-class DemoO extends StatefulWidget {
-  const DemoO({super.key});
-
-  @override
-  State&lt;DemoO&gt; createState() =&gt; _DemoOState();
-}
-
-class _DemoOState extends State&lt;DemoO&gt; {
-  @others
-}
-
-</t>
-<t tx="swot.20221030231300.5">@override
-Widget build(BuildContext context) {
-  return
-  @others
-}
-</t>
-<t tx="swot.20221030231300.6">SingleChildScrollView(
-  child:
-  @others
-);
-</t>
-<t tx="swot.20221030231300.7">Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-  @others
-]),
-</t>
-<t tx="swot.20221030231748.1">appBar: AppBar(
-  title: const Text('Demo O'),
-  centerTitle: true,
-
-  // leading: IconButton(
-  // icon: const Icon(Icons.menu),
-  // onPressed: (){},
-  // ),
-
-  actions: [
-    IconButton(
-      icon: const Icon(Icons.notifications),
-      onPressed: () {},
-    ),
-  ],
-  // AppBar 的下边变成了圆角
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(25),
-      bottomRight: Radius.circular(25),
-    ),
-  ),
-
-  backgroundColor: Colors.orangeAccent,
-  elevation: 0.0, // 去掉 appBar 与 body 之间的阴影
-),
-</t>
 <t tx="swot.20221030231931.1"></t>
 <t tx="swot.20221030231950.2">@language dart
 @tabwidth -2
@@ -11898,40 +9462,12 @@ https://blog.csdn.net/wywinstonwy/article/details/122274788
 .UserLogin
 image::image/FlutterWidget/UserLoginOnWillPop.png[,300]
 </t>
-<t tx="swot.20221112195018.2">body: Column(
-  children: [
-    @others
-  ],
-),
-</t>
-<t tx="swot.20221112195040.1">const Divider(),
-</t>
-<t tx="swot.20221112195208.1">const Center(
-  child: Padding(
-    padding: EdgeInsets.all(5.0),
-    child: Text(
-      'Composite Example',
-      style: TextStyle(fontSize: 18),
-    ),
-  ),
-),
-</t>
-<t tx="swot.20221112195648.1">const Center(
-  child: Padding(
-    padding: EdgeInsets.all(5.0),
-    child: Text(
-      'Alphabetical Example',
-      style: TextStyle(fontSize: 18),
-    ),
-  ),
-),
-</t>
 <t tx="swot.20221112203550.1"></t>
 <t tx="swot.20221112213542.1">ListTile(
   tileColor: Colors.blue,
   leading: const Icon(Icons.person),
   title: const Text('User Login'),
-  trailing: const Icon(Icons.menu),
+  // trailing: const Icon(Icons.menu),
   onTap: () {
     Navigator.push(
       context,
@@ -11940,7 +9476,7 @@ image::image/FlutterWidget/UserLoginOnWillPop.png[,300]
       ),
     );
   },
-)
+),
 </t>
 <t tx="swot.20221112214058.2">@language dart
 @tabwidth -2
@@ -12065,8 +9601,6 @@ Widget build(BuildContext context) {
 <t tx="swot.20221112223644.4">body:
 @others
 </t>
-<t tx="swot.20221112223828.1"></t>
-<t tx="swot.20221112223923.1"></t>
 <t tx="swot.20221113174340.1">@language asciidoc
 :nofooter:
 https://www.flutterbeads.com/numeric-input-keyboard-in-flutter/
@@ -12194,11 +9728,209 @@ TextField(
 ),
 Divider(),
 </t>
-<t tx="swot.20221113194855.1">appBar: AppBar(
-  title: const Text('Flutter Widgets'),
-  centerTitle: true,
-  elevation: 4.0,
+<t tx="swot.20221114121936.2">@language dart
+@tabwidth -2
+class CheckPlatformExample extends StatelessWidget {
+  const CheckPlatformExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221114121936.3">@override
+Widget build(BuildContext context) {
+  return
+  @others
+}
+</t>
+<t tx="swot.20221114124925.1">Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    @others
+  ],
 ),
+</t>
+<t tx="swot.20221114125432.1">if (defaultTargetPlatform == TargetPlatform.android) ...[
+  const Center(
+    child: Text(
+      'Android',
+      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+    ),
+  )
+]
+</t>
+<t tx="swot.20221114125540.1">else if (defaultTargetPlatform == TargetPlatform.iOS) ...[
+  const Center(
+    child: Text(
+      'iOS',
+      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+    ),
+  )
+]
+</t>
+<t tx="swot.20221114125637.1">else ...[
+  const Center(
+    child: Text(
+      'Web',
+      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+    ),
+  )
+]
+</t>
+<t tx="swot.20221114130724.1">ListTile(
+  tileColor: Colors.blue,
+  leading: const Icon(Icons.person),
+  title: const Text('Check Platform'),
+  &lt;&lt; trailing &gt;&gt;
+  onTap: () {},
+),
+</t>
+<t tx="swot.20221114130927.1">@language asciidoc
+Check Platform in Flutter The Right Way in 2022
+
+https://www.flutterbeads.com/how-to-check-platform-in-flutter-the-right-way/#How-to-Check-Platform-in-Flutter
+
+The platform in Fluter is determined by checking the `defaultTargetPlatform` and comparing it with `TargetPlatform` enum.
+
+@language dart
+import ‘package:flutter/foundation.dart’;
+
+if (defaultTargetPlatform == TargetPlatform.android){
+  // Android specific code
+}
+else if (defaultTargetPlatform == TargetPlatform.iOS){
+  //iOS specific code
+}
+else {
+  //web or desktop specific code
+}
+
+</t>
+<t tx="swot.20221114130941.1"></t>
+<t tx="swot.20221114131437.2">Scaffold(
+  @others
+);
+</t>
+<t tx="swot.20221114131437.3">appBar: AppBar(
+  title: Text('CheckPlatform'),
+  // leading: Icon(Icons.menu),
+  elevation: 0.0,
+  centerTitle: true,
+  actions: [
+    Icon(Icons.settings),
+  ],
+),
+</t>
+<t tx="swot.20221114131437.4">body:
+@others
+</t>
+<t tx="swot.20221114153230.1">trailing: PopupMenuButton(
+  itemBuilder: (context) =&gt; [
+    PopupMenuItem(
+      value: "checkPlatform",
+      child: Text("Check Platform"),
+    ),
+    PopupMenuItem(
+      value: "checkTopLevelPlatform",
+      child: Text("Check Top Level Platform"),
+    ),
+  ],
+  onSelected: (String newValue) {
+    if (newValue == "checkPlatform") {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =&gt; CheckPlatformExample(),
+        ),
+      );
+    } else if (newValue == "checkTopLevelPlatform") {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =&gt; CheckTopLevelPlatformExample(),
+        ),
+      );
+    }
+  },
+),
+</t>
+<t tx="swot.20221114161341.2">@language dart
+@tabwidth -2
+class CheckTopLevelPlatformExample extends StatelessWidget {
+  const CheckTopLevelPlatformExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221114161341.3">@override
+Widget build(BuildContext context) {
+  return
+  @others
+}
+
+</t>
+<t tx="swot.20221114161552.1">class PlatformDetails {
+  static final PlatformDetails _singleton = PlatformDetails._internal();
+
+  factory PlatformDetails() {
+    return _singleton;
+  }
+
+  PlatformDetails._internal();
+
+  bool get isDesktop =&gt;
+      defaultTargetPlatform == TargetPlatform.macOS ||
+      defaultTargetPlatform == TargetPlatform.linux ||
+      defaultTargetPlatform == TargetPlatform.windows;
+
+  bool get isMobile =&gt;
+      defaultTargetPlatform == TargetPlatform.iOS ||
+      defaultTargetPlatform == TargetPlatform.android;
+}
+</t>
+<t tx="swot.20221114163410.1">Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    @others
+  ],
+),
+</t>
+<t tx="swot.20221114163419.2">Scaffold(
+  @others
+);
+</t>
+<t tx="swot.20221114163419.3">appBar: AppBar(
+  title: Text('CheckTopLevelPlatform'),
+  // leading: Icon(Icons.menu),
+  elevation: 0.0,
+  centerTitle: true,
+  actions: [
+    Icon(Icons.settings),
+  ],
+),
+</t>
+<t tx="swot.20221114163419.4">body:
+@others
+</t>
+<t tx="swot.20221114163707.1">if (PlatformDetails().isMobile) ...[
+  const Center(
+    child: Text(
+      'Mobile',
+      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+    ),
+  )
+] else if (PlatformDetails().isDesktop) ...[
+  const Center(
+    child: Text(
+      'Desktop',
+      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+    ),
+  )
+] else ...[
+  const Center(
+    child: Text(
+      'Web',
+      style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+    ),
+  )
+]
 </t>
 </tnodes>
 </leo_file>

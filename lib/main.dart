@@ -108,7 +108,7 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            //@+node:swot.20221021133625.1: *7* Wrap
+            //@+node:swot.20221021133625.1: *7* Wrap -- alphabet ElevatedButton
             Wrap(spacing: 8.0, children: [
               //@+others
               //@+node:swot.20221021134037.2: *8* ElevatedButton A
@@ -338,7 +338,7 @@ class Home extends StatelessWidget {
               tileColor: Colors.blue,
               leading: const Icon(Icons.person),
               title: const Text('User Login'),
-              trailing: const Icon(Icons.menu),
+              // trailing: const Icon(Icons.menu),
               onTap: () {
                 Navigator.push(
                   context,
@@ -347,7 +347,56 @@ class Home extends StatelessWidget {
                   ),
                 );
               },
-            )
+            ),
+            //@+node:swot.20221114070028.1: *7* Center -- Functional Example
+            const Center(
+              child: Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Text(
+                  'Functional Example',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+            //@+node:swot.20221114130724.1: *7* ListTile -- Check Platform
+            ListTile(
+              tileColor: Colors.blue,
+              leading: const Icon(Icons.apple),
+              title: const Text('Check Platform'),
+              //@+<< trailing >>
+              //@+node:swot.20221114153230.1: *8* << trailing >>
+              trailing: PopupMenuButton(
+                itemBuilder: (context) => [
+                  const PopupMenuItem(
+                    value: "checkPlatform",
+                    child: Text("Check Platform"),
+                  ),
+                  const PopupMenuItem(
+                    value: "checkTopLevelPlatform",
+                    child: Text("Check Top Level Platform"),
+                  ),
+                ],
+                onSelected: (String newValue) {
+                  if (newValue == "checkPlatform") {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CheckPlatformExample(),
+                      ),
+                    );
+                  } else if (newValue == "checkTopLevelPlatform") {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CheckTopLevelPlatformExample(),
+                      ),
+                    );
+                  }
+                },
+              ),
+              //@-<< trailing >>
+              onTap: () {},
+            ),
             //@-others
           ],
         ),
@@ -363,7 +412,8 @@ class Home extends StatelessWidget {
 
 //@+node:swot.20221112223923.1: ** AlphabeticalExample
 //@+node:swot.20221029130915.1: *3* Example A-G
-//@+node:swot.20221021133027.1: *4* A Example
+
+//@+node:swot.20221021133027.1: *4* A
 //@+node:swot.20221017093031.6: *5* A  -- Scaffold
 class A extends StatelessWidget {
   const A({Key? key}) : super(key: key);
@@ -1908,7 +1958,7 @@ class AutoCompleteExample extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221021133039.1: *4* B Example
+//@+node:swot.20221021133039.1: *4* B
 //@+node:swot.20221021171949.1: *5* B  -- Scaffold
 class B extends StatelessWidget {
   const B({Key? key}) : super(key: key);
@@ -2449,7 +2499,7 @@ class BuilderExample extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221022121254.1: *4* C Example
+//@+node:swot.20221022121254.1: *4* C
 //@+node:swot.20221022121336.1: *5* C  -- Scaffold
 class C extends StatelessWidget {
   const C({Key? key}) : super(key: key);
@@ -3383,7 +3433,7 @@ class _CupertinoSlidingSegmentedControlExampleState
   //@-others
 }
 
-//@+node:swot.20221024065815.1: *4* D Example
+//@+node:swot.20221024065815.1: *4* D
 //@+node:swot.20221024065902.1: *5* D  -- Scaffold
 class D extends StatelessWidget {
   const D({Key? key}) : super(key: key);
@@ -4006,7 +4056,7 @@ class _DropDownButtonExampleState extends State<DropDownButtonExample>{
   //@-others
 }
 
-//@+node:swot.20221025205925.1: *4* E Example
+//@+node:swot.20221025205925.1: *4* E
 //@+node:swot.20221025205946.1: *5* E  -- Scaffold
 class E extends StatelessWidget {
   const E({Key? key}) : super(key: key);
@@ -4389,7 +4439,7 @@ class _ExpansionTileExampleState extends State<ExpansionTileExample> {
   //@-others
 }
 
-//@+node:swot.20221026200827.1: *4* F Example
+//@+node:swot.20221026200827.1: *4* F
 //@+node:swot.20221026200827.2: *5* F  -- Scaffold
 class F extends StatelessWidget {
   const F({Key? key}) : super(key: key);
@@ -4893,7 +4943,7 @@ class _FutureBuilderExampleState extends State<FutureBuilderExample> {
   //@-others
 }
 
-//@+node:swot.20221028070508.1: *4* G Example
+//@+node:swot.20221028070508.1: *4* G
 //@+node:swot.20221028070508.2: *5* G  -- Scaffold
 class G extends StatelessWidget {
   const G({Key? key}) : super(key: key);
@@ -5282,7 +5332,7 @@ class GridTileExample extends StatelessWidget {
 }
 
 //@+node:swot.20221029131000.1: *3* Example H-N
-//@+node:swot.20221023124355.1: *4* H Example
+//@+node:swot.20221023124355.1: *4* H
 //@+node:swot.20221023124355.2: *5* H  -- Scaffold
 class H extends StatelessWidget {
   const H({Key? key}) : super(key: key);
@@ -5486,7 +5536,7 @@ class HeroExample2 extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221029081714.1: *4* I Example
+//@+node:swot.20221029081714.1: *4* I
 //@+node:swot.20221029081714.2: *5* I  -- Scaffold
 class I extends StatelessWidget {
   const I({Key? key}) : super(key: key);
@@ -5931,7 +5981,7 @@ class _InkwellExampleState extends State<InkwellExample> {
   //@-others
 }
 
-//@+node:swot.20221023105117.1: *4* L Example
+//@+node:swot.20221023105117.1: *4* L
 //@+node:swot.20221023105152.1: *5* L  -- Scaffold
 class L extends StatelessWidget {
   const L({Key? key}) : super(key: key);
@@ -6253,7 +6303,7 @@ class ListViewExample extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221023080501.1: *4* M Example
+//@+node:swot.20221023080501.1: *4* M
 //@+node:swot.20221023080540.1: *5* M  -- Scaffold
 class M extends StatelessWidget {
   const M({Key? key}) : super(key: key);
@@ -6390,7 +6440,7 @@ class MaterialBannerExample extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221029134405.1: *4* N Example
+//@+node:swot.20221029134405.1: *4* N
 //@+node:swot.20221029134405.2: *5* N  -- Scaffold
 class N extends StatelessWidget {
   const N({Key? key}) : super(key: key);
@@ -6571,7 +6621,7 @@ class _NavigationBarExampleState extends State<NavigationBarExample> {
 }
 
 //@+node:swot.20221029131010.1: *3* Example O-T
-//@+node:swot.20221030231300.1: *4* O Example
+//@+node:swot.20221030231300.1: *4* O
 //@+node:swot.20221030231300.2: *5* O  -- Scaffold
 class O extends StatelessWidget {
   const O({Key? key}) : super(key: key);
@@ -6825,7 +6875,7 @@ class OverflowBarExample extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221023093033.1: *4* P Example
+//@+node:swot.20221023093033.1: *4* P
 //@+node:swot.20221023093033.2: *5* P  -- Scaffold
 class P extends StatelessWidget {
   const P({Key? key}) : super(key: key);
@@ -7179,7 +7229,7 @@ class PositionedExample extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221023152107.1: *4* R Example
+//@+node:swot.20221023152107.1: *4* R
 //@+node:swot.20221023152107.2: *5* R  -- Scaffold
 class R extends StatelessWidget {
   const R({Key? key}) : super(key: key);
@@ -7608,7 +7658,7 @@ class RotatedBoxExample extends StatelessWidget {
   //@-others
 }
 
-//@+node:swot.20221024070848.1: *4* S Example
+//@+node:swot.20221024070848.1: *4* S
 //@+node:swot.20221024070848.2: *5* S  -- Scaffold
 class S extends StatelessWidget {
   const S({Key? key}) : super(key: key);
@@ -8707,7 +8757,7 @@ class _SwitchExampleState extends State<SwitchExample> {
   //@-others
 }
 
-//@+node:swot.20221023175859.1: *4* T Example
+//@+node:swot.20221023175859.1: *4* T
 //@+node:swot.20221023175859.2: *5* T  -- Scaffold
 class T extends StatelessWidget {
   const T({Key? key}) : super(key: key);
@@ -9400,7 +9450,7 @@ class TooltipExample extends StatelessWidget {
 }
 
 //@+node:swot.20221030213442.1: *3* Example U-Z
-//@+node:swot.20221030213518.1: *4* V Example
+//@+node:swot.20221030213518.1: *4* V
 //@+node:swot.20221030213518.2: *5* V  -- Scaffold
 class V extends StatelessWidget {
   const V({Key? key}) : super(key: key);
@@ -9543,7 +9593,7 @@ class _VisibilityExampleState extends State<VisibilityExample> {
   //@-others
 }
 
-//@+node:swot.20221030223524.1: *4* W Example
+//@+node:swot.20221030223524.1: *4* W
 //@+node:swot.20221030223524.2: *5* W  -- Scaffold
 class W extends StatelessWidget {
   const W({Key? key}) : super(key: key);
@@ -9885,5 +9935,160 @@ class _UserLoginExampleState extends State<UserLoginExample>{
   //@-others
 }
 
+//@+node:swot.20221114070124.1: ** Functional Example
+//@+node:swot.20221114121936.2: *3* CheckPlatformExample
+//@@language dart
+//@@tabwidth -2
+class CheckPlatformExample extends StatelessWidget {
+  const CheckPlatformExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221114121936.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221114131437.2: *5* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221114131437.3: *6* appBar
+      appBar: AppBar(
+        title: Text('CheckPlatform'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221114131437.4: *6* body
+      body:
+      //@+others
+      //@+node:swot.20221114124925.1: *7* Column
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          //@+others
+          //@+node:swot.20221114125432.1: *8* android
+          if (defaultTargetPlatform == TargetPlatform.android) ...[
+            const Center(
+              child: Text(
+                'Android',
+                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+              ),
+            )
+          ]
+          //@+node:swot.20221114125540.1: *8* iOS
+          else if (defaultTargetPlatform == TargetPlatform.iOS) ...[
+            const Center(
+              child: Text(
+                'iOS',
+                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+              ),
+            )
+          ]
+          //@+node:swot.20221114125637.1: *8* other
+          else ...[
+            const Center(
+              child: Text(
+                'Web',
+                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+              ),
+            )
+          ]
+          //@-others
+        ],
+      ),
+      //@-others
+      //@-others
+    );
+    //@-others
+  }
+  //@-others
+}
+//@+node:swot.20221114161341.2: *3* CheckTopLevelPlatformExample
+//@@language dart
+//@@tabwidth -2
+class CheckTopLevelPlatformExample extends StatelessWidget {
+  const CheckTopLevelPlatformExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221114161341.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221114163419.2: *5* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221114163419.3: *6* appBar
+      appBar: AppBar(
+        title: Text('CheckTopLevelPlatform'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221114163419.4: *6* body
+      body:
+      //@+others
+      //@+node:swot.20221114163410.1: *7* Column
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          //@+others
+          //@+node:swot.20221114163707.1: *8* isMobile & isDesktop
+          if (PlatformDetails().isMobile) ...[
+            const Center(
+              child: Text(
+                'Mobile',
+                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+              ),
+            )
+          ] else if (PlatformDetails().isDesktop) ...[
+            const Center(
+              child: Text(
+                'Desktop',
+                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+              ),
+            )
+          ] else ...[
+            const Center(
+              child: Text(
+                'Web',
+                style: TextStyle(fontSize: 74, fontWeight: FontWeight.bold),
+              ),
+            )
+          ]
+          //@-others
+        ],
+      ),
+      //@-others
+      //@-others
+    );
+    //@-others
+  }
+
+  //@-others
+}
+//@+node:swot.20221114161552.1: *3* class PlatformDetails
+class PlatformDetails {
+  static final PlatformDetails _singleton = PlatformDetails._internal();
+
+  factory PlatformDetails() {
+    return _singleton;
+  }
+
+  PlatformDetails._internal();
+
+  bool get isDesktop =>
+      defaultTargetPlatform == TargetPlatform.macOS ||
+      defaultTargetPlatform == TargetPlatform.linux ||
+      defaultTargetPlatform == TargetPlatform.windows;
+
+  bool get isMobile =>
+      defaultTargetPlatform == TargetPlatform.iOS ||
+      defaultTargetPlatform == TargetPlatform.android;
+}
 //@-others
 //@-leo
