@@ -13,6 +13,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'composite.dart';
 import 'functionality.dart';
 
 //@+node:swot.20221017093031.4: ** main
@@ -336,7 +337,8 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            //@+node:swot.20221112213542.1: *7* ListTile -- User Login
+            //@+<< ListTile -- User Login >>
+            //@+node:swot.20221112213542.1: *8* << ListTile -- User Login >>
             ListTile(
               tileColor: Colors.blue,
               leading: const Icon(Icons.person),
@@ -351,6 +353,7 @@ class Home extends StatelessWidget {
                 );
               },
             ),
+            //@-<< ListTile -- User Login >>
             //@+node:swot.20221114070028.1: *7* Center -- Functional Example
             const Center(
               child: Padding(
@@ -361,15 +364,14 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            //@-others
             //@+<< ListTile -- Check Platform >>
-            //@+node:swot.20221114130724.1: *7* << ListTile -- Check Platform >>
+            //@+node:swot.20221114130724.1: *8* << ListTile -- Check Platform >>
             ListTile(
               tileColor: Colors.blue,
               leading: const Icon(Icons.apple),
               title: const Text('Check Platform'),
               //@+<< trailing >>
-              //@+node:swot.20221114153230.1: *8* << trailing >>
+              //@+node:swot.20221114153230.1: *9* << trailing >>
               trailing: PopupMenuButton(
                 itemBuilder: (context) => [
                   const PopupMenuItem(
@@ -403,6 +405,7 @@ class Home extends StatelessWidget {
               onTap: () {},
             ),
             //@-<< ListTile -- Check Platform >>
+            //@-others
           ],
         ),
         //@-others
@@ -9977,143 +9980,5 @@ class WrapExample extends StatelessWidget {
   }
   //@-others
 }
-//@+node:swot.20221112223828.1: ** Composite Example
-//@+node:swot.20221112214058.2: *3* UserLoginExample
-//@@language dart
-//@@tabwidth -2
-class UserLoginExample extends StatefulWidget {
-  const UserLoginExample({super.key});
-
-  @override
-  State<UserLoginExample> createState() => _UserLoginExampleState();
-}
-
-class _UserLoginExampleState extends State<UserLoginExample>{
-  //@+others
-  //@+node:swot.20221112214058.3: *4* varible
-  String? _account;
-  String? _pwd;
-  final _formKey = GlobalKey<FormState>();
-  //@+node:swot.20221112223203.1: *4* _login()
-  _login(account, pwd) {
-    print('账号：$account\n密码：$pwd');
-  }
-  //@+node:swot.20221112214058.6: *4* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221112223644.2: *5* Scaffold
-    Scaffold(
-      //@+others
-      //@+node:swot.20221112223644.3: *6* appBar
-      appBar: AppBar(
-        title: Text('UserLoginExample'),
-        // leading: Icon(Icons.menu),
-        elevation: 0.0,
-        centerTitle: true,
-        actions: [
-          Icon(Icons.settings),
-        ],
-      ),
-      //@+node:swot.20221112223644.4: *6* body
-      body:
-      //@+others
-      //@+node:swot.20221112214751.1: *7* Form
-      Form(
-        key: _formKey,
-        //@+others
-        //@+node:swot.20221112215637.1: *8* onWillPop
-        onWillPop: () async {
-          return await showDialog(
-            context: context,
-            builder: (BuildContext context) {
-              return AlertDialog(
-                title: Text('提示'),
-                content: Text('确认退出吗？'),
-                actions: [
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pop(context, false);
-                    },
-                    child: Text('取消')
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pop(context, true);
-                    },
-                    child: Text('确定'),
-                  ),
-                ],
-              );
-            },
-          );
-        },
-        //@+node:swot.20221112215730.1: *8* Column
-        //@@language dart
-        //@@tabwidth -2
-        child: Column(
-          children: [
-          //@+others
-          //@+node:swot.20221112215838.1: *9* TextFormField _account
-          //@@language dart
-          //@@tabwidth -2
-          TextFormField(
-            autovalidateMode: AutovalidateMode.always,
-            decoration: InputDecoration(hintText: '请输入账号'),
-            onSaved: (value) {
-              _account = value;
-            },
-            validator: (value) {
-              RegExp reg = RegExp(r'^.{4}$');
-              if (!reg.hasMatch(value!)) {
-                return '账号最少4个字符';
-              }
-              return null;
-            },
-          ),
-          //@+node:swot.20221112220311.1: *9* TextFormField _pwd
-          //@@language dart
-          //@@tabwidth -2
-          TextFormField(
-            autovalidateMode: AutovalidateMode.always,
-            decoration: InputDecoration(hintText: '请输入密码'),
-            obscureText: true,
-            onSaved: (value) {
-              _pwd = value;
-            },
-            validator: (value) {
-              return value!.length >= 6 ? null : '密码最少6个字符';
-            },
-          ),
-          //@+node:swot.20221112220552.2: *9* ElevatedButton login
-          //@@language dart
-          //@@tabwidth -2
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              // backgroundColor: Colors.orangeAccent,
-            ),
-            onPressed: () {
-              var state = _formKey.currentState;
-              if (state!.validate()) {
-                state.save();
-                _login(_account, _pwd);
-              }
-            },
-            child: const Text('登录'),
-          ),
-          //@-others
-          ],
-        ),
-        //@-others
-      ),
-      //@-others
-      //@-others
-    );
-    //@-others
-  }
-  //@-others
-}
-
 //@-others
 //@-leo
