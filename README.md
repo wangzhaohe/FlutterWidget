@@ -152,6 +152,7 @@ Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor
 ## T...
     TabBarExample
     TableExample
+    TextExample -- wrap long text  2022-11-14 21:08:39
     TextFieldExample
     TextFormFieldExample
     TabPageSelectorExample

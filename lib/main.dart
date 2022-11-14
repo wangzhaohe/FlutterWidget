@@ -8841,6 +8841,23 @@ class _DemoTState extends State<DemoT> {
                     },
                   ),
                   Divider(),
+                  //@+node:swot.20221114195006.2: *9* ElevatedButton -- show TextExample
+                  //@@language dart
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      // backgroundColor: Colors.orangeAccent,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => TextExample(),
+                        ),
+                      );
+                    },
+                    child: const Text('TextExample'),
+                  ),
+
                   //@+node:swot.20221113181739.2: *9* ElevatedButton -- show TextFieldExample
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -9041,6 +9058,156 @@ class TableExample extends StatelessWidget {
   //@-others
 }
 
+//@+node:swot.20221114192153.2: *6* TextExample
+//@@language dart
+//@@tabwidth -2
+class TextExample extends StatelessWidget {
+  const TextExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221114192153.3: *7* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221114192542.1: *8* GestureDetector
+    GestureDetector(
+      onTap: () {
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child:
+      //@+others
+      //@+node:swot.20221114193002.1: *9* Scaffold
+      Scaffold(
+        //@+others
+        //@+node:swot.20221114193106.1: *10* appBar
+        appBar: AppBar(
+          centerTitle: true,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Image.asset(
+                // 'assets/images/logo.png',
+                // scale: 12,
+              // ),
+              FlutterLogo(),
+              const SizedBox(
+                width: 10,
+              ),
+              const Text(
+                'Swotpp',
+                style: TextStyle(color: Colors.black),
+              ),
+            ],
+          ),
+          backgroundColor: const Color(0xff6ae792),
+        ),
+        //@+node:swot.20221114193135.1: *10* body
+        body:
+        //@+others
+        //@+node:swot.20221114202206.1: *11* Column: MUST use Row -> Expanded
+        Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            //@+others
+            //@+node:swot.20221114195436.1: *12* Row -> Expanded -> ellipsis
+            Row(
+              children: const [
+                Expanded(
+                  child: Text(
+                    'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+                    style: TextStyle(fontSize: 58),
+                    softWrap: false,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
+
+            //@+node:swot.20221114202534.2: *12* Divider
+            const Divider(
+              color: Colors.red,
+              height: 20,
+              thickness: 3,
+              // indent: 20,
+              // endIndent: 40,
+            ),
+            //@+node:swot.20221114195444.1: *12* Row -> Expanded -> fade from right
+            Row(
+              children: const [
+                Expanded(
+                  child: Text(
+                    'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+                    style: TextStyle(fontSize: 58),
+                    softWrap: true,
+                    maxLines: 1,
+                    overflow: TextOverflow.fade,
+                  ),
+                ),
+              ],
+            ),
+
+            //@+node:swot.20221114202534.2: *12* Divider
+            const Divider(
+              color: Colors.red,
+              height: 20,
+              thickness: 3,
+              // indent: 20,
+              // endIndent: 40,
+            ),
+            //@+node:swot.20221114204245.1: *12* Row -> Expanded -> fade from bottom
+            Row(
+              children: const [
+                Expanded(
+                  child: Text(
+                    'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+                    style: TextStyle(fontSize: 58),
+                    softWrap: true,
+                    maxLines: 2,
+                    overflow: TextOverflow.fade,
+                  ),
+                ),
+              ],
+            ),
+
+            //@+node:swot.20221114202534.2: *12* Divider
+            const Divider(
+              color: Colors.red,
+              height: 20,
+              thickness: 3,
+              // indent: 20,
+              // endIndent: 40,
+            ),
+            //@+node:swot.20221114195452.1: *12* Row -> Expanded -> FittedBox
+            //@@language dart
+            //@@tabwidth -2
+            Row(
+              children: const [
+                Expanded(
+                  child: FittedBox(
+                    child: Text(
+                      'It is a long established text.',
+                      style: TextStyle(fontSize: 58),
+                      softWrap: false,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            //@-others
+          ],
+        ),
+        //@-others
+        //@-others
+      ),
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
 //@+node:swot.20221029230649.2: *6* TabBarExample
 //@@language dart
 //@@tabwidth -2
