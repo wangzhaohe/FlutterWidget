@@ -38,6 +38,8 @@ import 'package:flutter/foundation.dart';
 //@+node:swot.20221114130724.1: *3* << ListTile -- Check Platform >>
 ListTile(
   tileColor: Colors.blue,
+  textColor: Colors.white,
+  iconColor: Colors.white,
   leading: const Icon(Icons.apple),
   title: const Text('Check Platform'),
   //@+<< trailing >>

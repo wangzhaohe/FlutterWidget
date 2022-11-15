@@ -341,6 +341,8 @@ class Home extends StatelessWidget {
             //@+node:swot.20221112213542.1: *8* << ListTile -- User Login >>
             ListTile(
               tileColor: Colors.blue,
+              textColor: Colors.white,
+              iconColor: Colors.white,
               leading: const Icon(Icons.person),
               title: const Text('User Login'),
               // trailing: const Icon(Icons.menu),
@@ -368,6 +370,8 @@ class Home extends StatelessWidget {
             //@+node:swot.20221114130724.1: *8* << ListTile -- Check Platform >>
             ListTile(
               tileColor: Colors.blue,
+              textColor: Colors.white,
+              iconColor: Colors.white,
               leading: const Icon(Icons.apple),
               title: const Text('Check Platform'),
               //@+<< trailing >>

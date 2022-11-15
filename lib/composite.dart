@@ -23,6 +23,8 @@ import 'package:flutter/material.dart';
 //@+node:swot.20221112213542.1: *3* << ListTile -- User Login >>
 ListTile(
   tileColor: Colors.blue,
+  textColor: Colors.white,
+  iconColor: Colors.white,
   leading: const Icon(Icons.person),
   title: const Text('User Login'),
   // trailing: const Icon(Icons.menu),
