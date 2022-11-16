@@ -4,6 +4,7 @@
 //@@tabwidth -2
 //@+others
 //@+node:swot.20221114231710.1: ** import
+import 'dart:ui';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 //@+node:swot.20221115093740.1: ** A
@@ -1490,5 +1491,434 @@ class AutoCompleteExample extends StatelessWidget {
   }
   //@-others
 }
+//@+node:swot.20221022121355.1: ** B
+//@+node:swot.20221019111317.2: *3* BackdropFilterExample
+//@@language dart
+//@@tabwidth -2
+class BackdropFilterExample extends StatelessWidget {
+  const BackdropFilterExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221019111317.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: <Widget>[
+        Text(
+          '0' * 300,
+          style: const TextStyle(
+            color: Colors.green,
+          ),
+        ),
+        Center(
+          child: ClipRect(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(
+                sigmaX: 4.0,
+                sigmaY: 4.0,
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                width: 100,
+                height: 100,
+                child: const Text('Blur'),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221021175217.2: *3* BannerExample
+//@@language dart
+//@@tabwidth -2
+class BannerExample extends StatelessWidget {
+  const BannerExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221021175217.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221021175330.1: *5* Center
+    Center(
+      child:
+      //@+others
+      //@+node:swot.20221021175401.1: *6* Container
+      Container(
+        margin: const EdgeInsets.all(10.0),
+        child:
+        //@+others
+        //@+node:swot.20221021180745.1: *7* ClipRect
+        ClipRect(
+          child:
+          //@+others
+          //@+node:swot.20221021180828.1: *8* Banner
+          Banner(
+            message: "25% off",
+            location: BannerLocation.topEnd,
+            color: Colors.red,
+            child:
+            //@+others
+            //@+node:swot.20221021175506.1: *9* Container
+            Container(
+              color: Colors.blueGrey,
+              child:
+              //@+others
+              //@+node:swot.20221021175604.1: *10* Padding
+              Padding(
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
+                child:
+                //@+others
+                //@+node:swot.20221021175702.1: *11* Column
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    //@+others
+                    //@+node:swot.20221021175915.1: *12* Image
+                    Image.network(
+                      'https://img1.baidu.com/it/u=1855083458,281793390&fm=253&fmt=auto&app=138&f=JPEG?w=989&h=500',
+                    ),
+                    //@+node:swot.20221021180035.1: *12* SizedBox
+                    const SizedBox(height: 10),
+                    //@+node:swot.20221021180106.1: *12* Row
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Flutter Course',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.orangeAccent,
+                          ),
+                          child: const Text('Get now'),
+                          onPressed: () {},
+                        ),
+                      ],
+                    ),
+                    //@-others
+                  ],
+                ),
+                //@-others
+              ),
+              //@-others
+            ),
+            //@-others
+          ),
+          //@-others
+        ),
+        //@-others
+      ),
+      //@-others
+    );
+    //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221021181642.2: *3* BaselineExample
+//@@language dart
+//@@tabwidth -2
+class BaselineExample extends StatelessWidget {
+  const BaselineExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221021181642.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        width: 100,
+        height: 100,
+        color: Colors.orange,
+        child: const Baseline(
+          baseline: 0,
+          // baseline: 30,
+          baselineType: TextBaseline.alphabetic,
+          child: FlutterLogo(
+            size: 30,
+          ),
+        ),
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022080218.2: *3* BlockSemanticsExample
+//@@language dart
+//@@tabwidth -2
+class BlockSemanticsExample extends StatefulWidget {
+  const BlockSemanticsExample({super.key});
+
+  @override
+  State<BlockSemanticsExample> createState() => _BlockSemanticsExampleState();
+}
+
+class _BlockSemanticsExampleState extends State<BlockSemanticsExample> {
+  //@+others
+  //@+node:swot.20221022083723.1: *4* varible
+  bool isShow = false;
+  //@+node:swot.20221022080218.3: *4* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  //@+node:swot.20221022080218.4: *4* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  //@+node:swot.20221022080218.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221022080422.1: *5* SizedBox
+    SizedBox(
+      width: double.infinity,
+      child:
+      //@+others
+      //@+node:swot.20221022083203.1: *6* SizedBox
+      SizedBox(
+        width: 500,
+        height: 135,
+        child:
+        //@+others
+        //@+node:swot.20221022083954.1: *7* Column
+        Column(children: [
+          //@+others
+          //@+node:swot.20221022084045.1: *8* OutlinedButton
+          OutlinedButton(
+            onPressed: () {
+              setState(() {
+                isShow = true;
+              });
+            },
+            child: const Text('Click'),
+          ),
+          //@+node:swot.20221022084513.1: *8* if (isShow)
+          if (isShow)
+            //@+others
+            //@+node:swot.20221022091825.1: *9* BlockSemantics
+            BlockSemantics(
+              blocking: isShow, // hidden OutlinedButton?
+              child:
+                  //@+others
+                  //@+node:swot.20221022090937.1: *10* Card
+                  Card(
+                    color: Colors.orangeAccent,
+                    child: SizedBox(
+                      width: 200,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Text('This is a card'),
+                          TextButton(
+                            child: const Text('Close'),
+                            onPressed: () => setState(() {
+                              isShow = false;
+                            }),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  //@-others
+            ),
+            //@-others
+          //@-others
+        ]),
+        //@-others
+      ),
+      //@-others
+    );
+    //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221022094100.2: *3* BottomNavigationBarExample
+//@@language dart
+//@@tabwidth -2
+class BottomNavigationBarExample extends StatefulWidget {
+  const BottomNavigationBarExample({super.key});
+
+  @override
+  State<BottomNavigationBarExample> createState() =>
+      _BottomNavigationBarExampleState();
+}
+
+class _BottomNavigationBarExampleState
+    extends State<BottomNavigationBarExample> {
+  //@+others
+  //@+node:swot.20221022094133.1: *4* varible
+  int _currentIndex = 0;
+
+  List<Widget> body = const [
+    Icon(Icons.home),
+    Icon(Icons.menu),
+    Icon(Icons.person),
+  ];
+
+  //@+node:swot.20221022094100.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    //@+others
+    //@+node:swot.20221022095720.2: *5* Scaffold
+    return Scaffold(
+      //@+others
+      //@+node:swot.20221022101748.1: *6* appBar
+      appBar: AppBar(
+        title: Text('BottomNavigationBar'),
+        // leading: Icon(Icons.menu),
+        actions: [
+          Icon(Icons.settings),
+        ],
+        elevation: 0.0,
+        centerTitle: true,
+      ),
+      //@+node:swot.20221022095720.4: *6* body
+      body: Center(
+        child: body[_currentIndex],
+      ),
+      //@+node:swot.20221022095720.5: *6* bottomNavigationBar
+      bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          fixedColor: Colors.white,
+          backgroundColor: Colors.blue,
+          items: const [
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
+              label: 'Menu',
+              icon: Icon(Icons.menu),
+            ),
+            BottomNavigationBarItem(
+              label: 'Profile',
+              icon: Icon(Icons.person),
+            ),
+          ],
+          type: BottomNavigationBarType.fixed,
+          // type: BottomNavigationBarType.shifting,
+          onTap: (int index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+      ),
+      //@-others
+    );
+
+    //@-others
+  }
+  //@-others
+}
+
+//@+node:swot.20221022104843.2: *3* BottomSheetExample
+//@@language dart
+//@@tabwidth -2
+class BottomSheetExample extends StatefulWidget {
+  const BottomSheetExample({super.key});
+
+  @override
+  State<BottomSheetExample> createState() => _BottomSheetExampleState();
+}
+
+class _BottomSheetExampleState extends State<BottomSheetExample> {
+  //@+others
+  //@+node:swot.20221022104843.5: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        child: const Text('Modal Bottom Sheet'),
+        onPressed: () {
+          //@+others
+          //@+node:swot.20221110210618.1: *5* showModalBottomSheet !!!
+          showModalBottomSheet(
+            context: context,
+            // isScrollControlled: true,   // 可以滚动
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(20),
+              ),
+            ),
+            builder: (BuildContext context) {
+              return Container(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  // mainAxisSize: MainAxisSize.min,  // 收缩到最小
+                  children: [
+                    FlutterLogo(size: 120),
+                    FlutterLogo(size: 120),
+                    FlutterLogo(size: 120),
+                    FlutterLogo(size: 120),
+                    Center(
+                      child: ElevatedButton(
+                        child: const Text('Close'),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              );
+              // return SizedBox(
+                // height: 200,
+                // child: Center(
+                  // child: ElevatedButton(
+                    // child: const Text('Close'),
+                    // onPressed: () {
+                      // Navigator.pop(context);
+                    // },
+                  // ),
+                // ),
+              // );
+            },
+          );
+          //@-others
+        },
+      ),
+    );
+  }
+  //@-others
+}
+
+//@+node:swot.20221022110627.2: *3* BuilderExample
+//@@language dart
+//@@tabwidth -2
+class BuilderExample extends StatelessWidget {
+  const BuilderExample({Key? key}) : super(key: key);
+  //@+others
+  //@+node:swot.20221022110627.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return myBuilderWidget();
+  }
+
+  //@+node:swot.20221022110900.1: *4* myBuilderWidget()
+  // 不加 Builder,则无法找到上面 build's context,
+  myBuilderWidget() => Builder(builder: (context) {
+    return Text(
+      'Text with Theme',
+      // context 需要使用上面的 Builder 来获取
+      style: Theme.of(context).textTheme.displayLarge,
+    );
+  });
+  //@-others
+}
+
 //@-others
 //@-leo

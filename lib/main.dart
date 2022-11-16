@@ -5,7 +5,6 @@
 //@+others
 //@+node:swot.20221017093031.3: ** import
 import 'dart:async';
-import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -16,12 +15,12 @@ import 'alphabet.dart';
 import 'composite.dart';
 import 'functionality.dart';
 
-//@+node:swot.20221017093031.4: ** main
+//@+node:swot.20221017093031.4: ** main()
 void main() {
   runApp(const MyApp());
 }
 
-//@+node:swot.20221017093031.5: ** MyApp -- MaterialApp
+//@+node:swot.20221017093031.5: ** class MyApp -- MaterialApp
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -74,7 +73,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//@+node:swot.20221021133107.2: ** Home
+//@+node:swot.20221021133107.2: ** class Home
 //@@language dart
 //@@tabwidth -2
 class Home extends StatelessWidget {
@@ -425,7 +424,7 @@ class Home extends StatelessWidget {
 //@+node:swot.20221112223923.1: ** AlphabeticalExample
 //@+node:swot.20221029130915.1: *3* Example A-G
 //@+node:swot.20221021133027.1: *4* A
-//@+node:swot.20221017093031.6: *5* A  -- Scaffold
+//@+node:swot.20221017093031.6: *5* class A  -- Scaffold
 class A extends StatelessWidget {
   const A({Key? key}) : super(key: key);
 
@@ -487,7 +486,7 @@ class A extends StatelessWidget {
   }
 }
 
-//@+node:swot.20221017093031.8: *5* DemoA
+//@+node:swot.20221017093031.8: *5* class DemoA
 //@@language dart
 //@@tabwidth -2
 class DemoA extends StatefulWidget {
@@ -500,22 +499,6 @@ class DemoA extends StatefulWidget {
 class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
   // AnimationController use TickerProviderStateMixin
   //@+others
-  //@+node:swot.20221017093031.9: *6* variable
-  //@+node:swot.20221017093031.10: *7* var for AnimatedXXX
-  // AnimatedAlign
-  bool selected = false;
-  //@+node:swot.20221017093031.17: *6* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  //@+node:swot.20221017093031.20: *6* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   //@+node:swot.20221017093031.21: *6* build()
   @override
   Widget build(BuildContext context) {
@@ -580,22 +563,6 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
             SizedBox(height: 200),
             //@-others
           ]),
-
-
-
-          //@+doc
-          //@@language python
-          // for node in p.children():
-          //     print(node.h);
-          //     if node.h == "Divider":
-          //         c.deletePositionsInList([node])
-          // c.redraw()
-          //
-          //
-          // for node in p.children():
-          //     if node.h == "Divider":
-          //         node.b = "Divider(),"
-          // c.redraw()
           //@-others
         )
         //@-others
@@ -605,7 +572,7 @@ class _DemoAState extends State<DemoA> with TickerProviderStateMixin {
 }
 
 //@+node:swot.20221021133039.1: *4* B
-//@+node:swot.20221021171949.1: *5* B  -- Scaffold
+//@+node:swot.20221021171949.1: *5* class B  -- Scaffold
 class B extends StatelessWidget {
   const B({Key? key}) : super(key: key);
 
@@ -648,7 +615,7 @@ class B extends StatelessWidget {
   }
 }
 
-//@+node:swot.20221021172558.1: *5* DemoB
+//@+node:swot.20221021172558.1: *5* class DemoB
 //@@language dart
 //@@tabwidth -2
 class DemoB extends StatefulWidget {
@@ -670,7 +637,9 @@ class _DemoBState extends State<DemoB> {
       child:
       //@+others
       //@+node:swot.20221021172558.16: *8* Column
-      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
         //@+others
         //@+node:swot.20221021173506.1: *9* show BackdropFilterExample
         BackdropFilterExample(),
@@ -707,441 +676,13 @@ class _DemoBState extends State<DemoB> {
         BuilderExample(),
         Divider(),
         //@-others
-      ]),
+        ]
+      ),
       //@-others
     )
     //@-others
     ;
   }
-  //@-others
-}
-
-//@+node:swot.20221022121355.1: *5* ExampleB
-//@+node:swot.20221019111317.2: *6* BackdropFilterExample
-//@@language dart
-//@@tabwidth -2
-class BackdropFilterExample extends StatelessWidget {
-  const BackdropFilterExample({Key? key}) : super(key: key);
-  //@+others
-  //@+node:swot.20221019111317.3: *7* build()
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        Text(
-          '0' * 300,
-          style: const TextStyle(
-            color: Colors.green,
-          ),
-        ),
-        Center(
-          child: ClipRect(
-            child: BackdropFilter(
-              filter: ImageFilter.blur(
-                sigmaX: 4.0,
-                sigmaY: 4.0,
-              ),
-              child: Container(
-                alignment: Alignment.center,
-                width: 100,
-                height: 100,
-                child: const Text('Blur'),
-              ),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-  //@-others
-}
-
-//@+node:swot.20221021175217.2: *6* BannerExample
-//@@language dart
-//@@tabwidth -2
-class BannerExample extends StatelessWidget {
-  const BannerExample({Key? key}) : super(key: key);
-  //@+others
-  //@+node:swot.20221021175217.3: *7* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221021175330.1: *8* Center
-    Center(
-      child:
-      //@+others
-      //@+node:swot.20221021175401.1: *9* Container
-      Container(
-        margin: const EdgeInsets.all(10.0),
-        child:
-        //@+others
-        //@+node:swot.20221021180745.1: *10* ClipRect
-        ClipRect(
-          child:
-          //@+others
-          //@+node:swot.20221021180828.1: *11* Banner
-          Banner(
-            message: "25% off",
-            location: BannerLocation.topEnd,
-            color: Colors.red,
-            child:
-            //@+others
-            //@+node:swot.20221021175506.1: *12* Container
-            Container(
-              color: Colors.blueGrey,
-              child:
-              //@+others
-              //@+node:swot.20221021175604.1: *13* Padding
-              Padding(
-                padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
-                child:
-                //@+others
-                //@+node:swot.20221021175702.1: *14* Column
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    //@+others
-                    //@+node:swot.20221021175915.1: *15* Image
-                    Image.network(
-                      'https://img1.baidu.com/it/u=1855083458,281793390&fm=253&fmt=auto&app=138&f=JPEG?w=989&h=500',
-                    ),
-                    //@+node:swot.20221021180035.1: *15* SizedBox
-                    const SizedBox(height: 10),
-                    //@+node:swot.20221021180106.1: *15* Row
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          'Flutter Course',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.orangeAccent,
-                          ),
-                          child: const Text('Get now'),
-                          onPressed: () {},
-                        ),
-                      ],
-                    ),
-                    //@-others
-                  ],
-                ),
-                //@-others
-              ),
-              //@-others
-            ),
-            //@-others
-          ),
-          //@-others
-        ),
-        //@-others
-      ),
-      //@-others
-    );
-    //@-others
-  }
-  //@-others
-}
-
-//@+node:swot.20221021181642.2: *6* BaselineExample
-//@@language dart
-//@@tabwidth -2
-class BaselineExample extends StatelessWidget {
-  const BaselineExample({Key? key}) : super(key: key);
-  //@+others
-  //@+node:swot.20221021181642.3: *7* build()
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        width: 100,
-        height: 100,
-        color: Colors.orange,
-        child: const Baseline(
-          baseline: 0,
-          // baseline: 30,
-          baselineType: TextBaseline.alphabetic,
-          child: FlutterLogo(
-            size: 30,
-          ),
-        ),
-      ),
-    );
-  }
-  //@-others
-}
-
-//@+node:swot.20221022080218.2: *6* BlockSemanticsExample
-//@@language dart
-//@@tabwidth -2
-class BlockSemanticsExample extends StatefulWidget {
-  const BlockSemanticsExample({super.key});
-
-  @override
-  State<BlockSemanticsExample> createState() => _BlockSemanticsExampleState();
-}
-
-class _BlockSemanticsExampleState extends State<BlockSemanticsExample> {
-  //@+others
-  //@+node:swot.20221022083723.1: *7* varible
-  bool isShow = false;
-  //@+node:swot.20221022080218.3: *7* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  //@+node:swot.20221022080218.4: *7* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
-  //@+node:swot.20221022080218.5: *7* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221022080422.1: *8* SizedBox
-    SizedBox(
-      width: double.infinity,
-      child:
-      //@+others
-      //@+node:swot.20221022083203.1: *9* SizedBox
-      SizedBox(
-        width: 500,
-        height: 135,
-        child:
-        //@+others
-        //@+node:swot.20221022083954.1: *10* Column
-        Column(children: [
-          //@+others
-          //@+node:swot.20221022084045.1: *11* OutlinedButton
-          OutlinedButton(
-            onPressed: () {
-              setState(() {
-                isShow = true;
-              });
-            },
-            child: const Text('Click'),
-          ),
-          //@+node:swot.20221022084513.1: *11* if (isShow)
-          if (isShow)
-            //@+others
-            //@+node:swot.20221022091825.1: *12* BlockSemantics
-            BlockSemantics(
-              blocking: isShow, // hidden OutlinedButton?
-              child:
-                  //@+others
-                  //@+node:swot.20221022090937.1: *13* Card
-                  Card(
-                    color: Colors.orangeAccent,
-                    child: SizedBox(
-                      width: 200,
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          const Text('This is a card'),
-                          TextButton(
-                            child: const Text('Close'),
-                            onPressed: () => setState(() {
-                              isShow = false;
-                            }),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  //@-others
-            ),
-            //@-others
-          //@-others
-        ]),
-        //@-others
-      ),
-      //@-others
-    );
-    //@-others
-  }
-  //@-others
-}
-
-//@+node:swot.20221022094100.2: *6* BottomNavigationBarExample
-//@@language dart
-//@@tabwidth -2
-class BottomNavigationBarExample extends StatefulWidget {
-  const BottomNavigationBarExample({super.key});
-
-  @override
-  State<BottomNavigationBarExample> createState() =>
-      _BottomNavigationBarExampleState();
-}
-
-class _BottomNavigationBarExampleState
-    extends State<BottomNavigationBarExample> {
-  //@+others
-  //@+node:swot.20221022094133.1: *7* varible
-  int _currentIndex = 0;
-
-  List<Widget> body = const [
-    Icon(Icons.home),
-    Icon(Icons.menu),
-    Icon(Icons.person),
-  ];
-
-  //@+node:swot.20221022094100.5: *7* build()
-  @override
-  Widget build(BuildContext context) {
-    //@+others
-    //@+node:swot.20221022095720.2: *8* Scaffold
-    return Scaffold(
-      //@+others
-      //@+node:swot.20221022101748.1: *9* appBar
-      appBar: AppBar(
-        title: Text('BottomNavigationBar'),
-        // leading: Icon(Icons.menu),
-        actions: [
-          Icon(Icons.settings),
-        ],
-        elevation: 0.0,
-        centerTitle: true,
-      ),
-      //@+node:swot.20221022095720.4: *9* body
-      body: Center(
-        child: body[_currentIndex],
-      ),
-      //@+node:swot.20221022095720.5: *9* bottomNavigationBar
-      bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          fixedColor: Colors.white,
-          backgroundColor: Colors.blue,
-          items: const [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home),
-            ),
-            BottomNavigationBarItem(
-              label: 'Menu',
-              icon: Icon(Icons.menu),
-            ),
-            BottomNavigationBarItem(
-              label: 'Profile',
-              icon: Icon(Icons.person),
-            ),
-          ],
-          type: BottomNavigationBarType.fixed,
-          // type: BottomNavigationBarType.shifting,
-          onTap: (int index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-      ),
-      //@-others
-    );
-
-    //@-others
-  }
-  //@-others
-}
-
-//@+node:swot.20221022104843.2: *6* BottomSheetExample
-//@@language dart
-//@@tabwidth -2
-class BottomSheetExample extends StatefulWidget {
-  const BottomSheetExample({super.key});
-
-  @override
-  State<BottomSheetExample> createState() => _BottomSheetExampleState();
-}
-
-class _BottomSheetExampleState extends State<BottomSheetExample> {
-  //@+others
-  //@+node:swot.20221022104843.5: *7* build()
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: ElevatedButton(
-        child: const Text('Modal Bottom Sheet'),
-        onPressed: () {
-          //@+others
-          //@+node:swot.20221110210618.1: *8* showModalBottomSheet !!!
-          showModalBottomSheet(
-            context: context,
-            // isScrollControlled: true,   // 可以滚动
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.vertical(
-                top: Radius.circular(20),
-              ),
-            ),
-            builder: (BuildContext context) {
-              return Container(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  // mainAxisSize: MainAxisSize.min,  // 收缩到最小
-                  children: [
-                    FlutterLogo(size: 120),
-                    FlutterLogo(size: 120),
-                    FlutterLogo(size: 120),
-                    FlutterLogo(size: 120),
-                    Center(
-                      child: ElevatedButton(
-                        child: const Text('Close'),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                      ),
-                    ),
-                  ],
-                ),
-              );
-              // return SizedBox(
-                // height: 200,
-                // child: Center(
-                  // child: ElevatedButton(
-                    // child: const Text('Close'),
-                    // onPressed: () {
-                      // Navigator.pop(context);
-                    // },
-                  // ),
-                // ),
-              // );
-            },
-          );
-          //@-others
-        },
-      ),
-    );
-  }
-  //@-others
-}
-
-//@+node:swot.20221022110627.2: *6* BuilderExample
-//@@language dart
-//@@tabwidth -2
-class BuilderExample extends StatelessWidget {
-  const BuilderExample({Key? key}) : super(key: key);
-  //@+others
-  //@+node:swot.20221022110627.3: *7* build()
-  @override
-  Widget build(BuildContext context) {
-    return myBuilderWidget();
-  }
-
-  //@+node:swot.20221022110900.1: *7* myBuilderWidget()
-  // 不加 Builder,则无法找到上面 build's context,
-  myBuilderWidget() => Builder(builder: (context) {
-    return Text(
-      'Text with Theme',
-      // context 需要使用上面的 Builder 来获取
-      style: Theme.of(context).textTheme.displayLarge,
-    );
-  });
   //@-others
 }
 
