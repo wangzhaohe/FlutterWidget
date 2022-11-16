@@ -408,6 +408,25 @@ class Home extends StatelessWidget {
               onTap: () {},
             ),
             //@-<< ListTile -- Check Platform >>
+            SizedBox(height: 4.0),
+            //@+<< ListTile -- IfElse Widget >>
+            //@+node:swot.20221116204444.1: *8* << ListTile -- IfElse Widget >>
+            ListTile(
+              tileColor: Colors.blue,
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: const Icon(Icons.pages_outlined),
+              title: const Text('IfElse Widget (use PageView)'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => IfElseExample(),
+                  ),
+                );
+              },
+            ),
+            //@-<< ListTile -- IfElse Widget >>
             //@-others
           ],
         ),

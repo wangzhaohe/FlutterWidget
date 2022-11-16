@@ -233,5 +233,199 @@ class PlatformDetails {
       defaultTargetPlatform == TargetPlatform.iOS ||
       defaultTargetPlatform == TargetPlatform.android;
 }
+//@+node:swot.20221116195736.1: ** IfElseExample -- use PageView to show
+//@+doc
+//@@language asciidoc
+// Flutter if else: Top 3 ways you need to know in 2022 (Code)
+//
+// https://www.flutterbeads.com/if-else-statement-in-flutter-widget/
+//
+//@+node:swot.20221116202858.1: *3* IfElseExample
+//@@language dart
+//@@tabwidth -2
+class IfElseExample extends StatefulWidget {
+  const IfElseExample({super.key});
+
+  @override
+  State<IfElseExample> createState() => _IfElseExampleState();
+}
+
+class _IfElseExampleState extends State<IfElseExample> {
+  //@+others
+  //@+node:swot.20221116202858.2: *4* varible
+  final controller = PageController(initialPage: 0);  // Page 1
+  bool isLiked = true;
+  bool isShowComment = true;
+  //@+node:swot.20221116202858.3: *4* dispose()
+  dispose() {
+    super.dispose();
+    controller.dispose();
+  }
+  //@+node:swot.20221116215552.1: *4* Widget getLockStatus()
+  Widget getLockStatus() {
+    bool isLocked = true;
+
+    if (isLocked) {
+      return const Icon(
+        Icons.lock_outline,
+        size: 200,
+        color: Color(0xff6ae792),
+      );
+    } else {
+      return const Icon(
+        Icons.lock_open,
+        size: 200,
+        color: Colors.black,
+      );
+    }
+  }
+  //@+node:swot.20221116202858.4: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221116202858.5: *5* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221116202858.6: *6* appBar
+      appBar: AppBar(
+        title: const Text('IfElseExample'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          //@+others
+          //@+node:swot.20221116202858.7: *7* IconButton left
+          IconButton(
+            icon: const Icon(Icons.keyboard_arrow_left),
+            onPressed: (){
+              // controller.animateToPage(
+                // 0,  // index 0 is the first page
+                // duration: const Duration(seconds: 1),
+                // curve: Curves.easeInOut,
+              // );
+              controller.previousPage(
+                duration: const Duration(seconds: 1),
+                curve: Curves.easeInOut,
+              );
+            },
+          ),
+          //@+node:swot.20221116202858.8: *7* IconButton right
+          IconButton(
+            icon: const Icon(Icons.keyboard_arrow_right),
+            onPressed: (){
+              // controller.animateToPage(
+                // 2,  // index 2 is the last page
+                // duration: const Duration(seconds: 1),
+                // curve: Curves.easeInOut,
+              // );
+              controller.nextPage(
+                duration: const Duration(seconds: 1),
+                curve: Curves.easeInOut,
+              );
+            },
+          ),
+          //@-others
+        ],
+      ),
+      //@+node:swot.20221116202858.9: *6* body
+      body:
+      //@+others
+      //@+node:swot.20221116202858.10: *7* PageView
+      PageView(
+        // physics: const NeverScrollableScrollPhysics(),
+        // scrollDirection: Axis.vertical,  // default is Axis.horizontal
+        controller: controller,
+        onPageChanged: (index) {
+          print('Page ${index + 1}');
+        },
+        children: [
+          //@+others
+          //@+node:swot.20221116195958.1: *8* (1) Using the Ternary Operator ?:
+          //@+doc
+          //@@language asciidoc
+          // A ternary operator takes three operands. The first one is a condition, the second is the expression if the condition is true, and the third one is the expression if the condition is false.
+          //
+          //@@language dart
+          // (age > 18) ? 'Eligible for license' : 'Not eligible'
+          //
+          //@@c
+          //@@language dart
+          Center(
+            child: isLiked
+                ? Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: const [
+                      Text(
+                        '12',
+                        style: TextStyle(fontSize: 120),
+                      ),
+                      Icon(
+                        Icons.thumb_up,
+                        size: 180,
+                        color: Color(0xff6ae792),
+                      ),
+                    ],
+                  )
+                : const Icon(
+                    Icons.thumb_up,
+                    size: 200,
+                    color: Colors.black,
+                  )
+          ),
+          //@+node:swot.20221116202858.12: *8* (2) Using the Spread Operator ...[] 2.1
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (isShowComment) ...[
+                const Icon(
+                  Icons.comment,
+                  size: 200,
+                  color: Color(0xff6ae792),
+                )
+              ] else ...[
+                const Icon(
+                  Icons.comment,
+                  size: 100,
+                  color: Colors.black,
+                )
+              ]
+            ],
+          ),
+          //@+node:swot.20221116214910.1: *8* (2) Using the Spread Operator ...[] 2.2
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(
+                Icons.thumb_up,
+                size: 100,
+                color: Colors.black,
+              ),
+              if (isShowComment) ...[
+                const Icon(
+                  Icons.comment,
+                  size: 200,
+                  color: Color(0xff6ae792),
+                )
+              ]
+            ],
+          ),
+          //@+node:swot.20221116200016.1: *8* (3) Using the Method -- getLockStatus()
+          Center(
+            child: getLockStatus(),
+          ),
+          //@-others
+        ],
+      ),
+      //@-others
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
 //@-others
 //@-leo
