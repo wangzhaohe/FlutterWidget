@@ -655,7 +655,7 @@
 </v>
 </v>
 </v>
-<v t="swot.20221017093031.256"><vh>AutoCompleteExample 不要在屏幕中部以下(会被软键盘挡住)</vh>
+<v t="swot.20221017093031.256"><vh>AutoCompleteExample -- should not locate at bottom (will be shield by keyboard)</vh>
 <v t="swot.20221017093031.257"><vh>varible</vh></v>
 <v t="swot.20221017093031.258"><vh>build()</vh>
 <v t="swot.20221115221134.2"><vh>Container</vh>
@@ -1866,7 +1866,7 @@ https://www.youtube.com/watch?v=M9J-JJOuyE0
 <t tx="swot.20221017093031.153">@doc
 @language asciidoc
 :nofooter:
-image::../image/AboutListTile.png[AboutListTile,240]
+image::image/FlutterWidget/AboutListTile.png[AboutListTile,240]
 @c
 @language dart
 AboutListTile(

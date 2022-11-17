@@ -71,7 +71,7 @@ Widget ppAboutListTile() {
     //@+doc
     //@@language asciidoc
     // :nofooter:
-    // image::../image/AboutListTile.png[AboutListTile,240]
+    // image::image/FlutterWidget/AboutListTile.png[AboutListTile,240]
     //@@c
     //@@language dart
     AboutListTile(
@@ -1444,7 +1444,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
   //@-others
 }
 
-//@+node:swot.20221017093031.256: *3* AutoCompleteExample 不要在屏幕中部以下(会被软键盘挡住)
+//@+node:swot.20221017093031.256: *3* AutoCompleteExample -- should not locate at bottom (will be shield by keyboard)
 //@@language dart
 //@@tabwidth -2
 class AutoCompleteExample extends StatelessWidget {
