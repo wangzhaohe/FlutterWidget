@@ -5,7 +5,7 @@ This project is for main using Widgets.
 
 Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
 
-<img src="assets/introduce.png" width="100%" />
+<img src="image/FlutterWidget/introduce.png" width="100%" />
 
 ## A...
     AboutDialog

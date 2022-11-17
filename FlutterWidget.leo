@@ -12174,7 +12174,7 @@ This is another use case where we are showing multiple widgets in a column.
 
 Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
 
-&lt;img src="assets/introduce.png" width="100%" /&gt;
+&lt;img src="image/FlutterWidget/introduce.png" width="100%" /&gt;
 
 </t>
 <t tx="swot.20221117074820.20">    VisibilityExample
