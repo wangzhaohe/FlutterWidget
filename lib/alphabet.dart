@@ -2147,19 +2147,73 @@ class CircleAvatarExample extends StatelessWidget {
   //@+node:swot.20221022145018.3: *4* build()
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: CircleAvatar(
-        backgroundColor: Colors.orangeAccent,
-        radius: 30,
-        // backgroundImage: AssetImage(''),
-        backgroundImage: NetworkImage(
-            "https://img1.baidu.com/it/u=4237790906,511339359&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"),
-        child: Text(
-          'Hello',
-          style: TextStyle(color: Colors.red),
-        ),
+    return
+    //@+others
+    //@+node:swot.20221117124850.2: *5* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221117124850.3: *6* appBar
+      appBar: AppBar(
+        title: Text('CircleAvatar'),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [],
       ),
+      //@+node:swot.20221117124850.4: *6* body
+      body:
+      //@+others
+      //@+node:swot.20221117130100.1: *7* Container
+      Container(
+        width: double.infinity,
+        padding: const EdgeInsets.only(top: 4.0),
+        child:
+            //@+others
+            //@+node:swot.20221117125122.2: *8* Column
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                //@+others
+                //@+node:swot.20221117154500.1: *9* CircleAvatar -- three layers
+                CircleAvatar(
+                  radius: 50,
+                  backgroundColor: Colors.orangeAccent,
+                  child:
+                  //@+others
+                  //@+node:swot.20221117164057.1: *10* CircleAvatar
+                  CircleAvatar(
+                    radius: 47,
+                    backgroundColor: Colors.white,
+                    child:
+                    //@+others
+                    //@+node:swot.20221117124927.1: *11* CircleAvatar
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundColor: Colors.white,
+                      backgroundImage: AssetImage('assets/cubelogo.png'),  // local image
+                      onBackgroundImageError: (e, s){
+                        debugPrint('image issue, $e,$s');
+                      },
+                      // backgroundImage: NetworkImage("https://img1.baidu.com/it/u=4237790906,511339359&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"),
+                      // child: Text(
+                      //   'Hello',
+                      //   style: TextStyle(color: Colors.red),
+                      // ),
+                    ),
+                    //@-others
+                  ),
+                  //@-others
+                ),
+                //@-others
+              ],
+            ),
+            //@-others
+      ),
+      //@-others
+      //@-others
     );
+    //@-others
+    ;
   }
   //@-others
 }

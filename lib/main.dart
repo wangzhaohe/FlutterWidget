@@ -789,7 +789,21 @@ class _DemoCState extends State<DemoC> {
         ChoiceChipExample(),
         Divider(),
         //@+node:swot.20221022145230.1: *9* show CircleAvatarExample
-        CircleAvatarExample(),
+        ListTile(
+          tileColor: Colors.blue,
+          textColor: Colors.white,
+          iconColor: Colors.white,
+          leading: const Icon(Icons.circle_outlined),
+          title: const Text('CircleAvatar'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => CircleAvatarExample(),
+              ),
+            );
+          },
+        ),
         Divider(),
         //@+node:swot.20221022153425.1: *9* show CircularProgressIndicatorExample
         CircularProgressIndicatorExample(),
