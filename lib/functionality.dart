@@ -254,17 +254,14 @@ class _IfElseExampleState extends State<IfElseExample> {
   //@+others
   //@+node:swot.20221116202858.2: *4* varible
   final controller = PageController(initialPage: 0);  // Page 1
-  bool isLiked = true;
-  bool isShowComment = true;
+  bool switchValue = false;
   //@+node:swot.20221116202858.3: *4* dispose()
   dispose() {
     super.dispose();
     controller.dispose();
   }
-  //@+node:swot.20221116215552.1: *4* Widget getLockStatus()
-  Widget getLockStatus() {
-    bool isLocked = true;
-
+  //@+node:swot.20221116215552.1: *4* Widget getLockStatus() !!!
+  Widget getLockStatus(bool isLocked) {
     if (isLocked) {
       return const Icon(
         Icons.lock_outline,
@@ -348,37 +345,68 @@ class _IfElseExampleState extends State<IfElseExample> {
           //
           //@@language dart
           // (age > 18) ? 'Eligible for license' : 'Not eligible'
-          //
-          //@@c
-          //@@language dart
-          Center(
-            child: isLiked
-                ? Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: const [
-                      Text(
-                        '12',
-                        style: TextStyle(fontSize: 120),
-                      ),
-                      Icon(
+          //@+node:swot.20221117065613.2: *9* Column
+          Column(
+            children: [
+              //@+others
+              //@+node:swot.20221117065952.1: *10* SwitchListTile.adaptive
+              SwitchListTile.adaptive(
+                title: const Text('Test if else by ternary ?:'),
+                onChanged: (bool newValue) {
+                  setState(() {
+                    switchValue = newValue;
+                  });
+                },
+                value: switchValue,
+              ),
+              //@+node:swot.20221117065939.1: *10* Center ?:
+              Center(
+                child: switchValue
+                    ? Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: const [
+                          Text(
+                            '12',
+                            style: TextStyle(fontSize: 120),
+                          ),
+                          Icon(
+                            Icons.thumb_up,
+                            size: 180,
+                            color: Color(0xff6ae792),
+                          ),
+                        ],
+                      )
+                    : const Icon(
                         Icons.thumb_up,
-                        size: 180,
-                        color: Color(0xff6ae792),
-                      ),
-                    ],
-                  )
-                : const Icon(
-                    Icons.thumb_up,
-                    size: 200,
-                    color: Colors.black,
-                  )
+                        size: 200,
+                        color: Colors.black,
+                      )
+              ),
+              //@-others
+            ],
           ),
           //@+node:swot.20221116202858.12: *8* (2) Using the Spread Operator ...[] 2.1
+          //@+doc
+          //@@language asciidoc
+          // The spread operator (…) is used to insert multiple values into a Collection. It was introduced in Dart 2.3. The spread operator must be inside the collection widget like Column, Row, etc.
+          //
+          //@+node:swot.20221117075830.1: *9* Column
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              if (isShowComment) ...[
+              //@+others
+              //@+node:swot.20221117075103.1: *10* SwitchListTile.adaptive
+              SwitchListTile.adaptive(
+                title: const Text('Test if else by spread operator'),
+                onChanged: (bool newValue) {
+                  setState(() {
+                    switchValue = newValue;
+                  });
+                },
+                value: switchValue,
+              ),
+              //@+node:swot.20221117075628.1: *10* if else
+              if (switchValue) ...[
                 const Icon(
                   Icons.comment,
                   size: 200,
@@ -391,30 +419,66 @@ class _IfElseExampleState extends State<IfElseExample> {
                   color: Colors.black,
                 )
               ]
+              //@-others
             ],
           ),
           //@+node:swot.20221116214910.1: *8* (2) Using the Spread Operator ...[] 2.2
+          //@+doc
+          // This is another use case where we are showing multiple widgets in a column.
+          //@+node:swot.20221117081630.1: *9* Column
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              //@+others
+              //@+node:swot.20221117080420.1: *10* SwitchListTile.adaptive
+              SwitchListTile.adaptive(
+                title: const Text('Test if else by spread operator'),
+                onChanged: (bool newValue) {
+                  setState(() {
+                    switchValue = newValue;
+                  });
+                },
+                value: switchValue,
+              ),
+              //@+node:swot.20221117080502.1: *10* if
               const Icon(
                 Icons.thumb_up,
                 size: 100,
                 color: Colors.black,
               ),
-              if (isShowComment) ...[
+              if (switchValue) ...[
                 const Icon(
                   Icons.comment,
                   size: 200,
                   color: Color(0xff6ae792),
                 )
-              ]
+              ],
+              //@-others
             ],
           ),
           //@+node:swot.20221116200016.1: *8* (3) Using the Method -- getLockStatus()
-          Center(
-            child: getLockStatus(),
-          ),
+          //@+doc
+          // Writing a conditional statement inside the method is preferable if you would like to produce clean code and none of the other options work for you.
+          //@+node:swot.20221117081341.2: *9* Column
+          Column(
+            children: [
+              //@+others
+              //@+node:swot.20221117081152.1: *10* SwitchListTile.adaptive
+              SwitchListTile.adaptive(
+                title: const Text('Test if else by method'),
+                onChanged: (bool newValue) {
+                  setState(() {
+                    switchValue = newValue;
+                  });
+                },
+                value: switchValue,
+              ),
+              //@+node:swot.20221117081206.1: *10* Center
+              Center(
+                child: getLockStatus(switchValue),
+              ),
+              //@-others
+            ],
+          )
           //@-others
         ],
       ),

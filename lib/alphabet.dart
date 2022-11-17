@@ -260,6 +260,84 @@ Widget ppAspectRatio() {
     ),
   );
 }
+//@+node:swot.20221031134256.2: *3* AdaptiveExample
+//@@language dart
+//@@tabwidth -2
+class AdaptiveExample extends StatefulWidget {
+  const AdaptiveExample({super.key});
+
+  @override
+  State<AdaptiveExample> createState() => _AdaptiveExampleState();
+}
+
+class _AdaptiveExampleState extends State<AdaptiveExample> {
+  //@+others
+  //@+node:swot.20221031134256.6: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+        //@+others
+        //@+node:swot.20221031134345.2: *5* Scaffold
+        Scaffold(
+          //@+others
+          //@+node:swot.20221031134345.3: *6* appBar
+          appBar: AppBar(
+            title: Text('.adaptive'),
+            // leading: Icon(Icons.menu),
+            actions: [
+              Icon(Icons.settings),
+            ],
+            elevation: 0.0,
+            centerTitle: true,
+          ),
+          //@+node:swot.20221031134345.4: *6* body
+          body:
+          //@+others
+          //@+node:swot.20221031134422.2: *7* Center
+          Center(
+            child:
+            //@+others
+            //@+node:swot.20221031134446.2: *8* Column
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                //@+others
+                //@+node:swot.20221031134619.1: *9* Slider.adaptive
+                Slider.adaptive(
+                  onChanged: (double newValue) {},
+                  value: 1,
+                ),
+                //@+node:swot.20221031140355.1: *9* SwitchListTile.adaptive
+                SwitchListTile.adaptive(
+                  title: const Text('Switch List tile'),
+                  onChanged: (bool newValue) {},
+                  value: true,
+                ),
+                //@+node:swot.20221031140635.1: *9* Switch.adaptive
+                Switch.adaptive(
+                  onChanged: (bool newValue) {},
+                  value: true,
+                ),
+                //@+node:swot.20221031140816.1: *9* Icons.adaptive
+                Icon(
+                  Icons.adaptive.share,
+                ),
+                //@+node:swot.20221031140929.1: *9* CircularProgressIndicator.adaptive
+                const CircularProgressIndicator.adaptive(),
+                //@-others
+              ],
+            )
+            //@-others
+          )
+          //@-others
+          //@-others
+        )
+        //@-others
+        ;
+  }
+  //@-others
+}
+
 //@+node:swot.20221115131154.2: *3* AnimatedAlignExample
 //@@language dart
 //@@tabwidth -2
@@ -691,6 +769,132 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample>
   //@-others
 }
 
+//@+node:swot.20221101181708.2: *3* AnimatedListExample
+//@@language dart
+//@@tabwidth -2
+class AnimatedListExample extends StatefulWidget {
+  const AnimatedListExample({super.key});
+
+  @override
+  State<AnimatedListExample> createState() => _AnimatedListExampleState();
+}
+
+class _AnimatedListExampleState extends State<AnimatedListExample> {
+  //@+others
+  //@+node:swot.20221101181708.3: *4* varible
+  final _items = [];
+  final GlobalKey<AnimatedListState> _key = GlobalKey();
+
+  void _addItem() {
+    _items.insert(0, "Item ${_items.length + 1}");
+    _key.currentState!.insertItem(
+      0,
+      duration: const Duration(seconds: 1),
+    );
+  }
+
+  void _removeItem(int index) {
+    _key.currentState!.removeItem(
+      index,
+      (_, animation) {
+        return SizeTransition(
+          sizeFactor: animation,
+          child: const Card(
+            margin: EdgeInsets.all(10),
+            color: Colors.red,
+            child: ListTile(
+              title: Text(
+                "Deleted",
+                style: TextStyle(fontSize: 14),
+              ),
+              visualDensity:
+                  VisualDensity(vertical: -3), // adjust listTile height
+              dense: true,
+            ),
+          ),
+        );
+      },
+      duration: const Duration(milliseconds: 600),
+    );
+    _items.removeAt(index);
+  }
+
+  //@+node:swot.20221101181708.4: *4* initState()
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  //@+node:swot.20221101181708.5: *4* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  //@+node:swot.20221101181708.6: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221101182425.2: *5* Column
+    Column(
+      children: [
+        //@+others
+        //@+node:swot.20221115200646.1: *6* ListTile
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4),
+          child: ListTile(
+            tileColor: Colors.blue,
+            textColor: Colors.white,
+            iconColor: Colors.white,
+            leading: const Icon(Icons.add),
+            title: const Text('AnimatedList'),
+            onTap: _addItem,
+          ),
+        ),
+        //@+node:swot.20221101182340.2: *6* AnimatedList
+        AnimatedList(
+          key: _key,
+          shrinkWrap: true,
+          initialItemCount: 0,
+          padding: const EdgeInsets.all(10),
+          itemBuilder: (context, index, animation) {
+            //@+others
+            //@+node:swot.20221101182340.3: *7* SizeTransition
+            return SizeTransition(
+              key: UniqueKey(),
+              sizeFactor: animation,
+              child: Card(
+                margin: const EdgeInsets.all(3),
+                color: Colors.blue.shade100,
+                child: ListTile(
+                  title: Text(
+                    _items[index],
+                    style: const TextStyle(fontSize: 14),
+                  ),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.delete),
+                    onPressed: () {
+                      _removeItem(index);
+                    },
+                  ),
+                  visualDensity: const VisualDensity(vertical: -3), // adjust listTile height
+                  dense: true, // 高度会更加紧密，就是高度更小的意思
+                ),
+              ),
+            );
+            //@-others
+          },
+        ),
+        //@-others
+      ],
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
 //@+node:swot.20221017093031.180: *3* AnimatedModalBarrierExample
 //@@language dart
 //@@tabwidth -2
@@ -777,216 +981,6 @@ class _AnimatedModalBarrierExampleState
         ],
       )
       //@-others
-    )
-    //@-others
-    ;
-  }
-  //@-others
-}
-
-//@+node:swot.20221031134256.2: *3* AdaptiveExample
-//@@language dart
-//@@tabwidth -2
-class AdaptiveExample extends StatefulWidget {
-  const AdaptiveExample({super.key});
-
-  @override
-  State<AdaptiveExample> createState() => _AdaptiveExampleState();
-}
-
-class _AdaptiveExampleState extends State<AdaptiveExample> {
-  //@+others
-  //@+node:swot.20221031134256.6: *4* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-        //@+others
-        //@+node:swot.20221031134345.2: *5* Scaffold
-        Scaffold(
-          //@+others
-          //@+node:swot.20221031134345.3: *6* appBar
-          appBar: AppBar(
-            title: Text('.adaptive'),
-            // leading: Icon(Icons.menu),
-            actions: [
-              Icon(Icons.settings),
-            ],
-            elevation: 0.0,
-            centerTitle: true,
-          ),
-          //@+node:swot.20221031134345.4: *6* body
-          body:
-          //@+others
-          //@+node:swot.20221031134422.2: *7* Center
-          Center(
-            child:
-            //@+others
-            //@+node:swot.20221031134446.2: *8* Column
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                //@+others
-                //@+node:swot.20221031134619.1: *9* Slider.adaptive
-                Slider.adaptive(
-                  onChanged: (double newValue) {},
-                  value: 1,
-                ),
-                //@+node:swot.20221031140355.1: *9* SwitchListTile.adaptive
-                SwitchListTile.adaptive(
-                  title: const Text('Switch List tile'),
-                  onChanged: (bool newValue) {},
-                  value: true,
-                ),
-                //@+node:swot.20221031140635.1: *9* Switch.adaptive
-                Switch.adaptive(
-                  onChanged: (bool newValue) {},
-                  value: true,
-                ),
-                //@+node:swot.20221031140816.1: *9* Icons.adaptive
-                Icon(
-                  Icons.adaptive.share,
-                ),
-                //@+node:swot.20221031140929.1: *9* CircularProgressIndicator.adaptive
-                const CircularProgressIndicator.adaptive(),
-                //@-others
-              ],
-            )
-            //@-others
-          )
-          //@-others
-          //@-others
-        )
-        //@-others
-        ;
-  }
-  //@-others
-}
-
-//@+node:swot.20221101181708.2: *3* AnimatedListExample
-//@@language dart
-//@@tabwidth -2
-class AnimatedListExample extends StatefulWidget {
-  const AnimatedListExample({super.key});
-
-  @override
-  State<AnimatedListExample> createState() => _AnimatedListExampleState();
-}
-
-class _AnimatedListExampleState extends State<AnimatedListExample> {
-  //@+others
-  //@+node:swot.20221101181708.3: *4* varible
-  final _items = [];
-  final GlobalKey<AnimatedListState> _key = GlobalKey();
-
-  void _addItem() {
-    _items.insert(0, "Item ${_items.length + 1}");
-    _key.currentState!.insertItem(
-      0,
-      duration: const Duration(seconds: 1),
-    );
-  }
-
-  void _removeItem(int index) {
-    _key.currentState!.removeItem(
-      index,
-      (_, animation) {
-        return SizeTransition(
-          sizeFactor: animation,
-          child: const Card(
-            margin: EdgeInsets.all(10),
-            color: Colors.red,
-            child: ListTile(
-              title: Text(
-                "Deleted",
-                style: TextStyle(fontSize: 14),
-              ),
-              visualDensity:
-                  VisualDensity(vertical: -3), // adjust listTile height
-              dense: true,
-            ),
-          ),
-        );
-      },
-      duration: const Duration(milliseconds: 600),
-    );
-    _items.removeAt(index);
-  }
-
-  //@+node:swot.20221101181708.4: *4* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  //@+node:swot.20221101181708.5: *4* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
-  //@+node:swot.20221101181708.6: *4* build()
-  @override
-  Widget build(BuildContext context) {
-    return
-    //@+others
-    //@+node:swot.20221101182425.2: *5* Column
-    Column(
-      children: [
-        //@+others
-        //@+node:swot.20221115200646.1: *6* ListTile
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: ListTile(
-            tileColor: Colors.blue,
-            textColor: Colors.white,
-            iconColor: Colors.white,
-            leading: const Icon(Icons.add),
-            title: const Text('AnimatedList'),
-            onTap: _addItem,
-          ),
-        ),
-        //@+node:swot.20221101182536.1: *6* SizedBox
-        SizedBox(
-          height: 150,
-          child:
-          //@+others
-          //@+node:swot.20221101182340.2: *7* AnimatedList
-          AnimatedList(
-            key: _key,
-            initialItemCount: 0,
-            padding: const EdgeInsets.all(10),
-            itemBuilder: (context, index, animation) {
-              //@+others
-              //@+node:swot.20221101182340.3: *8* SizeTransition
-              return SizeTransition(
-                key: UniqueKey(),
-                sizeFactor: animation,
-                child: Card(
-                  margin: const EdgeInsets.all(3),
-                  color: Colors.blue.shade100,
-                  child: ListTile(
-                    title: Text(
-                      _items[index],
-                      style: const TextStyle(fontSize: 14),
-                    ),
-                    trailing: IconButton(
-                      icon: const Icon(Icons.delete),
-                      onPressed: () {
-                        _removeItem(index);
-                      },
-                    ),
-                    visualDensity: const VisualDensity(vertical: -3), // adjust listTile height
-                    dense: true, // 高度会更加紧密，就是高度更小的意思
-                  ),
-                ),
-              );
-              //@-others
-            },
-          ),
-          //@-others
-        ),
-        //@-others
-      ],
     )
     //@-others
     ;

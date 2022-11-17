@@ -6,10 +6,7 @@
 //@+node:swot.20221017093031.3: ** import
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import 'alphabet.dart';
 import 'composite.dart';
