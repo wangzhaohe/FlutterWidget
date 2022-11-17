@@ -51,6 +51,7 @@
 <v t="swot.20221114153230.1"><vh>&lt;&lt; trailing &gt;&gt;</vh></v>
 </v>
 <v t="swot.20221116204444.1"><vh>&lt;&lt; ListTile -- IfElse Widget &gt;&gt;</vh></v>
+<v t="swot.20221117183726.1"><vh>&lt;&lt; Easy Steps to Close Keyboard &gt;&gt;</vh></v>
 </v>
 </v>
 </v>
@@ -806,9 +807,14 @@
 <v t="swot.20221116181924.4"><vh>MyClipper2</vh></v>
 </v>
 <v t="swot.20221022165324.2"><vh>ClipRRectExample</vh>
-<v t="swot.20221022165324.3"><vh>initState()</vh></v>
-<v t="swot.20221022165324.4"><vh>dispose()</vh></v>
-<v t="swot.20221022165324.5"><vh>build()</vh></v>
+<v t="swot.20221022165324.5"><vh>build()</vh>
+<v t="swot.20221117182334.2"><vh>Scaffold</vh>
+<v t="swot.20221117182334.3"><vh>appBar</vh></v>
+<v t="swot.20221117182334.4"><vh>body</vh>
+<v t="swot.20221117182433.1"><vh>Center</vh></v>
+</v>
+</v>
+</v>
 </v>
 <v t="swot.20221022170557.2"><vh>CloseButtonExample</vh>
 <v t="swot.20221022170557.3"><vh>build()</vh></v>
@@ -1654,6 +1660,31 @@
 </v>
 </v>
 </v>
+<v t="swot.20221114222958.1"><vh>#file lib/composite.dart</vh>
+<v t="swot.20221114223555.1"><vh>import</vh></v>
+<v t="swot.20221114223110.1"><vh>User Login Example: Form + onWillPop + showDialog + RegExp</vh>
+<v t="swot.20221112213542.1"></v>
+<v t="swot.20221114223110.3"><vh>UserLoginExample</vh>
+<v t="swot.20221114223110.4"><vh>varible</vh></v>
+<v t="swot.20221114223110.5"><vh>_login()</vh></v>
+<v t="swot.20221114223110.6"><vh>build()</vh>
+<v t="swot.20221114223110.7"><vh>Scaffold</vh>
+<v t="swot.20221114223110.8"><vh>appBar</vh></v>
+<v t="swot.20221114223110.9"><vh>body</vh>
+<v t="swot.20221114223110.10"><vh>Form</vh>
+<v t="swot.20221114223110.11"><vh>onWillPop</vh></v>
+<v t="swot.20221114223110.12"><vh>Column</vh>
+<v t="swot.20221114223110.13"><vh>TextFormField _account</vh></v>
+<v t="swot.20221114223110.14"><vh>TextFormField _pwd</vh></v>
+<v t="swot.20221114223110.15"><vh>ElevatedButton login</vh></v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
+</v>
 <v t="swot.20221114214205.1"><vh>#file lib/functionality.dart</vh>
 <v t="swot.20221114214940.1"><vh>import</vh></v>
 <v t="swot.20221114214307.1"><vh>CheckPlatformExample</vh>
@@ -1729,24 +1760,15 @@
 </v>
 </v>
 </v>
-</v>
-<v t="swot.20221114222958.1"><vh>#file lib/composite.dart</vh>
-<v t="swot.20221114223555.1"><vh>import</vh></v>
-<v t="swot.20221114223110.1"><vh>User Login Example: Form + onWillPop + showDialog + RegExp</vh>
-<v t="swot.20221112213542.1"></v>
-<v t="swot.20221114223110.3"><vh>UserLoginExample</vh>
-<v t="swot.20221114223110.4"><vh>varible</vh></v>
-<v t="swot.20221114223110.5"><vh>_login()</vh></v>
-<v t="swot.20221114223110.6"><vh>build()</vh>
-<v t="swot.20221114223110.7"><vh>Scaffold</vh>
-<v t="swot.20221114223110.8"><vh>appBar</vh></v>
-<v t="swot.20221114223110.9"><vh>body</vh>
-<v t="swot.20221114223110.10"><vh>Form</vh>
-<v t="swot.20221114223110.11"><vh>onWillPop</vh></v>
-<v t="swot.20221114223110.12"><vh>Column</vh>
-<v t="swot.20221114223110.13"><vh>TextFormField _account</vh></v>
-<v t="swot.20221114223110.14"><vh>TextFormField _pwd</vh></v>
-<v t="swot.20221114223110.15"><vh>ElevatedButton login</vh></v>
+<v t="swot.20221117184025.1"><vh>CloseKeyboardExample</vh>
+<v t="swot.20221117184127.2"><vh>CloseKeyboardExample</vh>
+<v t="swot.20221117184127.3"><vh>build()</vh>
+<v t="swot.20221117192548.2"><vh>GestureDetector</vh>
+<v t="swot.20221117192608.2"><vh>Scaffold</vh>
+<v t="swot.20221117192608.3"><vh>appBar</vh></v>
+<v t="swot.20221117192608.4"><vh>body</vh>
+<v t="swot.20221117193206.2"><vh>Container</vh>
+<v t="swot.20221117193340.1"><vh>TextField</vh></v>
 </v>
 </v>
 </v>
@@ -3381,6 +3403,11 @@ class CircleAvatarExample extends StatelessWidget {
   @others
 }
 
+
+@doc
+Creating Circular Image/CircleAvatar in Flutter The Best Way in 2022 (Code)
+
+https://www.flutterbeads.com/circular-image-in-flutter/
 </t>
 <t tx="swot.20221022145018.3">@override
 Widget build(BuildContext context) {
@@ -3471,31 +3498,27 @@ class _ClipRRectExampleState extends State&lt;ClipRRectExample&gt; {
 }
 
 </t>
-<t tx="swot.20221022165324.3">@override
-void initState() {
-  super.initState();
-}
-
-</t>
-<t tx="swot.20221022165324.4">@override
-void dispose() {
-  super.dispose();
-}
-
-</t>
 <t tx="swot.20221022165324.5">@override
 Widget build(BuildContext context) {
-  return Center(
-    child: ClipRRect(
-      borderRadius: BorderRadius.circular(30),
-      child: Image.network(
-          'https://img1.baidu.com/it/u=3866320064,995069430&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=500',
-          width: 250),
-    ),
-  );
+  return
+  @others
 }
 </t>
-<t tx="swot.20221022165721.1">ClipRRectExample(),
+<t tx="swot.20221022165721.1">ListTile(
+  tileColor: Colors.blue,
+  textColor: Colors.white,
+  iconColor: Colors.white,
+  leading: const Icon(Icons.circle_outlined),
+  title: const Text('ClipRRect'),
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; ClipRRectExample(),
+      ),
+    );
+  },
+),
 Divider(),
 </t>
 <t tx="swot.20221022170557.2">@language dart
@@ -10725,6 +10748,8 @@ Divider(),
 &lt;&lt; ListTile -- Check Platform &gt;&gt;
 SizedBox(height: 4.0),
 &lt;&lt; ListTile -- IfElse Widget &gt;&gt;
+SizedBox(height: 4.0),
+&lt;&lt; Easy Steps to Close Keyboard &gt;&gt;
 </t>
 <t tx="swot.20221114130724.1">ListTile(
   tileColor: Colors.blue,
@@ -12380,6 +12405,107 @@ if (switchValue) ...[
   backgroundColor: Colors.white,
   child:
   @others
+),
+</t>
+<t tx="swot.20221117182334.2">Scaffold(
+  @others
+);
+</t>
+<t tx="swot.20221117182334.3">appBar: AppBar(
+  title: Text('ClipRRect'),
+  // leading: Icon(Icons.menu),
+  elevation: 0.0,
+  centerTitle: true,
+  actions: [
+    Icon(Icons.settings),
+  ],
+),
+</t>
+<t tx="swot.20221117182334.4">body:
+@others
+</t>
+<t tx="swot.20221117182433.1">Center(
+  child: ClipRRect(
+    borderRadius: BorderRadius.circular(30),
+    child: Image.network(
+        'https://img1.baidu.com/it/u=3866320064,995069430&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=500',
+        width: 250),
+  ),
+),
+</t>
+<t tx="swot.20221117183726.1">ListTile(
+  tileColor: Colors.blue,
+  textColor: Colors.white,
+  iconColor: Colors.white,
+  leading: const Icon(Icons.pages_outlined),
+  title: const Text('Easy Steps to Close Keyboard'),
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; const CloseKeyboardExample(),
+      ),
+    );
+  },
+),
+</t>
+<t tx="swot.20221117184025.1">@doc
+3 Easy Steps to Close Keyboard in Flutter with Code (2022)
+
+https://www.flutterbeads.com/close-hide-keyboard-flutter/
+</t>
+<t tx="swot.20221117184127.2">@language dart
+@tabwidth -2
+class CloseKeyboardExample extends StatelessWidget {
+  const CloseKeyboardExample({ Key? key }) : super(key: key);
+  @others
+}
+</t>
+<t tx="swot.20221117184127.3">@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221117192548.2">GestureDetector(
+  onTap: () {
+    FocusManager.instance.primaryFocus?.unfocus();
+  },
+  child:
+  @others
+)
+</t>
+<t tx="swot.20221117192608.2">Scaffold(
+  @others
+),
+</t>
+<t tx="swot.20221117192608.3">appBar: AppBar(
+  title: const Text('Close Keyboard'),
+  // leading: Icon(Icons.menu),
+  elevation: 0.0,
+  centerTitle: true,
+  actions: const [
+    Icon(Icons.settings),
+  ],
+),
+</t>
+<t tx="swot.20221117192608.4">body:
+@others
+</t>
+<t tx="swot.20221117193206.2">Container(
+  padding: const EdgeInsets.all(16),
+  child:
+  @others
+),
+
+</t>
+<t tx="swot.20221117193340.1">const TextField(
+  keyboardType: TextInputType.phone,
+  decoration: InputDecoration(
+    border: OutlineInputBorder(),
+    labelText: 'Enter value'
+  ),
 ),
 </t>
 </tnodes>

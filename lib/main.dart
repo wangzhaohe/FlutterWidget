@@ -424,6 +424,25 @@ class Home extends StatelessWidget {
               },
             ),
             //@-<< ListTile -- IfElse Widget >>
+            SizedBox(height: 4.0),
+            //@+<< Easy Steps to Close Keyboard >>
+            //@+node:swot.20221117183726.1: *8* << Easy Steps to Close Keyboard >>
+            ListTile(
+              tileColor: Colors.blue,
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: const Icon(Icons.pages_outlined),
+              title: const Text('Easy Steps to Close Keyboard'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CloseKeyboardExample(),
+                  ),
+                );
+              },
+            ),
+            //@-<< Easy Steps to Close Keyboard >>
             //@-others
           ],
         ),
@@ -818,7 +837,21 @@ class _DemoCState extends State<DemoC> {
         ClipRectExample(),
         Divider(),
         //@+node:swot.20221022165721.1: *9* show ClipRRectExample
-        ClipRRectExample(),
+        ListTile(
+          tileColor: Colors.blue,
+          textColor: Colors.white,
+          iconColor: Colors.white,
+          leading: const Icon(Icons.circle_outlined),
+          title: const Text('ClipRRect'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ClipRRectExample(),
+              ),
+            );
+          },
+        ),
         Divider(),
         //@+node:swot.20221022170737.1: *9* show CloseButtonExample
         CloseButtonExample(),

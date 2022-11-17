@@ -491,5 +491,70 @@ class _IfElseExampleState extends State<IfElseExample> {
   //@-others
 }
 
+//@+node:swot.20221117184025.1: ** CloseKeyboardExample
+//@+doc
+// 3 Easy Steps to Close Keyboard in Flutter with Code (2022)
+//
+// https://www.flutterbeads.com/close-hide-keyboard-flutter/
+//@+node:swot.20221117184127.2: *3* CloseKeyboardExample
+//@@language dart
+//@@tabwidth -2
+class CloseKeyboardExample extends StatelessWidget {
+  const CloseKeyboardExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221117184127.3: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221117192548.2: *5* GestureDetector
+    GestureDetector(
+      onTap: () {
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child:
+      //@+others
+      //@+node:swot.20221117192608.2: *6* Scaffold
+      Scaffold(
+        //@+others
+        //@+node:swot.20221117192608.3: *7* appBar
+        appBar: AppBar(
+          title: const Text('Close Keyboard'),
+          // leading: Icon(Icons.menu),
+          elevation: 0.0,
+          centerTitle: true,
+          actions: const [
+            Icon(Icons.settings),
+          ],
+        ),
+        //@+node:swot.20221117192608.4: *7* body
+        body:
+        //@+others
+        //@+node:swot.20221117193206.2: *8* Container
+        Container(
+          padding: const EdgeInsets.all(16),
+          child:
+          //@+others
+          //@+node:swot.20221117193340.1: *9* TextField
+          const TextField(
+            keyboardType: TextInputType.phone,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Enter value'
+            ),
+          ),
+          //@-others
+        ),
+
+        //@-others
+        //@-others
+      ),
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
 //@-others
 //@-leo

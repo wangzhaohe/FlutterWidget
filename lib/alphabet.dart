@@ -2218,6 +2218,11 @@ class CircleAvatarExample extends StatelessWidget {
   //@-others
 }
 
+
+//@+doc
+// Creating Circular Image/CircleAvatar in Flutter The Best Way in 2022 (Code)
+//
+// https://www.flutterbeads.com/circular-image-in-flutter/
 //@+node:swot.20221022153237.2: *3* CircularProgressIndicatorExample
 //@@language dart
 //@@tabwidth -2
@@ -2393,29 +2398,40 @@ class ClipRRectExample extends StatefulWidget {
 
 class _ClipRRectExampleState extends State<ClipRRectExample> {
   //@+others
-  //@+node:swot.20221022165324.3: *4* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  //@+node:swot.20221022165324.4: *4* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   //@+node:swot.20221022165324.5: *4* build()
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(30),
-        child: Image.network(
-            'https://img1.baidu.com/it/u=3866320064,995069430&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500',
-            width: 250),
+    return
+    //@+others
+    //@+node:swot.20221117182334.2: *5* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221117182334.3: *6* appBar
+      appBar: AppBar(
+        title: Text('ClipRRect'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
       ),
+      //@+node:swot.20221117182334.4: *6* body
+      body:
+      //@+others
+      //@+node:swot.20221117182433.1: *7* Center
+      Center(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(30),
+          child: Image.network(
+              'https://img1.baidu.com/it/u=3866320064,995069430&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500',
+              width: 250),
+        ),
+      ),
+      //@-others
+      //@-others
     );
+    //@-others
   }
   //@-others
 }
