@@ -10820,23 +10820,23 @@ Widget build(BuildContext context) {
 <t tx="swot.20221114193106.1">appBar: AppBar(
   centerTitle: true,
   title: Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
+    // mainAxisAlignment: MainAxisAlignment.start,
+    children: const [
       // Image.asset(
-        // 'assets/images/logo.png',
-        // scale: 12,
+      //   'assets/images/logo.png',
+      //   scale: 12,
       // ),
       FlutterLogo(),
-      const SizedBox(
+      SizedBox(
         width: 10,
       ),
-      const Text(
-        'Swotpp',
+      Text(
+        'TextExample',
         style: TextStyle(color: Colors.black),
       ),
     ],
   ),
-  backgroundColor: const Color(0xff6ae792),
+  // backgroundColor: const Color(0xff6ae792),
 ),
 </t>
 <t tx="swot.20221114193135.1">body:
@@ -12170,7 +12170,7 @@ This is another use case where we are showing multiple widgets in a column.
 </t>
 <t tx="swot.20221117074820.2">This project is for main using Widgets.
 
-&lt;img src="image/FlutterWidget/FlutterWidgets.png" width="45%" /&gt; &lt;img src="image/FlutterWidget/DemoA.png" width="45%" /&gt;
+&lt;img src="image/FlutterWidget/FlutterWidgets.png" width="30%" /&gt; &lt;img src="image/FlutterWidget/DemoA.png" width="30%" /&gt; &lt;img src="image/FlutterWidget/TextExample.png" width="30%" /&gt;
 
 Using Literate Programming [leo-editor](https://github.com/leo-editor/leo-editor) tool to manage code structure.
 

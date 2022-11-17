@@ -6658,23 +6658,23 @@ class TextExample extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            // mainAxisAlignment: MainAxisAlignment.start,
+            children: const [
               // Image.asset(
-                // 'assets/images/logo.png',
-                // scale: 12,
+              //   'assets/images/logo.png',
+              //   scale: 12,
               // ),
               FlutterLogo(),
-              const SizedBox(
+              SizedBox(
                 width: 10,
               ),
-              const Text(
-                'Swotpp',
+              Text(
+                'TextExample',
                 style: TextStyle(color: Colors.black),
               ),
             ],
           ),
-          backgroundColor: const Color(0xff6ae792),
+          // backgroundColor: const Color(0xff6ae792),
         ),
         //@+node:swot.20221114193135.1: *7* body
         body:
