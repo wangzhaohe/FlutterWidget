@@ -26,10 +26,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'demo',
       home: const Home(),
-      theme: ThemeData(
-          // fontFamily: 'SourceSansPro',
-          ),
       debugShowCheckedModeBanner: false,
+      //@+<< ThemeData >>
+      //@+node:swot.20221118073920.1: *3* << ThemeData >>
+      theme: ThemeData(
+        //@+others
+        //@+node:swot.20221118074133.1: *4* floatingActionButtonTheme
+        //@+doc
+        // floatingActionButtonTheme: FloatingActionButtonThemeData(
+        //   backgroundColor: Colors.amberAccent,
+        //   foregroundColor: Colors.greenAccent,
+        //   hoverColor: Colors.redAccent,
+        //   splashColor: Colors.tealAccent,
+        //  ),
+        //@-others
+        // primarySwatch: Colors.blue,
+        // fontFamily: 'SourceSansPro',
+      ),
+      //@-<< ThemeData >>
       //@+<< showSemanticsDebugger >>
       //@+node:swot.20221022083314.1: *3* << showSemanticsDebugger >>
       // showSemanticsDebugger: true,
@@ -1203,12 +1217,75 @@ class F extends StatelessWidget {
         //@+node:swot.20221027114010.4: *8* body
         body: DemoF(),
         //@+node:swot.20221027114010.6: *8* floatingActionButton
+        //@@language dart
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+
+        //@@language dart
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          foregroundColor: Colors.tealAccent,
           backgroundColor: Colors.deepPurple.shade400,
+          hoverColor: Colors.redAccent,
+          splashColor: Colors.amberAccent,
+          onPressed: () {},
           child: Icon(Icons.add),
         ),
+        //@+node:swot.20221118072547.1: *9* Change floating action button border color
+        //@+doc
+        //@@language asciidoc
+        // There is no straightforward way to change the floating action button border color. So the idea is to NOT use the floating action button widget at all and use the combination of Material and InkWell widget. You create the FloatingActionButton looking like a widget and then change the border color.
+        //
+        //@@language dart
+        // floatingActionButton: Container(
+        //   height: 70,
+        //   width: 70,
+        //   child: Material(
+        //     type: MaterialType.transparency,
+        //     child: Ink(
+        //       decoration: BoxDecoration(
+        //         border: Border.all(color: Colors.green, width: 3.0),
+        //         color: Colors.greenAccent,
+        //         shape: BoxShape.circle,
+        //       ),
+        //       child: InkWell(
+        //         borderRadius: BorderRadius.circular(500.0),
+        //         onTap: () {},
+        //         child: Icon(
+        //           Icons.add,
+        //           //size: 50,
+        //         ),
+        //       ),
+        //     ),
+        //   ),
+        // ),
+        //@+node:swot.20221118072810.1: *9* Change floating action button shadow color
+        //@+doc
+        //@@language asciidoc
+        // To change the shadow color of the floating action button, you can add the Container widget as a child widget and create a box decoration using the BoxShadow widget. While doing this make sure you set the elevation property to 0.
+        //
+        //@@language dart
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: () {},
+        //   elevation: 0,
+        //   child: Container(
+        //     height: 70,
+        //     width: 70,
+        //     decoration: BoxDecoration(
+        //       color: Colors.transparent,
+        //       borderRadius: BorderRadius.all(Radius.circular(50)),
+        //       boxShadow: [
+        //         BoxShadow(
+        //           color: Colors.redAccent.withOpacity(0.2),
+        //           spreadRadius: 3,
+        //           blurRadius: 3,
+        //           offset: Offset(0, 3),
+        //         ),
+        //       ],
+        //     ),
+        //     child: Icon(Icons.add),
+        //   ),
+        //   backgroundColor: Colors.tealAccent,
+        //   foregroundColor: Colors.black,
+        // ),
         //@-others
       ),
 

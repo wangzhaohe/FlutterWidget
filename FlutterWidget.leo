@@ -13,6 +13,9 @@
 <v t="swot.20221017093031.5"><vh>class MyApp -- MaterialApp</vh>
 <v t="swot.20221022083314.1"><vh>&lt;&lt; showSemanticsDebugger &gt;&gt;</vh></v>
 <v t="swot.20221021132401.1"><vh>&lt;&lt; routes &gt;&gt;</vh></v>
+<v t="swot.20221118073920.1"><vh>&lt;&lt; ThemeData &gt;&gt;</vh>
+<v t="swot.20221118074133.1"><vh>floatingActionButtonTheme</vh></v>
+</v>
 </v>
 <v t="swot.20221021133107.2"><vh>class Home</vh>
 <v t="swot.20221021133107.3"><vh>build()</vh>
@@ -174,7 +177,10 @@
 <v t="swot.20221027114010.2"><vh>Scaffold</vh>
 <v t="swot.20221026200827.3"><vh>appBar</vh></v>
 <v t="swot.20221027114010.4"><vh>body</vh></v>
-<v t="swot.20221027114010.6"><vh>floatingActionButton</vh></v>
+<v t="swot.20221027114010.6"><vh>floatingActionButton</vh>
+<v t="swot.20221118072547.1"><vh>Change floating action button border color</vh></v>
+<v t="swot.20221118072810.1"><vh>Change floating action button shadow color</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -1054,7 +1060,12 @@
 </v>
 </v>
 <v t="swot.20221027114210.1"><vh>FloatingActionButtonExample</vh>
+<v t="swot.20221118073702.1"><vh>change-floating-action-button-color at the page level</vh>
 <v t="swot.20221027114010.6"></v>
+</v>
+<v t="swot.20221118073739.1"><vh>change-floating-action-button-color at the app level</vh>
+<v t="swot.20221118074133.1"></v>
+</v>
 </v>
 </v>
 <v t="swot.20221028070508.17"><vh>G</vh>
@@ -2508,10 +2519,8 @@ import 'functionality.dart';
     return MaterialApp(
       title: 'demo',
       home: const Home(),
-      theme: ThemeData(
-          // fontFamily: 'SourceSansPro',
-          ),
       debugShowCheckedModeBanner: false,
+      &lt;&lt; ThemeData &gt;&gt;
       &lt;&lt; showSemanticsDebugger &gt;&gt;
       &lt;&lt; routes &gt;&gt;
     );
@@ -2585,7 +2594,7 @@ Widget build(BuildContext context) {
   );
 }
 </t>
-<t tx="swot.20221021132401.1" annotate="7d71002858080000007072696f7269747971014b01580a000000707269736574646174657102580a000000323032322d31302d32337103752e" icons="5d71007d7101285804000000747970657102580400000066696c657103680358320000002f55736572732f73776f742f6170702f6c656f2d656469746f722f6c656f2f49636f6e732f636c656f2f707269312e706e677104580700000072656c506174687105580d000000636c656f2f707269312e706e677106580500000077686572657107580e0000006265666f7265486561646c696e6571085807000000796f666673657471094b005807000000786f6666736574710a4b02580400000078706164710b4b0158020000006f6e710c5805000000766e6f6465710d5808000000636c656f49636f6e710e580100000031710f75612e">@language dart
+<t tx="swot.20221021132401.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31302d32337103752e">@language dart
 routes: {
   'home': (context) =&gt; const Home(),
   'a': (context) =&gt; const A(),
@@ -5736,16 +5745,24 @@ Flexible(
 </t>
 <t tx="swot.20221027114010.4">body: DemoF(),
 </t>
-<t tx="swot.20221027114010.6">floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+<t tx="swot.20221027114010.6">@language dart
+floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+
+@language dart
 floatingActionButton: FloatingActionButton(
-  onPressed: () {},
+  foregroundColor: Colors.tealAccent,
   backgroundColor: Colors.deepPurple.shade400,
+  hoverColor: Colors.redAccent,
+  splashColor: Colors.amberAccent,
+  onPressed: () {},
   child: Icon(Icons.add),
 ),
 </t>
 <t tx="swot.20221027114210.1" annotate="7d71002858080000007072696f7269747971014d0f27580a000000707269736574646174657102580a000000323032322d31312d31367103752e">/*
 @others
 */
+@doc
+https://www.flutterbeads.com/change-floating-action-button-color-in-flutter/
 </t>
 <t tx="swot.20221027115609.1">@language asciidoc
 :nofooter:
@@ -12507,6 +12524,79 @@ Widget build(BuildContext context) {
     labelText: 'Enter value'
   ),
 ),
+</t>
+<t tx="swot.20221118072547.1">@doc
+@language asciidoc
+There is no straightforward way to change the floating action button border color. So the idea is to NOT use the floating action button widget at all and use the combination of Material and InkWell widget. You create the FloatingActionButton looking like a widget and then change the border color.
+
+@language dart
+floatingActionButton: Container(
+  height: 70,
+  width: 70,
+  child: Material(
+    type: MaterialType.transparency,
+    child: Ink(
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.green, width: 3.0),
+        color: Colors.greenAccent,
+        shape: BoxShape.circle,
+      ),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(500.0),
+        onTap: () {},
+        child: Icon(
+          Icons.add,
+          //size: 50,
+        ),
+      ),
+    ),
+  ),
+),
+</t>
+<t tx="swot.20221118072810.1">@doc
+@language asciidoc
+To change the shadow color of the floating action button, you can add the Container widget as a child widget and create a box decoration using the BoxShadow widget. While doing this make sure you set the elevation property to 0.
+
+@language dart
+floatingActionButton: FloatingActionButton(
+  onPressed: () {},
+  elevation: 0,
+  child: Container(
+    height: 70,
+    width: 70,
+    decoration: BoxDecoration(
+      color: Colors.transparent,
+      borderRadius: BorderRadius.all(Radius.circular(50)),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.redAccent.withOpacity(0.2),
+          spreadRadius: 3,
+          blurRadius: 3,
+          offset: Offset(0, 3),
+        ),
+      ],
+    ),
+    child: Icon(Icons.add),
+  ),
+  backgroundColor: Colors.tealAccent,
+  foregroundColor: Colors.black,
+),
+</t>
+<t tx="swot.20221118073702.1"></t>
+<t tx="swot.20221118073739.1"></t>
+<t tx="swot.20221118073920.1">theme: ThemeData(
+  @others
+  // primarySwatch: Colors.blue,
+  // fontFamily: 'SourceSansPro',
+),
+</t>
+<t tx="swot.20221118074133.1">@doc
+floatingActionButtonTheme: FloatingActionButtonThemeData(
+  backgroundColor: Colors.amberAccent,
+  foregroundColor: Colors.greenAccent,
+  hoverColor: Colors.redAccent,
+  splashColor: Colors.tealAccent,
+ ),
 </t>
 </tnodes>
 </leo_file>
