@@ -22,15 +22,57 @@
 </v>
 <v t="swot.20221110233138.2"><vh>DropDownButtonExample</vh>
 <v t="swot.20221110233138.3"><vh>varible</vh></v>
-<v t="swot.20221110233138.4"><vh>initState()</vh></v>
-<v t="swot.20221110233138.5"><vh>dispose()</vh></v>
 <v t="swot.20221110233138.6"><vh>build()</vh>
+<v t="swot.20221118180810.2"><vh>Scaffold</vh>
+<v t="swot.20221118180810.3"><vh>appBar</vh></v>
+<v t="swot.20221118180810.4"><vh>body</vh>
+<v t="swot.20221118181453.2"><vh>Center</vh>
 <v t="swot.20221111000936.2"><vh>Column</vh>
-<v t="swot.20221111000057.1"><vh>SizedBox</vh>
+<v t="swot.20221111000057.1"><vh>SizedBox -- default</vh>
 <v t="swot.20221110233541.2"><vh>DropdownButton !!!</vh></v>
 </v>
-<v t="swot.20221111001008.1"><vh>SizedBox</vh>
-<v t="swot.20221111001008.2"><vh>DropdownButtonFormField !!!</vh></v>
+<v t="swot.20221118192811.1"><vh>SizedBox height: 20.0</vh></v>
+<v t="swot.20221118181746.1"><vh>Change dropdown button color</vh>
+<v t="swot.20221118181936.2"><vh>Container !!!</vh>
+<v t="swot.20221118181835.1"><vh>DropdownButton</vh></v>
+</v>
+</v>
+<v t="swot.20221118183336.1"><vh>SizedBox height: 20.0</vh></v>
+<v t="swot.20221118182834.1"><vh>Change dropdown arrow color</vh>
+<v t="swot.20221118183034.2"><vh>DropdownButton</vh>
+<v t="swot.20221118183205.1"><vh>icon !!!</vh></v>
+</v>
+</v>
+<v t="swot.20221118183819.1"><vh>SizedBox height: 20.0</vh></v>
+<v t="swot.20221118183443.1"><vh>Change the dropdown menu item background color</vh>
+<v t="swot.20221118183642.1"><vh>DropdownButton</vh>
+<v t="swot.20221118183705.1"><vh>dropdownColor !!!</vh></v>
+</v>
+</v>
+<v t="swot.20221118184337.1"><vh>SizedBox height: 20.0</vh></v>
+<v t="swot.20221118184332.1"><vh>Change the dropdown menu text color</vh>
+<v t="swot.20221118184426.1"><vh>DropdownButton</vh>
+<v t="swot.20221118191553.1"><vh>style</vh></v>
+</v>
+</v>
+<v t="swot.20221118191949.1"><vh>SizedBox height: 20.0</vh></v>
+<v t="swot.20221118192210.1"><vh>Changing the underline color of dropdown</vh>
+<v t="swot.20221118192452.1"><vh>DropdownButton</vh>
+<v t="swot.20221118192536.1"><vh>underline</vh></v>
+</v>
+</v>
+<v t="swot.20221118192427.1"><vh>SizedBox height: 20.0</vh></v>
+<v t="swot.20221118192421.1"><vh>Change the color of selected text in the dropdown</vh>
+<v t="swot.20221118193132.1"><vh>DropdownButton</vh>
+<v t="swot.20221118193317.1"><vh>selectedItemBuilder</vh></v>
+</v>
+</v>
+<v t="swot.20221118192811.1"></v>
+<v t="swot.20221118192831.1"><vh>SizedBox -- FormField</vh>
+<v t="swot.20221118192831.2"><vh>DropdownButtonFormField !!!</vh></v>
+</v>
+</v>
+</v>
 </v>
 </v>
 </v>
@@ -166,7 +208,10 @@
 </v>
 </v>
 </v>
-<v t="swot.20221027213439.1"><vh>@spot</vh></v>
+<v t="swot.20221027213439.1"><vh>@spot</vh>
+<v t="swot.20221110233828.1"><vh>show DropDownButtonExample</vh></v>
+<v t="swot.20221110233138.2"></v>
+</v>
 </vnodes>
 <tnodes>
 <t tx="swot.20221017093031.1">Every Flutter Widgets - Part One - 50 Widgets
@@ -697,25 +742,18 @@ class _DropDownButtonExampleState extends State&lt;DropDownButtonExample&gt;{
   @others
 }
 
+
+@doc
+https://www.flutterbeads.com/change-dropdown-color-in-flutter/
 </t>
 <t tx="swot.20221110233138.3">List&lt;String&gt; items = [
-  'Item 1',
-  'Item 2',
-  'Item 3',
-  'Item 4',
+  'Python',
+  'Dart',
+  'Java',
+  'Javascript',
 ];
 
-String? selectedItem = 'Item 1';
-</t>
-<t tx="swot.20221110233138.4">@override
-void initState() {
-  super.initState();
-}
-</t>
-<t tx="swot.20221110233138.5">@override
-void dispose() {
-  super.dispose();
-}
+String? selectedItem = 'Python';
 </t>
 <t tx="swot.20221110233138.6">@override
 Widget build(BuildContext context) {
@@ -727,15 +765,33 @@ Widget build(BuildContext context) {
 <t tx="swot.20221110233541.2">DropdownButton(
   // hint: const Text("Filter by"),
   value: selectedItem,
+
   items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
     value: item,
-    child: Text(item, style: const TextStyle(fontSize: 20),
-    ),
+    child: Text(item, style: const TextStyle(fontSize: 20)),
   )).toList(),
+
   onChanged: (item) {
     setState(() {
       selectedItem = item;
     });
+  },
+),
+</t>
+<t tx="swot.20221110233828.1">ListTile(
+  tileColor: Colors.blue,
+  textColor: Colors.white,
+  iconColor: Colors.white,
+  leading: const Icon(Icons.person),
+  title: const Text('DropDownButton'),
+  // trailing: const Icon(Icons.menu),
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =&gt; DropDownButtonExample(),
+      ),
+    );
   },
 ),
 </t>
@@ -746,37 +802,11 @@ Widget build(BuildContext context) {
 ),
 </t>
 <t tx="swot.20221111000936.2">Column(
+  mainAxisAlignment: MainAxisAlignment.center,
   children: [
     @others
   ],
 )
-</t>
-<t tx="swot.20221111001008.1">SizedBox(
-  width: 240,
-  child:
-  @others
-)
-</t>
-<t tx="swot.20221111001008.2">DropdownButtonFormField(
-  decoration: InputDecoration(
-    enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(width: 3, color: Colors.blue)
-    )
-  ),
-  // hint: const Text("Filter by"),
-  value: selectedItem,
-  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
-    value: item,
-    child: Text(item, style: const TextStyle(fontSize: 20),
-    ),
-  )).toList(),
-  onChanged: (item) {
-    setState(() {
-      selectedItem = item;
-    });
-  },
-),
 </t>
 <t tx="swot.20221111002547.1"></t>
 <t tx="swot.20221112114354.1"></t>
@@ -998,6 +1028,234 @@ Divider(),
     print('The $item was selected');
   },
 ),
+</t>
+<t tx="swot.20221118180810.2">Scaffold(
+  @others
+);
+</t>
+<t tx="swot.20221118180810.3">appBar: AppBar(
+  title: Text('DropDownButton'),
+  // leading: Icon(Icons.menu),
+  elevation: 0.0,
+  centerTitle: true,
+  actions: [
+    Icon(Icons.settings),
+  ],
+),
+</t>
+<t tx="swot.20221118180810.4">body:
+@others
+</t>
+<t tx="swot.20221118181453.2">Center(
+  child:
+  @others
+)
+</t>
+<t tx="swot.20221118181746.1">@doc
+To change the dropdown Button color in Flutter, simply wrap your DropdownButton widget inside the Container and provide the styling instructions inside the decoration property using the BoxDecoration widget. Using the color property (insideBoxDecoration) you can assign the color.
+</t>
+<t tx="swot.20221118181835.1">DropdownButton(
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20)),
+  )).toList(),
+
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221118181936.2">Container(
+  padding: const EdgeInsets.all(8),
+  decoration: const BoxDecoration(
+    color: Colors.greenAccent,
+  ),
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221118182834.1">@doc
+To change dropdown arrow color in Flutter, you can add the same arrow icon inside the icon property and change the color using the color property.
+</t>
+<t tx="swot.20221118183034.2">DropdownButton(
+  @others
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20)),
+  )).toList(),
+
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221118183205.1">icon: const Icon(
+  Icons.arrow_drop_down,
+  color: Colors.red,
+),
+</t>
+<t tx="swot.20221118183336.1">const SizedBox(
+  height: 20.0,
+),
+</t>
+<t tx="swot.20221118183443.1">@doc
+To change the dropdown menu item background color, you can use the `dropdownColor` property and assign the color of your choice.
+</t>
+<t tx="swot.20221118183642.1">DropdownButton(
+  @others
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20)),
+  )).toList(),
+
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221118183705.1">dropdownColor: Colors.amberAccent,
+</t>
+<t tx="swot.20221118183819.1">const SizedBox(
+  height: 20.0,
+),
+</t>
+<t tx="swot.20221118184332.1">@doc
+To change the dropdown menu text color, use the style property and assign the `TextStyle` widget with the parameter called color.
+</t>
+<t tx="swot.20221118184337.1">const SizedBox(
+  height: 20.0,
+),
+</t>
+<t tx="swot.20221118184426.1">DropdownButton(
+  @others
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20)),
+  )).toList(),
+
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221118191553.1">style: const TextStyle(
+  color: Colors.deepPurple,
+  fontSize: 25,
+  fontWeight: FontWeight.bold,
+),
+</t>
+<t tx="swot.20221118191949.1">const SizedBox(
+  height: 20.0,
+),
+</t>
+<t tx="swot.20221118192210.1">@doc
+To change underline color use the underline property of the Dropdown widget and then assign the Container widget with height and color property.
+</t>
+<t tx="swot.20221118192421.1">@doc
+To change the color of the selected text inside the dropdown button in Flutter, you can make use of the selectedItemBuilder and create a new widget that shows when the item is selected. The idea is to pass the same Text with a different color.
+</t>
+<t tx="swot.20221118192427.1">const SizedBox(
+  height: 20.0,
+),
+</t>
+<t tx="swot.20221118192452.1">DropdownButton(
+  @others
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20)),
+  )).toList(),
+
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221118192536.1">underline: Container(
+  height: 3,
+  color: Colors.deepPurpleAccent,
+),</t>
+<t tx="swot.20221118192811.1">const SizedBox(
+  height: 20.0,
+),
+</t>
+<t tx="swot.20221118192831.1">SizedBox(
+  width: 240,
+  child:
+  @others
+),
+</t>
+<t tx="swot.20221118192831.2">DropdownButtonFormField(
+  // decoration: InputDecoration(
+    // enabledBorder: OutlineInputBorder(
+      // borderRadius: BorderRadius.circular(12),
+      // borderSide: const BorderSide(width: 3, color: Colors.blue)
+    // )
+  // ),
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20)),
+  )).toList(),
+
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221118193132.1">DropdownButton(
+  @others
+  // hint: const Text("Filter by"),
+  value: selectedItem,
+
+  items: items.map((item) =&gt; DropdownMenuItem&lt;String&gt;(
+    value: item,
+    child: Text(item, style: const TextStyle(fontSize: 20)),
+  )).toList(),
+
+  onChanged: (item) {
+    setState(() {
+      selectedItem = item;
+    });
+  },
+),
+</t>
+<t tx="swot.20221118193317.1">selectedItemBuilder: (BuildContext context) {
+  return items.map((value) {
+    return Text(
+      selectedItem!,
+      style: TextStyle(color: Colors.red, fontSize: 30),
+    );
+  }).toList();
+},
 </t>
 </tnodes>
 </leo_file>

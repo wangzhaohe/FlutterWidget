@@ -3156,91 +3156,301 @@ class _DropDownButtonExampleState extends State<DropDownButtonExample>{
   //@+others
   //@+node:swot.20221110233138.3: *4* varible
   List<String> items = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
+    'Python',
+    'Dart',
+    'Java',
+    'Javascript',
   ];
 
-  String? selectedItem = 'Item 1';
-  //@+node:swot.20221110233138.4: *4* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-  //@+node:swot.20221110233138.5: *4* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
+  String? selectedItem = 'Python';
   //@+node:swot.20221110233138.6: *4* build()
   @override
   Widget build(BuildContext context) {
     return
     //@+others
-    //@+node:swot.20221111000936.2: *5* Column
-    Column(
-      children: [
+    //@+node:swot.20221118180810.2: *5* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221118180810.3: *6* appBar
+      appBar: AppBar(
+        title: Text('DropDownButton'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221118180810.4: *6* body
+      body:
+      //@+others
+      //@+node:swot.20221118181453.2: *7* Center
+      Center(
+        child:
         //@+others
-        //@+node:swot.20221111000057.1: *6* SizedBox
-        SizedBox(
-          width: 240,
-          child:
-          //@+others
-          //@+node:swot.20221110233541.2: *7* DropdownButton !!!
-          DropdownButton(
-            // hint: const Text("Filter by"),
-            value: selectedItem,
-            items: items.map((item) => DropdownMenuItem<String>(
-              value: item,
-              child: Text(item, style: const TextStyle(fontSize: 20),
+        //@+node:swot.20221111000936.2: *8* Column
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            //@+others
+            //@+node:swot.20221111000057.1: *9* SizedBox -- default
+            SizedBox(
+              width: 240,
+              child:
+              //@+others
+              //@+node:swot.20221110233541.2: *10* DropdownButton !!!
+              DropdownButton(
+                // hint: const Text("Filter by"),
+                value: selectedItem,
+
+                items: items.map((item) => DropdownMenuItem<String>(
+                  value: item,
+                  child: Text(item, style: const TextStyle(fontSize: 20)),
+                )).toList(),
+
+                onChanged: (item) {
+                  setState(() {
+                    selectedItem = item;
+                  });
+                },
               ),
-            )).toList(),
-            onChanged: (item) {
-              setState(() {
-                selectedItem = item;
-              });
-            },
-          ),
-          //@-others
-        ),
-        //@+node:swot.20221111001008.1: *6* SizedBox
-        SizedBox(
-          width: 240,
-          child:
-          //@+others
-          //@+node:swot.20221111001008.2: *7* DropdownButtonFormField !!!
-          DropdownButtonFormField(
-            decoration: InputDecoration(
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(width: 3, color: Colors.blue)
-              )
+              //@-others
             ),
-            // hint: const Text("Filter by"),
-            value: selectedItem,
-            items: items.map((item) => DropdownMenuItem<String>(
-              value: item,
-              child: Text(item, style: const TextStyle(fontSize: 20),
+            //@+node:swot.20221118192811.1: *9* SizedBox height: 20.0
+            const SizedBox(
+              height: 20.0,
+            ),
+            //@+node:swot.20221118181746.1: *9* Change dropdown button color
+            //@+doc
+            // To change the dropdown Button color in Flutter, simply wrap your DropdownButton widget inside the Container and provide the styling instructions inside the decoration property using the BoxDecoration widget. Using the color property (insideBoxDecoration) you can assign the color.
+            //@+node:swot.20221118181936.2: *10* Container !!!
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: const BoxDecoration(
+                color: Colors.greenAccent,
               ),
-            )).toList(),
-            onChanged: (item) {
-              setState(() {
-                selectedItem = item;
-              });
-            },
-          ),
-          //@-others
+              child:
+              //@+others
+              //@+node:swot.20221118181835.1: *11* DropdownButton
+              DropdownButton(
+                // hint: const Text("Filter by"),
+                value: selectedItem,
+
+                items: items.map((item) => DropdownMenuItem<String>(
+                  value: item,
+                  child: Text(item, style: const TextStyle(fontSize: 20)),
+                )).toList(),
+
+                onChanged: (item) {
+                  setState(() {
+                    selectedItem = item;
+                  });
+                },
+              ),
+              //@-others
+            ),
+            //@+node:swot.20221118183336.1: *9* SizedBox height: 20.0
+            const SizedBox(
+              height: 20.0,
+            ),
+            //@+node:swot.20221118182834.1: *9* Change dropdown arrow color
+            //@+doc
+            // To change dropdown arrow color in Flutter, you can add the same arrow icon inside the icon property and change the color using the color property.
+            //@+node:swot.20221118183034.2: *10* DropdownButton
+            DropdownButton(
+              //@+others
+              //@+node:swot.20221118183205.1: *11* icon !!!
+              icon: const Icon(
+                Icons.arrow_drop_down,
+                color: Colors.red,
+              ),
+              //@-others
+              // hint: const Text("Filter by"),
+              value: selectedItem,
+
+              items: items.map((item) => DropdownMenuItem<String>(
+                value: item,
+                child: Text(item, style: const TextStyle(fontSize: 20)),
+              )).toList(),
+
+              onChanged: (item) {
+                setState(() {
+                  selectedItem = item;
+                });
+              },
+            ),
+            //@+node:swot.20221118183819.1: *9* SizedBox height: 20.0
+            const SizedBox(
+              height: 20.0,
+            ),
+            //@+node:swot.20221118183443.1: *9* Change the dropdown menu item background color
+            //@+doc
+            // To change the dropdown menu item background color, you can use the `dropdownColor` property and assign the color of your choice.
+            //@+node:swot.20221118183642.1: *10* DropdownButton
+            DropdownButton(
+              //@+others
+              //@+node:swot.20221118183705.1: *11* dropdownColor !!!
+              dropdownColor: Colors.amberAccent,
+              //@-others
+              // hint: const Text("Filter by"),
+              value: selectedItem,
+
+              items: items.map((item) => DropdownMenuItem<String>(
+                value: item,
+                child: Text(item, style: const TextStyle(fontSize: 20)),
+              )).toList(),
+
+              onChanged: (item) {
+                setState(() {
+                  selectedItem = item;
+                });
+              },
+            ),
+            //@+node:swot.20221118184337.1: *9* SizedBox height: 20.0
+            const SizedBox(
+              height: 20.0,
+            ),
+            //@+node:swot.20221118184332.1: *9* Change the dropdown menu text color
+            //@+doc
+            // To change the dropdown menu text color, use the style property and assign the `TextStyle` widget with the parameter called color.
+            //@+node:swot.20221118184426.1: *10* DropdownButton
+            DropdownButton(
+              //@+others
+              //@+node:swot.20221118191553.1: *11* style
+              style: const TextStyle(
+                color: Colors.deepPurple,
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+              //@-others
+              // hint: const Text("Filter by"),
+              value: selectedItem,
+
+              items: items.map((item) => DropdownMenuItem<String>(
+                value: item,
+                child: Text(item, style: const TextStyle(fontSize: 20)),
+              )).toList(),
+
+              onChanged: (item) {
+                setState(() {
+                  selectedItem = item;
+                });
+              },
+            ),
+            //@+node:swot.20221118191949.1: *9* SizedBox height: 20.0
+            const SizedBox(
+              height: 20.0,
+            ),
+            //@+node:swot.20221118192210.1: *9* Changing the underline color of dropdown
+            //@+doc
+            // To change underline color use the underline property of the Dropdown widget and then assign the Container widget with height and color property.
+            //@+node:swot.20221118192452.1: *10* DropdownButton
+            DropdownButton(
+              //@+others
+              //@+node:swot.20221118192536.1: *11* underline
+              underline: Container(
+                height: 3,
+                color: Colors.deepPurpleAccent,
+              ),
+              //@-others
+              // hint: const Text("Filter by"),
+              value: selectedItem,
+
+              items: items.map((item) => DropdownMenuItem<String>(
+                value: item,
+                child: Text(item, style: const TextStyle(fontSize: 20)),
+              )).toList(),
+
+              onChanged: (item) {
+                setState(() {
+                  selectedItem = item;
+                });
+              },
+            ),
+            //@+node:swot.20221118192427.1: *9* SizedBox height: 20.0
+            const SizedBox(
+              height: 20.0,
+            ),
+            //@+node:swot.20221118192421.1: *9* Change the color of selected text in the dropdown
+            //@+doc
+            // To change the color of the selected text inside the dropdown button in Flutter, you can make use of the selectedItemBuilder and create a new widget that shows when the item is selected. The idea is to pass the same Text with a different color.
+            //@+node:swot.20221118193132.1: *10* DropdownButton
+            DropdownButton(
+              //@+others
+              //@+node:swot.20221118193317.1: *11* selectedItemBuilder
+              selectedItemBuilder: (BuildContext context) {
+                return items.map((value) {
+                  return Text(
+                    selectedItem!,
+                    style: const TextStyle(color: Colors.red, fontSize: 30),
+                  );
+                }).toList();
+              },
+              //@-others
+              // hint: const Text("Filter by"),
+              value: selectedItem,
+
+              items: items.map((item) => DropdownMenuItem<String>(
+                value: item,
+                child: Text(item, style: const TextStyle(fontSize: 20)),
+              )).toList(),
+
+              onChanged: (item) {
+                setState(() {
+                  selectedItem = item;
+                });
+              },
+            ),
+            //@+node:swot.20221118192811.1: *9* SizedBox height: 20.0
+            const SizedBox(
+              height: 20.0,
+            ),
+            //@+node:swot.20221118192831.1: *9* SizedBox -- FormField
+            SizedBox(
+              width: 240,
+              child:
+              //@+others
+              //@+node:swot.20221118192831.2: *10* DropdownButtonFormField !!!
+              DropdownButtonFormField(
+                // decoration: InputDecoration(
+                  // enabledBorder: OutlineInputBorder(
+                    // borderRadius: BorderRadius.circular(12),
+                    // borderSide: const BorderSide(width: 3, color: Colors.blue)
+                  // )
+                // ),
+                // hint: const Text("Filter by"),
+                value: selectedItem,
+
+                items: items.map((item) => DropdownMenuItem<String>(
+                  value: item,
+                  child: Text(item, style: const TextStyle(fontSize: 20)),
+                )).toList(),
+
+                onChanged: (item) {
+                  setState(() {
+                    selectedItem = item;
+                  });
+                },
+              ),
+              //@-others
+            ),
+            //@-others
+          ],
         )
         //@-others
-      ],
-    )
+      )
+      //@-others
+      //@-others
+    );
     //@-others
     ;
   }
   //@-others
 }
 
+
+//@+doc
+// https://www.flutterbeads.com/change-dropdown-color-in-flutter/
 //@+node:swot.20221025211157.1: ** E
 //@+node:swot.20221026073602.2: *3* ExpandedExample -- height in Expanded takes no effect
 //@@language dart

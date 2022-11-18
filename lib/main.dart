@@ -1058,7 +1058,22 @@ class _DemoDState extends State<DemoD> {
         ),
         Divider(),
         //@+node:swot.20221110233828.1: *9* show DropDownButtonExample
-        DropDownButtonExample(),
+        ListTile(
+          tileColor: Colors.blue,
+          textColor: Colors.white,
+          iconColor: Colors.white,
+          leading: const Icon(Icons.person),
+          title: const Text('DropDownButton'),
+          // trailing: const Icon(Icons.menu),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DropDownButtonExample(),
+              ),
+            );
+          },
+        ),
         //@-others
       ]),
 
