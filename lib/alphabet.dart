@@ -4345,6 +4345,7 @@ class IconButtonExample extends StatelessWidget {
             ),
             //@-others
           ),
+          SizedBox(height: 10),
 
           //@+doc
           // To change the icon button background color in Flutter, you can wrap your IconButton widget inside the CircleAvatar widget, and inside the CircleAvatar you can provide the background color.
