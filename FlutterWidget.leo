@@ -750,7 +750,6 @@ https://www.flutterbeads.com/change-dropdown-color-in-flutter/
   'Python',
   'Dart',
   'Java',
-  'Javascript',
 ];
 
 String? selectedItem = 'Python';
@@ -1198,7 +1197,8 @@ To change the color of the selected text inside the dropdown button in Flutter, 
 <t tx="swot.20221118192536.1">underline: Container(
   height: 3,
   color: Colors.deepPurpleAccent,
-),</t>
+),
+</t>
 <t tx="swot.20221118192811.1">const SizedBox(
   height: 20.0,
 ),
@@ -1252,7 +1252,7 @@ To change the color of the selected text inside the dropdown button in Flutter, 
   return items.map((value) {
     return Text(
       selectedItem!,
-      style: TextStyle(color: Colors.red, fontSize: 30),
+      style: const TextStyle(color: Colors.red, fontSize: 30),
     );
   }).toList();
 },
