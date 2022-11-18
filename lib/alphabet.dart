@@ -5347,6 +5347,101 @@ class OrientationBuilderExample extends StatelessWidget {
   //@-others
 }
 
+//@+node:swot.20221118204655.1: *3* OutlinedButtonExample
+//@+doc
+// https://www.flutterbeads.com/change-outlined-button-color-in-flutter/
+//@+node:swot.20221118210039.2: *4* OutlinedButtonExample
+//@@language dart
+//@@tabwidth -2
+class OutlinedButtonExample extends StatelessWidget {
+  const OutlinedButtonExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221118210039.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221118210101.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221118210101.3: *7* appBar
+      appBar: AppBar(
+        title: Text('OutlinedButton'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221118210101.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221118210331.2: *8* Center
+      Center(
+        child:
+        //@+others
+        //@+node:swot.20221118210339.2: *9* Column
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            //@+others
+            //@+node:swot.20221118210352.1: *10* OutlinedButton
+            OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                backgroundColor: Colors.black,
+                foregroundColor: Colors.amberAccent,
+                elevation: 20,
+                shadowColor: Colors.amber,  // use with elevation
+                side: BorderSide(color: Colors.red, width: 5),
+              ),
+              onPressed: () {},
+              child: const Text(
+                'Outlined Button',
+                style: TextStyle(fontSize: 40),
+              ),
+            ),
+            //@+node:swot.20221118214637.2: *10* SizedBox
+            SizedBox(
+              height: 30,
+            ),
+            //@+node:swot.20221118214431.1: *10* OutlinedButton -- disable color
+            OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                onSurface: Colors.amberAccent,  // disable color
+              ),
+              onPressed: null,                  // disable press
+              child: const Text(
+                'Outlined Button',
+                style: TextStyle(fontSize: 40),
+              ),
+            ),
+            //@+node:swot.20221118215934.1: *10* Managing Outlined Button Color at the App Level
+            /*
+            //@+others
+            //@+node:swot.20221119074348.1: *11* outlinedButtonTheme
+            //@+doc
+            // outlinedButtonTheme: OutlinedButtonThemeData(
+            //   style: OutlinedButton.styleFrom(
+            //     backgroundColor: Colors.black,
+            //     foregroundColor: Colors.amberAccent,
+            //   ),
+            // ),
+            //@-others
+            */
+            //@-others
+          ],
+        )
+        //@-others
+      )
+      //@-others
+      //@-others
+    );
+    //@-others
+    ;
+  }
+  //@-others
+}
 //@+node:swot.20221030232847.2: *3* OverflowBarExample -- auto adjust row or column
 //@@language dart
 //@@tabwidth -2

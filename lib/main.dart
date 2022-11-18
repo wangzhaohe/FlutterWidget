@@ -39,6 +39,14 @@ class MyApp extends StatelessWidget {
         //   hoverColor: Colors.redAccent,
         //   splashColor: Colors.tealAccent,
         //  ),
+        //@+node:swot.20221119074348.1: *4* outlinedButtonTheme
+        //@+doc
+        // outlinedButtonTheme: OutlinedButtonThemeData(
+        //   style: OutlinedButton.styleFrom(
+        //     backgroundColor: Colors.black,
+        //     foregroundColor: Colors.amberAccent,
+        //   ),
+        // ),
         //@-others
         // primarySwatch: Colors.blue,
         // fontFamily: 'SourceSansPro',
@@ -2194,6 +2202,22 @@ class _DemoOState extends State<DemoO> {
           child: const Text('OrientationBuilderExample'),
         ),
 
+        //@+node:swot.20221118211142.1: *9* show OutlinedButtonExample
+        ListTile(
+          tileColor: Colors.blue,
+          textColor: Colors.white,
+          iconColor: Colors.white,
+          leading: const Icon(Icons.adb_outlined),
+          title: const Text('OutlinedButton'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => OutlinedButtonExample(),
+              ),
+            );
+          },
+        ),
         //@+node:swot.20221030233533.2: *9* ElevatedButton -- show OverflowBarExample
         ElevatedButton(
           style: ElevatedButton.styleFrom(
