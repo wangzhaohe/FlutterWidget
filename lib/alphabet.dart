@@ -4285,6 +4285,134 @@ class HeroExample2 extends StatelessWidget {
 }
 
 //@+node:swot.20221029081714.13: ** I
+//@+node:swot.20221118120629.1: *3* IconButtonExample
+//@+doc
+// https://www.flutterbeads.com/change-iconbutton-color-in-flutter/
+//
+//@+node:swot.20221118121324.2: *4* IconButtonExample
+//@@language dart
+//@@tabwidth -2
+class IconButtonExample extends StatelessWidget {
+  const IconButtonExample({ Key? key }) : super(key: key);
+  //@+others
+  //@+node:swot.20221118121324.3: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221118121423.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221118121423.3: *7* appBar
+      appBar: AppBar(
+        title: Text('IconButton'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221118121423.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221118124836.2: *8* Column
+      Column(
+        children: [
+          //@+others
+          //@+node:swot.20221118121520.1: *9* IconButton -- color
+          IconButton(
+            color: Colors.greenAccent,
+            // Changing icon button color on press
+            highlightColor: Colors.amberAccent,
+            iconSize: 100,
+            icon: Icon(Icons.train),
+            onPressed: () {},
+          ),
+          //@+node:swot.20221118122505.1: *9* CircleAvatar -- add IconButton backgroundColor
+          CircleAvatar(
+            radius: 30,
+            backgroundColor: Colors.greenAccent,
+            child:
+            //@+others
+            //@+node:swot.20221118124538.2: *10* IconButton
+            IconButton(
+              icon: Icon(
+                Icons.flight,
+                color: Colors.black,
+              ),
+              onPressed: () {},
+            ),
+            //@-others
+          ),
+
+          //@+doc
+          // To change the icon button background color in Flutter, you can wrap your IconButton widget inside the CircleAvatar widget, and inside the CircleAvatar you can provide the background color.
+          //@+node:swot.20221118125513.1: *9* Material -- Change icon button border color
+          //@+doc
+          //@@language asciidoc
+          // There is no straightforward way to change the icon button border color so the idea is not to use the Icon Button widget at all and use the combination of Material and InkWell widget. You create the IconButton looking like a widget and then change the border color.
+          //
+          //@@c
+          //@@language dart
+          //@@tabwidth -2
+          Material(
+            type: MaterialType.transparency,
+            child:
+                //@+others
+                //@+node:swot.20221118130520.1: *10* Ink
+                //@@language dart
+                //@@tabwidth -2
+                Ink(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.green, width: 7.0),
+                    color: Colors.greenAccent,
+                    shape: BoxShape.circle,
+                  ),
+                  child:
+                      //@+others
+                      //@+node:swot.20221118130154.1: *11* InkWell
+                      //@@language dart
+                      //@@tabwidth -2
+                      InkWell(
+                        borderRadius: BorderRadius.circular(500.0),
+                        onTap: () {},
+                        child:
+                            //@+others
+                            //@+node:swot.20221118130327.1: *12* Padding
+                            //@@language dart
+                            //@@tabwidth -2
+                            const Padding(
+                              padding: EdgeInsets.all(20.0),
+                              child:
+                                  //@+others
+                                  //@+node:swot.20221118130407.1: *13* Icon
+                                  //@@language dart
+                                  //@@tabwidth -2
+                                  Icon(
+                                    Icons.directions_walk,
+                                    size: 30.0,
+                                    color: Colors.black,
+                                  ),
+                                  //@-others
+                            ),
+                            //@-others
+                      ),
+                      //@-others
+                ),
+                //@-others
+          ),
+          //@-others
+        ],
+      )
+      //@-others
+      //@-others
+    );
+    //@-others
+    ;
+  }
+  //@-others
+}
 //@+node:swot.20221029081714.14: *3* InteractiveViewerExample
 //@@language dart
 //@@tabwidth -2

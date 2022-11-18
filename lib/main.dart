@@ -1726,6 +1726,23 @@ class _DemoIState extends State<DemoI> {
       //@+node:swot.20221029081714.7: *8* Column
       Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //@+others
+        //@+node:swot.20221118121754.1: *9* show IconButtonExample
+        SizedBox(height: 4),
+        ListTile(
+          tileColor: Colors.blue,
+          textColor: Colors.white,
+          iconColor: Colors.white,
+          leading: const Icon(Icons.smart_button),
+          title: const Text('IconButton'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => IconButtonExample(),
+              ),
+            );
+          },
+        ),
         //@+node:swot.20221029081714.8: *9* ElevatedButton -- show InteractiveViewerExample
         ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -1776,6 +1793,7 @@ class _DemoIState extends State<DemoI> {
         ),
         //@+node:swot.20221101063450.1: *9* show InkwellExample
         InkwellExample(),
+        SizedBox(height: 4),
         //@-others
       ]),
       //@-others
