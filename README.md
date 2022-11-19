@@ -136,6 +136,7 @@ IconButtonExample
     PreferredSizeExample
 
 ### R...
+    RadioExample
     RadioListTileExample
     RangeSliderExample
     RefreshIndicatorExample

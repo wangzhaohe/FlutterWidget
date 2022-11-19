@@ -1845,8 +1845,8 @@ class _BottomSheetExampleState extends State<BottomSheetExample> {
           //@+node:swot.20221110210618.1: *5* showModalBottomSheet !!!
           showModalBottomSheet(
             context: context,
-            // isScrollControlled: true,   // 可以滚动
-            shape: RoundedRectangleBorder(
+            // isScrollControlled: true,
+            shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
                 top: Radius.circular(20),
               ),
@@ -1855,12 +1855,10 @@ class _BottomSheetExampleState extends State<BottomSheetExample> {
               return Container(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
-                  // mainAxisSize: MainAxisSize.min,  // 收缩到最小
+                  mainAxisSize: MainAxisSize.min,
                   children: [
-                    FlutterLogo(size: 120),
-                    FlutterLogo(size: 120),
-                    FlutterLogo(size: 120),
-                    FlutterLogo(size: 120),
+                    FlutterLogo(size: 100),
+                    FlutterLogo(size: 100),
                     Center(
                       child: ElevatedButton(
                         child: const Text('Close'),
@@ -5817,6 +5815,194 @@ appBar: PreferredSize(
 //@-others
 */
 //@+node:swot.20221023152107.13: ** R
+//@+node:swot.20221119080918.1: *3* RadioExample
+//@+doc
+// https://www.flutterbeads.com/change-radio-button-color-in-flutter/
+//
+// Radio is only for easy usecase, But RadioListTileExample is a wonderful widget.
+//@+node:swot.20221119081354.2: *4* RadioExample
+//@@language dart
+//@@tabwidth -2
+class RadioExample extends StatefulWidget {
+  const RadioExample({super.key});
+
+  @override
+  State<RadioExample> createState() => _RadioExampleState();
+}
+
+class _RadioExampleState extends State<RadioExample>{
+  //@+others
+  //@+node:swot.20221119081354.3: *5* varible
+  int _selected = 1;
+  //@+node:swot.20221119081354.6: *5* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221119081529.2: *6* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221119081529.3: *7* appBar
+      appBar: AppBar(
+        title: Text('RadioExample'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221119081529.4: *7* body
+      body:
+      //@+others
+      //@+node:swot.20221119094149.2: *8* Column
+      Column(
+        children: [
+          //@+others
+          //@+node:swot.20221119100923.1: *9* title
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(5.0),
+            color: Colors.grey,
+            child: const Center(
+              child: Text(
+                'change radio button color',
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
+          ),
+          //@+node:swot.20221119085217.2: *9* Column -- change radio button color
+          Column(
+            children: [
+              //@+others
+              //@+node:swot.20221119082611.2: *10* ListTile -- Male fillColor
+              ListTile(
+                // tileColor: Colors.orangeAccent,
+                leading: Radio(
+                  value: 1,
+                  groupValue: _selected,
+                  fillColor: MaterialStateColor.resolveWith((states) => Colors.green),
+                  onChanged: (value) {
+                    setState(() {
+                      _selected = value!;
+                    });
+                  },
+                ),
+                title: const Text('Male'),
+                // trailing: const Icon(Icons.menu),
+                onTap: () {},
+              ),
+              //@+node:swot.20221119083902.1: *10* ListTile -- Female fillColor
+              ListTile(
+                // tileColor: Colors.orangeAccent,
+                leading: Radio(
+                  value: 2,
+                  groupValue: _selected,
+                  fillColor: MaterialStateColor.resolveWith((states) => Colors.green),
+                  onChanged: (value) {
+                    setState(() {
+                      _selected = value!;
+                    });
+                  },
+                ),
+                title: const Text('Female'),
+                // trailing: const Icon(Icons.menu),
+                onTap: () {},
+              ),
+              //@+node:swot.20221119093411.1: *10* Changing radio button color globally
+              //@+node:swot.20221119092820.1: *11* radioTheme
+              //@+doc
+              // radioTheme: RadioThemeData(
+              //   fillColor: MaterialStateColor.resolveWith((states) => Colors.green),
+              // ),
+              //@-others
+            ],
+          ),
+          //@+node:swot.20221119101451.1: *9* title
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(5.0),
+            color: Colors.grey,
+            child: const Center(
+              child: Text(
+                'change radio button unselected color',
+                style: TextStyle(fontSize: 18),
+              ),
+            ),
+          ),
+          //@+node:swot.20221119094023.1: *9* Theme -- change radio button unselected color
+          Theme(
+            data: ThemeData(
+              unselectedWidgetColor: Colors.purpleAccent,
+            ),
+            // data: Theme.of(context).copyWith(
+              // unselectedWidgetColor: Colors.purpleAccent,
+            // ),
+            child:
+            //@+others
+            //@+node:swot.20221119093910.1: *10* Column
+            Column(
+              children: [
+                //@+others
+                //@+node:swot.20221119093910.2: *11* ListTile -- Male fillColor
+                ListTile(
+                  // tileColor: Colors.orangeAccent,
+                  leading: Radio(
+                    value: 1,
+                    groupValue: _selected,
+                    // unselectedWidgetColor will take no effect if set fillColor
+                    // fillColor: MaterialStateColor.resolveWith((states) => Colors.blue),
+                    onChanged: (value) {
+                      setState(() {
+                        _selected = value!;
+                      });
+                    },
+                  ),
+                  title: const Text('Male'),
+                  // trailing: const Icon(Icons.menu),
+                  onTap: () {},
+                ),
+                //@+node:swot.20221119093910.3: *11* ListTile -- Female fillColor
+                ListTile(
+                  // tileColor: Colors.orangeAccent,
+                  leading: Radio(
+                    value: 2,
+                    groupValue: _selected,
+                    // unselectedWidgetColor will take no effect if set fillColor
+                    // fillColor: MaterialStateColor.resolveWith((states) => Colors.blue),
+                    onChanged: (value) {
+                      setState(() {
+                        _selected = value!;
+                      });
+                    },
+                  ),
+                  title: const Text('Female'),
+                  // trailing: const Icon(Icons.menu),
+                  onTap: () {},
+                ),
+                //@-others
+              ],
+            )
+            //@-others
+          ),
+          //@+node:swot.20221119101713.1: *9* Changing radio button unselected color globally
+
+          //@+node:swot.20221119101821.1: *10* unselectedWidgetColor
+          //@+doc
+          // unselectedWidgetColor: Colors.purpleAccent,
+          //@-others
+        ],
+      ),
+      //@-others
+
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+
 //@+node:swot.20221116192205.1: *3* RadioListTileExample
 //@+node:swot.20221030084432.1: *4* radioListTileOptions
 List<String> radioListTileOptions = ['Option 1', 'Option 2'];
@@ -5835,18 +6021,6 @@ class _RadioListTileExampleState extends State<RadioListTileExample> {
   //@+others
   //@+node:swot.20221030083241.3: *5* varible
   String currentOption = radioListTileOptions[0];
-  //@+node:swot.20221030083241.4: *5* initState()
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  //@+node:swot.20221030083241.5: *5* dispose()
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   //@+node:swot.20221030083241.6: *5* build()
   @override
   Widget build(BuildContext context) {

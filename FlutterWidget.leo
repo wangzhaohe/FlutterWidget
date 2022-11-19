@@ -196,8 +196,6 @@
 <v t="swot.20221030084432.1"><vh>radioListTileOptions</vh></v>
 <v t="swot.20221030083241.2"><vh>RadioListTileExample</vh>
 <v t="swot.20221030083241.3"><vh>varible</vh></v>
-<v t="swot.20221030083241.4"><vh>initState()</vh></v>
-<v t="swot.20221030083241.5"><vh>dispose()</vh></v>
 <v t="swot.20221030083241.6"><vh>build()</vh>
 <v t="swot.20221030083721.2"><vh>Column</vh>
 <v t="swot.20221030083736.1"><vh>RadioListTile</vh></v>
@@ -208,10 +206,7 @@
 </v>
 </v>
 </v>
-<v t="swot.20221027213439.1"><vh>@spot</vh>
-<v t="swot.20221110233828.1"><vh>show DropDownButtonExample</vh></v>
-<v t="swot.20221110233138.2"></v>
-</v>
+<v t="swot.20221027213439.1"><vh>@spot</vh></v>
 </vnodes>
 <tnodes>
 <t tx="swot.20221017093031.1">Every Flutter Widgets - Part One - 50 Widgets
@@ -527,18 +522,6 @@ class _RadioListTileExampleState extends State&lt;RadioListTileExample&gt; {
 </t>
 <t tx="swot.20221030083241.3">String currentOption = radioListTileOptions[0];
 </t>
-<t tx="swot.20221030083241.4">@override
-void initState() {
-  super.initState();
-}
-
-</t>
-<t tx="swot.20221030083241.5">@override
-void dispose() {
-  super.dispose();
-}
-
-</t>
 <t tx="swot.20221030083241.6">@override
 Widget build(BuildContext context) {
   return
@@ -774,23 +757,6 @@ Widget build(BuildContext context) {
     setState(() {
       selectedItem = item;
     });
-  },
-),
-</t>
-<t tx="swot.20221110233828.1">ListTile(
-  tileColor: Colors.blue,
-  textColor: Colors.white,
-  iconColor: Colors.white,
-  leading: const Icon(Icons.person),
-  title: const Text('DropDownButton'),
-  // trailing: const Icon(Icons.menu),
-  onTap: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) =&gt; DropDownButtonExample(),
-      ),
-    );
   },
 ),
 </t>

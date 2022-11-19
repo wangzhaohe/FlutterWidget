@@ -47,6 +47,14 @@ class MyApp extends StatelessWidget {
         //     foregroundColor: Colors.amberAccent,
         //   ),
         // ),
+        //@+node:swot.20221119092820.1: *4* radioTheme
+        //@+doc
+        // radioTheme: RadioThemeData(
+        //   fillColor: MaterialStateColor.resolveWith((states) => Colors.green),
+        // ),
+        //@+node:swot.20221119101821.1: *4* unselectedWidgetColor
+        //@+doc
+        // unselectedWidgetColor: Colors.purpleAccent,
         //@-others
         // primarySwatch: Colors.blue,
         // fontFamily: 'SourceSansPro',
@@ -2430,6 +2438,23 @@ class _DemoRState extends State<DemoR> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => ReorderableListViewExample(),
+                  ),
+                );
+              },
+            ),
+            //@+node:swot.20221119084358.1: *9* show RadioExample
+            ListTile(
+              tileColor: Colors.blue,
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: const Icon(Icons.radio_button_checked_outlined),
+              title: const Text('RadioExample'),
+              // trailing: const Icon(Icons.menu),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => RadioExample(),
                   ),
                 );
               },
