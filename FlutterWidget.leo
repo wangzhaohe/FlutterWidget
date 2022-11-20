@@ -206,7 +206,18 @@
 </v>
 </v>
 </v>
-<v t="swot.20221027213439.1"><vh>@spot</vh></v>
+<v t="swot.20221027213439.1"><vh>@spot</vh>
+<v t="swot.20221119150720.2"><vh>class InternetConnectionCheckerExample -- 8times</vh>
+<v t="swot.20221119150720.3"><vh>varible</vh></v>
+<v t="swot.20221119150720.4"><vh>initState()</vh></v>
+<v t="swot.20221119150720.5"><vh>dispose()</vh></v>
+<v t="swot.20221119150720.6"><vh>build()</vh>
+<v t="swot.20221119150820.1"><vh>Scaffold</vh></v>
+</v>
+<v t="swot.20221119182634.1"><vh>initConnectivity()</vh></v>
+<v t="swot.20221119182736.1"><vh>_updateConnectionStatus()</vh></v>
+</v>
+</v>
 </vnodes>
 <tnodes>
 <t tx="swot.20221017093031.1">Every Flutter Widgets - Part One - 50 Widgets
@@ -1222,6 +1233,101 @@ To change the color of the selected text inside the dropdown button in Flutter, 
     );
   }).toList();
 },
+</t>
+<t tx="swot.20221119150720.2">@language dart
+class InternetConnectionCheckerExample extends StatefulWidget {
+  const InternetConnectionCheckerExample({super.key});
+
+  @override
+  State&lt;InternetConnectionCheckerExample&gt; createState() =&gt; _InternetConnectionCheckerExampleState();
+}
+
+class _InternetConnectionCheckerExampleState extends State&lt;InternetConnectionCheckerExample&gt;{
+  @others
+}
+</t>
+<t tx="swot.20221119150720.3">@language dart
+// 1) for UI display
+ConnectivityResult _connectionStatus = ConnectivityResult.none;  // initial value in enum
+
+// 2) connection state instnace
+final Connectivity _connectivity = Connectivity();
+
+// 3) listen connection state change
+late StreamSubscription&lt;ConnectivityResult&gt; _connectivitySubscription; // subscription
+
+
+@doc
+https://www.jianshu.com/p/5ffb4c9030d6?[StreamSubscription]
+</t>
+<t tx="swot.20221119150720.4">@language dart
+@override
+void initState() {
+  super.initState();
+
+  initConnectivity(); // async 3 things
+
+  // listen connection state change
+  _connectivitySubscription =
+      _connectivity.onConnectivityChanged.listen(_updateConnectionStatus);
+}
+</t>
+<t tx="swot.20221119150720.5">@language dart
+@override
+void dispose() {
+  _connectivitySubscription.cancel();
+  super.dispose();
+}
+</t>
+<t tx="swot.20221119150720.6">@language dart
+@override
+Widget build(BuildContext context) {
+  return
+  @others
+  ;
+}
+</t>
+<t tx="swot.20221119150820.1">@language dart
+Scaffold(
+  appBar: AppBar(
+    title: const Text('InternetConnectionChecker'),
+  ),
+  body: Center(
+    // update UI
+    child: Text('Connection Status: ${_connectionStatus.toString()}'),
+  ),
+)
+</t>
+<t tx="swot.20221119182634.1">@language dart
+// Platform messages are asynchronous, so we initialize in an async method.
+Future&lt;void&gt; initConnectivity() async {
+  late ConnectivityResult result;
+  // Platform messages may fail, so we use a try/catch PlatformException.
+  try {
+    result = await _connectivity.checkConnectivity();  // await
+  } on PlatformException catch (e) {
+    developer.log('Couldn\'t check connectivity status', error: e);
+    return;
+  }
+
+  // If the widget was removed from the tree while the asynchronous platform
+  // message was in flight, we want to discard the reply rather than calling
+  // setState to update our non-existent appearance.
+  if (!mounted) {
+    return Future.value(null);
+  }
+
+  // return has no effection
+  return _updateConnectionStatus(result);  // will use setState(() {}); to update UI
+}
+</t>
+<t tx="swot.20221119182736.1">@language dart
+// Perhaps do not need async here
+Future&lt;void&gt; _updateConnectionStatus(ConnectivityResult result) async {
+  setState(() {
+    _connectionStatus = result;  // update UI
+  });
+}
 </t>
 </tnodes>
 </leo_file>

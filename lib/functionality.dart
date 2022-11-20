@@ -4,8 +4,14 @@
 //@@tabwidth -2
 //@+others
 //@+node:swot.20221114214940.1: ** import
+import 'dart:async';
+import 'dart:developer' as developer;
+import 'dart:io';
+
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 //@+node:swot.20221114214307.1: ** CheckPlatformExample
 //@+doc
 //@@language asciidoc
@@ -553,6 +559,252 @@ class CloseKeyboardExample extends StatelessWidget {
     )
     //@-others
     ;
+  }
+  //@-others
+}
+//@+node:swot.20221119104057.1: ** InternetConnectionCheckerExample
+//@+doc
+// flutter pub add connectivity_plus
+//
+// https://pub.dev/packages/connectivity_plus/example
+//@+node:swot.20221119110442.1: *3* class NetworkConnectivity
+//@+doc
+// Create a singleton class that is responsible for handling network-related methods.
+//@@c
+//@@language dart
+//@@tabwidth -2
+class NetworkConnectivity {
+  //@+others
+  //@+node:swot.20221119111150.1: *4* varible
+  NetworkConnectivity._();
+
+  static final _instance = NetworkConnectivity._();
+
+  static NetworkConnectivity get instance => _instance;
+
+  final _networkConnectivity = Connectivity();
+
+  final _controller = StreamController.broadcast();
+
+  Stream get myStream => _controller.stream;
+  //@+node:swot.20221119111211.1: *4* initialise()
+  void initialise() async {
+    ConnectivityResult result = await _networkConnectivity.checkConnectivity();
+
+    _checkStatus(result);
+
+    _networkConnectivity.onConnectivityChanged.listen((result) {
+      print(result);
+      _checkStatus(result);
+    });
+  }
+  //@+node:swot.20221119111240.1: *4* _checkStatus()
+  void _checkStatus(ConnectivityResult result) async {
+
+    bool isOnline = false;
+
+    try {
+      final result = await InternetAddress.lookup('baidu.com');
+      isOnline = result.isNotEmpty && result[0].rawAddress.isNotEmpty;
+    } on SocketException catch (_) {
+      isOnline = false;
+    }
+
+    _controller.sink.add({result: isOnline});
+  }
+  //@+node:swot.20221119111250.1: *4* disposeStream()
+  void disposeStream() => _controller.close();
+  //@-others
+}
+//@+node:swot.20221119104132.2: *3* class InternetConnectionCheckerExample
+/*
+//@@language dart
+//@@tabwidth -2
+class InternetConnectionCheckerExample extends StatefulWidget {
+  const InternetConnectionCheckerExample({super.key});
+
+  @override
+  State<InternetConnectionCheckerExample> createState() => _InternetConnectionCheckerExampleState();
+}
+
+class _InternetConnectionCheckerExampleState extends State<InternetConnectionCheckerExample>{
+  //@+others
+  //@+node:swot.20221119104132.3: *4* varible
+  Map _source = {
+    ConnectivityResult.none: false,
+  };
+
+  final NetworkConnectivity _networkConnectivity = NetworkConnectivity.instance;
+
+  String string = '';
+  //@+node:swot.20221119104132.4: *4* initState()
+  @override
+  void initState() {
+    super.initState();
+    _networkConnectivity.initialise();
+
+    _networkConnectivity.myStream.listen((source) {
+      _source = source;
+      print('source $_source');
+
+      switch (_source.keys.toList()[0]) {
+        case ConnectivityResult.mobile:
+          string = _source.values.toList()[0] ? 'Mobile: Online' : 'Mobile: Offline';
+          break;
+        case ConnectivityResult.wifi:
+          string = _source.values.toList()[0] ? 'WiFi: Online' : 'WiFi: Offline';
+          break;
+        case ConnectivityResult.none:
+        default:
+          string = 'Offline';
+      }
+
+      setState(() {});
+      
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(string, style: TextStyle(fontSize: 30)),
+        ),
+      );
+    });
+  }
+  //@+node:swot.20221119104132.5: *4* dispose()
+  @override
+  void dispose() {
+    super.dispose();
+    _networkConnectivity.disposeStream();
+  }
+  //@+node:swot.20221119104132.6: *4* build()
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221119114302.2: *5* Scaffold
+    Scaffold(
+      //@+others
+      //@+node:swot.20221119114302.3: *6* appBar
+      appBar: AppBar(
+        title: Text('InternetConnectionChecker'),
+        // leading: Icon(Icons.menu),
+        elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          Icon(Icons.settings),
+        ],
+      ),
+      //@+node:swot.20221119114302.4: *6* body
+      body:
+      //@+others
+      //@+node:swot.20221119113629.2: *7* Center
+      Center(
+        child: Text(
+          string,
+          style: TextStyle(fontSize: 54),
+        ),
+      )
+      //@-others
+      //@-others
+    )
+    //@-others
+    ;
+  }
+  //@-others
+}
+*/
+//@+node:swot.20221119150720.2: *3* class InternetConnectionCheckerExample -- 8times
+//@@language dart
+class InternetConnectionCheckerExample extends StatefulWidget {
+  const InternetConnectionCheckerExample({super.key});
+
+  @override
+  State<InternetConnectionCheckerExample> createState() => _InternetConnectionCheckerExampleState();
+}
+
+class _InternetConnectionCheckerExampleState extends State<InternetConnectionCheckerExample>{
+  //@+others
+  //@+node:swot.20221119150720.3: *4* varible
+  //@@language dart
+  // 1) for UI display
+  ConnectivityResult _connectionStatus = ConnectivityResult.none;  // initial value in enum
+
+  // 2) connection state instnace
+  final Connectivity _connectivity = Connectivity();
+
+  // 3) listen connection state change
+  late StreamSubscription<ConnectivityResult> _connectivitySubscription; // subscription
+
+
+  //@+doc
+  // https://www.jianshu.com/p/5ffb4c9030d6?[StreamSubscription]
+  //@+node:swot.20221119150720.4: *4* initState()
+  //@@language dart
+  @override
+  void initState() {
+    super.initState();
+
+    initConnectivity(); // async 3 things
+
+    // listen connection state change
+    _connectivitySubscription =
+        _connectivity.onConnectivityChanged.listen(_updateConnectionStatus);
+  }
+  //@+node:swot.20221119150720.5: *4* dispose()
+  //@@language dart
+  @override
+  void dispose() {
+    _connectivitySubscription.cancel();
+    super.dispose();
+  }
+  //@+node:swot.20221119150720.6: *4* build()
+  //@@language dart
+  @override
+  Widget build(BuildContext context) {
+    return
+    //@+others
+    //@+node:swot.20221119150820.1: *5* Scaffold
+    //@@language dart
+    Scaffold(
+      appBar: AppBar(
+        title: const Text('InternetConnectionChecker'),
+      ),
+      body: Center(
+        // update UI
+        child: Text('Connection Status: ${_connectionStatus.toString()}'),
+      ),
+    )
+    //@-others
+    ;
+  }
+  //@+node:swot.20221119182634.1: *4* initConnectivity()
+  //@@language dart
+  // Platform messages are asynchronous, so we initialize in an async method.
+  Future<void> initConnectivity() async {
+    late ConnectivityResult result;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    try {
+      result = await _connectivity.checkConnectivity();  // await
+    } on PlatformException catch (e) {
+      developer.log('Couldn\'t check connectivity status', error: e);
+      return;
+    }
+
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) {
+      return Future.value(null);
+    }
+
+    // return has no effection
+    return _updateConnectionStatus(result);  // will use setState(() {}); to update UI
+  }
+  //@+node:swot.20221119182736.1: *4* _updateConnectionStatus()
+  //@@language dart
+  // Perhaps do not need async here
+  Future<void> _updateConnectionStatus(ConnectivityResult result) async {
+    setState(() {
+      _connectionStatus = result;  // update UI
+    });
   }
   //@-others
 }

@@ -473,6 +473,25 @@ class Home extends StatelessWidget {
               },
             ),
             //@-<< Easy Steps to Close Keyboard >>
+            SizedBox(height: 4.0),
+            //@+<< Internet Connection Checker >>
+            //@+node:swot.20221119103842.1: *8* << Internet Connection Checker >>
+            ListTile(
+              tileColor: Colors.blue,
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: const Icon(Icons.pages_outlined),
+              title: const Text('Internet Connection Checker'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const InternetConnectionCheckerExample(),
+                  ),
+                );
+              },
+            ),
+            //@-<< Internet Connection Checker >>
             //@-others
           ],
         ),
